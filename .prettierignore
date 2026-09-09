@@ -1,0 +1,5 @@
+pnpm-lock.yaml
+docs/
+packages/content/raw/
+apps/web/public/content/
+.superpowers/
