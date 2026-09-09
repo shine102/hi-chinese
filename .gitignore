@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+.wrangler/
+.dev.vars
+packages/content/raw/
+apps/web/public/content/
+*.log

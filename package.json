@@ -1,0 +1,20 @@
+{
+  "name": "hi-chinese",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.34.5",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "pnpm -r --if-present test",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "content:fetch": "pnpm -F @hi-chinese/content fetch",
+    "content:build": "pnpm -F @hi-chinese/content build"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.0",
+    "typescript": "~5.9.0",
+    "vitest": "~4.1.11"
+  }
+}
