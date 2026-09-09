@@ -1,4 +1,4 @@
-import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
+import { mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
@@ -130,6 +130,7 @@ describe('buildManifest', () => {
         { id: 'l1-u01', level: 1, order: 1, title: 'Unit 1', wordCount: 2, grammarCount: 1 },
         { id: 'l2-u01', level: 2, order: 2, title: 'Unit 1', wordCount: 1, grammarCount: 0 },
       ],
+      characters: ['4f60', '6211', '662f'],
       counts: { words: 3, characters: 3, grammar: 1, sentences: 1, units: 2 },
     });
   });
@@ -147,6 +148,7 @@ describe('writeContent', () => {
   it('writes manifest, words, unit chunks and character chunks', async () => {
     const manifest = await writeContent(bundle(), dir, () => new Date('2026-09-09T00:00:00.000Z'));
     expect((await readdir(dir)).sort()).toEqual([
+      'ATTRIBUTION.txt',
       'characters',
       'manifest.json',
       'units',
@@ -171,8 +173,10 @@ describe('writeContent', () => {
 
   it('produces the same version for the same content and replaces stale files', async () => {
     const first = await writeContent(bundle(), dir);
+    await writeFile(join(dir, 'units', 'stale.json'), '{}', 'utf8');
     const second = await writeContent(bundle(), dir);
     expect(second.version).toBe(first.version);
+    expect((await readdir(join(dir, 'units'))).sort()).toEqual(['l1-u01.json', 'l2-u01.json']);
     const b = bundle();
     b.sentences[0]!.en = 'I am!';
     const third = await writeContent(b, dir);

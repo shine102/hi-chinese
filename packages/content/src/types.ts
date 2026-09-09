@@ -82,6 +82,7 @@ export interface ContentManifest {
   generatedAt: string;
   levels: { level: HskLevel; title: string; unitIds: string[] }[];
   units: ManifestUnit[];
+  characters: string[];
   counts: {
     words: number;
     characters: number;

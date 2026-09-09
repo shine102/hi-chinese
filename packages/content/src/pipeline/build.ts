@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { mkdir, rm, writeFile } from 'node:fs/promises';
 import { basename, join } from 'node:path';
-import { characterFileName } from '../ids.js';
+import { characterFileName, compareWords } from '../ids.js';
 import type { ContentBundle, ContentManifest, HskLevel, UnitChunk, Word } from '../types.js';
 
 export function computeVersion(parts: string[]): string {
@@ -12,13 +12,15 @@ export function computeVersion(parts: string[]): string {
 
 const LEVEL_TITLES: Record<HskLevel, string> = { 1: 'HSK 1', 2: 'HSK 2', 3: 'HSK 3' };
 
+const ATTRIBUTION = `Hi Chinese content attribution
+
+Vocabulary: complete-hsk-vocabulary (https://github.com/drkameleon/complete-hsk-vocabulary), MIT License.
+Character stroke data and dictionary: Make Me a Hanzi (https://github.com/skishore/makemeahanzi).
+  graphics data: Arphic Public License (derived from Arphic PL KaitiM GB / UKai fonts); dictionary data: LGPL (Unihan / CJKlib). See the project's COPYING file.
+`;
+
 function sortWords(words: Word[]): Word[] {
-  return [...words].sort(
-    (a, b) =>
-      a.level - b.level ||
-      a.frequency - b.frequency ||
-      a.simplified.localeCompare(b.simplified, 'zh'),
-  );
+  return [...words].sort(compareWords);
 }
 
 export function buildManifest(
@@ -34,6 +36,7 @@ export function buildManifest(
       unitIds: units.filter((u) => u.level === level).map((u) => u.id),
     }))
     .filter((l) => l.unitIds.length > 0);
+  const characters = bundle.characters.map((c) => characterFileName(c.character)).sort();
   return {
     version,
     generatedAt,
@@ -46,6 +49,7 @@ export function buildManifest(
       wordCount: u.wordIds.length,
       grammarCount: u.grammarIds.length,
     })),
+    characters,
     counts: {
       words: bundle.words.length,
       characters: bundle.characters.length,
@@ -96,11 +100,12 @@ export async function writeContent(
       body: json(c),
     });
   }
+  files.push({ path: 'ATTRIBUTION.txt', body: ATTRIBUTION });
 
   const version = computeVersion(files.map((f) => `${f.path}\n${f.body}`));
   const manifest = buildManifest(bundle, version, now().toISOString());
-  files.push({ path: 'manifest.json', body: json(manifest) });
 
   await Promise.all(files.map((f) => writeFile(join(outDir, f.path), f.body, 'utf8')));
+  await writeFile(join(outDir, 'manifest.json'), json(manifest), 'utf8');
   return manifest;
 }

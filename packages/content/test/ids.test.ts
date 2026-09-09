@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { characterFileName, uniqueHanChars, unitId, wordId } from '../src/ids.js';
+import { characterFileName, compareWords, uniqueHanChars, unitId, wordId } from '../src/ids.js';
+import type { Word } from '../src/types.js';
 
 describe('ids', () => {
   it('builds word ids from simplified form', () => {
@@ -17,5 +18,24 @@ describe('ids', () => {
   it('extracts unique Han characters in order, dropping punctuation and latin', () => {
     expect(uniqueHanChars('你好，你好吗？OK')).toEqual(['你', '好', '吗']);
     expect(uniqueHanChars('')).toEqual([]);
+  });
+  it('compareWords orders by level, then frequency, then simplified', () => {
+    const w = (simplified: string, level: 1 | 2, frequency: number): Word => ({
+      id: `w:${simplified}`,
+      simplified,
+      traditional: simplified,
+      pinyin: 'x',
+      pinyinNumeric: 'x1',
+      meanings: ['x'],
+      alternates: [],
+      pos: [],
+      classifiers: [],
+      level,
+      frequency,
+      characters: [simplified],
+      unitId: '',
+    });
+    const words = [w('你', 1, 5), w('了', 2, 1), w('是', 1, 3), w('我', 1, 2)];
+    expect([...words].sort(compareWords).map((x) => x.simplified)).toEqual(['我', '是', '你', '了']);
   });
 });

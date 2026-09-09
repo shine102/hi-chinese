@@ -1,4 +1,4 @@
-import { uniqueHanChars, wordId } from '../ids.js';
+import { compareWords, uniqueHanChars, wordId } from '../ids.js';
 import type { HskLevel, PinyinOverrides, Word, WordReading } from '../types.js';
 
 export interface RawHskForm {
@@ -114,11 +114,6 @@ export function parseHskWords(entries: RawHskEntry[], overrides: PinyinOverrides
     seen.add(entry.simplified);
     words.push(word);
   }
-  words.sort(
-    (a, b) =>
-      a.level - b.level ||
-      a.frequency - b.frequency ||
-      a.simplified.localeCompare(b.simplified, 'zh'),
-  );
+  words.sort(compareWords);
   return words;
 }

@@ -1,4 +1,4 @@
-import type { HskLevel } from './types.js';
+import type { HskLevel, Word } from './types.js';
 
 export function wordId(simplified: string): string {
   return `w:${simplified}`;
@@ -12,6 +12,12 @@ export function characterFileName(ch: string): string {
   const cp = ch.codePointAt(0);
   if (cp === undefined) throw new Error('characterFileName: empty string');
   return cp.toString(16).padStart(4, '0');
+}
+
+export function compareWords(a: Word, b: Word): number {
+  return (
+    a.level - b.level || a.frequency - b.frequency || a.simplified.localeCompare(b.simplified, 'zh')
+  );
 }
 
 const HAN = /\p{Script=Han}/u;
