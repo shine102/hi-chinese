@@ -1,6 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { attachToUnits, placeGrammar, placeSentences } from '../src/pipeline/placement.js';
-import type { AuthoredGrammar, AuthoredSentence, Sentence, Unit, Word } from '../src/types.js';
+import type {
+  AuthoredGrammar,
+  AuthoredSentence,
+  HskLevel,
+  Sentence,
+  Unit,
+  Word,
+} from '../src/types.js';
 
 const unit = (id: string, level: 1 | 2, order: number, wordIds: string[]): Unit => ({
   id,
@@ -98,7 +105,7 @@ describe('placeSentences', () => {
 const placed = (): Sentence[] => placeSentences([s1, s2, s3], words, units).sentences;
 
 describe('placeGrammar', () => {
-  const g = (id: string, level: 1 | 2, examples: string[]): AuthoredGrammar => ({
+  const g = (id: string, level: HskLevel, examples: string[]): AuthoredGrammar => ({
     id,
     title: id,
     pattern: 'A 是 B',
@@ -133,7 +140,19 @@ describe('placeGrammar', () => {
     const { errors } = placeGrammar([g('g1', 1, ['nope'])], placed(), units);
     expect(errors.map((e) => [e.kind, e.ref])).toEqual([['missing-sentence', 'g1']]);
   });
-  it('spills extra points to the next unit and errors when out of units', () => {
+  it('errors when a declared level has no units, even with a valid lower-level example', () => {
+    const soloUnits = [unit('l1-u01', 1, 1, ['w:我', 'w:是'])];
+    const soloWords = [word('我', 'l1-u01', 1), word('是', 'l1-u01', 1)];
+    const { sentences } = placeSentences(
+      [{ id: 's1', zh: '我是。', pinyin: 'Wǒ shì.', en: 'I am.', words: ['我', '是'] }],
+      soloWords,
+      soloUnits,
+    );
+    const { grammar, errors } = placeGrammar([g('g1', 3, ['s1'])], sentences, soloUnits);
+    expect(errors.map((e) => [e.kind, e.ref])).toEqual([['level-mismatch', 'g1']]);
+    expect(grammar).toEqual([]);
+  });
+  it('spills extra points through same-level units only, erroring once the level runs out', () => {
     const many = ['a', 'b', 'c', 'd', 'e', 'f', 'g'].map((id) => g(id, 1, ['s1']));
     const { grammar, errors } = placeGrammar(many, placed(), units, 2);
     expect(grammar.map((x) => [x.id, x.unitId])).toEqual([
@@ -141,10 +160,12 @@ describe('placeGrammar', () => {
       ['b', 'l1-u01'],
       ['c', 'l1-u02'],
       ['d', 'l1-u02'],
-      ['e', 'l2-u01'],
-      ['f', 'l2-u01'],
     ]);
-    expect(errors.map((e) => [e.kind, e.ref])).toEqual([['overflow', 'g']]);
+    expect(errors.map((e) => [e.kind, e.ref])).toEqual([
+      ['overflow', 'e'],
+      ['overflow', 'f'],
+      ['overflow', 'g'],
+    ]);
   });
 });
 

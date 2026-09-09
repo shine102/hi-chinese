@@ -142,7 +142,17 @@ export function placeGrammar(
       });
       continue;
     }
-    if (natural.level < g.level) unitIndex = ordered.findIndex((u) => u.level === g.level);
+    if (natural.level < g.level) {
+      unitIndex = ordered.findIndex((u) => u.level === g.level);
+      if (!ordered[unitIndex]) {
+        errors.push({
+          kind: 'level-mismatch',
+          ref: g.id,
+          message: `${g.id}: no units exist for level ${g.level}`,
+        });
+        continue;
+      }
+    }
     pending.push({
       point: {
         id: g.id,
@@ -163,12 +173,17 @@ export function placeGrammar(
   const grammar: GrammarPoint[] = [];
   for (const { point, unitIndex } of pending) {
     let i = unitIndex;
-    while (i < ordered.length && (counts.get(i) ?? 0) >= maxPerUnit) i += 1;
-    if (i >= ordered.length) {
+    while (
+      i < ordered.length &&
+      ordered[i]!.level === point.level &&
+      (counts.get(i) ?? 0) >= maxPerUnit
+    )
+      i += 1;
+    if (i >= ordered.length || ordered[i]!.level !== point.level) {
       errors.push({
         kind: 'overflow',
         ref: point.id,
-        message: `${point.id}: no unit left with fewer than ${maxPerUnit} grammar points`,
+        message: `${point.id}: level ${point.level} has no unit left with fewer than ${maxPerUnit} grammar points`,
       });
       continue;
     }
