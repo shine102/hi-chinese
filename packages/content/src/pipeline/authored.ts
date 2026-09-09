@@ -18,7 +18,13 @@ async function readJsonArrays<T>(dir: string): Promise<T[]> {
   const out: T[] = [];
   for (const name of names) {
     const path = join(dir, name);
-    const parsed: unknown = JSON.parse(await readFile(path, 'utf8'));
+    const text = await readFile(path, 'utf8');
+    let parsed: unknown;
+    try {
+      parsed = JSON.parse(text);
+    } catch (e) {
+      throw new Error(`${path}: invalid JSON: ${(e as Error).message}`);
+    }
     if (!Array.isArray(parsed)) throw new Error(`${path}: expected a JSON array`);
     out.push(...(parsed as T[]));
   }
@@ -27,12 +33,19 @@ async function readJsonArrays<T>(dir: string): Promise<T[]> {
 
 export async function loadAuthored(authoredDir: string): Promise<Authored> {
   let overrides: PinyinOverrides = {};
+  const overridesPath = join(authoredDir, 'pinyin-overrides.json');
+  let overridesText: string | undefined;
   try {
-    overrides = JSON.parse(
-      await readFile(join(authoredDir, 'pinyin-overrides.json'), 'utf8'),
-    ) as PinyinOverrides;
+    overridesText = await readFile(overridesPath, 'utf8');
   } catch (e) {
     if ((e as NodeJS.ErrnoException).code !== 'ENOENT') throw e;
+  }
+  if (overridesText !== undefined) {
+    try {
+      overrides = JSON.parse(overridesText) as PinyinOverrides;
+    } catch (e) {
+      throw new Error(`${overridesPath}: invalid JSON: ${(e as Error).message}`);
+    }
   }
   return {
     sentences: await readJsonArrays<AuthoredSentence>(join(authoredDir, 'sentences')),

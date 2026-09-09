@@ -6,3 +6,4 @@ coverage/
 packages/content/raw/
 apps/web/public/content/
 *.log
+.superpowers/

@@ -44,4 +44,8 @@ describe('loadAuthored', () => {
     await writeFile(join(dir, 'grammar', 'bad.json'), JSON.stringify({ id: 'g1' }));
     await expect(loadAuthored(dir)).rejects.toThrow(/bad\.json.*array/);
   });
+  it('rejects a file with invalid JSON', async () => {
+    await writeFile(join(dir, 'grammar', 'bad.json'), '[{"id": }');
+    await expect(loadAuthored(dir)).rejects.toThrow(/bad\.json.*invalid JSON/);
+  });
 });

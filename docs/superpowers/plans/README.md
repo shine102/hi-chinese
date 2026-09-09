@@ -30,3 +30,8 @@ Findings from source verification (2026-09-09) that adjust the spec:
   Hanzi Writer's `CharacterJson` shape directly; no conversion needed.
 - Cloudflare's Vitest integration (`@cloudflare/vitest-plugin`) requires
   Vitest 4.1.x, so the whole workspace pins Vitest 4.1.
+- Spec §3 lists `related word ids` on GrammarPoint; Phase 1 omits the
+  field (no consumer yet). The validator therefore checks grammar →
+  sentence references only; grammar → word references are covered
+  indirectly because every example sentence's words are validated.
+  Revisit if Phase 3 needs it.
