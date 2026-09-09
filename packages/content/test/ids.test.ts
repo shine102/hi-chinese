@@ -36,6 +36,11 @@ describe('ids', () => {
       unitId: '',
     });
     const words = [w('你', 1, 5), w('了', 2, 1), w('是', 1, 3), w('我', 1, 2)];
-    expect([...words].sort(compareWords).map((x) => x.simplified)).toEqual(['我', '是', '你', '了']);
+    expect([...words].sort(compareWords).map((x) => x.simplified)).toEqual([
+      '我',
+      '是',
+      '你',
+      '了',
+    ]);
   });
 });

@@ -60,7 +60,9 @@ describe('assembleContent', () => {
       dictionaryText: [dictionaryLine('我'), dictionaryLine('是')].join('\n'),
       graphicsText: [graphicsLine('我'), graphicsLine('是')].join('\n'),
       authored: authored({
-        sentences: [{ id: 's1', zh: '我是。', pinyin: 'Wǒ shì.', en: 'I am.', words: ['我', '是'] }],
+        sentences: [
+          { id: 's1', zh: '我是。', pinyin: 'Wǒ shì.', en: 'I am.', words: ['我', '是'] },
+        ],
         grammar: [
           {
             id: 'g1',
@@ -92,7 +94,13 @@ describe('assembleContent', () => {
       graphicsText: [graphicsLine('我'), graphicsLine('是')].join('\n'),
       authored: authored({
         sentences: [
-          { id: 's1', zh: '我是猫。', pinyin: 'Wǒ shì māo.', en: 'I am a cat.', words: ['我', '是', '猫'] },
+          {
+            id: 's1',
+            zh: '我是猫。',
+            pinyin: 'Wǒ shì māo.',
+            en: 'I am a cat.',
+            words: ['我', '是', '猫'],
+          },
         ],
       }),
     };
