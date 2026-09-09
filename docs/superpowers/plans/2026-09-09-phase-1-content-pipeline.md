@@ -12,7 +12,7 @@
 
 ## Global Constraints
 
-- Package manager is pnpm 10 via corepack (`corepack enable && corepack prepare pnpm@10.9.7 --activate`). Never commit `package-lock.json`.
+- Package manager is pnpm 10 via corepack (`corepack enable && corepack prepare pnpm@10.34.5 --activate`). Never commit `package-lock.json`.
 - Vitest is pinned to `4.1.x` everywhere (Cloudflare's test plugin, used in Phase 2, requires it).
 - TypeScript `strict: true`, ES modules only (`"type": "module"`), target ES2022, `moduleResolution: "bundler"`.
 - `packages/content` has zero runtime dependencies. Dev dependencies only.
@@ -97,7 +97,7 @@ apps/web/public/content/           git-ignored build output (directory created b
 
 ```bash
 cd /home/shine/work/code/hi-chinese
-corepack enable && corepack prepare pnpm@10.9.7 --activate && pnpm --version
+corepack enable && corepack prepare pnpm@10.34.5 --activate && pnpm --version
 ```
 
 `package.json`:
@@ -107,7 +107,7 @@ corepack enable && corepack prepare pnpm@10.9.7 --activate && pnpm --version
   "name": "hi-chinese",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@10.9.7",
+  "packageManager": "pnpm@10.34.5",
   "engines": { "node": ">=22" },
   "scripts": {
     "test": "pnpm -r --if-present test",
@@ -2309,7 +2309,7 @@ Roadmap: `docs/superpowers/plans/README.md`.
 
 ## Setup
 
-    corepack enable && corepack prepare pnpm@10.9.7 --activate
+    corepack enable && corepack prepare pnpm@10.34.5 --activate
     pnpm install
 
 ## Content
