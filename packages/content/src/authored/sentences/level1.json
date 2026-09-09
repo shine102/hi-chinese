@@ -1,0 +1,58 @@
+[
+  {
+    "id": "s:l1:001",
+    "zh": "这是我的。",
+    "pinyin": "Zhè shì wǒ de.",
+    "en": "This is mine.",
+    "words": ["这", "是", "我", "的"]
+  },
+  {
+    "id": "s:l1:002",
+    "zh": "我有这个。",
+    "pinyin": "Wǒ yǒu zhège.",
+    "en": "I have this one.",
+    "words": ["我", "有", "这", "个"]
+  },
+  {
+    "id": "s:l1:003",
+    "zh": "他不在。",
+    "pinyin": "Tā bú zài.",
+    "en": "He is not here.",
+    "words": ["他", "不", "在"]
+  },
+  {
+    "id": "s:l1:004",
+    "zh": "我不是你。",
+    "pinyin": "Wǒ bú shì nǐ.",
+    "en": "I am not you.",
+    "words": ["我", "不", "是", "你"]
+  },
+  {
+    "id": "s:l1:005",
+    "zh": "你是不是他？",
+    "pinyin": "Nǐ shì bu shì tā?",
+    "en": "Are you him?",
+    "words": ["你", "是", "不", "是", "他"]
+  },
+  {
+    "id": "s:l1:006",
+    "zh": "你在不在？",
+    "pinyin": "Nǐ zài bu zài?",
+    "en": "Are you there?",
+    "words": ["你", "在", "不", "在"]
+  },
+  {
+    "id": "s:l1:007",
+    "zh": "他有了。",
+    "pinyin": "Tā yǒu le.",
+    "en": "He has it now.",
+    "words": ["他", "有", "了"]
+  },
+  {
+    "id": "s:l1:008",
+    "zh": "这个是你的。",
+    "pinyin": "Zhège shì nǐ de.",
+    "en": "This one is yours.",
+    "words": ["这", "个", "是", "你", "的"]
+  }
+]

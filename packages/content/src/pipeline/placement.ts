@@ -1,7 +1,20 @@
-import type { AuthoredGrammar, AuthoredSentence, GrammarPoint, Sentence, Unit, Word } from '../types.js';
+import type {
+  AuthoredGrammar,
+  AuthoredSentence,
+  GrammarPoint,
+  Sentence,
+  Unit,
+  Word,
+} from '../types.js';
 
 export interface PlacementError {
-  kind: 'unknown-token' | 'token-mismatch' | 'duplicate-id' | 'missing-sentence' | 'level-mismatch' | 'overflow';
+  kind:
+    | 'unknown-token'
+    | 'token-mismatch'
+    | 'duplicate-id'
+    | 'missing-sentence'
+    | 'level-mismatch'
+    | 'overflow';
   ref: string;
   message: string;
 }
@@ -21,20 +34,32 @@ export function placeSentences(
 
   for (const s of authored) {
     if (seen.has(s.id)) {
-      errors.push({ kind: 'duplicate-id', ref: s.id, message: `sentence id ${s.id} appears more than once` });
+      errors.push({
+        kind: 'duplicate-id',
+        ref: s.id,
+        message: `sentence id ${s.id} appears more than once`,
+      });
       continue;
     }
     seen.add(s.id);
 
     const unknown = s.words.filter((t) => !wordBySimplified.has(t));
     if (unknown.length > 0) {
-      errors.push({ kind: 'unknown-token', ref: s.id, message: `${s.id}: not course words: ${unknown.join(' ')}` });
+      errors.push({
+        kind: 'unknown-token',
+        ref: s.id,
+        message: `${s.id}: not course words: ${unknown.join(' ')}`,
+      });
       continue;
     }
     const joined = s.words.join('');
     const han = s.zh.replace(NON_HAN, '');
     if (joined !== han) {
-      errors.push({ kind: 'token-mismatch', ref: s.id, message: `${s.id}: tokens "${joined}" do not spell "${han}"` });
+      errors.push({
+        kind: 'token-mismatch',
+        ref: s.id,
+        message: `${s.id}: tokens "${joined}" do not spell "${han}"`,
+      });
       continue;
     }
 
@@ -47,7 +72,11 @@ export function placeSentences(
       if (u && (!latest || u.order > latest.order)) latest = u;
     }
     if (!latest) {
-      errors.push({ kind: 'unknown-token', ref: s.id, message: `${s.id}: words are not assigned to any unit` });
+      errors.push({
+        kind: 'unknown-token',
+        ref: s.id,
+        message: `${s.id}: words are not assigned to any unit`,
+      });
       continue;
     }
     sentences.push({ id: s.id, zh: s.zh, pinyin: s.pinyin, en: s.en, wordIds, unitId: latest.id });
@@ -71,13 +100,21 @@ export function placeGrammar(
   const pending: { point: GrammarPoint; unitIndex: number }[] = [];
   for (const g of authored) {
     if (seen.has(g.id)) {
-      errors.push({ kind: 'duplicate-id', ref: g.id, message: `grammar id ${g.id} appears more than once` });
+      errors.push({
+        kind: 'duplicate-id',
+        ref: g.id,
+        message: `grammar id ${g.id} appears more than once`,
+      });
       continue;
     }
     seen.add(g.id);
     const missing = g.examples.filter((id) => !sentenceById.has(id));
     if (missing.length > 0) {
-      errors.push({ kind: 'missing-sentence', ref: g.id, message: `${g.id}: unknown example sentences: ${missing.join(', ')}` });
+      errors.push({
+        kind: 'missing-sentence',
+        ref: g.id,
+        message: `${g.id}: unknown example sentences: ${missing.join(', ')}`,
+      });
       continue;
     }
     let latest: Unit | undefined;
@@ -85,10 +122,16 @@ export function placeGrammar(
       const u = unitById.get(sentenceById.get(id)!.unitId);
       if (u && (!latest || u.order > latest.order)) latest = u;
     }
-    let unitIndex = latest ? ordered.indexOf(latest) : ordered.findIndex((u) => u.level === g.level);
+    let unitIndex = latest
+      ? ordered.indexOf(latest)
+      : ordered.findIndex((u) => u.level === g.level);
     const natural = ordered[unitIndex];
     if (!natural) {
-      errors.push({ kind: 'level-mismatch', ref: g.id, message: `${g.id}: no units exist for level ${g.level}` });
+      errors.push({
+        kind: 'level-mismatch',
+        ref: g.id,
+        message: `${g.id}: no units exist for level ${g.level}`,
+      });
       continue;
     }
     if (natural.level > g.level) {
@@ -101,7 +144,15 @@ export function placeGrammar(
     }
     if (natural.level < g.level) unitIndex = ordered.findIndex((u) => u.level === g.level);
     pending.push({
-      point: { id: g.id, title: g.title, pattern: g.pattern, explanation: g.explanation, level: g.level, sentenceIds: [...g.examples], unitId: '' },
+      point: {
+        id: g.id,
+        title: g.title,
+        pattern: g.pattern,
+        explanation: g.explanation,
+        level: g.level,
+        sentenceIds: [...g.examples],
+        unitId: '',
+      },
       unitIndex,
     });
   }
@@ -114,7 +165,11 @@ export function placeGrammar(
     let i = unitIndex;
     while (i < ordered.length && (counts.get(i) ?? 0) >= maxPerUnit) i += 1;
     if (i >= ordered.length) {
-      errors.push({ kind: 'overflow', ref: point.id, message: `${point.id}: no unit left with fewer than ${maxPerUnit} grammar points` });
+      errors.push({
+        kind: 'overflow',
+        ref: point.id,
+        message: `${point.id}: no unit left with fewer than ${maxPerUnit} grammar points`,
+      });
       continue;
     }
     counts.set(i, (counts.get(i) ?? 0) + 1);
@@ -123,10 +178,20 @@ export function placeGrammar(
   return { grammar, errors };
 }
 
-export function attachToUnits(units: Unit[], sentences: Sentence[], grammar: GrammarPoint[]): Unit[] {
+export function attachToUnits(
+  units: Unit[],
+  sentences: Sentence[],
+  grammar: GrammarPoint[],
+): Unit[] {
   return units.map((u) => ({
     ...u,
-    sentenceIds: sentences.filter((s) => s.unitId === u.id).map((s) => s.id).sort(),
-    grammarIds: grammar.filter((g) => g.unitId === u.id).map((g) => g.id).sort(),
+    sentenceIds: sentences
+      .filter((s) => s.unitId === u.id)
+      .map((s) => s.id)
+      .sort(),
+    grammarIds: grammar
+      .filter((g) => g.unitId === u.id)
+      .map((g) => g.id)
+      .sort(),
   }));
 }

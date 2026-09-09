@@ -32,17 +32,23 @@ export function mergeForms(forms: RawHskForm[]): RawHskForm[] {
     const key = f.transcriptions.numeric;
     const existing = byNumeric.get(key);
     if (!existing) {
-      byNumeric.set(key, { ...f, meanings: [...f.meanings], classifiers: [...(f.classifiers ?? [])] });
+      byNumeric.set(key, {
+        ...f,
+        meanings: [...f.meanings],
+        classifiers: [...(f.classifiers ?? [])],
+      });
       continue;
     }
     for (const m of f.meanings) if (!existing.meanings.includes(m)) existing.meanings.push(m);
-    for (const c of f.classifiers ?? []) if (!existing.classifiers!.includes(c)) existing.classifiers!.push(c);
+    for (const c of f.classifiers ?? [])
+      if (!existing.classifiers!.includes(c)) existing.classifiers!.push(c);
   }
   return [...byNumeric.values()];
 }
 
 // Meanings that describe a rare or non-lexical reading, not the everyday one.
-const WEAK_MEANING = /^(surname |variant of |old variant of |see |used in |erhua variant|\(old\)|abbr\. for )/i;
+const WEAK_MEANING =
+  /^(surname |variant of |old variant of |see |used in |erhua variant|\(old\)|abbr\. for )/i;
 
 function readingScore(form: RawHskForm): number {
   let score = form.meanings.filter((m) => !WEAK_MEANING.test(m)).length;
@@ -110,7 +116,9 @@ export function parseHskWords(entries: RawHskEntry[], overrides: PinyinOverrides
   }
   words.sort(
     (a, b) =>
-      a.level - b.level || a.frequency - b.frequency || a.simplified.localeCompare(b.simplified, 'zh'),
+      a.level - b.level ||
+      a.frequency - b.frequency ||
+      a.simplified.localeCompare(b.simplified, 'zh'),
   );
   return words;
 }

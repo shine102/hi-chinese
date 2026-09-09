@@ -82,7 +82,13 @@ describe('mergeForms', () => {
   it('merges forms sharing the same numeric pinyin and dedupes meanings', () => {
     const merged = mergeForms(shuo.forms);
     expect(merged.map((f) => f.transcriptions.numeric)).toEqual(['shui4', 'shuo1']);
-    expect(merged[1]!.meanings).toEqual(['to speak', 'to say', 'to explain', 'to scold', 'variant of 說']);
+    expect(merged[1]!.meanings).toEqual([
+      'to speak',
+      'to say',
+      'to explain',
+      'to scold',
+      'variant of 說',
+    ]);
   });
 });
 
@@ -122,7 +128,11 @@ describe('normalizeWord', () => {
     });
     expect(w.meanings).toHaveLength(3);
     expect(w.alternates).toEqual([
-      { pinyin: 'liǎo', pinyinNumeric: 'liao3', meanings: ['to finish', 'to settle', 'to understand', 'clear'] },
+      {
+        pinyin: 'liǎo',
+        pinyinNumeric: 'liao3',
+        meanings: ['to finish', 'to settle', 'to understand', 'clear'],
+      },
     ]);
   });
   it('keeps classifiers and multi-character words', () => {
@@ -138,7 +148,10 @@ describe('normalizeWord', () => {
 
 describe('parseHskWords', () => {
   it('filters, dedupes by simplified, and sorts by level, frequency, simplified', () => {
-    const words = parseHskWords([levelFour, aihao, shuo, { ...shuo }, le, { ...ye, level: ['new-2'] }], {});
+    const words = parseHskWords(
+      [levelFour, aihao, shuo, { ...shuo }, le, { ...ye, level: ['new-2'] }],
+      {},
+    );
     expect(words.map((w) => w.simplified)).toEqual(['了', '说', '爱好', '也']);
   });
 });

@@ -6,13 +6,13 @@ The spec is implemented in phases. Each phase has its own plan and ends with
 working, testable software. Later plans are written when the previous phase
 lands, so they reference real code rather than guesses.
 
-| Phase | Plan | Delivers |
-|-------|------|----------|
-| 1 | `2026-09-09-phase-1-content-pipeline.md` | pnpm workspace, shared content types, fetch/normalize/assign/validate/build pipeline emitting JSON chunks, seed authored content |
-| 2 | phase-2-worker-sync (to write) | Cloudflare Worker (Hono), D1 schema + migrations, passphrase auth, `POST /api/sync`, Vitest + Miniflare tests |
-| 3 | phase-3-web-core (to write) | React PWA shell, routing, content loading, Dexie tables + outbox, path screen, learn step, exercise engine + practice session, audio, sync client, install/offline |
-| 4 | phase-4-review-writing (to write) | FSRS review deck and session, Hanzi Writer integration (learn sheet, write-it exercise, write-from-memory review), character page, streak |
-| 5 | phase-5-content-authoring (to write) | Grammar points and example sentences for every unit, produced in reviewed batches, readings review for multi-pronunciation words |
+| Phase | Plan                                     | Delivers                                                                                                                                                           |
+| ----- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1     | `2026-09-09-phase-1-content-pipeline.md` | pnpm workspace, shared content types, fetch/normalize/assign/validate/build pipeline emitting JSON chunks, seed authored content                                   |
+| 2     | phase-2-worker-sync (to write)           | Cloudflare Worker (Hono), D1 schema + migrations, passphrase auth, `POST /api/sync`, Vitest + Miniflare tests                                                      |
+| 3     | phase-3-web-core (to write)              | React PWA shell, routing, content loading, Dexie tables + outbox, path screen, learn step, exercise engine + practice session, audio, sync client, install/offline |
+| 4     | phase-4-review-writing (to write)        | FSRS review deck and session, Hanzi Writer integration (learn sheet, write-it exercise, write-from-memory review), character page, streak                          |
+| 5     | phase-5-content-authoring (to write)     | Grammar points and example sentences for every unit, produced in reviewed batches, readings review for multi-pronunciation words                                   |
 
 Findings from source verification (2026-09-09) that adjust the spec:
 

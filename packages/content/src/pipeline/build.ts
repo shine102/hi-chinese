@@ -14,14 +14,25 @@ const LEVEL_TITLES: Record<HskLevel, string> = { 1: 'HSK 1', 2: 'HSK 2', 3: 'HSK
 
 function sortWords(words: Word[]): Word[] {
   return [...words].sort(
-    (a, b) => a.level - b.level || a.frequency - b.frequency || a.simplified.localeCompare(b.simplified, 'zh'),
+    (a, b) =>
+      a.level - b.level ||
+      a.frequency - b.frequency ||
+      a.simplified.localeCompare(b.simplified, 'zh'),
   );
 }
 
-export function buildManifest(bundle: ContentBundle, version: string, generatedAt: string): ContentManifest {
+export function buildManifest(
+  bundle: ContentBundle,
+  version: string,
+  generatedAt: string,
+): ContentManifest {
   const units = [...bundle.units].sort((a, b) => a.order - b.order);
   const levels = ([1, 2, 3] as HskLevel[])
-    .map((level) => ({ level, title: LEVEL_TITLES[level], unitIds: units.filter((u) => u.level === level).map((u) => u.id) }))
+    .map((level) => ({
+      level,
+      title: LEVEL_TITLES[level],
+      unitIds: units.filter((u) => u.level === level).map((u) => u.id),
+    }))
     .filter((l) => l.unitIds.length > 0);
   return {
     version,
@@ -63,9 +74,11 @@ export async function writeContent(
   files.push({ path: 'words.json', body: json(sortWords(bundle.words)) });
 
   const grammarByUnit = new Map<string, typeof bundle.grammar>();
-  for (const g of bundle.grammar) grammarByUnit.set(g.unitId, [...(grammarByUnit.get(g.unitId) ?? []), g]);
+  for (const g of bundle.grammar)
+    grammarByUnit.set(g.unitId, [...(grammarByUnit.get(g.unitId) ?? []), g]);
   const sentencesByUnit = new Map<string, typeof bundle.sentences>();
-  for (const s of bundle.sentences) sentencesByUnit.set(s.unitId, [...(sentencesByUnit.get(s.unitId) ?? []), s]);
+  for (const s of bundle.sentences)
+    sentencesByUnit.set(s.unitId, [...(sentencesByUnit.get(s.unitId) ?? []), s]);
 
   for (const unit of [...bundle.units].sort((a, b) => a.order - b.order)) {
     const chunk: UnitChunk = {
@@ -75,8 +88,13 @@ export async function writeContent(
     };
     files.push({ path: join('units', `${unit.id}.json`), body: json(chunk) });
   }
-  for (const c of [...bundle.characters].sort((a, b) => a.character.localeCompare(b.character, 'zh'))) {
-    files.push({ path: join('characters', `${characterFileName(c.character)}.json`), body: json(c) });
+  for (const c of [...bundle.characters].sort((a, b) =>
+    a.character.localeCompare(b.character, 'zh'),
+  )) {
+    files.push({
+      path: join('characters', `${characterFileName(c.character)}.json`),
+      body: json(c),
+    });
   }
 
   const version = computeVersion(files.map((f) => `${f.path}\n${f.body}`));

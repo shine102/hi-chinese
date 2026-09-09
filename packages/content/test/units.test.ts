@@ -56,7 +56,9 @@ describe('assignUnits', () => {
   });
 
   it('uses defaults of 12 words per unit and a minimum last unit of 6', () => {
-    const many = Array.from({ length: 29 }, (_, i) => mk(String.fromCodePoint(0x4e00 + i), 1, i + 1));
+    const many = Array.from({ length: 29 }, (_, i) =>
+      mk(String.fromCodePoint(0x4e00 + i), 1, i + 1),
+    );
     const { units } = assignUnits(many);
     expect(units.map((u) => u.wordIds.length)).toEqual([12, 17]);
   });

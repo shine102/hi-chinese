@@ -20,7 +20,11 @@ describe('fetchRaw', () => {
       return `content of ${url}`;
     };
     const paths = await fetchRaw(dir, download, () => {});
-    expect(calls.sort()).toEqual(Object.values(SOURCES).map((s) => s.url).sort());
+    expect(calls.sort()).toEqual(
+      Object.values(SOURCES)
+        .map((s) => s.url)
+        .sort(),
+    );
     expect(paths.hsk).toBe(join(dir, 'complete.json'));
     expect(await readFile(paths.graphics, 'utf8')).toBe(`content of ${SOURCES.graphics.url}`);
   });

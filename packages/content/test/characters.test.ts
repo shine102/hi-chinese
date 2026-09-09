@@ -32,7 +32,11 @@ const word = (simplified: string, characters: string[]): Word => ({
 
 describe('parseJsonLines', () => {
   it('parses one JSON object per non-empty line', () => {
-    expect(parseJsonLines<{ character: string }>(dictionary).map((e) => e.character)).toEqual(['你', '好', '⺀']);
+    expect(parseJsonLines<{ character: string }>(dictionary).map((e) => e.character)).toEqual([
+      '你',
+      '好',
+      '⺀',
+    ]);
   });
 });
 
@@ -47,7 +51,16 @@ describe('buildCharacters', () => {
     expect(characters[0]).toEqual({
       character: '你',
       strokes: ['M 1 1 L 2 2', 'M 3 3 L 4 4'],
-      medians: [[[1, 1], [2, 2]], [[3, 3], [4, 4]]],
+      medians: [
+        [
+          [1, 1],
+          [2, 2],
+        ],
+        [
+          [3, 3],
+          [4, 4],
+        ],
+      ],
       pinyin: ['nǐ'],
       definition: 'you, second person pronoun',
       radical: '亻',
@@ -58,6 +71,12 @@ describe('buildCharacters', () => {
 
   it('uses null definition and empty fields when the dictionary lacks the character', () => {
     const { characters } = buildCharacters('', graphics, [word('你', ['你'])]);
-    expect(characters[0]).toMatchObject({ character: '你', definition: null, pinyin: [], radical: '', decomposition: '' });
+    expect(characters[0]).toMatchObject({
+      character: '你',
+      definition: null,
+      pinyin: [],
+      radical: '',
+      decomposition: '',
+    });
   });
 });

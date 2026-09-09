@@ -8,17 +8,103 @@ import type { ContentBundle } from '../src/types.js';
 function bundle(): ContentBundle {
   return {
     units: [
-      { id: 'l1-u01', level: 1, order: 1, title: 'Unit 1', wordIds: ['w:我', 'w:是'], grammarIds: ['g1'], sentenceIds: ['s1'] },
-      { id: 'l2-u01', level: 2, order: 2, title: 'Unit 1', wordIds: ['w:你'], grammarIds: [], sentenceIds: [] },
+      {
+        id: 'l1-u01',
+        level: 1,
+        order: 1,
+        title: 'Unit 1',
+        wordIds: ['w:我', 'w:是'],
+        grammarIds: ['g1'],
+        sentenceIds: ['s1'],
+      },
+      {
+        id: 'l2-u01',
+        level: 2,
+        order: 2,
+        title: 'Unit 1',
+        wordIds: ['w:你'],
+        grammarIds: [],
+        sentenceIds: [],
+      },
     ],
     words: [
-      { id: 'w:我', simplified: '我', traditional: '我', pinyin: 'wǒ', pinyinNumeric: 'wo3', meanings: ['I'], alternates: [], pos: ['r'], classifiers: [], level: 1, frequency: 3, characters: ['我'], unitId: 'l1-u01' },
-      { id: 'w:是', simplified: '是', traditional: '是', pinyin: 'shì', pinyinNumeric: 'shi4', meanings: ['to be'], alternates: [], pos: ['v'], classifiers: [], level: 1, frequency: 4, characters: ['是'], unitId: 'l1-u01' },
-      { id: 'w:你', simplified: '你', traditional: '你', pinyin: 'nǐ', pinyinNumeric: 'ni3', meanings: ['you'], alternates: [], pos: ['r'], classifiers: [], level: 2, frequency: 5, characters: ['你'], unitId: 'l2-u01' },
+      {
+        id: 'w:我',
+        simplified: '我',
+        traditional: '我',
+        pinyin: 'wǒ',
+        pinyinNumeric: 'wo3',
+        meanings: ['I'],
+        alternates: [],
+        pos: ['r'],
+        classifiers: [],
+        level: 1,
+        frequency: 3,
+        characters: ['我'],
+        unitId: 'l1-u01',
+      },
+      {
+        id: 'w:是',
+        simplified: '是',
+        traditional: '是',
+        pinyin: 'shì',
+        pinyinNumeric: 'shi4',
+        meanings: ['to be'],
+        alternates: [],
+        pos: ['v'],
+        classifiers: [],
+        level: 1,
+        frequency: 4,
+        characters: ['是'],
+        unitId: 'l1-u01',
+      },
+      {
+        id: 'w:你',
+        simplified: '你',
+        traditional: '你',
+        pinyin: 'nǐ',
+        pinyinNumeric: 'ni3',
+        meanings: ['you'],
+        alternates: [],
+        pos: ['r'],
+        classifiers: [],
+        level: 2,
+        frequency: 5,
+        characters: ['你'],
+        unitId: 'l2-u01',
+      },
     ],
-    characters: ['我', '是', '你'].map((c) => ({ character: c, strokes: ['M 0 0'], medians: [[[0, 0]]], pinyin: [], definition: null, radical: '', decomposition: '', wordIds: [`w:${c}`] })),
-    grammar: [{ id: 'g1', title: 't', pattern: 'p', explanation: 'e', level: 1, sentenceIds: ['s1'], unitId: 'l1-u01' }],
-    sentences: [{ id: 's1', zh: '我是。', pinyin: 'Wǒ shì.', en: 'I am.', wordIds: ['w:我', 'w:是'], unitId: 'l1-u01' }],
+    characters: ['我', '是', '你'].map((c) => ({
+      character: c,
+      strokes: ['M 0 0'],
+      medians: [[[0, 0]]],
+      pinyin: [],
+      definition: null,
+      radical: '',
+      decomposition: '',
+      wordIds: [`w:${c}`],
+    })),
+    grammar: [
+      {
+        id: 'g1',
+        title: 't',
+        pattern: 'p',
+        explanation: 'e',
+        level: 1,
+        sentenceIds: ['s1'],
+        unitId: 'l1-u01',
+      },
+    ],
+    sentences: [
+      {
+        id: 's1',
+        zh: '我是。',
+        pinyin: 'Wǒ shì.',
+        en: 'I am.',
+        wordIds: ['w:我', 'w:是'],
+        unitId: 'l1-u01',
+      },
+    ],
   };
 }
 
@@ -60,9 +146,18 @@ describe('writeContent', () => {
 
   it('writes manifest, words, unit chunks and character chunks', async () => {
     const manifest = await writeContent(bundle(), dir, () => new Date('2026-09-09T00:00:00.000Z'));
-    expect((await readdir(dir)).sort()).toEqual(['characters', 'manifest.json', 'units', 'words.json']);
+    expect((await readdir(dir)).sort()).toEqual([
+      'characters',
+      'manifest.json',
+      'units',
+      'words.json',
+    ]);
     expect((await readdir(join(dir, 'units'))).sort()).toEqual(['l1-u01.json', 'l2-u01.json']);
-    expect((await readdir(join(dir, 'characters'))).sort()).toEqual(['4f60.json', '6211.json', '662f.json']);
+    expect((await readdir(join(dir, 'characters'))).sort()).toEqual([
+      '4f60.json',
+      '6211.json',
+      '662f.json',
+    ]);
     const chunk = JSON.parse(await readFile(join(dir, 'units', 'l1-u01.json'), 'utf8'));
     expect(chunk.unit.id).toBe('l1-u01');
     expect(chunk.grammar.map((g: { id: string }) => g.id)).toEqual(['g1']);

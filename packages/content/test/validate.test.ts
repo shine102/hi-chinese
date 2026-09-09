@@ -1,28 +1,86 @@
 import { describe, expect, it } from 'vitest';
 import { validateContent } from '../src/pipeline/validate.js';
-import type { CharacterData, ContentBundle, GrammarPoint, Sentence, Unit, Word } from '../src/types.js';
+import type {
+  CharacterData,
+  ContentBundle,
+  GrammarPoint,
+  Sentence,
+  Unit,
+  Word,
+} from '../src/types.js';
 
 const word = (s: string, unitId: string, over: Partial<Word> = {}): Word => ({
-  id: `w:${s}`, simplified: s, traditional: s, pinyin: 'x', pinyinNumeric: 'x1', meanings: ['m'],
-  alternates: [], pos: [], classifiers: [], level: 1, frequency: 1, characters: [...s], unitId, ...over,
+  id: `w:${s}`,
+  simplified: s,
+  traditional: s,
+  pinyin: 'x',
+  pinyinNumeric: 'x1',
+  meanings: ['m'],
+  alternates: [],
+  pos: [],
+  classifiers: [],
+  level: 1,
+  frequency: 1,
+  characters: [...s],
+  unitId,
+  ...over,
 });
 const char = (c: string, over: Partial<CharacterData> = {}): CharacterData => ({
-  character: c, strokes: ['M 0 0'], medians: [[[0, 0]]], pinyin: [], definition: null, radical: '', decomposition: '', wordIds: [], ...over,
+  character: c,
+  strokes: ['M 0 0'],
+  medians: [[[0, 0]]],
+  pinyin: [],
+  definition: null,
+  radical: '',
+  decomposition: '',
+  wordIds: [],
+  ...over,
 });
 
 function bundle(): ContentBundle {
   const units: Unit[] = [
-    { id: 'l1-u01', level: 1, order: 1, title: 'Unit 1', wordIds: ['w:我', 'w:是'], grammarIds: ['g1'], sentenceIds: ['s1'] },
-    { id: 'l1-u02', level: 1, order: 2, title: 'Unit 2', wordIds: ['w:你'], grammarIds: [], sentenceIds: ['s2'] },
+    {
+      id: 'l1-u01',
+      level: 1,
+      order: 1,
+      title: 'Unit 1',
+      wordIds: ['w:我', 'w:是'],
+      grammarIds: ['g1'],
+      sentenceIds: ['s1'],
+    },
+    {
+      id: 'l1-u02',
+      level: 1,
+      order: 2,
+      title: 'Unit 2',
+      wordIds: ['w:你'],
+      grammarIds: [],
+      sentenceIds: ['s2'],
+    },
   ];
   const words = [word('我', 'l1-u01'), word('是', 'l1-u01'), word('你', 'l1-u02')];
   const characters = [char('我'), char('是'), char('你')];
   const sentences: Sentence[] = [
     { id: 's1', zh: '我是。', pinyin: 'x', en: 'x', wordIds: ['w:我', 'w:是'], unitId: 'l1-u01' },
-    { id: 's2', zh: '你是我。', pinyin: 'x', en: 'x', wordIds: ['w:你', 'w:是', 'w:我'], unitId: 'l1-u02' },
+    {
+      id: 's2',
+      zh: '你是我。',
+      pinyin: 'x',
+      en: 'x',
+      wordIds: ['w:你', 'w:是', 'w:我'],
+      unitId: 'l1-u02',
+    },
   ];
   const grammar: GrammarPoint[] = [
-    { id: 'g1', title: 't', pattern: 'p', explanation: 'e', level: 1, sentenceIds: ['s1'], unitId: 'l1-u01' },
+    {
+      id: 'g1',
+      title: 't',
+      pattern: 'p',
+      explanation: 'e',
+      level: 1,
+      sentenceIds: ['s1'],
+      unitId: 'l1-u01',
+    },
   ];
   return { words, characters, units, grammar, sentences };
 }
@@ -54,7 +112,12 @@ describe('validateContent', () => {
     const b = bundle();
     b.characters = [char('我'), char('是', { medians: [] })];
     const errs = validateContent(b);
-    expect(errs.map((e) => [e.rule, e.ref])).toEqual(expect.arrayContaining([['char-missing', '你'], ['char-strokes', '是']]));
+    expect(errs.map((e) => [e.rule, e.ref])).toEqual(
+      expect.arrayContaining([
+        ['char-missing', '你'],
+        ['char-strokes', '是'],
+      ]),
+    );
   });
   it('rejects sentences using words from later units or unknown words', () => {
     const b = bundle();
