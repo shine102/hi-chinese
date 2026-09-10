@@ -35,8 +35,9 @@ function readRecord(v: unknown, path: string): Record<string, unknown> {
   return v;
 }
 
-function readString(v: unknown, path: string): string {
+function readString(v: unknown, path: string, maxLen = Infinity): string {
   if (typeof v !== 'string' || v.length === 0) fail(path, 'expected non-empty string');
+  if (v.length > maxLen) fail(path, `expected string of at most ${maxLen} chars`);
   return v;
 }
 
@@ -46,9 +47,10 @@ function readInt(v: unknown, path: string, min: number): number {
   return v;
 }
 
-function readIntOrNull(v: unknown, path: string): number | null {
+function readIntOrNull(v: unknown, path: string, min = -Infinity): number | null {
   if (v === null) return null;
-  if (typeof v !== 'number' || !Number.isSafeInteger(v)) fail(path, 'expected integer or null');
+  if (typeof v !== 'number' || !Number.isSafeInteger(v) || v < min)
+    fail(path, min === -Infinity ? 'expected integer or null' : `expected integer >= ${min} or null`);
   return v;
 }
 
@@ -75,9 +77,9 @@ function parseUnitProgress(v: unknown, path: string): UnitProgressRow {
   if (status !== 'in-progress' && status !== 'completed')
     fail(`${path}.status`, 'expected in-progress or completed');
   return {
-    unitId: readString(obj['unitId'], `${path}.unitId`),
+    unitId: readString(obj['unitId'], `${path}.unitId`, 200),
     status: status as UnitStatus,
-    completedAt: readIntOrNull(obj['completedAt'], `${path}.completedAt`),
+    completedAt: readIntOrNull(obj['completedAt'], `${path}.completedAt`, 0),
     updatedAt: readInt(obj['updatedAt'], `${path}.updatedAt`, 1),
   };
 }
@@ -91,10 +93,10 @@ function parseFsrs(v: unknown, path: string): FsrsState {
     due: readNumber(obj['due'], `${path}.due`),
     stability: readNumber(obj['stability'], `${path}.stability`),
     difficulty: readNumber(obj['difficulty'], `${path}.difficulty`),
-    scheduledDays: readNumber(obj['scheduledDays'], `${path}.scheduledDays`),
-    learningSteps: readNumber(obj['learningSteps'], `${path}.learningSteps`),
-    reps: readNumber(obj['reps'], `${path}.reps`),
-    lapses: readNumber(obj['lapses'], `${path}.lapses`),
+    scheduledDays: readInt(obj['scheduledDays'], `${path}.scheduledDays`, 0),
+    learningSteps: readInt(obj['learningSteps'], `${path}.learningSteps`, 0),
+    reps: readInt(obj['reps'], `${path}.reps`, 0),
+    lapses: readInt(obj['lapses'], `${path}.lapses`, 0),
     state: state as 0 | 1 | 2 | 3,
     lastReview: readNumberOrNull(obj['lastReview'], `${path}.lastReview`),
   };
@@ -102,7 +104,7 @@ function parseFsrs(v: unknown, path: string): FsrsState {
 
 function parseCard(v: unknown, path: string): CardRow {
   const obj = readRecord(v, path);
-  const cardId = readString(obj['cardId'], `${path}.cardId`);
+  const cardId = readString(obj['cardId'], `${path}.cardId`, 200);
   const parsed = parseCardId(cardId);
   if (parsed === null) fail(`${path}.cardId`, 'malformed card id');
   if (obj['kind'] !== parsed.kind) fail(`${path}.kind`, 'does not match cardId');
@@ -120,6 +122,14 @@ function parseActivity(v: unknown, path: string): ActivityRow {
   const obj = readRecord(v, path);
   const date = readString(obj['date'], `${path}.date`);
   if (!DATE_RE.test(date)) fail(`${path}.date`, 'expected YYYY-MM-DD');
+  // The regex accepts shapes like 2026-13-45; reject those by round-tripping
+  // through Date and checking it lands back on the same calendar day (an
+  // invalid month/day either yields an Invalid Date or rolls over to a
+  // different date).
+  const parsedDate = new Date(`${date}T00:00:00Z`);
+  if (Number.isNaN(parsedDate.getTime()) || parsedDate.toISOString().slice(0, 10) !== date) {
+    fail(`${path}.date`, 'expected a valid calendar date');
+  }
   return {
     date,
     lessons: readInt(obj['lessons'], `${path}.lessons`, 0),

@@ -90,6 +90,19 @@ describe('parseSyncRequest', () => {
       fail({ ...valid, changes: { ...valid.changes, unitProgress: [{ ...row, unitId: '' }] } }),
     ).toMatch(/unitId/);
   });
+  it('rejects a unitId longer than 200 characters', () => {
+    const row = valid.changes.unitProgress[0]!;
+    const unitId = 'x'.repeat(201);
+    expect(
+      fail({ ...valid, changes: { ...valid.changes, unitProgress: [{ ...row, unitId }] } }),
+    ).toBe('changes.unitProgress[0].unitId: expected string of at most 200 chars');
+  });
+  it('rejects a negative completedAt', () => {
+    const row = valid.changes.unitProgress[0]!;
+    expect(
+      fail({ ...valid, changes: { ...valid.changes, unitProgress: [{ ...row, completedAt: -1 }] } }),
+    ).toMatch(/completedAt/);
+  });
   it('rejects bad card rows', () => {
     const row = valid.changes.cards[0]!;
     expect(
@@ -120,6 +133,29 @@ describe('parseSyncRequest', () => {
       }),
     ).toMatch(/fsrs\.lastReview/);
   });
+  it('rejects a cardId longer than 200 characters', () => {
+    const row = valid.changes.cards[0]!;
+    const cardId = `word-recognition:${'w'.repeat(190)}`;
+    expect(cardId.length).toBeGreaterThan(200);
+    expect(
+      fail({ ...valid, changes: { ...valid.changes, cards: [{ ...row, cardId }] } }),
+    ).toBe('changes.cards[0].cardId: expected string of at most 200 chars');
+  });
+  it('rejects fractional fsrs counters', () => {
+    const row = valid.changes.cards[0]!;
+    expect(
+      fail({
+        ...valid,
+        changes: { ...valid.changes, cards: [{ ...row, fsrs: { ...fsrs, reps: 1.5 } }] },
+      }),
+    ).toMatch(/^changes\.cards\[0\]\.fsrs\.reps: /);
+    expect(
+      fail({
+        ...valid,
+        changes: { ...valid.changes, cards: [{ ...row, fsrs: { ...fsrs, lapses: -1 } }] },
+      }),
+    ).toMatch(/^changes\.cards\[0\]\.fsrs\.lapses: /);
+  });
   it('rejects bad activity rows', () => {
     const row = valid.changes.activity[0]!;
     expect(
@@ -128,6 +164,15 @@ describe('parseSyncRequest', () => {
     expect(
       fail({ ...valid, changes: { ...valid.changes, activity: [{ ...row, lessons: -1 }] } }),
     ).toMatch(/lessons/);
+  });
+  it('rejects a calendar date that does not exist', () => {
+    const row = valid.changes.activity[0]!;
+    expect(
+      fail({
+        ...valid,
+        changes: { ...valid.changes, activity: [{ ...row, date: '2026-13-45' }] },
+      }),
+    ).toMatch(/^changes\.activity\[0\]\.date: /);
   });
   it('rejects oversized batches', () => {
     const many = Array.from({ length: MAX_ROWS_PER_TABLE + 1 }, (_, i) => ({
