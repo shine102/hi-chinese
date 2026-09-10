@@ -20,6 +20,9 @@ importers:
 
   apps/worker:
     dependencies:
+      '@hi-chinese/content':
+        specifier: workspace:*
+        version: link:../../packages/content
       hono:
         specifier: ^4.13.7
         version: 4.13.7
@@ -30,9 +33,6 @@ importers:
       '@cloudflare/workers-types':
         specifier: ^5.20260910.1
         version: 5.20260910.1
-      '@hi-chinese/content':
-        specifier: workspace:*
-        version: link:../../packages/content
       typescript:
         specifier: ~5.9.0
         version: 5.9.3
