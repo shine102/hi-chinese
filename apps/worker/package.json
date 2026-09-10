@@ -1,0 +1,25 @@
+{
+  "name": "@hi-chinese/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p test/tsconfig.json",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply hi-chinese --local",
+    "db:migrate:remote": "wrangler d1 migrations apply hi-chinese --remote"
+  },
+  "dependencies": {
+    "hono": "^4.13.7"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.1.6",
+    "@cloudflare/workers-types": "^5.20260910.1",
+    "@hi-chinese/content": "workspace:*",
+    "typescript": "~5.9.0",
+    "vitest": "~4.1.11",
+    "wrangler": "^4.130.0"
+  }
+}
