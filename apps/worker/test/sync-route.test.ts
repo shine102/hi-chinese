@@ -1,6 +1,19 @@
 import { SELF } from 'cloudflare:test';
+import { env } from 'cloudflare:workers';
 import { emptyChanges, type SyncResponse } from '@hi-chinese/content';
-import { describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it } from 'vitest';
+
+// The Cloudflare vitest plugin isolates storage per test *file*, not per
+// individual test case (this file's tests otherwise share one D1 instance),
+// so reset the tables and sequence counter before every test.
+beforeEach(async () => {
+  await env.DB.batch([
+    env.DB.prepare('DELETE FROM unit_progress'),
+    env.DB.prepare('DELETE FROM cards'),
+    env.DB.prepare('DELETE FROM activity'),
+    env.DB.prepare('UPDATE sync_meta SET seq = 0 WHERE id = 1'),
+  ]);
+});
 
 const post = (body: string, token = 'test-passphrase') =>
   SELF.fetch('https://hi.test/api/sync', {
