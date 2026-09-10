@@ -8,6 +8,14 @@ import {
   type UnitStatus,
 } from '@hi-chinese/content';
 
+// Checked 2026-09-10 against https://developers.cloudflare.com/d1/platform/limits/:
+// D1 documents "Maximum bound parameters per query" (100), "Maximum SQL statement
+// length" (100,000 bytes), and other per-statement limits, all of which apply to
+// each individual statement inside a db.batch() (see the page's "Batch limits"
+// note) — but it documents no maximum on the number of statements in one batch.
+// Since no such limit exists, MAX_ROWS_PER_TABLE stays at 500: applySync's write
+// batch is at most 1 + 3*500 = 1501 statements (one seq bump plus up to 500 rows
+// per table), and the pull batch is always exactly 3 statements (see I1).
 export const MAX_ROWS_PER_TABLE = 500;
 
 export type ParseResult = { ok: true; value: SyncRequest } | { ok: false; error: string };

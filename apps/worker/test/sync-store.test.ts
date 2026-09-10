@@ -7,6 +7,7 @@ import {
   type UnitProgressRow,
 } from '@hi-chinese/content';
 import { beforeEach, describe, expect, it } from 'vitest';
+import { MAX_ROWS_PER_TABLE } from '../src/sync-request.js';
 import { applySync } from '../src/sync-store.js';
 
 // The Cloudflare vitest plugin isolates storage per test *file*, not per
@@ -154,5 +155,35 @@ describe('applySync', () => {
     });
     const res = await applySync(env.DB, { cursor: 0, changes: changes({ cards: [c] }) });
     expect(res.changes.cards).toEqual([c]);
+  });
+
+  it('accepts exactly MAX_ROWS_PER_TABLE rows per table in one push', async () => {
+    const startDate = new Date('2020-01-01T00:00:00Z');
+    const dateAt = (i: number) => {
+      const d = new Date(startDate);
+      d.setUTCDate(d.getUTCDate() + i);
+      return d.toISOString().slice(0, 10);
+    };
+    const unitProgress = Array.from({ length: MAX_ROWS_PER_TABLE }, (_, i) =>
+      unit({ unitId: `l1-u${i}` }),
+    );
+    const cards = Array.from({ length: MAX_ROWS_PER_TABLE }, (_, i) =>
+      card({ cardId: `word-recall:w:x${i}`, kind: 'word-recall' }),
+    );
+    const activityRows = Array.from({ length: MAX_ROWS_PER_TABLE }, (_, i) =>
+      activity({ date: dateAt(i) }),
+    );
+
+    const res = await applySync(env.DB, {
+      cursor: 0,
+      changes: changes({ unitProgress, cards, activity: activityRows }),
+    });
+    expect(res.changes.unitProgress).toHaveLength(MAX_ROWS_PER_TABLE);
+    expect(res.changes.cards).toHaveLength(MAX_ROWS_PER_TABLE);
+    expect(res.changes.activity).toHaveLength(MAX_ROWS_PER_TABLE);
+    expect(res.cursor).toBe(1);
+
+    const pull = await applySync(env.DB, { cursor: res.cursor, changes: emptyChanges() });
+    expect(pull).toEqual({ cursor: 1, changes: emptyChanges() });
   });
 });
