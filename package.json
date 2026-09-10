@@ -7,6 +7,8 @@
     "node": ">=22"
   },
   "scripts": {
+    "dev": "pnpm -r --parallel --if-present dev",
+    "build": "pnpm content:build && pnpm -F @hi-chinese/web build",
     "test": "pnpm -r --if-present test",
     "typecheck": "pnpm -r --if-present typecheck",
     "format": "prettier --write .",
@@ -15,7 +17,10 @@
     "content:build": "pnpm -F @hi-chinese/content build",
     "worker:dev": "pnpm -F @hi-chinese/worker dev",
     "worker:test": "pnpm -F @hi-chinese/worker test",
-    "worker:migrate:local": "pnpm -F @hi-chinese/worker db:migrate:local"
+    "worker:migrate:local": "pnpm -F @hi-chinese/worker db:migrate:local",
+    "web:dev": "pnpm -F @hi-chinese/web dev",
+    "web:test": "pnpm -F @hi-chinese/web test",
+    "e2e": "pnpm -F @hi-chinese/web e2e"
   },
   "devDependencies": {
     "prettier": "^3.6.0",

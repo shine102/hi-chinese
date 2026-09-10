@@ -2,4 +2,7 @@ pnpm-lock.yaml
 docs/
 packages/content/raw/
 apps/web/public/content/
+apps/web/dev-dist/
+apps/web/test-results/
+apps/web/playwright-report/
 .superpowers/
