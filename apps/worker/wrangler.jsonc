@@ -4,6 +4,13 @@
   "main": "src/index.ts",
   "compatibility_date": "2026-09-01",
   "observability": { "enabled": true },
+  // The built web app. `run_worker_first` keeps /api on the Worker; every other
+  // request is answered by the assets layer, with SPA fallback for client routes.
+  "assets": {
+    "directory": "../web/dist",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"],
+  },
   "d1_databases": [
     {
       "binding": "DB",

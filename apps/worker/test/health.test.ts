@@ -11,6 +11,8 @@ describe('GET /api/health', () => {
     expect(res.headers.get('cache-control')).toBe('no-store');
   });
 
+  // In production non-API paths never reach the Worker (the assets layer serves
+  // them); this pins the Worker's own behaviour, which the Vitest plugin exercises directly.
   it('answers unknown paths with a JSON 404', async () => {
     const res = await SELF.fetch('https://hi.test/nope');
     expect(res.status).toBe(404);

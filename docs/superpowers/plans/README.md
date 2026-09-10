@@ -10,7 +10,7 @@ lands, so they reference real code rather than guesses.
 |-------|------|----------|
 | 1 | `2026-09-09-phase-1-content-pipeline.md` | pnpm workspace, shared content types, fetch/normalize/assign/validate/build pipeline emitting JSON chunks, seed authored content |
 | 2 | `2026-09-10-phase-2-worker-sync.md` | `apps/worker`: Hono on Cloudflare Workers, D1 schema + migrations, passphrase auth, `POST /api/sync` with last-write-wins and a server sequence cursor, Vitest in workerd against local D1 |
-| 3 | phase-3-web-core (to write) | React PWA shell, routing, content loading, Dexie tables + outbox, path screen, learn step, exercise engine + practice session, audio, sync client, install/offline |
+| 3 | `2026-09-10-phase-3-web-core.md` | `apps/web`: Vite + React PWA, Dexie progress with sync outbox, path/learn/practice, five exercise kinds, speech audio, Worker static assets, Playwright e2e |
 | 4 | phase-4-review-writing (to write) | FSRS review deck and session, Hanzi Writer integration (learn sheet, write-it exercise, write-from-memory review), character page, streak |
 | 5 | phase-5-content-authoring (to write) | Grammar points and example sentences for every unit, produced in reviewed batches, readings review for multi-pronunciation words |
 
@@ -43,3 +43,9 @@ Findings from source verification (2026-09-09) that adjust the spec:
   day) are overwritten under LWW, not summed; the streak only needs the day to exist.
 - Phase 3 dev server: Vite (:5173) must proxy `/api` to `wrangler dev` (:8787) via `server.proxy`;
   the Worker has no CORS handling by design.
+- Phase 3 (2026-09-10): the Cloudflare Vitest plugin ignores the `assets` block, so asset serving is
+  verified with `wrangler dev`, not in Vitest. Review-card rows are created on unit completion (empty
+  FSRS state) so Phase 4 schedules existing rows. "Write it", strokes sheet, character page, review
+  session and streak display moved to Phase 4. Listen-and-pick is not generated when no Chinese voice
+  exists. Exercise markup carries `data-correct`/`data-answer-index`/`data-pair-*` attributes in DEV
+  builds only, for the end-to-end test.
