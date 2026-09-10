@@ -12,7 +12,10 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "content:fetch": "pnpm -F @hi-chinese/content fetch",
-    "content:build": "pnpm -F @hi-chinese/content build"
+    "content:build": "pnpm -F @hi-chinese/content build",
+    "worker:dev": "pnpm -F @hi-chinese/worker dev",
+    "worker:test": "pnpm -F @hi-chinese/worker test",
+    "worker:migrate:local": "pnpm -F @hi-chinese/worker db:migrate:local"
   },
   "devDependencies": {
     "prettier": "^3.6.0",

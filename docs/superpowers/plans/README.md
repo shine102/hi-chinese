@@ -9,7 +9,7 @@ lands, so they reference real code rather than guesses.
 | Phase | Plan | Delivers |
 |-------|------|----------|
 | 1 | `2026-09-09-phase-1-content-pipeline.md` | pnpm workspace, shared content types, fetch/normalize/assign/validate/build pipeline emitting JSON chunks, seed authored content |
-| 2 | phase-2-worker-sync (to write) | Cloudflare Worker (Hono), D1 schema + migrations, passphrase auth, `POST /api/sync`, Vitest + Miniflare tests |
+| 2 | `2026-09-10-phase-2-worker-sync.md` | `apps/worker`: Hono on Cloudflare Workers, D1 schema + migrations, passphrase auth, `POST /api/sync` with last-write-wins and a server sequence cursor, Vitest in workerd against local D1 |
 | 3 | phase-3-web-core (to write) | React PWA shell, routing, content loading, Dexie tables + outbox, path screen, learn step, exercise engine + practice session, audio, sync client, install/offline |
 | 4 | phase-4-review-writing (to write) | FSRS review deck and session, Hanzi Writer integration (learn sheet, write-it exercise, write-from-memory review), character page, streak |
 | 5 | phase-5-content-authoring (to write) | Grammar points and example sentences for every unit, produced in reviewed batches, readings review for multi-pronunciation words |
@@ -35,3 +35,6 @@ Findings from source verification (2026-09-09) that adjust the spec:
   sentence references only; grammar → word references are covered
   indirectly because every example sentence's words are validated.
   Revisit if Phase 3 needs it.
+- Phase 2 defers static-asset serving to Phase 3: Wrangler requires the assets directory to exist and
+  `apps/web/dist` does not yet. Sync cursors are server sequence numbers (one per sync batch), not
+  timestamps, so device clock skew cannot lose rows.

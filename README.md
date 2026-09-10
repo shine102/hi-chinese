@@ -23,6 +23,28 @@ Roadmap: `docs/superpowers/plans/README.md`.
     pnpm typecheck
     pnpm format:check
 
+## Worker (API + D1)
+
+    pnpm worker:test             # Vitest inside workerd against a migrated local D1
+    pnpm worker:migrate:local    # apply migrations to the local dev database
+    cp apps/worker/.dev.vars.example apps/worker/.dev.vars   # set SYNC_PASSPHRASE
+    pnpm worker:dev              # http://127.0.0.1:8787
+
+Endpoints: `GET /api/health`, `POST /api/sync` (header `Authorization: Bearer <SYNC_PASSPHRASE>`,
+body `{ cursor, changes: { unitProgress, cards, activity } }`, response same shape). Rows merge by
+last write wins on `updatedAt`; `cursor` is the server sequence number to send next time.
+
+### First deploy (run by hand, once)
+
+    cd apps/worker
+    pnpm exec wrangler login
+    pnpm exec wrangler d1 create hi-chinese      # paste the printed database_id into wrangler.jsonc
+    pnpm db:migrate:remote
+    pnpm exec wrangler secret put SYNC_PASSPHRASE
+    pnpm deploy
+
+The web app (Phase 3) is served by the same Worker as static assets; until then the Worker is API only.
+
 ## Layout
 
 - `packages/content` – content pipeline and shared types
