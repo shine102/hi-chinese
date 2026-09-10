@@ -11,6 +11,11 @@ export type CardKind = 'word-recognition' | 'word-recall' | 'char-write';
 
 export const CARD_KINDS: readonly CardKind[] = ['word-recognition', 'word-recall', 'char-write'];
 
+// Mirrors ts-fsrs 5.4.2's `Card` shape: due/last_review (Date there) become
+// epoch-ms numbers here (due/lastReview), and stability, difficulty,
+// scheduled_days (scheduledDays), learning_steps (learningSteps), reps, and
+// lapses carry over as-is. `elapsed_days` is intentionally omitted: it is
+// deprecated in ts-fsrs 5.x and removed entirely in 6.
 export interface FsrsState {
   due: number;
   stability: number;
