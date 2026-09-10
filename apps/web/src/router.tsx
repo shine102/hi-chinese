@@ -10,6 +10,7 @@ import { isSetupDone } from './db/meta.js';
 import { LearnScreen } from './learn/LearnScreen.js';
 import { PathScreen } from './path/PathScreen.js';
 import { UnitScreen } from './path/UnitScreen.js';
+import { PracticeScreen } from './practice/PracticeScreen.js';
 import { SettingsScreen } from './settings/SettingsScreen.js';
 import { SetupScreen } from './setup/SetupScreen.js';
 import { AppShell } from './ui/AppShell.js';
@@ -47,10 +48,6 @@ export const unitRoute = createRoute({
   component: UnitScreen,
 });
 
-// Replaced by the real screens in Task 7 (learn) and Task 10 (practice).
-function StepPending() {
-  return <p className="text-stone-600">This step is not available yet.</p>;
-}
 export const learnRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/unit/$unitId/learn',
@@ -59,7 +56,7 @@ export const learnRoute = createRoute({
 export const practiceRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/unit/$unitId/practice',
-  component: StepPending,
+  component: PracticeScreen,
 });
 
 const routeTree = rootRoute.addChildren([
