@@ -100,7 +100,10 @@ describe('parseSyncRequest', () => {
   it('rejects a negative completedAt', () => {
     const row = valid.changes.unitProgress[0]!;
     expect(
-      fail({ ...valid, changes: { ...valid.changes, unitProgress: [{ ...row, completedAt: -1 }] } }),
+      fail({
+        ...valid,
+        changes: { ...valid.changes, unitProgress: [{ ...row, completedAt: -1 }] },
+      }),
     ).toMatch(/completedAt/);
   });
   it('rejects bad card rows', () => {
@@ -137,9 +140,9 @@ describe('parseSyncRequest', () => {
     const row = valid.changes.cards[0]!;
     const cardId = `word-recognition:${'w'.repeat(190)}`;
     expect(cardId.length).toBeGreaterThan(200);
-    expect(
-      fail({ ...valid, changes: { ...valid.changes, cards: [{ ...row, cardId }] } }),
-    ).toBe('changes.cards[0].cardId: expected string of at most 200 chars');
+    expect(fail({ ...valid, changes: { ...valid.changes, cards: [{ ...row, cardId }] } })).toBe(
+      'changes.cards[0].cardId: expected string of at most 200 chars',
+    );
   });
   it('rejects fractional fsrs counters', () => {
     const row = valid.changes.cards[0]!;

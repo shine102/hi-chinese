@@ -50,7 +50,10 @@ function readInt(v: unknown, path: string, min: number): number {
 function readIntOrNull(v: unknown, path: string, min = -Infinity): number | null {
   if (v === null) return null;
   if (typeof v !== 'number' || !Number.isSafeInteger(v) || v < min)
-    fail(path, min === -Infinity ? 'expected integer or null' : `expected integer >= ${min} or null`);
+    fail(
+      path,
+      min === -Infinity ? 'expected integer or null' : `expected integer >= ${min} or null`,
+    );
   return v;
 }
 
