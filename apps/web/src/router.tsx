@@ -7,6 +7,7 @@ import {
 } from '@tanstack/react-router';
 import { db } from './db/db.js';
 import { isSetupDone } from './db/meta.js';
+import { LearnScreen } from './learn/LearnScreen.js';
 import { PathScreen } from './path/PathScreen.js';
 import { UnitScreen } from './path/UnitScreen.js';
 import { SettingsScreen } from './settings/SettingsScreen.js';
@@ -53,7 +54,7 @@ function StepPending() {
 export const learnRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/unit/$unitId/learn',
-  component: StepPending,
+  component: LearnScreen,
 });
 export const practiceRoute = createRoute({
   getParentRoute: () => rootRoute,

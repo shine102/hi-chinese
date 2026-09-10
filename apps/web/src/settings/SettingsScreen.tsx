@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { useHasChineseVoiceSafe } from './voice-status.js';
+import { useHasChineseVoice } from '../audio/speech.js';
 import { useContent } from '../content/provider.js';
 import { db } from '../db/db.js';
 import { setMeta } from '../db/meta.js';
@@ -9,7 +9,7 @@ import { SyncIndicator } from '../ui/Header.js';
 export function SettingsScreen() {
   const content = useContent();
   const sync = useSyncState();
-  const hasVoice = useHasChineseVoiceSafe();
+  const hasVoice = useHasChineseVoice();
   const [passphrase, setPassphrase] = useState('');
   const [message, setMessage] = useState<string | null>(null);
 
