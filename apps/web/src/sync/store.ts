@@ -44,6 +44,15 @@ export function requestSync(deps: SyncDeps): Promise<SyncResult> {
       });
       return result;
     })
+    .catch((err: unknown): SyncResult => {
+      // syncOnce is documented to never throw, but this backstop keeps status
+      // from ever getting stuck on 'syncing' if it (or a future change to it)
+      // does reject.
+      console.error('sync failed', err);
+      const result: SyncResult = { status: 'error', pushed: 0, pulled: 0 };
+      set({ status: 'error', lastResult: state.lastResult, lastSyncedAt: state.lastSyncedAt });
+      return result;
+    })
     .finally(() => {
       inFlight = null;
     });

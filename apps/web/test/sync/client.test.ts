@@ -139,6 +139,14 @@ describe('syncOnce', () => {
     expect(await db.outbox.count()).toBe(1);
   });
 
+  it('reports error and keeps the outbox when the server returns a malformed response body', async () => {
+    await markUnitStarted(db, 'l1-u01', 1000);
+    const { fetchImpl } = fakeFetch(() => json({}));
+    expect(await syncOnce({ db, fetchImpl })).toMatchObject({ status: 'error' });
+    expect(await db.outbox.count()).toBe(1);
+    expect(await getCursor(db)).toBe(0);
+  });
+
   it('splits more than 500 rows per table across requests', async () => {
     const wordIds = Array.from({ length: 300 }, (_, i) => `w:x${i}`); // 600 cards
     await completeUnit(db, { unitId: 'l1-u01', wordIds, characters: [], now: 1000 });
@@ -161,9 +169,18 @@ describe('requestSync store', () => {
     const a = requestSync({ db, fetchImpl });
     expect(getSyncState().status).toBe('syncing');
     const b = requestSync({ db, fetchImpl });
-    expect(await a).toEqual(await b);
+    expect(b).toBe(a);
+    await a;
     expect(calls).toHaveLength(1);
     expect(getSyncState()).toMatchObject({ status: 'synced', lastResult: { status: 'synced' } });
     expect(getSyncState().lastSyncedAt).not.toBeNull();
+  });
+
+  it('ends with status "error" instead of stuck "syncing" when the server returns a malformed response body', async () => {
+    await markUnitStarted(db, 'l1-u01', 1000);
+    const { fetchImpl } = fakeFetch(() => json({}));
+    const result = await requestSync({ db, fetchImpl });
+    expect(result.status).toBe('error');
+    expect(getSyncState().status).toBe('error');
   });
 });
