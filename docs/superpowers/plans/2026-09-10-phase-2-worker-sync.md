@@ -1355,7 +1355,7 @@ last write wins on `updatedAt`; `cursor` is the server sequence number to send n
     pnpm exec wrangler d1 create hi-chinese      # paste the printed database_id into wrangler.jsonc
     pnpm db:migrate:remote
     pnpm exec wrangler secret put SYNC_PASSPHRASE
-    pnpm deploy
+    pnpm run deploy
 
 The web app (Phase 3) is served by the same Worker as static assets; until then the Worker is API only.
 ```

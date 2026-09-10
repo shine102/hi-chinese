@@ -33,6 +33,9 @@ Roadmap: `docs/superpowers/plans/README.md`.
 Endpoints: `GET /api/health`, `POST /api/sync` (header `Authorization: Bearer <SYNC_PASSPHRASE>`,
 body `{ cursor, changes: { unitProgress, cards, activity } }`, response same shape). Rows merge by
 last write wins on `updatedAt`; `cursor` is the server sequence number to send next time.
+A pushed row that is missing from the response lost last-write-wins (the server already had a
+newer `updatedAt`); the client should adopt the server value by re-pulling with `cursor: 0` for
+that table or on next sync. Pushed rows that win are echoed back with the new sequence number.
 
 ### First deploy (run by hand, once)
 
@@ -41,7 +44,7 @@ last write wins on `updatedAt`; `cursor` is the server sequence number to send n
     pnpm exec wrangler d1 create hi-chinese      # paste the printed database_id into wrangler.jsonc
     pnpm db:migrate:remote
     pnpm exec wrangler secret put SYNC_PASSPHRASE
-    pnpm deploy
+    pnpm run deploy
 
 The web app (Phase 3) is served by the same Worker as static assets; until then the Worker is API only.
 

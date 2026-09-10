@@ -38,3 +38,8 @@ Findings from source verification (2026-09-09) that adjust the spec:
 - Phase 2 defers static-asset serving to Phase 3: Wrangler requires the assets directory to exist and
   `apps/web/dist` does not yet. Sync cursors are server sequence numbers (one per sync batch), not
   timestamps, so device clock skew cannot lose rows.
+- Phase 3 client merge rule: a pushed row absent from the sync response lost LWW; apply the same
+  `updatedAt` rule locally and treat echoed rows as no-ops. Activity counters (lessons/reviews per
+  day) are overwritten under LWW, not summed; the streak only needs the day to exist.
+- Phase 3 dev server: Vite (:5173) must proxy `/api` to `wrangler dev` (:8787) via `server.proxy`;
+  the Worker has no CORS handling by design.
