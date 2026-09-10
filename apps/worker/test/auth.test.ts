@@ -1,6 +1,8 @@
 import { SELF } from 'cloudflare:test';
 import { describe, expect, it } from 'vitest';
 import { constantTimeEqual, extractBearer } from '../src/auth.js';
+import app from '../src/index.js';
+import { env } from 'cloudflare:workers';
 
 describe('constantTimeEqual', () => {
   it('is true only for identical strings', () => {
@@ -38,13 +40,21 @@ describe('requirePassphrase on /api/sync', () => {
     });
     expect(res.status).toBe(401);
   });
-  it('lets the right token through to the route (404 until the route exists)', async () => {
+  it('lets the right token through to the route', async () => {
     const res = await SELF.fetch('https://hi.test/api/sync', {
       method: 'POST',
       headers: { authorization: 'Bearer test-passphrase' },
       body: '{}',
     });
-    expect(res.status).not.toBe(401);
+    expect(res.status).toBe(400);
+  });
+  it('returns 500 when the passphrase secret is not configured', async () => {
+    const res = await app.fetch(
+      new Request('https://hi.test/api/sync', { method: 'POST', body: '{}' }),
+      { ...env, SYNC_PASSPHRASE: '' },
+    );
+    expect(res.status).toBe(500);
+    expect(await res.json()).toEqual({ error: 'server not configured' });
   });
   it('does not guard the health route', async () => {
     const res = await SELF.fetch('https://hi.test/api/health');
