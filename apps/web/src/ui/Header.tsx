@@ -8,7 +8,9 @@ const LABELS: Record<SyncStatus, string> = {
   pending: 'Pending',
   offline: 'Offline',
   unauthorized: 'Passphrase needed',
-  error: 'Sync failed',
+  // 'error' is an internal-only backstop status (sync/store.ts); the UI renders it
+  // identically to 'pending' rather than exposing it to the user.
+  error: 'Pending',
 };
 
 const DOTS: Record<SyncStatus, string> = {
@@ -18,7 +20,7 @@ const DOTS: Record<SyncStatus, string> = {
   pending: 'bg-amber-500',
   offline: 'bg-stone-400',
   unauthorized: 'bg-red-500',
-  error: 'bg-red-500',
+  error: 'bg-amber-500',
 };
 
 export function SyncIndicator() {
