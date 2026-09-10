@@ -91,26 +91,28 @@ export async function applySync(db: D1Database, req: SyncRequest): Promise<SyncR
     await db.batch(statements);
   }
 
-  const [units, cardRows, activityRows] = await Promise.all([
+  // Run the three pull SELECTs as one db.batch() rather than Promise.all(): a
+  // batch executes as a single implicit transaction, so all three see the same
+  // snapshot. With independent queries, a concurrent device's push could land
+  // between them, and the client would compute a cursor that skips a row that
+  // was already committed at the time of this pull, forever.
+  const [units, cardRows, activityRows] = (await db.batch([
     db
       .prepare(
         'SELECT unit_id, status, completed_at, updated_at, seq FROM unit_progress WHERE seq > ?1 ORDER BY seq, unit_id',
       )
-      .bind(cursor)
-      .all<UnitDbRow>(),
+      .bind(cursor),
     db
       .prepare(
         'SELECT card_id, kind, fsrs, updated_at, seq FROM cards WHERE seq > ?1 ORDER BY seq, card_id',
       )
-      .bind(cursor)
-      .all<CardDbRow>(),
+      .bind(cursor),
     db
       .prepare(
         'SELECT date, lessons, reviews, updated_at, seq FROM activity WHERE seq > ?1 ORDER BY seq, date',
       )
-      .bind(cursor)
-      .all<ActivityDbRow>(),
-  ]);
+      .bind(cursor),
+  ])) as [D1Result<UnitDbRow>, D1Result<CardDbRow>, D1Result<ActivityDbRow>];
 
   let maxSeq = cursor;
   for (const r of [...units.results, ...cardRows.results, ...activityRows.results]) {
