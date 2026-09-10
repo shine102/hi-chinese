@@ -6,6 +6,13 @@ import { applySync } from './sync-store.js';
 
 const app = new Hono<AppEnv>();
 
+// Sync responses and health checks carry per-user or point-in-time state;
+// make sure no cache (browser, CDN, or intermediary) ever serves a stale copy.
+app.use('/api/*', async (c, next) => {
+  await next();
+  c.header('Cache-Control', 'no-store');
+});
+
 app.get('/api/health', (c) => c.json({ ok: true }));
 
 app.use('/api/sync', requirePassphrase);

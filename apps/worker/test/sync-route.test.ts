@@ -48,6 +48,7 @@ describe('POST /api/sync', () => {
       }),
     );
     expect(first.status).toBe(200);
+    expect(first.headers.get('cache-control')).toBe('no-store');
     const body = (await first.json()) as SyncResponse;
     expect(body.cursor).toBe(1);
     expect(body.changes.unitProgress).toEqual([

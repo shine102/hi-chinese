@@ -7,6 +7,7 @@ describe('GET /api/health', () => {
     const res = await SELF.fetch('https://hi.test/api/health');
     expect(res.status).toBe(200);
     expect(await res.json()).toEqual({ ok: true });
+    expect(res.headers.get('cache-control')).toBe('no-store');
   });
 
   it('answers unknown paths with a JSON 404', async () => {
