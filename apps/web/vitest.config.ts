@@ -14,5 +14,9 @@ export default defineConfig({
     environment: 'node',
     include: ['test/**/*.test.ts', 'test/**/*.test.tsx'],
     setupFiles: ['./test/setup.ts'],
+    // @testing-library/react only registers its automatic post-test DOM cleanup when it
+    // sees a global `afterEach` at import time; without this, renders from one `it()` in
+    // a jsdom test file leak into the next and can make unrelated queries ambiguous.
+    globals: true,
   },
 });

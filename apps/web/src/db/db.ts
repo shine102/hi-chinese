@@ -35,6 +35,13 @@ export function openDb(name = 'hi-chinese'): HiChineseDb {
     outbox: 'key, table',
     meta: 'key',
   });
+  // Dexie's db.delete() defaults to { disableAutoOpen: true }, which would leave this
+  // instance permanently unable to reopen itself on the next table operation. Tests
+  // reset state between cases with `await db.delete()` on the shared singleton and
+  // expect it to keep working afterward, so keep autoOpen enabled unless a caller
+  // explicitly asks otherwise.
+  const nativeDelete = d.delete.bind(d);
+  d.delete = (closeOptions) => nativeDelete(closeOptions ?? { disableAutoOpen: false });
   return d;
 }
 
