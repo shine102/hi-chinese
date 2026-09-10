@@ -11,6 +11,10 @@ export default defineConfig(async () => {
         miniflare: {
           // Test-only bindings: migrations to apply in the setup file, and the
           // passphrase the auth tests send. Never a real secret.
+          // Wrangler (via this plugin) also loads apps/worker/.dev.vars when it
+          // exists, but explicit `bindings` here take precedence over it, so the
+          // suite always sees SYNC_PASSPHRASE = 'test-passphrase' regardless of
+          // whatever a developer's local .dev.vars sets.
           bindings: { TEST_MIGRATIONS: migrations, SYNC_PASSPHRASE: 'test-passphrase' },
         },
       }),

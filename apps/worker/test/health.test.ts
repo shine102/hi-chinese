@@ -1,3 +1,4 @@
+// TODO: switch SELF (deprecated) to exports.default once wrangler types codegen is added.
 import { SELF } from 'cloudflare:test';
 import { env } from 'cloudflare:workers';
 import { describe, expect, it } from 'vitest';
