@@ -5,6 +5,7 @@ import { db } from '../db/db.js';
 import { localDate } from '../db/time.js';
 import { useLiveQuery } from '../db/use-live-query.js';
 import { getDueCount } from '../fsrs/scheduler.js';
+import { lessonCount } from '../lessons/compute.js';
 import { computeStreak } from '../streak/streak.js';
 import { DueCountBadge, StreakBadge } from '../streak/StreakBadge.js';
 import { Loading } from '../ui/Loading.js';
@@ -24,14 +25,17 @@ const LABEL: Record<UnitState, string> = {
   completed: 'Completed',
 };
 
-function UnitNode({ unit, state }: { unit: ManifestUnit; state: UnitState }) {
+function UnitNode({ unit, state, lessonsCompleted }: { unit: ManifestUnit; state: UnitState; lessonsCompleted: number }) {
+  const total = lessonCount(unit.wordCount);
   const inner = (
     <div className={`flex items-center justify-between rounded-lg px-4 py-3 ${BADGE[state]}`}>
       <div>
         <div className="font-medium">{unit.title}</div>
         <div className="text-xs opacity-70">
-          {unit.wordCount} words
-          {unit.grammarCount > 0 ? `, ${unit.grammarCount} grammar` : ''}
+          {unit.wordCount} words, {total} lessons
+          {state === 'in-progress' && lessonsCompleted > 0
+            ? ` — ${lessonsCompleted}/${total} done`
+            : ''}
         </div>
       </div>
       <span className="text-xs font-medium uppercase tracking-wide">{LABEL[state]}</span>
@@ -62,6 +66,7 @@ export function PathScreen() {
   if (rows === undefined) return <Loading />;
   const states = computeUnitStates(content.unitOrder, rows);
   const streak = activities ? computeStreak(activities, localDate(Date.now())) : 0;
+  const progressByUnit = new Map(rows.map(r => [r.unitId, r]));
   return (
     <div className="flex flex-col gap-8">
       <div className="flex items-center justify-between">
@@ -88,7 +93,7 @@ export function PathScreen() {
             {level.unitIds.map((id) => {
               const unit = content.unitById.get(id);
               if (!unit) return null;
-              return <UnitNode key={id} unit={unit} state={states.get(id) ?? 'locked'} />;
+              return <UnitNode key={id} unit={unit} state={states.get(id) ?? 'locked'} lessonsCompleted={progressByUnit.get(id)?.lessonsCompleted ?? 0} />;
             })}
           </ol>
         </section>
