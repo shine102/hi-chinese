@@ -15,9 +15,7 @@
     {
       "binding": "DB",
       "database_name": "hi-chinese",
-      // Placeholder for local dev and tests. Replace with the id printed by
-      // `wrangler d1 create hi-chinese` before the first remote deploy.
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "3d6eaa70-5adf-4dad-8621-4dbf0a32429e",
       "migrations_dir": "migrations",
     },
   ],
