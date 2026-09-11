@@ -58,3 +58,10 @@ Findings from source verification (2026-09-09) that adjust the spec:
   `CHROME_PATH` env var (set `CHROME_PATH=/var/lib/flatpak/exports/bin/com.google.Chrome` on this
   machine); workers serialized to 1 for single-D1-backend stability. `useLiveQuery` silent-failure
   gap (deferred from Phase 3) still applies to new PathScreen queries (dueCount, activities).
+- Phase 5 (2026-09-11): authored 261 grammar points and 939 sentences across all 184 units (61 L1,
+  95 L2, 105 L3). Extended pinyin overrides from 9 to 23 entries. Content authored by AI agent,
+  validated by the existing pipeline. 12 of 79 L3 units (plus 6 of 42 L1 units) have no grammar
+  (concrete-noun units without grammar-worthy patterns); every L2 unit has at least one. Grammar
+  validator checks sentenceIds.length > 0 (not the spec's 3-5 minimum); tighten in a future
+  hardening pass. Exercise generation (fill-blank, sentence-builder) now has real sentence data for
+  all units with grammar.
