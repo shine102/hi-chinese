@@ -1,0 +1,1237 @@
+[
+  {
+    "id": "g:rang-causative",
+    "title": "Making someone do something with 让",
+    "pattern": "A + 让 + B + verb phrase",
+    "explanation": "让 (ràng) means to let, ask, or make someone do something. Put the person who receives the request right after 让, then say what they should do. It works like the English pattern \"have/let someone do something\".",
+    "level": 2,
+    "examples": [
+      "s:l2:001",
+      "s:l2:002",
+      "s:l2:003",
+      "s:l2:004"
+    ]
+  },
+  {
+    "id": "g:ruguo-jiu",
+    "title": "Conditionals with 如果...就",
+    "pattern": "如果 + condition, (主语) 就 + result",
+    "explanation": "如果 (rúguǒ) introduces a condition, like English \"if\". The result clause adds 就 (jiù) right before the verb to mean \"then\". In casual speech 如果 can be dropped, but 就 usually stays.",
+    "level": 2,
+    "examples": [
+      "s:l2:005",
+      "s:l2:006",
+      "s:l2:007",
+      "s:l2:008"
+    ]
+  },
+  {
+    "id": "g:yinwei-suoyi",
+    "title": "Cause and effect with 因为...所以",
+    "pattern": "因为 + reason, 所以 + result",
+    "explanation": "因为 (yīnwèi) gives the reason and 所以 (suǒyǐ) introduces the result together they mean \"because...so\". Chinese usually keeps both words, even though English often drops \"so\".",
+    "level": 2,
+    "examples": [
+      "s:l2:009",
+      "s:l2:010",
+      "s:l2:011",
+      "s:l2:012"
+    ]
+  },
+  {
+    "id": "g:keneng-gai-modal",
+    "title": "Talking about possibility with 可能 and 该",
+    "pattern": "可能 + clause / 该 + verb",
+    "explanation": "可能 (kěnéng) means \"maybe, possibly\" and usually comes before the verb. 该 (gāi) means \"should\" and is a shorter, more casual version of 应该. Both are used to guess or to give soft advice.",
+    "level": 2,
+    "examples": [
+      "s:l2:013",
+      "s:l2:014",
+      "s:l2:015",
+      "s:l2:016"
+    ]
+  },
+  {
+    "id": "g:yiding-certainty",
+    "title": "Expressing certainty with 一定",
+    "pattern": "(主语) + 一定 + verb phrase",
+    "explanation": "一定 (yídìng) means \"surely, certainly\" and shows strong confidence. It goes right before the verb. In a request, 一定要 means \"must, be sure to\".",
+    "level": 2,
+    "examples": [
+      "s:l2:017",
+      "s:l2:018",
+      "s:l2:019",
+      "s:l2:020"
+    ]
+  },
+  {
+    "id": "g:yizhi-continuous",
+    "title": "Continuous action with 一直",
+    "pattern": "(主语) + 一直 + verb phrase",
+    "explanation": "一直 (yìzhí) means \"continuously, all along\" and describes an action that keeps happening without stopping. It sits before the verb, and is often paired with 都 for extra emphasis.",
+    "level": 2,
+    "examples": [
+      "s:l2:021",
+      "s:l2:022",
+      "s:l2:023",
+      "s:l2:024"
+    ]
+  },
+  {
+    "id": "g:erqie-addition",
+    "title": "Adding information with 而且",
+    "pattern": "..., 而且 + additional information",
+    "explanation": "而且 (érqiě) means \"moreover, and also\" it adds a second, often stronger point to what was just said. It is often paired with 也 or 都 in the second clause, and later pairs with the stronger 不但...而且.",
+    "level": 2,
+    "examples": [
+      "s:l2:025",
+      "s:l2:026",
+      "s:l2:027",
+      "s:l2:028"
+    ]
+  },
+  {
+    "id": "g:bixu-must",
+    "title": "Necessity with 必须",
+    "pattern": "(主语) + 必须 + verb phrase",
+    "explanation": "必须 (bìxū) means \"must, have to\" stronger and more formal than 要. It emphasizes that something is required, with no other option.",
+    "level": 2,
+    "examples": [
+      "s:l2:029",
+      "s:l2:030",
+      "s:l2:031",
+      "s:l2:032"
+    ]
+  },
+  {
+    "id": "g:classifiers-tiao-jian-chang",
+    "title": "New measure words: 条, 件, 场",
+    "pattern": "数字 + 条/件/场 + noun",
+    "explanation": "条 (tiáo) counts long, thin things like roads, rivers, or fish. 件 (jiàn) counts individual items, especially clothes or matters/affairs (一件事). 场 (chǎng) counts events such as a movie, a game, or a spell of rain.",
+    "level": 2,
+    "examples": [
+      "s:l2:033",
+      "s:l2:034",
+      "s:l2:035",
+      "s:l2:036"
+    ]
+  },
+  {
+    "id": "g:tongguo-means",
+    "title": "By means of with 通过",
+    "pattern": "通过 + method/means, (主语) + verb phrase",
+    "explanation": "通过 (tōngguò) means \"through, by means of\". Put it before the way something is achieved, then say the result. It can also mean \"to pass\" a test or a law.",
+    "level": 2,
+    "examples": [
+      "s:l2:037",
+      "s:l2:038",
+      "s:l2:039",
+      "s:l2:040"
+    ]
+  },
+  {
+    "id": "g:keshi-buguo-informal-but",
+    "title": "Informal \"but\": 可是 and 不过",
+    "pattern": "..., 可是/不过 + contrast",
+    "explanation": "可是 (kěshì) and 不过 (búguò) both mean \"but, however\" and are more conversational than 但是. 不过 is a little softer, often adding a small exception rather than a strong contrast.",
+    "level": 2,
+    "examples": [
+      "s:l2:041",
+      "s:l2:042",
+      "s:l2:043",
+      "s:l2:044"
+    ]
+  },
+  {
+    "id": "g:wan-finish-complement",
+    "title": "Finishing an action with V + 完",
+    "pattern": "verb + 完 (+ object)",
+    "explanation": "完 (wán) attached right after a verb shows that the action is finished \"to finish doing something\". It tells you the action reached its end, not just that time passed.",
+    "level": 2,
+    "examples": [
+      "s:l2:045",
+      "s:l2:046",
+      "s:l2:047",
+      "s:l2:048"
+    ]
+  },
+  {
+    "id": "g:suiran-danshi",
+    "title": "Concession with 虽然...但是",
+    "pattern": "虽然 + fact, 但是/可是 + contrast",
+    "explanation": "虽然 (suīrán) marks a fact you accept, and 但是 (dànshì) introduces the surprising or contrasting point that follows, like \"although...but\". Unlike English, Chinese usually keeps both 虽然 and 但是 in the same sentence.",
+    "level": 2,
+    "examples": [
+      "s:l2:049",
+      "s:l2:050",
+      "s:l2:051",
+      "s:l2:052"
+    ]
+  },
+  {
+    "id": "g:zhiyao-jiu",
+    "title": "Sufficient condition with 只要...就",
+    "pattern": "只要 + minimum condition, 就 + result",
+    "explanation": "只要 (zhǐyào) means \"as long as\" it names the one condition that is enough to make something happen. The second clause usually adds 就 before the verb, similar to 如果...就 but with a stronger sense that this condition alone is sufficient.",
+    "level": 2,
+    "examples": [
+      "s:l2:053",
+      "s:l2:054",
+      "s:l2:055",
+      "s:l2:056"
+    ]
+  },
+  {
+    "id": "g:nenggou-formal-ability",
+    "title": "Formal ability with 能够",
+    "pattern": "(主语) + 能够 + verb phrase",
+    "explanation": "能够 (nénggòu) means \"to be able to\", just like 能, but sounds a little more formal and is common in writing or careful speech. In everyday talk, 能 alone is usually enough.",
+    "level": 2,
+    "examples": [
+      "s:l2:057",
+      "s:l2:058",
+      "s:l2:059",
+      "s:l2:060"
+    ]
+  },
+  {
+    "id": "g:wancheng-task",
+    "title": "Completing tasks with 完成",
+    "pattern": "完成 + task/object",
+    "explanation": "完成 (wánchéng) means \"to complete, to accomplish\" it is used for finishing a task, plan, or piece of work, not just an everyday action like eating or reading (for those, use 完).",
+    "level": 2,
+    "examples": [
+      "s:l2:061",
+      "s:l2:062",
+      "s:l2:063",
+      "s:l2:064"
+    ]
+  },
+  {
+    "id": "g:yiqian-yihou-time",
+    "title": "Before and after: 以前 vs 以后",
+    "pattern": "(时间/动作) + 以前/以后",
+    "explanation": "以前 (yǐqián) means \"before\", and 以后 (yǐhòu) means \"after\". Both follow the time or event they refer to: 三点以前 (before three o'clock), 下课以后 (after class). Either can stand alone to mean \"in the past\" or \"from now on\".",
+    "level": 2,
+    "examples": [
+      "s:l2:065",
+      "s:l2:066",
+      "s:l2:067",
+      "s:l2:068"
+    ]
+  },
+  {
+    "id": "g:tebie-especially",
+    "title": "Emphasis with 特别",
+    "pattern": "特别 + adjective / verb phrase",
+    "explanation": "特别 (tèbié) means \"especially, particularly\" before an adjective, adding stronger emphasis than 很. It can also mean \"special, unusual\" when describing a noun.",
+    "level": 2,
+    "examples": [
+      "s:l2:069",
+      "s:l2:070",
+      "s:l2:071",
+      "s:l2:072"
+    ]
+  },
+  {
+    "id": "g:yiwei-mistaken-belief",
+    "title": "Mistaken assumptions with 以为",
+    "pattern": "(主语) + 以为 + (mistaken belief)",
+    "explanation": "以为 (yǐwéi) means \"thought (wrongly) that...\". Unlike 觉得 or 认为, 以为 usually signals that what you believed turned out not to be true.",
+    "level": 2,
+    "examples": [
+      "s:l2:073",
+      "s:l2:074",
+      "s:l2:075",
+      "s:l2:076"
+    ]
+  },
+  {
+    "id": "g:tongshi-simultaneous",
+    "title": "At the same time with 同时",
+    "pattern": "(主语) + 同时 + verb phrase",
+    "explanation": "同时 (tóngshí) means \"at the same time\" it shows two things happening together, or adds a second point that applies at once. It can start a sentence or sit right before the verb.",
+    "level": 2,
+    "examples": [
+      "s:l2:077",
+      "s:l2:078",
+      "s:l2:079",
+      "s:l2:080"
+    ]
+  },
+  {
+    "id": "g:yexu-perhaps",
+    "title": "Softening a guess with 也许",
+    "pattern": "也许 + clause",
+    "explanation": "也许 (yěxǔ) means \"perhaps, maybe\" it usually starts the sentence or comes right before the verb, showing the speaker isn't sure.",
+    "level": 2,
+    "examples": [
+      "s:l2:081",
+      "s:l2:082",
+      "s:l2:083",
+      "s:l2:084"
+    ]
+  },
+  {
+    "id": "g:zuijin-recent",
+    "title": "Talking about recent time with 最近",
+    "pattern": "最近 + clause",
+    "explanation": "最近 (zuìjìn) means \"recently, lately\" a period close to now, from the near past up to the present. It usually goes at the start of the sentence or right before the verb.",
+    "level": 2,
+    "examples": [
+      "s:l2:085",
+      "s:l2:086",
+      "s:l2:087",
+      "s:l2:088"
+    ]
+  },
+  {
+    "id": "g:dong-potential-complement",
+    "title": "Potential complement: V + 得/不 + 懂",
+    "pattern": "verb + 得/不 + 懂",
+    "explanation": "Add 得 (de) or 不 (bù) between a verb and 懂 (dǒng, \"to understand\") to say whether the result of the action can or can't be achieved: 听得懂 (can understand by listening), 看不懂 (can't understand by reading). This \"potential complement\" pattern shows possibility, not just ability.",
+    "level": 2,
+    "examples": [
+      "s:l2:089",
+      "s:l2:090",
+      "s:l2:091",
+      "s:l2:092"
+    ]
+  },
+  {
+    "id": "g:guolai-direction-complement",
+    "title": "Direction complement: V + 过来",
+    "pattern": "verb + 过来",
+    "explanation": "过来 (guòlái) after a verb shows movement toward the speaker \"over here\". 走过来 means to walk over (toward me/us). Its opposite, 过去, shows movement away from the speaker.",
+    "level": 2,
+    "examples": [
+      "s:l2:093",
+      "s:l2:094",
+      "s:l2:095",
+      "s:l2:096"
+    ]
+  },
+  {
+    "id": "g:haoxiang-seems",
+    "title": "Seeming and guessing with 好像",
+    "pattern": "好像 + clause",
+    "explanation": "好像 (hǎoxiàng) means \"it seems that, as if\" you use it when you're not completely sure, based on what you see or feel.",
+    "level": 2,
+    "examples": [
+      "s:l2:097",
+      "s:l2:098",
+      "s:l2:099",
+      "s:l2:100"
+    ]
+  },
+  {
+    "id": "g:wang-direction-preposition",
+    "title": "Direction with 往",
+    "pattern": "往 + place/direction + verb",
+    "explanation": "往 (wǎng) means \"toward\" and names the direction of movement right before the verb: 往前走 (walk forward, toward the front), 往里走 (walk inward).",
+    "level": 2,
+    "examples": [
+      "s:l2:101",
+      "s:l2:102",
+      "s:l2:103",
+      "s:l2:104"
+    ]
+  },
+  {
+    "id": "g:yuanlai-realization",
+    "title": "Realizing the truth with 原来",
+    "pattern": "原来 + clause",
+    "explanation": "原来 (yuánlái) shows a sudden realization \"so that's why; it turns out that...\". It can also mean \"originally, formerly\" when talking about how something used to be.",
+    "level": 2,
+    "examples": [
+      "s:l2:105",
+      "s:l2:106",
+      "s:l2:107",
+      "s:l2:108"
+    ]
+  },
+  {
+    "id": "g:zhineng-only-can",
+    "title": "Limited options with 只能",
+    "pattern": "(主语) + 只能 + verb phrase",
+    "explanation": "只能 (zhǐnéng) means \"can only\" it shows the one option available, often implying there is no other choice.",
+    "level": 2,
+    "examples": [
+      "s:l2:109",
+      "s:l2:110",
+      "s:l2:111",
+      "s:l2:112"
+    ]
+  },
+  {
+    "id": "g:shoudao-passive-like",
+    "title": "A semi-passive with 受到",
+    "pattern": "(主语) + 受到 + abstract noun",
+    "explanation": "受到 (shòudào) means \"to receive, to be subjected to\". Paired with abstract nouns like 帮助 (help) or 欢迎 (welcome), it describes something happening to the subject a passive-like meaning without needing 被.",
+    "level": 2,
+    "examples": [
+      "s:l2:113",
+      "s:l2:114",
+      "s:l2:115",
+      "s:l2:116"
+    ]
+  },
+  {
+    "id": "g:jingchang-frequency",
+    "title": "Habitual actions with 经常",
+    "pattern": "(主语) + 经常 + verb phrase",
+    "explanation": "经常 (jīngcháng) means \"often, frequently, regularly\" it describes a habitual action and goes right before the verb, similar to 常常 but a little more formal.",
+    "level": 2,
+    "examples": [
+      "s:l2:117",
+      "s:l2:118",
+      "s:l2:119",
+      "s:l2:120"
+    ]
+  },
+  {
+    "id": "g:chongxin-again",
+    "title": "Starting over with 重新",
+    "pattern": "重新 + verb",
+    "explanation": "重新 (chóngxīn) means \"again, once more, anew\" placed before a verb to say you are redoing something from the start, often because the first try needs improvement. Compare with 再 (simply repeat) and 又 (already happened again).",
+    "level": 2,
+    "examples": [
+      "s:l2:121",
+      "s:l2:122",
+      "s:l2:123",
+      "s:l2:124"
+    ]
+  },
+  {
+    "id": "g:yuelaiyue-more-and-more",
+    "title": "More and more with 越来越",
+    "pattern": "越来越 + adjective/verb",
+    "explanation": "越来越 (yuè lái yuè) means \"more and more\" it describes something changing to a greater degree over time. Put it right before an adjective or verb.",
+    "level": 2,
+    "examples": [
+      "s:l2:125",
+      "s:l2:126",
+      "s:l2:127",
+      "s:l2:128"
+    ]
+  },
+  {
+    "id": "g:jiuyao-le-imminent",
+    "title": "About to happen: 就要...了",
+    "pattern": "就要 + verb + 了",
+    "explanation": "就要...了 (jiùyào...le) shows an action or event is about to happen very soon, like \"be about to\". A time word can go in front: 明天就要...了.",
+    "level": 2,
+    "examples": [
+      "s:l2:129",
+      "s:l2:130",
+      "s:l2:131",
+      "s:l2:132"
+    ]
+  },
+  {
+    "id": "g:biru-forexample",
+    "title": "Giving examples with 比如",
+    "pattern": "..., 比如 + example(s)",
+    "explanation": "比如 (bǐrú) means \"for example, such as\" use it to introduce one or more examples supporting what you just said.",
+    "level": 2,
+    "examples": [
+      "s:l2:133",
+      "s:l2:134",
+      "s:l2:135",
+      "s:l2:136"
+    ]
+  },
+  {
+    "id": "g:shifen-very",
+    "title": "Formal emphasis with 十分",
+    "pattern": "十分 + adjective",
+    "explanation": "十分 (shífēn) means \"very, fully, extremely\" a more formal, written way to say 很 or 非常.",
+    "level": 2,
+    "examples": [
+      "s:l2:137",
+      "s:l2:138",
+      "s:l2:139",
+      "s:l2:140"
+    ]
+  },
+  {
+    "id": "g:gangcai-just-now",
+    "title": "A moment ago with 刚才",
+    "pattern": "刚才 + clause",
+    "explanation": "刚才 (gāngcái) means \"just now, a moment ago\" it refers to a point in the very recent past, within the same conversation or day. Compare with 刚 (right before the verb, \"just did\").",
+    "level": 2,
+    "examples": [
+      "s:l2:141",
+      "s:l2:142",
+      "s:l2:143",
+      "s:l2:144"
+    ]
+  },
+  {
+    "id": "g:guanxin-care-about",
+    "title": "Caring about someone with 关心",
+    "pattern": "(主语) + 关心 + person/matter",
+    "explanation": "关心 (guānxīn) means \"to care about, to be concerned about\" used as a verb with an object (关心朋友), or as a state with 很 (很关心).",
+    "level": 2,
+    "examples": [
+      "s:l2:145",
+      "s:l2:146",
+      "s:l2:147",
+      "s:l2:148"
+    ]
+  },
+  {
+    "id": "g:tingshuo-hearsay",
+    "title": "Reporting hearsay with 听说",
+    "pattern": "听说 + clause",
+    "explanation": "听说 (tīngshuō) means \"I heard (that)..., it's said that...\" used to share information you got from someone else, not something you know firsthand.",
+    "level": 2,
+    "examples": [
+      "s:l2:149",
+      "s:l2:150",
+      "s:l2:151",
+      "s:l2:152"
+    ]
+  },
+  {
+    "id": "g:xiguan-habit",
+    "title": "Getting used to something with 习惯",
+    "pattern": "(主语) + 习惯 + verb phrase/noun",
+    "explanation": "习惯 (xíguàn) can be a noun (\"habit\") or a verb (\"to be used to, to get accustomed to\"). As a verb it is followed directly by a verb phrase or a noun.",
+    "level": 2,
+    "examples": [
+      "s:l2:153",
+      "s:l2:154",
+      "s:l2:155",
+      "s:l2:156"
+    ]
+  },
+  {
+    "id": "g:zenmeyang-how-about",
+    "title": "Asking for an opinion with 怎么样",
+    "pattern": "(topic) + 怎么样？",
+    "explanation": "怎么样 (zěnmeyàng) means \"how is it? how about it?\" a common way to ask for an opinion or make a suggestion, usually placed at the end of the sentence.",
+    "level": 2,
+    "examples": [
+      "s:l2:157",
+      "s:l2:158",
+      "s:l2:159",
+      "s:l2:160"
+    ]
+  },
+  {
+    "id": "g:dasuan-plan-to",
+    "title": "Intentions with 打算",
+    "pattern": "(主语) + 打算 + verb phrase",
+    "explanation": "打算 (dǎsuàn) means \"to plan to, to intend to\" followed directly by a verb phrase describing what you intend to do.",
+    "level": 2,
+    "examples": [
+      "s:l2:161",
+      "s:l2:162",
+      "s:l2:163",
+      "s:l2:164"
+    ]
+  },
+  {
+    "id": "g:jiaogei-give-to",
+    "title": "Handing something over with 交给",
+    "pattern": "object + 交给 + person",
+    "explanation": "交给 (jiāogěi) means \"to hand over to, to give to\" the person receiving it usually comes right after 交给, while the thing being handed over is often the topic mentioned first.",
+    "level": 2,
+    "examples": [
+      "s:l2:165",
+      "s:l2:166",
+      "s:l2:167",
+      "s:l2:168"
+    ]
+  },
+  {
+    "id": "g:xiangqi-recall",
+    "title": "Suddenly remembering with 想起",
+    "pattern": "(主语) + 想起 + object/clause",
+    "explanation": "想起 (xiǎngqǐ) means \"to recall, to suddenly think of/remember\" it describes a memory surfacing, often unplanned.",
+    "level": 2,
+    "examples": [
+      "s:l2:169",
+      "s:l2:170",
+      "s:l2:171",
+      "s:l2:172"
+    ]
+  },
+  {
+    "id": "g:zhaogu-take-care-of",
+    "title": "Looking after someone with 照顾",
+    "pattern": "(主语) + 照顾 + person/object",
+    "explanation": "照顾 (zhàogu) means \"to take care of, to look after\" used for people (children, patients, family) or things needing attention.",
+    "level": 2,
+    "examples": [
+      "s:l2:173",
+      "s:l2:174",
+      "s:l2:175",
+      "s:l2:176"
+    ]
+  },
+  {
+    "id": "g:chufa-set-off",
+    "title": "Departing with 出发",
+    "pattern": "(主语) + 出发 (+ time/place)",
+    "explanation": "出发 (chūfā) means \"to set off, to start a journey\" it describes the moment of departure, often paired with a time or destination.",
+    "level": 2,
+    "examples": [
+      "s:l2:177",
+      "s:l2:178",
+      "s:l2:179",
+      "s:l2:180"
+    ]
+  },
+  {
+    "id": "g:tigao-improve",
+    "title": "Raising a level with 提高",
+    "pattern": "提高 + skill/level/quality",
+    "explanation": "提高 (tígāo) means \"to raise, to improve, to increase\" used for abstract things like ability, level, or quality, not physical objects.",
+    "level": 2,
+    "examples": [
+      "s:l2:181",
+      "s:l2:182",
+      "s:l2:183",
+      "s:l2:184"
+    ]
+  },
+  {
+    "id": "g:duome-how-exclaim",
+    "title": "Exclaiming degree with 多么",
+    "pattern": "多么 + adjective (+ 啊)",
+    "explanation": "多么 (duōme) means \"how (very)...\" used in exclamations to emphasize a quality, often ending the sentence with 啊.",
+    "level": 2,
+    "examples": [
+      "s:l2:185",
+      "s:l2:186",
+      "s:l2:187",
+      "s:l2:188"
+    ]
+  },
+  {
+    "id": "g:fangbian-convenient",
+    "title": "Convenience with 方便",
+    "pattern": "(主语/事情) + 方便",
+    "explanation": "方便 (fāngbiàn) means \"convenient\" describing something that makes life easier. It can also be a polite verb meaning \"to be free/available\": 你什么时候方便?",
+    "level": 2,
+    "examples": [
+      "s:l2:189",
+      "s:l2:190",
+      "s:l2:191",
+      "s:l2:192"
+    ]
+  },
+  {
+    "id": "g:chabuduo-almost",
+    "title": "Almost the same with 差不多",
+    "pattern": "(主语) + 差不多 (+ adjective/clause)",
+    "explanation": "差不多 (chàbuduō) means \"almost, nearly, about the same\" used to say two things are close in amount or quality, or that something is nearly finished.",
+    "level": 2,
+    "examples": [
+      "s:l2:193",
+      "s:l2:194",
+      "s:l2:195",
+      "s:l2:196"
+    ]
+  },
+  {
+    "id": "g:suibian-casually",
+    "title": "Doing as you like with 随便",
+    "pattern": "随便 + verb phrase",
+    "explanation": "随便 (suíbiàn) means \"as you like, whatever, casually\" used to say something isn't strict, or to invite someone to choose freely. As a plain adjective it can also describe careless behavior.",
+    "level": 2,
+    "examples": [
+      "s:l2:197",
+      "s:l2:198",
+      "s:l2:199",
+      "s:l2:200"
+    ]
+  },
+  {
+    "id": "g:yishang-yixia-range",
+    "title": "Ranges with 以上 and 以下",
+    "pattern": "number/noun + 以上/以下",
+    "explanation": "以上 (yǐshàng) means \"above, or more\" and 以下 (yǐxià) means \"below, or less\" both attach right after a number or noun to mark a range.",
+    "level": 2,
+    "examples": [
+      "s:l2:201",
+      "s:l2:202",
+      "s:l2:203",
+      "s:l2:204"
+    ]
+  },
+  {
+    "id": "g:dehua-conditional-if",
+    "title": "A casual \"if\" with 的话",
+    "pattern": "(condition) + 的话，(就) + result",
+    "explanation": "的话 (dehuà) means \"if\" and attaches to the end of the condition clause. It often works together with 如果 at the start, or can be used alone in casual speech.",
+    "level": 2,
+    "examples": [
+      "s:l2:205",
+      "s:l2:206",
+      "s:l2:207",
+      "s:l2:208"
+    ]
+  },
+  {
+    "id": "g:zaojiu-long-ago",
+    "title": "Long ago with 早就",
+    "pattern": "(主语) + 早就 + verb phrase (+ 了)",
+    "explanation": "早就 (zǎojiù) means \"already, for a long time, long ago\" it emphasizes that something happened well before now, stronger than plain 已经.",
+    "level": 2,
+    "examples": [
+      "s:l2:209",
+      "s:l2:210",
+      "s:l2:211",
+      "s:l2:212"
+    ]
+  },
+  {
+    "id": "g:duojiu-how-long",
+    "title": "Asking duration with 多久",
+    "pattern": "verb phrase + 多久？",
+    "explanation": "多久 (duōjiǔ) asks \"how long\" a duration lasts it usually comes right after the verb or at the end of the question.",
+    "level": 2,
+    "examples": [
+      "s:l2:213",
+      "s:l2:214",
+      "s:l2:215",
+      "s:l2:216"
+    ]
+  },
+  {
+    "id": "g:guyi-on-purpose",
+    "title": "Intentional actions with 故意",
+    "pattern": "(主语) + 故意 + verb phrase",
+    "explanation": "故意 (gùyì) means \"on purpose, intentionally\" it describes an action done deliberately, often with a hint of blame.",
+    "level": 2,
+    "examples": [
+      "s:l2:217",
+      "s:l2:218",
+      "s:l2:219",
+      "s:l2:220"
+    ]
+  },
+  {
+    "id": "g:fangxin-rest-assured",
+    "title": "Feeling at ease with 放心",
+    "pattern": "你放心, ... / 对...放心",
+    "explanation": "放心 (fàngxīn) means \"to feel at ease, to not worry\". 你放心 is a common way to reassure someone; 对...放心 means \"to feel at ease about something\".",
+    "level": 2,
+    "examples": [
+      "s:l2:221",
+      "s:l2:222",
+      "s:l2:223",
+      "s:l2:224"
+    ]
+  },
+  {
+    "id": "g:buru-not-as-good-as",
+    "title": "Comparing options with 不如",
+    "pattern": "A + 不如 + B (+ adjective)",
+    "explanation": "不如 (bùrú) compares two things and says the first is not as good as the second: 这个不如那个 (this one isn't as good as that one). It can also suggest a better option: 不如我们走吧.",
+    "level": 2,
+    "examples": [
+      "s:l2:225",
+      "s:l2:226",
+      "s:l2:227",
+      "s:l2:228"
+    ]
+  },
+  {
+    "id": "g:nanguo-sad",
+    "title": "Feeling sad with 难过",
+    "pattern": "(主语) + 很/太 + 难过",
+    "explanation": "难过 (nánguò) means \"to feel sad, upset\" literally \"hard to get through\". It's an adjective describing an emotional state.",
+    "level": 2,
+    "examples": [
+      "s:l2:229",
+      "s:l2:230",
+      "s:l2:231",
+      "s:l2:232"
+    ]
+  },
+  {
+    "id": "g:buhaoyisi-embarrassed",
+    "title": "A soft apology with 不好意思",
+    "pattern": "不好意思，...",
+    "explanation": "不好意思 (bù hǎoyìsi) is a common phrase meaning \"sorry, excuse me\" or \"to feel embarrassed\" softer than 对不起, often used for small inconveniences.",
+    "level": 2,
+    "examples": [
+      "s:l2:233",
+      "s:l2:234",
+      "s:l2:235",
+      "s:l2:236"
+    ]
+  },
+  {
+    "id": "g:pengdao-run-into",
+    "title": "Chance encounters with 碰到",
+    "pattern": "(主语) + 碰到 + person/situation",
+    "explanation": "碰到 (pèngdào) means \"to run into, to encounter (by chance)\" used for meeting someone unexpectedly or coming across a problem.",
+    "level": 2,
+    "examples": [
+      "s:l2:237",
+      "s:l2:238",
+      "s:l2:239",
+      "s:l2:240"
+    ]
+  },
+  {
+    "id": "g:you-yisi-interesting",
+    "title": "Describing fun with 有意思",
+    "pattern": "(主语/事情) + 有意思",
+    "explanation": "有意思 (yǒu yìsi) means \"interesting, fun\" describing something engaging. Its opposite is 没有意思 or 没意思 (boring).",
+    "level": 2,
+    "examples": [
+      "s:l2:241",
+      "s:l2:242",
+      "s:l2:243",
+      "s:l2:244"
+    ]
+  },
+  {
+    "id": "g:yiwai-apart-from",
+    "title": "What's outside a group with 以外",
+    "pattern": "Noun + 以外，(都/也) + clause",
+    "explanation": "以外 (yǐwài) means \"apart from, besides, outside of\" attached after a noun. Without 除了 in front, it often pairs with 都 or 也 to say what else is true beyond that one exception.",
+    "level": 2,
+    "examples": [
+      "s:l2:245",
+      "s:l2:246",
+      "s:l2:247",
+      "s:l2:248"
+    ]
+  },
+  {
+    "id": "g:lianxi-practice",
+    "title": "Practicing a skill with 练习",
+    "pattern": "练习 + skill",
+    "explanation": "练习 (liànxí) means \"to practice\" (as a verb) or \"exercise\" (as a noun) followed by the skill or activity being practiced.",
+    "level": 2,
+    "examples": [
+      "s:l2:249",
+      "s:l2:250",
+      "s:l2:251",
+      "s:l2:252"
+    ]
+  },
+  {
+    "id": "g:dasheng-loudly",
+    "title": "Speaking loudly with 大声",
+    "pattern": "大声 + verb",
+    "explanation": "大声 (dàshēng) means \"loud, loudly\" often placed right before a verb like 说 or 叫 to describe how something is said.",
+    "level": 2,
+    "examples": [
+      "s:l2:253",
+      "s:l2:254",
+      "s:l2:255",
+      "s:l2:256"
+    ]
+  },
+  {
+    "id": "g:liru-forexample-formal",
+    "title": "A more formal \"for example\" with 例如",
+    "pattern": "..., 例如 + example(s)",
+    "explanation": "例如 (lìrú) means \"for example, such as\" a more formal version of 比如, often used in writing or careful explanations.",
+    "level": 2,
+    "examples": [
+      "s:l2:257",
+      "s:l2:258",
+      "s:l2:259",
+      "s:l2:260"
+    ]
+  },
+  {
+    "id": "g:buyiding-not-necessarily",
+    "title": "Softening certainty with 不一定",
+    "pattern": "(主语) + 不一定 + verb phrase",
+    "explanation": "不一定 (bù yídìng) means \"not necessarily, not for sure\" it softens a statement, showing something might be true but isn't certain.",
+    "level": 2,
+    "examples": [
+      "s:l2:261",
+      "s:l2:262",
+      "s:l2:263",
+      "s:l2:264"
+    ]
+  },
+  {
+    "id": "g:budan-erqie",
+    "title": "Stronger addition with 不但...而且",
+    "pattern": "不但 + A，而且 + B",
+    "explanation": "不但 (bùdàn) means \"not only\" and pairs with 而且 (\"but also\") to add a stronger second point a more emphatic version of plain 而且.",
+    "level": 2,
+    "examples": [
+      "s:l2:265",
+      "s:l2:266",
+      "s:l2:267",
+      "s:l2:268"
+    ]
+  },
+  {
+    "id": "g:shangliang-consult",
+    "title": "Talking it over with 商量",
+    "pattern": "(主语) + 跟/和 + person + 商量",
+    "explanation": "商量 (shāngliang) means \"to discuss, to talk something over\" usually to reach a decision together, often marked with 跟 or 和 for who you're discussing it with.",
+    "level": 2,
+    "examples": [
+      "s:l2:269",
+      "s:l2:270",
+      "s:l2:271",
+      "s:l2:272"
+    ]
+  },
+  {
+    "id": "g:paidui-queue",
+    "title": "Waiting in line with 排队",
+    "pattern": "(主语) + 排队 (+ verb phrase)",
+    "explanation": "排队 (páiduì) means \"to line up, to queue\" a common verb for waiting in an orderly line.",
+    "level": 2,
+    "examples": [
+      "s:l2:273",
+      "s:l2:274",
+      "s:l2:275",
+      "s:l2:276"
+    ]
+  },
+  {
+    "id": "g:huran-suddenly",
+    "title": "Sudden events with 忽然",
+    "pattern": "忽然 + verb phrase",
+    "explanation": "忽然 (hūrán) means \"suddenly\" describing something happening abruptly and unexpectedly, similar to 突然.",
+    "level": 2,
+    "examples": [
+      "s:l2:277",
+      "s:l2:278",
+      "s:l2:279",
+      "s:l2:280"
+    ]
+  },
+  {
+    "id": "g:congxiao-since-childhood",
+    "title": "Since youth with 从小",
+    "pattern": "从小 + clause",
+    "explanation": "从小 (cóngxiǎo) means \"since childhood, from a young age\" describing something true from early in someone's life.",
+    "level": 2,
+    "examples": [
+      "s:l2:281",
+      "s:l2:282",
+      "s:l2:283",
+      "s:l2:284"
+    ]
+  },
+  {
+    "id": "g:yigong-in-total",
+    "title": "Summing up with 一共",
+    "pattern": "一共 + number/quantity",
+    "explanation": "一共 (yígòng) means \"in total, altogether\" used to sum up a quantity, often with 多少 in questions: 一共多少钱? (how much in total?).",
+    "level": 2,
+    "examples": [
+      "s:l2:285",
+      "s:l2:286",
+      "s:l2:287",
+      "s:l2:288"
+    ]
+  },
+  {
+    "id": "g:kuaiyao-le-soon",
+    "title": "Coming up soon: 快要...了",
+    "pattern": "快要 + verb + 了",
+    "explanation": "快要...了 (kuàiyào...le) means \"about to happen, soon\" very similar to 就要...了, and often used for natural changes like weather or time passing.",
+    "level": 2,
+    "examples": [
+      "s:l2:289",
+      "s:l2:290",
+      "s:l2:291",
+      "s:l2:292"
+    ]
+  },
+  {
+    "id": "g:laoshi-always",
+    "title": "A recurring habit with 老是",
+    "pattern": "(主语) + 老是 + verb phrase",
+    "explanation": "老是 (lǎoshi) means \"always, constantly\" often with a complaining or exasperated tone about a repeated habit or problem.",
+    "level": 2,
+    "examples": [
+      "s:l2:293",
+      "s:l2:294",
+      "s:l2:295",
+      "s:l2:296"
+    ]
+  },
+  {
+    "id": "g:zhaochu-find-out",
+    "title": "Working something out with 找出",
+    "pattern": "找出 + object",
+    "explanation": "找出 (zhǎochū) means \"to find, to identify, to figure out\" a result complement showing that searching led to success.",
+    "level": 2,
+    "examples": [
+      "s:l2:297",
+      "s:l2:298",
+      "s:l2:299",
+      "s:l2:300"
+    ]
+  },
+  {
+    "id": "g:fuxi-review",
+    "title": "Reviewing material with 复习",
+    "pattern": "复习 + subject/material",
+    "explanation": "复习 (fùxí) means \"to review, to revise\" going back over material already learned, unlike 学习 (studying new material) or 练习 (practicing).",
+    "level": 2,
+    "examples": [
+      "s:l2:301",
+      "s:l2:302",
+      "s:l2:303",
+      "s:l2:304"
+    ]
+  },
+  {
+    "id": "g:zoukai-go-away",
+    "title": "Leaving a spot with 走开",
+    "pattern": "走开",
+    "explanation": "走开 (zǒukāi) means \"to go away, to move aside, to leave\" a direct, sometimes blunt way to describe someone leaving.",
+    "level": 2,
+    "examples": [
+      "s:l2:305",
+      "s:l2:306",
+      "s:l2:307",
+      "s:l2:308"
+    ]
+  },
+  {
+    "id": "g:songdao-deliver-to",
+    "title": "Delivering something with 送到",
+    "pattern": "送到 + place/person",
+    "explanation": "送到 (sòngdào) means \"to deliver to, to see someone to (a place)\" a verb + result complement showing something or someone arrives via the sending.",
+    "level": 2,
+    "examples": [
+      "s:l2:309",
+      "s:l2:310",
+      "s:l2:311",
+      "s:l2:312"
+    ]
+  },
+  {
+    "id": "g:zoujin-walk-into",
+    "title": "Entering a place with 走进",
+    "pattern": "走进 + place",
+    "explanation": "走进 (zǒujìn) means \"to walk into\" a directional verb + complement showing movement into a space.",
+    "level": 2,
+    "examples": [
+      "s:l2:313",
+      "s:l2:314",
+      "s:l2:315",
+      "s:l2:316"
+    ]
+  },
+  {
+    "id": "g:youdianr-a-bit",
+    "title": "A slight degree with 有点儿",
+    "pattern": "有点儿 + adjective",
+    "explanation": "有点儿 (yǒudiǎnr) means \"a bit, a little\" placed before an adjective, usually to describe something mildly negative or undesirable: 有点儿贵 (a bit expensive).",
+    "level": 2,
+    "examples": [
+      "s:l2:317",
+      "s:l2:318",
+      "s:l2:319",
+      "s:l2:320"
+    ]
+  },
+  {
+    "id": "g:guonian-celebrate-newyear",
+    "title": "Seeing in the New Year with 过年",
+    "pattern": "过年 (+ 的时候/时)",
+    "explanation": "过年 (guònián) means \"to celebrate the (Lunar) New Year\" often used with 的时候 to talk about what happens during that time.",
+    "level": 2,
+    "examples": [
+      "s:l2:321",
+      "s:l2:322",
+      "s:l2:323",
+      "s:l2:324"
+    ]
+  },
+  {
+    "id": "g:liuli-fluent",
+    "title": "Speaking fluently with 流利",
+    "pattern": "(verb 得) + 流利",
+    "explanation": "流利 (liúlì) means \"fluent\" often paired with the degree complement 得: 说得很流利 (speaks very fluently).",
+    "level": 2,
+    "examples": [
+      "s:l2:325",
+      "s:l2:326",
+      "s:l2:327",
+      "s:l2:328"
+    ]
+  },
+  {
+    "id": "g:jiaozuo-called",
+    "title": "Naming something with 叫作",
+    "pattern": "A + 叫作 + B",
+    "explanation": "叫作 (jiàozuò) means \"to be called, to be known as\" used to name or define something.",
+    "level": 2,
+    "examples": [
+      "s:l2:329",
+      "s:l2:330",
+      "s:l2:331",
+      "s:l2:332"
+    ]
+  },
+  {
+    "id": "g:yidiandian-tiny-bit",
+    "title": "Just a little with 一点点",
+    "pattern": "一点点 + noun/adjective",
+    "explanation": "一点点 (yìdiǎndiǎn) means \"just a little bit, a tiny amount\" a stronger, more vivid version of 一点儿.",
+    "level": 2,
+    "examples": [
+      "s:l2:333",
+      "s:l2:334",
+      "s:l2:335",
+      "s:l2:336"
+    ]
+  },
+  {
+    "id": "g:jianguo-experience-marker",
+    "title": "Marking experience with V + 过",
+    "pattern": "verb + 过",
+    "explanation": "过 (guo) right after a verb shows you have had the experience of doing something at some point: 见过 (have met before), 去过 (have been to). Negate with 没 + verb + 过.",
+    "level": 2,
+    "examples": [
+      "s:l2:337",
+      "s:l2:338",
+      "s:l2:339",
+      "s:l2:340"
+    ]
+  },
+  {
+    "id": "g:tinghao-pretty-good",
+    "title": "Casual approval with 挺...的",
+    "pattern": "挺 + adjective (+ 的)",
+    "explanation": "挺 (tǐng) means \"quite, pretty, rather\" similar to 很 but more colloquial, and often paired with 的 at the end: 挺好的 (pretty good).",
+    "level": 2,
+    "examples": [
+      "s:l2:341",
+      "s:l2:342",
+      "s:l2:343",
+      "s:l2:344"
+    ]
+  },
+  {
+    "id": "g:xiazhou-next-week",
+    "title": "Talking about next week with 下周",
+    "pattern": "下周 + clause",
+    "explanation": "下周 (xiàzhōu) means \"next week\" a time word placed at the start of the sentence or right after the subject, just like 明天 or 今天.",
+    "level": 2,
+    "examples": [
+      "s:l2:345",
+      "s:l2:346",
+      "s:l2:347",
+      "s:l2:348"
+    ]
+  },
+  {
+    "id": "g:buman-dissatisfied",
+    "title": "Being unhappy about something with 不满",
+    "pattern": "(主语) + 对 + X + 不满",
+    "explanation": "不满 (bùmǎn) means \"dissatisfied, discontented\" often used with 对 to specify what someone is unhappy about: 对这个结果不满.",
+    "level": 2,
+    "examples": [
+      "s:l2:349",
+      "s:l2:350",
+      "s:l2:351",
+      "s:l2:352"
+    ]
+  },
+  {
+    "id": "g:changjian-common",
+    "title": "Commonly seen things with 常见",
+    "pattern": "常见 + noun",
+    "explanation": "常见 (chángjiàn) means \"common, commonly seen\" describing something frequently encountered, usually placed before a noun.",
+    "level": 2,
+    "examples": [
+      "s:l2:353",
+      "s:l2:354",
+      "s:l2:355",
+      "s:l2:356"
+    ]
+  },
+  {
+    "id": "g:zheshihou-this-moment",
+    "title": "Marking a moment in a story with 这时候",
+    "pattern": "这时候 + clause",
+    "explanation": "这时候 (zhè shíhou) means \"at this moment, at this point in time\" used to mark a moment within a story or sequence of events.",
+    "level": 2,
+    "examples": [
+      "s:l2:357",
+      "s:l2:358",
+      "s:l2:359",
+      "s:l2:360"
+    ]
+  },
+  {
+    "id": "g:nianji-grade-level",
+    "title": "School grades with 年级",
+    "pattern": "number + 年级",
+    "explanation": "年级 (niánjí) means \"grade, year level (in school)\" combined with a number to say which year a student is in: 三年级 (third grade).",
+    "level": 2,
+    "examples": [
+      "s:l2:361",
+      "s:l2:362",
+      "s:l2:363",
+      "s:l2:364"
+    ]
+  },
+  {
+    "id": "g:huiguo-return-home-country",
+    "title": "Returning home with 回国",
+    "pattern": "(主语) + 回国 (+ time)",
+    "explanation": "回国 (huíguó) means \"to return to one's home country\" combining 回 (return) and 国 (country).",
+    "level": 2,
+    "examples": [
+      "s:l2:365",
+      "s:l2:366",
+      "s:l2:367",
+      "s:l2:368"
+    ]
+  },
+  {
+    "id": "g:lingxia-below-zero",
+    "title": "Freezing temperatures with 零下",
+    "pattern": "零下 + number + 度",
+    "explanation": "零下 (língxià) means \"below zero\" used with 度 (dù, degrees) to describe freezing temperatures: 零下五度 (minus five degrees).",
+    "level": 2,
+    "examples": [
+      "s:l2:369",
+      "s:l2:370",
+      "s:l2:371",
+      "s:l2:372"
+    ]
+  },
+  {
+    "id": "g:wenlu-ask-directions",
+    "title": "Asking for directions with 问路",
+    "pattern": "(主语) + 问路",
+    "explanation": "问路 (wènlù) means \"to ask for directions\" a common verb+object combination for travelers.",
+    "level": 2,
+    "examples": [
+      "s:l2:373",
+      "s:l2:374",
+      "s:l2:375",
+      "s:l2:376"
+    ]
+  },
+  {
+    "id": "g:duanxin-text-message",
+    "title": "Sending texts with 短信",
+    "pattern": "发/收 + 短信",
+    "explanation": "短信 (duǎnxìn) means \"text message, SMS\" commonly paired with 发 (to send) or 收到 (to receive).",
+    "level": 2,
+    "examples": [
+      "s:l2:377",
+      "s:l2:378",
+      "s:l2:379",
+      "s:l2:380"
+    ]
+  }
+]
