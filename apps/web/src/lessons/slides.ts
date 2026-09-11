@@ -146,7 +146,7 @@ export function generateSlides(input: SlideInput, seed: number): Slide[] {
   // Write-it exercises for new word characters
   const newWordChars = new Set<string>();
   for (const w of newWords) for (const ch of w.characters) newWordChars.add(ch);
-  const writeChars = shuffle(Array.from(newWordChars), rng).slice(0, 1);
+  const writeChars = shuffle(Array.from(newWordChars), rng).slice(0, 2);
   for (const ch of writeChars) {
     slides.push({ type: 'exercise', exercise: writeIt(ch, rng, id) });
   }
