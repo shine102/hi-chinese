@@ -105,10 +105,12 @@ function flowProgress(state: FlowState): number {
 
 // ── Slide components ────────────────────────────────────────────────────
 
-function WordMeaningSlide({ word, onContinue }: { word: Word; onContinue: () => void }) {
+function WordIntroSlide({ word, onContinue }: { word: Word; onContinue: () => void }) {
   return (
     <div className="flex flex-col items-center gap-4 py-6">
       <div className="text-6xl">{word.simplified}</div>
+      <div className="text-2xl text-red-700">{word.pinyin}</div>
+      <SpeakButton text={word.simplified} size="lg" />
       {word.traditional !== word.simplified && (
         <div className="text-sm text-stone-500">Traditional: {word.traditional}</div>
       )}
@@ -117,17 +119,6 @@ function WordMeaningSlide({ word, onContinue }: { word: Word; onContinue: () => 
           <li key={m}>{m}</li>
         ))}
       </ul>
-      <ContinueButton onClick={onContinue} />
-    </div>
-  );
-}
-
-function WordPinyinSlide({ word, onContinue }: { word: Word; onContinue: () => void }) {
-  return (
-    <div className="flex flex-col items-center gap-4 py-6">
-      <div className="text-5xl">{word.simplified}</div>
-      <div className="text-2xl text-red-700">{word.pinyin}</div>
-      <SpeakButton text={word.simplified} size="lg" />
       <ContinueButton onClick={onContinue} />
     </div>
   );
@@ -371,13 +362,9 @@ function SlideRenderer({
   onSkip: () => void;
 }) {
   switch (slide.type) {
-    case 'word-meaning': {
+    case 'word-intro': {
       const word = content.words.get(slide.wordId);
-      return word ? <WordMeaningSlide word={word} onContinue={onContinue} /> : null;
-    }
-    case 'word-pinyin': {
-      const word = content.words.get(slide.wordId);
-      return word ? <WordPinyinSlide word={word} onContinue={onContinue} /> : null;
+      return word ? <WordIntroSlide word={word} onContinue={onContinue} /> : null;
     }
     case 'word-writing': {
       const word = content.words.get(slide.wordId);

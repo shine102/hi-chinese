@@ -14,8 +14,7 @@ import type { ChoiceDirection, Exercise } from '../exercises/types.js';
 import type { Lesson } from './compute.js';
 
 export type Slide =
-  | { type: 'word-meaning'; wordId: string }
-  | { type: 'word-pinyin'; wordId: string }
+  | { type: 'word-intro'; wordId: string }
   | { type: 'word-writing'; wordId: string }
   | { type: 'grammar-intro'; grammarId: string; sentenceIds: string[] }
   | { type: 'review-intro'; wordIds: string[] }
@@ -69,8 +68,7 @@ export function generateSlides(input: SlideInput, seed: number): Slide[] {
   // Phase 1: Introduce new words in pairs, with exercises after each pair
   for (let i = 0; i < newWords.length; i++) {
     const word = newWords[i]!;
-    slides.push({ type: 'word-meaning', wordId: word.id });
-    slides.push({ type: 'word-pinyin', wordId: word.id });
+    slides.push({ type: 'word-intro', wordId: word.id });
     if (word.characters.length > 0) {
       slides.push({ type: 'word-writing', wordId: word.id });
     }
