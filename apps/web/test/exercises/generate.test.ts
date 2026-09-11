@@ -46,7 +46,10 @@ describe('generateSession', () => {
     expect(byKind(session, 'sentence-builder')).toHaveLength(2);
     expect(byKind(session, 'match-pairs')).toHaveLength(1);
     expect(byKind(session, 'listen-pick')).toHaveLength(0);
-    expect(byKind(session, 'multiple-choice')).toHaveLength(11);
+    const writeIts = byKind(session, 'write-it');
+    expect(writeIts.length).toBeGreaterThanOrEqual(1);
+    expect(writeIts.length).toBeLessThanOrEqual(2);
+    expect(byKind(session, 'multiple-choice')).toHaveLength(SESSION_SIZE - 4 - writeIts.length);
   });
 
   it('adds three listen-pick exercises when audio is available', () => {
@@ -107,7 +110,7 @@ describe('generateSession', () => {
     for (const p of pairs.pairs) expect(fixtureUnit1.unit.wordIds).toContain(p.wordId);
   });
 
-  it('uses only multiple choice when the unit has no sentences and too few words for pairs', () => {
+  it('uses only multiple choice and write-it when the unit has no sentences and too few words for pairs', () => {
     const tiny: SessionInput = {
       ...input,
       chunk: {
@@ -117,7 +120,9 @@ describe('generateSession', () => {
       },
     };
     const s = generateSession(tiny, 1);
-    expect(s.every((e) => e.kind === 'multiple-choice')).toBe(true);
-    expect(s).toHaveLength(6); // 2 words x 3 directions
+    expect(s.every((e) => e.kind === 'multiple-choice' || e.kind === 'write-it')).toBe(true);
+    expect(byKind(s, 'multiple-choice')).toHaveLength(6); // 2 words x 3 directions
+    expect(byKind(s, 'write-it').length).toBeGreaterThanOrEqual(1);
+    expect(byKind(s, 'write-it').length).toBeLessThanOrEqual(2);
   });
 });

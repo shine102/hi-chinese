@@ -1,4 +1,4 @@
-import type { ContentManifest, UnitChunk, Word } from '@hi-chinese/content';
+import type { CharacterData, ContentManifest, UnitChunk, Word } from '@hi-chinese/content';
 import type { ContentLoaders } from '../../src/content/provider.js';
 
 function word(
@@ -110,9 +110,44 @@ export const fixtureManifest: ContentManifest = {
     { id: 'l1-u01', level: 1, order: 1, title: 'Unit 1', wordCount: 6, grammarCount: 1 },
     { id: 'l1-u02', level: 1, order: 2, title: 'Unit 2', wordCount: 4, grammarCount: 0 },
   ],
-  characters: [],
-  counts: { words: 10, characters: 0, grammar: 1, sentences: 3, units: 2 },
+  characters: ['我', '你', '他', '是', '不', '好', '们'],
+  counts: { words: 10, characters: 7, grammar: 1, sentences: 3, units: 2 },
 };
+
+export const fixtureCharacters: CharacterData[] = [
+  {
+    character: '我',
+    strokes: ['M 350 400 Q 400 350 450 400'],
+    medians: [
+      [
+        [350, 400],
+        [400, 350],
+        [450, 400],
+      ],
+    ],
+    pinyin: ['wǒ'],
+    definition: 'I; me',
+    radical: '戈',
+    decomposition: '⿰扌戈',
+    wordIds: ['w:我'],
+  },
+  {
+    character: '你',
+    strokes: ['M 300 400 Q 350 350 400 400'],
+    medians: [
+      [
+        [300, 400],
+        [350, 350],
+        [400, 400],
+      ],
+    ],
+    pinyin: ['nǐ'],
+    definition: 'you',
+    radical: '亻',
+    decomposition: '⿰亻尔',
+    wordIds: ['w:你'],
+  },
+];
 
 export function fixtureLoaders(): ContentLoaders {
   return {

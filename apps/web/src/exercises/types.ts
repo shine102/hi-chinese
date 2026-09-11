@@ -51,17 +51,26 @@ export interface FillBlankExercise {
   correctIndex: number;
 }
 
+export interface WriteItExercise {
+  kind: 'write-it';
+  id: string;
+  character: string;
+  showOutline: boolean;
+}
+
 export type Exercise =
   | MultipleChoiceExercise
   | ListenPickExercise
   | MatchPairsExercise
   | SentenceBuilderExercise
-  | FillBlankExercise;
+  | FillBlankExercise
+  | WriteItExercise;
 
 export type Answer =
   | { kind: 'choice'; index: number }
   | { kind: 'order'; tiles: string[] }
-  | { kind: 'pairs'; mismatches: number };
+  | { kind: 'pairs'; mismatches: number }
+  | { kind: 'write'; totalMistakes: number; showedAnswer: boolean };
 
 export function checkAnswer(exercise: Exercise, answer: Answer): boolean {
   switch (exercise.kind) {
@@ -77,6 +86,8 @@ export function checkAnswer(exercise: Exercise, answer: Answer): boolean {
       );
     case 'match-pairs':
       return answer.kind === 'pairs' && answer.mismatches === 0;
+    case 'write-it':
+      return answer.kind === 'write' && !answer.showedAnswer;
   }
 }
 
@@ -90,5 +101,7 @@ export function correctAnswerText(exercise: Exercise): string {
       return exercise.answer.join('');
     case 'match-pairs':
       return exercise.pairs.map((p) => `${p.zh} = ${p.en}`).join(', ');
+    case 'write-it':
+      return exercise.character;
   }
 }

@@ -8,6 +8,7 @@ import type {
   MatchPairsExercise,
   MultipleChoiceExercise,
   SentenceBuilderExercise,
+  WriteItExercise,
 } from './types.js';
 
 export const SESSION_SIZE = 15;
@@ -221,6 +222,15 @@ function fillBlank(
   };
 }
 
+function writeIt(character: string, rng: Rng, id: IdGen): WriteItExercise {
+  return {
+    kind: 'write-it',
+    id: id('wr'),
+    character,
+    showOutline: true,
+  };
+}
+
 /**
  * Spec §4: about 15 exercises from the unit's words, sentences and grammar.
  * Fill-the-blank per grammar point (max 2), up to 2 sentence builders, one
@@ -261,6 +271,14 @@ export function generateSession(input: SessionInput, seed: number): Exercise[] {
 
   const pairs = matchPairs(unitWords, rng, id);
   if (pairs) special.push(pairs);
+
+  const unitChars = new Set<string>();
+  for (const wid of chunk.unit.wordIds) {
+    const w = words.get(wid);
+    if (w) for (const ch of w.characters) unitChars.add(ch);
+  }
+  const writeChars = shuffle(Array.from(unitChars), rng).slice(0, rng() < 0.5 ? 1 : 2);
+  for (const ch of writeChars) special.push(writeIt(ch, rng, id));
 
   if (input.audio)
     for (const w of pick(unitWords, 3, rng)) special.push(listenPick(w, input, rng, id));

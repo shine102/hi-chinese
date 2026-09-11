@@ -4,6 +4,7 @@ import { ListenPick } from './ListenPick.js';
 import { MatchPairs } from './MatchPairs.js';
 import { MultipleChoice, type ExerciseProps } from './MultipleChoice.js';
 import { SentenceBuilder } from './SentenceBuilder.js';
+import { WriteIt } from './WriteIt.js';
 
 export function ExerciseView({ exercise, answered, onAnswer }: ExerciseProps<Exercise>) {
   let body;
@@ -22,6 +23,9 @@ export function ExerciseView({ exercise, answered, onAnswer }: ExerciseProps<Exe
       break;
     case 'match-pairs':
       body = <MatchPairs exercise={exercise} answered={answered} onAnswer={onAnswer} />;
+      break;
+    case 'write-it':
+      body = <WriteIt exercise={exercise} answered={answered} onAnswer={onAnswer} />;
       break;
   }
   return (
