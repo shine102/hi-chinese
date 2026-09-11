@@ -1,0 +1,438 @@
+[
+  { "id": "s:l3:001", "zh": "请把门关上。", "pinyin": "Qǐng bǎ mén guānshàng.", "en": "Please close the door.", "words": ["请", "把", "门", "关上"] },
+  { "id": "s:l3:002", "zh": "我把衣服洗了。", "pinyin": "Wǒ bǎ yīfu xǐ le.", "en": "I washed the clothes.", "words": ["我", "把", "衣服", "洗", "了"] },
+  { "id": "s:l3:003", "zh": "她把手机放在桌子上了。", "pinyin": "Tā bǎ shǒujī fàng zài zhuōzi shàng le.", "en": "She put her phone on the table.", "words": ["她", "把", "手机", "放", "在", "桌子", "上", "了"] },
+  { "id": "s:l3:004", "zh": "我把这本书还给你。", "pinyin": "Wǒ bǎ zhè běn shū huán gěi nǐ.", "en": "I'll give this book back to you.", "words": ["我", "把", "这", "本", "书", "还", "给", "你"] },
+
+  { "id": "s:l3:005", "zh": "我的手机被他拿走了。", "pinyin": "Wǒ de shǒujī bèi tā ná zǒu le.", "en": "My phone was taken away by him.", "words": ["我", "的", "手机", "被", "他", "拿", "走", "了"] },
+  { "id": "s:l3:006", "zh": "门被风吹开了。", "pinyin": "Mén bèi fēng chuī kāi le.", "en": "The door was blown open by the wind.", "words": ["门", "被", "风", "吹", "开", "了"] },
+  { "id": "s:l3:007", "zh": "这本书被他借走了。", "pinyin": "Zhè běn shū bèi tā jiè zǒu le.", "en": "This book was borrowed by him.", "words": ["这", "本", "书", "被", "他", "借", "走", "了"] },
+  { "id": "s:l3:008", "zh": "菜被他吃完了。", "pinyin": "Cài bèi tā chī wán le.", "en": "The food was all eaten by him.", "words": ["菜", "被", "他", "吃", "完", "了"] },
+
+  { "id": "s:l3:009", "zh": "为了身体健康，他常常运动。", "pinyin": "Wèile shēntǐ jiànkāng, tā chángcháng yùndòng.", "en": "For the sake of his health, he often exercises.", "words": ["为了", "身体", "健康", "他", "常常", "运动"] },
+  { "id": "s:l3:010", "zh": "为了学汉语，她常常听中文歌。", "pinyin": "Wèile xué Hànyǔ, tā chángcháng tīng Zhōngwén gē.", "en": "In order to learn Chinese, she often listens to Chinese songs.", "words": ["为了", "学", "汉语", "她", "常常", "听", "中文", "歌"] },
+  { "id": "s:l3:011", "zh": "为了买房子，他们努力工作。", "pinyin": "Wèile mǎi fángzi, tāmen nǔlì gōngzuò.", "en": "In order to buy a house, they work hard.", "words": ["为了", "买", "房子", "他们", "努力", "工作"] },
+  { "id": "s:l3:012", "zh": "为了参加比赛，他每天练习。", "pinyin": "Wèile cānjiā bǐsài, tā měi tiān liànxí.", "en": "In order to take part in the competition, he practices every day.", "words": ["为了", "参加", "比赛", "他", "每", "天", "练习"] },
+
+  { "id": "s:l3:013", "zh": "我只是问问，没有别的意思。", "pinyin": "Wǒ zhǐshì wènwen, méiyǒu bié de yìsi.", "en": "I'm just asking, nothing else meant by it.", "words": ["我", "只是", "问", "问", "没有", "别的", "意思"] },
+  { "id": "s:l3:014", "zh": "他只是想帮助你。", "pinyin": "Tā zhǐshì xiǎng bāngzhù nǐ.", "en": "He just wants to help you.", "words": ["他", "只是", "想", "帮助", "你"] },
+  { "id": "s:l3:015", "zh": "这只是一个开始。", "pinyin": "Zhè zhǐshì yī gè kāishǐ.", "en": "This is just a beginning.", "words": ["这", "只是", "一", "个", "开始"] },
+
+  { "id": "s:l3:016", "zh": "连我都不知道这件事。", "pinyin": "Lián wǒ dōu bù zhīdào zhè jiàn shì.", "en": "Even I don't know about this.", "words": ["连", "我", "都", "不", "知道", "这", "件", "事"] },
+  { "id": "s:l3:017", "zh": "他连一句话都没说。", "pinyin": "Tā lián yī jù huà dōu méi shuō.", "en": "He didn't even say a single word.", "words": ["他", "连", "一", "句", "话", "都", "没", "说"] },
+  { "id": "s:l3:018", "zh": "连老师都不知道这个问题。", "pinyin": "Lián lǎoshī dōu bù zhīdào zhège wèntí.", "en": "Even the teacher doesn't know this question.", "words": ["连", "老师", "都", "不", "知道", "这", "个", "问题"] },
+  { "id": "s:l3:019", "zh": "他忙得连饭都没时间吃。", "pinyin": "Tā máng de lián fàn dōu méi shíjiān chī.", "en": "He's so busy he doesn't even have time to eat.", "words": ["他", "忙", "得", "连", "饭", "都", "没", "时间", "吃"] },
+
+  { "id": "s:l3:020", "zh": "只有努力学习，你才能成功。", "pinyin": "Zhǐyǒu nǔlì xuéxí, nǐ cái néng chénggōng.", "en": "Only by studying hard can you succeed.", "words": ["只有", "努力", "学习", "你", "才", "能", "成功"] },
+  { "id": "s:l3:021", "zh": "只有多练习，才能说好汉语。", "pinyin": "Zhǐyǒu duō liànxí, cái néng shuō hǎo Hànyǔ.", "en": "Only with lots of practice can you speak Chinese well.", "words": ["只有", "多", "练习", "才", "能", "说", "好", "汉语"] },
+  { "id": "s:l3:022", "zh": "只有你告诉我，我才能知道。", "pinyin": "Zhǐyǒu nǐ gàosu wǒ, wǒ cái néng zhīdào.", "en": "Only if you tell me can I know.", "words": ["只有", "你", "告诉", "我", "我", "才", "能", "知道"] },
+  { "id": "s:l3:023", "zh": "只有身体健康，才能好好工作。", "pinyin": "Zhǐyǒu shēntǐ jiànkāng, cái néng hǎohāo gōngzuò.", "en": "Only with good health can one work well.", "words": ["只有", "身体", "健康", "才", "能", "好好", "工作"] },
+
+  { "id": "s:l3:024", "zh": "这个消息使他很高兴。", "pinyin": "Zhège xiāoxi shǐ tā hěn gāoxìng.", "en": "This news made him very happy.", "words": ["这", "个", "消息", "使", "他", "很", "高兴"] },
+  { "id": "s:l3:025", "zh": "他的努力使他成功了。", "pinyin": "Tā de nǔlì shǐ tā chénggōng le.", "en": "His effort made him succeed.", "words": ["他", "的", "努力", "使", "他", "成功", "了"] },
+  { "id": "s:l3:026", "zh": "这件事使我很难过。", "pinyin": "Zhè jiàn shì shǐ wǒ hěn nánguò.", "en": "This matter made me very sad.", "words": ["这", "件", "事", "使", "我", "很", "难过"] },
+  { "id": "s:l3:027", "zh": "这个消息使大家很紧张。", "pinyin": "Zhège xiāoxi shǐ dàjiā hěn jǐnzhāng.", "en": "This news made everyone nervous.", "words": ["这", "个", "消息", "使", "大家", "很", "紧张"] },
+
+  { "id": "s:l3:028", "zh": "你去吗？当然去！", "pinyin": "Nǐ qù ma? Dāngrán qù!", "en": "Are you going? Of course I am!", "words": ["你", "去", "吗", "当然", "去"] },
+  { "id": "s:l3:029", "zh": "这个问题当然很重要。", "pinyin": "Zhège wèntí dāngrán hěn zhòngyào.", "en": "This question is of course very important.", "words": ["这", "个", "问题", "当然", "很", "重要"] },
+  { "id": "s:l3:030", "zh": "我当然记得你的名字。", "pinyin": "Wǒ dāngrán jìde nǐ de míngzi.", "en": "Of course I remember your name.", "words": ["我", "当然", "记得", "你", "的", "名字"] },
+
+  { "id": "s:l3:031", "zh": "今天热极了。", "pinyin": "Jīntiān rè jíle.", "en": "Today is extremely hot.", "words": ["今天", "热", "极了"] },
+  { "id": "s:l3:032", "zh": "这个电影好看极了。", "pinyin": "Zhège diànyǐng hǎokàn jíle.", "en": "This movie is extremely good.", "words": ["这", "个", "电影", "好看", "极了"] },
+  { "id": "s:l3:033", "zh": "他高兴极了。", "pinyin": "Tā gāoxìng jíle.", "en": "He's extremely happy.", "words": ["他", "高兴", "极了"] },
+  { "id": "s:l3:034", "zh": "这里的菜好吃极了。", "pinyin": "Zhèlǐ de cài hǎochī jíle.", "en": "The food here is extremely delicious.", "words": ["这里", "的", "菜", "好吃", "极了"] },
+
+  { "id": "s:l3:035", "zh": "他终于回来了。", "pinyin": "Tā zhōngyú huílai le.", "en": "He finally came back.", "words": ["他", "终于", "回来", "了"] },
+  { "id": "s:l3:036", "zh": "我们终于到了。", "pinyin": "Wǒmen zhōngyú dào le.", "en": "We finally arrived.", "words": ["我们", "终于", "到", "了"] },
+  { "id": "s:l3:037", "zh": "经过努力，他终于成功了。", "pinyin": "Jīngguò nǔlì, tā zhōngyú chénggōng le.", "en": "After much effort, he finally succeeded.", "words": ["经过", "努力", "他", "终于", "成功", "了"] },
+
+  { "id": "s:l3:038", "zh": "除了汉语，他还会说英语。", "pinyin": "Chúle Hànyǔ, tā hái huì shuō Yīngyǔ.", "en": "Besides Chinese, he can also speak English.", "words": ["除了", "汉语", "他", "还", "会", "说", "英语"] },
+  { "id": "s:l3:039", "zh": "除了看书，我还喜欢运动。", "pinyin": "Chúle kànshū, wǒ hái xǐhuan yùndòng.", "en": "Besides reading, I also like sports.", "words": ["除了", "看", "书", "我", "还", "喜欢", "运动"] },
+  { "id": "s:l3:040", "zh": "除了她，我也认识他的家人。", "pinyin": "Chúle tā, wǒ yě rènshi tā de jiārén.", "en": "Besides her, I also know his family.", "words": ["除了", "她", "我", "也", "认识", "他", "的", "家人"] },
+  { "id": "s:l3:041", "zh": "除了工作，他还要照顾孩子。", "pinyin": "Chúle gōngzuò, tā hái yào zhàogù háizi.", "en": "Besides work, he also has to take care of the kids.", "words": ["除了", "工作", "他", "还", "要", "照顾", "孩子"] },
+
+  { "id": "s:l3:042", "zh": "他突然站起来了。", "pinyin": "Tā tūrán zhàn qǐlái le.", "en": "He suddenly stood up.", "words": ["他", "突然", "站", "起来", "了"] },
+  { "id": "s:l3:043", "zh": "天突然下雨了。", "pinyin": "Tiān tūrán xiàyǔ le.", "en": "It suddenly started raining.", "words": ["天", "突然", "下雨", "了"] },
+  { "id": "s:l3:044", "zh": "她突然哭了。", "pinyin": "Tā tūrán kū le.", "en": "She suddenly cried.", "words": ["她", "突然", "哭", "了"] },
+
+  { "id": "s:l3:045", "zh": "他很努力，因此他成功了。", "pinyin": "Tā hěn nǔlì, yīncǐ tā chénggōng le.", "en": "He worked hard, therefore he succeeded.", "words": ["他", "很", "努力", "因此", "他", "成功", "了"] },
+  { "id": "s:l3:046", "zh": "天气不好，因此比赛取消了。", "pinyin": "Tiānqì bù hǎo, yīncǐ bǐsài qǔxiāo le.", "en": "The weather was bad, so the match was cancelled.", "words": ["天气", "不", "好", "因此", "比赛", "取消", "了"] },
+  { "id": "s:l3:047", "zh": "他不懂汉语，因此我帮他。", "pinyin": "Tā bù dǒng Hànyǔ, yīncǐ wǒ bāng tā.", "en": "He doesn't understand Chinese, so I help him.", "words": ["他", "不", "懂", "汉语", "因此", "我", "帮", "他"] },
+
+  { "id": "s:l3:048", "zh": "我曾经去过北京。", "pinyin": "Wǒ céngjīng qùguo Běijīng.", "en": "I once went to Beijing.", "words": ["我", "曾经", "去", "过", "北京"] },
+  { "id": "s:l3:049", "zh": "他曾经是一名老师。", "pinyin": "Tā céngjīng shì yī míng lǎoshī.", "en": "He was once a teacher.", "words": ["他", "曾经", "是", "一", "名", "老师"] },
+  { "id": "s:l3:050", "zh": "她曾经学过汉语。", "pinyin": "Tā céngjīng xuéguo Hànyǔ.", "en": "She once studied Chinese.", "words": ["她", "曾经", "学", "过", "汉语"] },
+
+  { "id": "s:l3:051", "zh": "你到底想说什么？", "pinyin": "Nǐ dàodǐ xiǎng shuō shénme?", "en": "What exactly do you want to say?", "words": ["你", "到底", "想", "说", "什么"] },
+  { "id": "s:l3:052", "zh": "这到底是怎么回事？", "pinyin": "Zhè dàodǐ shì zěnme huí shì?", "en": "What on earth is going on here?", "words": ["这", "到底", "是", "怎么", "回", "事"] },
+  { "id": "s:l3:053", "zh": "你到底去不去？", "pinyin": "Nǐ dàodǐ qù bu qù?", "en": "Are you going or not, after all?", "words": ["你", "到底", "去", "不", "去"] },
+  { "id": "s:l3:054", "zh": "他到底同意不同意？", "pinyin": "Tā dàodǐ tóngyì bu tóngyì?", "en": "Does he agree or not, after all?", "words": ["他", "到底", "同意", "不", "同意"] },
+
+  { "id": "s:l3:055", "zh": "请你说下去。", "pinyin": "Qǐng nǐ shuō xiàqù.", "en": "Please keep talking.", "words": ["请", "你", "说", "下去"] },
+  { "id": "s:l3:056", "zh": "虽然很难，我们也要坚持下去。", "pinyin": "Suīrán hěn nán, wǒmen yě yào jiānchí xiàqù.", "en": "Even though it's hard, we still have to keep persisting.", "words": ["虽然", "很", "难", "我们", "也", "要", "坚持", "下去"] },
+  { "id": "s:l3:057", "zh": "他决定继续做下去。", "pinyin": "Tā juédìng jìxù zuò xiàqù.", "en": "He decided to keep doing it.", "words": ["他", "决定", "继续", "做", "下去"] },
+  { "id": "s:l3:058", "zh": "他一直写下去。", "pinyin": "Tā yīzhí xiě xiàqù.", "en": "He kept writing on and on.", "words": ["他", "一直", "写", "下去"] },
+
+  { "id": "s:l3:059", "zh": "他学习很努力，并且成绩很好。", "pinyin": "Tā xuéxí hěn nǔlì, bìngqiě chéngjì hěn hǎo.", "en": "He studies very hard, and moreover his grades are good.", "words": ["他", "学习", "很", "努力", "并且", "成绩", "很", "好"] },
+  { "id": "s:l3:060", "zh": "公司决定开始这个计划，并且马上行动。", "pinyin": "Gōngsī juédìng kāishǐ zhège jìhuà, bìngqiě mǎshàng xíngdòng.", "en": "The company decided to start this plan, and take action right away.", "words": ["公司", "决定", "开始", "这", "个", "计划", "并且", "马上", "行动"] },
+  { "id": "s:l3:061", "zh": "我们讨论了这个问题，并且找到了办法。", "pinyin": "Wǒmen tǎolùn le zhège wèntí, bìngqiě zhǎodào le bànfǎ.", "en": "We discussed this problem and found a solution.", "words": ["我们", "讨论", "了", "这", "个", "问题", "并且", "找到", "了", "办法"] },
+
+  { "id": "s:l3:062", "zh": "首先，我们要确定目标，然后开始工作。", "pinyin": "Shǒuxiān, wǒmen yào quèdìng mùbiāo, ránhòu kāishǐ gōngzuò.", "en": "First we need to set a goal, then start working.", "words": ["首先", "我们", "要", "确定", "目标", "然后", "开始", "工作"] },
+  { "id": "s:l3:063", "zh": "首先介绍一下儿自己，然后回答问题。", "pinyin": "Shǒuxiān jièshào yīxiàr zìjǐ, ránhòu huídá wèntí.", "en": "First introduce yourself a bit, then answer questions.", "words": ["首先", "介绍", "一下儿", "自己", "然后", "回答", "问题"] },
+  { "id": "s:l3:064", "zh": "首先洗手，然后吃饭。", "pinyin": "Shǒuxiān xǐ shǒu, ránhòu chīfàn.", "en": "First wash your hands, then eat.", "words": ["首先", "洗", "手", "然后", "吃", "饭"] },
+
+  { "id": "s:l3:065", "zh": "这个工作至少需要三天。", "pinyin": "Zhège gōngzuò zhìshǎo xūyào sān tiān.", "en": "This job needs at least three days.", "words": ["这", "个", "工作", "至少", "需要", "三", "天"] },
+  { "id": "s:l3:066", "zh": "你至少应该告诉他。", "pinyin": "Nǐ zhìshǎo yīnggāi gàosu tā.", "en": "You should at least tell him.", "words": ["你", "至少", "应该", "告诉", "他"] },
+  { "id": "s:l3:067", "zh": "我们至少要练习一个小时。", "pinyin": "Wǒmen zhìshǎo yào liànxí yī gè xiǎoshí.", "en": "We need to practice for at least an hour.", "words": ["我们", "至少", "要", "练习", "一", "个", "小时"] },
+
+  { "id": "s:l3:068", "zh": "大雨造成了很多问题。", "pinyin": "Dàyǔ zàochéng le hěn duō wèntí.", "en": "The heavy rain caused a lot of problems.", "words": ["大", "雨", "造成", "了", "很", "多", "问题"] },
+  { "id": "s:l3:069", "zh": "这个错误造成了很大的影响。", "pinyin": "Zhège cuòwù zàochéng le hěn dà de yǐngxiǎng.", "en": "This mistake caused a big impact.", "words": ["这", "个", "错误", "造成", "了", "很", "大", "的", "影响"] },
+  { "id": "s:l3:070", "zh": "交通事故造成三人受伤。", "pinyin": "Jiāotōng shìgù zàochéng sān rén shòushāng.", "en": "The traffic accident caused three people to be injured.", "words": ["交通", "事故", "造成", "三", "人", "受伤"] },
+
+  { "id": "s:l3:071", "zh": "由于天气不好，比赛取消了。", "pinyin": "Yóuyú tiānqì bù hǎo, bǐsài qǔxiāo le.", "en": "Due to bad weather, the match was cancelled.", "words": ["由于", "天气", "不", "好", "比赛", "取消", "了"] },
+  { "id": "s:l3:072", "zh": "由于工作太忙，他没有时间休息。", "pinyin": "Yóuyú gōngzuò tài máng, tā méiyǒu shíjiān xiūxi.", "en": "Due to being too busy with work, he has no time to rest.", "words": ["由于", "工作", "太", "忙", "他", "没有", "时间", "休息"] },
+  { "id": "s:l3:073", "zh": "由于身体不好，她请假了。", "pinyin": "Yóuyú shēntǐ bù hǎo, tā qǐngjià le.", "en": "Due to poor health, she took leave.", "words": ["由于", "身体", "不", "好", "她", "请假", "了"] },
+
+  { "id": "s:l3:074", "zh": "面对困难，他一直很努力。", "pinyin": "Miànduì kùnnan, tā yīzhí hěn nǔlì.", "en": "Facing difficulty, he always works hard.", "words": ["面对", "困难", "他", "一直", "很", "努力"] },
+  { "id": "s:l3:075", "zh": "面对这个问题，我们要好好想想。", "pinyin": "Miànduì zhège wèntí, wǒmen yào hǎohāo xiǎngxiang.", "en": "Facing this problem, we need to think it over carefully.", "words": ["面对", "这", "个", "问题", "我们", "要", "好好", "想", "想"] },
+  { "id": "s:l3:076", "zh": "面对压力，她没有哭。", "pinyin": "Miànduì yālì, tā méiyǒu kū.", "en": "Facing pressure, she didn't cry.", "words": ["面对", "压力", "她", "没有", "哭"] },
+
+  { "id": "s:l3:077", "zh": "虽然很忙，他仍然每天运动。", "pinyin": "Suīrán hěn máng, tā réngrán měi tiān yùndòng.", "en": "Even though he's busy, he still exercises every day.", "words": ["虽然", "很", "忙", "他", "仍然", "每", "天", "运动"] },
+  { "id": "s:l3:078", "zh": "已经十点了，他仍然在工作。", "pinyin": "Yǐjīng shí diǎn le, tā réngrán zài gōngzuò.", "en": "It's already ten o'clock, and he's still working.", "words": ["已经", "十", "点", "了", "他", "仍然", "在", "工作"] },
+  { "id": "s:l3:079", "zh": "这个问题仍然没有解决。", "pinyin": "Zhège wèntí réngrán méiyǒu jiějué.", "en": "This problem still hasn't been solved.", "words": ["这", "个", "问题", "仍然", "没有", "解决"] },
+
+  { "id": "s:l3:080", "zh": "这本书很值得看。", "pinyin": "Zhè běn shū hěn zhídé kàn.", "en": "This book is really worth reading.", "words": ["这", "本", "书", "很", "值得", "看"] },
+  { "id": "s:l3:081", "zh": "他说的话值得我们好好想想。", "pinyin": "Tā shuō de huà zhídé wǒmen hǎohāo xiǎngxiang.", "en": "What he said is worth thinking over carefully.", "words": ["他", "说", "的", "话", "值得", "我们", "好好", "想", "想"] },
+  { "id": "s:l3:082", "zh": "这件事值得高兴。", "pinyin": "Zhè jiàn shì zhídé gāoxìng.", "en": "This is worth being happy about.", "words": ["这", "件", "事", "值得", "高兴"] },
+  { "id": "s:l3:083", "zh": "这个地方值得去看看。", "pinyin": "Zhège dìfang zhídé qù kànkan.", "en": "This place is worth visiting.", "words": ["这", "个", "地方", "值得", "去", "看", "看"] },
+
+  { "id": "s:l3:084", "zh": "这次比赛仅用了十分钟。", "pinyin": "Zhè cì bǐsài jǐn yòng le shí fēnzhōng.", "en": "This match took only ten minutes.", "words": ["这", "次", "比赛", "仅", "用", "了", "十", "分钟"] },
+  { "id": "s:l3:085", "zh": "这仅仅是一个开始。", "pinyin": "Zhè jǐnjǐn shì yī gè kāishǐ.", "en": "This is only the beginning.", "words": ["这", "仅仅", "是", "一", "个", "开始"] },
+  { "id": "s:l3:086", "zh": "这件事仅他一个人知道。", "pinyin": "Zhè jiàn shì jǐn tā yī gè rén zhīdào.", "en": "Only he alone knows about this matter.", "words": ["这", "件", "事", "仅", "他", "一", "个", "人", "知道"] },
+
+  { "id": "s:l3:087", "zh": "我本来想去，但是下雨了。", "pinyin": "Wǒ běnlái xiǎng qù, dànshì xiàyǔ le.", "en": "I originally wanted to go, but it rained.", "words": ["我", "本来", "想", "去", "但是", "下雨", "了"] },
+  { "id": "s:l3:088", "zh": "他本来是老师，后来做了记者。", "pinyin": "Tā běnlái shì lǎoshī, hòulái zuò le jìzhě.", "en": "He was originally a teacher, and later became a reporter.", "words": ["他", "本来", "是", "老师", "后来", "做", "了", "记者"] },
+  { "id": "s:l3:089", "zh": "这本来不是问题。", "pinyin": "Zhè běnlái bù shì wèntí.", "en": "This wasn't originally a problem.", "words": ["这", "本来", "不", "是", "问题"] },
+
+  { "id": "s:l3:090", "zh": "难道你不知道吗？", "pinyin": "Nándào nǐ bù zhīdào ma?", "en": "Don't you know?", "words": ["难道", "你", "不", "知道", "吗"] },
+  { "id": "s:l3:091", "zh": "难道他不来了吗？", "pinyin": "Nándào tā bù lái le ma?", "en": "Is it possible he's not coming?", "words": ["难道", "他", "不", "来", "了", "吗"] },
+  { "id": "s:l3:092", "zh": "难道这不是真的吗？", "pinyin": "Nándào zhè bù shì zhēnde ma?", "en": "Could this really not be true?", "words": ["难道", "这", "不", "是", "真的", "吗"] },
+  { "id": "s:l3:093", "zh": "难道你忘了吗？", "pinyin": "Nándào nǐ wàng le ma?", "en": "Did you seriously forget?", "words": ["难道", "你", "忘", "了", "吗"] },
+
+  { "id": "s:l3:094", "zh": "这个问题相当难。", "pinyin": "Zhège wèntí xiāngdāng nán.", "en": "This problem is quite difficult.", "words": ["这", "个", "问题", "相当", "难"] },
+  { "id": "s:l3:095", "zh": "他的汉语说得相当好。", "pinyin": "Tā de Hànyǔ shuō de xiāngdāng hǎo.", "en": "His Chinese is spoken quite well.", "words": ["他", "的", "汉语", "说", "得", "相当", "好"] },
+  { "id": "s:l3:096", "zh": "这次比赛相当精彩。", "pinyin": "Zhè cì bǐsài xiāngdāng jīngcǎi.", "en": "This match was quite exciting.", "words": ["这", "次", "比赛", "相当", "精彩"] },
+
+  { "id": "s:l3:097", "zh": "他比以前更加努力了。", "pinyin": "Tā bǐ yǐqián gèngjiā nǔlì le.", "en": "He's even more hardworking than before.", "words": ["他", "比", "以前", "更加", "努力", "了"] },
+  { "id": "s:l3:098", "zh": "这让我更加喜欢中国文化。", "pinyin": "Zhè ràng wǒ gèngjiā xǐhuan Zhōngguó wénhuà.", "en": "This makes me like Chinese culture even more.", "words": ["这", "让", "我", "更加", "喜欢", "中国", "文化"] },
+  { "id": "s:l3:099", "zh": "环境变得更加安静了。", "pinyin": "Huánjìng biàn de gèngjiā ānjìng le.", "en": "The environment became even quieter.", "words": ["环境", "变", "得", "更加", "安静", "了"] },
+
+  { "id": "s:l3:100", "zh": "他从来不生气。", "pinyin": "Tā cónglái bù shēngqì.", "en": "He never gets angry.", "words": ["他", "从来", "不", "生气"] },
+  { "id": "s:l3:101", "zh": "我从来没去过中国。", "pinyin": "Wǒ cónglái méi qùguo Zhōngguó.", "en": "I've never been to China.", "words": ["我", "从来", "没", "去", "过", "中国"] },
+  { "id": "s:l3:102", "zh": "她从来不喝酒。", "pinyin": "Tā cónglái bù hē jiǔ.", "en": "She never drinks alcohol.", "words": ["她", "从来", "不", "喝", "酒"] },
+
+  { "id": "s:l3:103", "zh": "任何人都可以参加。", "pinyin": "Rènhé rén dōu kěyǐ cānjiā.", "en": "Anyone at all can take part.", "words": ["任何", "人", "都", "可以", "参加"] },
+  { "id": "s:l3:104", "zh": "任何问题他都能回答。", "pinyin": "Rènhé wèntí tā dōu néng huídá.", "en": "He can answer any question.", "words": ["任何", "问题", "他", "都", "能", "回答"] },
+  { "id": "s:l3:105", "zh": "任何时候你都可以给我打电话。", "pinyin": "Rènhé shíhou nǐ dōu kěyǐ gěi wǒ dǎ diànhuà.", "en": "You can call me anytime.", "words": ["任何", "时候", "你", "都", "可以", "给", "我", "打电话"] },
+
+  { "id": "s:l3:106", "zh": "直到晚上，他才回家。", "pinyin": "Zhídào wǎnshang, tā cái huíjiā.", "en": "He didn't come home until evening.", "words": ["直到", "晚上", "他", "才", "回家"] },
+  { "id": "s:l3:107", "zh": "直到现在，我才明白这件事。", "pinyin": "Zhídào xiànzài, wǒ cái míngbai zhè jiàn shì.", "en": "It wasn't until now that I understood this matter.", "words": ["直到", "现在", "我", "才", "明白", "这", "件", "事"] },
+  { "id": "s:l3:108", "zh": "直到考试那天，他才开始准备。", "pinyin": "Zhídào kǎoshì nà tiān, tā cái kāishǐ zhǔnbèi.", "en": "He didn't start preparing until the day of the exam.", "words": ["直到", "考试", "那", "天", "他", "才", "开始", "准备"] },
+
+  { "id": "s:l3:109", "zh": "要是明天下雨，我们就不去了。", "pinyin": "Yàoshi míngtiān xiàyǔ, wǒmen jiù bù qù le.", "en": "If it rains tomorrow, we won't go.", "words": ["要是", "明天", "下雨", "我们", "就", "不", "去", "了"] },
+  { "id": "s:l3:110", "zh": "要是你有问题，就问老师。", "pinyin": "Yàoshi nǐ yǒu wèntí, jiù wèn lǎoshī.", "en": "If you have a problem, ask the teacher.", "words": ["要是", "你", "有", "问题", "就", "问", "老师"] },
+  { "id": "s:l3:111", "zh": "要是他不来，我们就先开始。", "pinyin": "Yàoshi tā bù lái, wǒmen jiù xiān kāishǐ.", "en": "If he doesn't come, we'll start first.", "words": ["要是", "他", "不", "来", "我们", "就", "先", "开始"] },
+
+  { "id": "s:l3:112", "zh": "请按照规定做。", "pinyin": "Qǐng ànzhào guīdìng zuò.", "en": "Please act according to the rules.", "words": ["请", "按照", "规定", "做"] },
+  { "id": "s:l3:113", "zh": "按照计划，我们明天出发。", "pinyin": "Ànzhào jìhuà, wǒmen míngtiān chūfā.", "en": "According to the plan, we set off tomorrow.", "words": ["按照", "计划", "我们", "明天", "出发"] },
+  { "id": "s:l3:114", "zh": "他按照老师的方法学习。", "pinyin": "Tā ànzhào lǎoshī de fāngfǎ xuéxí.", "en": "He studies according to the teacher's method.", "words": ["他", "按照", "老师", "的", "方法", "学习"] },
+
+  { "id": "s:l3:115", "zh": "显然，他说的是真的。", "pinyin": "Xiǎnrán, tā shuō de shì zhēn de.", "en": "Obviously, what he said is true.", "words": ["显然", "他", "说", "的", "是", "真", "的"] },
+  { "id": "s:l3:116", "zh": "他显然不高兴。", "pinyin": "Tā xiǎnrán bù gāoxìng.", "en": "He is obviously unhappy.", "words": ["他", "显然", "不", "高兴"] },
+  { "id": "s:l3:117", "zh": "这个结果显然不对。", "pinyin": "Zhège jiéguǒ xiǎnrán bù duì.", "en": "This result is obviously wrong.", "words": ["这", "个", "结果", "显然", "不", "对"] },
+
+  { "id": "s:l3:118", "zh": "因为下雨，我们不得不取消比赛。", "pinyin": "Yīnwèi xiàyǔ, wǒmen bùdébù qǔxiāo bǐsài.", "en": "Because it rained, we had no choice but to cancel the match.", "words": ["因为", "下雨", "我们", "不得不", "取消", "比赛"] },
+  { "id": "s:l3:119", "zh": "他不得不接受这个结果。", "pinyin": "Tā bùdébù jiēshòu zhège jiéguǒ.", "en": "He had no choice but to accept this result.", "words": ["他", "不得不", "接受", "这", "个", "结果"] },
+  { "id": "s:l3:120", "zh": "时间不够，我不得不快点走了。", "pinyin": "Shíjiān bù gòu, wǒ bùdébù kuài diǎn zǒu le.", "en": "There wasn't enough time, so I had to hurry off.", "words": ["时间", "不", "够", "我", "不得不", "快", "点", "走", "了"] },
+
+  { "id": "s:l3:121", "zh": "他大概三十岁。", "pinyin": "Tā dàgài sānshí suì.", "en": "He's probably around thirty years old.", "words": ["他", "大概", "三", "十", "岁"] },
+  { "id": "s:l3:122", "zh": "这件事大概是真的。", "pinyin": "Zhè jiàn shì dàgài shì zhēn de.", "en": "This is probably true.", "words": ["这", "件", "事", "大概", "是", "真", "的"] },
+  { "id": "s:l3:123", "zh": "我们大概需要两个小时。", "pinyin": "Wǒmen dàgài xūyào liǎng gè xiǎoshí.", "en": "We probably need about two hours.", "words": ["我们", "大概", "需要", "两", "个", "小时"] },
+
+  { "id": "s:l3:124", "zh": "请你慢慢说。", "pinyin": "Qǐng nǐ mànmàn shuō.", "en": "Please speak slowly.", "words": ["请", "你", "慢慢", "说"] },
+  { "id": "s:l3:125", "zh": "他慢慢走进教室。", "pinyin": "Tā mànmàn zǒu jìn jiàoshì.", "en": "He walked slowly into the classroom.", "words": ["他", "慢慢", "走", "进", "教室"] },
+  { "id": "s:l3:126", "zh": "事情会慢慢变好的。", "pinyin": "Shìqing huì mànmàn biàn hǎo de.", "en": "Things will slowly get better.", "words": ["事情", "会", "慢慢", "变", "好", "的"] },
+
+  { "id": "s:l3:127", "zh": "事实上，他没有去过北京。", "pinyin": "Shìshí shang, tā méiyǒu qùguo Běijīng.", "en": "In fact, he has never been to Beijing.", "words": ["事实上", "他", "没有", "去", "过", "北京"] },
+  { "id": "s:l3:128", "zh": "事实上，这个问题很简单。", "pinyin": "Shìshí shang, zhège wèntí hěn jiǎndān.", "en": "In fact, this problem is very simple.", "words": ["事实上", "这", "个", "问题", "很", "简单"] },
+  { "id": "s:l3:129", "zh": "事实上，他一直很努力。", "pinyin": "Shìshí shang, tā yīzhí hěn nǔlì.", "en": "In fact, he has always worked hard.", "words": ["事实上", "他", "一直", "很", "努力"] },
+
+  { "id": "s:l3:130", "zh": "我把手机弄坏了。", "pinyin": "Wǒ bǎ shǒujī nòng huài le.", "en": "I broke my phone.", "words": ["我", "把", "手机", "弄", "坏", "了"] },
+  { "id": "s:l3:131", "zh": "车坏了，我们只能走路。", "pinyin": "Chē huài le, wǒmen zhǐnéng zǒulù.", "en": "The car broke down, so we could only walk.", "words": ["车", "坏", "了", "我们", "只能", "走路"] },
+  { "id": "s:l3:132", "zh": "孩子把玩具弄坏了。", "pinyin": "Háizi bǎ wánjù nòng huài le.", "en": "The child broke the toy.", "words": ["孩子", "把", "玩具", "弄", "坏", "了"] },
+
+  { "id": "s:l3:133", "zh": "这么多菜，我吃不了。", "pinyin": "Zhème duō cài, wǒ chī bu liǎo.", "en": "That's so much food, I can't finish it.", "words": ["这么", "多", "菜", "我", "吃", "不", "了"] },
+  { "id": "s:l3:134", "zh": "这件事我做得了。", "pinyin": "Zhè jiàn shì wǒ zuò de liǎo.", "en": "I can manage to do this.", "words": ["这", "件", "事", "我", "做", "得", "了"] },
+  { "id": "s:l3:135", "zh": "太晚了，我们去不了了。", "pinyin": "Tài wǎn le, wǒmen qù bu liǎo le.", "en": "It's too late, we can't go anymore.", "words": ["太", "晚", "了", "我们", "去", "不", "了", "了"] },
+
+  { "id": "s:l3:136", "zh": "这件事由他负责。", "pinyin": "Zhè jiàn shì yóu tā fùzé.", "en": "This matter is handled by him.", "words": ["这", "件", "事", "由", "他", "负责"] },
+  { "id": "s:l3:137", "zh": "这个问题由老师决定。", "pinyin": "Zhège wèntí yóu lǎoshī juédìng.", "en": "This question is decided by the teacher.", "words": ["这", "个", "问题", "由", "老师", "决定"] },
+  { "id": "s:l3:138", "zh": "晚饭由我来做。", "pinyin": "Wǎnfàn yóu wǒ lái zuò.", "en": "I'll be the one to make dinner.", "words": ["晚饭", "由", "我", "来", "做"] },
+
+  { "id": "s:l3:139", "zh": "他不仅会说汉语，还会说英语。", "pinyin": "Tā bùjǐn huì shuō Hànyǔ, hái huì shuō Yīngyǔ.", "en": "He can not only speak Chinese, but also English.", "words": ["他", "不仅", "会", "说", "汉语", "还", "会", "说", "英语"] },
+  { "id": "s:l3:140", "zh": "这个电影不仅精彩，也很有意思。", "pinyin": "Zhège diànyǐng bùjǐn jīngcǎi, yě hěn yǒuyìsi.", "en": "This movie is not only exciting, but also interesting.", "words": ["这", "个", "电影", "不仅", "精彩", "也", "很", "有意思"] },
+  { "id": "s:l3:141", "zh": "这个地方不仅安静，还很漂亮。", "pinyin": "Zhège dìfang bùjǐn ānjìng, hái hěn piàoliang.", "en": "This place is not only quiet, but also pretty.", "words": ["这", "个", "地方", "不仅", "安静", "还", "很", "漂亮"] },
+
+  { "id": "s:l3:142", "zh": "这个消息简直太好了！", "pinyin": "Zhège xiāoxi jiǎnzhí tài hǎo le!", "en": "This news is simply too good!", "words": ["这", "个", "消息", "简直", "太", "好", "了"] },
+  { "id": "s:l3:143", "zh": "他简直不敢相信。", "pinyin": "Tā jiǎnzhí bùgǎn xiāngxìn.", "en": "He simply couldn't believe it.", "words": ["他", "简直", "不", "敢", "相信"] },
+  { "id": "s:l3:144", "zh": "这里简直漂亮极了。", "pinyin": "Zhèlǐ jiǎnzhí piàoliang jíle.", "en": "This place is simply extremely beautiful.", "words": ["这里", "简直", "漂亮", "极了"] },
+
+  { "id": "s:l3:145", "zh": "反正我不去。", "pinyin": "Fǎnzhèng wǒ bù qù.", "en": "I'm not going, anyway.", "words": ["反正", "我", "不", "去"] },
+  { "id": "s:l3:146", "zh": "你说什么都没用，反正他不会同意。", "pinyin": "Nǐ shuō shénme dōu méi yòng, fǎnzhèng tā bù huì tóngyì.", "en": "No matter what you say, he won't agree anyway.", "words": ["你", "说", "什么", "都", "没", "用", "反正", "他", "不", "会", "同意"] },
+  { "id": "s:l3:147", "zh": "反正时间还早，我们慢慢走吧。", "pinyin": "Fǎnzhèng shíjiān hái zǎo, wǒmen mànmàn zǒu ba.", "en": "It's still early anyway, let's walk slowly.", "words": ["反正", "时间", "还", "早", "我们", "慢慢", "走", "吧"] },
+
+  { "id": "s:l3:148", "zh": "恐怕要下雨了。", "pinyin": "Kǒngpà yào xiàyǔ le.", "en": "I'm afraid it's going to rain.", "words": ["恐怕", "要", "下雨", "了"] },
+  { "id": "s:l3:149", "zh": "他恐怕不知道这件事。", "pinyin": "Tā kǒngpà bù zhīdào zhè jiàn shì.", "en": "He probably doesn't know about this.", "words": ["他", "恐怕", "不", "知道", "这", "件", "事"] },
+  { "id": "s:l3:150", "zh": "时间不够，恐怕我们去不了了。", "pinyin": "Shíjiān bù gòu, kǒngpà wǒmen qù bu liǎo le.", "en": "There isn't enough time; I'm afraid we can't go.", "words": ["时间", "不", "够", "恐怕", "我们", "去", "不", "了", "了"] },
+
+  { "id": "s:l3:151", "zh": "请你尽量早点来。", "pinyin": "Qǐng nǐ jǐnliàng zǎo diǎn lái.", "en": "Please come as early as possible.", "words": ["请", "你", "尽量", "早", "点", "来"] },
+  { "id": "s:l3:152", "zh": "我们尽量帮助他。", "pinyin": "Wǒmen jǐnliàng bāngzhù tā.", "en": "We'll help him as much as we can.", "words": ["我们", "尽量", "帮助", "他"] },
+  { "id": "s:l3:153", "zh": "你尽量少喝酒。", "pinyin": "Nǐ jǐnliàng shǎo hē jiǔ.", "en": "Try to drink as little alcohol as possible.", "words": ["你", "尽量", "少", "喝", "酒"] },
+
+  { "id": "s:l3:154", "zh": "请你及时告诉我结果。", "pinyin": "Qǐng nǐ jíshí gàosu wǒ jiéguǒ.", "en": "Please tell me the result promptly.", "words": ["请", "你", "及时", "告诉", "我", "结果"] },
+  { "id": "s:l3:155", "zh": "医生及时救了他。", "pinyin": "Yīshēng jíshí jiù le tā.", "en": "The doctor saved him just in time.", "words": ["医生", "及时", "救", "了", "他"] },
+  { "id": "s:l3:156", "zh": "他及时发现了问题。", "pinyin": "Tā jíshí fāxiàn le wèntí.", "en": "He discovered the problem in time.", "words": ["他", "及时", "发现", "了", "问题"] },
+
+  { "id": "s:l3:157", "zh": "他连续三天没来上课。", "pinyin": "Tā liánxù sān tiān méi lái shàngkè.", "en": "He hasn't come to class for three days in a row.", "words": ["他", "连续", "三", "天", "没", "来", "上课"] },
+  { "id": "s:l3:158", "zh": "这个队连续赢了五场比赛。", "pinyin": "Zhège duì liánxù yíng le wǔ chǎng bǐsài.", "en": "This team has won five matches in a row.", "words": ["这", "个", "队", "连续", "赢", "了", "五", "场", "比赛"] },
+  { "id": "s:l3:159", "zh": "他连续工作了十个小时。", "pinyin": "Tā liánxù gōngzuò le shí gè xiǎoshí.", "en": "He worked continuously for ten hours.", "words": ["他", "连续", "工作", "了", "十", "个", "小时"] },
+
+  { "id": "s:l3:160", "zh": "我通常七点起床。", "pinyin": "Wǒ tōngcháng qī diǎn qǐchuáng.", "en": "I usually get up at seven.", "words": ["我", "通常", "七", "点", "起床"] },
+  { "id": "s:l3:161", "zh": "他通常在家吃饭。", "pinyin": "Tā tōngcháng zàijiā chīfàn.", "en": "He usually eats at home.", "words": ["他", "通常", "在家", "吃饭"] },
+  { "id": "s:l3:162", "zh": "周末我们通常去公园。", "pinyin": "Zhōumò wǒmen tōngcháng qù gōngyuán.", "en": "On weekends we usually go to the park.", "words": ["周末", "我们", "通常", "去", "公园"] },
+
+  { "id": "s:l3:163", "zh": "我们应该互相帮助。", "pinyin": "Wǒmen yīnggāi hùxiāng bāngzhù.", "en": "We should help each other.", "words": ["我们", "应该", "互相", "帮助"] },
+  { "id": "s:l3:164", "zh": "他们互相认识很多年了。", "pinyin": "Tāmen hùxiāng rènshi hěn duō nián le.", "en": "They've known each other for many years.", "words": ["他们", "互相", "认识", "很", "多", "年", "了"] },
+  { "id": "s:l3:165", "zh": "好朋友要互相关心。", "pinyin": "Hǎo péngyou yào hùxiāng guānxīn.", "en": "Good friends should care about each other.", "words": ["好", "朋友", "要", "互相", "关心"] },
+
+  { "id": "s:l3:166", "zh": "经理亲自来了。", "pinyin": "Jīnglǐ qīnzì lái le.", "en": "The manager came in person.", "words": ["经理", "亲自", "来", "了"] },
+  { "id": "s:l3:167", "zh": "他亲自做了这道菜。", "pinyin": "Tā qīnzì zuò le zhè dào cài.", "en": "He personally made this dish.", "words": ["他", "亲自", "做", "了", "这", "道", "菜"] },
+  { "id": "s:l3:168", "zh": "老师亲自回答了我的问题。", "pinyin": "Lǎoshī qīnzì huídá le wǒ de wèntí.", "en": "The teacher personally answered my question.", "words": ["老师", "亲自", "回答", "了", "我", "的", "问题"] },
+
+  { "id": "s:l3:169", "zh": "他今天显得很高兴。", "pinyin": "Tā jīntiān xiǎnde hěn gāoxìng.", "en": "He seems very happy today.", "words": ["他", "今天", "显得", "很", "高兴"] },
+  { "id": "s:l3:170", "zh": "这个房间显得很安静。", "pinyin": "Zhège fángjiān xiǎnde hěn ānjìng.", "en": "This room seems very quiet.", "words": ["这", "个", "房间", "显得", "很", "安静"] },
+  { "id": "s:l3:171", "zh": "她说话的时候显得有点儿紧张。", "pinyin": "Tā shuōhuà de shíhou xiǎnde yǒudiǎnr jǐnzhāng.", "en": "She seemed a bit nervous while speaking.", "words": ["她", "说话", "的", "时候", "显得", "有点儿", "紧张"] },
+
+  { "id": "s:l3:172", "zh": "他主动帮我拿东西。", "pinyin": "Tā zhǔdòng bāng wǒ ná dōngxi.", "en": "He proactively helped me carry things.", "words": ["他", "主动", "帮", "我", "拿", "东西"] },
+  { "id": "s:l3:173", "zh": "她主动跟我说话。", "pinyin": "Tā zhǔdòng gēn wǒ shuōhuà.", "en": "She took the initiative to talk to me.", "words": ["她", "主动", "跟", "我", "说话"] },
+  { "id": "s:l3:174", "zh": "我们应该主动学习。", "pinyin": "Wǒmen yīnggāi zhǔdòng xuéxí.", "en": "We should take the initiative to learn.", "words": ["我们", "应该", "主动", "学习"] },
+
+  { "id": "s:l3:175", "zh": "他把房子改成了办公室。", "pinyin": "Tā bǎ fángzi gǎi chéng le bàngōngshì.", "en": "He converted the house into an office.", "words": ["他", "把", "房子", "改", "成", "了", "办公室"] },
+  { "id": "s:l3:176", "zh": "他把钱都换成了人民币。", "pinyin": "Tā bǎ qián dōu huàn chéng le rénmínbì.", "en": "He changed all the money into RMB.", "words": ["他", "把", "钱", "都", "换", "成", "了", "人民币"] },
+  { "id": "s:l3:177", "zh": "我把这个故事写成了一本书。", "pinyin": "Wǒ bǎ zhège gùshi xiě chéng le yī běn shū.", "en": "I wrote this story into a book.", "words": ["我", "把", "这", "个", "故事", "写", "成", "了", "一", "本", "书"] },
+
+  { "id": "s:l3:178", "zh": "我把这本书送给了他。", "pinyin": "Wǒ bǎ zhè běn shū sòng gěi le tā.", "en": "I gave this book to him.", "words": ["我", "把", "这", "本", "书", "送", "给", "了", "他"] },
+  { "id": "s:l3:179", "zh": "她把照片发给了我。", "pinyin": "Tā bǎ zhàopiàn fā gěi le wǒ.", "en": "She sent the photo to me.", "words": ["她", "把", "照片", "发", "给", "了", "我"] },
+  { "id": "s:l3:180", "zh": "他把车卖给了朋友。", "pinyin": "Tā bǎ chē mài gěi le péngyou.", "en": "He sold the car to a friend.", "words": ["他", "把", "车", "卖", "给", "了", "朋友"] },
+
+  { "id": "s:l3:181", "zh": "我的钱包让他拿走了。", "pinyin": "Wǒ de qiánbāo ràng tā ná zǒu le.", "en": "My wallet was taken away by him.", "words": ["我", "的", "钱包", "让", "他", "拿", "走", "了"] },
+  { "id": "s:l3:182", "zh": "这本书叫我弄坏了。", "pinyin": "Zhè běn shū jiào wǒ nòng huài le.", "en": "This book got ruined by me.", "words": ["这", "本", "书", "叫", "我", "弄", "坏", "了"] },
+  { "id": "s:l3:183", "zh": "门让风吹开了。", "pinyin": "Mén ràng fēng chuī kāi le.", "en": "The door was blown open by the wind.", "words": ["门", "让", "风", "吹", "开", "了"] },
+
+  { "id": "s:l3:184", "zh": "这个房间坐得下十个人。", "pinyin": "Zhège fángjiān zuò de xià shí gè rén.", "en": "This room can seat ten people.", "words": ["这", "个", "房间", "坐", "得", "下", "十", "个", "人"] },
+  { "id": "s:l3:185", "zh": "我的包放不下这么多书。", "pinyin": "Wǒ de bāo fàng bu xià zhème duō shū.", "en": "My bag can't hold this many books.", "words": ["我", "的", "包", "放", "不", "下", "这么", "多", "书"] },
+  { "id": "s:l3:186", "zh": "这张桌子坐不下六个人。", "pinyin": "Zhè zhāng zhuōzi zuò bu xià liù gè rén.", "en": "This table can't seat six people.", "words": ["这", "张", "桌子", "坐", "不", "下", "六", "个", "人"] },
+
+  { "id": "s:l3:187", "zh": "这个方法较简单。", "pinyin": "Zhège fāngfǎ jiào jiǎndān.", "en": "This method is relatively simple.", "words": ["这", "个", "方法", "较", "简单"] },
+  { "id": "s:l3:188", "zh": "今年的雨较多。", "pinyin": "Jīnnián de yǔ jiào duō.", "en": "This year there's relatively more rain.", "words": ["今年", "的", "雨", "较", "多"] },
+  { "id": "s:l3:189", "zh": "这个地区较安全。", "pinyin": "Zhège dìqū jiào ānquán.", "en": "This area is relatively safe.", "words": ["这", "个", "地区", "较", "安全"] },
+
+  { "id": "s:l3:190", "zh": "他始终相信自己会成功。", "pinyin": "Tā shǐzhōng xiāngxìn zìjǐ huì chénggōng.", "en": "He believed all along that he would succeed.", "words": ["他", "始终", "相信", "自己", "会", "成功"] },
+  { "id": "s:l3:191", "zh": "她始终没有回答这个问题。", "pinyin": "Tā shǐzhōng méiyǒu huídá zhège wèntí.", "en": "She never answered this question the whole time.", "words": ["她", "始终", "没有", "回答", "这", "个", "问题"] },
+  { "id": "s:l3:192", "zh": "我们始终是好朋友。", "pinyin": "Wǒmen shǐzhōng shì hǎo péngyou.", "en": "We've always been good friends.", "words": ["我们", "始终", "是", "好", "朋友"] },
+
+  { "id": "s:l3:193", "zh": "他说会下雨，果然下雨了。", "pinyin": "Tā shuō huì xiàyǔ, guǒrán xiàyǔ le.", "en": "He said it would rain, and sure enough it rained.", "words": ["他", "说", "会", "下雨", "果然", "下雨", "了"] },
+  { "id": "s:l3:194", "zh": "这个电影果然很精彩。", "pinyin": "Zhège diànyǐng guǒrán hěn jīngcǎi.", "en": "This movie was indeed very exciting, as expected.", "words": ["这", "个", "电影", "果然", "很", "精彩"] },
+  { "id": "s:l3:195", "zh": "他果然通过了考试。", "pinyin": "Tā guǒrán tōngguò le kǎoshì.", "en": "He passed the exam, just as expected.", "words": ["他", "果然", "通过", "了", "考试"] },
+
+  { "id": "s:l3:196", "zh": "车坏了，我们只好走路去。", "pinyin": "Chē huài le, wǒmen zhǐhǎo zǒulù qù.", "en": "The car broke down, so we had to walk there.", "words": ["车", "坏", "了", "我们", "只好", "走路", "去"] },
+  { "id": "s:l3:197", "zh": "没有钱，他只好卖了车。", "pinyin": "Méiyǒu qián, tā zhǐhǎo mài le chē.", "en": "Without money, he had no choice but to sell the car.", "words": ["没有", "钱", "他", "只好", "卖", "了", "车"] },
+  { "id": "s:l3:198", "zh": "天太晚了，我们只好回家了。", "pinyin": "Tiān tài wǎn le, wǒmen zhǐhǎo huíjiā le.", "en": "It was too late, so we had to go home.", "words": ["天", "太", "晚", "了", "我们", "只好", "回家", "了"] },
+
+  { "id": "s:l3:199", "zh": "不论多忙，他都会运动。", "pinyin": "Bùlùn duō máng, tā dōu huì yùndòng.", "en": "No matter how busy he is, he always exercises.", "words": ["不论", "多", "忙", "他", "都", "会", "运动"] },
+  { "id": "s:l3:200", "zh": "不论谁问，我都不会说。", "pinyin": "Bùlùn shéi wèn, wǒ dōu bù huì shuō.", "en": "No matter who asks, I won't say.", "words": ["不论", "谁", "问", "我", "都", "不", "会", "说"] },
+  { "id": "s:l3:201", "zh": "不论去哪里，他都带着这本书。", "pinyin": "Bùlùn qù nǎlǐ, tā dōu dàizhe zhè běn shū.", "en": "No matter where he goes, he always brings this book.", "words": ["不论", "去", "哪里", "他", "都", "带", "着", "这", "本", "书"] },
+
+  { "id": "s:l3:202", "zh": "成功往往需要很多努力。", "pinyin": "Chénggōng wǎngwǎng xūyào hěn duō nǔlì.", "en": "Success often requires a lot of effort.", "words": ["成功", "往往", "需要", "很", "多", "努力"] },
+  { "id": "s:l3:203", "zh": "年轻人往往喜欢新东西。", "pinyin": "Niánqīng rén wǎngwǎng xǐhuan xīn dōngxi.", "en": "Young people often like new things.", "words": ["年轻", "人", "往往", "喜欢", "新", "东西"] },
+  { "id": "s:l3:204", "zh": "这样的问题往往不容易解决。", "pinyin": "Zhèyàng de wèntí wǎngwǎng bù róngyì jiějué.", "en": "Problems like this are often not easy to solve.", "words": ["这样", "的", "问题", "往往", "不", "容易", "解决"] },
+
+  { "id": "s:l3:205", "zh": "据说这家饭店的菜很好吃。", "pinyin": "Jùshuō zhè jiā fàndiàn de cài hěn hǎochī.", "en": "It's said that the food at this restaurant is delicious.", "words": ["据说", "这", "家", "饭店", "的", "菜", "很", "好吃"] },
+  { "id": "s:l3:206", "zh": "据说他明年要结婚了。", "pinyin": "Jùshuō tā míngnián yào jiéhūn le.", "en": "It's said that he's getting married next year.", "words": ["据说", "他", "明年", "要", "结婚", "了"] },
+  { "id": "s:l3:207", "zh": "据说那部电影很精彩。", "pinyin": "Jùshuō nà bù diànyǐng hěn jīngcǎi.", "en": "It's said that movie is very exciting.", "words": ["据说", "那", "部", "电影", "很", "精彩"] },
+
+  { "id": "s:l3:208", "zh": "他看起来很累。", "pinyin": "Tā kàn qǐlái hěn lèi.", "en": "He looks very tired.", "words": ["他", "看起来", "很", "累"] },
+  { "id": "s:l3:209", "zh": "这个菜看上去很好吃。", "pinyin": "Zhège cài kàn shàngqù hěn hǎochī.", "en": "This dish looks delicious.", "words": ["这", "个", "菜", "看上去", "很", "好吃"] },
+  { "id": "s:l3:210", "zh": "她看起来比以前年轻。", "pinyin": "Tā kàn qǐlái bǐ yǐqián niánqīng.", "en": "She looks younger than before.", "words": ["她", "看起来", "比", "以前", "年轻"] },
+
+  { "id": "s:l3:211", "zh": "他至今还没有结婚。", "pinyin": "Tā zhìjīn hái méiyǒu jiéhūn.", "en": "He still hasn't gotten married, even now.", "words": ["他", "至今", "还", "没有", "结婚"] },
+  { "id": "s:l3:212", "zh": "这个问题至今没有解决。", "pinyin": "Zhège wèntí zhìjīn méiyǒu jiějué.", "en": "This problem hasn't been solved to this day.", "words": ["这", "个", "问题", "至今", "没有", "解决"] },
+  { "id": "s:l3:213", "zh": "他们至今仍然是好朋友。", "pinyin": "Tāmen zhìjīn réngrán shì hǎo péngyou.", "en": "They're still good friends to this day.", "words": ["他们", "至今", "仍然", "是", "好", "朋友"] },
+
+  { "id": "s:l3:214", "zh": "当初我不应该那么说。", "pinyin": "Dāngchū wǒ bù yīnggāi nàme shuō.", "en": "Back then I shouldn't have said that.", "words": ["当初", "我", "不", "应该", "那么", "说"] },
+  { "id": "s:l3:215", "zh": "当初他决定学汉语。", "pinyin": "Dāngchū tā juédìng xué Hànyǔ.", "en": "Back then he decided to learn Chinese.", "words": ["当初", "他", "决定", "学", "汉语"] },
+  { "id": "s:l3:216", "zh": "当初我们都不知道会这样。", "pinyin": "Dāngchū wǒmen dōu bù zhīdào huì zhèyàng.", "en": "None of us knew back then that it would turn out this way.", "words": ["当初", "我们", "都", "不", "知道", "会", "这样"] },
+
+  { "id": "s:l3:217", "zh": "他抓住了球。", "pinyin": "Tā zhuā zhù le qiú.", "en": "He caught hold of the ball.", "words": ["他", "抓", "住", "了", "球"] },
+  { "id": "s:l3:218", "zh": "请记住我的名字。", "pinyin": "Qǐng jì zhù wǒ de míngzi.", "en": "Please remember my name.", "words": ["请", "记", "住", "我", "的", "名字"] },
+  { "id": "s:l3:219", "zh": "他站住不动了。", "pinyin": "Tā zhàn zhù bù dòng le.", "en": "He stood still, not moving.", "words": ["他", "站", "住", "不", "动", "了"] },
+
+  { "id": "s:l3:220", "zh": "天气冷起来了。", "pinyin": "Tiānqì lěng qǐlái le.", "en": "The weather started getting cold.", "words": ["天气", "冷", "起来", "了"] },
+  { "id": "s:l3:221", "zh": "大家都笑了起来。", "pinyin": "Dàjiā dōu xiào le qǐlái.", "en": "Everyone started laughing.", "words": ["大家", "都", "笑", "了", "起来"] },
+  { "id": "s:l3:222", "zh": "他忙起来就忘了吃饭。", "pinyin": "Tā máng qǐlái jiù wàng le chīfàn.", "en": "When he gets busy, he forgets to eat.", "words": ["他", "忙", "起来", "就", "忘", "了", "吃饭"] },
+
+  { "id": "s:l3:223", "zh": "你越努力，就越成功。", "pinyin": "Nǐ yuè nǔlì, jiù yuè chénggōng.", "en": "The harder you try, the more successful you'll be.", "words": ["你", "越", "努力", "就", "越", "成功"] },
+  { "id": "s:l3:224", "zh": "雨越下越大。", "pinyin": "Yǔ yuè xià yuè dà.", "en": "The rain got heavier and heavier.", "words": ["雨", "越", "下", "越", "大"] },
+  { "id": "s:l3:225", "zh": "这本书越看越有意思。", "pinyin": "Zhè běn shū yuè kàn yuè yǒuyìsi.", "en": "This book gets more interesting the more you read it.", "words": ["这", "本", "书", "越", "看", "越", "有意思"] },
+
+  { "id": "s:l3:226", "zh": "我没有他高。", "pinyin": "Wǒ méiyǒu tā gāo.", "en": "I'm not as tall as him.", "words": ["我", "没有", "他", "高"] },
+  { "id": "s:l3:227", "zh": "这个城市没有北京这么大。", "pinyin": "Zhège chéngshì méiyǒu Běijīng zhème dà.", "en": "This city isn't as big as Beijing.", "words": ["这", "个", "城市", "没有", "北京", "这么", "大"] },
+  { "id": "s:l3:228", "zh": "今天没有昨天那么热。", "pinyin": "Jīntiān méiyǒu zuótiān nàme rè.", "en": "Today isn't as hot as yesterday.", "words": ["今天", "没有", "昨天", "那么", "热"] },
+
+  { "id": "s:l3:229", "zh": "他一边吃饭，一边看电视。", "pinyin": "Tā yìbiān chīfàn, yìbiān kàn diànshì.", "en": "He eats while watching TV.", "words": ["他", "一边", "吃饭", "一边", "看", "电视"] },
+  { "id": "s:l3:230", "zh": "她一边走，一边打电话。", "pinyin": "Tā yìbiān zǒu, yìbiān dǎ diànhuà.", "en": "She walks while making a phone call.", "words": ["她", "一边", "走", "一边", "打电话"] },
+  { "id": "s:l3:231", "zh": "我们一边喝茶，一边说话。", "pinyin": "Wǒmen yìbiān hē chá, yìbiān shuōhuà.", "en": "We drink tea while chatting.", "words": ["我们", "一边", "喝", "茶", "一边", "说话"] },
+
+  { "id": "s:l3:232", "zh": "这个包又便宜又好。", "pinyin": "Zhège bāo yòu piányi yòu hǎo.", "en": "This bag is both cheap and good.", "words": ["这", "个", "包", "又", "便宜", "又", "好"] },
+  { "id": "s:l3:233", "zh": "他又高又年轻。", "pinyin": "Tā yòu gāo yòu niánqīng.", "en": "He's both tall and young.", "words": ["他", "又", "高", "又", "年轻"] },
+  { "id": "s:l3:234", "zh": "这个菜又便宜又好吃。", "pinyin": "Zhège cài yòu piányi yòu hǎochī.", "en": "This dish is both cheap and delicious.", "words": ["这", "个", "菜", "又", "便宜", "又", "好吃"] },
+
+  { "id": "s:l3:235", "zh": "他一到家就打电话给我。", "pinyin": "Tā yī dào jiā jiù dǎ diànhuà gěi wǒ.", "en": "As soon as he got home, he called me.", "words": ["他", "一", "到", "家", "就", "打电话", "给", "我"] },
+  { "id": "s:l3:236", "zh": "我一看就明白了。", "pinyin": "Wǒ yī kàn jiù míngbai le.", "en": "As soon as I saw it, I understood.", "words": ["我", "一", "看", "就", "明白", "了"] },
+  { "id": "s:l3:237", "zh": "她一说完就走了。", "pinyin": "Tā yī shuō wán jiù zǒu le.", "en": "As soon as she finished speaking, she left.", "words": ["她", "一", "说", "完", "就", "走", "了"] },
+
+  { "id": "s:l3:238", "zh": "我昨天买的书很有意思。", "pinyin": "Wǒ zuótiān mǎi de shū hěn yǒuyìsi.", "en": "The book I bought yesterday is very interesting.", "words": ["我", "昨天", "买", "的", "书", "很", "有意思"] },
+  { "id": "s:l3:239", "zh": "那个唱歌的人是我朋友。", "pinyin": "Nàge chànggē de rén shì wǒ péngyou.", "en": "The person singing is my friend.", "words": ["那", "个", "唱歌", "的", "人", "是", "我", "朋友"] },
+  { "id": "s:l3:240", "zh": "他写的小说很有名。", "pinyin": "Tā xiě de xiǎoshuō hěn yǒumíng.", "en": "The novel he wrote is very famous.", "words": ["他", "写", "的", "小说", "很", "有名"] },
+  { "id": "s:l3:241", "zh": "开车的那个人是我爸爸。", "pinyin": "Kāichē de nàge rén shì wǒ bàba.", "en": "The person driving is my dad.", "words": ["开车", "的", "那", "个", "人", "是", "我", "爸爸"] },
+  { "id": "s:l3:242", "zh": "我认识的那个老师很好。", "pinyin": "Wǒ rènshi de nàge lǎoshī hěn hǎo.", "en": "The teacher I know is very nice.", "words": ["我", "认识", "的", "那", "个", "老师", "很", "好"] },
+
+  { "id": "s:l3:243", "zh": "这是我所知道的一切。", "pinyin": "Zhè shì wǒ suǒ zhīdào de yīqiè.", "en": "This is everything I know.", "words": ["这", "是", "我", "所", "知道", "的", "一切"] },
+  { "id": "s:l3:244", "zh": "他所说的话很重要。", "pinyin": "Tā suǒ shuō de huà hěn zhòngyào.", "en": "What he said is very important.", "words": ["他", "所", "说", "的", "话", "很", "重要"] },
+  { "id": "s:l3:245", "zh": "这不是我所希望的结果。", "pinyin": "Zhè bù shì wǒ suǒ xīwàng de jiéguǒ.", "en": "This isn't the result I hoped for.", "words": ["这", "不", "是", "我", "所", "希望", "的", "结果"] },
+
+  { "id": "s:l3:246", "zh": "他整整等了三个小时。", "pinyin": "Tā zhěngzhěng děng le sān gè xiǎoshí.", "en": "He waited a full three hours.", "words": ["他", "整整", "等", "了", "三", "个", "小时"] },
+  { "id": "s:l3:247", "zh": "他们整整走了一天。", "pinyin": "Tāmen zhěngzhěng zǒu le yī tiān.", "en": "They walked for a whole day.", "words": ["他们", "整整", "走", "了", "一", "天"] },
+  { "id": "s:l3:248", "zh": "这本书整整有五百页。", "pinyin": "Zhè běn shū zhěngzhěng yǒu wǔbǎi yè.", "en": "This book has a full five hundred pages.", "words": ["这", "本", "书", "整整", "有", "五", "百", "页"] },
+
+  { "id": "s:l3:249", "zh": "请你反复练习这个句子。", "pinyin": "Qǐng nǐ fǎnfù liànxí zhège jùzi.", "en": "Please practice this sentence over and over.", "words": ["请", "你", "反复", "练习", "这", "个", "句子"] },
+  { "id": "s:l3:250", "zh": "他反复检查了这份文件。", "pinyin": "Tā fǎnfù jiǎnchá le zhè fèn wénjiàn.", "en": "He checked this document repeatedly.", "words": ["他", "反复", "检查", "了", "这", "份", "文件"] },
+  { "id": "s:l3:251", "zh": "我反复想了这个问题。", "pinyin": "Wǒ fǎnfù xiǎng le zhège wèntí.", "en": "I thought about this problem over and over.", "words": ["我", "反复", "想", "了", "这", "个", "问题"] },
+
+  { "id": "s:l3:252", "zh": "他早已回家了。", "pinyin": "Tā zǎoyǐ huíjiā le.", "en": "He went home long ago.", "words": ["他", "早已", "回家", "了"] },
+  { "id": "s:l3:253", "zh": "这个问题早已解决了。", "pinyin": "Zhège wèntí zǎoyǐ jiějué le.", "en": "This problem was already solved long ago.", "words": ["这", "个", "问题", "早已", "解决", "了"] },
+  { "id": "s:l3:254", "zh": "她早已不是学生了。", "pinyin": "Tā zǎoyǐ bù shì xuésheng le.", "en": "She hasn't been a student for a long time.", "words": ["她", "早已", "不", "是", "学生", "了"] },
+
+  { "id": "s:l3:255", "zh": "一方面他想休息，另一方面他还有很多工作。", "pinyin": "Yī fāngmiàn tā xiǎng xiūxi, lìng yī fāngmiàn tā hái yǒu hěn duō gōngzuò.", "en": "On one hand he wants to rest, on the other hand he still has a lot of work.", "words": ["一方面", "他", "想", "休息", "另一方面", "他", "还", "有", "很", "多", "工作"] },
+  { "id": "s:l3:256", "zh": "一方面我喜欢这个城市，另一方面这里的房子太贵了。", "pinyin": "Yī fāngmiàn wǒ xǐhuan zhège chéngshì, lìng yī fāngmiàn zhèlǐ de fángzi tài guì le.", "en": "On one hand I like this city, on the other hand the houses here are too expensive.", "words": ["一方面", "我", "喜欢", "这", "个", "城市", "另一方面", "这里", "的", "房子", "太", "贵", "了"] },
+  { "id": "s:l3:257", "zh": "一方面他很努力，另一方面他也很幸运。", "pinyin": "Yī fāngmiàn tā hěn nǔlì, lìng yī fāngmiàn tā yě hěn xìngyùn.", "en": "On one hand he works hard, on the other hand he's also lucky.", "words": ["一方面", "他", "很", "努力", "另一方面", "他", "也", "很", "幸运"] },
+
+  { "id": "s:l3:258", "zh": "他坚决不同意这个办法。", "pinyin": "Tā jiānjué bù tóngyì zhège bànfǎ.", "en": "He resolutely disagrees with this method.", "words": ["他", "坚决", "不", "同意", "这", "个", "办法"] },
+  { "id": "s:l3:259", "zh": "我们坚决支持这个决定。", "pinyin": "Wǒmen jiānjué zhīchí zhège juédìng.", "en": "We firmly support this decision.", "words": ["我们", "坚决", "支持", "这", "个", "决定"] },
+  { "id": "s:l3:260", "zh": "她坚决要离开这里。", "pinyin": "Tā jiānjué yào líkāi zhèlǐ.", "en": "She's determined to leave this place.", "words": ["她", "坚决", "要", "离开", "这里"] },
+
+  { "id": "s:l3:261", "zh": "这样做必然会有问题。", "pinyin": "Zhèyàng zuò bìrán huì yǒu wèntí.", "en": "Doing it this way will inevitably cause problems.", "words": ["这样", "做", "必然", "会", "有", "问题"] },
+  { "id": "s:l3:262", "zh": "努力学习必然会有好结果。", "pinyin": "Nǔlì xuéxí bìrán huì yǒu hǎo jiéguǒ.", "en": "Studying hard will inevitably bring good results.", "words": ["努力", "学习", "必然", "会", "有", "好", "结果"] },
+  { "id": "s:l3:263", "zh": "时间必然会改变一切。", "pinyin": "Shíjiān bìrán huì gǎibiàn yīqiè.", "en": "Time will inevitably change everything.", "words": ["时间", "必然", "会", "改变", "一切"] },
+
+  { "id": "s:l3:264", "zh": "这个问题普遍存在。", "pinyin": "Zhège wèntí pǔbiàn cúnzài.", "en": "This problem widely exists.", "words": ["这", "个", "问题", "普遍", "存在"] },
+  { "id": "s:l3:265", "zh": "现在大家普遍使用手机。", "pinyin": "Xiànzài dàjiā pǔbiàn shǐyòng shǒujī.", "en": "Nowadays everyone commonly uses phones.", "words": ["现在", "大家", "普遍", "使用", "手机"] },
+  { "id": "s:l3:266", "zh": "这种想法很普遍。", "pinyin": "Zhè zhǒng xiǎngfǎ hěn pǔbiàn.", "en": "This kind of thinking is very common.", "words": ["这", "种", "想法", "很", "普遍"] },
+
+  { "id": "s:l3:267", "zh": "这个班共有三十个学生。", "pinyin": "Zhège bān gòngyǒu sānshí gè xuésheng.", "en": "This class has thirty students in total.", "words": ["这", "个", "班", "共有", "三", "十", "个", "学生"] },
+  { "id": "s:l3:268", "zh": "这次比赛共有一百人参加。", "pinyin": "Zhè cì bǐsài gòngyǒu yī bǎi rén cānjiā.", "en": "A hundred people took part in this competition in total.", "words": ["这", "次", "比赛", "共有", "一", "百", "人", "参加"] },
+  { "id": "s:l3:269", "zh": "这本书共有二十课。", "pinyin": "Zhè běn shū gòngyǒu èrshí kè.", "en": "This book has twenty lessons in total.", "words": ["这", "本", "书", "共有", "二", "十", "课"] },
+
+  { "id": "s:l3:270", "zh": "你干吗不高兴？", "pinyin": "Nǐ gànmá bù gāoxìng?", "en": "Why are you unhappy?", "words": ["你", "干吗", "不", "高兴"] },
+  { "id": "s:l3:271", "zh": "你干吗生气啊？", "pinyin": "Nǐ gànmá shēngqì a?", "en": "What are you getting angry for?", "words": ["你", "干吗", "生气", "啊"] },
+  { "id": "s:l3:272", "zh": "你干吗不说话？", "pinyin": "Nǐ gànmá bù shuōhuà?", "en": "Why aren't you talking?", "words": ["你", "干吗", "不", "说话"] },
+
+  { "id": "s:l3:273", "zh": "春节前后，他都在家。", "pinyin": "Chūnjié qiánhòu, tā dōu zàijiā.", "en": "Around Spring Festival, he's always at home.", "words": ["春节", "前后", "他", "都", "在家"] },
+  { "id": "s:l3:274", "zh": "十点前后，他给我打了电话。", "pinyin": "Shí diǎn qiánhòu, tā gěi wǒ dǎ le diànhuà.", "en": "Around ten o'clock, he called me.", "words": ["十", "点", "前后", "他", "给", "我", "打", "了", "电话"] },
+  { "id": "s:l3:275", "zh": "生日前后，他收到了很多礼物。", "pinyin": "Shēngrì qiánhòu, tā shōudào le hěn duō lǐwù.", "en": "Around his birthday, he received a lot of gifts.", "words": ["生日", "前后", "他", "收到", "了", "很", "多", "礼物"] },
+
+  { "id": "s:l3:276", "zh": "他不光会说汉语，还会说英语。", "pinyin": "Tā bùguāng huì shuō Hànyǔ, hái huì shuō Yīngyǔ.", "en": "He can speak not only Chinese, but also English.", "words": ["他", "不光", "会", "说", "汉语", "还", "会", "说", "英语"] },
+  { "id": "s:l3:277", "zh": "这个地方不光漂亮，还很安静。", "pinyin": "Zhège dìfang bùguāng piàoliang, hái hěn ānjìng.", "en": "This place is not only pretty, but also quiet.", "words": ["这", "个", "地方", "不光", "漂亮", "还", "很", "安静"] },
+  { "id": "s:l3:278", "zh": "她不光认真，还很努力。", "pinyin": "Tā bùguāng rènzhēn, hái hěn nǔlì.", "en": "She's not only conscientious, but also hardworking.", "words": ["她", "不光", "认真", "还", "很", "努力"] },
+
+  { "id": "s:l3:279", "zh": "他将近三十岁了。", "pinyin": "Tā jiāngjìn sānshí suì le.", "en": "He's nearly thirty years old.", "words": ["他", "将近", "三", "十", "岁", "了"] },
+  { "id": "s:l3:280", "zh": "这个工作将近一年了。", "pinyin": "Zhège gōngzuò jiāngjìn yī nián le.", "en": "This job has lasted nearly a year.", "words": ["这", "个", "工作", "将近", "一", "年", "了"] },
+  { "id": "s:l3:281", "zh": "将近一百人参加了这次比赛。", "pinyin": "Jiāngjìn yī bǎi rén cānjiā le zhè cì bǐsài.", "en": "Nearly a hundred people took part in this competition.", "words": ["将近", "一", "百", "人", "参加", "了", "这", "次", "比赛"] },
+
+  { "id": "s:l3:282", "zh": "他听到消息，连忙跑了过去。", "pinyin": "Tā tīngdào xiāoxi, liánmáng pǎo le guòqù.", "en": "Hearing the news, he hurried over.", "words": ["他", "听到", "消息", "连忙", "跑", "了", "过去"] },
+  { "id": "s:l3:283", "zh": "看见老师，他连忙站了起来。", "pinyin": "Kànjiàn lǎoshī, tā liánmáng zhàn le qǐlái.", "en": "Seeing the teacher, he hastily stood up.", "words": ["看见", "老师", "他", "连忙", "站", "了", "起来"] },
+  { "id": "s:l3:284", "zh": "她连忙说谢谢。", "pinyin": "Tā liánmáng shuō xièxie.", "en": "She quickly said thank you.", "words": ["她", "连忙", "说", "谢谢"] },
+
+  { "id": "s:l3:285", "zh": "这里有的是好吃的。", "pinyin": "Zhèlǐ yǒudeshì hǎochī de.", "en": "There's plenty of good food here.", "words": ["这里", "有的是", "好吃", "的"] },
+  { "id": "s:l3:286", "zh": "别怕，我们有的是办法。", "pinyin": "Bié pà, wǒmen yǒudeshì bànfǎ.", "en": "Don't be afraid, we've got plenty of solutions.", "words": ["别", "怕", "我们", "有的是", "办法"] },
+  { "id": "s:l3:287", "zh": "现在有的是年轻人喜欢这种音乐。", "pinyin": "Xiànzài yǒudeshì niánqīng rén xǐhuan zhè zhǒng yīnyuè.", "en": "Nowadays there are plenty of young people who like this kind of music.", "words": ["现在", "有的是", "年轻", "人", "喜欢", "这", "种", "音乐"] },
+
+  { "id": "s:l3:288", "zh": "请把书放在桌子上。", "pinyin": "Qǐng bǎ shū fàng zài zhuōzi shàng.", "en": "Please put the book on the table.", "words": ["请", "把", "书", "放", "在", "桌子", "上"] },
+  { "id": "s:l3:289", "zh": "他把照片挂在墙上。", "pinyin": "Tā bǎ zhàopiàn guà zài qiáng shàng.", "en": "He hung the photo on the wall.", "words": ["他", "把", "照片", "挂", "在", "墙", "上"] },
+  { "id": "s:l3:290", "zh": "她把车停在门口。", "pinyin": "Tā bǎ chē tíng zài ménkǒu.", "en": "She parked the car at the entrance.", "words": ["她", "把", "车", "停", "在", "门口"] },
+
+  { "id": "s:l3:291", "zh": "你千万不要忘了。", "pinyin": "Nǐ qiānwàn bùyào wàng le.", "en": "Whatever you do, don't forget.", "words": ["你", "千万", "不要", "忘", "了"] },
+  { "id": "s:l3:292", "zh": "开车的时候千万要小心。", "pinyin": "Kāichē de shíhou qiānwàn yào xiǎoxīn.", "en": "Whatever you do, be careful while driving.", "words": ["开车", "的", "时候", "千万", "要", "小心"] },
+  { "id": "s:l3:293", "zh": "这件事你千万别告诉别人。", "pinyin": "Zhè jiàn shì nǐ qiānwàn bié gàosu biérén.", "en": "Whatever you do, don't tell others about this matter.", "words": ["这", "件", "事", "你", "千万", "别", "告诉", "别人"] },
+  { "id": "s:l3:294", "zh": "天气不好，千万别出门。", "pinyin": "Tiānqì bù hǎo, qiānwàn bié chūmén.", "en": "The weather's bad; whatever you do, don't go out.", "words": ["天气", "不", "好", "千万", "别", "出门"] },
+
+  { "id": "s:l3:295", "zh": "这个计划具有很大的意义。", "pinyin": "Zhège jìhuà jùyǒu hěn dà de yìyì.", "en": "This plan has great significance.", "words": ["这", "个", "计划", "具有", "很", "大", "的", "意义"] },
+  { "id": "s:l3:296", "zh": "他具有很强的能力。", "pinyin": "Tā jùyǒu hěn qiáng de nénglì.", "en": "He has very strong abilities.", "words": ["他", "具有", "很", "强", "的", "能力"] },
+  { "id": "s:l3:297", "zh": "这份工作具有一定的危险。", "pinyin": "Zhè fèn gōngzuò jùyǒu yīdìng de wēixiǎn.", "en": "This job has a certain amount of danger.", "words": ["这", "份", "工作", "具有", "一定", "的", "危险"] },
+
+  { "id": "s:l3:298", "zh": "这次会议大约需要两个小时。", "pinyin": "Zhè cì huìyì dàyuē xūyào liǎng gè xiǎoshí.", "en": "This meeting will take about two hours.", "words": ["这", "次", "会议", "大约", "需要", "两", "个", "小时"] },
+  { "id": "s:l3:299", "zh": "大约有一百人参加了这次比赛。", "pinyin": "Dàyuē yǒu yī bǎi rén cānjiā le zhè cì bǐsài.", "en": "About a hundred people took part in this competition.", "words": ["大约", "有", "一", "百", "人", "参加", "了", "这", "次", "比赛"] },
+  { "id": "s:l3:300", "zh": "他大约七点会到。", "pinyin": "Tā dàyuē qī diǎn huì dào.", "en": "He'll arrive at about seven.", "words": ["他", "大约", "七", "点", "会", "到"] },
+
+  { "id": "s:l3:301", "zh": "他们明天前往北京。", "pinyin": "Tāmen míngtiān qiánwǎng Běijīng.", "en": "They will head to Beijing tomorrow.", "words": ["他们", "明天", "前往", "北京"] },
+  { "id": "s:l3:302", "zh": "代表团前往机场。", "pinyin": "Dàibiǎotuán qiánwǎng jīchǎng.", "en": "The delegation heads to the airport.", "words": ["代表团", "前往", "机场"] },
+  { "id": "s:l3:303", "zh": "他前往医院看病。", "pinyin": "Tā qiánwǎng yīyuàn kànbìng.", "en": "He heads to the hospital to see a doctor.", "words": ["他", "前往", "医院", "看病"] },
+
+  { "id": "s:l3:304", "zh": "赶快走吧，时间不多了。", "pinyin": "Gǎnkuài zǒu ba, shíjiān bù duō le.", "en": "Hurry up and go, there isn't much time left.", "words": ["赶快", "走", "吧", "时间", "不", "多", "了"] },
+  { "id": "s:l3:305", "zh": "你赶快去医院吧。", "pinyin": "Nǐ gǎnkuài qù yīyuàn ba.", "en": "Hurry up and go to the hospital.", "words": ["你", "赶快", "去", "医院", "吧"] },
+  { "id": "s:l3:306", "zh": "他赶快把门关上了。", "pinyin": "Tā gǎnkuài bǎ mén guānshàng le.", "en": "He quickly closed the door.", "words": ["他", "赶快", "把", "门", "关上", "了"] },
+
+  { "id": "s:l3:307", "zh": "这件事基本上解决了。", "pinyin": "Zhè jiàn shì jīběn shang jiějué le.", "en": "This matter is basically solved.", "words": ["这", "件", "事", "基本上", "解决", "了"] },
+  { "id": "s:l3:308", "zh": "他的汉语基本上没问题。", "pinyin": "Tā de Hànyǔ jīběn shang méi wèntí.", "en": "His Chinese is basically fine.", "words": ["他", "的", "汉语", "基本上", "没", "问题"] },
+  { "id": "s:l3:309", "zh": "这个计划基本上完成了。", "pinyin": "Zhège jìhuà jīběn shang wánchéng le.", "en": "This plan is basically finished.", "words": ["这", "个", "计划", "基本上", "完成", "了"] },
+
+  { "id": "s:l3:310", "zh": "预计明天会下雨。", "pinyin": "Yùjì míngtiān huì xiàyǔ.", "en": "It's expected to rain tomorrow.", "words": ["预计", "明天", "会", "下雨"] },
+  { "id": "s:l3:311", "zh": "预计这个工作要三天。", "pinyin": "Yùjì zhège gōngzuò yào sān tiān.", "en": "This job is expected to take three days.", "words": ["预计", "这", "个", "工作", "要", "三", "天"] },
+  { "id": "s:l3:312", "zh": "预计会有一千人参加。", "pinyin": "Yùjì huì yǒu yī qiān rén cānjiā.", "en": "About a thousand people are expected to attend.", "words": ["预计", "会", "有", "一", "千", "人", "参加"] },
+
+  { "id": "s:l3:313", "zh": "首先介绍自己，其次说明目标，最后回答问题。", "pinyin": "Shǒuxiān jièshào zìjǐ, qícì shuōmíng mùbiāo, zuìhòu huídá wèntí.", "en": "First introduce yourself, next explain your goal, and finally answer questions.", "words": ["首先", "介绍", "自己", "其次", "说明", "目标", "最后", "回答", "问题"] },
+  { "id": "s:l3:314", "zh": "首先洗手，其次准备菜，最后开始做饭。", "pinyin": "Shǒuxiān xǐ shǒu, qícì zhǔnbèi cài, zuìhòu kāishǐ zuò fàn.", "en": "First wash your hands, next prepare the food, and finally start cooking.", "words": ["首先", "洗", "手", "其次", "准备", "菜", "最后", "开始", "做", "饭"] },
+  { "id": "s:l3:315", "zh": "首先要努力，其次要坚持，最后才能成功。", "pinyin": "Shǒuxiān yào nǔlì, qícì yào jiānchí, zuìhòu cái néng chénggōng.", "en": "First you must work hard, next you must persist, and only then can you succeed.", "words": ["首先", "要", "努力", "其次", "要", "坚持", "最后", "才", "能", "成功"] },
+
+  { "id": "s:l3:316", "zh": "学生们都自觉地学习。", "pinyin": "Xuéshengmen dōu zìjué de xuéxí.", "en": "The students all study on their own initiative.", "words": ["学生", "们", "都", "自觉", "地", "学习"] },
+  { "id": "s:l3:317", "zh": "他自觉帮助别人。", "pinyin": "Tā zìjué bāngzhù biérén.", "en": "He helps others on his own initiative.", "words": ["他", "自觉", "帮助", "别人"] },
+  { "id": "s:l3:318", "zh": "大家都很自觉。", "pinyin": "Dàjiā dōu hěn zìjué.", "en": "Everyone is very self-disciplined.", "words": ["大家", "都", "很", "自觉"] },
+
+  { "id": "s:l3:319", "zh": "他把门推开了。", "pinyin": "Tā bǎ mén tuī kāi le.", "en": "He pushed the door open.", "words": ["他", "把", "门", "推", "开", "了"] },
+  { "id": "s:l3:320", "zh": "你走开！", "pinyin": "Nǐ zǒu kāi!", "en": "Go away!", "words": ["你", "走开"] },
+  { "id": "s:l3:321", "zh": "他和她分开了。", "pinyin": "Tā hé tā fēnkāi le.", "en": "He and she split up.", "words": ["他", "和", "她", "分开", "了"] },
+
+  { "id": "s:l3:322", "zh": "他总是很忙。", "pinyin": "Tā zǒngshì hěn máng.", "en": "He's always busy.", "words": ["他", "总是", "很", "忙"] },
+  { "id": "s:l3:323", "zh": "她总是第一个到。", "pinyin": "Tā zǒngshì dì yī gè dào.", "en": "She's always the first to arrive.", "words": ["她", "总是", "第", "一", "个", "到"] },
+  { "id": "s:l3:324", "zh": "你总是这么说。", "pinyin": "Nǐ zǒngshì zhème shuō.", "en": "You always say that.", "words": ["你", "总是", "这么", "说"] },
+
+  { "id": "s:l3:325", "zh": "老师全面检查了我们的作业。", "pinyin": "Lǎoshī quánmiàn jiǎnchá le wǒmen de zuòyè.", "en": "The teacher thoroughly checked our homework.", "words": ["老师", "全面", "检查", "了", "我们", "的", "作业"] },
+  { "id": "s:l3:326", "zh": "他全面介绍了这个计划。", "pinyin": "Tā quánmiàn jièshào le zhège jìhuà.", "en": "He gave a comprehensive introduction to this plan.", "words": ["他", "全面", "介绍", "了", "这", "个", "计划"] },
+  { "id": "s:l3:327", "zh": "公司全面支持这个计划。", "pinyin": "Gōngsī quánmiàn zhīchí zhège jìhuà.", "en": "The company fully supports this plan.", "words": ["公司", "全面", "支持", "这", "个", "计划"] },
+  { "id": "s:l3:328", "zh": "这份报告全面说明了市场情况。", "pinyin": "Zhè fèn bàogào quánmiàn shuōmíng le shìchǎng qíngkuàng.", "en": "This report comprehensively explains the market situation.", "words": ["这", "份", "报告", "全面", "说明", "了", "市场", "情况"] },
+
+  { "id": "s:l3:329", "zh": "老师指出了我的错误。", "pinyin": "Lǎoshī zhǐchū le wǒ de cuòwù.", "en": "The teacher pointed out my mistake.", "words": ["老师", "指出", "了", "我", "的", "错误"] },
+  { "id": "s:l3:330", "zh": "他找出了问题的原因。", "pinyin": "Tā zhǎochū le wèntí de yuányīn.", "en": "He found out the reason for the problem.", "words": ["他", "找出", "了", "问题", "的", "原因"] },
+  { "id": "s:l3:331", "zh": "她从包里拿出了一本书。", "pinyin": "Tā cóng bāo lǐ ná chū le yī běn shū.", "en": "She took a book out of her bag.", "words": ["她", "从", "包", "里", "拿出", "了", "一", "本", "书"] },
+  { "id": "s:l3:332", "zh": "我马上就认出了他。", "pinyin": "Wǒ mǎshàng jiù rènchū le tā.", "en": "I recognized him right away.", "words": ["我", "马上", "就", "认出", "了", "他"] }
+]
