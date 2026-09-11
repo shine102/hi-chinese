@@ -6,6 +6,7 @@ import { useContent, useUnitChunk } from '../content/provider.js';
 import { db } from '../db/db.js';
 import { markUnitStarted } from '../db/progress.js';
 import { StrokesSheet } from '../hanzi/StrokesSheet.js';
+import { computeLessons } from '../lessons/compute.js';
 import { InlineError } from '../ui/InlineError.js';
 import { Loading } from '../ui/Loading.js';
 
@@ -80,7 +81,10 @@ export function GrammarCard({ point, examples }: { point: GrammarPoint; examples
 }
 
 export function LearnScreen() {
-  const { unitId } = useParams({ from: '/unit/$unitId/learn' });
+  const { unitId, lessonIdx: lessonIdxStr } = useParams({
+    from: '/unit/$unitId/lesson/$lessonIdx/learn',
+  });
+  const lessonIdx = Number(lessonIdxStr);
   const content = useContent();
   const chunk = useUnitChunk(unitId);
 
@@ -98,25 +102,56 @@ export function LearnScreen() {
     );
 
   const { unit, grammar, sentences } = chunk.chunk;
+  const lessons = computeLessons(unit, grammar, sentences);
+  const lesson = lessons[lessonIdx];
+  if (!lesson) return <p role="alert">Invalid lesson.</p>;
+
   const sentenceById = new Map(sentences.map((s) => [s.id, s] as const));
+  const lessonGrammar = lesson.grammarIds.flatMap((gid) => {
+    const g = grammar.find((g) => g.id === gid);
+    return g ? [g] : [];
+  });
 
   return (
     <div className="flex flex-col gap-6">
-      <h1 className="text-2xl font-semibold">{unit.title}: Learn</h1>
+      <h1 className="text-2xl font-semibold">
+        {unit.title}: Lesson {lessonIdx + 1}
+      </h1>
       <NoVoiceBanner />
+
       <section className="flex flex-col gap-3">
         <h2 className="text-lg font-semibold">New words</h2>
         <ul className="flex flex-col gap-2">
-          {unit.wordIds.map((id) => {
+          {lesson.wordIds.map((id) => {
             const word = content.words.get(id);
             return word ? <WordCard key={id} word={word} /> : null;
           })}
         </ul>
       </section>
-      {grammar.length > 0 && (
+
+      {lesson.reviewWordIds.length > 0 && (
+        <section className="flex flex-col gap-3">
+          <h2 className="text-lg font-semibold">Review</h2>
+          <ul className="flex flex-col gap-1">
+            {lesson.reviewWordIds.map((id) => {
+              const word = content.words.get(id);
+              if (!word) return null;
+              return (
+                <li key={id} className="flex items-center gap-3 text-sm text-stone-700">
+                  <span className="text-lg">{word.simplified}</span>
+                  <span className="text-stone-500">{word.pinyin}</span>
+                  <span>{word.meanings[0]}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+
+      {lessonGrammar.length > 0 && (
         <section className="flex flex-col gap-3">
           <h2 className="text-lg font-semibold">Grammar</h2>
-          {grammar.map((g) => (
+          {lessonGrammar.map((g) => (
             <GrammarCard
               key={g.id}
               point={g}
@@ -128,9 +163,10 @@ export function LearnScreen() {
           ))}
         </section>
       )}
+
       <Link
-        to="/unit/$unitId/practice"
-        params={{ unitId }}
+        to="/unit/$unitId/lesson/$lessonIdx/practice"
+        params={{ unitId, lessonIdx: lessonIdxStr }}
         className="rounded-lg bg-red-700 px-4 py-3 text-center font-medium text-white"
       >
         Start practice

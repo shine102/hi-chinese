@@ -5,7 +5,8 @@ import { useHasChineseVoice } from '../audio/speech.js';
 import type { ContentIndex } from '../content/index.js';
 import { useContent, useUnitChunk } from '../content/provider.js';
 import { db } from '../db/db.js';
-import { completeUnit } from '../db/progress.js';
+import { completeLesson } from '../db/progress.js';
+import { useLiveQuery } from '../db/use-live-query.js';
 import { ExerciseBoundary } from '../exercises/components/ExerciseBoundary.js';
 import { ExerciseView } from '../exercises/components/ExerciseView.js';
 import { generateSession } from '../exercises/generate.js';
@@ -18,15 +19,20 @@ import {
   type SessionState,
 } from '../exercises/session.js';
 import { correctAnswerText, type Answer } from '../exercises/types.js';
+import { computeLessons, type Lesson } from '../lessons/compute.js';
 import { requestSync } from '../sync/store.js';
 import { InlineError } from '../ui/InlineError.js';
 import { Loading } from '../ui/Loading.js';
 
 export function PracticeScreen() {
-  const { unitId } = useParams({ from: '/unit/$unitId/practice' });
+  const { unitId, lessonIdx: lessonIdxStr } = useParams({
+    from: '/unit/$unitId/lesson/$lessonIdx/practice',
+  });
+  const lessonIdx = Number(lessonIdxStr);
   const content = useContent();
   const chunk = useUnitChunk(unitId);
   const audio = useHasChineseVoice();
+
   if (chunk.status === 'loading') return <Loading label="Preparing exercises…" />;
   if (chunk.status === 'error')
     return (
@@ -35,23 +41,56 @@ export function PracticeScreen() {
         onRetry={chunk.retry}
       />
     );
-  return <PracticeSession key={unitId} chunk={chunk.chunk} content={content} audio={audio} />;
+
+  const lessons = computeLessons(chunk.chunk.unit, chunk.chunk.grammar, chunk.chunk.sentences);
+  const lesson = lessons[lessonIdx];
+  if (!lesson) return <p role="alert">Invalid lesson.</p>;
+
+  return (
+    <PracticeSession
+      key={`${unitId}-${lessonIdx}`}
+      chunk={chunk.chunk}
+      lesson={lesson}
+      totalLessons={lessons.length}
+      content={content}
+      audio={audio}
+    />
+  );
 }
 
 function PracticeSession({
   chunk,
+  lesson,
+  totalLessons,
   content,
   audio,
 }: {
   chunk: UnitChunk;
+  lesson: Lesson;
+  totalLessons: number;
   content: ContentIndex;
   audio: boolean;
 }) {
+  const resolveWords = (ids: readonly string[]) =>
+    ids.flatMap((id) => {
+      const w = content.words.get(id);
+      return w ? [w] : [];
+    });
+
   const [state, dispatch] = useReducer(sessionReducer, undefined, () =>
     createSession(
       generateSession(
         {
-          chunk,
+          newWords: resolveWords(lesson.wordIds),
+          reviewWords: resolveWords(lesson.reviewWordIds),
+          grammar: lesson.grammarIds.flatMap((gid) => {
+            const g = chunk.grammar.find((g) => g.id === gid);
+            return g ? [g] : [];
+          }),
+          sentences: lesson.sentenceIds.flatMap((sid) => {
+            const s = chunk.sentences.find((s) => s.id === sid);
+            return s ? [s] : [];
+          }),
           words: content.words,
           levelWordIds: content.wordIdsByLevel.get(chunk.unit.level) ?? [],
           audio,
@@ -62,23 +101,35 @@ function PracticeSession({
   );
   const [answered, setAnswered] = useState<Answer | null>(null);
   const recorded = useRef(false);
+  const progress = useLiveQuery(() => db.unitProgress.get(chunk.unit.id), [chunk.unit.id]);
+  const isLastLesson = lesson.index + 1 >= totalLessons;
 
   useEffect(() => {
     if (state.phase !== 'done' || recorded.current) return;
+    if (progress === undefined) return;
+    if (progress?.status === 'completed') return;
     recorded.current = true;
     const characters = uniqueHanChars(
-      chunk.unit.wordIds.map((id) => content.words.get(id)?.simplified ?? '').join(''),
+      lesson.wordIds.map((id) => content.words.get(id)?.simplified ?? '').join(''),
     );
-    void completeUnit(db, {
+    void completeLesson(db, {
       unitId: chunk.unit.id,
-      wordIds: chunk.unit.wordIds,
+      totalLessons,
+      wordIds: lesson.wordIds,
       characters,
       now: Date.now(),
     }).then(() => requestSync({ db }));
-  }, [state.phase, chunk, content]);
+  }, [state.phase, chunk, lesson, totalLessons, content, progress]);
 
   if (state.phase === 'done')
-    return <Results state={state} wordCount={chunk.unit.wordIds.length} />;
+    return (
+      <Results
+        state={state}
+        wordCount={lesson.wordIds.length}
+        unitId={chunk.unit.id}
+        last={isLastLesson}
+      />
+    );
 
   const exercise = currentExercise(state);
   if (!exercise) return <Loading />;
@@ -136,10 +187,20 @@ function PracticeSession({
   );
 }
 
-function Results({ state, wordCount }: { state: SessionState; wordCount: number }) {
+function Results({
+  state,
+  wordCount,
+  unitId,
+  last,
+}: {
+  state: SessionState;
+  wordCount: number;
+  unitId: string;
+  last: boolean;
+}) {
   return (
     <div data-testid="results" className="flex flex-col items-center gap-4 py-8 text-center">
-      <h1 className="text-2xl font-semibold">Unit complete</h1>
+      <h1 className="text-2xl font-semibold">{last ? 'Unit complete!' : 'Lesson complete!'}</h1>
       <p className="text-4xl font-semibold text-red-700">{Math.round(accuracy(state) * 100)}%</p>
       <p className="text-stone-600">accuracy</p>
       <dl className="grid grid-cols-2 gap-x-8 gap-y-1 text-sm text-stone-700">
@@ -150,9 +211,19 @@ function Results({ state, wordCount }: { state: SessionState; wordCount: number 
         <dt>Answers</dt>
         <dd className="font-medium">{state.answered}</dd>
       </dl>
-      <Link to="/" className="mt-4 rounded-lg bg-red-700 px-5 py-3 font-medium text-white">
-        Back to path
-      </Link>
+      {last ? (
+        <Link to="/" className="mt-4 rounded-lg bg-red-700 px-5 py-3 font-medium text-white">
+          Back to path
+        </Link>
+      ) : (
+        <Link
+          to="/unit/$unitId"
+          params={{ unitId }}
+          className="mt-4 rounded-lg bg-red-700 px-5 py-3 font-medium text-white"
+        >
+          Back to path
+        </Link>
+      )}
     </div>
   );
 }
