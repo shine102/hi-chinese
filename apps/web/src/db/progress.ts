@@ -1,4 +1,4 @@
-import { cardId, type CardKind, type CardRow } from '@hi-chinese/content';
+import { cardId, type CardKind, type CardRow, type FsrsState } from '@hi-chinese/content';
 import { emptyFsrsState } from '../fsrs/state.js';
 import { outboxEntry, type HiChineseDb, type OutboxRow } from './db.js';
 import { localDate, nextUpdatedAt } from './time.js';
@@ -63,6 +63,42 @@ export async function completeUnit(db: HiChineseDb, input: CompleteUnitInput): P
       date,
       lessons: (day?.lessons ?? 0) + 1,
       reviews: day?.reviews ?? 0,
+      updatedAt: dayUpdatedAt,
+    });
+    outbox.push(outboxEntry('activity', date, dayUpdatedAt));
+
+    await db.outbox.bulkPut(outbox);
+  });
+}
+
+export interface ReviewGradeInput {
+  cardId: string;
+  newFsrs: FsrsState;
+}
+
+export async function completeReviewSession(
+  db: HiChineseDb,
+  grades: readonly ReviewGradeInput[],
+  now: number,
+): Promise<void> {
+  await db.transaction('rw', [db.cards, db.activity, db.outbox], async () => {
+    const outbox: OutboxRow[] = [];
+
+    for (const { cardId: cid, newFsrs } of grades) {
+      const existing = await db.cards.get(cid);
+      if (!existing) continue;
+      const updatedAt = nextUpdatedAt(existing.updatedAt, now);
+      await db.cards.put({ ...existing, fsrs: newFsrs, updatedAt });
+      outbox.push(outboxEntry('cards', cid, updatedAt));
+    }
+
+    const date = localDate(now);
+    const day = await db.activity.get(date);
+    const dayUpdatedAt = nextUpdatedAt(day?.updatedAt, now);
+    await db.activity.put({
+      date,
+      lessons: day?.lessons ?? 0,
+      reviews: (day?.reviews ?? 0) + 1,
       updatedAt: dayUpdatedAt,
     });
     outbox.push(outboxEntry('activity', date, dayUpdatedAt));

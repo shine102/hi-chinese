@@ -11,6 +11,7 @@ import { LearnScreen } from './learn/LearnScreen.js';
 import { PathScreen } from './path/PathScreen.js';
 import { UnitScreen } from './path/UnitScreen.js';
 import { PracticeScreen } from './practice/PracticeScreen.js';
+import { ReviewScreen } from './review/ReviewScreen.js';
 import { SettingsScreen } from './settings/SettingsScreen.js';
 import { SetupScreen } from './setup/SetupScreen.js';
 import { AppShell } from './ui/AppShell.js';
@@ -58,6 +59,11 @@ export const practiceRoute = createRoute({
   path: '/unit/$unitId/practice',
   component: PracticeScreen,
 });
+export const reviewRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/review',
+  component: ReviewScreen,
+});
 
 const routeTree = rootRoute.addChildren([
   indexRoute,
@@ -66,6 +72,7 @@ const routeTree = rootRoute.addChildren([
   unitRoute,
   learnRoute,
   practiceRoute,
+  reviewRoute,
 ]);
 
 export function createAppRouter(history?: RouterHistory) {
