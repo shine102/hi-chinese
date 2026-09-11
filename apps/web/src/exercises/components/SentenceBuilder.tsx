@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { speak } from '../../audio/speech.js';
 import { devAttr } from '../dev-attrs.js';
 import type { SentenceBuilderExercise } from '../types.js';
 import type { ExerciseProps } from './MultipleChoice.js';
@@ -58,7 +59,10 @@ export function SentenceBuilder({
               key={i}
               type="button"
               disabled={locked}
-              onClick={() => setPlaced((p) => [...p, i])}
+              onClick={() => {
+                speak(tile);
+                setPlaced((p) => [...p, i]);
+              }}
               className="rounded-md border border-stone-300 bg-white px-3 py-2 text-xl"
               {...(positions.has(i) ? devAttr('data-answer-index', positions.get(i)!) : {})}
             >

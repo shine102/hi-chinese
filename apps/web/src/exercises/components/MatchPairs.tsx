@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { speak } from '../../audio/speech.js';
 import { devAttr } from '../dev-attrs.js';
 import { mulberry32, shuffle } from '../random.js';
 import type { MatchPairsExercise } from '../types.js';
@@ -49,7 +50,10 @@ export function MatchPairs({ exercise, answered, onAnswer }: ExerciseProps<Match
               <button
                 type="button"
                 disabled={matched.has(i) || answered !== null}
-                onClick={() => setSelectedLeft(i)}
+                onClick={() => {
+                  speak(p.zh);
+                  setSelectedLeft(i);
+                }}
                 className={`${base} text-2xl ${selectedLeft === i ? 'border-red-600 bg-red-50' : 'border-stone-300 bg-white'}`}
                 {...devAttr('data-pair-left', i)}
               >

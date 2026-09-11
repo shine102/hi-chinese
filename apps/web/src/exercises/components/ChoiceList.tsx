@@ -1,5 +1,8 @@
+import { speak } from '../../audio/speech.js';
 import { devAttr } from '../dev-attrs.js';
 import type { Answer } from '../types.js';
+
+const HAN = /[一-鿿]/;
 
 export function ChoiceList({
   options,
@@ -29,7 +32,10 @@ export function ChoiceList({
             <button
               type="button"
               disabled={answered !== null}
-              onClick={() => onAnswer({ kind: 'choice', index: i })}
+              onClick={() => {
+                if (HAN.test(opt)) speak(opt);
+                onAnswer({ kind: 'choice', index: i });
+              }}
               className={`w-full rounded-lg border px-4 py-3 text-left ${large ? 'text-2xl' : 'text-base'} ${tone}`}
               {...devAttr('data-correct', i === correctIndex)}
             >
