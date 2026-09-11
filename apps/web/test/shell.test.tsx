@@ -106,21 +106,21 @@ describe('app shell', () => {
     expect(screen.getByTestId('unit-l1-u02').dataset['state']).toBe('locked');
   });
 
-  it('shows the unit screen with Learn and Practice for an available unit', async () => {
+  it('shows the unit screen with a lesson picker for an available unit', async () => {
     stubFetch(() => json({ cursor: 0, changes: { unitProgress: [], cards: [], activity: [] } }));
     await db.meta.put({ key: 'setupDone', value: true });
     renderApp('/unit/l1-u01');
     expect(await screen.findByRole('heading', { name: 'Unit 1' })).toBeTruthy();
-    expect(screen.getByRole('link', { name: 'Learn' })).toBeTruthy();
-    expect(screen.getByRole('link', { name: 'Practice' })).toBeTruthy();
-    expect(screen.getByText('6 words, 1 grammar point')).toBeTruthy();
+    expect(screen.getByText('6 words, 2 lessons')).toBeTruthy();
+    expect(screen.getByTestId('lesson-0')).toBeTruthy();
+    expect(screen.getByTestId('lesson-1')).toBeTruthy();
   });
 
-  it('explains a locked unit instead of offering its steps', async () => {
+  it('explains a locked unit instead of offering its lessons', async () => {
     stubFetch(() => json({ cursor: 0, changes: { unitProgress: [], cards: [], activity: [] } }));
     await db.meta.put({ key: 'setupDone', value: true });
     renderApp('/unit/l1-u02');
     expect(await screen.findByText(/locked/i)).toBeTruthy();
-    expect(screen.queryByRole('link', { name: 'Practice' })).toBeNull();
+    expect(screen.queryByTestId('lesson-0')).toBeNull();
   });
 });

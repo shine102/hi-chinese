@@ -52,12 +52,12 @@ export const unitRoute = createRoute({
 
 export const learnRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/unit/$unitId/learn',
+  path: '/unit/$unitId/lesson/$lessonIdx/learn',
   component: LearnScreen,
 });
 export const practiceRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/unit/$unitId/practice',
+  path: '/unit/$unitId/lesson/$lessonIdx/practice',
   component: PracticeScreen,
 });
 export const reviewRoute = createRoute({
