@@ -16,6 +16,7 @@
     "@hi-chinese/content": "workspace:*",
     "@tanstack/react-router": "^1.170.34",
     "dexie": "^4.4.5",
+    "hanzi-writer": "^3.7.3",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "ts-fsrs": "^5.4.2",

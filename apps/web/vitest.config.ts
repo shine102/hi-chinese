@@ -8,6 +8,7 @@ export default defineConfig({
     alias: {
       // The PWA virtual module only exists inside the Vite PWA plugin; tests use a stub.
       'virtual:pwa-register/react': path.resolve(import.meta.dirname, 'test/stubs/pwa-register.ts'),
+      'hanzi-writer': path.resolve(import.meta.dirname, 'test/stubs/hanzi-writer.ts'),
     },
   },
   test: {
