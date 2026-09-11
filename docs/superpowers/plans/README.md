@@ -49,3 +49,12 @@ Findings from source verification (2026-09-09) that adjust the spec:
   session and streak display moved to Phase 4. Listen-and-pick is not generated when no Chinese voice
   exists. Exercise markup carries `data-correct`/`data-answer-index`/`data-pair-*` attributes in DEV
   builds only, for the end-to-end test.
+- Phase 4 (2026-09-11): `hanzi-writer` 3.7.3 renders SVG in a div; `charDataLoader` fetches from
+  bundled `/content/characters/<hex>.json` — same data Make Me a Hanzi produces, no CDN needed.
+  `ts-fsrs` 5.4.2 `fsrs().repeat()` returns `Record<Grade, { card, log }>` (Grade, not Rating, under
+  strict TS — cast required). Review session uses its own reducer (not the practice sessionReducer):
+  no re-queue, FSRS grade per card, self-grade UI for write cards. Cards are resolved by
+  `exercise.id === card.cardId` after shuffle, not by array index. `playwright.config.ts` uses
+  `CHROME_PATH` env var (set `CHROME_PATH=/var/lib/flatpak/exports/bin/com.google.Chrome` on this
+  machine); workers serialized to 1 for single-D1-backend stability. `useLiveQuery` silent-failure
+  gap (deferred from Phase 3) still applies to new PathScreen queries (dueCount, activities).
