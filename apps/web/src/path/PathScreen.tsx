@@ -1,5 +1,6 @@
 import type { ManifestUnit } from '@hi-chinese/content';
 import { Link } from '@tanstack/react-router';
+import { useState } from 'react';
 import { useContent } from '../content/provider.js';
 import { db } from '../db/db.js';
 import { localDate } from '../db/time.js';
@@ -100,6 +101,39 @@ export function PathScreen() {
           </ol>
         </section>
       ))}
+      <ResetProgress />
+    </div>
+  );
+}
+
+function ResetProgress() {
+  const [confirming, setConfirming] = useState(false);
+  async function reset() {
+    await db.transaction('rw', [db.unitProgress, db.cards, db.activity, db.outbox], async () => {
+      await db.cards.clear();
+      await db.unitProgress.clear();
+      await db.activity.clear();
+      await db.outbox.clear();
+    });
+    setConfirming(false);
+  }
+  return (
+    <div className="flex justify-center pt-4 pb-8">
+      {confirming ? (
+        <div className="flex items-center gap-3">
+          <span className="text-sm text-stone-500">Reset all progress?</span>
+          <button type="button" onClick={reset} className="rounded-md bg-red-600 px-3 py-1 text-sm text-white">
+            Confirm
+          </button>
+          <button type="button" onClick={() => setConfirming(false)} className="text-sm text-stone-500 underline">
+            Cancel
+          </button>
+        </div>
+      ) : (
+        <button type="button" onClick={() => setConfirming(true)} className="text-sm text-stone-400 underline">
+          Reset progress
+        </button>
+      )}
     </div>
   );
 }
