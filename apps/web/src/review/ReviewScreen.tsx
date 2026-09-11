@@ -46,11 +46,10 @@ export function ReviewScreen() {
     );
   }
 
-  const allWordIds = Array.from(content.words.keys());
-  const exercises = useMemo(
-    () => generateReviewSession(cards, content.words, allWordIds, Date.now()),
-    [cards, content.words, allWordIds],
-  );
+  const exercises = useMemo(() => {
+    const allWordIds = Array.from(content.words.keys());
+    return generateReviewSession(cards, content.words, allWordIds, Date.now());
+  }, [cards, content.words]);
 
   return <ReviewSessionRunner key={cards.length} exercises={exercises} cards={cards} />;
 }
