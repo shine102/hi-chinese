@@ -2,7 +2,7 @@ import { cardId, emptyChanges, type SyncRequest, type SyncResponse } from '@hi-c
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { openDb, outboxKey, type HiChineseDb } from '../../src/db/db.js';
 import { getCursor, setMeta } from '../../src/db/meta.js';
-import { completeUnit, markUnitStarted } from '../../src/db/progress.js';
+import { completeLesson, markUnitStarted } from '../../src/db/progress.js';
 import { syncOnce } from '../../src/sync/client.js';
 import { requestSync, getSyncState, resetSyncStateForTests } from '../../src/sync/store.js';
 
@@ -56,7 +56,13 @@ describe('syncOnce', () => {
   });
 
   it('pushes the outbox with the bearer passphrase and cursor, then clears it and stores the new cursor', async () => {
-    await completeUnit(db, { unitId: 'l1-u01', wordIds: ['w:我'], characters: ['我'], now: 1000 });
+    await completeLesson(db, {
+      unitId: 'l1-u01',
+      totalLessons: 1,
+      wordIds: ['w:我'],
+      characters: ['我'],
+      now: 1000,
+    });
     let auth: string | null = null;
     const { fetchImpl, calls } = fakeFetch((req, init) => {
       auth = new Headers(init.headers).get('authorization');
@@ -168,7 +174,13 @@ describe('syncOnce', () => {
 
   it('splits more than 500 rows per table across requests', async () => {
     const wordIds = Array.from({ length: 300 }, (_, i) => `w:x${i}`); // 600 cards
-    await completeUnit(db, { unitId: 'l1-u01', wordIds, characters: [], now: 1000 });
+    await completeLesson(db, {
+      unitId: 'l1-u01',
+      totalLessons: 1,
+      wordIds,
+      characters: [],
+      now: 1000,
+    });
     let n = 0;
     const { fetchImpl, calls } = fakeFetch((req, init) => echo(++n)(req, init));
     const result = await syncOnce({ db, fetchImpl });
