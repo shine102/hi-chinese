@@ -67,16 +67,22 @@ function ReviewSessionRunner({
     if (state.phase !== 'done' || recorded.current) return;
     recorded.current = true;
 
+    // `grades[i].exerciseIndex` indexes into `state.exercises`, which generateReviewSession
+    // built from a *shuffled and possibly-filtered* copy of `cards` — it is not aligned with
+    // `cards` by position. Resolve the graded card by id (Exercise.id === CardRow.cardId for
+    // every review exercise) instead of indexing `cards` directly.
+    const cardsById = new Map(cards.map((c) => [c.cardId, c]));
     const now = Date.now();
     const gradeInputs: ReviewGradeInput[] = state.grades.flatMap((g) => {
-      const card = cards[g.exerciseIndex];
+      const exercise = state.exercises[g.exerciseIndex];
+      const card = exercise ? cardsById.get(exercise.id) : undefined;
       if (!card) return [];
       const newFsrs = gradeCard(card.fsrs, g.rating, now);
       return [{ cardId: card.cardId, newFsrs }];
     });
 
     void completeReviewSession(db, gradeInputs, now).then(() => requestSync({ db }));
-  }, [state.phase, state.grades, cards]);
+  }, [state.phase, state.grades, state.exercises, cards]);
 
   if (state.phase === 'done') return <ReviewResults state={state} />;
 
