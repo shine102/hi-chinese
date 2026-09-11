@@ -21,6 +21,7 @@ export function ListenPick({ exercise, answered, onAnswer }: ExerciseProps<Liste
         answered={answered}
         onAnswer={onAnswer}
         large
+        speakOnTap
       />
     </div>
   );

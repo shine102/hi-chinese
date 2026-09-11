@@ -38,6 +38,7 @@ export function MultipleChoice({
         answered={answered}
         onAnswer={onAnswer}
         large={zhOptions}
+        speakOnTap={zhOptions}
       />
     </div>
   );

@@ -27,6 +27,7 @@ export function FillBlank({ exercise, answered, onAnswer }: ExerciseProps<FillBl
         answered={answered}
         onAnswer={onAnswer}
         large
+        speakOnTap
       />
     </div>
   );

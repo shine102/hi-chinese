@@ -2,20 +2,20 @@ import { speak } from '../../audio/speech.js';
 import { devAttr } from '../dev-attrs.js';
 import type { Answer } from '../types.js';
 
-const HAN = /[一-鿿]/;
-
 export function ChoiceList({
   options,
   correctIndex,
   answered,
   onAnswer,
   large = false,
+  speakOnTap = false,
 }: {
   options: string[];
   correctIndex: number;
   answered: Answer | null;
   onAnswer: (a: Answer) => void;
   large?: boolean;
+  speakOnTap?: boolean;
 }) {
   const chosen = answered?.kind === 'choice' ? answered.index : null;
   return (
@@ -33,7 +33,7 @@ export function ChoiceList({
               type="button"
               disabled={answered !== null}
               onClick={() => {
-                if (HAN.test(opt)) speak(opt);
+                if (speakOnTap) speak(opt);
                 onAnswer({ kind: 'choice', index: i });
               }}
               className={`w-full rounded-lg border px-4 py-3 text-left ${large ? 'text-2xl' : 'text-base'} ${tone}`}
