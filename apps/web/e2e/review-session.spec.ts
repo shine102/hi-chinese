@@ -24,13 +24,32 @@ async function answerCurrent(page: Page): Promise<void> {
       return;
     }
     case 'write-it': {
-      // Dev-only auto-complete button; it is CSS-hidden (Tailwind `hidden`) even in
-      // dev builds, so it must be triggered via a dispatched event, not a real click.
       await page.locator('[data-auto-complete="true"]').dispatchEvent('click');
       return;
     }
     default:
       throw new Error(`unknown exercise kind: ${kind}`);
+  }
+}
+
+async function advanceThroughLesson(page: Page): Promise<void> {
+  for (let i = 0; i < 120; i++) {
+    if (await page.getByTestId('results').isVisible()) break;
+
+    const exerciseVisible = await page.getByTestId('exercise').isVisible().catch(() => false);
+    if (exerciseVisible) {
+      await answerCurrent(page);
+      await page.getByRole('button', { name: 'Continue' }).click();
+      continue;
+    }
+
+    const continueBtn = page.getByRole('button', { name: 'Continue' });
+    if (await continueBtn.isVisible().catch(() => false)) {
+      await continueBtn.click();
+      continue;
+    }
+
+    await page.waitForTimeout(200);
   }
 }
 
@@ -42,22 +61,13 @@ test('complete Unit 1 then review due cards', async ({ page }) => {
   await page.getByRole('button', { name: 'Continue' }).click();
   await page.waitForURL('/');
 
-  // --- Learn Unit 1, lesson 1 ---
+  // --- Complete lesson 1 of Unit 1 ---
   await page.getByRole('link', { name: /^Unit 1/ }).click();
   await page.getByTestId('lesson-0').click();
-  await page.getByRole('link', { name: 'Start practice' }).click();
-
-  // --- Practice: solve all exercises ---
-  for (let i = 0; i < 60; i++) {
-    if (await page.getByTestId('results').isVisible()) break;
-    await expect(page.getByTestId('exercise')).toBeVisible();
-    await answerCurrent(page);
-    await page.getByRole('button', { name: 'Continue' }).click();
-  }
+  await advanceThroughLesson(page);
   await expect(page.getByTestId('results')).toBeVisible({ timeout: 10_000 });
 
   // --- Navigate back and verify Review button ---
-  // Lesson 1 of 2 isn't the last lesson, so results links to the unit screen.
   await page.getByRole('link', { name: 'Next lesson' }).click();
   await expect(page.getByRole('heading', { name: 'Unit 1' })).toBeVisible();
   await page.getByRole('link', { name: 'Back to path' }).click();
@@ -76,16 +86,12 @@ test('complete Unit 1 then review due cards', async ({ page }) => {
     const kind = await exerciseEl.getAttribute('data-kind');
 
     if (kind === 'write-it') {
-      // Review write-it cards render with showOutline: false, so the visible
-      // "Show me" dev button is available; fall back to the hidden auto-complete
-      // button (forced) if it isn't.
       const showBtn = page.locator('[data-show-answer="true"]');
       if (await showBtn.isVisible().catch(() => false)) {
         await showBtn.click();
       } else {
         await page.locator('[data-auto-complete="true"]').dispatchEvent('click');
       }
-      // Grade selector appears next: click Continue (defaults to the suggested grade).
       const gradeContBtn = page.getByRole('button', { name: 'Continue' });
       await expect(gradeContBtn).toBeVisible({ timeout: 2000 });
       await gradeContBtn.click();

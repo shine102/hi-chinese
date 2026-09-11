@@ -59,12 +59,12 @@ describe('computeLessons', () => {
     );
   });
 
-  it('assigns grammar to the lesson containing its latest sentence word', () => {
+  it('assigns grammar to the lesson containing its earliest sentence word', () => {
     const lessons = computeLessons(unit12, grammar, sentences);
-    // g:1 sentences use words w:1-w:4 → lesson 0
+    // g:1 sentences use words w:1-w:4 → both in lesson 0 → earliest is lesson 0
     expect(lessons[0]!.grammarIds).toContain('g:1');
-    // g:2 sentences use w:5,w:6 (lesson 1) and w:9,w:10 (lesson 2) → lesson 2
-    expect(lessons[2]!.grammarIds).toContain('g:2');
+    // g:2 sentences use w:5,w:6 (lesson 1) and w:9,w:10 (lesson 2) → earliest is lesson 1
+    expect(lessons[1]!.grammarIds).toContain('g:2');
   });
 
   it('assigns sentences to the lesson containing their latest word', () => {

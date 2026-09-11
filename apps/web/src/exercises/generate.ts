@@ -43,10 +43,10 @@ export function tokensOf(sentence: Sentence, words: ReadonlyMap<string, Word>): 
   return sentence.wordIds.map((id) => words.get(id)?.simplified ?? id.replace(/^w:/, ''));
 }
 
-type IdGen = (kind: string) => string;
+export type IdGen = (kind: string) => string;
 
 /** Candidate distractor words: this sub-lesson's new + review words (shuffled) first, then the rest of the level. */
-function candidates(input: SessionInput, exclude: ReadonlySet<string>, rng: Rng): Word[] {
+export function candidates(input: SessionInput, exclude: ReadonlySet<string>, rng: Rng): Word[] {
   const scoped = [...input.newWords, ...input.reviewWords];
   const scopedIds = new Set(scoped.map((w) => w.id));
   const out: Word[] = [];
@@ -96,7 +96,7 @@ function withCorrect(
   return { options, correctIndex };
 }
 
-function multipleChoice(
+export function multipleChoice(
   word: Word,
   direction: ChoiceDirection,
   input: SessionInput,
@@ -144,7 +144,7 @@ function multipleChoice(
   };
 }
 
-function listenPick(word: Word, input: SessionInput, rng: Rng, id: IdGen): ListenPickExercise {
+export function listenPick(word: Word, input: SessionInput, rng: Rng, id: IdGen): ListenPickExercise {
   const pool = candidates(input, new Set([word.id]), rng);
   const { options, correctIndex } = withCorrect(
     word.simplified,
@@ -167,7 +167,7 @@ function listenPick(word: Word, input: SessionInput, rng: Rng, id: IdGen): Liste
   };
 }
 
-function matchPairs(unitWords: readonly Word[], rng: Rng, id: IdGen): MatchPairsExercise | null {
+export function matchPairs(unitWords: readonly Word[], rng: Rng, id: IdGen): MatchPairsExercise | null {
   const seen = new Set<string>();
   const pairs: MatchPairsExercise['pairs'] = [];
   for (const w of shuffle(unitWords, rng)) {
@@ -181,7 +181,7 @@ function matchPairs(unitWords: readonly Word[], rng: Rng, id: IdGen): MatchPairs
   return pairs.length === 5 ? { kind: 'match-pairs', id: id('mp'), pairs } : null;
 }
 
-function sentenceBuilder(
+export function sentenceBuilder(
   sentence: Sentence,
   input: SessionInput,
   rng: Rng,
@@ -201,7 +201,7 @@ function sentenceBuilder(
   };
 }
 
-function fillBlank(
+export function fillBlank(
   sentence: Sentence,
   grammar: GrammarPoint | null,
   input: SessionInput,
@@ -234,7 +234,7 @@ function fillBlank(
   };
 }
 
-function writeIt(character: string, rng: Rng, id: IdGen): WriteItExercise {
+export function writeIt(character: string, rng: Rng, id: IdGen): WriteItExercise {
   return {
     kind: 'write-it',
     id: id('wr'),

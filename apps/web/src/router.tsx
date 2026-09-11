@@ -8,10 +8,9 @@ import {
 import { CharacterPage } from './character/CharacterPage.js';
 import { db } from './db/db.js';
 import { isSetupDone } from './db/meta.js';
-import { LearnScreen } from './learn/LearnScreen.js';
+import { LessonFlowScreen } from './lessons/LessonFlow.js';
 import { PathScreen } from './path/PathScreen.js';
 import { UnitScreen } from './path/UnitScreen.js';
-import { PracticeScreen } from './practice/PracticeScreen.js';
 import { ReviewScreen } from './review/ReviewScreen.js';
 import { SettingsScreen } from './settings/SettingsScreen.js';
 import { SetupScreen } from './setup/SetupScreen.js';
@@ -50,15 +49,10 @@ export const unitRoute = createRoute({
   component: UnitScreen,
 });
 
-export const learnRoute = createRoute({
+export const lessonRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/unit/$unitId/lesson/$lessonIdx/learn',
-  component: LearnScreen,
-});
-export const practiceRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: '/unit/$unitId/lesson/$lessonIdx/practice',
-  component: PracticeScreen,
+  path: '/unit/$unitId/lesson/$lessonIdx',
+  component: LessonFlowScreen,
 });
 export const reviewRoute = createRoute({
   getParentRoute: () => rootRoute,
@@ -76,8 +70,7 @@ const routeTree = rootRoute.addChildren([
   setupRoute,
   settingsRoute,
   unitRoute,
-  learnRoute,
-  practiceRoute,
+  lessonRoute,
   reviewRoute,
   characterRoute,
 ]);

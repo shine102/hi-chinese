@@ -24,13 +24,35 @@ async function answerCurrent(page: Page): Promise<void> {
       return;
     }
     case 'write-it': {
-      // Dev-only auto-complete button; it is CSS-hidden (Tailwind `hidden`) even in
-      // dev builds, so it must be triggered via a dispatched event, not a real click.
       await ex.locator('[data-auto-complete="true"]').dispatchEvent('click');
       return;
     }
     default:
       throw new Error(`unknown exercise kind: ${kind}`);
+  }
+}
+
+async function advanceThroughLesson(page: Page): Promise<void> {
+  for (let i = 0; i < 120; i++) {
+    if (await page.getByTestId('results').isVisible()) break;
+
+    // If an exercise is visible, answer it
+    const exerciseVisible = await page.getByTestId('exercise').isVisible().catch(() => false);
+    if (exerciseVisible) {
+      await answerCurrent(page);
+      await page.getByRole('button', { name: 'Continue' }).click();
+      continue;
+    }
+
+    // Otherwise it's an intro slide — click Continue to advance
+    const continueBtn = page.getByRole('button', { name: 'Continue' });
+    if (await continueBtn.isVisible().catch(() => false)) {
+      await continueBtn.click();
+      continue;
+    }
+
+    // Safety: if neither is visible, wait briefly
+    await page.waitForTimeout(200);
   }
 }
 
@@ -57,35 +79,21 @@ test('a fresh device sets up, learns Unit 1 via sub-lessons, and syncs', async (
     // Click the lesson
     await page.getByTestId(`lesson-${li}`).click();
 
-    // Learn screen
-    await expect(page.getByRole('heading', { name: /Lesson \d+/ })).toBeVisible();
-    await expect(page.getByRole('heading', { name: 'New words' })).toBeVisible();
-    await page.getByRole('link', { name: 'Start practice' }).click();
-
-    // Practice: answer all exercises
-    for (let i = 0; i < 60; i++) {
-      if (await page.getByTestId('results').isVisible()) break;
-      await expect(page.getByTestId('exercise')).toBeVisible();
-      await answerCurrent(page);
-      await page.getByRole('button', { name: 'Continue' }).click();
-    }
+    // Advance through the unified slide flow (intros + exercises)
+    await advanceThroughLesson(page);
     await expect(page.getByTestId('results')).toBeVisible();
 
     const isLastLesson = li === lessonCount - 1;
     if (isLastLesson) {
-      // Last lesson of the unit: results link goes back to the path.
       await page.getByRole('link', { name: 'Back to path' }).click();
     } else {
-      // Otherwise it takes us to the next lesson via the unit screen.
       await page.getByRole('link', { name: 'Next lesson' }).click();
       await expect(page.getByRole('heading', { name: 'Unit 1' })).toBeVisible();
-      // Previous lesson should be marked done
       await expect(page.getByTestId(`lesson-${li}`)).toHaveAttribute('data-done', 'true');
     }
   }
 
   // After completing all lessons, verify the unit is complete on the path
-  // (The last lesson's "Back to path" link goes straight to the path screen.)
   await expect(page.getByTestId('unit-l1-u01')).toHaveAttribute('data-state', 'completed');
   await expect(page.getByTestId('unit-l1-u02')).toHaveAttribute('data-state', 'available');
   await expect(page.getByTestId('sync-status')).toHaveText('Synced');

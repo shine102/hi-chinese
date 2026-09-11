@@ -48,7 +48,7 @@ afterEach(() => {
 });
 
 describe('UnitScreen', () => {
-  it('renders lesson items with links into the lesson-scoped learn route', async () => {
+  it('renders lesson items with links into the lesson route', async () => {
     stubFetch(noSync);
     renderApp('/unit/l1-u01');
 
@@ -61,9 +61,9 @@ describe('UnitScreen', () => {
     expect(lesson1.dataset['done']).toBe('false');
 
     const link0 = screen.getByRole('link', { name: /Lesson 1/ });
-    expect(link0.getAttribute('href')).toBe('/unit/l1-u01/lesson/0/learn');
+    expect(link0.getAttribute('href')).toBe('/unit/l1-u01/lesson/0');
     const link1 = screen.getByRole('link', { name: /Lesson 2/ });
-    expect(link1.getAttribute('href')).toBe('/unit/l1-u01/lesson/1/learn');
+    expect(link1.getAttribute('href')).toBe('/unit/l1-u01/lesson/1');
   });
 
   it('shows completed lessons as Done and the next lesson as Start', async () => {

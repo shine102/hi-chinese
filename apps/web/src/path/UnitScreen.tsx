@@ -57,7 +57,7 @@ export function UnitScreen() {
           return (
             <li key={i} data-testid={`lesson-${i}`} data-done={done}>
               <Link
-                to="/unit/$unitId/lesson/$lessonIdx/learn"
+                to="/unit/$unitId/lesson/$lessonIdx"
                 params={{ unitId, lessonIdx: String(i) }}
                 className={`flex items-center justify-between rounded-lg px-4 py-3 ${
                   done

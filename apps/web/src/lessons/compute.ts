@@ -44,14 +44,16 @@ export function computeLessons(
     lessons[maxLesson]!.sentenceIds.push(s.id);
   }
 
-  // Place grammar into the lesson of their latest sentence
+  // Place grammar into the lesson of their earliest sentence so the
+  // explanation appears before exercises that use the pattern.
   for (const g of grammar) {
-    let maxLesson = 0;
+    let minLesson = total;
     for (const sid of g.sentenceIds) {
       const li = sentenceLesson.get(sid);
-      if (li !== undefined && li > maxLesson) maxLesson = li;
+      if (li !== undefined && li < minLesson) minLesson = li;
     }
-    lessons[maxLesson]!.grammarIds.push(g.id);
+    if (minLesson >= total) minLesson = 0;
+    lessons[minLesson]!.grammarIds.push(g.id);
   }
 
   return lessons;
