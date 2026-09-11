@@ -35,6 +35,17 @@ export function openDb(name = 'hi-chinese'): HiChineseDb {
     outbox: 'key, table',
     meta: 'key',
   });
+  // Dexie is schemaless for non-indexed columns, so bumping the version with the
+  // same index set is enough to record schema history; no `.upgrade()` migration
+  // is needed since `lessonsCompleted` is read with a `?? 0` fallback wherever it
+  // matters (see progress.ts and sync/outbox.ts) rather than backfilled in place.
+  d.version(2).stores({
+    unitProgress: 'unitId, status',
+    cards: 'cardId, kind, fsrs.due',
+    activity: 'date',
+    outbox: 'key, table',
+    meta: 'key',
+  });
   // Dexie's db.delete() defaults to { disableAutoOpen: true }, which would leave this
   // instance permanently unable to reopen itself on the next table operation. Tests
   // reset state between cases with `await db.delete()` on the shared singleton and

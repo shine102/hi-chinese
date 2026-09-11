@@ -83,6 +83,10 @@ function parseUnitProgress(v: unknown, path: string): UnitProgressRow {
     unitId: readString(obj['unitId'], `${path}.unitId`, 200),
     status: status as UnitStatus,
     completedAt: readIntOrNull(obj['completedAt'], `${path}.completedAt`, 0),
+    lessonsCompleted:
+      typeof obj['lessonsCompleted'] === 'number'
+        ? readInt(obj['lessonsCompleted'], `${path}.lessonsCompleted`, 0)
+        : 0,
     updatedAt: readInt(obj['updatedAt'], `${path}.updatedAt`, 1),
   };
 }

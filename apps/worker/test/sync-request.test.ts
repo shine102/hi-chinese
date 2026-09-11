@@ -21,6 +21,7 @@ const valid = {
         unitId: 'l1-u01',
         status: 'completed',
         completedAt: 1_700_000_000_000,
+        lessonsCompleted: 3,
         updatedAt: 1_700_000_000_001,
       },
     ],

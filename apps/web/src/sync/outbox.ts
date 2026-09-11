@@ -29,7 +29,10 @@ export async function collectOutbox(db: HiChineseDb): Promise<OutboxBatch> {
       if (table === 'unitProgress') {
         const rows = await db.unitProgress.bulkGet(keys);
         rows.forEach((r, i) => {
-          if (r !== undefined) changes.unitProgress.push(r);
+          // Rows written before the lessonsCompleted field existed read back with
+          // it `undefined` (Dexie is schemaless for non-indexed columns); default
+          // to 0 so every pushed row satisfies UnitProgressRow.
+          if (r !== undefined) changes.unitProgress.push({ ...r, lessonsCompleted: r.lessonsCompleted ?? 0 });
           entries.push(take[i]!);
         });
       } else if (table === 'cards') {

@@ -34,6 +34,7 @@ describe('markUnitStarted', () => {
       unitId: 'l1-u01',
       status: 'in-progress',
       completedAt: null,
+      lessonsCompleted: 0,
       updatedAt: 1000,
     });
     expect(await db.outbox.toArray()).toEqual([
@@ -57,6 +58,7 @@ describe('completeUnit', () => {
       unitId: 'l1-u01',
       status: 'completed',
       completedAt: 5000,
+      lessonsCompleted: 0,
       updatedAt: 9001,
     });
     expect(await db.outbox.get(outboxKey('unitProgress', 'l1-u01'))).toMatchObject({

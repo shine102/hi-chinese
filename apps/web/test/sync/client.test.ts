@@ -80,9 +80,27 @@ describe('syncOnce', () => {
       cursor: 3,
       changes: {
         unitProgress: [
-          { unitId: 'l1-u01', status: 'completed', completedAt: 2000, updatedAt: 2000 },
-          { unitId: 'l1-u02', status: 'completed', completedAt: 100, updatedAt: 100 },
-          { unitId: 'l1-u03', status: 'in-progress', completedAt: null, updatedAt: 50 },
+          {
+            unitId: 'l1-u01',
+            status: 'completed',
+            completedAt: 2000,
+            lessonsCompleted: 0,
+            updatedAt: 2000,
+          },
+          {
+            unitId: 'l1-u02',
+            status: 'completed',
+            completedAt: 100,
+            lessonsCompleted: 0,
+            updatedAt: 100,
+          },
+          {
+            unitId: 'l1-u03',
+            status: 'in-progress',
+            completedAt: null,
+            lessonsCompleted: 0,
+            updatedAt: 50,
+          },
         ],
         cards: [],
         activity: [],
@@ -105,6 +123,7 @@ describe('syncOnce', () => {
         unitId: 'l1-u01',
         status: 'completed',
         completedAt: 1500,
+        lessonsCompleted: 0,
         updatedAt: 1500,
       });
       await db.outbox.put({

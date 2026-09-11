@@ -7,6 +7,7 @@ const row = (unitId: string, status: UnitProgressRow['status']): UnitProgressRow
   unitId,
   status,
   completedAt: status === 'completed' ? 1 : null,
+  lessonsCompleted: 0,
   updatedAt: 1,
 });
 

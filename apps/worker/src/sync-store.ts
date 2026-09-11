@@ -12,11 +12,12 @@ import type {
 const SEQ_SUBQUERY = '(SELECT seq FROM sync_meta WHERE id = 1)';
 
 const UPSERT_UNIT = `
-INSERT INTO unit_progress (unit_id, status, completed_at, updated_at, seq)
-VALUES (?1, ?2, ?3, ?4, ${SEQ_SUBQUERY})
+INSERT INTO unit_progress (unit_id, status, completed_at, lessons_completed, updated_at, seq)
+VALUES (?1, ?2, ?3, ?4, ?5, ${SEQ_SUBQUERY})
 ON CONFLICT(unit_id) DO UPDATE SET
   status = excluded.status,
   completed_at = excluded.completed_at,
+  lessons_completed = excluded.lessons_completed,
   updated_at = excluded.updated_at,
   seq = excluded.seq
 WHERE excluded.updated_at > unit_progress.updated_at`;
@@ -45,6 +46,7 @@ interface UnitDbRow {
   unit_id: string;
   status: string;
   completed_at: number | null;
+  lessons_completed: number;
   updated_at: number;
   seq: number;
 }
@@ -78,7 +80,11 @@ export async function applySync(db: D1Database, req: SyncRequest): Promise<SyncR
       db.prepare('UPDATE sync_meta SET seq = seq + 1 WHERE id = 1'),
     ];
     for (const r of unitProgress) {
-      statements.push(db.prepare(UPSERT_UNIT).bind(r.unitId, r.status, r.completedAt, r.updatedAt));
+      statements.push(
+        db
+          .prepare(UPSERT_UNIT)
+          .bind(r.unitId, r.status, r.completedAt, r.lessonsCompleted, r.updatedAt),
+      );
     }
     for (const r of cards) {
       statements.push(
@@ -99,7 +105,7 @@ export async function applySync(db: D1Database, req: SyncRequest): Promise<SyncR
   const [units, cardRows, activityRows] = (await db.batch([
     db
       .prepare(
-        'SELECT unit_id, status, completed_at, updated_at, seq FROM unit_progress WHERE seq > ?1 ORDER BY seq, unit_id',
+        'SELECT unit_id, status, completed_at, lessons_completed, updated_at, seq FROM unit_progress WHERE seq > ?1 ORDER BY seq, unit_id',
       )
       .bind(cursor),
     db
@@ -126,6 +132,7 @@ export async function applySync(db: D1Database, req: SyncRequest): Promise<SyncR
         unitId: r.unit_id,
         status: r.status as UnitStatus,
         completedAt: r.completed_at,
+        lessonsCompleted: r.lessons_completed ?? 0,
         updatedAt: r.updated_at,
       })),
       cards: cardRows.results.map((r): CardRow => ({

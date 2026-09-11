@@ -4,6 +4,7 @@ export interface UnitProgressRow {
   unitId: string;
   status: UnitStatus;
   completedAt: number | null;
+  lessonsCompleted: number;
   updatedAt: number;
 }
 

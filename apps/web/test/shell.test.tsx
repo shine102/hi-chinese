@@ -51,7 +51,13 @@ describe('app shell', () => {
         cursor: 1,
         changes: {
           unitProgress: [
-            { unitId: 'l1-u01', status: 'completed', completedAt: 100, updatedAt: 100 },
+            {
+              unitId: 'l1-u01',
+              status: 'completed',
+              completedAt: 100,
+              lessonsCompleted: 0,
+              updatedAt: 100,
+            },
           ],
           cards: [],
           activity: [],

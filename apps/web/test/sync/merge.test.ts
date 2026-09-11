@@ -6,6 +6,7 @@ const row = (unitId: string, updatedAt: number): UnitProgressRow => ({
   unitId,
   status: 'completed',
   completedAt: updatedAt,
+  lessonsCompleted: 0,
   updatedAt,
 });
 

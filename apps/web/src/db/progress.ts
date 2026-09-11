@@ -8,7 +8,13 @@ export async function markUnitStarted(db: HiChineseDb, unitId: string, now: numb
   await db.transaction('rw', [db.unitProgress, db.outbox], async () => {
     if ((await db.unitProgress.get(unitId)) !== undefined) return;
     const updatedAt = nextUpdatedAt(undefined, now);
-    await db.unitProgress.put({ unitId, status: 'in-progress', completedAt: null, updatedAt });
+    await db.unitProgress.put({
+      unitId,
+      status: 'in-progress',
+      completedAt: null,
+      lessonsCompleted: 0,
+      updatedAt,
+    });
     await db.outbox.put(outboxEntry('unitProgress', unitId, updatedAt));
   });
 }
@@ -36,6 +42,7 @@ export async function completeUnit(db: HiChineseDb, input: CompleteUnitInput): P
       unitId,
       status: 'completed',
       completedAt: now,
+      lessonsCompleted: prev?.lessonsCompleted ?? 0,
       updatedAt: unitUpdatedAt,
     });
     outbox.push(outboxEntry('unitProgress', unitId, unitUpdatedAt));
