@@ -8,9 +8,11 @@ import { requestSync } from './store.js';
  */
 export function installSyncTriggers(deps: SyncDeps): () => void {
   const run = () => {
-    void isSetupDone(deps.db).then((done) => {
-      if (done) void requestSync(deps);
-    });
+    void isSetupDone(deps.db)
+      .then((done) => {
+        if (done) void requestSync(deps);
+      })
+      .catch((err: unknown) => console.error('sync trigger failed', err));
   };
   run();
   window.addEventListener('online', run);
