@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "fetch": "tsx scripts/fetch.ts",
     "build": "tsx scripts/build.ts",
-    "report:readings": "tsx scripts/report-readings.ts"
+    "report:readings": "tsx scripts/report-readings.ts",
+    "vocab-context": "tsx scripts/vocab-context.ts"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",
