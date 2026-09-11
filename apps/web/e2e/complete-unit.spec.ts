@@ -23,6 +23,12 @@ async function answerCurrent(page: Page): Promise<void> {
       }
       return;
     }
+    case 'write-it': {
+      // Dev-only auto-complete button; it is CSS-hidden (Tailwind `hidden`) even in
+      // dev builds, so it must be triggered via a dispatched event, not a real click.
+      await ex.locator('[data-auto-complete="true"]').dispatchEvent('click');
+      return;
+    }
     default:
       throw new Error(`unknown exercise kind: ${kind}`);
   }
