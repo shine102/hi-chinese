@@ -50,7 +50,7 @@ export function StrokesSheet({ word, onClose }: { word: Word; onClose: () => voi
               const data = chars[i];
               if (!data) return null;
               return (
-                <div key={ch} className="flex items-start gap-4">
+                <div key={`${ch}-${i}`} className="flex items-start gap-4">
                   <HanziWriterComponent character={ch} mode="animate" width={120} height={120} />
                   <div className="flex flex-col gap-1 pt-2">
                     <div className="text-2xl">{ch}</div>

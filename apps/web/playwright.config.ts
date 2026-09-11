@@ -15,7 +15,9 @@ export default defineConfig({
       name: 'chromium',
       use: {
         browserName: 'chromium',
-        launchOptions: { executablePath: '/var/lib/flatpak/exports/bin/com.google.Chrome' },
+        launchOptions: process.env.CHROME_PATH
+          ? { executablePath: process.env.CHROME_PATH }
+          : {},
       },
     },
   ],

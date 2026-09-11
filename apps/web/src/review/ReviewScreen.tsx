@@ -1,6 +1,6 @@
 import { Rating } from 'ts-fsrs';
 import { Link } from '@tanstack/react-router';
-import { useEffect, useReducer, useRef, useState } from 'react';
+import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import { useContent } from '../content/provider.js';
 import { db } from '../db/db.js';
 import { completeReviewSession, type ReviewGradeInput } from '../db/progress.js';
@@ -47,7 +47,10 @@ export function ReviewScreen() {
   }
 
   const allWordIds = Array.from(content.words.keys());
-  const exercises = generateReviewSession(cards, content.words, allWordIds, Date.now());
+  const exercises = useMemo(
+    () => generateReviewSession(cards, content.words, allWordIds, Date.now()),
+    [cards, content.words, allWordIds],
+  );
 
   return <ReviewSessionRunner key={cards.length} exercises={exercises} cards={cards} />;
 }

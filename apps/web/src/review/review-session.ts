@@ -123,7 +123,7 @@ export function reviewReducer(state: ReviewState, action: ReviewAction): ReviewS
     }
 
     case 'skip': {
-      if (state.phase === 'done' || !current) return state;
+      if (state.phase !== 'question' || !current) return state;
       const exercises = state.exercises.filter((_, i) => i !== state.position);
       return {
         ...state,

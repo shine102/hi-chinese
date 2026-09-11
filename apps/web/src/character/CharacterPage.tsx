@@ -10,12 +10,14 @@ import { Loading } from '../ui/Loading.js';
 
 export function CharacterPage() {
   const { charCode } = useParams({ from: '/character/$charCode' });
-  const ch = String.fromCodePoint(parseInt(charCode, 16));
+  const code = parseInt(charCode, 16);
+  const ch = Number.isNaN(code) ? null : String.fromCodePoint(code);
   const content = useContent();
   const [data, setData] = useState<CharacterData | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (ch === null) return;
     let cancelled = false;
     setData(null);
     setError(null);
@@ -31,6 +33,7 @@ export function CharacterPage() {
     };
   }, [ch]);
 
+  if (ch === null) return <InlineError message="Invalid character code" />;
   if (error)
     return (
       <InlineError
