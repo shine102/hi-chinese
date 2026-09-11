@@ -32,7 +32,9 @@ function UnitNode({ unit, state, lessonsCompleted }: { unit: ManifestUnit; state
       <div>
         <div className="font-medium">{unit.title}</div>
         <div className="text-xs opacity-70">
-          {unit.wordCount} words, {total} lessons
+          {unit.wordCount} words
+          {unit.grammarCount > 0 ? `, ${unit.grammarCount} grammar` : ''}
+          {', '}{total} lessons
           {state === 'in-progress' && lessonsCompleted > 0
             ? ` — ${lessonsCompleted}/${total} done`
             : ''}
