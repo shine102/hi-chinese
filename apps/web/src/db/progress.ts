@@ -78,6 +78,74 @@ export async function completeUnit(db: HiChineseDb, input: CompleteUnitInput): P
   });
 }
 
+export interface CompleteLessonInput {
+  unitId: string;
+  /** Total lessons in this unit (from lessonCount) */
+  totalLessons: number;
+  /** Word IDs learned in this specific sub-lesson */
+  wordIds: readonly string[];
+  /** Characters from this sub-lesson's words */
+  characters: readonly string[];
+  now: number;
+}
+
+/**
+ * Records completion of one sub-lesson within a unit: increments
+ * `lessonsCompleted`, creates review cards for only this sub-lesson's words
+ * and characters (skipping ones that already exist), counts a lesson for
+ * today, and marks the unit completed once the last sub-lesson finishes.
+ * One transaction: either all of it lands or none.
+ */
+export async function completeLesson(db: HiChineseDb, input: CompleteLessonInput): Promise<void> {
+  const { unitId, totalLessons, now } = input;
+  await db.transaction('rw', [db.unitProgress, db.cards, db.activity, db.outbox], async () => {
+    const outbox: OutboxRow[] = [];
+
+    const prev = await db.unitProgress.get(unitId);
+    const newCount = (prev?.lessonsCompleted ?? 0) + 1;
+    const done = newCount >= totalLessons;
+    const unitUpdatedAt = nextUpdatedAt(prev?.updatedAt, now);
+    await db.unitProgress.put({
+      unitId,
+      status: done ? 'completed' : 'in-progress',
+      completedAt: done ? now : null,
+      lessonsCompleted: newCount,
+      updatedAt: unitUpdatedAt,
+    });
+    outbox.push(outboxEntry('unitProgress', unitId, unitUpdatedAt));
+
+    // Create review cards for this sub-lesson's words and characters
+    const wanted: { id: string; kind: CardKind }[] = [];
+    for (const w of input.wordIds) {
+      wanted.push({ id: cardId('word-recognition', w), kind: 'word-recognition' });
+      wanted.push({ id: cardId('word-recall', w), kind: 'word-recall' });
+    }
+    for (const ch of input.characters)
+      wanted.push({ id: cardId('char-write', ch), kind: 'char-write' });
+    const existing = await db.cards.bulkGet(wanted.map((c) => c.id));
+    const fresh: CardRow[] = [];
+    wanted.forEach((c, i) => {
+      if (existing[i] !== undefined) return;
+      fresh.push({ cardId: c.id, kind: c.kind, fsrs: emptyFsrsState(now), updatedAt: now });
+      outbox.push(outboxEntry('cards', c.id, now));
+    });
+    if (fresh.length > 0) await db.cards.bulkPut(fresh);
+
+    const date = localDate(now);
+    const day = await db.activity.get(date);
+    const dayUpdatedAt = nextUpdatedAt(day?.updatedAt, now);
+    await db.activity.put({
+      date,
+      lessons: (day?.lessons ?? 0) + 1,
+      reviews: day?.reviews ?? 0,
+      updatedAt: dayUpdatedAt,
+    });
+    outbox.push(outboxEntry('activity', date, dayUpdatedAt));
+
+    await db.outbox.bulkPut(outbox);
+  });
+}
+
 export interface ReviewGradeInput {
   cardId: string;
   newFsrs: FsrsState;
