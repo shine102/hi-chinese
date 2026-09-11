@@ -2,7 +2,11 @@ import type { ManifestUnit } from '@hi-chinese/content';
 import { Link } from '@tanstack/react-router';
 import { useContent } from '../content/provider.js';
 import { db } from '../db/db.js';
+import { localDate } from '../db/time.js';
 import { useLiveQuery } from '../db/use-live-query.js';
+import { getDueCount } from '../fsrs/scheduler.js';
+import { computeStreak } from '../streak/streak.js';
+import { DueCountBadge, StreakBadge } from '../streak/StreakBadge.js';
 import { Loading } from '../ui/Loading.js';
 import { computeUnitStates, type UnitState } from './unlock.js';
 
@@ -53,10 +57,30 @@ function UnitNode({ unit, state }: { unit: ManifestUnit; state: UnitState }) {
 export function PathScreen() {
   const content = useContent();
   const rows = useLiveQuery(() => db.unitProgress.toArray(), []);
+  const activities = useLiveQuery(() => db.activity.toArray(), []);
+  const dueCount = useLiveQuery(() => getDueCount(db, Date.now()), []);
   if (rows === undefined) return <Loading />;
   const states = computeUnitStates(content.unitOrder, rows);
+  const streak = activities ? computeStreak(activities, localDate(Date.now())) : 0;
   return (
     <div className="flex flex-col gap-8">
+      <div className="flex items-center justify-between">
+        <StreakBadge streak={streak} />
+        <div className="flex items-center gap-3">
+          {dueCount !== undefined && dueCount > 0 && (
+            <>
+              <DueCountBadge count={dueCount} />
+              <Link
+                to="/review"
+                className="rounded-lg bg-blue-700 px-4 py-2 text-sm font-medium text-white"
+                data-testid="review-button"
+              >
+                Review
+              </Link>
+            </>
+          )}
+        </div>
+      </div>
       {content.manifest.levels.map((level) => (
         <section key={level.level} className="flex flex-col gap-3">
           <h2 className="text-xl font-semibold">{level.title}</h2>
