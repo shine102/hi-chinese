@@ -32,6 +32,14 @@ export function ReviewScreen() {
       .catch((err: unknown) => setError(err instanceof Error ? err.message : String(err)));
   }, []);
 
+  // Hooks must run unconditionally on every render (Rules of Hooks) — compute this
+  // before the early returns below, even though it's unused while cards is null/empty.
+  const exercises = useMemo(() => {
+    if (!cards || cards.length === 0) return [];
+    const allWordIds = Array.from(content.words.keys());
+    return generateReviewSession(cards, content.words, allWordIds, Date.now());
+  }, [cards, content.words]);
+
   if (error) return <InlineError message={`Could not load review cards: ${error}`} />;
   if (cards === null) return <Loading label="Loading review…" />;
   if (cards.length === 0) {
@@ -45,11 +53,6 @@ export function ReviewScreen() {
       </div>
     );
   }
-
-  const exercises = useMemo(() => {
-    const allWordIds = Array.from(content.words.keys());
-    return generateReviewSession(cards, content.words, allWordIds, Date.now());
-  }, [cards, content.words]);
 
   return <ReviewSessionRunner key={cards.length} exercises={exercises} cards={cards} />;
 }

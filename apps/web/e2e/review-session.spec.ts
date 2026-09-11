@@ -42,9 +42,9 @@ test('complete Unit 1 then review due cards', async ({ page }) => {
   await page.getByRole('button', { name: 'Continue' }).click();
   await page.waitForURL('/');
 
-  // --- Learn Unit 1 ---
+  // --- Learn Unit 1, lesson 1 ---
   await page.getByRole('link', { name: /^Unit 1/ }).click();
-  await page.getByRole('link', { name: 'Learn' }).click();
+  await page.getByTestId('lesson-0').click();
   await page.getByRole('link', { name: 'Start practice' }).click();
 
   // --- Practice: solve all exercises ---
@@ -57,6 +57,9 @@ test('complete Unit 1 then review due cards', async ({ page }) => {
   await expect(page.getByTestId('results')).toBeVisible({ timeout: 10_000 });
 
   // --- Navigate back and verify Review button ---
+  // Lesson 1 of 2 isn't the last lesson, so results links to the unit screen.
+  await page.getByRole('link', { name: 'Next lesson' }).click();
+  await expect(page.getByRole('heading', { name: 'Unit 1' })).toBeVisible();
   await page.getByRole('link', { name: 'Back to path' }).click();
   await page.waitForURL('/');
   await expect(page.getByTestId('review-button')).toBeVisible({ timeout: 10_000 });

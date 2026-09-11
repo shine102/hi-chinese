@@ -221,7 +221,7 @@ function Results({
           params={{ unitId }}
           className="mt-4 rounded-lg bg-red-700 px-5 py-3 font-medium text-white"
         >
-          Back to path
+          Next lesson
         </Link>
       )}
     </div>

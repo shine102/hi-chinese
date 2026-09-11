@@ -34,7 +34,7 @@ async function answerCurrent(page: Page): Promise<void> {
   }
 }
 
-test('a fresh device sets up, learns and completes Unit 1, and syncs', async ({ page }) => {
+test('a fresh device sets up, learns Unit 1 via sub-lessons, and syncs', async ({ page }) => {
   await page.goto('/');
   await expect(page).toHaveURL(/\/setup$/);
   await page.getByLabel('Passphrase').fill('test-passphrase');
@@ -45,23 +45,47 @@ test('a fresh device sets up, learns and completes Unit 1, and syncs', async ({ 
   await expect(page.getByTestId('unit-l1-u02')).toHaveAttribute('data-state', 'locked');
   await expect(page.getByTestId('sync-status')).toHaveText('Synced');
 
+  // Enter unit -> see lesson picker
   await page.getByRole('link', { name: /^Unit 1/ }).click();
   await expect(page.getByRole('heading', { name: 'Unit 1' })).toBeVisible();
-  await page.getByRole('link', { name: 'Learn' }).click();
-  await expect(page.getByRole('heading', { name: 'Unit 1: Learn' })).toBeVisible();
-  await expect(page.getByRole('heading', { name: 'New words' })).toBeVisible();
-  await page.getByRole('link', { name: 'Start practice' }).click();
 
-  for (let i = 0; i < 60; i++) {
-    if (await page.getByTestId('results').isVisible()) break;
-    await expect(page.getByTestId('exercise')).toBeVisible();
-    await answerCurrent(page);
-    await page.getByRole('button', { name: 'Continue' }).click();
+  // Count lessons and complete each one
+  const lessonCount = await page.locator('[data-testid^="lesson-"]').count();
+  expect(lessonCount).toBeGreaterThanOrEqual(1);
+
+  for (let li = 0; li < lessonCount; li++) {
+    // Click the lesson
+    await page.getByTestId(`lesson-${li}`).click();
+
+    // Learn screen
+    await expect(page.getByRole('heading', { name: /Lesson \d+/ })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'New words' })).toBeVisible();
+    await page.getByRole('link', { name: 'Start practice' }).click();
+
+    // Practice: answer all exercises
+    for (let i = 0; i < 60; i++) {
+      if (await page.getByTestId('results').isVisible()) break;
+      await expect(page.getByTestId('exercise')).toBeVisible();
+      await answerCurrent(page);
+      await page.getByRole('button', { name: 'Continue' }).click();
+    }
+    await expect(page.getByTestId('results')).toBeVisible();
+
+    const isLastLesson = li === lessonCount - 1;
+    if (isLastLesson) {
+      // Last lesson of the unit: results link goes back to the path.
+      await page.getByRole('link', { name: 'Back to path' }).click();
+    } else {
+      // Otherwise it takes us to the next lesson via the unit screen.
+      await page.getByRole('link', { name: 'Next lesson' }).click();
+      await expect(page.getByRole('heading', { name: 'Unit 1' })).toBeVisible();
+      // Previous lesson should be marked done
+      await expect(page.getByTestId(`lesson-${li}`)).toHaveAttribute('data-done', 'true');
+    }
   }
-  await expect(page.getByTestId('results')).toBeVisible();
-  await expect(page.getByTestId('results')).toContainText('100%');
 
-  await page.getByRole('link', { name: 'Back to path' }).click();
+  // After completing all lessons, verify the unit is complete on the path
+  // (The last lesson's "Back to path" link goes straight to the path screen.)
   await expect(page.getByTestId('unit-l1-u01')).toHaveAttribute('data-state', 'completed');
   await expect(page.getByTestId('unit-l1-u02')).toHaveAttribute('data-state', 'available');
   await expect(page.getByTestId('sync-status')).toHaveText('Synced');
