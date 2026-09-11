@@ -13,6 +13,7 @@ lands, so they reference real code rather than guesses.
 | 3 | `2026-09-10-phase-3-web-core.md` | `apps/web`: Vite + React PWA, Dexie progress with sync outbox, path/learn/practice, five exercise kinds, speech audio, Worker static assets, Playwright e2e |
 | 4 | `2026-09-11-phase-4-review-writing.md` | FSRS review deck and session, Hanzi Writer integration (learn sheet, write-it exercise, write-from-memory review), character page, streak |
 | 5 | `2026-09-11-phase-5-content-authoring.md` | Grammar points and example sentences for every unit, vocab-context script, readings review for multi-pronunciation words |
+| 6 | `2026-09-11-phase-6-sub-lessons.md` | Sub-lesson system: each unit's words split into 3-4 lessons of 3-4 words, with review of earlier sub-lessons, per-lesson progress tracking |
 
 Findings from source verification (2026-09-09) that adjust the spec:
 
