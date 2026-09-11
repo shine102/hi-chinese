@@ -14,7 +14,18 @@ export function WordCard({ word }: { word: Word }) {
   return (
     <li className="flex items-center justify-between gap-3 rounded-lg border border-stone-200 bg-white p-4">
       <div>
-        <div className="text-3xl">{word.simplified}</div>
+        <div className="text-3xl">
+          {[...word.simplified].map((ch, i) => (
+            <Link
+              key={i}
+              to="/character/$charCode"
+              params={{ charCode: ch.codePointAt(0)!.toString(16).padStart(4, '0') }}
+              className="hover:text-red-700 hover:underline"
+            >
+              {ch}
+            </Link>
+          ))}
+        </div>
         <div className="text-stone-600">{word.pinyin}</div>
         <ul className="mt-1 text-sm text-stone-800">
           {word.meanings.slice(0, 2).map((m) => (

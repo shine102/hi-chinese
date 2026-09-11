@@ -5,6 +5,7 @@ import {
   redirect,
   type RouterHistory,
 } from '@tanstack/react-router';
+import { CharacterPage } from './character/CharacterPage.js';
 import { db } from './db/db.js';
 import { isSetupDone } from './db/meta.js';
 import { LearnScreen } from './learn/LearnScreen.js';
@@ -64,6 +65,11 @@ export const reviewRoute = createRoute({
   path: '/review',
   component: ReviewScreen,
 });
+export const characterRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/character/$charCode',
+  component: CharacterPage,
+});
 
 const routeTree = rootRoute.addChildren([
   indexRoute,
@@ -73,6 +79,7 @@ const routeTree = rootRoute.addChildren([
   learnRoute,
   practiceRoute,
   reviewRoute,
+  characterRoute,
 ]);
 
 export function createAppRouter(history?: RouterHistory) {
