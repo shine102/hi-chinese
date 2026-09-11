@@ -1,14 +1,16 @@
 import type { GrammarPoint, Sentence, Word } from '@hi-chinese/content';
 import { Link, useParams } from '@tanstack/react-router';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { NoVoiceBanner, SpeakButton } from '../audio/SpeakButton.js';
 import { useContent, useUnitChunk } from '../content/provider.js';
 import { db } from '../db/db.js';
 import { markUnitStarted } from '../db/progress.js';
+import { StrokesSheet } from '../hanzi/StrokesSheet.js';
 import { InlineError } from '../ui/InlineError.js';
 import { Loading } from '../ui/Loading.js';
 
 export function WordCard({ word }: { word: Word }) {
+  const [showStrokes, setShowStrokes] = useState(false);
   return (
     <li className="flex items-center justify-between gap-3 rounded-lg border border-stone-200 bg-white p-4">
       <div>
@@ -23,7 +25,20 @@ export function WordCard({ word }: { word: Word }) {
           <div className="mt-1 text-xs text-stone-500">Traditional: {word.traditional}</div>
         )}
       </div>
-      <SpeakButton text={word.simplified} />
+      <div className="flex flex-col gap-2">
+        <SpeakButton text={word.simplified} />
+        {word.characters.length > 0 && (
+          <button
+            type="button"
+            onClick={() => setShowStrokes(true)}
+            className="rounded-full border border-stone-300 bg-white px-3 py-1 text-xs text-stone-700"
+            aria-label={`Strokes for ${word.simplified}`}
+          >
+            Strokes
+          </button>
+        )}
+      </div>
+      {showStrokes && <StrokesSheet word={word} onClose={() => setShowStrokes(false)} />}
     </li>
   );
 }
