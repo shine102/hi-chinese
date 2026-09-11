@@ -1,4 +1,4 @@
-import type { GrammarPoint, Sentence, UnitChunk, Word } from '@hi-chinese/content';
+import type { GrammarPoint, Sentence, Word } from '@hi-chinese/content';
 import { mulberry32, pick, randomInt, shuffle, type Rng } from './random.js';
 import type {
   ChoiceDirection,
@@ -11,12 +11,23 @@ import type {
   WriteItExercise,
 } from './types.js';
 
-export const SESSION_SIZE = 15;
+/** Session size scales with how much new material there is, capped at 15. */
+export function sessionSize(newWordCount: number, reviewWordCount: number): number {
+  return Math.min(15, 6 + newWordCount + Math.min(reviewWordCount, 3));
+}
 
 export interface SessionInput {
-  chunk: UnitChunk;
+  /** This sub-lesson's words — every new word gets at least one exercise. */
+  newWords: readonly Word[];
+  /** Words from prior sub-lessons — used for review exercises. */
+  reviewWords: readonly Word[];
+  /** Grammar scoped to this sub-lesson. */
+  grammar: readonly GrammarPoint[];
+  /** Sentences scoped to this sub-lesson. */
+  sentences: readonly Sentence[];
+  /** Full word map for distractor lookups. */
   words: ReadonlyMap<string, Word>;
-  /** Every word id of the unit's HSK level; distractors come from the unit first, then the level. */
+  /** All word IDs at this HSK level — broader distractor pool. */
   levelWordIds: readonly string[];
   /** False when no Chinese voice exists: listen-and-pick exercises are then skipped. */
   audio: boolean;
@@ -34,18 +45,19 @@ export function tokensOf(sentence: Sentence, words: ReadonlyMap<string, Word>): 
 
 type IdGen = (kind: string) => string;
 
-/** Candidate distractor words: the unit's words (shuffled) first, then the rest of the level. */
+/** Candidate distractor words: this sub-lesson's new + review words (shuffled) first, then the rest of the level. */
 function candidates(input: SessionInput, exclude: ReadonlySet<string>, rng: Rng): Word[] {
-  const unitIds = new Set(input.chunk.unit.wordIds);
-  const ordered = [
-    ...shuffle(input.chunk.unit.wordIds, rng),
-    ...shuffle(
-      input.levelWordIds.filter((id) => !unitIds.has(id)),
-      rng,
-    ),
-  ];
+  const scoped = [...input.newWords, ...input.reviewWords];
+  const scopedIds = new Set(scoped.map((w) => w.id));
   const out: Word[] = [];
-  for (const id of ordered) {
+  for (const w of shuffle(scoped, rng)) {
+    if (exclude.has(w.id)) continue;
+    out.push(w);
+  }
+  for (const id of shuffle(
+    input.levelWordIds.filter((wid) => !scopedIds.has(wid)),
+    rng,
+  )) {
     if (exclude.has(id)) continue;
     const w = input.words.get(id);
     if (w) out.push(w);
@@ -198,8 +210,8 @@ function fillBlank(
 ): FillBlankExercise | null {
   const tokens = tokensOf(sentence, input.words);
   if (tokens.length < 2) return null;
-  const unitIds = new Set(input.chunk.unit.wordIds);
-  const preferred = sentence.wordIds.flatMap((wid, i) => (unitIds.has(wid) ? [i] : []));
+  const newWordIds = new Set(input.newWords.map((w) => w.id));
+  const preferred = sentence.wordIds.flatMap((wid, i) => (newWordIds.has(wid) ? [i] : []));
   const positions = preferred.length > 0 ? preferred : tokens.map((_, i) => i);
   const blankIndex = positions[randomInt(positions.length, rng)]!;
   const correct = tokens[blankIndex]!;
@@ -232,26 +244,27 @@ function writeIt(character: string, rng: Rng, id: IdGen): WriteItExercise {
 }
 
 /**
- * Spec §4: about 15 exercises from the unit's words, sentences and grammar.
- * Fill-the-blank per grammar point (max 2), up to 2 sentence builders, one
- * match-pairs, three listen-and-pick when audio works, and multiple choice for
- * the rest. Wrong answers are re-queued by the session reducer, not here.
+ * Spec §4 (sub-lesson scope): a session sized by `sessionSize` from this
+ * sub-lesson's new words, sentences and grammar, plus a handful of review
+ * exercises drawn from prior sub-lessons. Fill-the-blank per grammar point
+ * (max 2), up to 2 sentence builders, one match-pairs, three listen-and-pick
+ * when audio works, multiple choice for the new words (every word gets at
+ * least one), and finally 2-3 review multiple-choice exercises when review
+ * words are available. Wrong answers are re-queued by the session reducer,
+ * not here.
  */
 export function generateSession(input: SessionInput, seed: number): Exercise[] {
   const rng = mulberry32(seed);
-  const { chunk, words } = input;
-  const unitWords = chunk.unit.wordIds.flatMap((wid) => {
-    const w = words.get(wid);
-    return w ? [w] : [];
-  });
+  const { newWords, reviewWords, grammar, sentences } = input;
+  const size = sessionSize(newWords.length, reviewWords.length);
   let counter = 0;
   const id: IdGen = (kind) => `${kind}:${++counter}`;
   const special: Exercise[] = [];
 
   const usedSentences = new Set<string>();
-  for (const g of chunk.grammar.slice(0, 2)) {
+  for (const g of grammar.slice(0, 2)) {
     const sentence = g.sentenceIds
-      .map((sid) => chunk.sentences.find((s) => s.id === sid))
+      .map((sid) => sentences.find((s) => s.id === sid))
       .find((s): s is Sentence => s !== undefined && s.wordIds.length >= 2);
     if (!sentence) continue;
     const ex = fillBlank(sentence, g, input, rng, id);
@@ -262,40 +275,50 @@ export function generateSession(input: SessionInput, seed: number): Exercise[] {
   }
 
   const builderSentences = shuffle(
-    chunk.sentences.filter((s) => s.wordIds.length >= 3),
+    sentences.filter((s) => s.wordIds.length >= 3),
     rng,
   )
     .sort((a, b) => Number(usedSentences.has(a.id)) - Number(usedSentences.has(b.id)))
     .slice(0, 2);
   for (const s of builderSentences) special.push(sentenceBuilder(s, input, rng, id));
 
-  const pairs = matchPairs(unitWords, rng, id);
+  const pairs = matchPairs([...newWords, ...reviewWords], rng, id);
   if (pairs) special.push(pairs);
 
-  const unitChars = new Set<string>();
-  for (const wid of chunk.unit.wordIds) {
-    const w = words.get(wid);
-    if (w) for (const ch of w.characters) unitChars.add(ch);
-  }
-  const writeChars = shuffle(Array.from(unitChars), rng).slice(0, rng() < 0.5 ? 1 : 2);
+  const newWordChars = new Set<string>();
+  for (const w of newWords) for (const ch of w.characters) newWordChars.add(ch);
+  const writeChars = shuffle(Array.from(newWordChars), rng).slice(0, rng() < 0.5 ? 1 : 2);
   for (const ch of writeChars) special.push(writeIt(ch, rng, id));
 
   if (input.audio)
-    for (const w of pick(unitWords, 3, rng)) special.push(listenPick(w, input, rng, id));
+    for (const w of pick(newWords, 3, rng)) special.push(listenPick(w, input, rng, id));
 
   const directions: ChoiceDirection[] = ['zh-en', 'en-zh', 'pinyin-zh'];
-  const order = shuffle(unitWords, rng);
+
+  // 2-3 review MCs from prior sub-lessons, when there are any review words.
+  const reviewPool = reviewWords.length > 0 ? shuffle(reviewWords, rng) : [];
+  const reviewCount = reviewPool.length > 0 ? Math.min(3, Math.max(2, reviewPool.length)) : 0;
+  const reviewChoices: Exercise[] = [];
+  for (let i = 0; i < reviewCount; i++) {
+    const w = reviewPool[i % reviewPool.length]!;
+    reviewChoices.push(multipleChoice(w, directions[i % directions.length]!, input, rng, id));
+  }
+
+  // New-word MCs fill the rest of the budget; every new word gets a direction
+  // in the first round before any word repeats in a later round.
+  const budget = Math.max(0, size - special.length - reviewChoices.length);
+  const order = shuffle(newWords, rng);
   const choices: Exercise[] = [];
-  for (let round = 0; round < directions.length; round++) {
+  outer: for (let round = 0; round < directions.length; round++) {
     for (let i = 0; i < order.length; i++) {
-      if (special.length + choices.length >= SESSION_SIZE) break;
+      if (choices.length >= budget) break outer;
       choices.push(
         multipleChoice(order[i]!, directions[(i + round) % directions.length]!, input, rng, id),
       );
     }
   }
 
-  const session = shuffle([...special, ...choices], rng);
+  const session = shuffle([...special, ...choices, ...reviewChoices], rng);
   const firstChoice = session.findIndex((e) => e.kind === 'multiple-choice');
   if (firstChoice > 0) {
     const [mc] = session.splice(firstChoice, 1);

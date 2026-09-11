@@ -33,8 +33,19 @@ describe('write-it exercise', () => {
 
 describe('write-it in generateSession', () => {
   const words = new Map(fixtureWords.map((w) => [w.id, w]));
+  const newWords = fixtureUnit1.unit.wordIds.slice(0, 4).flatMap((id) => {
+    const w = words.get(id);
+    return w ? [w] : [];
+  });
+  const reviewWords = fixtureUnit1.unit.wordIds.slice(4).flatMap((id) => {
+    const w = words.get(id);
+    return w ? [w] : [];
+  });
   const input: SessionInput = {
-    chunk: fixtureUnit1,
+    newWords,
+    reviewWords,
+    grammar: fixtureUnit1.grammar,
+    sentences: fixtureUnit1.sentences,
     words,
     levelWordIds: fixtureWords.map((w) => w.id),
     audio: false,
@@ -47,16 +58,13 @@ describe('write-it in generateSession', () => {
     expect(writeIts.length).toBeLessThanOrEqual(2);
   });
 
-  it('write-it exercises have valid characters from the unit', () => {
+  it('write-it exercises have valid characters from the new words', () => {
     const exercises = generateSession(input, 42);
-    const unitChars = new Set<string>();
-    for (const wid of fixtureUnit1.unit.wordIds) {
-      const w = words.get(wid);
-      if (w) for (const ch of w.characters) unitChars.add(ch);
-    }
+    const newWordChars = new Set<string>();
+    for (const w of newWords) for (const ch of w.characters) newWordChars.add(ch);
     for (const ex of exercises) {
       if (ex.kind === 'write-it') {
-        expect(unitChars.has(ex.character)).toBe(true);
+        expect(newWordChars.has(ex.character)).toBe(true);
         expect(ex.showOutline).toBe(true);
       }
     }
