@@ -167,6 +167,9 @@ describe('writeContent', () => {
     const chunk = JSON.parse(await readFile(join(dir, 'units', 'l1-u01.json'), 'utf8'));
     expect(chunk.unit.id).toBe('l1-u01');
     expect(chunk.grammar.map((g: { id: string }) => g.id)).toEqual(['g1']);
+    const attribution = await readFile(join(dir, 'ATTRIBUTION.txt'), 'utf8');
+    expect(attribution).toContain('CVDICT');
+    expect(attribution).toContain('CC BY-SA');
     expect(chunk.sentences.map((s: { id: string }) => s.id)).toEqual(['s1']);
     const words = JSON.parse(await readFile(join(dir, 'words.json'), 'utf8'));
     expect(words.map((w: { id: string }) => w.id)).toEqual(['w:我', 'w:是', 'w:你']);

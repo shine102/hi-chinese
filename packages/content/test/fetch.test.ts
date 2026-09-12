@@ -2,7 +2,7 @@ import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { SOURCES, fetchRaw } from '../src/pipeline/fetch.js';
+import { CVDICT_SOURCE, SOURCES, fetchRaw } from '../src/pipeline/fetch.js';
 
 let dir: string;
 beforeEach(async () => {
@@ -56,5 +56,17 @@ describe('fetchRaw', () => {
       ),
     ).rejects.toThrow('boom');
     await expect(readFile(join(dir, 'complete.json'), 'utf8')).rejects.toThrow();
+  });
+
+  it('accepts a custom sources map and downloads/caches only that key', async () => {
+    const calls: string[] = [];
+    const download = async (url: string) => {
+      calls.push(url);
+      return `content of ${url}`;
+    };
+    const paths = await fetchRaw(dir, download, () => {}, { cvdict: CVDICT_SOURCE });
+    expect(calls).toEqual([CVDICT_SOURCE.url]);
+    expect(paths.cvdict).toBe(join(dir, 'CVDICT.u8'));
+    expect(await readFile(paths.cvdict!, 'utf8')).toBe(`content of ${CVDICT_SOURCE.url}`);
   });
 });

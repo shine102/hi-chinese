@@ -19,6 +19,15 @@ export const SOURCES = {
 } as const;
 
 export type SourceKey = keyof typeof SOURCES;
+
+// Pinned separately from SOURCES: only the one-off Vietnamese seeding script
+// (scripts/seed-vietnamese.ts) fetches this. The regular content build never
+// touches CVDICT once the seed is committed to packages/content/src/authored/.
+export const CVDICT_SOURCE = {
+  url: 'https://raw.githubusercontent.com/ph0ngp/CVDICT/c379d909e308343a247e51619f7839a2060a271c/CVDICT.u8',
+  file: 'CVDICT.u8',
+} as const;
+
 export type Downloader = (url: string) => Promise<string>;
 
 export const defaultDownload: Downloader = async (url) => {
@@ -38,13 +47,25 @@ async function exists(path: string): Promise<boolean> {
 
 export async function fetchRaw(
   rawDir: string,
+  download?: Downloader,
+  log?: (msg: string) => void,
+): Promise<Record<SourceKey, string>>;
+export async function fetchRaw(
+  rawDir: string,
+  download: Downloader | undefined,
+  log: ((msg: string) => void) | undefined,
+  sources: Record<string, { url: string; file: string }>,
+): Promise<Record<string, string>>;
+export async function fetchRaw(
+  rawDir: string,
   download: Downloader = defaultDownload,
   log: (msg: string) => void = console.log,
-): Promise<Record<SourceKey, string>> {
+  sources: Record<string, { url: string; file: string }> = SOURCES,
+): Promise<Record<string, string>> {
   await mkdir(rawDir, { recursive: true });
-  const out = {} as Record<SourceKey, string>;
-  for (const key of Object.keys(SOURCES) as SourceKey[]) {
-    const { url, file } = SOURCES[key];
+  const out: Record<string, string> = {};
+  for (const key of Object.keys(sources)) {
+    const { url, file } = sources[key]!;
     const target = join(rawDir, file);
     out[key] = target;
     if (await exists(target)) {
