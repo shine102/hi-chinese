@@ -193,6 +193,70 @@ export function placeGrammar(
   return { grammar, errors };
 }
 
+export function placeAuthoredGrammar(
+  authored: AuthoredGrammar[],
+  sentences: Sentence[],
+  units: Unit[],
+): { grammar: GrammarPoint[]; errors: PlacementError[] } {
+  const sentenceById = new Map(sentences.map((s) => [s.id, s]));
+  const unitById = new Map(units.map((u) => [u.id, u]));
+  const errors: PlacementError[] = [];
+  const seen = new Set<string>();
+  const grammar: GrammarPoint[] = [];
+
+  for (const g of authored) {
+    if (seen.has(g.id)) {
+      errors.push({
+        kind: 'duplicate-id',
+        ref: g.id,
+        message: `grammar id ${g.id} appears more than once`,
+      });
+      continue;
+    }
+    seen.add(g.id);
+    const missing = g.examples.filter((id) => !sentenceById.has(id));
+    if (missing.length > 0) {
+      errors.push({
+        kind: 'missing-sentence',
+        ref: g.id,
+        message: `${g.id}: unknown example sentences: ${missing.join(', ')}`,
+      });
+      continue;
+    }
+    let earliest: Unit | undefined;
+    for (const id of g.examples) {
+      const u = unitById.get(sentenceById.get(id)!.unitId);
+      if (u && (!earliest || u.order < earliest.order)) earliest = u;
+    }
+    if (!earliest) {
+      errors.push({
+        kind: 'unknown-token',
+        ref: g.id,
+        message: `${g.id}: examples are not placed in any unit`,
+      });
+      continue;
+    }
+    if (earliest.level !== g.level) {
+      errors.push({
+        kind: 'level-mismatch',
+        ref: g.id,
+        message: `${g.id}: declared level ${g.level} but earliest example sits in level ${earliest.level} unit ${earliest.id}`,
+      });
+      continue;
+    }
+    grammar.push({
+      id: g.id,
+      title: g.title,
+      pattern: g.pattern,
+      explanation: g.explanation,
+      level: g.level,
+      sentenceIds: [...g.examples],
+      unitId: earliest.id,
+    });
+  }
+  return { grammar, errors };
+}
+
 export function attachToUnits(
   units: Unit[],
   sentences: Sentence[],

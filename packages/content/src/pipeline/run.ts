@@ -1,7 +1,7 @@
 import type { Authored } from './authored.js';
 import { buildCharacters } from './characters.js';
 import { parseHskWords, type RawHskEntry } from './hsk.js';
-import { attachToUnits, placeGrammar, placeSentences } from './placement.js';
+import { attachToUnits, placeAuthoredGrammar, placeGrammar, placeSentences } from './placement.js';
 import { assignUnits } from './units.js';
 import { validateContent } from './validate.js';
 import type { ContentBundle } from '../types.js';
@@ -25,11 +25,19 @@ export function assembleContent(inputs: RunInputs): RunResult {
     words,
     bareUnits,
   );
-  const { grammar, errors: grammarErrors } = placeGrammar(
-    inputs.authored.grammar,
+  const authoredLevels = new Set(inputs.authored.units.map((u) => u.level));
+  const { grammar: authoredGrammar, errors: authoredGrammarErrors } = placeAuthoredGrammar(
+    inputs.authored.grammar.filter((g) => authoredLevels.has(g.level)),
     sentences,
     bareUnits,
   );
+  const { grammar: pipelineGrammar, errors: pipelineGrammarErrors } = placeGrammar(
+    inputs.authored.grammar.filter((g) => !authoredLevels.has(g.level)),
+    sentences,
+    bareUnits,
+  );
+  const grammar = [...authoredGrammar, ...pipelineGrammar];
+  const grammarErrors = [...authoredGrammarErrors, ...pipelineGrammarErrors];
   const units = attachToUnits(bareUnits, sentences, grammar);
 
   const { characters, missing } = buildCharacters(

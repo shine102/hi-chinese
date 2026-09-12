@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { attachToUnits, placeGrammar, placeSentences } from '../src/pipeline/placement.js';
+import { attachToUnits, placeAuthoredGrammar, placeGrammar, placeSentences } from '../src/pipeline/placement.js';
 import type {
   AuthoredGrammar,
   AuthoredSentence,
@@ -166,6 +166,40 @@ describe('placeGrammar', () => {
       ['overflow', 'f'],
       ['overflow', 'g'],
     ]);
+  });
+});
+
+describe('placeAuthoredGrammar', () => {
+  const g = (id: string, level: HskLevel, examples: string[]): AuthoredGrammar => ({
+    id,
+    title: id,
+    pattern: 'A 是 B',
+    explanation: 'x',
+    level,
+    examples,
+  });
+
+  it('places a grammar point in the EARLIEST unit among its examples', () => {
+    const { grammar, errors } = placeAuthoredGrammar([g('g1', 1, ['s2', 's1'])], placed(), units);
+    expect(errors).toEqual([]);
+    expect(grammar[0]!.unitId).toBe('l1-u01'); // s1 (order 1) beats s2 (order 2)
+    expect(grammar[0]!.sentenceIds).toEqual(['s2', 's1']);
+  });
+
+  it('allows more than two grammar points in one unit (no cap)', () => {
+    const { grammar, errors } = placeAuthoredGrammar(
+      [g('g1', 1, ['s1']), g('g2', 1, ['s1']), g('g3', 1, ['s1'])],
+      placed(),
+      units,
+    );
+    expect(errors).toEqual([]);
+    expect(grammar.map((x) => x.unitId)).toEqual(['l1-u01', 'l1-u01', 'l1-u01']);
+  });
+
+  it('errors on missing example sentences', () => {
+    const { grammar, errors } = placeAuthoredGrammar([g('g1', 1, ['nope'])], placed(), units);
+    expect(grammar).toEqual([]);
+    expect(errors.map((e) => e.kind)).toEqual(['missing-sentence']);
   });
 });
 
