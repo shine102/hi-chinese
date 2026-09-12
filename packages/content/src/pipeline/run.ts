@@ -18,7 +18,7 @@ export type RunResult = { ok: true; bundle: ContentBundle } | { ok: false; probl
 export function assembleContent(inputs: RunInputs): RunResult {
   const entries = JSON.parse(inputs.hskJson) as RawHskEntry[];
   const parsed = parseHskWords(entries, inputs.authored.overrides);
-  const { units: bareUnits, words } = assignUnits(parsed);
+  const { units: bareUnits, words } = assignUnits(parsed, inputs.authored.units);
 
   const { sentences, errors: sentenceErrors } = placeSentences(
     inputs.authored.sentences,
