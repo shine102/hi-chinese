@@ -558,8 +558,9 @@ Byte-identical is therefore neither attainable nor desirable. **New acceptance (
 
 Run: `ls packages/content/raw` — expect `complete.json`, `dictionary.txt`, `graphics.txt`. If missing: `pnpm --filter @hi-chinese/content fetch`.
 Run: `rm -f packages/content/scripts/extract-l1-units.ts` (drop the leftover untracked script from a prior attempt).
-Confirm the content tree is clean at HEAD, then snapshot the baseline for the audit:
+Confirm the content tree is clean at HEAD, then snapshot the baseline for the audit (remove any prior snapshot first so `cp` doesn't nest):
 Run: `git status --porcelain apps/web/public/content` — expect NO output (clean).
+Run: `rm -rf .superpowers/sdd/2026-09-12-p0-authored-units-safety-net/baseline`
 Run: `cp -r apps/web/public/content .superpowers/sdd/2026-09-12-p0-authored-units-safety-net/baseline`
 
 - [ ] **Step 2: Write the capture script**
@@ -580,6 +581,21 @@ const sentencesOut = join(authoredDir, 'sentences');
 const grammarOut = join(authoredDir, 'grammar');
 
 const strip = (id: string) => id.replace(/^w:/, '');
+
+// Seven shipped-only sentences carry wordIds that do not tokenize their zh
+// (missing 有/个; one 这->这个) — a pre-existing defect in hand-added content
+// that build-time placement validation now rejects. Correct the tokenization
+// as we capture so the authored source is valid. Each list joins its zh exactly
+// and every token is a course word (verified).
+const WORD_FIXES: Record<string, string[]> = {
+  's:l1:new:005': ['我', '家', '有', '孩子'],
+  's:l1:new:012': ['我', '家', '有', '三', '个', '孩子'],
+  's:l1:new:013': ['我', '有', '两', '个', '姐姐'],
+  's:l1:new:014': ['他', '家', '有', '五', '个', '人'],
+  's:l1:new:032': ['门口', '有', '人'],
+  's:l1:new:033': ['楼上', '有', '房间'],
+  's:l1:new:085': ['这', '个', '地方', '有名'],
+};
 
 // Ids already in the authored source, ignoring our own -captured files so re-runs are idempotent.
 async function existingIds(dir: string): Promise<Set<string>> {
@@ -608,7 +624,13 @@ for (const name of names) {
   units.push({ id: u.id, level: 1, order: u.order, title: u.title, words: u.wordIds.map(strip) });
   for (const s of chunk.sentences) {
     if (!sentences.has(s.id)) {
-      sentences.set(s.id, { id: s.id, zh: s.zh, pinyin: s.pinyin, en: s.en, words: s.wordIds.map(strip) });
+      sentences.set(s.id, {
+        id: s.id,
+        zh: s.zh,
+        pinyin: s.pinyin,
+        en: s.en,
+        words: WORD_FIXES[s.id] ?? s.wordIds.map(strip),
+      });
     }
   }
   for (const g of chunk.grammar) {
@@ -648,7 +670,7 @@ console.log(
 - [ ] **Step 3: Run the capture**
 
 Run: `pnpm --filter @hi-chinese/content exec tsx scripts/capture-l1-content.ts`
-Expected: `units: 42; captured sentences: 105; captured grammar: 13` (exact counts may differ by a few; units MUST be 42).
+Expected: `units: 42; captured sentences: ~89; captured grammar: 13` (units MUST be 42; sentence/grammar counts are informational — the Step 6 audit's "no shipped content lost" check is the real completeness gate).
 
 - [ ] **Step 4: Regenerate content**
 
