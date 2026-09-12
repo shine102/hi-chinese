@@ -1,0 +1,2824 @@
+{
+  "的": [
+    "của; ~(hậu tố sở hữu)",
+    "(dùng sau định ngữ)",
+    "(dùng để tạo thành cụm danh từ)",
+    "(dùng cuối câu trần thuật để nhấn mạnh)",
+    "cũng đọc là [di4] hoặc [di5] trong thơ và bài hát"
+  ],
+  "了": [
+    "(trợ từ chỉ hành động đã hoàn thành)",
+    "(trợ từ ngữ khí chỉ sự thay đổi trạng thái, tình huống hiện tại)",
+    "(trợ từ ngữ khí nhấn mạnh mệnh đề đứng trước)"
+  ],
+  "我": [
+    "tôi; mình; của tôi"
+  ],
+  "是": [
+    "là (chỉ theo sau bởi danh từ)",
+    "đúng; phải; thật",
+    "sự thừa nhận tôn kính một mệnh lệnh: rất tốt",
+    "(phó từ để nhấn mạnh)"
+  ],
+  "你": [
+    "bạn (ngôi thứ hai thông dụng, khác với kính trọng 您[nin2])"
+  ],
+  "在": [
+    "tồn tại; còn sống",
+    "(ai đó hoặc cái gì đó) ở (vị trí)",
+    "(dùng trước động từ để chỉ hành động đang diễn ra)"
+  ],
+  "不": [
+    "không; không phải",
+    "(hình thức kết hợp) không; bất-"
+  ],
+  "有": [
+    "có; có (gì đó)",
+    "(dạng kết hợp) có; với; mang tính chất gì đó (như trong 有意[you3 yi4] cố ý)"
+  ],
+  "他": [
+    "anh ấy; ông ấy (dùng cho bất kỳ giới tính nào khi giới tính không được biết hoặc không quan trọng)",
+    "(dùng trước tên ai đó để nhấn mạnh)",
+    "(dùng như một tân ngữ không có nghĩa)",
+    "(văn học) khác"
+  ],
+  "这": [
+    "(đại từ) này; những...này",
+    "(hình thức kết hợp) này; (được theo sau bởi danh từ)",
+    "(hình thức kết hợp) này; những...này (được theo sau bởi lượng từ) (trong nghĩa này, thường phát âm [zhei4], đặc biệt ở Bắc Kinh)"
+  ],
+  "就": [
+    "(sau một mệnh đề giả định) trong trường hợp đó; thì",
+    "(sau một mệnh đề hành động) ngay khi; ngay sau khi",
+    "(giống như 就是[jiu4 shi4]) chỉ; không gì khác ngoài; đơn giản là; chỉ là; chính xác; đúng",
+    "chỉ có; ít nhất là",
+    "nhiều đến; nhiều như",
+    "tiếp cận; tiến về",
+    "phụ trách; tham gia vào",
+    "(thường theo sau bởi 著|着[zhe5]) tận dụng",
+    "(về thức ăn) ăn cùng",
+    "về; liên quan đến",
+    "(mẫu câu: 就[jiu4] ... 也[ye3] ...) ngay cả nếu ... vẫn ...",
+    "(mẫu câu: 不[bu4] ... 就[jiu4] ...) nếu không ... thì phải ..."
+  ],
+  "个": [
+    "(lượng từ dùng trước danh từ không có lượng từ cụ thể)",
+    "(dạng kết hợp) cá nhân"
+  ],
+  "和": [
+    "biến thể cũ của 和[he2]"
+  ],
+  "人": [
+    "người; mọi người",
+    "LT:個|个[ge4],位[wei4]"
+  ],
+  "说": [
+    "nói; trò chuyện; nói ra",
+    "giải thích; bình luận",
+    "mắng; quở trách",
+    "hình thức kết hợp: học thuyết; lý thuyết"
+  ],
+  "我们": [
+    "chúng tôi; chúng ta; bản thân chúng ta; của chúng tôi"
+  ],
+  "要": [
+    "muốn; cần; yêu cầu",
+    "sẽ; sắp; sắp sửa",
+    "cần phải; nên",
+    "nếu (giống như 要是[yao4 shi5])",
+    "(dạng kết hợp) quan trọng"
+  ],
+  "好": [
+    "tốt",
+    "thích hợp; đúng",
+    "(trước động từ) dễ",
+    "(trước động từ) tốt để",
+    "(trước tính từ để nhấn mạnh) rất",
+    "(bổ ngữ động từ chỉ sự hoàn thành)",
+    "(hai người) thân thiết; có quan hệ gần gũi",
+    "(sau đại từ nhân xưng) xin chào"
+  ],
+  "一": [
+    "một",
+    "đơn",
+    "một cái (mạo từ)",
+    "ngay khi",
+    "toàn bộ; tất cả; xuyên suốt",
+    "bộ \"một\" trong chữ Hán (bộ Khang Hy số 1)",
+    "cũng đọc là [yao1] để rõ hơn khi đọc từng chữ số một"
+  ],
+  "会": [
+    "có thể; có kỹ năng; biết cách",
+    "có khả năng; chắc chắn",
+    "gặp gỡ; tụ họp",
+    "cuộc họp; buổi tụ họp",
+    "(hậu tố) liên minh; nhóm; hiệp hội",
+    "(dạng kết hợp) một lúc (cách phát âm Đài Loan [hui3])"
+  ],
+  "也": [
+    "(phó từ) cũng; vừa ... vừa ... (chỉ dùng trước vị ngữ)",
+    "(văn viết) trợ từ có chức năng giống với 啊[a5]"
+  ],
+  "都": [
+    "tất cả; cả hai; hoàn toàn",
+    "(dùng để nhấn mạnh) thậm chí",
+    "đã",
+    "(không) chút nào"
+  ],
+  "对": [
+    "đúng; chính xác",
+    "hướng đến; tại; vì",
+    "về; liên quan đến",
+    "đối xử (với ai đó cách nào đó)",
+    "đối mặt",
+    "(dạng kết hợp) đối diện; đối nhau; phù hợp",
+    "ghép lại với nhau; điều chỉnh",
+    "phù hợp; thích hợp",
+    "trả lời; đáp",
+    "thêm vào; rót vào (chất lỏng)",
+    "kiểm tra; so sánh",
+    "lượng từ: cặp; đôi"
+  ],
+  "到": [
+    "đến; tới",
+    "rời đi đến; đi đến",
+    "đến (một nơi); cho đến (một thời gian); lên đến (một điểm)",
+    "(bổ ngữ động từ chỉ đến một nơi hoặc đạt đến một điểm)",
+    "chu đáo; tận tâm; kỹ lưỡng"
+  ],
+  "上": [
+    "(hình thức kết hợp) trên; phía trên; trước",
+    "đầu tiên (của nhiều phần)",
+    "leo; lên; đi lên",
+    "tham dự (lớp hoặc đại học)",
+    "(bổ ngữ phương hướng) lên",
+    "(hậu tố danh từ) trên; phía trên"
+  ],
+  "来": [
+    "đến",
+    "(dùng thay cho động từ cụ thể hơn)",
+    "lại đây (bổ ngữ hướng chỉ động tác về phía người nói, như trong 回來|回来[hui2lai5])",
+    "từ khi (như trong 自古以來|自古以来[zi4gu3 yi3lai2])",
+    "trong (khoảng thời gian đã qua)",
+    "(tiền tố) ... sắp tới; ... tiếp theo (như trong 來世|来世[lai2shi4])",
+    "(giữa hai động từ) để",
+    "(sau số tròn) khoảng",
+    "chỉ khả năng sau 得[de2], như trong 談得來|谈得来[tan2de5lai2], hoặc chỉ không khả năng sau 不[bu4], như trong 吃不來|吃不来[chi1bu5lai2])"
+  ],
+  "很": [
+    "(phó từ mức độ)",
+    "khá",
+    "rất",
+    "cực kỳ"
+  ],
+  "还": [
+    "vẫn",
+    "còn đang",
+    "càng thêm",
+    "còn nữa",
+    "thậm chí hơn",
+    "thêm vào",
+    "khá",
+    "tạm được",
+    "ngay từ",
+    "thậm chí",
+    "cũng",
+    "khác"
+  ],
+  "去": [
+    "đi",
+    "đi đến (một nơi)",
+    "(về thời gian, v.v.) trước",
+    "vừa qua",
+    "gửi",
+    "gỡ bỏ",
+    "loại bỏ",
+    "giảm",
+    "cách xa về không gian hoặc thời gian",
+    "mất (nói giảm)",
+    "đóng (một vai)",
+    "(khi dùng trước hoặc sau động từ) đi để làm gì đó",
+    "(sau động từ chỉ sự di chuyển ra xa người nói)",
+    "(dùng sau một số động từ để chỉ tách rời hoặc phân ly)"
+  ],
+  "她": [
+    "cô ấy"
+  ],
+  "着": [
+    "trợ từ thể hiện hành động đang diễn ra hoặc trạng thái đang tiếp diễn"
+  ],
+  "想": [
+    "nghĩ (về)",
+    "nghĩ đến; nghĩ ra",
+    "nghĩ (rằng); tin (rằng)",
+    "mong muốn; muốn",
+    "nhớ (cảm giác tiếc nuối về sự vắng mặt)"
+  ],
+  "给": [
+    "cho",
+    "để",
+    "cho lợi ích của",
+    "đưa",
+    "cung cấp",
+    "làm gì đó (cho ai)",
+    "(tương đương ngữ pháp của 被)",
+    "(tương đương ngữ pháp của 把)",
+    "(nhấn mạnh câu)"
+  ],
+  "没有": [
+    "không có",
+    "không tồn tại",
+    "chưa",
+    "không phải là"
+  ],
+  "能": [
+    "có thể",
+    "có khả năng",
+    "có khả năng sẽ",
+    "năng lực",
+    "(vật lý) năng lượng"
+  ],
+  "那": [
+    "(chỉ định) đó; cái; những (phát âm thông tục [nei4])",
+    "(đại từ) đó (chỉ người, sự vật hoặc tình huống)",
+    "vậy thì (trong trường hợp đó)"
+  ],
+  "他们": [
+    "họ; bọn họ"
+  ],
+  "看": [
+    "nhìn; xem",
+    "đọc",
+    "xem thăm; thăm viếng",
+    "xem như",
+    "coi như",
+    "chăm sóc",
+    "chữa (bệnh hoặc triệu chứng)",
+    "phụ thuộc",
+    "cảm thấy (rằng)",
+    "(sau động từ) thử làm",
+    "cẩn thận; coi chừng"
+  ],
+  "做": [
+    "làm; sản xuất",
+    "viết; sáng tác",
+    "làm; tham gia; tổ chức (một bữa tiệc, v.v.)",
+    "(về người) làm (trung gian, học sinh giỏi, v.v.); trở thành (vợ chồng, bạn bè, v.v.)",
+    "(về vật) đóng vai trò; được dùng để",
+    "giả vờ (dáng vẻ hoặc thái độ)"
+  ],
+  "什么": [
+    "gì?",
+    "điều gì đó; bất kỳ điều gì"
+  ],
+  "吧": [
+    "(trợ từ ngữ khí chỉ gợi ý hoặc phỏng đoán)",
+    "...phải không?",
+    "...được chứ?",
+    "...tôi đoán."
+  ],
+  "点": [
+    "điểm",
+    "chấm",
+    "giọt",
+    "vết",
+    "chấm giờ",
+    "điểm (trong không gian hoặc thời gian)",
+    "vẽ một chấm",
+    "kiểm tra danh sách",
+    "chọn",
+    "gọi món (trong nhà hàng)",
+    "chạm nhẹ",
+    "gợi ý",
+    "thắp",
+    "làm sáng",
+    "rót chất lỏng từng giọt",
+    "(cũ) một phần năm của một canh hai giờ 更[geng1]",
+    "nét chấm trong chữ Hán",
+    "lượng từ cho mục"
+  ],
+  "过": [
+    "băng qua",
+    "đi qua",
+    "trải qua (thời gian)",
+    "ăn mừng (ngày lễ)",
+    "sống",
+    "hòa hợp",
+    "quá",
+    "mức quá-"
+  ],
+  "没": [
+    "(tiền tố phủ định cho động từ) chưa; không"
+  ],
+  "大": [
+    "to; lớn; vĩ đại",
+    "lớn tuổi hơn",
+    "người lớn nhất (như trong 大姐[da4 jie3])",
+    "rất; thoải mái; hoàn toàn",
+    "(phương ngữ) cha",
+    "(phương ngữ) chú (anh em của cha)"
+  ],
+  "从": [
+    "biến thể của 從|从[cong2]"
+  ],
+  "下": [
+    "xuống",
+    "hướng xuống",
+    "dưới",
+    "thấp hơn",
+    "sau",
+    "tiếp theo (tuần,...)",
+    "thứ hai (trong hai phần)",
+    "giảm",
+    "đưa ra (quyết định, kết luận,...)",
+    "lượng từ chỉ tần suất của một hành động"
+  ],
+  "中": [
+    "bên trong; ở giữa; trong",
+    "giữa; trung tâm",
+    "trong khi (làm gì đó); trong suốt",
+    "(phương ngữ) được; ổn"
+  ],
+  "里": [
+    "biến thể của 裡|里[li3]"
+  ],
+  "真": [
+    "thật",
+    "sự thật",
+    "quả thật",
+    "có thật",
+    "đúng",
+    "chân thực"
+  ],
+  "现在": [
+    "bây giờ",
+    "hiện tại",
+    "lúc này",
+    "hiện đại",
+    "hiện nay",
+    "ngày nay"
+  ],
+  "年": [
+    "năm",
+    "Lượng từ: 個|个[ge4]"
+  ],
+  "用": [
+    "sử dụng",
+    "tận dụng",
+    "phải",
+    "ăn hoặc uống",
+    "chi phí hoặc tiêu dùng",
+    "tính hữu ích",
+    "vì vậy",
+    "do đó"
+  ],
+  "多": [
+    "nhiều",
+    "quá nhiều; dư thừa",
+    "(sau một số) ... lẻ",
+    "như thế nào (mức độ nào) (cách phát âm ở Đài Loan [duo2])",
+    "(dạng kết hợp) đa-; nhiều-"
+  ],
+  "两": [
+    "hai",
+    "cả hai",
+    "một vài",
+    "một ít",
+    "lạng, đơn vị đo lường bằng 50 gram (hiện đại) hoặc 1⁄16 cân 斤[jin1] (thời xưa)"
+  ],
+  "等": [
+    "đợi; chờ đợi",
+    "đến lúc; khi; tới",
+    "vân vân; v.v.; và những người khác, những thứ khác tương tự",
+    "(hình thức kết hợp) loại; cấp; hạng",
+    "(hình thức kết hợp) bằng với; giống như",
+    "(dùng để kết thúc liệt kê)",
+    "(văn học) (hậu tố số nhiều gắn với đại từ nhân xưng hoặc danh từ)"
+  ],
+  "吗": [
+    "(trợ từ nghi vấn cho câu hỏi \"có-không\")"
+  ],
+  "天": [
+    "ngày",
+    "trời",
+    "thượng đế"
+  ],
+  "出": [
+    "đi ra; đi ra ngoài",
+    "phát sinh; xảy ra",
+    "sản xuất; tạo ra",
+    "vượt quá",
+    "(dùng sau động từ để chỉ hướng ra ngoài hoặc kết quả tích cực)",
+    "lượng từ cho kịch, vở diễn, opera, v.v."
+  ],
+  "太": [
+    "cao nhất",
+    "vĩ đại",
+    "quá (nhiều)",
+    "rất",
+    "cực kỳ"
+  ],
+  "最": [
+    "biến thể của 最[zui4]"
+  ],
+  "再": [
+    "lại; một lần nữa; tái-",
+    "lần thứ hai; cái khác",
+    "rồi sau đó (sau việc gì đó, và chỉ sau đó)",
+    "dù cho ... đi nữa (theo sau bởi tính từ hoặc động từ, rồi thường là 也[ye3] hoặc 都[dou1] để nhấn mạnh)"
+  ],
+  "呢": [
+    "trợ từ chỉ rằng câu hỏi được hỏi trước đó áp dụng cho từ đứng trước (\"Còn ...?\", \"Và ...?\")",
+    "trợ từ để hỏi về địa điểm (\"Ở đâu ...?\")",
+    "trợ từ biểu thị ngắt quãng, nhấn mạnh từ đứng trước và cho người nghe thời gian tiếp nhận (\"được không?\", \"bạn hiểu không?\")",
+    "(cuối câu trần thuật) trợ từ chỉ sự tiếp tục của trạng thái hoặc hành động",
+    "trợ từ chỉ sự khẳng định mạnh mẽ"
+  ],
+  "次": [
+    "tiếp theo",
+    "thứ hai",
+    "ngày thứ hai, lần thứ hai, v.v.",
+    "thứ cấp",
+    "phó-",
+    "phụ-",
+    "hạ-",
+    "chất lượng kém",
+    "không đạt tiêu chuẩn",
+    "thứ tự",
+    "trình tự",
+    "hypo- (hóa học)",
+    "lượng từ cho sự kiện: lần"
+  ],
+  "小": [
+    "nhỏ",
+    "bé",
+    "một vài",
+    "trẻ"
+  ],
+  "知道": [
+    "biết; nhận thức được",
+    "cũng đọc là [zhi1 dao5]"
+  ],
+  "时候": [
+    "thời gian",
+    "khoảng thời gian",
+    "khoảnh khắc",
+    "giai đoạn"
+  ],
+  "走": [
+    "đi",
+    "bước",
+    "chạy",
+    "di chuyển (của phương tiện)",
+    "thăm",
+    "rời đi",
+    "đi khỏi",
+    "chết (nói giảm)",
+    "từ",
+    "xuyên qua",
+    "đi mất (trong động từ ghép, như 撤走[che4 zou3])",
+    "thay đổi (hình dạng, hình thức, ý nghĩa)"
+  ],
+  "工作": [
+    "làm việc",
+    "(máy móc) vận hành",
+    "công việc",
+    "việc",
+    "nhiệm vụ",
+    "LT:個|个[ge4],份[fen4],項|项[xiang4]"
+  ],
+  "事": [
+    "sự việc",
+    "điều",
+    "mục",
+    "công việc",
+    "vấn đề",
+    "LT: 件[jiàn], 樁|桩[zhuāng], 回[huí]"
+  ],
+  "后": [
+    "hoàng hậu",
+    "nữ hoàng",
+    "(cổ đại) quân vương",
+    "người cai trị"
+  ],
+  "家": [
+    "dùng trong 傢伙|家伙[jia1 huo5] và 傢俱|家俱[jia1 ju4]"
+  ],
+  "你们": [
+    "các bạn (số nhiều)"
+  ],
+  "前": [
+    "trước",
+    "phía trước",
+    "tiến lên",
+    "đầu tiên",
+    "trên cùng (theo sau bởi một số)",
+    "tương lai",
+    "trước đây",
+    "KTCN (ví dụ: 前293年)",
+    "trước kia"
+  ],
+  "时间": [
+    "(khái niệm) thời gian",
+    "(khoảng thời gian)",
+    "(thời điểm) thời gian"
+  ],
+  "怎么": [
+    "như thế nào?",
+    "cái gì?",
+    "tại sao?"
+  ],
+  "爱": [
+    "yêu; thích",
+    "tình cảm",
+    "có khuynh hướng (làm gì đó); có xu hướng (xảy ra)"
+  ],
+  "地": [
+    "trợ từ kết cấu: dùng trước động từ hoặc tính từ, liên kết với trạng ngữ bổ nghĩa đứng trước"
+  ],
+  "这些": [
+    "những... này"
+  ],
+  "跟": [
+    "gót chân",
+    "theo sát",
+    "đi cùng",
+    "(phụ nữ) lấy ai",
+    "với",
+    "so với",
+    "đến",
+    "hướng về",
+    "và (nối hai danh từ)"
+  ],
+  "喜欢": [
+    "thích; ưa thích"
+  ],
+  "吃": [
+    "ăn; tiêu thụ",
+    "ăn ở (nhà ăn, v.v.)",
+    "tiêu diệt; phá hủy",
+    "hấp thụ",
+    "chịu (cú sốc, chấn thương, thất bại, v.v.)"
+  ],
+  "谁": [
+    "ai",
+    "cũng đọc là [shui2]"
+  ],
+  "新": [
+    "mới",
+    "vừa mới",
+    "meso- (hoá học)"
+  ],
+  "找": [
+    "cố gắng tìm",
+    "tìm",
+    "đến gặp ai đó",
+    "tìm thấy",
+    "tìm kiếm",
+    "trả lại",
+    "thối tiền"
+  ],
+  "打": [
+    "đánh",
+    "đập",
+    "vỗ",
+    "phá",
+    "gõ",
+    "trộn",
+    "xây",
+    "đấu",
+    "lấy",
+    "làm",
+    "buộc",
+    "phát",
+    "bắn",
+    "tính",
+    "chơi (một trò chơi)",
+    "từ",
+    "kể từ"
+  ],
+  "还有": [
+    "vẫn còn; còn có",
+    "thêm vào đó"
+  ],
+  "快": [
+    "nhanh",
+    "nhanh chóng",
+    "tốc độ",
+    "tỷ lệ",
+    "sớm",
+    "gần như",
+    "khẩn trương",
+    "thông minh",
+    "sắc bén (dao hoặc trí tuệ)",
+    "thẳng thắn",
+    "chân thành",
+    "hài lòng",
+    "vui vẻ",
+    "dễ chịu"
+  ],
+  "比": [
+    "so sánh",
+    "(theo sau bởi danh từ và tính từ) {tính từ} hơn {danh từ}",
+    "tỉ lệ",
+    "ra hiệu",
+    "(phát âm [bi4] ở Đài Loan trong một số từ ghép có nguồn gốc từ văn học cổ điển Trung Quốc)"
+  ],
+  "今天": [
+    "hôm nay",
+    "thời điểm hiện tại; bây giờ"
+  ],
+  "话": [
+    "phương ngữ",
+    "ngôn ngữ",
+    "lời nói",
+    "ngôn từ",
+    "nói chuyện",
+    "từ ngữ",
+    "cuộc trò chuyện",
+    "lời ai đó nói",
+    "LT:種|种[zhong3],席[xi2],句[ju4],口[kou3],番[fan1]"
+  ],
+  "还是": [
+    "vẫn (như trước)",
+    "nên (tốt hơn)",
+    "không ngờ",
+    "hoặc"
+  ],
+  "觉得": [
+    "nghĩ rằng ...; cảm thấy rằng ...",
+    "cảm thấy (không thoải mái, v.v.)"
+  ],
+  "月": [
+    "mặt trăng",
+    "tháng",
+    "hàng tháng",
+    "LT:個|个[ge4],輪|轮[lun2]"
+  ],
+  "看到": [
+    "nhìn thấy"
+  ],
+  "起来": [
+    "đứng lên; thức dậy",
+    "cũng đọc là [qi3 lai2]"
+  ],
+  "一起": [
+    "ở cùng một nơi",
+    "cùng nhau",
+    "với",
+    "tổng cộng (tổng số)"
+  ],
+  "起": [
+    "dậy",
+    "nâng lên",
+    "thức dậy",
+    "khởi hành",
+    "bắt đầu",
+    "xuất hiện",
+    "phát động",
+    "khởi xướng",
+    "thảo",
+    "lập",
+    "lấy (từ kho hoặc quầy)",
+    "hậu tố động từ, bắt đầu",
+    "bắt đầu từ (thời gian, địa điểm, giá cả,...)",
+    "lượng từ cho các sự kiện hoặc sự việc không thể đoán trước: trường hợp, ví dụ",
+    "lượng từ cho nhóm: đợt, nhóm"
+  ],
+  "几": [
+    "bao nhiêu",
+    "mấy",
+    "một vài",
+    "vài"
+  ],
+  "见": [
+    "thấy",
+    "gặp",
+    "dường như",
+    "phỏng vấn",
+    "ý kiến",
+    "quan điểm"
+  ],
+  "车": [
+    "xe",
+    "phương tiện giao thông",
+    "LT:輛|辆[liang4]",
+    "máy",
+    "mài giũa bằng máy tiện",
+    "bộ thủ Khang Hy số 159"
+  ],
+  "一些": [
+    "một số",
+    "một vài",
+    "một ít",
+    "(đi sau tính từ) ...hơn một chút"
+  ],
+  "找到": [
+    "tìm thấy"
+  ],
+  "手": [
+    "tay",
+    "(trang trọng) cầm",
+    "người làm các công việc nhất định",
+    "người có kỹ năng trong các công việc nhất định",
+    "đích thân",
+    "tiện lợi",
+    "lượng từ cho kỹ năng",
+    "LT:雙|双[shuang1],隻|只[zhi1]"
+  ],
+  "听": [
+    "nghe",
+    "nghe theo; tuân theo",
+    "một lon (từ mượn từ tiếng Anh \"tin\")",
+    "lượng từ cho đồ uống đóng lon",
+    "để yên; cho phép (cách phát âm ở Đài Loan: [ting4])",
+    "(văn học) quản lý; xử lý (cách phát âm ở Đài Loan: [ting4])"
+  ],
+  "非常": [
+    "rất; thực sự",
+    "khác thường; phi thường"
+  ],
+  "开": [
+    "mở (ngoại động từ hoặc nội động từ)",
+    "(tàu thuyền, xe cộ, quân đội, v.v.) bắt đầu",
+    "bật; vận hành; hoạt động; chạy",
+    "đun sôi",
+    "viết (đơn thuốc, séc, hóa đơn, v.v.)",
+    "(bổ ngữ xu hướng) đi; rời",
+    "carat (vàng)",
+    "viết tắt của Kelvin, 開爾文|开尔文[Kai1 er3 wen2]",
+    "viết tắt của 開本|开本[kai1 ben3], khổ sách"
+  ],
+  "叫": [
+    "kêu",
+    "gọi",
+    "đặt hàng",
+    "bảo",
+    "được gọi",
+    "bởi (chỉ tác nhân trong câu bị động)"
+  ],
+  "孩子": [
+    "trẻ em"
+  ],
+  "这里": [
+    "biến thể của 這裡|这里[zhe4 li3]"
+  ],
+  "别": [
+    "rời khỏi; chia tay",
+    "(văn học) phân biệt",
+    "(hình thức kết hợp) khác; nữa; khác biệt",
+    "đừng ...!",
+    "ghim; kẹp lại",
+    "chen vào; chèn vào (để cản trở chuyển động)",
+    "(hậu tố danh từ) loại (ví dụ 性別|性别[xing4 bie2], 派別|派别[pai4 bie2])"
+  ],
+  "请": [
+    "mời",
+    "mời mọc",
+    "xin (làm gì đó)",
+    "đãi (một bữa ăn, v.v.)",
+    "yêu cầu"
+  ],
+  "钱": [
+    "tiền xu",
+    "tiền",
+    "LT:筆|笔[bi3]",
+    "đơn vị trọng lượng, một phần mười của một lạng 兩|两[liang3]"
+  ],
+  "本": [
+    "(hình thức kết hợp) gốc; rễ",
+    "(hình thức kết hợp) nguồn gốc; nguyên nhân",
+    "(hình thức kết hợp) của mình; này",
+    "(hình thức kết hợp) này; hiện tại (năm này, v.v.)",
+    "(hình thức kết hợp) ban đầu",
+    "(hình thức kết hợp) vốn có",
+    "nguyên gốc; ban đầu",
+    "vốn; chính",
+    "lượng từ cho sách, tạp chí, hồ sơ, v.v."
+  ],
+  "回": [
+    "xoay vòng",
+    "quay lại",
+    "quay quanh",
+    "trả lời",
+    "trở về",
+    "xoay",
+    "chủng tộc Hồi (người Hồi giáo Trung Quốc)",
+    "lần",
+    "lượng từ cho hành động trong vở kịch",
+    "phần hoặc chương (của sách kinh điển)"
+  ],
+  "东西": [
+    "đồ vật",
+    "thứ",
+    "người",
+    "lượng từ: 個|个[ge4], 件[jian4]"
+  ],
+  "三": [
+    "ba",
+    "3"
+  ],
+  "一样": [
+    "giống",
+    "như",
+    "bằng",
+    "với",
+    "giống như"
+  ],
+  "买": [
+    "mua",
+    "mua sắm"
+  ],
+  "重要": [
+    "quan trọng; đáng kể; chính yếu"
+  ],
+  "问": [
+    "hỏi; thắc mắc"
+  ],
+  "告诉": [
+    "nói; thông báo; cho biết"
+  ],
+  "出来": [
+    "đi ra",
+    "xuất hiện",
+    "phát sinh"
+  ],
+  "地方": [
+    "khu vực",
+    "nơi",
+    "chỗ",
+    "không gian",
+    "lãnh thổ",
+    "LT:處|处[chu4],個|个[ge4],塊|块[kuai4]"
+  ],
+  "最后": [
+    "cuối cùng",
+    "sau cùng",
+    "tối hậu"
+  ],
+  "老": [
+    "tiền tố dùng trước họ của một người hoặc số thứ tự sinh của các con trong gia đình hoặc để chỉ sự thân mật hoặc quen thuộc",
+    "già (người)",
+    "người đáng kính",
+    "có kinh nghiệm",
+    "lâu năm",
+    "luôn luôn",
+    "lúc nào cũng",
+    "của quá khứ",
+    "rất",
+    "lỗi thời",
+    "(thịt,...) dai"
+  ],
+  "岁": [
+    "biến thể của 歲|岁[sui4], năm",
+    "tuổi"
+  ],
+  "行": [
+    "đi",
+    "đến",
+    "du lịch",
+    "chuyến thăm",
+    "tạm thời",
+    "tạm bợ",
+    "hiện tại",
+    "lưu hành",
+    "làm",
+    "thực hiện",
+    "có khả năng",
+    "có hiệu quả",
+    "ổn",
+    "OK!",
+    "được",
+    "hành vi",
+    "cử chỉ",
+    "người Đài Loan phát âm [xing4] cho nghĩa hành vi-cử chỉ"
+  ],
+  "号": [
+    "số thứ tự",
+    "ngày trong tháng",
+    "dấu",
+    "ký hiệu",
+    "cơ sở kinh doanh",
+    "kích cỡ",
+    "hậu tố tàu",
+    "thổi kèn",
+    "lệnh kèn",
+    "tên giả",
+    "bắt mạch",
+    "lượng từ chỉ số người"
+  ],
+  "放": [
+    "đặt",
+    "để",
+    "phát hành",
+    "thả",
+    "để cho đi",
+    "thả ra",
+    "bắn (pháo hoa)"
+  ],
+  "朋友": [
+    "bạn",
+    "LT:個|个[ge4],位[wei4]"
+  ],
+  "住": [
+    "sống",
+    "ở",
+    "lưu lại",
+    "cư trú",
+    "dừng",
+    "(hậu tố chỉ sự chắc chắn, ổn định, hoặc dừng lại)"
+  ],
+  "拿": [
+    "biến thể cũ của 拿[na2]"
+  ],
+  "高": [
+    "cao",
+    "khoảng trên trung bình",
+    "to",
+    "lớn",
+    "(kính ngữ) của bạn"
+  ],
+  "正": [
+    "thẳng",
+    "nghiêm túc",
+    "đúng đắn",
+    "chính",
+    "chủ yếu",
+    "sửa chữa",
+    "chỉnh đốn",
+    "chính xác",
+    "vừa đúng (lúc đó)",
+    "ngay (chỗ đó)",
+    "(toán) dương"
+  ],
+  "先": [
+    "trước; đầu tiên; sớm hơn",
+    "lúc đầu; vốn dĩ",
+    "tạm thời; hiện tại",
+    "(tiền tố) quá cố (khi nói về người thân đã mất lớn tuổi hơn mình)"
+  ],
+  "得到": [
+    "được; đạt được; nhận được"
+  ],
+  "那些": [
+    "những cái đó"
+  ],
+  "准备": [
+    "sự chuẩn bị",
+    "chuẩn bị",
+    "dự định",
+    "sắp",
+    "sẵn (quỹ)"
+  ],
+  "水": [
+    "nước",
+    "sông",
+    "chất lỏng",
+    "đồ uống",
+    "phí hoặc thu nhập bổ sung",
+    "(quần áo) lượng từ cho số lần giặt"
+  ],
+  "进": [
+    "tiến lên",
+    "tiến bộ",
+    "đi vào",
+    "nhập vào",
+    "cho vào",
+    "nộp vào",
+    "tiếp nhận",
+    "thừa nhận",
+    "(toán học) cơ số của hệ thống số",
+    "lượng từ cho các khu trong tòa nhà hoặc khu dân cư"
+  ],
+  "写": [
+    "viết"
+  ],
+  "国家": [
+    "quốc gia; dân tộc; nhà nước",
+    "LT:個|个[ge4]"
+  ],
+  "您": [
+    "bạn (kính trọng, trái với thân mật 你[ni3])"
+  ],
+  "电话": [
+    "điện thoại",
+    "LT:部[bu4]",
+    "cuộc gọi điện thoại",
+    "LT:通[tong1]",
+    "số điện thoại"
+  ],
+  "女": [
+    "nữ",
+    "phụ nữ",
+    "con gái"
+  ],
+  "送": [
+    "gửi; giao; truyền",
+    "tặng (như một món quà)",
+    "tiễn",
+    "đi cùng; đi theo"
+  ],
+  "分": [
+    "chia; tách",
+    "phân phối; phân bổ",
+    "phân biệt (tốt và xấu)",
+    "(hình thức kết hợp) chi nhánh (của một tổ chức); phụ- (như trong 分局[fen1 ju2])",
+    "phân số",
+    "một phần mười (của một số đơn vị)",
+    "đơn vị chiều dài tương đương 0,33 cm",
+    "phút (đơn vị thời gian)",
+    "phút (đơn vị đo góc)",
+    "một điểm (trong thể thao hoặc trò chơi)",
+    "0,01 nhân dân tệ (đơn vị tiền tệ)"
+  ],
+  "笑": [
+    "biến thể cũ của 笑[xiao4]"
+  ],
+  "女人": [
+    "phụ nữ"
+  ],
+  "小时": [
+    "giờ",
+    "lượng từ: 個|个[ge4]"
+  ],
+  "有些": [
+    "một số",
+    "hơi"
+  ],
+  "帮": [
+    "biến thể cũ của 幫|帮[bang1]"
+  ],
+  "日": [
+    "mặt trời",
+    "ngày",
+    "ngày, ngày trong tháng"
+  ],
+  "别人": [
+    "người khác; những người khác"
+  ],
+  "站": [
+    "trạm",
+    "đứng",
+    "dừng",
+    "tạm dừng",
+    "chi nhánh của một công ty hoặc tổ chức",
+    "trang web"
+  ],
+  "路": [
+    "đường (LT:條|条[tiao2])",
+    "hành trình",
+    "tuyến",
+    "đường (xe buýt,...)",
+    "loại; kiểu"
+  ],
+  "男人": [
+    "một người đàn ông",
+    "một nam giới",
+    "đàn ông",
+    "LT:個|个[ge4]"
+  ],
+  "正在": [
+    "đang ở (thời điểm đó)",
+    "ngay tại (nơi đó)",
+    "đang trong quá trình (làm gì đó)"
+  ],
+  "门": [
+    "cổng",
+    "cửa",
+    "LT:扇[shan4]",
+    "lối vào",
+    "khung cửa",
+    "LT:個|个[ge4]",
+    "kẽ hở",
+    "van",
+    "công tắc",
+    "cách làm gì đó",
+    "mẹo",
+    "gia đình",
+    "nhà",
+    "phái (tôn giáo)",
+    "trường phái",
+    "lớp",
+    "hạng",
+    "ngành hoặc phân ngành (phân loại)",
+    "lượng từ cho súng lớn",
+    "lượng từ cho bài học, môn học, nhánh công nghệ",
+    "(hậu tố) -gate (tức là vụ bê bối; nguồn gốc từ Watergate)"
+  ],
+  "喝": [
+    "uống",
+    "biến thể của 嗬[he1]"
+  ],
+  "穿": [
+    "mặc",
+    "mang",
+    "mặc vào",
+    "xuyên qua",
+    "đâm thủng",
+    "khoan",
+    "thâm nhập",
+    "đi qua",
+    "xâu qua"
+  ],
+  "学校": [
+    "trường học",
+    "Lượng từ: 所[suo3]"
+  ],
+  "花": [
+    "hoa",
+    "bông",
+    "LT:朵[duo3],支[zhi1],束[shu4],把[ba3],盆[pen2],簇[cu4]",
+    "hoa văn",
+    "lòe loẹt",
+    "tiêu (tiền, thời gian)",
+    "(khẩu ngữ) dâm đãng",
+    "dâm ô"
+  ],
+  "坐": [
+    "ngồi",
+    "ngồi xuống",
+    "đi (xe buýt, máy bay, v.v.)",
+    "kết trái",
+    "biến thể của 座[zuo4]"
+  ],
+  "早": [
+    "sớm",
+    "buổi sáng",
+    "Chào buổi sáng!",
+    "lâu rồi",
+    "quá sớm"
+  ],
+  "们": [
+    "dùng để chỉ số nhiều cho đại từ và danh từ chỉ người"
+  ],
+  "身上": [
+    "trên cơ thể",
+    "trong tay",
+    "ở giữa"
+  ],
+  "干": [
+    "thân cây",
+    "phần chính của cái gì",
+    "quản lý",
+    "làm",
+    "thực hiện",
+    "có năng lực",
+    "cán bộ",
+    "giết (lóng)",
+    "địt (tục)",
+    "(thông tục) bực bội",
+    "khó chịu"
+  ],
+  "认识": [
+    "biết",
+    "nhận ra",
+    "quen thuộc",
+    "làm quen với ai đó",
+    "kiến thức",
+    "hiểu biết",
+    "nhận thức",
+    "nhận biết"
+  ],
+  "睡": [
+    "ngủ",
+    "nằm xuống"
+  ],
+  "明天": [
+    "ngày mai"
+  ],
+  "回来": [
+    "trở về; quay lại"
+  ],
+  "四": [
+    "bốn",
+    "4"
+  ],
+  "块": [
+    "cục; tảng; miếng",
+    "lượng từ cho miếng vải, bánh, xà phòng, v.v.",
+    "(thông tục) lượng từ cho tiền và đơn vị tiền tệ"
+  ],
+  "外": [
+    "bên ngoài",
+    "thêm vào",
+    "ngoại",
+    "quốc tế"
+  ],
+  "晚上": [
+    "buổi tối",
+    "đêm",
+    "LT:個|个[ge4]",
+    "vào buổi tối"
+  ],
+  "妈": [
+    "mẹ",
+    "má",
+    "mẫu"
+  ],
+  "球": [
+    "quả bóng",
+    "hình cầu",
+    "địa cầu",
+    "LT:個|个[ge4]",
+    "trận bóng",
+    "trận đấu",
+    "LT:場|场[chang3]"
+  ],
+  "谢谢": [
+    "cảm ơn",
+    "cảm ơn bạn"
+  ],
+  "学": [
+    "học",
+    "học tập",
+    "bắt chước",
+    "khoa học",
+    "hậu tố - môn khoa học"
+  ],
+  "多少": [
+    "bao nhiêu?; mấy?",
+    "(số điện thoại, mã sinh viên, v.v.) số bao nhiêu?"
+  ],
+  "第二": [
+    "thứ hai",
+    "số hai",
+    "kế tiếp",
+    "phụ"
+  ],
+  "妈妈": [
+    "mẹ",
+    "má",
+    "LT:個|个[ge4],位[wei4]"
+  ],
+  "错": [
+    "lỗi",
+    "sai",
+    "xấu",
+    "đan xen",
+    "phức tạp",
+    "mài",
+    "đánh bóng",
+    "luân phiên",
+    "so le",
+    "lỡ",
+    "để lỡ",
+    "tránh né",
+    "khảm vàng hoặc bạc"
+  ],
+  "少": [
+    "ít",
+    "hơn",
+    "thiếu",
+    "mất",
+    "ngừng (làm gì đó)",
+    "hiếm khi"
+  ],
+  "别的": [
+    "khác"
+  ],
+  "难": [
+    "khó (để...)",
+    "vấn đề",
+    "khó khăn",
+    "khó",
+    "không tốt"
+  ],
+  "电影": [
+    "phim; điện ảnh",
+    "LT:部[bu4],片[pian4],幕[mu4],場|场[chang3]"
+  ],
+  "间": [
+    "giữa",
+    "trong số",
+    "trong khoảng thời gian hoặc không gian nhất định",
+    "phòng",
+    "phần của một phòng hoặc không gian ngang giữa hai cặp cột",
+    "lượng từ cho phòng"
+  ],
+  "哪": [
+    "như thế nào",
+    "cái nào"
+  ],
+  "跑": [
+    "chạy",
+    "chạy trốn",
+    "bỏ trốn",
+    "chạy quanh (làm việc vặt, v.v.)",
+    "(khí hoặc chất lỏng) rò rỉ hoặc bốc hơi",
+    "(bổ ngữ động từ) đi",
+    "mất"
+  ],
+  "回家": [
+    "trở về nhà"
+  ],
+  "昨天": [
+    "hôm qua"
+  ],
+  "晚": [
+    "buổi tối",
+    "đêm",
+    "muộn"
+  ],
+  "书": [
+    "sách",
+    "thư",
+    "tài liệu",
+    "LT:本[ben3],冊|册[ce4],部[bu4]",
+    "viết"
+  ],
+  "五": [
+    "năm",
+    "5"
+  ],
+  "先生": [
+    "giáo viên",
+    "quý ông; ngài; ông (Mr.)",
+    "chồng",
+    "(phương ngữ) bác sĩ",
+    "LT:位[wei4]"
+  ],
+  "男": [
+    "nam",
+    "Nam tước, cấp thấp nhất trong năm cấp bậc quý tộc 五等爵位[wu3 deng3 jue2 wei4]"
+  ],
+  "动": [
+    "(cái gì đó) di chuyển",
+    "bắt đầu chuyển động",
+    "dịch chuyển",
+    "chạm vào",
+    "sử dụng",
+    "khuấy động (cảm xúc)",
+    "thay đổi",
+    "viết tắt của 動詞|动词[dong4 ci2], động từ"
+  ],
+  "医院": [
+    "bệnh viện",
+    "LT:所[suo3],家[jia1],座[zuo4]"
+  ],
+  "重": [
+    "nặng",
+    "nghiêm trọng",
+    "coi trọng"
+  ],
+  "真的": [
+    "thực sự; thật sự; quả thật",
+    "thật; đúng; chính xác",
+    "(toán) chính quy"
+  ],
+  "子": [
+    "con trai",
+    "trẻ em",
+    "hạt",
+    "trứng",
+    "vật nhỏ",
+    "địa chi thứ nhất: 11 giờ đêm - 1 giờ sáng, nửa đêm, tháng 11 âm lịch (7 tháng Mười Hai đến 5 tháng Một), năm Tý",
+    "tước nam, cấp thứ tư trong ngũ đẳng tước vị 五等爵位[wu3 deng3 jue2 wei4]",
+    "hướng la bàn cổ đại Trung Quốc: 0° (bắc)",
+    "phụ; cấp dưới; (tiền tố) chi-"
+  ],
+  "远": [
+    "xa",
+    "xa xôi",
+    "xa xăm",
+    "(nhấn mạnh trong so sánh) hơn nhiều",
+    "thấp hơn nhiều, v.v."
+  ],
+  "口": [
+    "miệng",
+    "lượng từ cho những thứ có miệng (người, động vật nuôi, đại bác, giếng, v.v.)",
+    "lượng từ cho vết cắn hoặc ngụm"
+  ],
+  "学生": [
+    "học sinh",
+    "trẻ đi học"
+  ],
+  "二": [
+    "hai",
+    "2",
+    "(tiếng Bắc Kinh) ngu ngốc"
+  ],
+  "儿子": [
+    "con trai"
+  ],
+  "明白": [
+    "rõ ràng",
+    "hiển nhiên",
+    "không mơ hồ",
+    "hiểu",
+    "nhận ra"
+  ],
+  "杯": [
+    "cái cúp",
+    "cúp vô địch",
+    "lượng từ cho một số đồ chứa chất lỏng: ly, cốc"
+  ],
+  "记得": [
+    "nhớ"
+  ],
+  "歌": [
+    "bài hát",
+    "LT:支[zhi1],首[shou3]",
+    "hát"
+  ],
+  "半": [
+    "một nửa",
+    "bán-",
+    "chưa hoàn chỉnh",
+    "(sau một số) một nửa"
+  ],
+  "中国": [
+    "Trung Quốc"
+  ],
+  "身体": [
+    "cơ thể",
+    "sức khỏe"
+  ],
+  "元": [
+    "đơn vị tiền tệ (đặc biệt là nhân dân tệ Trung Quốc)",
+    "(hình vị liên kết) đầu tiên; nguyên thủy; sơ cấp",
+    "(hình vị liên kết) cơ bản; nền tảng",
+    "(hình vị liên kết) cấu thành; phần",
+    "(tiền tố) siêu",
+    "(toán học) đối số; biến số",
+    "niên hiệu (của một triều đại)",
+    "(Đài Loan) (địa chất) đại"
+  ],
+  "哪里": [
+    "ở đâu?",
+    "một nơi nào đó",
+    "bất kỳ nơi nào",
+    "dù ở đâu",
+    "không nơi nào (câu trả lời phủ định cho câu hỏi)",
+    "cách nói khiêm tốn phủ nhận lời khen",
+    "cũng viết 哪裡|哪里"
+  ],
+  "包": [
+    "che phủ",
+    "gói",
+    "cầm",
+    "nắm bao gồm",
+    "phụ trách",
+    "hợp đồng (làm hoặc cho)",
+    "bọc",
+    "đựng",
+    "túi",
+    "ôm hoặc ôm chặt",
+    "bó",
+    "LT:個|个[ge4],隻|只[zhi1]"
+  ],
+  "楼": [
+    "nhà có hơn 1 tầng",
+    "toà nhà nhiều tầng",
+    "tầng",
+    "LT:層|层[ceng2],座[zuo4],棟|栋[dong4]"
+  ],
+  "那里": [
+    "ở đó; nơi đó"
+  ],
+  "电视": [
+    "truyền hình; TV",
+    "LT:臺|台[tai2],部[bu4]"
+  ],
+  "飞": [
+    "bay"
+  ],
+  "介绍": [
+    "giới thiệu (ai với ai)",
+    "thuyết trình",
+    "trình bày (ai cho công việc, v.v.)",
+    "lời giới thiệu"
+  ],
+  "下午": [
+    "buổi chiều",
+    "LT:個|个[ge4]",
+    "p.m."
+  ],
+  "出去": [
+    "đi ra ngoài"
+  ],
+  "学习": [
+    "học",
+    "tìm hiểu"
+  ],
+  "老师": [
+    "giáo viên",
+    "LT: 個|个[ge4], 位[wei4]"
+  ],
+  "六": [
+    "sáu",
+    "6"
+  ],
+  "唱": [
+    "hát",
+    "gọi to",
+    "xướng"
+  ],
+  "大学": [
+    "trường đại học",
+    "trường cao đẳng",
+    "LT:所[suo3]"
+  ],
+  "病": [
+    "bệnh",
+    "LT:場|场[chang2]",
+    "bệnh tật",
+    "ngã bệnh",
+    "khuyết điểm"
+  ],
+  "医生": [
+    "bác sĩ",
+    "LT:個|个[ge4],位[wei4],名[ming2]"
+  ],
+  "名字": [
+    "tên (của người hoặc vật)",
+    "LT:個|个[ge4]"
+  ],
+  "她们": [
+    "họ; các cô ấy (nữ)"
+  ],
+  "马上": [
+    "ngay lập tức",
+    "ngay tức khắc",
+    "lập tức",
+    "trên lưng ngựa (tức là bằng vũ lực quân sự)"
+  ],
+  "今年": [
+    "năm nay"
+  ],
+  "手机": [
+    "điện thoại di động",
+    "LT:部[bu4],支[zhi1]"
+  ],
+  "忙": [
+    "bận",
+    "vội vã",
+    "vội vàng",
+    "lao vào"
+  ],
+  "十": [
+    "mười",
+    "10"
+  ],
+  "看见": [
+    "nhìn thấy",
+    "bắt gặp"
+  ],
+  "听到": [
+    "nghe thấy"
+  ],
+  "女儿": [
+    "con gái"
+  ],
+  "说话": [
+    "nói",
+    "trò chuyện",
+    "buôn chuyện",
+    "kể chuyện",
+    "từ ngữ"
+  ],
+  "汽车": [
+    "xe hơi",
+    "xe ô tô",
+    "xe buýt",
+    "LT:輛|辆[liang4]"
+  ],
+  "爸爸": [
+    "(thông tục) cha; ba",
+    "LT:個|个[ge4],位[wei4]"
+  ],
+  "字": [
+    "chữ",
+    "ký hiệu",
+    "kí tự",
+    "từ",
+    "LT:個|个[ge4]",
+    "tên chữ (tên chữ hay tên hiệu) truyền thống đặt cho nam giới 20 tuổi thời Trung Quốc phong kiến"
+  ],
+  "高兴": [
+    "vui",
+    "vui vẻ",
+    "sẵn lòng (làm gì đó)",
+    "tâm trạng vui vẻ"
+  ],
+  "白": [
+    "trắng",
+    "tuyết",
+    "tinh khiết",
+    "sáng",
+    "trống",
+    "rỗng",
+    "đơn giản",
+    "rõ ràng",
+    "làm rõ",
+    "uổng",
+    "phí phạm",
+    "miễn phí",
+    "phản động",
+    "chống cộng",
+    "tang lễ",
+    "nhìn chằm chằm",
+    "viết sai chữ",
+    "phát biểu",
+    "giải thích",
+    "bạch thoại",
+    "lời thoại trong kinh kịch"
+  ],
+  "去年": [
+    "năm ngoái"
+  ],
+  "热": [
+    "hâm nóng",
+    "làm nóng",
+    "nóng (thời tiết)",
+    "nhiệt",
+    "nhiệt tình"
+  ],
+  "试": [
+    "thử",
+    "thí nghiệm",
+    "thi",
+    "cuộc kiểm tra",
+    "bài kiểm tra"
+  ],
+  "来到": [
+    "đến; tới"
+  ],
+  "睡觉": [
+    "đi ngủ",
+    "ngủ"
+  ],
+  "电脑": [
+    "máy tính",
+    "LT:臺|台[tai2]"
+  ],
+  "票": [
+    "vé",
+    "phiếu",
+    "tiền giấy",
+    "LT:張|张[zhang1]",
+    "người bị bắt đòi tiền chuộc",
+    "biểu diễn kinh kịch không chuyên",
+    "lượng từ cho nhóm, lô, giao dịch kinh doanh"
+  ],
+  "西": [
+    "tây"
+  ],
+  "床": [
+    "giường",
+    "ghế dài",
+    "lượng từ cho giường",
+    "LT:張|张[zhang1]"
+  ],
+  "第": [
+    "(tiền tố chỉ số thứ tự, như trong 第六[di4 liu4] \"thứ sáu\")",
+    "(văn học) thứ hạng mà thí sinh đỗ đạt trong kỳ thi đình được xếp vào",
+    "(cũ) nơi ở của quan chức cao cấp",
+    "(văn học) nhưng; tuy nhiên",
+    "(văn học) chỉ; chỉ là"
+  ],
+  "回到": [
+    "trở về"
+  ],
+  "差": [
+    "khác",
+    "sai; nhầm",
+    "thiếu",
+    "không đạt tiêu chuẩn; kém",
+    "tiếng Đài Loan đọc là [cha1]"
+  ],
+  "家里": [
+    "nhà"
+  ],
+  "教": [
+    "dạy"
+  ],
+  "不用": [
+    "không cần"
+  ],
+  "读": [
+    "đọc ra; đọc to",
+    "đọc",
+    "theo học (trường); học (một môn ở trường)",
+    "phát âm"
+  ],
+  "忘": [
+    "quên",
+    "bỏ qua",
+    "sao nhãng"
+  ],
+  "认真": [
+    "tận tâm",
+    "nghiêm túc",
+    "nghiêm chỉnh",
+    "xem trọng",
+    "để tâm"
+  ],
+  "电": [
+    "sét",
+    "điện",
+    "dạng kết hợp của điện",
+    "bị (hoặc gây) điện giật",
+    "cuộc gọi điện thoại hoặc điện báo, v.v.",
+    "gửi qua điện thoại hoặc điện báo, v.v."
+  ],
+  "房子": [
+    "nhà",
+    "tòa nhà (một hoặc hai tầng)",
+    "căn hộ",
+    "phòng",
+    "LT:棟|栋[dong4],幢[zhuang4],座[zuo4],套[tao4],間|间[jian1]"
+  ],
+  "冷": [
+    "lạnh"
+  ],
+  "山": [
+    "núi; đồi (lượng từ: 座[zuo4])",
+    "(thông tục) bó rơm nhỏ cho tằm làm kén"
+  ],
+  "常": [
+    "luôn luôn",
+    "thường xuyên",
+    "thường",
+    "phổ biến",
+    "chung",
+    "không đổi"
+  ],
+  "飞机": [
+    "máy bay",
+    "LT:架[jia4]"
+  ],
+  "早上": [
+    "buổi sáng sớm",
+    "LT:個|个[ge4]"
+  ],
+  "回答": [
+    "trả lời; đáp",
+    "trả lời; đáp án"
+  ],
+  "记": [
+    "ghi chép",
+    "ghi lại",
+    "ghi nhớ",
+    "nhớ",
+    "dấu hiệu",
+    "ký hiệu",
+    "lượng từ cho đòn đánh, cú đá, phát bắn"
+  ],
+  "关": [
+    "ải núi",
+    "đóng; khép; tắt",
+    "giam giữ; nhốt; nhốt (ai đó trong phòng, chim trong lồng, v.v.)",
+    "liên quan; dính líu"
+  ],
+  "哥": [
+    "anh trai"
+  ],
+  "爸": [
+    "cha",
+    "ba",
+    "bố",
+    "papa"
+  ],
+  "风": [
+    "gió",
+    "tin tức",
+    "phong cách",
+    "tập quán",
+    "tác phong",
+    "LT:陣|阵[zhen4],絲|丝[si1]"
+  ],
+  "回去": [
+    "trở về",
+    "quay lại"
+  ],
+  "累": [
+    "mệt",
+    "mỏi",
+    "căng thẳng",
+    "kiệt sức",
+    "làm việc chăm chỉ"
+  ],
+  "打开": [
+    "mở",
+    "cho xem (vé)",
+    "bật lên",
+    "kích hoạt"
+  ],
+  "病人": [
+    "người bệnh",
+    "bệnh nhân",
+    "người ốm",
+    "LT:個|个[ge4]"
+  ],
+  "肉": [
+    "thịt",
+    "thịt quả",
+    "phần thịt (của quả)",
+    "(thông tục) (quả) nhũn",
+    "(người) nhão",
+    "không quyết đoán",
+    "bộ Khang Hy số 130"
+  ],
+  "打电话": [
+    "gọi điện thoại"
+  ],
+  "休息": [
+    "nghỉ",
+    "nghỉ ngơi"
+  ],
+  "班": [
+    "nhóm; lớp; khối",
+    "(quân sự) tiểu đội",
+    "ca làm việc",
+    "LT:個|个[ge4]",
+    "lượng từ cho nhóm người và các phương tiện giao thông theo lịch trình"
+  ],
+  "坏": [
+    "xấu",
+    "bị hỏng",
+    "hư",
+    "hỏng",
+    "(hậu tố) cực kỳ"
+  ],
+  "一边": [
+    "một bên",
+    "mỗi bên",
+    "một mặt",
+    "mặt khác",
+    "vừa làm vừa"
+  ],
+  "洗": [
+    "rửa; tắm",
+    "rửa ảnh",
+    "xào bài (lá,...)",
+    "xóa (ghi âm)"
+  ],
+  "有的": [
+    "(có) một số (người...)",
+    "một số (tồn tại)"
+  ],
+  "毛": [
+    "tóc",
+    "lông",
+    "vụn lông",
+    "lông cừu",
+    "mốc",
+    "meo",
+    "thô hoặc chưa hoàn thiện",
+    "trẻ",
+    "non",
+    "cẩu thả",
+    "không suy nghĩ",
+    "thần kinh",
+    "căng thẳng",
+    "(về tiền tệ) mất giá hoặc giảm giá",
+    "loại từ cho đơn vị tiền tệ của Trung Quốc ( = 角[jiao3], = một phần mười của một đồng yuan hoặc 10 fen 分[fen1])"
+  ],
+  "忘记": [
+    "quên"
+  ],
+  "房间": [
+    "phòng",
+    "LT:間|间[jian1],個|个[ge4]"
+  ],
+  "八": [
+    "tám; 8"
+  ],
+  "左": [
+    "trái",
+    "cánh tả (chính trị)",
+    "đông",
+    "không chính thống",
+    "kỳ lạ",
+    "sai",
+    "khác",
+    "ngược",
+    "biến thể của 佐[zuo3]"
+  ],
+  "吃饭": [
+    "dùng bữa",
+    "ăn",
+    "kiếm sống"
+  ],
+  "动作": [
+    "chuyển động; cử động; hành động (LT:個|个[ge4])",
+    "diễn; di chuyển"
+  ],
+  "七": [
+    "bảy",
+    "7"
+  ],
+  "菜": [
+    "rau (LT:棵[ke1])",
+    "món ăn (LT:樣|样[yang4],道[dao4],盤|盘[pan2])",
+    "(kỹ năng, v.v.) yếu; kém",
+    "(thông tục) mẫu người (mình thích)"
+  ],
+  "衣服": [
+    "quần áo",
+    "LT:件[jian4],套[tao4]"
+  ],
+  "饿": [
+    "đói",
+    "làm cho đói"
+  ],
+  "树": [
+    "cây",
+    "LT:棵[ke1]",
+    "trồng",
+    "triển khai"
+  ],
+  "右": [
+    "(hình thức kết hợp) bên phải; phía tay phải",
+    "(hình thức kết hợp) (chính trị) hữu khuynh",
+    "(hình thức kết hợp) (cũ) phía tây",
+    "(văn học) bên phải là bên ưu tiên"
+  ],
+  "上班": [
+    "đi làm",
+    "đi trực",
+    "bắt đầu làm việc",
+    "đến văn phòng"
+  ],
+  "生日": [
+    "sinh nhật",
+    "LT:個|个[ge4]"
+  ],
+  "东": [
+    "phía đông",
+    "chủ nhà (tức là ngồi phía đông của khách)",
+    "địa chủ"
+  ],
+  "姐姐": [
+    "chị gái",
+    "LT:個|个[ge4]"
+  ],
+  "课": [
+    "môn học",
+    "khoá học",
+    "LT:門|门[men2]",
+    "lớp",
+    "bài học",
+    "LT:堂[tang2],節|节[jie2]",
+    "thu",
+    "thuế",
+    "hình thức bói toán"
+  ],
+  "国": [
+    "quốc gia; dân tộc; nhà nước (LT:個|个[ge4])",
+    "(hình thức kết hợp) quốc gia"
+  ],
+  "饭": [
+    "cơm đã nấu",
+    "LT:碗[wan3]",
+    "bữa ăn",
+    "LT:頓|顿[dun4]",
+    "(từ mượn) fan",
+    "người hâm mộ"
+  ],
+  "一半": [
+    "một nửa"
+  ],
+  "家人": [
+    "thành viên gia đình",
+    "(cũ) người hầu"
+  ],
+  "有时": [
+    "đôi khi",
+    "thỉnh thoảng"
+  ],
+  "小姐": [
+    "cô gái",
+    "cô",
+    "(tiếng lóng) gái mại dâm",
+    "LT:個|个[ge4],位[wei4]"
+  ],
+  "对不起": [
+    "Tôi xin lỗi; xin thứ lỗi; tôi xin tha thứ",
+    "làm (ai đó) thất vọng; không đạt kỳ vọng"
+  ],
+  "进去": [
+    "đi vào"
+  ],
+  "哥哥": [
+    "anh trai",
+    "LT:個|个[ge4],位[wei4]"
+  ],
+  "没什么": [
+    "không sao; không có gì; đừng bận tâm",
+    "nghĩ không có gì; rất hân hạnh; không có chi; không có gì"
+  ],
+  "路上": [
+    "trên đường",
+    "trên đường; đang đi"
+  ],
+  "天气": [
+    "thời tiết"
+  ],
+  "最好": [
+    "tốt nhất",
+    "nên ...; tốt hơn hết nên ..."
+  ],
+  "南": [
+    "phía nam"
+  ],
+  "考试": [
+    "dự thi",
+    "kỳ thi",
+    "LT:次[ci4]"
+  ],
+  "有时候": [
+    "đôi khi"
+  ],
+  "慢": [
+    "chậm"
+  ],
+  "旁边": [
+    "bên; nơi liền kề"
+  ],
+  "同学": [
+    "học cùng trường",
+    "bạn học",
+    "bạn cùng lớp",
+    "Lượng từ: 位[wei4], 個|个[ge4]"
+  ],
+  "北": [
+    "phía bắc",
+    "(văn cổ) bị đánh bại"
+  ],
+  "帮忙": [
+    "giúp",
+    "giúp đỡ",
+    "làm ơn",
+    "làm giúp một tay"
+  ],
+  "进来": [
+    "đến",
+    "vào"
+  ],
+  "见面": [
+    "gặp mặt; gặp nhau",
+    "LT:次[ci4]"
+  ],
+  "好看": [
+    "ưa nhìn",
+    "xinh đẹp",
+    "hay (phim, sách, chương trình TV, v.v.)",
+    "xấu hổ",
+    "bị bẽ mặt"
+  ],
+  "中间": [
+    "ở giữa; bên trong",
+    "ở giữa; trong; giữa; trong số",
+    "trong lúc; trong khi đó"
+  ],
+  "女生": [
+    "nữ sinh",
+    "học sinh nữ",
+    "cô gái"
+  ],
+  "茶": [
+    "trà",
+    "cây trà",
+    "LT:杯[bei1],壺|壶[hu2]"
+  ],
+  "地点": [
+    "nơi",
+    "chỗ",
+    "địa điểm",
+    "địa điểm tổ chức",
+    "LT:個|个[ge4]"
+  ],
+  "雨": [
+    "mưa",
+    "Lượng từ: 陣|阵[zhen4], 場|场[chang2]"
+  ],
+  "星期": [
+    "tuần",
+    "LT:個|个[ge4]",
+    "ngày trong tuần",
+    "Chủ nhật"
+  ],
+  "考": [
+    "đánh",
+    "đập",
+    "biến thể của 考[kao3]",
+    "kiểm tra",
+    "thi",
+    "làm bài kiểm tra"
+  ],
+  "九": [
+    "chín",
+    "9"
+  ],
+  "妹妹": [
+    "em gái",
+    "phụ nữ trẻ",
+    "LT:個|个[ge4]"
+  ],
+  "生气": [
+    "nổi giận; tức giận",
+    "sinh khí; sức sống"
+  ],
+  "地上": [
+    "trên mặt đất",
+    "trên sàn nhà"
+  ],
+  "上午": [
+    "buổi sáng",
+    "LT:個|个[ge4]"
+  ],
+  "一会儿": [
+    "một lúc",
+    "một thời gian",
+    "ngay lập tức",
+    "lúc thì...lúc thì...",
+    "cũng đọc là [yi1 hui3 r5]"
+  ],
+  "贵": [
+    "đắt",
+    "(hình thức kết hợp) được coi trọng; quý giá",
+    "(hình thức kết hợp) quý tộc; có địa vị cao",
+    "(tiền tố) (kính ngữ) của bạn"
+  ],
+  "记住": [
+    "nhớ",
+    "ghi nhớ",
+    "học thuộc lòng"
+  ],
+  "下次": [
+    "lần tới"
+  ],
+  "知识": [
+    "kiến thức",
+    "LT:門|门[men2]",
+    "trí thức"
+  ],
+  "机场": [
+    "sân bay; phi trường",
+    "(tiếng lóng) nhà cung cấp dịch vụ cho Shadowsocks hoặc phần mềm tương tự để vượt kiểm duyệt Internet",
+    "Lượng từ: 家[jia1],處|处[chu4]"
+  ],
+  "学院": [
+    "trường cao đẳng",
+    "học viện",
+    "trường",
+    "khoa",
+    "LT:所[suo3]"
+  ],
+  "老人": [
+    "ông già hoặc bà già",
+    "người cao tuổi",
+    "bố mẹ hoặc ông bà lớn tuổi"
+  ],
+  "页": [
+    "trang",
+    "lá"
+  ],
+  "工人": [
+    "công nhân",
+    "Lượng từ: 個|个[ge4], 名[ming2]"
+  ],
+  "那边": [
+    "đằng kia",
+    "ở đằng đó"
+  ],
+  "弟弟": [
+    "em trai",
+    "LT:個|个[ge4],位[wei4]"
+  ],
+  "干净": [
+    "sạch",
+    "gọn gàng"
+  ],
+  "在家": [
+    "ở nhà",
+    "(tại nơi làm việc) có mặt (trái với đi vắng vì công việc chính thức 出差[chu1chai1])",
+    "(Phật giáo, v.v.) vẫn là cư sĩ (trái với xuất gia thành tu sĩ 出家[chu1jia1])"
+  ],
+  "百": [
+    "một trăm",
+    "nhiều",
+    "tất cả các loại"
+  ],
+  "网上": [
+    "trực tuyến"
+  ],
+  "好吃": [
+    "ngon; ngon miệng"
+  ],
+  "明年": [
+    "năm sau"
+  ],
+  "再见": [
+    "tạm biệt",
+    "gặp lại sau"
+  ],
+  "妹": [
+    "em gái"
+  ],
+  "这儿": [
+    "ở đây"
+  ],
+  "哪儿": [
+    "ở đâu?",
+    "bất cứ đâu; nơi nào đó",
+    "(dùng trong câu hỏi tu từ) làm sao có thể ...?; làm sao có thể ... được?"
+  ],
+  "不对": [
+    "không chính xác",
+    "sai",
+    "sai lầm",
+    "bất thường",
+    "kỳ quặc"
+  ],
+  "中午": [
+    "buổi trưa",
+    "trưa",
+    "LT:個|个[ge4]"
+  ],
+  "起床": [
+    "thức dậy; ngủ dậy"
+  ],
+  "是不是": [
+    "có phải hay không",
+    "phải hoặc không",
+    "có hay không"
+  ],
+  "开车": [
+    "lái xe"
+  ],
+  "干什么": [
+    "bạn đang làm gì?",
+    "anh ấy đang định làm gì?"
+  ],
+  "奶": [
+    "vú",
+    "sữa",
+    "cho bú"
+  ],
+  "门口": [
+    "cửa ra vào",
+    "cổng",
+    "LT:個|个[ge4]"
+  ],
+  "常常": [
+    "thường xuyên",
+    "thường"
+  ],
+  "这边": [
+    "bên này",
+    "ở đây"
+  ],
+  "男生": [
+    "nam sinh",
+    "học sinh nam",
+    "con trai",
+    "chàng trai (nam thanh niên)"
+  ],
+  "火车": [
+    "tàu hỏa",
+    "LT:列[lie4],節|节[jie2],班[ban1],趟[tang4]"
+  ],
+  "奶奶": [
+    "(thân mật) bà (bà nội)",
+    "(kính trọng) bà chủ nhà",
+    "LT:位[wei4]",
+    "(thông tục) vú",
+    "ngực"
+  ],
+  "上次": [
+    "lần trước"
+  ],
+  "唱歌": [
+    "hát một bài hát"
+  ],
+  "右边": [
+    "bên phải",
+    "phải, về bên phải"
+  ],
+  "上学": [
+    "đi học",
+    "theo học"
+  ],
+  "牛奶": [
+    "sữa bò",
+    "LT:瓶[ping2],杯[bei1]"
+  ],
+  "女朋友": [
+    "bạn gái"
+  ],
+  "上课": [
+    "đi học",
+    "tham dự lớp",
+    "học hoặc dạy một lớp"
+  ],
+  "爷爷": [
+    "(thân mật) ông nội",
+    "ông bên nội",
+    "LT:個|个[ge4]"
+  ],
+  "听见": [
+    "nghe thấy"
+  ],
+  "新年": [
+    "Năm mới",
+    "Lượng từ: 個|个[ge4]"
+  ],
+  "男朋友": [
+    "bạn trai"
+  ],
+  "下班": [
+    "tan làm",
+    "tan ca"
+  ],
+  "水果": [
+    "trái cây",
+    "LT:個|个[ge4]"
+  ],
+  "读书": [
+    "đọc sách",
+    "học",
+    "học ở trường"
+  ],
+  "那儿": [
+    "ở đó"
+  ],
+  "商店": [
+    "cửa hàng; tiệm",
+    "LT:家[jia1],個|个[ge4]"
+  ],
+  "鸡蛋": [
+    "trứng (gà)",
+    "trứng gà",
+    "LT:個|个[ge4],打[da2]"
+  ],
+  "没关系": [
+    "không sao đâu"
+  ],
+  "地图": [
+    "bản đồ",
+    "LT:張|张[zhang1],本[ben3]"
+  ],
+  "姐": [
+    "chị gái"
+  ],
+  "坐下": [
+    "ngồi xuống"
+  ],
+  "零": [
+    "không",
+    "số không",
+    "ký hiệu không",
+    "phân số",
+    "vụn vặt",
+    "lẻ (của số)",
+    "(đặt giữa hai số để chỉ số lượng nhỏ hơn theo sau bởi số lớn hơn)",
+    "(trong toán học) số dư (sau phép chia)",
+    "thêm",
+    "héo rụng",
+    "héo"
+  ],
+  "桌子": [
+    "bàn",
+    "bàn làm việc",
+    "LT:張|张[zhang1],套[tao4]"
+  ],
+  "白天": [
+    "ban ngày",
+    "trong ngày",
+    "ngày",
+    "LT:個|个[ge4]"
+  ],
+  "请问": [
+    "xin lỗi, cho tôi hỏi...?"
+  ],
+  "哪些": [
+    "những cái nào?",
+    "ai?",
+    "gì?"
+  ],
+  "晚饭": [
+    "bữa tối",
+    "cơm tối",
+    "bữa ăn tối",
+    "LT:份[fen4],頓|顿[dun4],次[ci4],餐[can1]"
+  ],
+  "小学": [
+    "trường tiểu học; trường cấp một"
+  ],
+  "图书馆": [
+    "thư viện",
+    "LT:家[jia1],個|个[ge4]"
+  ],
+  "开玩笑": [
+    "đùa giỡn; chế nhạo; nói đùa"
+  ],
+  "国外": [
+    "ở nước ngoài",
+    "ngoại (sự vụ)",
+    "hải ngoại",
+    "nước ngoài"
+  ],
+  "日期": [
+    "ngày tháng",
+    "LT:個|个[ge4]"
+  ],
+  "饭店": [
+    "nhà hàng",
+    "khách sạn",
+    "LT:家[jia1],個|个[ge4]"
+  ],
+  "中学": [
+    "trường trung học",
+    "LT:個|个[ge4]"
+  ],
+  "上网": [
+    "lên mạng",
+    "kết nối Internet",
+    "(tài liệu,...) được tải lên Internet",
+    "(quần vợt, bóng chuyền,...) lên lưới"
+  ],
+  "商场": [
+    "trung tâm mua sắm",
+    "trung tâm thương mại",
+    "cửa hàng bách hóa",
+    "thương xá",
+    "LT:家[jia1]",
+    "giới kinh doanh"
+  ],
+  "楼下": [
+    "tầng dưới"
+  ],
+  "面包": [
+    "bánh mì",
+    "LT:片[pian4],袋[dai4],塊|块[kuai4]"
+  ],
+  "外国": [
+    "(quốc gia) nước ngoài",
+    "LT:個|个[ge4]"
+  ],
+  "生病": [
+    "bị ốm"
+  ],
+  "好听": [
+    "nghe hay"
+  ],
+  "开会": [
+    "tổ chức cuộc họp",
+    "tham gia cuộc họp"
+  ],
+  "钱包": [
+    "ví",
+    "bóp tiền"
+  ],
+  "大学生": [
+    "sinh viên đại học",
+    "sinh viên cao đẳng"
+  ],
+  "车站": [
+    "ga tàu",
+    "dừng xe buýt",
+    "LT:處|处[chu4],個|个[ge4]"
+  ],
+  "走路": [
+    "đi bộ",
+    "đi bằng chân"
+  ],
+  "小朋友": [
+    "trẻ em",
+    "LT:個|个[ge4]"
+  ],
+  "左边": [
+    "bên trái",
+    "phía trái",
+    "ở bên trái của"
+  ],
+  "北京": [
+    "Bắc Kinh, thủ đô nước Cộng hòa Nhân dân Trung Hoa"
+  ],
+  "有用": [
+    "hữu ích"
+  ],
+  "爱好": [
+    "thích; đam mê; lấy làm thú vui; say mê",
+    "sở thích",
+    "LT:個|个[ge4]"
+  ],
+  "不大": [
+    "không quá",
+    "không nhiều",
+    "không thường"
+  ],
+  "午饭": [
+    "bữa trưa",
+    "LT:份[fen4],頓|顿[dun4],次[ci4],餐[can1]"
+  ],
+  "上车": [
+    "lên (xe buýt, tàu, ô tô, v.v.)"
+  ],
+  "马路": [
+    "đường phố",
+    "đường",
+    "LT:條|条[tiao2]"
+  ],
+  "门票": [
+    "vé (xem kịch, rạp chiếu phim, v.v.)"
+  ],
+  "机票": [
+    "vé máy bay",
+    "vé hành khách",
+    "LT:張|张[zhang1]"
+  ],
+  "楼上": [
+    "tầng trên",
+    "(tiếng lóng Internet) người đăng trước trong một chủ đề diễn đàn"
+  ],
+  "打球": [
+    "chơi bóng",
+    "chơi với bóng"
+  ],
+  "下雨": [
+    "trời mưa"
+  ],
+  "下车": [
+    "xuống (xe buýt, tàu, ô tô,...)"
+  ],
+  "杯子": [
+    "cốc",
+    "ly",
+    "LT:個|个[ge4],隻|只[zhi1]"
+  ],
+  "放假": [
+    "nghỉ lễ hoặc kỳ nghỉ"
+  ],
+  "路口": [
+    "giao lộ",
+    "ngã tư (của đường)"
+  ],
+  "有名": [
+    "nổi tiếng",
+    "được biết đến"
+  ],
+  "中文": [
+    "ngôn ngữ Trung Quốc"
+  ],
+  "弟": [
+    "em trai",
+    "nam nhỏ tuổi hơn",
+    "tôi (lời khiêm tốn trong thư)"
+  ],
+  "电视机": [
+    "máy thu hình",
+    "LT:臺|台[tai2]"
+  ],
+  "早饭": [
+    "bữa sáng",
+    "LT:份[fen4],頓|顿[dun4],次[ci4],餐[can1]"
+  ],
+  "一点儿": [
+    "biến thể er hoá của 一點|一点[yi1 dian3]"
+  ],
+  "书店": [
+    "nhà sách",
+    "LT:家[jia1]"
+  ],
+  "放学": [
+    "tan học"
+  ],
+  "关上": [
+    "đóng (cửa)",
+    "tắt (đèn, thiết bị điện, v.v.)"
+  ],
+  "玩儿": [
+    "chơi",
+    "vui chơi",
+    "đi chơi"
+  ],
+  "半天": [
+    "nửa ngày",
+    "một thời gian dài",
+    "khá lâu",
+    "giữa không trung",
+    "LT:個|个[ge4]"
+  ],
+  "星期天": [
+    "Chủ Nhật",
+    "LT:個|个[ge4]"
+  ],
+  "车票": [
+    "vé (xe buýt hoặc tàu hỏa)"
+  ],
+  "看病": [
+    "đi khám bệnh",
+    "khám bệnh nhân"
+  ],
+  "电影院": [
+    "rạp chiếu phim; rạp phim",
+    "LT:家[jia1],座[zuo4]"
+  ],
+  "前天": [
+    "ngày hôm kia"
+  ],
+  "后天": [
+    "ngày mốt",
+    "cuộc sống sau khi sinh (giai đoạn phát triển qua kinh nghiệm, tương phản với 先天[xian1 tian1])",
+    "mắc phải (không phải bẩm sinh hoặc di truyền)",
+    "hậu nghiệm"
+  ],
+  "渴": [
+    "khát"
+  ],
+  "洗手间": [
+    "nhà vệ sinh",
+    "phòng vệ sinh",
+    "phòng rửa tay"
+  ],
+  "下课": [
+    "tan học",
+    "ra khỏi lớp",
+    "(nghĩa bóng) (đặc biệt là huấn luyện viên thể thao) bị sa thải",
+    "bị đuổi việc"
+  ],
+  "请假": [
+    "xin nghỉ phép"
+  ],
+  "米饭": [
+    "(cơm) đã nấu"
+  ],
+  "里边": [
+    "bên trong"
+  ],
+  "外语": [
+    "ngôn ngữ nước ngoài",
+    "Lượng từ: 門|门[men2]"
+  ],
+  "没事儿": [
+    "có thời gian rảnh",
+    "rảnh rỗi",
+    "không quan trọng",
+    "không có gì",
+    "đừng bận tâm"
+  ],
+  "一块儿": [
+    "biến thể er hoá của 一塊|一块[yi1 kuai4]"
+  ],
+  "书包": [
+    "cặp sách",
+    "cặp đeo lưng",
+    "túi sách",
+    "LT:個|个[ge4],隻|只[zhi1]"
+  ],
+  "小学生": [
+    "học sinh tiểu học",
+    "trẻ em đi học",
+    "LT:個|个[ge4],名[ming2]",
+    "(nghĩa bóng) người mới bắt đầu"
+  ],
+  "外边": [
+    "bên ngoài",
+    "bề mặt ngoài",
+    "nước ngoài",
+    "nơi không phải nhà của mình"
+  ],
+  "中学生": [
+    "học sinh trung học",
+    "học sinh cấp ba"
+  ],
+  "本子": [
+    "sách",
+    "quyển tập",
+    "truyện tranh tự xuất bản kiểu Nhật (đặc biệt là loại truyện người lớn), còn gọi là \"dōjinshi\"",
+    "LT:本[ben3]",
+    "phiên bản"
+  ],
+  "星期日": [
+    "chủ nhật",
+    "LT:個|个[ge4]"
+  ],
+  "课本": [
+    "sách giáo khoa",
+    "LT:本[ben3]"
+  ],
+  "汉语": [
+    "Ngôn ngữ tiếng Trung",
+    "LT:門|门[men2]"
+  ],
+  "后边": [
+    "phía sau; đằng sau; phần cuối",
+    "đằng sau; gần cuối; ở phía sau",
+    "sau này; sau đó"
+  ],
+  "西边": [
+    "phía tây",
+    "bên phía tây",
+    "phần phía tây",
+    "về phía tây của"
+  ],
+  "上边": [
+    "phía trên",
+    "bên trên",
+    "trên đầu",
+    "hướng lên",
+    "lề trên",
+    "đã đề cập",
+    "phía cấp trên"
+  ],
+  "打车": [
+    "bắt taxi (trong thành phố)",
+    "đón xe"
+  ],
+  "东边": [
+    "hướng đông",
+    "phía đông",
+    "phần phía đông",
+    "về phía đông của"
+  ],
+  "包子": [
+    "bánh bao (bánh hấp có nhân)",
+    "LT:個|个[ge4]"
+  ],
+  "不客气": [
+    "không có chi",
+    "đừng nhắc đến",
+    "không lịch sự",
+    "thô lỗ",
+    "cộc cằn"
+  ],
+  "南边": [
+    "phía nam",
+    "mặt nam",
+    "phần phía nam",
+    "về phía nam của"
+  ],
+  "北边": [
+    "phía bắc",
+    "mặt bắc",
+    "phần phía bắc",
+    "về phía bắc của"
+  ],
+  "女孩儿": [
+    "biến thể er hoá của 女孩[nu:3 hai2]"
+  ],
+  "下边": [
+    "ở dưới",
+    "mặt dưới",
+    "bên dưới"
+  ],
+  "汉字": [
+    "chữ Hán",
+    "LT:個|个[ge4]",
+    "Nhật: kanji",
+    "Hàn: hanja",
+    "Việt: hán tự"
+  ],
+  "请进": [
+    "\"mời vào\""
+  ],
+  "好玩儿": [
+    "biến thể er hoá của 好玩[hao3 wan2]"
+  ],
+  "前边": [
+    "phía trước",
+    "mặt trước",
+    "ở phía trước"
+  ],
+  "小孩儿": [
+    "biến thể er hoá của 小孩[xiao3 hai2]"
+  ],
+  "教学楼": [
+    "tòa nhà trường học; tòa nhà học thuật"
+  ],
+  "网友": [
+    "bạn online",
+    "người dùng Internet"
+  ],
+  "课文": [
+    "bài đọc",
+    "LT:篇[pian1]"
+  ],
+  "请坐": [
+    "xin mời ngồi"
+  ],
+  "半年": [
+    "nửa năm"
+  ],
+  "听写": [
+    "(của học sinh) viết chính tả; bài chính tả",
+    "(âm nhạc) chép lại bằng tai"
+  ],
+  "面条儿": [
+    "biến thể er hoá của 麵條|面条[mian4 tiao2]"
+  ],
+  "男孩儿": [
+    "biến thể er hoá của 男孩[nan2 hai2]"
+  ],
+  "一下儿": [
+    "biến thể er hoá của 一下[yi1 xia4]"
+  ],
+  "有一些": [
+    "một chút",
+    "khá",
+    "một vài"
+  ]
+}

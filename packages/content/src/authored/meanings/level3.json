@@ -1,0 +1,4984 @@
+{
+  "把": [
+    "cầm; nắm",
+    "đỡ em bé để đi tiểu hoặc đại tiện",
+    "tay cầm",
+    "lượng từ: nắm, bó, chùm",
+    "lượng từ cho vật có cán",
+    "(dùng để đưa tân ngữ lên trước động từ: 把[ba3] + {danh từ} + {động từ})"
+  ],
+  "被": [
+    "chăn",
+    "đắp (bằng)",
+    "(văn học) chịu (một điều không may)",
+    "dùng để chỉ thể bị động (đặt trước người thực hiện hành động như \"bởi\" trong câu bị động tiếng Anh, hoặc, nếu không nhắc đến người thực hiện, thì đặt trước động từ)",
+    "(khoảng năm 2009) (mỉa mai hoặc hài hước) dùng để chỉ rằng từ sau đó nên được hiểu là trong dấu ngoặc kép (như trong 被旅遊|被旅游[bei4 lu:3 you2] \"đi du lịch\", chẳng hạn)"
+  ],
+  "就是": [
+    "chính xác; đúng",
+    "chỉ; đơn giản; chỉ là",
+    "(dùng với 也[ye3]) ngay cả; thậm chí nếu"
+  ],
+  "时": [
+    "biến thể cũ của 時|时[shi2]"
+  ],
+  "需要": [
+    "cần; muốn; yêu cầu; đòi hỏi",
+    "nhu cầu"
+  ],
+  "开始": [
+    "bắt đầu",
+    "khởi đầu",
+    "ban đầu",
+    "lúc đầu",
+    "LT:個|个[ge4]"
+  ],
+  "并": [
+    "và",
+    "hơn nữa",
+    "cũng",
+    "cùng với",
+    "(không) hề",
+    "đồng thời",
+    "kết hợp",
+    "gia nhập",
+    "sáp nhập"
+  ],
+  "所": [
+    "thực ra",
+    "nơi",
+    "lượng từ cho nhà, toà nhà nhỏ, cơ quan, v.v.",
+    "cái mà",
+    "phó từ giới thiệu mệnh đề quan hệ hoặc bị động",
+    "LT:個|个[ge4]"
+  ],
+  "死": [
+    "chết",
+    "không thể qua được",
+    "không linh hoạt",
+    "cứng nhắc",
+    "cực kỳ",
+    "chết tiệt"
+  ],
+  "种": [
+    "hạt",
+    "loài",
+    "loại",
+    "kiểu",
+    "lượng từ cho loại, kiểu, dạng"
+  ],
+  "希望": [
+    "hy vọng",
+    "một hy vọng; một điều ước (LT:個|个[ge4])"
+  ],
+  "发生": [
+    "xảy ra; xảy đến; diễn ra; bùng phát"
+  ],
+  "为了": [
+    "để; nhằm mục đích; để mà"
+  ],
+  "只是": [
+    "chỉ; chỉ là; không gì ngoài",
+    "đơn giản",
+    "tuy nhiên"
+  ],
+  "世界": [
+    "thế giới (LT:個|个[ge4])"
+  ],
+  "情况": [
+    "hoàn cảnh; tình hình; tình huống",
+    "LT:個|个[ge4],種|种[zhong3]"
+  ],
+  "比赛": [
+    "cuộc thi (thể thao, v.v.)",
+    "trận đấu",
+    "LT:場|场[chang3],次[ci4]",
+    "thi đấu"
+  ],
+  "继续": [
+    "tiếp tục; tiến hành; tiếp diễn"
+  ],
+  "心": [
+    "tim",
+    "tâm",
+    "trái tim",
+    "trung tâm",
+    "lõi",
+    "LT:顆|颗[ke1],個|个[ge4]"
+  ],
+  "已": [
+    "đã",
+    "ngừng",
+    "rồi",
+    "sau đó"
+  ],
+  "张": [
+    "mở ra",
+    "trải ra",
+    "tờ giấy",
+    "lượng từ cho vật phẳng, tờ",
+    "lượng từ cho phiếu bầu"
+  ],
+  "关系": [
+    "quan hệ",
+    "mối quan hệ",
+    "liên quan",
+    "ảnh hưởng",
+    "có liên quan",
+    "LT:個|个[ge4]"
+  ],
+  "内": [
+    "bên trong",
+    "nội bộ",
+    "trong",
+    "nội địa"
+  ],
+  "总": [
+    "tổng thể; toàn bộ",
+    "tóm lại",
+    "trong mọi trường hợp; luôn luôn; lúc nào cũng",
+    "dù sao; sau tất cả; cuối cùng; không sớm thì muộn",
+    "chắc chắn",
+    "(sau tên người) viết tắt của 總經理|总经理[zong3 jing1 li3] hoặc 總編|总编[zong3 bian1] v.v."
+  ],
+  "每": [
+    "mỗi",
+    "mọi"
+  ],
+  "美": [
+    "đẹp",
+    "rất thỏa mãn; tốt",
+    "làm đẹp",
+    "hài lòng với bản thân"
+  ],
+  "一切": [
+    "mọi thứ",
+    "mọi",
+    "tất cả"
+  ],
+  "由": [
+    "theo",
+    "từ",
+    "bởi vì; do",
+    "bằng; qua; thông qua",
+    "(trước danh từ và động từ) là để ... làm ..."
+  ],
+  "任何": [
+    "bất kỳ; bất cứ; nào cũng được"
+  ],
+  "决定": [
+    "quyết định (làm gì đó)",
+    "quyết tâm",
+    "quyết định",
+    "LT:個|个[ge4],項|项[xiang4]",
+    "chắc chắn"
+  ],
+  "只有": [
+    "chỉ có ...",
+    "(dùng cùng với 才[cai2]) chỉ nếu một ... (thì mới có thể ...) (Ví dụ: 只有通過治療才能痊愈|只有通过治疗才能痊愈[zhi3 you3 tong1 guo4 zhi4 liao2 cai2 neng2 quan2 yu4] \"cách duy nhất để chữa khỏi là thông qua trị liệu\")",
+    "chỉ có ... (mới ...) (Ví dụ: 只有男性才有此需要[zhi3 you3 nan2 xing4 cai2 you3 ci3 xu1 yao4] \"chỉ có nam giới mới có nhu cầu này\")",
+    "(dùng để chỉ không có lựa chọn nào khác) chỉ có thể (làm một việc nhất định) (Ví dụ: 只有屈服[zhi3 you3 qu1 fu2] \"điều duy nhất có thể làm là khuất phục\")"
+  ],
+  "如何": [
+    "như thế nào",
+    "cách gì",
+    "cái gì"
+  ],
+  "受": [
+    "nhận",
+    "chấp nhận",
+    "chịu",
+    "phải chịu",
+    "chịu đựng",
+    "đứng vững",
+    "dễ chịu",
+    "(dấu hiệu bị động)"
+  ],
+  "使": [
+    "khiến",
+    "làm cho",
+    "cho phép",
+    "sử dụng",
+    "thuê",
+    "phái",
+    "dạy ai làm việc gì",
+    "đặc phái viên",
+    "người đưa tin"
+  ],
+  "其实": [
+    "thực ra; thực tế; thật sự"
+  ],
+  "连": [
+    "liên kết",
+    "gia nhập",
+    "kết nối",
+    "liên tục",
+    "liên tiếp",
+    "bao gồm",
+    "(dùng với 也[ye3], 都[dou1],...) thậm chí",
+    "đại đội (quân đội)"
+  ],
+  "当然": [
+    "đương nhiên",
+    "như lẽ ra phải thế",
+    "tất nhiên",
+    "dĩ nhiên",
+    "không nghi ngờ gì"
+  ],
+  "部": [
+    "bộ",
+    "phòng",
+    "ban",
+    "phần",
+    "khoa",
+    "quân đội",
+    "cục",
+    "lượng từ cho tác phẩm văn học, phim ảnh, máy móc, v.v."
+  ],
+  "消息": [
+    "tin tức",
+    "thông tin",
+    "LT:條|条[tiao2]"
+  ],
+  "表现": [
+    "thể hiện",
+    "phô diễn",
+    "trình bày",
+    "biểu lộ",
+    "biểu hiện",
+    "sự thể hiện",
+    "sự phô diễn",
+    "màn trình diễn",
+    "hiệu suất (trong công việc, v.v.)",
+    "hành vi"
+  ],
+  "解决": [
+    "giải quyết; xử lý; giải quyết (một vấn đề)",
+    "loại bỏ; tiêu diệt (kẻ thù, cướp bóc, v.v.)"
+  ],
+  "成功": [
+    "thành công",
+    "sự thành công",
+    "thành công; có kết quả tốt"
+  ],
+  "结束": [
+    "chấm dứt",
+    "hoàn thành",
+    "kết thúc",
+    "kết luận",
+    "khép lại"
+  ],
+  "者": [
+    "(sau động từ hoặc tính từ) người mà ...",
+    "(sau danh từ) người liên quan đến ...",
+    "(dùng sau một số hoặc 後|后[hou4] hoặc 前[qian2] để chỉ điều đã được nhắc đến trước đó)",
+    "(dùng sau một thuật ngữ, để ngắt trước khi định nghĩa thuật ngữ đó)",
+    "(cổ) (dùng ở cuối mệnh lệnh)",
+    "(cổ) này"
+  ],
+  "转": [
+    "xoay",
+    "chuyển hướng",
+    "chuyển giao",
+    "chuyển tiếp (thư)",
+    "(Internet) chia sẻ (nội dung của người khác)"
+  ],
+  "调查": [
+    "điều tra",
+    "cuộc điều tra",
+    "khảo sát",
+    "cuộc thăm dò (ý kiến)",
+    "LT:項|项[xiang4],個|个[ge4]"
+  ],
+  "方式": [
+    "cách thức; kiểu; phong cách; chế độ; mẫu hình",
+    "LT:個|个[ge4]"
+  ],
+  "美元": [
+    "đô la Mỹ",
+    "đô la Hoa Kỳ"
+  ],
+  "处理": [
+    "xử lý; đối phó",
+    "xử phạt",
+    "xử lý bằng quy trình đặc biệt; gia công",
+    "bán giảm giá"
+  ],
+  "强": [
+    "mạnh",
+    "mạnh mẽ",
+    "tốt hơn",
+    "nhỉnh hơn",
+    "sôi nổi",
+    "bạo lực",
+    "tốt nhất trong nhóm của họ, ví dụ xem 百強|百强[bai3 qiang2]"
+  ],
+  "能力": [
+    "năng lực",
+    "khả năng",
+    "LT:個|个[ge4]"
+  ],
+  "保护": [
+    "bảo vệ",
+    "phòng thủ",
+    "bảo hộ",
+    "sự bảo vệ",
+    "LT:種|种[zhong3]"
+  ],
+  "管": [
+    "biến thể của 管[guan3]"
+  ],
+  "支持": [
+    "tán thành",
+    "hỗ trợ",
+    "ủng hộ",
+    "sự hỗ trợ",
+    "sự ủng hộ",
+    "đứng về phía",
+    "LT:個|个[ge4]"
+  ],
+  "注意": [
+    "chú ý đến; quan tâm đến"
+  ],
+  "活": [
+    "sống",
+    "còn sống",
+    "đang sống",
+    "công việc",
+    "tay nghề"
+  ],
+  "拍": [
+    "vỗ",
+    "vỗ tay",
+    "tát",
+    "đập",
+    "chụp (ảnh)",
+    "quay (phim)",
+    "vợt (thể thao)",
+    "nhịp (âm nhạc)"
+  ],
+  "整个": [
+    "toàn bộ",
+    "toàn thể",
+    "tổng thể"
+  ],
+  "极了": [
+    "cực kỳ",
+    "vô cùng"
+  ],
+  "保证": [
+    "bảo đảm",
+    "đảm bảo",
+    "bảo chứng",
+    "bảo vệ",
+    "cam kết",
+    "LT:個|个[ge4]"
+  ],
+  "根本": [
+    "cơ bản",
+    "cơ sở",
+    "gốc rễ",
+    "đơn giản",
+    "tuyệt đối (không)",
+    "(không) chút nào",
+    "LT:個|个[ge4]"
+  ],
+  "城市": [
+    "thành phố; thị trấn",
+    "LT:座[zuo4]"
+  ],
+  "目前": [
+    "hiện tại",
+    "bây giờ"
+  ],
+  "游戏": [
+    "trò chơi",
+    "LT:場|场[chang3]",
+    "chơi"
+  ],
+  "马": [
+    "ngựa",
+    "Lượng từ: 匹[pi3]",
+    "quân mã trong cờ tướng",
+    "quân mã trong cờ vua"
+  ],
+  "比较": [
+    "so sánh",
+    "đối chiếu",
+    "tương đối",
+    "khá",
+    "phân tích so sánh",
+    "sự so sánh"
+  ],
+  "存在": [
+    "tồn tại",
+    "là",
+    "sự tồn tại"
+  ],
+  "终于": [
+    "cuối cùng",
+    "rốt cuộc",
+    "sau cùng",
+    "rốt cuộc thì"
+  ],
+  "现场": [
+    "hiện trường (của vụ án, tai nạn, v.v.)",
+    "tại chỗ",
+    "tại hiện trường"
+  ],
+  "下来": [
+    "đi xuống",
+    "(thành tố động tác hoàn thành)",
+    "(sau động từ chỉ sự chuyển động xuống và hướng về phía chúng ta, cả nghĩa bóng)",
+    "(chỉ sự tiếp diễn từ quá khứ đến hiện tại)",
+    "được thu hoạch (hoa màu)",
+    "kết thúc (một giai đoạn thời gian)",
+    "đi vào quần chúng (nói về lãnh đạo)"
+  ],
+  "个人": [
+    "cá nhân",
+    "riêng tư",
+    "bản thân"
+  ],
+  "除了": [
+    "ngoài ra",
+    "ngoài (... còn...)",
+    "thêm vào",
+    "ngoại trừ"
+  ],
+  "区": [
+    "khu vực",
+    "vùng",
+    "quận",
+    "nhỏ",
+    "phân biệt",
+    "LT:個|个[ge4]"
+  ],
+  "总是": [
+    "luôn luôn"
+  ],
+  "指": [
+    "ngón tay",
+    "chỉ vào hoặc đến",
+    "chỉ ra hoặc đề cập đến",
+    "phụ thuộc vào",
+    "dựa vào",
+    "(tóc) dựng đứng lên"
+  ],
+  "精神": [
+    "tinh thần",
+    "tâm trí",
+    "ý thức",
+    "suy nghĩ",
+    "tâm lý",
+    "tinh hoa",
+    "cốt lõi",
+    "LT:個|个[ge4]"
+  ],
+  "双": [
+    "hai",
+    "cặp",
+    "đôi",
+    "cả hai",
+    "số chẵn"
+  ],
+  "保持": [
+    "giữ",
+    "duy trì",
+    "nắm giữ",
+    "bảo tồn"
+  ],
+  "代表": [
+    "đại diện",
+    "đại biểu",
+    "LT:位[wei4],個|个[ge4],名[ming2]",
+    "tượng trưng",
+    "thay mặt",
+    "nhân danh"
+  ],
+  "突然": [
+    "đột ngột; bất ngờ; không dự kiến"
+  ],
+  "里面": [
+    "bên trong",
+    "nội bộ",
+    "cũng đọc là [li3 mian5]"
+  ],
+  "确定": [
+    "rõ ràng",
+    "chắc chắn",
+    "cố định",
+    "để cố định (cái gì đó)",
+    "xác định",
+    "đảm bảo",
+    "bảo đảm",
+    "xác minh",
+    "đạt được",
+    "thừa nhận",
+    "xác nhận",
+    "OK (trong hộp thoại máy tính)"
+  ],
+  "目标": [
+    "mục tiêu",
+    "mục đích",
+    "LT:個|个[ge4]"
+  ],
+  "任务": [
+    "nhiệm vụ; công việc; bổn phận; vai trò",
+    "LT:項|项[xiang4],個|个[ge4]"
+  ],
+  "容易": [
+    "dễ dàng; đơn giản",
+    "có khả năng; dễ có thể; có khuynh hướng"
+  ],
+  "联系": [
+    "biến thể của 聯繫|联系[lian2 xi4]"
+  ],
+  "合作": [
+    "hợp tác; cộng tác; làm việc cùng nhau"
+  ],
+  "因此": [
+    "do đó; vì vậy; kết quả là"
+  ],
+  "人员": [
+    "nhân viên",
+    "đội ngũ",
+    "nhân sự",
+    "LT:個|个[ge4]"
+  ],
+  "按": [
+    "nhấn",
+    "đẩy",
+    "để sang một bên hoặc gác lại",
+    "kiểm soát",
+    "kiềm chế",
+    "đặt tay lên",
+    "kiểm tra hoặc tham khảo",
+    "theo",
+    "dựa vào",
+    "(của biên tập viên hoặc tác giả) đưa ra bình luận"
+  ],
+  "线": [
+    "biến thể của 線|线[xian4]"
+  ],
+  "报告": [
+    "thông báo",
+    "báo cáo",
+    "cho biết",
+    "bản báo cáo",
+    "bài phát biểu",
+    "bài nói chuyện",
+    "bài giảng",
+    "LT:篇[pian1],份[fen4],個|个[ge4],通[tong4]"
+  ],
+  "台": [
+    "(văn cổ) ông (trong thư từ)",
+    "biến thể của 臺|台[tai2]"
+  ],
+  "生命": [
+    "sự sống (như đặc trưng của sinh vật)",
+    "sinh vật; sinh thể (LT:個|个[ge4],條|条[tiao2])"
+  ],
+  "明显": [
+    "rõ ràng",
+    "rõ rệt",
+    "hiển nhiên"
+  ],
+  "伤": [
+    "làm bị thương",
+    "vết thương",
+    "thương tích"
+  ],
+  "曾经": [
+    "một lần",
+    "đã",
+    "từng",
+    "trước đây",
+    "(dùng ở thì quá khứ trước động từ hoặc mệnh đề)"
+  ],
+  "另外": [
+    "bổ sung",
+    "thêm vào",
+    "ngoài ra",
+    "tách biệt",
+    "khác",
+    "hơn nữa",
+    "hơn thế"
+  ],
+  "简单": [
+    "đơn giản; không phức tạp"
+  ],
+  "血": [
+    "máu",
+    "khẩu ngữ đọc là [xie3]",
+    "Lượng từ: 滴[di1],片[pian4]"
+  ],
+  "到底": [
+    "cuối cùng",
+    "rốt cuộc",
+    "khi tất cả đã được nói và làm",
+    "xét cho cùng",
+    "đến cuối cùng",
+    "đến tận cùng"
+  ],
+  "绝对": [
+    "tuyệt đối; vô điều kiện"
+  ],
+  "坚持": [
+    "kiên trì",
+    "khăng khăng",
+    "nhất định"
+  ],
+  "派": [
+    "bè phái",
+    "trường phái",
+    "nhóm",
+    "phái",
+    "cử",
+    "đi",
+    "phái đi",
+    "bổ nhiệm",
+    "pi (chữ cái Hy Lạp Ππ)",
+    "tỉ số đường tròn pi = 3,1415926",
+    "(từ mượn) bánh pie"
+  ],
+  "好好": [
+    "tốt; cẩn thận; đẹp đẽ; đúng mực"
+  ],
+  "技术": [
+    "công nghệ; kỹ thuật; kỹ năng",
+    "LT:門|门[men2],種|种[zhong3],項|项[xiang4]"
+  ],
+  "设计": [
+    "thiết kế; lập kế hoạch",
+    "thiết kế; kế hoạch"
+  ],
+  "利用": [
+    "tận dụng",
+    "sử dụng",
+    "lợi dụng",
+    "khai thác"
+  ],
+  "性": [
+    "bản chất",
+    "tính cách",
+    "đặc tính",
+    "chất lượng",
+    "thuộc tính",
+    "tính dục",
+    "tình dục",
+    "giới tính",
+    "hậu tố hình thành tính từ từ động từ",
+    "hậu tố hình thành danh từ từ tính từ, tương ứng với -ness hoặc -ity",
+    "LT:個|个[ge4]"
+  ],
+  "建议": [
+    "đề xuất; đề nghị; kiến nghị",
+    "LT:個|个[ge4],點|点[dian3]"
+  ],
+  "各位": [
+    "mọi người",
+    "tất cả (khách, đồng nghiệp, v.v.)",
+    "các bạn"
+  ],
+  "约": [
+    "hẹn",
+    "mời",
+    "xấp xỉ",
+    "ước định",
+    "hiệp ước",
+    "tiết kiệm",
+    "hạn chế",
+    "rút gọn (phân số)",
+    "súc tích"
+  ],
+  "抓": [
+    "bắt",
+    "nắm",
+    "túm",
+    "chộp",
+    "cào"
+  ],
+  "光": [
+    "ánh sáng; tia (Lượng từ: 道[dao4])",
+    "sáng; bóng loáng",
+    "chỉ; chỉ mỗi",
+    "dùng hết; hoàn thành",
+    "để lộ (một phần cơ thể)"
+  ],
+  "意义": [
+    "ý nghĩa",
+    "tầm quan trọng",
+    "sự quan trọng",
+    "LT:個|个[ge4]"
+  ],
+  "父亲": [
+    "cha",
+    "hoặc đọc là [fu4 qin5]",
+    "LT:個|个[ge4]"
+  ],
+  "并且": [
+    "và; bên cạnh đó; hơn nữa; ngoài ra; thêm vào đó"
+  ],
+  "金": [
+    "vàng",
+    "nguyên tố hóa học Au",
+    "thuật ngữ chung cho kim loại bóng và dễ dát",
+    "tiền",
+    "màu vàng",
+    "được tôn trọng",
+    "một trong tám loại nhạc cụ cổ đại 八音[ba1 yin1]"
+  ],
+  "社会": [
+    "xã hội",
+    "LT:個|个[ge4]"
+  ],
+  "下去": [
+    "đi xuống",
+    "tiếp tục",
+    "(của người hầu) lui ra"
+  ],
+  "证明": [
+    "bằng chứng",
+    "chứng chỉ",
+    "giấy tờ tùy thân",
+    "lời chứng thực",
+    "LT:個|个[ge4]",
+    "chứng minh",
+    "làm chứng",
+    "xác nhận tính đúng đắn của"
+  ],
+  "记者": [
+    "phóng viên; nhà báo",
+    "LT:個|个[ge4]"
+  ],
+  "确实": [
+    "thực sự",
+    "thật",
+    "sự thật",
+    "có thật",
+    "đáng tin cậy",
+    "đúng"
+  ],
+  "力": [
+    "sức mạnh",
+    "lực",
+    "sức",
+    "khả năng",
+    "một cách gắng sức"
+  ],
+  "发展": [
+    "sự phát triển",
+    "tăng trưởng",
+    "phát triển",
+    "mở rộng"
+  ],
+  "谈": [
+    "nói",
+    "trò chuyện",
+    "đàm thoại",
+    "tán gẫu",
+    "thảo luận"
+  ],
+  "至少": [
+    "ít nhất",
+    "(nói một cách) tối thiểu"
+  ],
+  "负责": [
+    "chịu trách nhiệm về; phụ trách; gánh vác trách nhiệm",
+    "tận tâm"
+  ],
+  "首先": [
+    "trước tiên",
+    "điều đầu tiên"
+  ],
+  "交易": [
+    "giao dịch; buôn bán; thực hiện giao dịch",
+    "giao dịch; thỏa thuận",
+    "LT:筆|笔[bi3]"
+  ],
+  "理解": [
+    "lĩnh hội; hiểu"
+  ],
+  "报道": [
+    "đưa tin (tin tức)",
+    "bản tin",
+    "LT:篇[pian1],份[fen4]"
+  ],
+  "父母": [
+    "cha và mẹ; phụ huynh"
+  ],
+  "城": [
+    "tường thành",
+    "thành phố",
+    "thị trấn",
+    "LT:座[zuo4],道[dao4],個|个[ge4]"
+  ],
+  "安排": [
+    "sắp xếp",
+    "lên kế hoạch",
+    "tổ chức",
+    "sự sắp xếp",
+    "kế hoạch"
+  ],
+  "力量": [
+    "sức mạnh; lực lượng; sức lực"
+  ],
+  "敢": [
+    "dám",
+    "cả gan",
+    "(lịch sự) tôi xin mạo muội"
+  ],
+  "造成": [
+    "gây ra; tạo ra; khiến"
+  ],
+  "某": [
+    "một vài",
+    "một cái nào đó",
+    "ai đó hoặc cái gì đó không xác định",
+    "nào đó"
+  ],
+  "随": [
+    "theo",
+    "tuân theo",
+    "thay đổi theo...",
+    "cho phép",
+    "sau đó"
+  ],
+  "支": [
+    "hỗ trợ",
+    "duy trì",
+    "dựng",
+    "lên",
+    "nhánh",
+    "phân nhánh",
+    "rút tiền",
+    "lượng từ cho gậy như bút và súng, cho sư đoàn quân đội và cho bài hát hoặc tác phẩm"
+  ],
+  "人生": [
+    "đời người (thời gian sống trên thế gian)"
+  ],
+  "会议": [
+    "cuộc họp",
+    "hội nghị",
+    "LT:場|场[chang3],屆|届[jie4]"
+  ],
+  "幸福": [
+    "hạnh phúc",
+    "vui vẻ",
+    "được ban phước"
+  ],
+  "自然": [
+    "tự nhiên",
+    "một cách tự nhiên"
+  ],
+  "责任": [
+    "trách nhiệm",
+    "lỗi",
+    "phận sự",
+    "LT:個|个[ge4]"
+  ],
+  "失去": [
+    "mất"
+  ],
+  "赢": [
+    "thắng",
+    "chiến thắng",
+    "có lợi"
+  ],
+  "报": [
+    "thông báo",
+    "thông tin",
+    "báo cáo",
+    "báo chí",
+    "báo đáp",
+    "trả thù",
+    "LT: 份[fen4], 張|张[zhang1]"
+  ],
+  "人民": [
+    "nhân dân",
+    "LT:個|个[ge4]"
+  ],
+  "步": [
+    "một bước",
+    "nhịp bước",
+    "đi",
+    "bước đi",
+    "các giai đoạn trong một quá trình",
+    "tình huống"
+  ],
+  "面对": [
+    "đối mặt; đương đầu"
+  ],
+  "事件": [
+    "sự kiện",
+    "sự việc",
+    "sự cố",
+    "LT:個|个[ge4]"
+  ],
+  "压力": [
+    "áp lực"
+  ],
+  "结婚": [
+    "kết hôn",
+    "cưới",
+    "LT:次[ci4]"
+  ],
+  "由于": [
+    "do",
+    "bởi vì",
+    "nhờ vào",
+    "tại vì",
+    "kể từ",
+    "vì"
+  ],
+  "母亲": [
+    "mẹ",
+    "cũng đọc là [mu3 qin5]",
+    "LT:個|个[ge4]"
+  ],
+  "同意": [
+    "đồng ý",
+    "tán thành",
+    "chấp thuận"
+  ],
+  "训练": [
+    "huấn luyện",
+    "diễn tập",
+    "đào tạo",
+    "LT:個|个[ge4]"
+  ],
+  "部门": [
+    "phòng",
+    "ban",
+    "chi nhánh",
+    "bộ phận",
+    "LT:個|个[ge4]"
+  ],
+  "过程": [
+    "quá trình sự kiện",
+    "quá trình",
+    "LT:個|个[ge4]"
+  ],
+  "深": [
+    "biến thể cũ của 深[shen1]"
+  ],
+  "各": [
+    "mỗi",
+    "từng"
+  ],
+  "选手": [
+    "vận động viên",
+    "thí sinh"
+  ],
+  "仍然": [
+    "vẫn; như trước"
+  ],
+  "显示": [
+    "hiển thị",
+    "minh họa",
+    "trình bày",
+    "chứng minh"
+  ],
+  "属于": [
+    "được phân loại là",
+    "thuộc về",
+    "là một phần của"
+  ],
+  "值得": [
+    "đáng",
+    "đáng để"
+  ],
+  "人类": [
+    "nhân loại",
+    "chủng tộc loài người"
+  ],
+  "亲": [
+    "cha mẹ",
+    "người thân (ruột thịt)",
+    "họ hàng",
+    "có quan hệ",
+    "hôn nhân",
+    "cô dâu",
+    "gần gũi",
+    "thân thiết",
+    "trực tiếp",
+    "tận mắt",
+    "ủng hộ",
+    "thuận-",
+    "hôn",
+    "(tiếng lóng Internet) thân mến"
+  ],
+  "经历": [
+    "kinh nghiệm",
+    "LT:個|个[ge4],次[ci4]",
+    "trải qua",
+    "trải nghiệm"
+  ],
+  "仍": [
+    "vẫn",
+    "duy trì",
+    "(văn học) thường xuyên; hay"
+  ],
+  "紧张": [
+    "căng thẳng",
+    "hồi hộp",
+    "mạnh",
+    "mức độ cao",
+    "khẩn trương",
+    "khó khăn",
+    "khan hiếm",
+    "LT:陣|阵[zhen4]"
+  ],
+  "仅": [
+    "hầu như",
+    "chỉ",
+    "vừa đủ"
+  ],
+  "挂": [
+    "treo; móc (từ móc v.v.)",
+    "gác máy (điện thoại)",
+    "(đường dây) bị ngắt",
+    "lo lắng; quan tâm",
+    "(tiếng địa phương) gọi điện thoại",
+    "đăng ký (bệnh viện); hẹn (bác sĩ)",
+    "(tiếng lóng) giết; chết; xong; rớt (kỳ thi)",
+    "lượng từ cho bộ hoặc cụm vật"
+  ],
+  "事实": [
+    "sự thật",
+    "LT:個|个[ge4]"
+  ],
+  "本来": [
+    "gốc gác",
+    "vốn dĩ",
+    "lúc đầu",
+    "không cần nói cũng rõ",
+    "tất nhiên"
+  ],
+  "基本": [
+    "cơ bản",
+    "nền tảng",
+    "chính",
+    "yếu tố cơ bản"
+  ],
+  "类": [
+    "loại",
+    "kiểu",
+    "lớp",
+    "hạng",
+    "tương tự",
+    "giống",
+    "giống như"
+  ],
+  "专家": [
+    "chuyên gia; chuyên viên"
+  ],
+  "跳": [
+    "nhảy",
+    "nhảy lò cò",
+    "nhảy qua",
+    "nảy",
+    "tim đập mạnh"
+  ],
+  "久": [
+    "thời gian (dài)",
+    "(khoảng) thời gian dài"
+  ],
+  "以来": [
+    "kể từ (một sự kiện trước)"
+  ],
+  "反应": [
+    "phản ứng",
+    "đáp lại",
+    "phản hồi",
+    "trả lời",
+    "phản ứng hóa học",
+    "LT:個|个[ge4]"
+  ],
+  "地区": [
+    "địa phương",
+    "khu vực",
+    "quận (không nhất thiết là đơn vị hành chính chính thức)",
+    "vùng",
+    "khu",
+    "ví dụ như hậu tố tên thành phố, có nghĩa là quận hoặc huyện (khu vực do thành phố cấp địa khu hoặc thành phố cấp huyện quản lý)",
+    "LT:個|个[ge4]"
+  ],
+  "关注": [
+    "chú ý đến; theo dõi sát sao; theo dõi (trên mạng xã hội)",
+    "quan tâm; hứng thú; chú ý"
+  ],
+  "表演": [
+    "vở kịch",
+    "buổi biểu diễn",
+    "trình diễn",
+    "biểu diễn",
+    "diễn xuất",
+    "minh họa",
+    "LT:場|场[chang3]"
+  ],
+  "警察": [
+    "cảnh sát; sĩ quan cảnh sát"
+  ],
+  "价值": [
+    "giá trị",
+    "đáng giá",
+    "bóng nghĩa giá trị (đạo đức, văn hoá, v.v.)",
+    "LT:個|个[ge4]"
+  ],
+  "相当": [
+    "tương đương",
+    "phù hợp",
+    "khá",
+    "đến một mức độ nhất định",
+    "tương đối"
+  ],
+  "困难": [
+    "khó khăn",
+    "thử thách",
+    "tình cảnh eo hẹp",
+    "tình huống khó khăn"
+  ],
+  "专业": [
+    "chuyên môn",
+    "lĩnh vực chuyên ngành",
+    "ngành học chính (ở đại học)",
+    "ngành",
+    "LT:門|门[men2],個|个[ge4]",
+    "chuyên nghiệp"
+  ],
+  "难道": [
+    "chẳng lẽ...",
+    "có thể nào...?"
+  ],
+  "牛": [
+    "con bò",
+    "LT:條|条[tiao2],頭|头[tou2]",
+    "newton (viết tắt của 牛頓|牛顿[niu2 dun4])",
+    "(lóng) đỉnh, chất"
+  ],
+  "规定": [
+    "quy định; chỉ định; kê đơn; ấn định (giá cả); đặt (chỉ tiêu)",
+    "quy tắc; quy định; điều khoản; sự quy định"
+  ],
+  "产生": [
+    "phát sinh; hình thành; xảy ra",
+    "tạo ra; làm phát sinh; dẫn đến; sản xuất; sinh ra; tạo thành"
+  ],
+  "对方": [
+    "người kia; bên kia; phía bên kia"
+  ],
+  "状态": [
+    "tình trạng; trạng thái; tình hình",
+    "LT:個|个[ge4]"
+  ],
+  "群": [
+    "biến thể của 群[qun2]"
+  ],
+  "照": [
+    "biến thể của 照[zhao4]",
+    "chiếu",
+    "soi sáng"
+  ],
+  "环境": [
+    "môi trường",
+    "tình huống",
+    "xung quanh",
+    "LT:個|个[ge4]",
+    "không gian xung quanh"
+  ],
+  "火": [
+    "lửa",
+    "khẩn cấp",
+    "đạn dược",
+    "rừng rực hoặc bốc cháy",
+    "nội nhiệt (y học Trung Quốc)",
+    "nóng (phổ biến)",
+    "lượng từ cho đơn vị quân đội (cổ)",
+    "bộ Khang Hy số 86"
+  ],
+  "建立": [
+    "thiết lập",
+    "thành lập",
+    "sáng lập"
+  ],
+  "更加": [
+    "hơn (so với cái gì đó)",
+    "càng hơn"
+  ],
+  "老板": [
+    "biến thể của 老闆|老板[lao3 ban3]"
+  ],
+  "市场": [
+    "khu chợ",
+    "thị trường (cũng dùng trong nghĩa trừu tượng)"
+  ],
+  "必要": [
+    "cần thiết",
+    "thiết yếu",
+    "không thể thiếu",
+    "bắt buộc"
+  ],
+  "祝": [
+    "cầu nguyện",
+    "chúc (ai đó thượng lộ bình an, sinh nhật vui vẻ, v.v.)",
+    "người cầu khấn thần linh trong các nghi lễ tế tự"
+  ],
+  "危险": [
+    "nguy hiểm"
+  ],
+  "管理": [
+    "giám sát",
+    "quản lý",
+    "quản trị",
+    "sự quản lý",
+    "sự quản trị",
+    "LT:個|个[ge4]"
+  ],
+  "乱": [
+    "trong tình trạng rối loạn",
+    "trạng thái tinh thần bối rối",
+    "mất trật tự",
+    "biến động",
+    "bạo loạn",
+    "quan hệ tình dục phi pháp",
+    "làm rối loạn",
+    "trộn lẫn",
+    "không phân biệt",
+    "bừa bãi",
+    "tùy tiện"
+  ],
+  "适合": [
+    "phù hợp; thích hợp"
+  ],
+  "正式": [
+    "trang trọng; chính thức"
+  ],
+  "救": [
+    "biến thể của 救[jiu4]"
+  ],
+  "从来": [
+    "luôn luôn",
+    "mọi lúc",
+    "không bao giờ (nếu dùng trong câu phủ định)"
+  ],
+  "图": [
+    "sơ đồ",
+    "hình ảnh",
+    "bức vẽ",
+    "biểu đồ",
+    "bản đồ",
+    "LT:張|张[zhang1]",
+    "lên kế hoạch",
+    "am mưu",
+    "cố gắng",
+    "theo đuổi",
+    "tìm kiếm"
+  ],
+  "实际上": [
+    "thực ra",
+    "trên thực tế",
+    "thực tế là",
+    "trong thực hành"
+  ],
+  "达到": [
+    "đạt tới; đạt được; đạt đến"
+  ],
+  "现实": [
+    "thực tế; hiện thực",
+    "thật; thực",
+    "tính thực tế; thực dụng; vật chất; tư lợi"
+  ],
+  "不断": [
+    "không ngừng",
+    "không gián đoạn",
+    "liên tục",
+    "không đổi"
+  ],
+  "媒体": [
+    "truyền thông, đặc biệt là truyền thông tin tức"
+  ],
+  "内容": [
+    "nội dung",
+    "bản chất",
+    "chi tiết",
+    "LT:個|个[ge4],項|项[xiang4]"
+  ],
+  "上面": [
+    "bên trên",
+    "đã đề cập",
+    "cũng đọc là [shang4 mian5]"
+  ],
+  "痛": [
+    "đau",
+    "đau đớn",
+    "phiền muộn",
+    "sâu sắc",
+    "thấu đáo"
+  ],
+  "感情": [
+    "cảm xúc; tình cảm",
+    "tình cảm giữa hai người",
+    "LT:個|个[ge4],種|种[zhong3]"
+  ],
+  "观众": [
+    "khán giả; thính giả; khách tham quan (một triển lãm, v.v.)"
+  ],
+  "变化": [
+    "thay đổi; biến đổi; biến hoá",
+    "LT:個|个[ge4]"
+  ],
+  "美丽": [
+    "đẹp"
+  ],
+  "追": [
+    "đuổi",
+    "theo đuổi",
+    "điều tra",
+    "nghiên cứu",
+    "hồi tưởng",
+    "nhớ lại",
+    "tán tỉnh (người yêu)",
+    "cày phim (một bộ phim truyền hình)",
+    "truy cứu hồi tố",
+    "truy tặng sau khi qua đời"
+  ],
+  "经验": [
+    "kinh nghiệm",
+    "trải nghiệm"
+  ],
+  "集中": [
+    "tập trung",
+    "tập hợp",
+    "hợp nhất",
+    "tập trung lại",
+    "đặt cùng nhau"
+  ],
+  "破": [
+    "hỏng",
+    "hư",
+    "hao mòn",
+    "tệ",
+    "hỏng bét",
+    "phá, tách hoặc chẻ",
+    "bỏ đi",
+    "phá hủy",
+    "tuyệt giao",
+    "đánh bại",
+    "chiếm được (một thành phố,...)",
+    "vạch trần sự thật"
+  ],
+  "理由": [
+    "lý do",
+    "cơ sở",
+    "sự biện minh",
+    "LT:個|个[ge4]"
+  ],
+  "刀": [
+    "dao",
+    "lưỡi dao",
+    "kiếm một lưỡi",
+    "đoản đao",
+    "LT:把[ba3]",
+    "(tiếng lóng) đô la (từ mượn)",
+    "lượng từ cho bộ một trăm tờ (giấy)",
+    "lượng từ cho vết cắt hoặc nhát đâm"
+  ],
+  "感受": [
+    "cảm nhận",
+    "nhận thức",
+    "cảm thấy (qua giác quan)",
+    "trải nghiệm",
+    "một cảm giác",
+    "một ấn tượng",
+    "một trải nghiệm"
+  ],
+  "完美": [
+    "hoàn hảo"
+  ],
+  "直到": [
+    "cho đến"
+  ],
+  "传": [
+    "truyền đạt",
+    "lan truyền",
+    "lây",
+    "truyền nhiễm",
+    "chuyển giao",
+    "lưu hành",
+    "dẫn điện"
+  ],
+  "真实": [
+    "thật; chân thật"
+  ],
+  "后面": [
+    "phía sau; phía đuôi; đoạn cuối",
+    "đằng sau; gần cuối; ở phía sau",
+    "sau này; sau đó"
+  ],
+  "错误": [
+    "sai lầm; sai; không đúng",
+    "lỗi; sai sót",
+    "LT:個|个[ge4]"
+  ],
+  "记录": [
+    "ghi chép",
+    "bản ghi chép",
+    "người ghi chép",
+    "kỷ lục (trong thể thao, v.v.)",
+    "LT:個|个[ge4]"
+  ],
+  "整": [
+    "(hình thức liên kết) toàn bộ; hoàn chỉnh; toàn thể; (trước lượng từ) toàn bộ; (trước hoặc sau số + lượng từ) chính xác",
+    "(hình thức liên kết) gọn gàng; ngăn nắp; chỉnh tề",
+    "(hình thức liên kết) sắp xếp; chỉnh đốn",
+    "(hình thức liên kết) sửa chữa; phục hồi; tân trang",
+    "(thông tục) xử lý ai đó; gây khó dễ cho ai đó; chọc phá ai đó",
+    "(tiếng địa phương) mày mò; làm gì đó với"
+  ],
+  "标准": [
+    "tiêu chuẩn; chuẩn mực; tiêu chí",
+    "(tính từ) chuẩn",
+    "tốt; đúng; phù hợp với tiêu chuẩn"
+  ],
+  "职业": [
+    "nghề nghiệp; chuyên nghiệp; công việc",
+    "chuyên nghiệp"
+  ],
+  "精彩": [
+    "tuyệt vời",
+    "kỳ diệu",
+    "xuất sắc"
+  ],
+  "朝": [
+    "triều đình hoặc hoàng gia",
+    "chính phủ",
+    "triều đại",
+    "triều vua hoặc hoàng đế",
+    "thiết triều hoặc họp bởi vua hoặc hoàng đế",
+    "hành hương",
+    "hướng",
+    "phía"
+  ],
+  "值": [
+    "giá trị",
+    "(thì) đáng",
+    "tình cờ",
+    "có phiên trực"
+  ],
+  "范围": [
+    "phạm vi",
+    "quy mô",
+    "giới hạn",
+    "mức độ",
+    "LT:個|个[ge4]"
+  ],
+  "事业": [
+    "công việc",
+    "dự án",
+    "hoạt động",
+    "sự nghiệp (từ thiện, chính trị hoặc cách mạng)",
+    "cơ quan, doanh nghiệp hoặc quỹ công lập",
+    "nghề nghiệp",
+    "LT:個|个[ge4]"
+  ],
+  "痛苦": [
+    "đau đớn",
+    "khổ sở",
+    "đau khổ",
+    "LT:個|个[ge4]"
+  ],
+  "速度": [
+    "tốc độ",
+    "tốc suất",
+    "vận tốc",
+    "(âm nhạc) nhịp độ",
+    "LT:個|个[ge4]"
+  ],
+  "文件": [
+    "tài liệu",
+    "tệp",
+    "LT:份[fen4]"
+  ],
+  "空": [
+    "làm trống",
+    "trống rỗng",
+    "không có người",
+    "không gian",
+    "nhàn rỗi",
+    "thời gian rảnh"
+  ],
+  "显然": [
+    "rõ ràng; hiển nhiên"
+  ],
+  "左右": [
+    "trái phải",
+    "gần đây",
+    "xấp xỉ",
+    "người phục vụ",
+    "kiểm soát",
+    "ảnh hưởng"
+  ],
+  "外面": [
+    "bên ngoài (cũng phát âm [wai4 mian5] cho nghĩa này)",
+    "bề mặt",
+    "bên ngoài",
+    "diện mạo bên ngoài"
+  ],
+  "效果": [
+    "kết quả",
+    "hiệu quả",
+    "tác dụng",
+    "(rạp hát) hiệu ứng âm thanh hoặc hình ảnh"
+  ],
+  "状况": [
+    "tình trạng; trạng thái; tình huống",
+    "LT:個|个[ge4]"
+  ],
+  "架": [
+    "chống đỡ",
+    "khung",
+    "giá",
+    "cơ cấu",
+    "lượng từ cho máy bay, xe lớn, radio, v.v."
+  ],
+  "经济": [
+    "kinh tế",
+    "thuộc về kinh tế"
+  ],
+  "按照": [
+    "theo",
+    "dựa theo",
+    "chiếu theo",
+    "dựa trên"
+  ],
+  "有效": [
+    "hiệu quả",
+    "có hiệu lực",
+    "hợp lệ"
+  ],
+  "反对": [
+    "phản đối; chống lại"
+  ],
+  "作品": [
+    "tác phẩm",
+    "tác phẩm nghệ thuật",
+    "LT:部[bu4],篇[pian1]"
+  ],
+  "室": [
+    "phòng",
+    "đơn vị công tác",
+    "mộ",
+    "bao kiếm",
+    "gia đình hoặc thị tộc",
+    "một trong 28 chòm sao của thiên văn học Trung Quốc"
+  ],
+  "时代": [
+    "thời đại",
+    "kỷ nguyên",
+    "thời kỳ",
+    "giai đoạn (trong cuộc đời)",
+    "LT:個|个[ge4]"
+  ],
+  "伟大": [
+    "to lớn; vĩ đại; đáng ngưỡng mộ nhất; quan trọng (đóng góp, v.v.)"
+  ],
+  "哈哈": [
+    "(tượng thanh) cười to"
+  ],
+  "准": [
+    "cho phép",
+    "chấp thuận",
+    "theo",
+    "phù hợp với"
+  ],
+  "输": [
+    "thua; bị đánh bại",
+    "(dạng kết hợp) vận chuyển",
+    "(văn học) quyên góp; đóng góp",
+    "(thông tục) nhập (mật khẩu)"
+  ],
+  "充满": [
+    "đầy",
+    "rạng rỡ",
+    "rất đầy",
+    "thấm đẫm"
+  ],
+  "皮": [
+    "da",
+    "da lông",
+    "lông",
+    "LT:張|张[zhang1]",
+    "pico- (một phần nghìn tỷ)",
+    "nghịch ngợm"
+  ],
+  "要是": [
+    "(thông tục) nếu"
+  ],
+  "系": [
+    "kết nối",
+    "liên quan đến",
+    "buộc",
+    "ràng buộc",
+    "là (văn học)"
+  ],
+  "增加": [
+    "tăng; tăng thêm"
+  ],
+  "直": [
+    "thẳng",
+    "làm thẳng",
+    "công bằng và hợp lý",
+    "thẳng thắn",
+    "trung thực",
+    "(chỉ sự chuyển động hoặc hành động liên tục)",
+    "dọc",
+    "nét sổ dọc trong chữ Hán"
+  ],
+  "成员": [
+    "thành viên"
+  ],
+  "保险": [
+    "bảo hiểm",
+    "an toàn",
+    "bảo đảm",
+    "chắc chắn",
+    "nhất định phải",
+    "LT:份[fen4]"
+  ],
+  "年代": [
+    "thập kỷ của một thế kỷ (ví dụ: những năm sáu mươi)",
+    "thời đại",
+    "kỷ nguyên",
+    "giai đoạn",
+    "LT:個|个[ge4]"
+  ],
+  "领导": [
+    "dẫn dắt",
+    "dẫn đầu",
+    "lãnh đạo",
+    "sự lãnh đạo",
+    "người lãnh đạo",
+    "LT:位[wei4],個|个[ge4]"
+  ],
+  "胜利": [
+    "chiến thắng",
+    "LT:個|个[ge4]"
+  ],
+  "受伤": [
+    "bị thương",
+    "bị thương (trong tai nạn, v.v.)",
+    "bị hại"
+  ],
+  "程度": [
+    "mức độ; trình độ; phạm vi"
+  ],
+  "代": [
+    "thay thế",
+    "làm thay cho người khác",
+    "thế hệ",
+    "triều đại",
+    "thời đại",
+    "giai đoạn",
+    "kỷ nguyên (lịch sử)",
+    "đại (địa chất)"
+  ],
+  "下面": [
+    "bên dưới",
+    "dưới",
+    "tiếp theo",
+    "sau đây",
+    "cũng đọc là [xia4 mian5]"
+  ],
+  "理论": [
+    "lý thuyết",
+    "LT:個|个[ge4]",
+    "tranh luận",
+    "chú ý đến"
+  ],
+  "不仅": [
+    "không chỉ; không giới hạn ở",
+    "(như một liên từ tương quan) không những (..., mà còn ...)"
+  ],
+  "宣布": [
+    "tuyên bố",
+    "thông báo",
+    "công bố"
+  ],
+  "期": [
+    "biến thể của 期[qi1]",
+    "thời kỳ",
+    "chu kỳ"
+  ],
+  "姑娘": [
+    "cô gái",
+    "người phụ nữ trẻ",
+    "cô thiếu nữ",
+    "con gái",
+    "cô (cách gọi cũ)",
+    "LT:個|个[ge4]"
+  ],
+  "创造": [
+    "tạo ra",
+    "mang lại",
+    "sản xuất",
+    "lập (kỷ lục)"
+  ],
+  "调": [
+    "điều chuyển",
+    "di chuyển (quân đội hoặc cán bộ)",
+    "điều tra",
+    "hỏi về",
+    "ngữ điệu",
+    "quan điểm",
+    "lập luận",
+    "tông (trong âm nhạc)",
+    "thể loại (nhạc)",
+    "giai điệu",
+    "âm điệu"
+  ],
+  "艺术": [
+    "nghệ thuật"
+  ],
+  "麻烦": [
+    "rắc rối; bất tiện",
+    "không tiện; phiền phức; gây khó chịu",
+    "làm phiền ai; làm phiền ai đó"
+  ],
+  "事故": [
+    "tai nạn",
+    "LT:樁|桩[zhuang1],起[qi3],次[ci4]"
+  ],
+  "美好": [
+    "đẹp",
+    "tốt đẹp"
+  ],
+  "抓住": [
+    "nắm bắt; bắt giữ"
+  ],
+  "武器": [
+    "vũ khí",
+    "đồ quân dụng",
+    "LT:種|种[zhong3]"
+  ],
+  "各种": [
+    "mỗi loại; mọi loại; các loại khác nhau"
+  ],
+  "思想": [
+    "suy nghĩ",
+    "tư duy",
+    "ý tưởng",
+    "tư tưởng",
+    "LT:個|个[ge4]"
+  ],
+  "破坏": [
+    "sự phá hủy",
+    "hư hại",
+    "phá hoại",
+    "làm vỡ",
+    "phá hủy"
+  ],
+  "消失": [
+    "biến mất; phai nhạt"
+  ],
+  "害怕": [
+    "sợ hãi; lo sợ"
+  ],
+  "龙": [
+    "rồng",
+    "LT:條|条[tiao2]",
+    "hoàng gia"
+  ],
+  "满足": [
+    "thoả mãn",
+    "đáp ứng (nhu cầu)",
+    "hài lòng",
+    "hài dạ"
+  ],
+  "配": [
+    "kết hợp",
+    "phù hợp",
+    "giao phối",
+    "trộn",
+    "phối hợp",
+    "xứng đáng",
+    "chế (đơn thuốc)",
+    "phân bổ"
+  ],
+  "等待": [
+    "chờ; chờ đợi"
+  ],
+  "演出": [
+    "diễn (trong một vở kịch)",
+    "biểu diễn",
+    "dàn dựng (một buổi diễn)",
+    "buổi biểu diễn",
+    "hòa nhạc",
+    "chương trình",
+    "LT:場|场[chang3],次[ci4]"
+  ],
+  "乐": [
+    "vui",
+    "vui vẻ",
+    "cười"
+  ],
+  "事实上": [
+    "thực tế",
+    "trong thực tế",
+    "thực ra",
+    "trên thực tế"
+  ],
+  "超级": [
+    "siêu-",
+    "cực-",
+    "siêu cấp-"
+  ],
+  "猪": [
+    "lợn",
+    "heo",
+    "LT:口[kou3],頭|头[tou2]"
+  ],
+  "设备": [
+    "thiết bị; cơ sở vật chất; lắp đặt",
+    "LT:個|个[ge4]"
+  ],
+  "保": [
+    "phòng thủ; bảo vệ; giữ",
+    "bảo đảm; đảm bảo",
+    "(cũ) đơn vị hành chính trong hệ thống bảo giáp 保甲[bao3jia3]"
+  ],
+  "团": [
+    "tròn",
+    "cục",
+    "khối",
+    "cuộn thành bóng",
+    "tụ tập",
+    "trung đoàn",
+    "nhóm",
+    "hội",
+    "lượng từ cho một khối hoặc chất mềm: nắm (giấy), cuộn (len), đám (khói)"
+  ],
+  "世纪": [
+    "thế kỷ",
+    "Lượng từ:個|个[ge4]"
+  ],
+  "制造": [
+    "sản xuất; làm"
+  ],
+  "紧": [
+    "chặt",
+    "chặt chẽ",
+    "sát gần",
+    "gần",
+    "cấp bách",
+    "căng thẳng",
+    "kẹt tiền",
+    "thiếu tiền",
+    "thắt chặt"
+  ],
+  "对手": [
+    "đối thủ",
+    "địch thủ",
+    "đối thủ ngang sức",
+    "đối phương"
+  ],
+  "证": [
+    "khiển trách",
+    "biến thể của 證|证[zheng4]"
+  ],
+  "不得不": [
+    "không có lựa chọn nào khác ngoài",
+    "phải",
+    "đành phải",
+    "không thể không",
+    "không tránh được"
+  ],
+  "当地": [
+    "địa phương"
+  ],
+  "大概": [
+    "đại khái",
+    "có lẽ",
+    "không chi tiết",
+    "xấp xỉ",
+    "khoảng",
+    "ý tổng quát"
+  ],
+  "演": [
+    "biểu diễn (vở kịch, v.v.); dàn dựng (một buổi diễn)",
+    "(hình thức kết hợp) phát triển; diễn ra; thực hiện (một nhiệm vụ)"
+  ],
+  "顿": [
+    "dừng",
+    "tạm dừng",
+    "sắp xếp",
+    "bày ra",
+    "dập đầu",
+    "dậm (chân)",
+    "ngay lập tức",
+    "lượng từ cho bữa ăn, trận đòn, lời mắng, v.v.: lần, trận, đợt, bữa"
+  ],
+  "共同": [
+    "chung",
+    "cùng",
+    "chung sức",
+    "cùng nhau",
+    "hợp tác"
+  ],
+  "杂志": [
+    "tạp chí",
+    "LT:本[ben3],份[fen4],期[qi1]"
+  ],
+  "停止": [
+    "dừng; tạm dừng; ngừng lại"
+  ],
+  "文化": [
+    "văn hóa",
+    "nền văn minh",
+    "thuộc về văn hóa",
+    "LT:個|个[ge4],種|种[zhong3]"
+  ],
+  "具体": [
+    "cụ thể; chi tiết; rõ ràng"
+  ],
+  "合": [
+    "đóng",
+    "gia nhập",
+    "phù hợp",
+    "bằng",
+    "toàn bộ",
+    "cùng nhau",
+    "vòng (trong chiến đấu)",
+    "giao hội (thiên văn)",
+    "nốt thứ nhất của ngũ cung",
+    "biến thể cũ của 盒[he2]"
+  ],
+  "演员": [
+    "diễn viên; diễn viên nam; diễn viên nữ; người biểu diễn"
+  ],
+  "周围": [
+    "vùng lân cận; xung quanh; ngoại vi"
+  ],
+  "奇怪": [
+    "kỳ lạ",
+    "lập dị",
+    "ngạc nhiên",
+    "bối rối"
+  ],
+  "复杂": [
+    "phức tạp; rắc rối"
+  ],
+  "表达": [
+    "diễn đạt; truyền tải"
+  ],
+  "胜": [
+    "chiến thắng",
+    "thành công",
+    "đánh bại",
+    "vượt qua",
+    "vượt trội",
+    "hơn",
+    "thắng",
+    "thắng thế",
+    "tuyệt đẹp (phong cảnh)",
+    "đẹp (cảnh sắc)",
+    "tuyệt vời (quang cảnh)",
+    "(cách phát âm ở Đài Loan [sheng1]) chịu đựng được",
+    "khám nổi (một nhiệm vụ)"
+  ],
+  "慢慢": [
+    "chậm rãi; dần dần"
+  ],
+  "压": [
+    "đè",
+    "ấn xuống",
+    "kiềm chế",
+    "áp lực"
+  ],
+  "确保": [
+    "đảm bảo; bảo đảm"
+  ],
+  "建": [
+    "thiết lập",
+    "sáng lập",
+    "dựng lên",
+    "xây dựng",
+    "kiến thiết"
+  ],
+  "队员": [
+    "thành viên đội"
+  ],
+  "足够": [
+    "đủ; đủ mức"
+  ],
+  "布": [
+    "biến thể của 布[bu4]",
+    "thông báo",
+    "lan truyền"
+  ],
+  "咖啡": [
+    "cà phê (từ mượn)",
+    "LT:杯[bei1]"
+  ],
+  "采取": [
+    "áp dụng hoặc tiến hành (biện pháp, chính sách, hành động)",
+    "thực hiện"
+  ],
+  "意外": [
+    "bất ngờ",
+    "tai nạn",
+    "sự cố",
+    "LT:個|个[ge4]"
+  ],
+  "风险": [
+    "rủi ro; mối nguy"
+  ],
+  "时刻": [
+    "thời gian",
+    "thời điểm",
+    "khoảnh khắc",
+    "giai đoạn thời gian",
+    "LT:個|个[ge4],段[duan4]",
+    "liên tục",
+    "luôn luôn"
+  ],
+  "断": [
+    "làm gãy",
+    "bẻ gãy",
+    "cắt đứt",
+    "từ bỏ hoặc kiêng cữ cái gì",
+    "phán đoán",
+    "(thường dùng ở dạng phủ định) tuyệt đối",
+    "chắc chắn",
+    "dứt khoát"
+  ],
+  "观察": [
+    "quan sát; theo dõi; khảo sát"
+  ],
+  "千万": [
+    "mười triệu",
+    "vô số",
+    "nhiều",
+    "một người nhất định phải"
+  ],
+  "钟": [
+    "cốc không quai; ly rượu",
+    "hình thức kết hợp, tập trung (tình cảm, v.v.)",
+    "biến thể của 鐘|钟[zhong1]"
+  ],
+  "接近": [
+    "tiếp cận; đến gần"
+  ],
+  "重大": [
+    "lớn",
+    "lao",
+    "quan trọng",
+    "đáng kể"
+  ],
+  "表明": [
+    "làm rõ",
+    "cho biết",
+    "nói rõ",
+    "chỉ ra",
+    "được biết"
+  ],
+  "持续": [
+    "tiếp tục",
+    "kiên trì",
+    "kéo dài",
+    "bền vững",
+    "bảo tồn"
+  ],
+  "具有": [
+    "có; sở hữu"
+  ],
+  "和平": [
+    "hòa bình"
+  ],
+  "板": [
+    "tấm",
+    "ván",
+    "mặt phẳng",
+    "cánh cửa ván",
+    "vợt bóng bàn",
+    "phách (nhạc)",
+    "LT:塊|块[kuai4]",
+    "nhịp mạnh trong nhạc Trung Quốc",
+    "cứng",
+    "đơ",
+    "ngừng cười hoặc trông nghiêm túc"
+  ],
+  "发表": [
+    "phát hành",
+    "công bố"
+  ],
+  "修": [
+    "trang trí",
+    "tô điểm",
+    "sửa chữa",
+    "xây dựng",
+    "viết",
+    "trau dồi",
+    "học",
+    "theo học (một lớp)"
+  ],
+  "相关": [
+    "liên quan",
+    "tương ứng",
+    "thích hợp",
+    "có quan hệ với nhau",
+    "(thống kê) tương quan"
+  ],
+  "价格": [
+    "giá",
+    "LT:個|个[ge4]"
+  ],
+  "旧": [
+    "cũ",
+    "đối lập: mới 新",
+    "trước",
+    "hao mòn (theo thời gian)"
+  ],
+  "前面": [
+    "phía trước",
+    "ở trước",
+    "trước đó",
+    "bên trên",
+    "cũng đọc là [qian2 mian5]"
+  ],
+  "简直": [
+    "thực sự; thật sự"
+  ],
+  "退": [
+    "rút lui; rút khỏi",
+    "từ chối; trả lại (cái gì đó)",
+    "từ chối"
+  ],
+  "强大": [
+    "to lớn và mạnh mẽ; đáng gờm; hùng mạnh"
+  ],
+  "证据": [
+    "bằng chứng",
+    "chứng cứ",
+    "lời khai"
+  ],
+  "交流": [
+    "trao đổi",
+    "sự trao đổi",
+    "giao tiếp",
+    "tương tác",
+    "có tiếp xúc xã hội (với ai)"
+  ],
+  "幸运": [
+    "may mắn",
+    "phúc lành; vận may"
+  ],
+  "制作": [
+    "làm; sản xuất"
+  ],
+  "教练": [
+    "người hướng dẫn",
+    "huấn luyện viên thể thao",
+    "huấn luyện viên",
+    "LT:個|个[ge4],位[wei4],名[ming2]"
+  ],
+  "付": [
+    "trả",
+    "giao cho",
+    "lượng từ cho cặp hoặc bộ"
+  ],
+  "公开": [
+    "mở; công khai; công cộng",
+    "công bố; phát hành"
+  ],
+  "资金": [
+    "quỹ; vốn"
+  ],
+  "员工": [
+    "nhân viên; nhân sự; nhân công"
+  ],
+  "全球": [
+    "toàn thế giới",
+    "toàn cầu"
+  ],
+  "升": [
+    "thăng lên",
+    "tăng lên chức",
+    "thăng chức",
+    "kéo lên",
+    "lít",
+    "đơn vị đo lường ngũ cốc khô bằng một phần mười đấu 斗[dou3]"
+  ],
+  "经营": [
+    "tham gia (kinh doanh, v.v.); điều hành; vận hành"
+  ],
+  "困": [
+    "bẫy",
+    "bao vây",
+    "bị áp lực",
+    "mắc kẹt",
+    "cùng quẫn"
+  ],
+  "初": [
+    "lúc đầu",
+    "(vào) lúc bắt đầu",
+    "đầu tiên",
+    "sơ cấp",
+    "cơ bản"
+  ],
+  "员": [
+    "(hình thức kết hợp) người tham gia một lĩnh vực hoạt động nhất định",
+    "(hình thức kết hợp) thành viên"
+  ],
+  "立刻": [
+    "ngay lập tức",
+    "lập tức",
+    "ngay",
+    "ngay tức khắc",
+    "lúc đó"
+  ],
+  "实验": [
+    "thí nghiệm",
+    "kiểm tra",
+    "LT:個|个[ge4],次[ci4]",
+    "mang tính thí nghiệm",
+    "tiến hành thí nghiệm"
+  ],
+  "取消": [
+    "hủy",
+    "bãi bỏ"
+  ],
+  "通常": [
+    "thông thường; bình thường",
+    "thường xuyên; thường thường"
+  ],
+  "对象": [
+    "mục tiêu; đối tượng",
+    "bạn đời; bạn trai; bạn gái",
+    "LT:個|个[ge4]"
+  ],
+  "浪费": [
+    "lãng phí",
+    "phung phí"
+  ],
+  "合理": [
+    "hợp lý; có lý; công bằng"
+  ],
+  "任": [
+    "bổ nhiệm",
+    "chỉ định",
+    "nhậm chức",
+    "văn phòng",
+    "trách nhiệm",
+    "để cho",
+    "cho phép",
+    "tự do",
+    "dù (thế nào, cái gì, v.v.)",
+    "lượng từ cho nhiệm kỳ trong văn phòng, hoặc cho vợ, bạn gái, v.v. (như trong 前任男友)"
+  ],
+  "香": [
+    "thơm",
+    "ngửi thơm",
+    "hương thơm",
+    "ngon hoặc hấp dẫn",
+    "(ăn) ngon lành",
+    "(ngủ) ngon",
+    "nước hoa hoặc gia vị",
+    "que hương hoặc cây nhang",
+    "LT: 根[gen1]"
+  ],
+  "成熟": [
+    "trưởng thành; chín",
+    "trưởng thành; làm cho chín",
+    "cách phát âm ở Đài Loan [cheng2 shou2]"
+  ],
+  "文章": [
+    "bài viết",
+    "bài luận",
+    "tác phẩm văn học",
+    "văn bản",
+    "nghĩa ẩn",
+    "LT:篇[pian1],段[duan4],頁|页[ye4]"
+  ],
+  "信任": [
+    "tin tưởng",
+    "có niềm tin vào"
+  ],
+  "反正": [
+    "dù sao đi nữa",
+    "dù thế nào",
+    "chuyển từ phe địch sang"
+  ],
+  "内心": [
+    "trái tim; tận sâu trong lòng",
+    "(toán) tâm nội tiếp"
+  ],
+  "发出": [
+    "ban hành (mệnh lệnh, sắc lệnh, v.v.); gửi đi; phái đi",
+    "phát ra (âm thanh); bật ra (tiếng cười)"
+  ],
+  "赶紧": [
+    "vội vàng",
+    "không chậm trễ"
+  ],
+  "进一步": [
+    "tiến thêm một bước",
+    "(phát triển, hiểu, cải thiện, v.v.) hơn nữa; thêm"
+  ],
+  "费": [
+    "tốn",
+    "tiêu phí",
+    "phí",
+    "lãng phí",
+    "chi phí"
+  ],
+  "防": [
+    "bảo vệ",
+    "phòng thủ",
+    "đề phòng",
+    "ngăn chặn"
+  ],
+  "舞台": [
+    "(nghĩa đen và bóng) sân khấu; đấu trường"
+  ],
+  "化": [
+    "làm thành",
+    "thay đổi thành",
+    "-hóa",
+    "hoá...",
+    "biến đổi",
+    "viết tắt của 化學|化学[hua4 xue2]"
+  ],
+  "不必": [
+    "không cần",
+    "không phải",
+    "cũng không nhất thiết"
+  ],
+  "现金": [
+    "tiền mặt"
+  ],
+  "调整": [
+    "điều chỉnh",
+    "sự điều chỉnh",
+    "sửa đổi",
+    "LT:個|个[ge4]"
+  ],
+  "糖": [
+    "đường",
+    "kẹo",
+    "ngọt",
+    "LT:顆|颗[ke1],塊|块[kuai4]"
+  ],
+  "阳光": [
+    "ánh nắng",
+    "(về tính cách) lạc quan; năng động",
+    "minh bạch (công khai cho công chúng xem xét)"
+  ],
+  "领": [
+    "cổ",
+    "cổ áo",
+    "dẫn dắt",
+    "nhận",
+    "lượng từ cho quần áo, chiếu, màn hình, v.v."
+  ],
+  "紧急": [
+    "khẩn cấp",
+    "tình huống khẩn cấp"
+  ],
+  "宣传": [
+    "truyền bá",
+    "quảng cáo",
+    "tuyên truyền",
+    "LT:個|个[ge4]"
+  ],
+  "优势": [
+    "sự vượt trội",
+    "sự thống trị",
+    "lợi thế"
+  ],
+  "互相": [
+    "lẫn nhau",
+    "tương hỗ"
+  ],
+  "科技": [
+    "khoa học và công nghệ"
+  ],
+  "导演": [
+    "đạo diễn",
+    "đạo diễn (phim, v.v.)"
+  ],
+  "印象": [
+    "ấn tượng (điều gì đó lưu lại trong tâm trí)",
+    "một ký ức"
+  ],
+  "烟": [
+    "thuốc lá hoặc thuốc lào",
+    "LT:根[gen1]",
+    "khói",
+    "sương",
+    "hơi nước",
+    "LT:縷|缕[lu:3]",
+    "cây thuốc lá",
+    "(mắt) bị kích thích bởi khói"
+  ],
+  "生意": [
+    "kinh doanh",
+    "Lượng từ: 筆|笔[bi3]"
+  ],
+  "赶": [
+    "đuổi kịp; bắt kịp",
+    "vội; gấp",
+    "cố gắng bắt (xe buýt,...)",
+    "lùa (gia súc,...) đi; đuổi (ai đó) đi",
+    "tận dụng (cơ hội)",
+    "cho đến; trước (một thời điểm nhất định)"
+  ],
+  "存": [
+    "tồn tại",
+    "gửi",
+    "lưu trữ",
+    "giữ",
+    "sống sót"
+  ],
+  "评价": [
+    "đánh giá"
+  ],
+  "桥": [
+    "cầu",
+    "LT:座[zuo4]"
+  ],
+  "迷": [
+    "làm bối rối",
+    "mê mẩn",
+    "người hâm mộ",
+    "nhà nhiệt tình",
+    "lạc",
+    "mơ hồ"
+  ],
+  "形象": [
+    "hình ảnh",
+    "hình tượng",
+    "LT:個|个[ge4]",
+    "hình dung",
+    "sinh động"
+  ],
+  "上去": [
+    "đi lên"
+  ],
+  "仅仅": [
+    "hầu như không",
+    "chỉ",
+    "đơn thuần",
+    "chỉ (cái này và không hơn)"
+  ],
+  "商业": [
+    "kinh doanh",
+    "thương mại",
+    "buôn bán"
+  ],
+  "到达": [
+    "đạt đến; đến nơi"
+  ],
+  "主任": [
+    "giám đốc",
+    "trưởng",
+    "LT:個|个[ge4]"
+  ],
+  "基础": [
+    "nền; nền tảng; cơ sở",
+    "căn bản; cơ bản"
+  ],
+  "功能": [
+    "chức năng; khả năng"
+  ],
+  "生产": [
+    "sản xuất; chế tạo",
+    "sinh con"
+  ],
+  "适应": [
+    "thích nghi",
+    "phù hợp",
+    "hợp với"
+  ],
+  "进展": [
+    "tiến triển; đạt tiến bộ"
+  ],
+  "试验": [
+    "thí nghiệm",
+    "kiểm tra",
+    "LT:次[ci4],個|个[ge4]",
+    "thử nghiệm"
+  ],
+  "成长": [
+    "trưởng thành",
+    "phát triển",
+    "tăng trưởng"
+  ],
+  "游": [
+    "bơi",
+    "biến thể của 遊|游[you2]"
+  ],
+  "指导": [
+    "hướng dẫn",
+    "đưa ra chỉ đạo",
+    "chỉ đạo",
+    "huấn luyện",
+    "dạy học",
+    "LT:個|个[ge4]"
+  ],
+  "食品": [
+    "thực phẩm; đồ ăn; lương thực",
+    "LT:種|种[zhong3]"
+  ],
+  "大约": [
+    "khoảng",
+    "chắc là"
+  ],
+  "联合": [
+    "kết hợp",
+    "gia nhập",
+    "hợp nhất",
+    "liên minh"
+  ],
+  "铁": [
+    "sắt (kim loại)",
+    "vũ khí",
+    "cứng",
+    "mạnh",
+    "bạo lực",
+    "không lay chuyển",
+    "quyết tâm",
+    "thân thiết",
+    "chặt (tiếng lóng)"
+  ],
+  "录": [
+    "khắc gỗ"
+  ],
+  "提前": [
+    "dời lên ngày sớm hơn",
+    "làm gì đó trước thời hạn",
+    "trước thời hạn"
+  ],
+  "组合": [
+    "lắp ráp; kết hợp; cấu thành",
+    "kết hợp; liên kết; bộ; biên soạn",
+    "(toán) tổ hợp"
+  ],
+  "积极": [
+    "chủ động",
+    "năng động",
+    "sôi nổi",
+    "tích cực (quan điểm)",
+    "chủ động đối phó"
+  ],
+  "强烈": [
+    "mạnh mẽ; dữ dội"
+  ],
+  "争取": [
+    "đấu tranh giành",
+    "nỗ lực giành",
+    "lôi kéo"
+  ],
+  "汤": [
+    "canh",
+    "nước nóng hoặc sôi",
+    "thang thuốc đông y",
+    "nước luộc thứ gì đó"
+  ],
+  "恐怕": [
+    "sợ",
+    "sợ rằng",
+    "tôi e rằng...",
+    "có lẽ",
+    "có thể"
+  ],
+  "搬": [
+    "di chuyển (tức là tự dời đi)",
+    "di chuyển (thứ gì đó tương đối nặng hoặc cồng kềnh)",
+    "chuyển",
+    "dọn sao chép mà không chọn lọc"
+  ],
+  "自从": [
+    "kể từ khi",
+    "từ khi"
+  ],
+  "命运": [
+    "số phận; định mệnh",
+    "LT:個|个[ge4]"
+  ],
+  "女子": [
+    "phụ nữ",
+    "nữ"
+  ],
+  "类似": [
+    "tương tự; tương đồng"
+  ],
+  "尽量": [
+    "càng nhiều càng tốt",
+    "đến mức tối đa"
+  ],
+  "及时": [
+    "kịp thời; đúng lúc",
+    "ngay lập tức; không chậm trễ"
+  ],
+  "专门": [
+    "chuyên gia",
+    "chuyên môn",
+    "tùy chỉnh"
+  ],
+  "资格": [
+    "trình độ",
+    "người có thâm niên"
+  ],
+  "工具": [
+    "công cụ",
+    "dụng cụ",
+    "đồ dùng",
+    "phương tiện (để đạt mục tiêu v.v.)"
+  ],
+  "快速": [
+    "nhanh; tốc độ cao; mau lẹ"
+  ],
+  "连续": [
+    "liên tục",
+    "liền một mạch",
+    "theo chuỗi",
+    "liên tiếp"
+  ],
+  "决赛": [
+    "chung kết (của một cuộc thi)"
+  ],
+  "厂": [
+    "nhà máy",
+    "sân",
+    "kho",
+    "xưởng",
+    "công xưởng",
+    "cơ xưởng (công nghiệp)"
+  ],
+  "形成": [
+    "hình thành; định hình"
+  ],
+  "背后": [
+    "phía sau",
+    "ở đằng sau",
+    "phía sau lưng",
+    "sau lưng ai đó"
+  ],
+  "配合": [
+    "phù hợp",
+    "phối hợp với",
+    "tương thích với",
+    "tương ứng",
+    "tuân thủ",
+    "quan hệ tốt",
+    "hành động cùng nhau",
+    "hợp tác",
+    "trở thành vợ chồng",
+    "kết hợp các bộ phận của máy móc"
+  ],
+  "显得": [
+    "dường như",
+    "trông",
+    "có vẻ"
+  ],
+  "亲自": [
+    "đích thân",
+    "tự mình",
+    "bản thân"
+  ],
+  "公共": [
+    "công cộng; chung; công"
+  ],
+  "费用": [
+    "chi phí",
+    "kinh phí",
+    "số tiền cần trả",
+    "LT:筆|笔[bi3],個|个[ge4]"
+  ],
+  "自动": [
+    "tự động",
+    "tự nguyện"
+  ],
+  "明确": [
+    "rõ ràng; dứt khoát; rõ rệt",
+    "làm rõ; chỉ rõ; làm cho rõ ràng"
+  ],
+  "结合": [
+    "kết hợp",
+    "liên kết",
+    "tích hợp",
+    "ràng buộc",
+    "LT:次[ci4]"
+  ],
+  "当中": [
+    "giữa",
+    "ở giữa",
+    "ở trung tâm"
+  ],
+  "男子": [
+    "một người đàn ông; nam giới"
+  ],
+  "生存": [
+    "tồn tại",
+    "sống sót"
+  ],
+  "胖": [
+    "mập",
+    "mũm mĩm"
+  ],
+  "土": [
+    "đất",
+    "bụi",
+    "đất sét",
+    "địa phương",
+    "bản địa",
+    "thuốc phiện thô",
+    "không tinh tế",
+    "một trong tám loại nhạc cụ cổ đại 八音[ba1 yin1]"
+  ],
+  "念": [
+    "biến thể của 念[nian4], đọc to"
+  ],
+  "进步": [
+    "tiến bộ; cải thiện",
+    "cải thiện; tiến bộ",
+    "LT:個|个[ge4]"
+  ],
+  "对待": [
+    "đối xử",
+    "sự đối xử"
+  ],
+  "村": [
+    "ngôi làng"
+  ],
+  "现象": [
+    "hiện tượng",
+    "LT:個|个[ge4],種|种[zhong3]",
+    "bề ngoài"
+  ],
+  "实力": [
+    "sức mạnh"
+  ],
+  "缺": [
+    "sự thiếu",
+    "hụt",
+    "không đủ",
+    "vị trí trống",
+    "thiếu hụt"
+  ],
+  "主动": [
+    "chủ động",
+    "tự làm gì đó",
+    "tự giác",
+    "tích cực",
+    "đối lập: bị động 被動|被动[bei4 dong4]",
+    "dẫn động (của bánh răng, trục, v.v.)"
+  ],
+  "甜": [
+    "ngọt"
+  ],
+  "服装": [
+    "trang phục",
+    "quần áo",
+    "phục trang",
+    "đồ hóa trang",
+    "LT:身[shen1]"
+  ],
+  "形式": [
+    "bề ngoài",
+    "hình thức",
+    "hình dáng",
+    "Lượng từ: 個|个[ge4]"
+  ],
+  "判断": [
+    "phán đoán",
+    "xác định",
+    "phán xét"
+  ],
+  "前往": [
+    "đi đến; tiến về; đi tới"
+  ],
+  "相互": [
+    "lẫn nhau",
+    "tương hỗ"
+  ],
+  "成立": [
+    "thiết lập",
+    "lập nên",
+    "có thể đứng vững",
+    "hợp lý"
+  ],
+  "现代": [
+    "thời hiện đại",
+    "kỷ nguyên hiện đại"
+  ],
+  "工资": [
+    "tiền lương; lương",
+    "LT:個|个[ge4],份[fen4]"
+  ],
+  "深刻": [
+    "sâu sắc",
+    "sâu",
+    "chuyên sâu"
+  ],
+  "庆祝": [
+    "ăn mừng"
+  ],
+  "伤心": [
+    "đau buồn",
+    "tan nát cõi lòng",
+    "cảm thấy tổn thương sâu sắc"
+  ],
+  "眼前": [
+    "trước mắt",
+    "bây giờ",
+    "hiện tại"
+  ],
+  "足球": [
+    "quả bóng đá",
+    "một quả bóng đá",
+    "LT:個|个[ge4]",
+    "môn bóng đá",
+    "bóng đá"
+  ],
+  "全面": [
+    "toàn diện",
+    "toàn bộ",
+    "tổng thể",
+    "tổng quát"
+  ],
+  "体验": [
+    "trải nghiệm"
+  ],
+  "话题": [
+    "chủ đề (của cuộc nói chuyện)",
+    "đề tài"
+  ],
+  "坚强": [
+    "kiên cường",
+    "mạnh mẽ"
+  ],
+  "古": [
+    "cổ",
+    "thời xa xưa",
+    "tiền sử-"
+  ],
+  "苹果": [
+    "quả táo",
+    "LT:個|个[ge4],顆|颗[ke1]"
+  ],
+  "银": [
+    "bạc",
+    "màu bạc",
+    "liên quan đến tiền bạc hoặc tiền tệ"
+  ],
+  "区别": [
+    "sự khác biệt",
+    "phân biệt",
+    "kỳ thị",
+    "tạo sự khác nhau",
+    "LT:個|个[ge4]"
+  ],
+  "合法": [
+    "hợp pháp",
+    "chính đáng",
+    "hợp lệ"
+  ],
+  "羊": [
+    "cừu; dê",
+    "LT:頭|头[tou2],隻|只[zhi1]"
+  ],
+  "将来": [
+    "trong tương lai",
+    "tương lai",
+    "LT:個|个[ge4]"
+  ],
+  "造": [
+    "làm",
+    "xây dựng",
+    "sản xuất",
+    "phát minh",
+    "bịa đặt",
+    "đi đến",
+    "bên (trong vụ kiện hoặc thỏa thuận pháp lý)",
+    "mùa vụ",
+    "lượng từ cho mùa vụ"
+  ],
+  "个性": [
+    "cá tính",
+    "tính cách"
+  ],
+  "批准": [
+    "phê duyệt; phê chuẩn"
+  ],
+  "前进": [
+    "tiến lên",
+    "tiến về phía trước",
+    "xúc tiến",
+    "tiến tới"
+  ],
+  "啤酒": [
+    "bia (từ mượn)",
+    "LT:杯[bei1],瓶[ping2],罐[guan4],桶[tong3],缸[gang1]"
+  ],
+  "机器": [
+    "máy móc",
+    "LT:臺|台[tai2],部[bu4],個|个[ge4]"
+  ],
+  "公布": [
+    "công bố; công khai; xuất bản"
+  ],
+  "工厂": [
+    "nhà máy",
+    "LT:家[jia1],座[zuo4]"
+  ],
+  "指出": [
+    "chỉ ra",
+    "nêu ra"
+  ],
+  "举办": [
+    "tổ chức",
+    "tiến hành"
+  ],
+  "人才": [
+    "tài năng",
+    "người tài năng",
+    "ngoại hình",
+    "ngoại hình hấp dẫn"
+  ],
+  "看上去": [
+    "dường như",
+    "có vẻ (như)"
+  ],
+  "环": [
+    "nhẫn",
+    "vòng",
+    "lặp",
+    "mắt xích (chuỗi)",
+    "lượng từ cho điểm bắn cung, v.v.",
+    "bao quanh",
+    "vây quanh",
+    "vây kín"
+  ],
+  "双方": [
+    "song phương",
+    "hai bên",
+    "cả hai bên liên quan"
+  ],
+  "离婚": [
+    "ly hôn"
+  ],
+  "退出": [
+    "rút lui",
+    "hủy bỏ",
+    "thoát",
+    "đăng xuất (máy tính)"
+  ],
+  "支付": [
+    "trả tiền"
+  ],
+  "赶快": [
+    "nhanh chóng; ngay lập tức"
+  ],
+  "整理": [
+    "sắp xếp",
+    "dọn dẹp",
+    "chỉnh lý",
+    "liệt kê có hệ thống",
+    "đối chiếu (dữ liệu, hồ sơ)",
+    "đóng gói (hành lý)"
+  ],
+  "吵": [
+    "cãi nhau",
+    "gây ồn ào",
+    "ồn ào",
+    "làm phiền bằng cách gây ồn"
+  ],
+  "丰富": [
+    "làm phong phú",
+    "giàu có",
+    "phong phú",
+    "dồi dào"
+  ],
+  "动力": [
+    "động lực (vật lý)",
+    "lực",
+    "(nghĩa bóng) động cơ",
+    "thúc đẩy"
+  ],
+  "温暖": [
+    "ấm áp"
+  ],
+  "齐": [
+    "gọn gàng",
+    "đồng đều",
+    "cùng mức",
+    "giống hệt",
+    "đồng thời",
+    "cùng nhau",
+    "làm cho đều"
+  ],
+  "表面": [
+    "bề mặt",
+    "bề ngoài",
+    "bên ngoài",
+    "diện mạo"
+  ],
+  "领先": [
+    "dẫn đầu",
+    "dẫn trước"
+  ],
+  "作者": [
+    "tác giả; nhà văn"
+  ],
+  "上升": [
+    "tăng lên",
+    "đi lên",
+    "thăng"
+  ],
+  "声明": [
+    "phát biểu",
+    "tuyên bố",
+    "lời phát biểu",
+    "bản tuyên bố",
+    "LT:項|项[xiang4],份[fen4]"
+  ],
+  "围": [
+    "bao quanh",
+    "bao vây",
+    "xung quanh",
+    "đeo bằng cách quấn quanh (khăn quàng, khăn choàng)"
+  ],
+  "路线": [
+    "hành trình",
+    "tuyến đường",
+    "đường lối chính trị (ví dụ: con đường xét lại hữu)",
+    "LT:條|条[tiao2]"
+  ],
+  "完整": [
+    "hoàn chỉnh",
+    "nguyên vẹn"
+  ],
+  "谈判": [
+    "đàm phán",
+    "thương lượng",
+    "đàm thoại",
+    "hội nghị",
+    "LT:個|个[ge4]"
+  ],
+  "飞行": [
+    "(máy bay,...) bay",
+    "đang bay",
+    "chuyến bay",
+    "hàng không"
+  ],
+  "较": [
+    "(hình thức ràng buộc) so sánh",
+    "(văn học) tranh luận",
+    "so với",
+    "(trước tính từ) tương đối; khá; hơi",
+    "cũng đọc là [jiao3]"
+  ],
+  "纪念": [
+    "tưởng niệm; tôn vinh ký ức của",
+    "quà lưu niệm; kỷ vật; đồ lưu niệm"
+  ],
+  "福": [
+    "phúc lành",
+    "hạnh phúc",
+    "may mắn"
+  ],
+  "补": [
+    "sửa",
+    "chắp vá",
+    "vá",
+    "bù đắp",
+    "lấp đầy (chỗ trống)",
+    "bổ sung"
+  ],
+  "赶到": [
+    "vội đến (một nơi)"
+  ],
+  "公民": [
+    "công dân"
+  ],
+  "当初": [
+    "lúc đó",
+    "ban đầu"
+  ],
+  "分别": [
+    "chia tay; rời nhau",
+    "phân biệt; nhận ra sự khác biệt",
+    "sự khác nhau; sự phân biệt",
+    "bằng các cách khác nhau; khác nhau",
+    "tách biệt; riêng lẻ"
+  ],
+  "愿望": [
+    "khát vọng",
+    "ước muốn"
+  ],
+  "长期": [
+    "dài hạn",
+    "thời gian dài",
+    "dài hạn (của dự báo)"
+  ],
+  "数量": [
+    "số lượng (LT:個|个[ge4])",
+    "thuộc về số lượng",
+    "(toán) đại lượng vô hướng"
+  ],
+  "保留": [
+    "giữ",
+    "lưu giữ",
+    "có bảo lưu (về điều gì đó)",
+    "giữ lại (không nói điều gì đó)",
+    "để dành cho sau"
+  ],
+  "相比": [
+    "so sánh"
+  ],
+  "深入": [
+    "thâm nhập sâu",
+    "kỹ lưỡng"
+  ],
+  "石油": [
+    "dầu",
+    "dầu mỏ"
+  ],
+  "情感": [
+    "cảm giác",
+    "cảm xúc",
+    "xúc động (về mặt tình cảm)"
+  ],
+  "称为": [
+    "được gọi là; được biết đến như; gọi là \"...\""
+  ],
+  "人群": [
+    "đám đông"
+  ],
+  "计算": [
+    "đếm",
+    "tính toán",
+    "tính ra",
+    "LT:個|个[ge4]"
+  ],
+  "开发": [
+    "khai thác (tài nguyên); mở ra (để phát triển); phát triển"
+  ],
+  "始终": [
+    "từ đầu đến cuối",
+    "luôn luôn"
+  ],
+  "争": [
+    "cố gắng giành",
+    "đua tranh",
+    "tranh luận hoặc tranh cãi",
+    "thiếu hoặc không đủ (phương ngữ)",
+    "như thế nào hoặc cái gì (văn học)"
+  ],
+  "订": [
+    "đồng ý",
+    "kết luận",
+    "lập ra",
+    "đặt mua (báo chí,...)",
+    "đặt hàng"
+  ],
+  "卫生": [
+    "sức khỏe",
+    "vệ sinh",
+    "hệ thống vệ sinh"
+  ],
+  "富": [
+    "giàu",
+    "có nhiều",
+    "phú quý"
+  ],
+  "加强": [
+    "củng cố; tăng cường; nâng cao"
+  ],
+  "保安": [
+    "bảo đảm an ninh công cộng",
+    "bảo đảm an toàn (cho công nhân tham gia sản xuất)",
+    "công an",
+    "nhân viên bảo vệ"
+  ],
+  "歌手": [
+    "ca sĩ"
+  ],
+  "实验室": [
+    "phòng thí nghiệm",
+    "LT:間|间[jian1]"
+  ],
+  "开放": [
+    "nở hoa",
+    "mở",
+    "mở cửa (cho công chúng)",
+    "mở ra (với bên ngoài)",
+    "cởi mở",
+    "phóng khoáng về quan niệm",
+    "không gò bó trong tình dục"
+  ],
+  "各地": [
+    "ở khắp mọi nơi (của một quốc gia)",
+    "các vùng khác nhau"
+  ],
+  "性格": [
+    "bản chất",
+    "tính tình",
+    "tính khí",
+    "nhân cách",
+    "LT:個|个[ge4]"
+  ],
+  "团结": [
+    "đoàn kết",
+    "sự đoàn kết; tinh thần đoàn kết"
+  ],
+  "展开": [
+    "mở ra; trải ra; mở rộng",
+    "phát động; tiến hành"
+  ],
+  "把握": [
+    "nắm bắt (cũng nghĩa bóng)",
+    "nắm giữ",
+    "cầm",
+    "nắm chắc",
+    "chắc chắn",
+    "chắc (kết quả)"
+  ],
+  "成就": [
+    "thành tựu",
+    "thành công",
+    "đạt được",
+    "LT:個|个[ge4]",
+    "đạt được (một kết quả)",
+    "tạo ra",
+    "mang lại"
+  ],
+  "课程": [
+    "khóa học",
+    "chương trình học",
+    "LT:堂[tang2],節|节[jie2],門|门[men2]"
+  ],
+  "看起来": [
+    "hình như; rõ ràng; trông có vẻ; hiện ra như; cho ấn tượng rằng; dường như bề ngoài là"
+  ],
+  "发动": [
+    "bắt đầu",
+    "phát động",
+    "khơi dậy",
+    "huy động",
+    "kích động"
+  ],
+  "果然": [
+    "thực sự",
+    "quả nhiên",
+    "đúng như dự đoán",
+    "nếu thực sự"
+  ],
+  "静": [
+    "yên",
+    "tĩnh",
+    "lặng",
+    "không động đậy"
+  ],
+  "需求": [
+    "yêu cầu",
+    "cần",
+    "(kinh tế) nhu cầu"
+  ],
+  "只好": [
+    "không còn lựa chọn nào khác ngoài...; đành phải; bị buộc phải"
+  ],
+  "国内": [
+    "nội địa",
+    "bên trong (một quốc gia)",
+    "dân sự"
+  ],
+  "谈话": [
+    "nói chuyện (với ai đó)",
+    "có cuộc trò chuyện",
+    "nói chuyện",
+    "cuộc trò chuyện",
+    "LT:次[ci4]"
+  ],
+  "传说": [
+    "truyền thuyết; câu chuyện dân gian",
+    "thuật lại từ người này sang người khác; người ta nói rằng..."
+  ],
+  "转变": [
+    "thay đổi",
+    "chuyển hóa",
+    "chuyển đổi",
+    "sự thay đổi",
+    "LT:個|个[ge4]"
+  ],
+  "至今": [
+    "cho đến nay",
+    "đến ngày hôm nay",
+    "cho đến bây giờ"
+  ],
+  "后果": [
+    "hậu quả",
+    "hệ quả"
+  ],
+  "打破": [
+    "làm vỡ; đập vỡ"
+  ],
+  "上来": [
+    "đi lên",
+    "tiếp cận",
+    "(bổ ngữ động từ chỉ sự thành công)"
+  ],
+  "石头": [
+    "đá",
+    "LT:塊|块[kuai4]"
+  ],
+  "主持": [
+    "phụ trách",
+    "quản lý hoặc điều hành",
+    "chủ trì",
+    "bảo vệ",
+    "đứng về phía (công lý, v.v.)",
+    "dẫn chương trình (truyền hình hoặc radio, v.v.)",
+    "người dẫn chương trình (truyền hình)"
+  ],
+  "访问": [
+    "thăm",
+    "ghé thăm",
+    "phỏng vấn",
+    "LT:次[ci4]"
+  ],
+  "先进": [
+    "tiên tiến (công nghệ, v.v.)",
+    "xuất sắc; gương mẫu (hành động, v.v.)"
+  ],
+  "才能": [
+    "tài năng",
+    "khả năng",
+    "năng lực"
+  ],
+  "文明": [
+    "văn minh",
+    "nền văn minh",
+    "văn hóa",
+    "LT:個|个[ge4]"
+  ],
+  "西部": [
+    "phần phía tây"
+  ],
+  "玩具": [
+    "đồ chơi"
+  ],
+  "防止": [
+    "ngăn chặn",
+    "phòng ngừa",
+    "thực hiện biện pháp phòng ngừa"
+  ],
+  "年纪": [
+    "tuổi",
+    "LT:把[ba3],個|个[ge4]"
+  ],
+  "采用": [
+    "áp dụng",
+    "sử dụng",
+    "dùng"
+  ],
+  "手指": [
+    "ngón tay",
+    "LT:個|个[ge4],隻|只[zhi1]"
+  ],
+  "天空": [
+    "bầu trời"
+  ],
+  "制度": [
+    "hệ thống (ví dụ: chính trị, hành chính, v.v.)",
+    "thiết chế",
+    "LT:個|个[ge4]"
+  ],
+  "工业": [
+    "công nghiệp"
+  ],
+  "广播": [
+    "phát sóng",
+    "LT:個|个[ge4]",
+    "phát thanh",
+    "(trang trọng) truyền bá",
+    "công bố"
+  ],
+  "从事": [
+    "làm",
+    "gia nhập",
+    "thực hiện",
+    "xử lý",
+    "đối phó"
+  ],
+  "改造": [
+    "cải tạo",
+    "cải cách",
+    "tân trang",
+    "tái tạo"
+  ],
+  "制定": [
+    "soạn thảo; xây dựng"
+  ],
+  "直播": [
+    "(TV, radio) phát sóng trực tiếp",
+    "phát trực tiếp",
+    "(Internet) phát livestream",
+    "(nông nghiệp) gieo sạ trực tiếp"
+  ],
+  "应当": [
+    "nên; cần phải"
+  ],
+  "交往": [
+    "giao thiệp (với)",
+    "có liên hệ (với)",
+    "đi chơi (với)",
+    "hẹn hò",
+    "mối quan hệ (giữa người với người)",
+    "quan hệ",
+    "liên hệ"
+  ],
+  "各自": [
+    "mỗi",
+    "tương ứng",
+    "mỗi người một phần"
+  ],
+  "不论": [
+    "bất kể",
+    "cho dù là (ai, như thế nào, v.v.)",
+    "bất chấp",
+    "không bàn đến"
+  ],
+  "退休": [
+    "nghỉ hưu (khỏi lực lượng lao động); đi vào nghỉ hưu"
+  ],
+  "成果": [
+    "kết quả",
+    "thành tựu",
+    "thu được",
+    "lợi nhuận",
+    "LT:個|个[ge4]"
+  ],
+  "概念": [
+    "khái niệm",
+    "ý tưởng",
+    "LT:個|个[ge4]"
+  ],
+  "创作": [
+    "sáng tác; sản xuất; viết",
+    "một tác phẩm sáng tạo; một sự sáng tạo"
+  ],
+  "据说": [
+    "nghe nói rằng; theo báo cáo"
+  ],
+  "自身": [
+    "bản thân",
+    "tự mình",
+    "của riêng mình"
+  ],
+  "整天": [
+    "cả ngày",
+    "suốt ngày"
+  ],
+  "去世": [
+    "qua đời",
+    "chết"
+  ],
+  "批评": [
+    "phê bình; chỉ trích",
+    "LT:次[ci4],番[fan1]"
+  ],
+  "增长": [
+    "tăng trưởng",
+    "tăng lên"
+  ],
+  "部长": [
+    "người đứng đầu một bộ (chính phủ, v.v.)",
+    "trưởng phòng",
+    "trưởng khoa",
+    "thư ký",
+    "bộ trưởng",
+    "LT:個|个[ge4],位[wei4],名[ming2]"
+  ],
+  "否认": [
+    "tuyên bố không đúng",
+    "phủ nhận"
+  ],
+  "主意": [
+    "kế hoạch",
+    "ý tưởng",
+    "quyết định",
+    "LT:個|个[ge4]",
+    "cách phát âm Bắc Kinh [zhu2 yi5]"
+  ],
+  "体会": [
+    "biết từ kinh nghiệm",
+    "học qua trải nghiệm",
+    "nhận ra",
+    "sự hiểu biết",
+    "kinh nghiệm"
+  ],
+  "感冒": [
+    "bị cảm lạnh",
+    "bệnh cảm lạnh",
+    "LT:場|场[chang2],次[ci4]",
+    "(thông tục) hứng thú (thường dùng ở phủ định)",
+    "(Đài Loan) ghét",
+    "không chịu nổi"
+  ],
+  "高速": [
+    "tốc độ cao",
+    "đường cao tốc (viết tắt của 高速公路[gao1 su4 gong1 lu4])"
+  ],
+  "观看": [
+    "xem; quan sát"
+  ],
+  "推进": [
+    "thúc đẩy",
+    "tiến hành",
+    "đẩy tới",
+    "phát triển",
+    "thúc tiến"
+  ],
+  "安装": [
+    "lắp đặt",
+    "dựng",
+    "lắp",
+    "gắn",
+    "cài đặt"
+  ],
+  "欢乐": [
+    "sự vui vẻ",
+    "vui mừng",
+    "hân hoan",
+    "hân hỉ",
+    "niềm vui",
+    "hạnh phúc",
+    "vui sướng",
+    "vui tươi"
+  ],
+  "功夫": [
+    "kỹ năng",
+    "nghệ thuật",
+    "kung fu",
+    "lao động",
+    "nỗ lực"
+  ],
+  "团体": [
+    "nhóm",
+    "tổ chức",
+    "đội",
+    "LT:個|个[ge4]"
+  ],
+  "房屋": [
+    "nhà",
+    "toà nhà",
+    "LT:所[suo3],套[tao4]"
+  ],
+  "得分": [
+    "ghi điểm"
+  ],
+  "纪录": [
+    "biến thể của 記錄|记录[ji4 lu4] (nhưng ở Đài Loan, không dùng cho nghĩa động từ \"ghi lại\")"
+  ],
+  "游泳": [
+    "bơi lội",
+    "bơi"
+  ],
+  "基本上": [
+    "về cơ bản",
+    "nhìn chung"
+  ],
+  "农民": [
+    "nông dân; nông phu"
+  ],
+  "民族": [
+    "quốc tịch; dân tộc",
+    "LT:個|个[ge4]"
+  ],
+  "商品": [
+    "hàng hóa; sản phẩm; thương phẩm",
+    "LT:件|件[jian4]"
+  ],
+  "属": [
+    "phân loại",
+    "chi (phân loại học)",
+    "thành viên gia đình",
+    "người phụ thuộc",
+    "thuộc về",
+    "trực thuộc",
+    "liên kết với",
+    "sinh năm (một trong 12 con giáp)",
+    "là",
+    "chứng tỏ là",
+    "cấu thành"
+  ],
+  "裤子": [
+    "biến thể của 褲子|裤子, quần dài",
+    "quần tây"
+  ],
+  "运输": [
+    "vận chuyển",
+    "mang",
+    "chuyên chở"
+  ],
+  "传播": [
+    "truyền bá; phổ biến; lan truyền"
+  ],
+  "好奇": [
+    "tò mò",
+    "hiếu kỳ",
+    "sự tò mò",
+    "tính hiếu kỳ"
+  ],
+  "集体": [
+    "tập thể (quyết định)",
+    "nỗ lực chung",
+    "một nhóm",
+    "một đội",
+    "đồng loạt",
+    "như một nhóm"
+  ],
+  "预计": [
+    "dự báo",
+    "dự đoán",
+    "ước tính"
+  ],
+  "落后": [
+    "tụt hậu",
+    "lạc hậu (về công nghệ, v.v.)",
+    "lạc hậu",
+    "thụt lùi"
+  ],
+  "沙发": [
+    "ghế sô pha (từ mượn)",
+    "LT:條|条[tiao2],張|张[zhang1]",
+    "(tiếng lóng Internet) người đầu tiên trả lời một bài đăng trên diễn đàn"
+  ],
+  "强调": [
+    "nhấn mạnh (một tuyên bố)",
+    "nhấn mạnh"
+  ],
+  "加快": [
+    "tăng tốc",
+    "đẩy nhanh"
+  ],
+  "考验": [
+    "thử thách",
+    "đưa vào thử thách",
+    "thử nghiệm",
+    "khó khăn, thử thách nghiêm trọng"
+  ],
+  "分配": [
+    "phân phối",
+    "giao",
+    "phân bổ",
+    "phân vùng (ổ cứng)"
+  ],
+  "乐队": [
+    "ban nhạc",
+    "nhóm nhạc",
+    "LT:支[zhi1]"
+  ],
+  "演唱会": [
+    "buổi hòa nhạc hoặc buổi biểu diễn"
+  ],
+  "修改": [
+    "sửa đổi",
+    "thay đổi",
+    "chỉnh sửa"
+  ],
+  "演唱": [
+    "hát (trước khán giả)",
+    "biểu diễn thanh nhạc"
+  ],
+  "保存": [
+    "bảo tồn",
+    "bảo quản",
+    "giữ",
+    "lưu (tệp, v.v.) (tin học)"
+  ],
+  "跳舞": [
+    "nhảy múa"
+  ],
+  "电视台": [
+    "đài truyền hình",
+    "LT:個|个[ge4]"
+  ],
+  "发明": [
+    "phát minh",
+    "một phát minh",
+    "LT:個|个[ge4]"
+  ],
+  "播放": [
+    "phát sóng; truyền tải (qua radio hoặc TV)"
+  ],
+  "邮件": [
+    "thư từ",
+    "bưu phẩm",
+    "email"
+  ],
+  "突出": [
+    "nổi bật",
+    "xuất sắc",
+    "làm nổi bật",
+    "lồi ra",
+    "nhô ra"
+  ],
+  "其次": [
+    "tiếp theo",
+    "thứ hai"
+  ],
+  "乐观": [
+    "lạc quan; đầy hy vọng"
+  ],
+  "会员": [
+    "thành viên"
+  ],
+  "热烈": [
+    "nhiệt tình",
+    "nồng nhiệt",
+    "ấm áp"
+  ],
+  "相似": [
+    "tương tự; giống nhau"
+  ],
+  "联合国": [
+    "Liên Hợp Quốc"
+  ],
+  "往往": [
+    "thường thường",
+    "trong nhiều trường hợp",
+    "thường là"
+  ],
+  "带领": [
+    "dẫn dắt",
+    "lãnh đạo"
+  ],
+  "可靠": [
+    "đáng tin cậy"
+  ],
+  "决心": [
+    "quyết tâm",
+    "sự kiên quyết",
+    "quyết đoán",
+    "kiên quyết và dứt khoát",
+    "quyết định",
+    "LT:個|个[ge4]"
+  ],
+  "球迷": [
+    "người hâm mộ (thể thao bóng)",
+    "LT:個|个[ge4]"
+  ],
+  "补充": [
+    "bổ sung",
+    "bổ trợ",
+    "thêm vào",
+    "LT:個|个[ge4]"
+  ],
+  "克服": [
+    "(cố gắng) khắc phục (khó khăn, v.v.)",
+    "chinh phục",
+    "chịu đựng",
+    "nhẫn nại"
+  ],
+  "文字": [
+    "chữ viết",
+    "kịch bản",
+    "văn bản",
+    "ngôn ngữ viết",
+    "phong cách viết",
+    "cách hành văn",
+    "LT:個|个[ge4]"
+  ],
+  "有利": [
+    "có lợi; thuận lợi"
+  ],
+  "热爱": [
+    "yêu nhiệt thành",
+    "ngưỡng mộ"
+  ],
+  "体现": [
+    "thể hiện",
+    "phản ánh",
+    "hiện thân"
+  ],
+  "家具": [
+    "đồ nội thất",
+    "LT: 件 [jian4], 套 [tao4]"
+  ],
+  "生长": [
+    "phát triển",
+    "lớn lên",
+    "được nuôi dưỡng"
+  ],
+  "特色": [
+    "đặc trưng",
+    "nét đặc biệt hoặc chất lượng"
+  ],
+  "电视剧": [
+    "phim truyền hình",
+    "phim bộ",
+    "LT:部[bu4]"
+  ],
+  "整体": [
+    "thực thể toàn bộ",
+    "toàn thân",
+    "tổng hợp",
+    "như một tổng thể (tình huống, cấu trúc, đội nhóm, v.v.)",
+    "toàn cầu",
+    "vĩ mô",
+    "tích hợp",
+    "toàn diện",
+    "toàn bộ"
+  ],
+  "身份证": [
+    "thẻ căn cước",
+    "chứng minh thư"
+  ],
+  "收费": [
+    "thu phí"
+  ],
+  "迎接": [
+    "chào đón; đón tiếp"
+  ],
+  "改进": [
+    "cải thiện; làm cho tốt hơn",
+    "sự cải thiện",
+    "LT:個|个[ge4]"
+  ],
+  "建设": [
+    "xây dựng; kiến thiết; thành lập; phát triển; thiết lập"
+  ],
+  "文学": [
+    "văn học",
+    "LT:種|种[zhong3]"
+  ],
+  "难度": [
+    "mức độ khó"
+  ],
+  "头脑": [
+    "bộ não",
+    "tâm trí",
+    "hộp sọ",
+    "(bóng) ý chính (của vấn đề)",
+    "người đứng đầu",
+    "sếp"
+  ],
+  "屋子": [
+    "nhà",
+    "phòng",
+    "LT:間|间[jian1]"
+  ],
+  "铁路": [
+    "đường sắt",
+    "đường ray",
+    "LT:條|条[tiao2]"
+  ],
+  "通信": [
+    "trao đổi thư từ",
+    "giao tiếp",
+    "truyền thông"
+  ],
+  "缺少": [
+    "thiếu",
+    "sự thiếu hụt",
+    "thâm hụt",
+    "bị thiếu (hụt)"
+  ],
+  "环保": [
+    "bảo vệ môi trường",
+    "thân thiện với môi trường",
+    "viết tắt của 環境保護|环境保护[huan2 jing4 bao3 hu4]"
+  ],
+  "家乡": [
+    "quê hương",
+    "nơi sinh",
+    "LT:個|个[ge4]"
+  ],
+  "发送": [
+    "truyền đi",
+    "gửi đi",
+    "phát hành (tài liệu hoặc giấy tờ chính thức)"
+  ],
+  "播出": [
+    "phát sóng",
+    "phát (chương trình TV, v.v.)"
+  ],
+  "读者": [
+    "độc giả"
+  ],
+  "消费": [
+    "tiêu thụ (hàng hóa và dịch vụ, tài nguyên, v.v.)"
+  ],
+  "实行": [
+    "thực hiện",
+    "tiến hành",
+    "đưa vào thực tiễn"
+  ],
+  "吵架": [
+    "cãi nhau",
+    "có cuộc cãi vã",
+    "cãi vã",
+    "LT:頓|顿[dun4]"
+  ],
+  "巧": [
+    "một cách tình cờ",
+    "trùng hợp",
+    "đúng lúc",
+    "khéo léo",
+    "kịp thời"
+  ],
+  "不安": [
+    "không yên",
+    "bất ổn",
+    "bất an",
+    "rối bời",
+    "bồn chồn",
+    "lo lắng"
+  ],
+  "首都": [
+    "thủ đô",
+    "LT:個|个[ge4]"
+  ],
+  "整整": [
+    "toàn bộ",
+    "đầy đủ"
+  ],
+  "发言": [
+    "phát biểu",
+    "tuyên bố",
+    "lời phát biểu",
+    "LT:個|个[ge4]"
+  ],
+  "观念": [
+    "khái niệm",
+    "suy nghĩ",
+    "ý tưởng",
+    "cảm giác",
+    "quan điểm",
+    "tư tưởng",
+    "ấn tượng chung"
+  ],
+  "告别": [
+    "rời đi; chia tay",
+    "chào tạm biệt; nói lời tạm biệt"
+  ],
+  "反复": [
+    "biến thể của 反覆|反复[fan3 fu4]"
+  ],
+  "场所": [
+    "địa điểm",
+    "nơi chốn"
+  ],
+  "亲人": [
+    "người thân thiết"
+  ],
+  "早已": [
+    "đã từ lâu; từ lâu",
+    "(tiếng địa phương) trước đây"
+  ],
+  "初步": [
+    "ban đầu",
+    "sơ bộ",
+    "dự kiến"
+  ],
+  "比例": [
+    "tỷ lệ",
+    "quy mô"
+  ],
+  "输入": [
+    "nhập khẩu",
+    "nhập liệu"
+  ],
+  "创新": [
+    "đề xuất ý tưởng mới; mở đường mới",
+    "đổi mới"
+  ],
+  "总结": [
+    "tóm tắt",
+    "kết luận",
+    "tóm lược",
+    "sơ yếu lý lịch",
+    "LT:個|个[ge4]"
+  ],
+  "空调": [
+    "điều hòa không khí",
+    "máy điều hòa (bao gồm cả loại có chế độ sưởi)",
+    "LT:臺|台[tai2]"
+  ],
+  "南部": [
+    "phần phía nam"
+  ],
+  "没用": [
+    "vô dụng"
+  ],
+  "另一方面": [
+    "mặt khác",
+    "một khía cạnh khác"
+  ],
+  "营养": [
+    "dinh dưỡng",
+    "nuôi dưỡng",
+    "LT:種|种[zhong3]"
+  ],
+  "排名": [
+    "xếp hạng (1, 2 v.v.)",
+    "bảng xếp hạng"
+  ],
+  "互联网": [
+    "Internet"
+  ],
+  "行李": [
+    "hành lý",
+    "LT:件[jian4]"
+  ],
+  "毛病": [
+    "lỗi",
+    "sai sót",
+    "khuyết điểm",
+    "bệnh tật",
+    "LT:個|个[ge4]"
+  ],
+  "场合": [
+    "tình huống",
+    "dịp",
+    "ngữ cảnh",
+    "bối cảnh",
+    "địa điểm"
+  ],
+  "衬衫": [
+    "áo sơ mi",
+    "áo blouse",
+    "LT:件[jian4]"
+  ],
+  "光明": [
+    "ánh sáng",
+    "rực rỡ",
+    "(bóng) tươi sáng (triển vọng, v.v.)",
+    "cởi mở"
+  ],
+  "合格": [
+    "đáp ứng tiêu chuẩn yêu cầu",
+    "đủ tiêu chuẩn",
+    "đủ điều kiện (cử tri, v.v.)"
+  ],
+  "东部": [
+    "miền đông",
+    "phần phía đông"
+  ],
+  "认可": [
+    "phê duyệt",
+    "chấp thuận",
+    "thừa nhận",
+    "đồng ý"
+  ],
+  "提问": [
+    "đặt câu hỏi; kiểm tra; chất vấn"
+  ],
+  "家属": [
+    "thành viên gia đình",
+    "người phụ thuộc (trong gia đình)"
+  ],
+  "坚决": [
+    "vững vàng; kiên quyết; quyết tâm"
+  ],
+  "传来": [
+    "(về âm thanh) truyền đến",
+    "được nghe thấy",
+    "(về tin tức) đến"
+  ],
+  "从前": [
+    "trước đây",
+    "ngày xưa",
+    "ngày xửa ngày xưa"
+  ],
+  "日常": [
+    "hằng ngày; thường nhật; mỗi ngày"
+  ],
+  "缺点": [
+    "điểm yếu",
+    "lỗi",
+    "khuyết điểm",
+    "bất lợi",
+    "LT:個|个[ge4]"
+  ],
+  "设立": [
+    "thiết lập; thành lập"
+  ],
+  "预防": [
+    "ngăn ngừa",
+    "phòng chống",
+    "bảo vệ",
+    "chống lại",
+    "mang tính phòng ngừa",
+    "dự phòng"
+  ],
+  "必然": [
+    "không thể tránh khỏi",
+    "chắc chắn",
+    "tất yếu"
+  ],
+  "写作": [
+    "viết",
+    "sáng tác",
+    "bài viết",
+    "tác phẩm viết"
+  ],
+  "危害": [
+    "gây nguy hại",
+    "làm hại",
+    "gây nguy hiểm",
+    "tác động có hại",
+    "tổn hại",
+    "LT:個|个[ge4]"
+  ],
+  "手续": [
+    "thủ tục",
+    "LT:道[dao4],個|个[ge4]"
+  ],
+  "外交": [
+    "ngoại giao",
+    "thuộc ngoại giao",
+    "công việc đối ngoại",
+    "LT:個|个[ge4]"
+  ],
+  "本事": [
+    "khả năng",
+    "kỹ năng"
+  ],
+  "高速公路": [
+    "đường cao tốc; xa lộ"
+  ],
+  "种子": [
+    "hạt giống",
+    "LT:顆|颗[ke1],粒[li4]"
+  ],
+  "录音": [
+    "ghi âm (âm thanh)",
+    "bản ghi âm",
+    "LT:個|个[ge4]"
+  ],
+  "接待": [
+    "tiếp đón; chiêu đãi; tiếp khách (khách, du khách hoặc khách hàng)"
+  ],
+  "推动": [
+    "thúc đẩy (ví dụ: để chấp nhận một kế hoạch); khuyến khích; tạo động lực cho"
+  ],
+  "北部": [
+    "phần phía bắc"
+  ],
+  "适用": [
+    "có thể áp dụng"
+  ],
+  "客观": [
+    "khách quan",
+    "công bằng"
+  ],
+  "裙子": [
+    "váy",
+    "LT:條|条[tiao2]"
+  ],
+  "香蕉": [
+    "quả chuối",
+    "LT: 枝[zhi1], 根[gen1], 個|个[ge4], 把[ba3]"
+  ],
+  "牌子": [
+    "biển hiệu",
+    "thương hiệu",
+    "nhãn hiệu"
+  ],
+  "应用": [
+    "đưa vào sử dụng; áp dụng",
+    "thực tiễn; ứng dụng (khoa học, ngôn ngữ học, v.v.)",
+    "ứng dụng; sử dụng thực tế",
+    "(tin học) ứng dụng"
+  ],
+  "服务员": [
+    "bồi bàn",
+    "nhân viên phục vụ",
+    "nhân viên chăm sóc khách hàng",
+    "LT:個|个[ge4],位[wei4]"
+  ],
+  "电台": [
+    "máy phát thu",
+    "trạm phát sóng",
+    "đài phát thanh",
+    "LT:個|个[ge4],家[jia1]"
+  ],
+  "金牌": [
+    "huy chương vàng",
+    "LT:枚[mei2]"
+  ],
+  "工程师": [
+    "kỹ sư",
+    "LT:個|个[ge4],位[wei4],名[ming2]"
+  ],
+  "优点": [
+    "ưu điểm",
+    "lợi ích",
+    "điểm mạnh",
+    "lợi thế",
+    "LT:個|个[ge4],項|项[xiang4]"
+  ],
+  "完善": [
+    "(hệ thống, cơ sở vật chất, v.v.) toàn diện",
+    "phát triển tốt",
+    "xuất sắc",
+    "cải thiện",
+    "nâng cao"
+  ],
+  "旅馆": [
+    "khách sạn",
+    "lượng từ: 家[jia1]"
+  ],
+  "志愿者": [
+    "tình nguyện viên"
+  ],
+  "发达": [
+    "phát triển tốt; hưng thịnh",
+    "phát triển; thúc đẩy; mở rộng",
+    "(văn học) đạt được danh vọng và tài lộc; thịnh vượng"
+  ],
+  "人工": [
+    "nhân tạo",
+    "nhân lực",
+    "công việc thủ công"
+  ],
+  "普遍": [
+    "phổ quát",
+    "chung chung",
+    "lan rộng",
+    "phổ biến"
+  ],
+  "爱心": [
+    "lòng trắc ẩn",
+    "nhân ái",
+    "quan tâm đến người khác",
+    "tình yêu",
+    "LT:片[pian4]",
+    "từ thiện (chợ từ thiện, ngày hội golf v.v.)",
+    "trái tim (biểu tượng ♥)"
+  ],
+  "形状": [
+    "hình dạng; hình dáng",
+    "LT:個|个[ge4]"
+  ],
+  "短期": [
+    "ngắn hạn"
+  ],
+  "全场": [
+    "mọi người có mặt",
+    "toàn bộ khán giả",
+    "toàn diện",
+    "nhất trí",
+    "toàn bộ thời gian (của một cuộc thi đấu hoặc trận đấu)"
+  ],
+  "价钱": [
+    "giá cả"
+  ],
+  "证件": [
+    "giấy chứng nhận; giấy tờ; thông tin xác thực; tài liệu; ID"
+  ],
+  "共有": [
+    "có tất cả",
+    "tổng cộng"
+  ],
+  "干吗": [
+    "xem 幹嘛|干嘛[gan4 ma2]"
+  ],
+  "底下": [
+    "vị trí bên dưới cái gì",
+    "sau đó"
+  ],
+  "开展": [
+    "khai mạc",
+    "phát triển",
+    "mở ra",
+    "(ví dụ: triển lãm) mở cửa"
+  ],
+  "美食": [
+    "món ngon",
+    "món ăn tinh tế",
+    "ẩm thực hảo hạng"
+  ],
+  "推广": [
+    "mở rộng",
+    "lan rộng",
+    "phổ biến",
+    "khái quát hóa",
+    "quảng bá (sản phẩm, v.v.)"
+  ],
+  "古代": [
+    "thời cổ đại"
+  ],
+  "中华民族": [
+    "dân tộc Trung Hoa",
+    "nhân dân Trung Hoa (cách gọi chung cho tất cả các nhóm dân tộc ở Trung Quốc)"
+  ],
+  "散步": [
+    "đi dạo; đi bộ"
+  ],
+  "农业": [
+    "nông nghiệp"
+  ],
+  "大夫": [
+    "bác sĩ",
+    "thầy thuốc"
+  ],
+  "面积": [
+    "diện tích (của sàn, mảnh đất, v.v.)",
+    "diện tích bề mặt",
+    "khu đất"
+  ],
+  "前后": [
+    "khoảng",
+    "từ đầu đến cuối",
+    "khắp nơi",
+    "trước và sau"
+  ],
+  "加工": [
+    "chế biến",
+    "xử lý",
+    "vận hành (máy móc)"
+  ],
+  "学费": [
+    "học phí",
+    "tiền học",
+    "LT:個|个[ge4]"
+  ],
+  "中部": [
+    "phần giữa",
+    "khu vực trung tâm"
+  ],
+  "歌声": [
+    "giọng hát",
+    "nghĩa bóng: giọng gốc của nhà thơ"
+  ],
+  "束": [
+    "buộc",
+    "bó",
+    "gói",
+    "lượng từ cho bó, gói, tia sáng, v.v.",
+    "kiểm soát"
+  ],
+  "否定": [
+    "phủ định",
+    "phủ nhận",
+    "từ chối",
+    "câu trả lời phủ định",
+    "sự phủ định"
+  ],
+  "主张": [
+    "ủng hộ",
+    "tán thành",
+    "quan điểm",
+    "lập trường",
+    "chủ trương",
+    "khẳng định",
+    "LT:個|个[ge4]"
+  ],
+  "认出": [
+    "nhận ra",
+    "nhận diện"
+  ],
+  "性别": [
+    "giới tính"
+  ],
+  "亲切": [
+    "thân thiện",
+    "ấm áp",
+    "gần gũi",
+    "quen thuộc"
+  ],
+  "气候": [
+    "(khí tượng) khí hậu",
+    "(bóng) bầu không khí; điều kiện thịnh hành (trong các vấn đề nhân sự)",
+    "Lượng từ: 種|种[zhong3]"
+  ],
+  "办理": [
+    "xử lý; tiến hành; thực hiện"
+  ],
+  "规范": [
+    "chuẩn mực",
+    "tiêu chuẩn",
+    "quy cách",
+    "quy định",
+    "quy tắc",
+    "trong phạm vi quy định",
+    "đặt ra quy tắc",
+    "điều chỉnh",
+    "quy định cụ thể"
+  ],
+  "可乐": [
+    "vui",
+    "hay ho, thú vị",
+    "(từ mượn) cola"
+  ],
+  "近期": [
+    "gần về mặt thời gian",
+    "gần đây",
+    "trong tương lai gần",
+    "rất sớm"
+  ],
+  "自主": [
+    "độc lập",
+    "tự mình quyết định",
+    "tự chủ"
+  ],
+  "歌迷": [
+    "người hâm mộ ca sĩ"
+  ],
+  "握手": [
+    "bắt tay"
+  ],
+  "民间": [
+    "trong nhân dân",
+    "dân gian",
+    "thuộc về dân chúng",
+    "phi chính phủ",
+    "liên quan đến người dân thay vì chính phủ"
+  ],
+  "题目": [
+    "chủ đề; tiêu đề; đề tài (LT:個|个[ge4])",
+    "câu hỏi bài tập hoặc thi cử (LT:道[dao4])"
+  ],
+  "解开": [
+    "tháo ra",
+    "mở ra",
+    "giải (một bí ẩn)"
+  ],
+  "跑步": [
+    "chạy",
+    "chạy bộ",
+    "(quân đội) diễu hành nhanh"
+  ],
+  "初中": [
+    "trường trung học cơ sở (viết tắt của 初級中學|初级中学[chu1 ji2 zhong1 xue2])"
+  ],
+  "将近": [
+    "gần như",
+    "hầu như",
+    "gần tới"
+  ],
+  "卫生间": [
+    "phòng tắm",
+    "nhà vệ sinh",
+    "WC",
+    "LT:間|间[jian1]"
+  ],
+  "不光": [
+    "không phải duy nhất",
+    "không chỉ"
+  ],
+  "子女": [
+    "con cái; con trai và con gái"
+  ],
+  "老太太": [
+    "bà lão (tôn kính)",
+    "mẹ kính yêu",
+    "LT:位[wei4]"
+  ],
+  "上衣": [
+    "áo khoác",
+    "áo ngoài",
+    "lượng từ: 件[jian4]"
+  ],
+  "建成": [
+    "xây dựng",
+    "thiết lập"
+  ],
+  "打听": [
+    "hỏi thăm",
+    "tìm hiểu",
+    "hỏi quanh"
+  ],
+  "定期": [
+    "vào các ngày cố định",
+    "định kỳ",
+    "theo định kỳ",
+    "có thời hạn giới hạn",
+    "thời hạn cố định"
+  ],
+  "一方面": [
+    "một mặt"
+  ],
+  "动人": [
+    "cảm động",
+    "xúc động"
+  ],
+  "老百姓": [
+    "người dân thường",
+    "người bình thường",
+    "LT:個|个[ge4]"
+  ],
+  "果汁": [
+    "nước ép trái cây"
+  ],
+  "剧场": [
+    "rạp hát",
+    "LT:個|个[ge4]"
+  ],
+  "搬家": [
+    "chuyển nhà; di dời",
+    "loại bỏ (cái gì đó)"
+  ],
+  "开业": [
+    "khai trương kinh doanh",
+    "mở phòng khám",
+    "mở cửa (kinh doanh)"
+  ],
+  "生动": [
+    "sinh động",
+    "sống động"
+  ],
+  "就业": [
+    "tìm được việc làm",
+    "việc làm"
+  ],
+  "彩色": [
+    "màu",
+    "sặc sỡ",
+    "LT:種|种[zhong3]"
+  ],
+  "节约": [
+    "tiết kiệm",
+    "bảo tồn (tài nguyên)",
+    "tính tiết kiệm",
+    "đạm bạc"
+  ],
+  "单元": [
+    "đơn vị (hình thành một thể)",
+    "thành phần",
+    "(trong toà nhà chung cư) lối vào hoặc cầu thang"
+  ],
+  "海关": [
+    "hải quan (tức kiểm tra cửa khẩu)",
+    "LT:個|个[ge4]"
+  ],
+  "自觉": [
+    "có ý thức",
+    "nhận thức",
+    "tự mình chủ động",
+    "tận tâm"
+  ],
+  "收看": [
+    "xem (chương trình TV)"
+  ],
+  "公务员": [
+    "công chức",
+    "người làm việc văn phòng"
+  ],
+  "暖和": [
+    "ấm",
+    "ấm áp"
+  ],
+  "被子": [
+    "chăn",
+    "LT:床[chuang2]"
+  ],
+  "农村": [
+    "khu vực nông thôn",
+    "làng",
+    "LT:個|个[ge4]"
+  ],
+  "世界杯": [
+    "World Cup"
+  ],
+  "听众": [
+    "khán giả",
+    "thính giả"
+  ],
+  "变为": [
+    "thay đổi thành"
+  ],
+  "邮箱": [
+    "hộp thư",
+    "hộp thư bưu điện",
+    "thư điện tử",
+    "hộp thư email"
+  ],
+  "标题": [
+    "tiêu đề",
+    "đề mục",
+    "tựa đề",
+    "chú thích",
+    "chủ đề"
+  ],
+  "预报": [
+    "dự báo"
+  ],
+  "整齐": [
+    "ngăn nắp",
+    "gọn gàng",
+    "đều",
+    "ngay ngắn"
+  ],
+  "志愿": [
+    "nguyện vọng",
+    "tham vọng",
+    "tình nguyện"
+  ],
+  "职工": [
+    "nhân viên; cán bộ nhân viên; công nhân"
+  ],
+  "木头": [
+    "chậm chạp",
+    "đần độn",
+    "khúc gỗ (gỗ, gỗ timber, v.v.)",
+    "LT:塊|块[kuai4],根[gen1]"
+  ],
+  "熟人": [
+    "người quen",
+    "bạn bè"
+  ],
+  "报到": [
+    "báo cáo có mặt",
+    "đăng ký",
+    "điểm danh"
+  ],
+  "景色": [
+    "phong cảnh",
+    "cảnh",
+    "quang cảnh",
+    "tầm nhìn"
+  ],
+  "表格": [
+    "biểu mẫu",
+    "bảng",
+    "LT:張|张[zhang1],份[fen4]"
+  ],
+  "功课": [
+    "bài tập",
+    "giao bài",
+    "nhiệm vụ",
+    "bài trên lớp",
+    "bài học",
+    "học hành",
+    "LT:門|门[men2]"
+  ],
+  "美术": [
+    "nghệ thuật",
+    "mỹ thuật",
+    "hội họa",
+    "LT:種|种[zhong3]"
+  ],
+  "故乡": [
+    "quê hương",
+    "quê nhà",
+    "nơi sinh",
+    "LT:個|个[ge4]"
+  ],
+  "认得": [
+    "nhận ra",
+    "nhớ điều gì đó (hoặc ai đó) khi nhìn thấy",
+    "biết"
+  ],
+  "邮票": [
+    "tem (bưu chính)",
+    "Lượng từ: 枚[mei2], 張|张[zhang1]"
+  ],
+  "房租": [
+    "tiền thuê phòng hoặc nhà"
+  ],
+  "武术": [
+    "kỹ năng hoặc kỹ thuật quân sự (thời xưa)",
+    "các môn thể thao võ thuật (một số tuyên bố phát triển tâm linh)",
+    "tự vệ",
+    "truyền thống các trận đấu được biên đạo từ kinh kịch và phim ảnh (cách dùng gần đây)",
+    "còn gọi là kungfu 功夫",
+    "LT:種|种[zhong3]"
+  ],
+  "推开": [
+    "đẩy ra (cổng, v.v.)",
+    "đẩy đi",
+    "từ chối"
+  ],
+  "短裤": [
+    "quần ngắn",
+    "quần shorts"
+  ],
+  "房东": [
+    "chủ nhà"
+  ],
+  "广大": [
+    "(về diện tích) rộng hoặc bao la",
+    "quy mô lớn",
+    "phổ biến",
+    "(về người) đông đúc"
+  ],
+  "收音机": [
+    "radio",
+    "Lượng từ: 臺|台[tai2]"
+  ],
+  "长城": [
+    "Vạn Lý Trường Thành"
+  ],
+  "收听": [
+    "nghe (chương trình phát thanh)"
+  ],
+  "电子邮件": [
+    "email",
+    "LT:封[feng1],份[fen4]"
+  ],
+  "初级": [
+    "sơ cấp",
+    "cơ bản"
+  ],
+  "听力": [
+    "thính giác",
+    "khả năng nghe"
+  ],
+  "信封": [
+    "phong bì",
+    "Lượng từ:個|个[ge4]"
+  ],
+  "衬衣": [
+    "áo sơ mi",
+    "LT:件[jian4]"
+  ],
+  "结实": [
+    "rắn chắc",
+    "cường tráng",
+    "mạnh mẽ",
+    "bền",
+    "buff (thể chất)"
+  ],
+  "班级": [
+    "lớp học (nhóm học sinh)",
+    "khối lớp (trong trường)"
+  ],
+  "现代化": [
+    "hiện đại hóa",
+    "LT:個|个[ge4]"
+  ],
+  "专题": [
+    "chủ đề cụ thể (được đề cập trong sách, bài giảng, chương trình TV, v.v.)",
+    "bài viết, báo cáo hoặc chương trình về một chủ đề cụ thể"
+  ],
+  "工夫": [
+    "khoảng thời gian (có thể là vài tháng, hoặc chỉ vài giây)",
+    "thời gian rảnh",
+    "kỹ năng",
+    "lao động",
+    "nỗ lực"
+  ],
+  "创业": [
+    "bắt đầu sự nghiệp; khởi nghiệp",
+    "tinh thần khởi nghiệp"
+  ],
+  "本领": [
+    "kỹ năng",
+    "khả năng",
+    "năng lực",
+    "LT:項|项[xiang4],個|个[ge4]"
+  ],
+  "旅行社": [
+    "công ty du lịch"
+  ],
+  "话剧": [
+    "vở kịch sân khấu",
+    "kịch hiện đại",
+    "LT:臺|台[tai2],部[bu4]"
+  ],
+  "大使馆": [
+    "đại sứ quán",
+    "LT:座[zuo4],個|个[ge4]"
+  ],
+  "沙子": [
+    "cát",
+    "sạn",
+    "LT:粒[li4],把[ba3]"
+  ],
+  "分组": [
+    "chia thành nhóm",
+    "nhóm (hình thành từ một nhóm lớn hơn)",
+    "nhóm phụ",
+    "gói (mạng máy tính)"
+  ],
+  "请教": [
+    "hỏi để được hướng dẫn",
+    "tham khảo"
+  ],
+  "年底": [
+    "cuối năm"
+  ],
+  "带动": [
+    "thúc đẩy; tạo động lực; dẫn động"
+  ],
+  "交警": [
+    "cảnh sát giao thông (viết tắt của 交通警察[jiao1 tong1 jing3 cha2])"
+  ],
+  "代表团": [
+    "đoàn đại biểu",
+    "LT:個|个[ge4]"
+  ],
+  "影视": [
+    "phim và truyền hình"
+  ],
+  "国庆": [
+    "Quốc khánh"
+  ],
+  "做客": [
+    "làm khách hoặc thăm viếng"
+  ],
+  "理发": [
+    "cắt tóc; làm tóc",
+    "cắt tóc (cho ai đó); cắt tóc cho (ai đó)"
+  ],
+  "所长": [
+    "điều mà một người giỏi"
+  ],
+  "票价": [
+    "giá vé; giá vé xe; phí vào cửa"
+  ],
+  "华人": [
+    "người Hoa hoặc người gốc Hoa"
+  ],
+  "有的是": [
+    "có nhiều",
+    "không thiếu"
+  ],
+  "皮包": [
+    "túi xách",
+    "cặp tài liệu"
+  ],
+  "连续剧": [
+    "phim truyền hình nhiều tập",
+    "phim bộ",
+    "chương trình nhiều phần"
+  ],
+  "复印": [
+    "sao chép",
+    "tạo bản sao tài liệu"
+  ],
+  "图画": [
+    "tranh",
+    "hình ảnh"
+  ],
+  "长处": [
+    "điểm tốt",
+    "điểm mạnh"
+  ],
+  "绿茶": [
+    "trà xanh",
+    "(tiếng lóng) (về một cô gái) tưởng chừng như ngây thơ và quyến rũ nhưng thực ra lại toan tính và thủ đoạn",
+    "một cô gái có những nét này"
+  ],
+  "留学": [
+    "du học"
+  ],
+  "教材": [
+    "tài liệu giảng dạy",
+    "LT:本[ben3]"
+  ],
+  "书架": [
+    "giá sách",
+    "LT:個|个[ge4]"
+  ],
+  "白菜": [
+    "cải thảo",
+    "cải bẹ trắng",
+    "LT: 棵[ke1], 個|个[ge4]"
+  ],
+  "普及": [
+    "lan rộng",
+    "phổ biến",
+    "phổ cập",
+    "phổ thông",
+    "khắp nơi",
+    "thịnh hành",
+    "toàn cầu"
+  ],
+  "年初": [
+    "đầu năm"
+  ],
+  "试题": [
+    "câu hỏi thi",
+    "chủ đề kiểm tra"
+  ],
+  "积极性": [
+    "nhiệt huyết",
+    "sáng kiến",
+    "đam mê",
+    "tính tích cực"
+  ],
+  "初一": [
+    "ngày mùng một tháng âm lịch",
+    "Tết Nguyên Đán",
+    "năm thứ nhất trung học cơ sở"
+  ],
+  "奶茶": [
+    "trà sữa"
+  ],
+  "银牌": [
+    "huy chương bạc",
+    "LT: 枚[mei2]"
+  ],
+  "红茶": [
+    "trà đen",
+    "LT:杯[bei1],壺|壶[hu2]"
+  ],
+  "人民币": [
+    "Nhân dân tệ (NDT)",
+    "Đồng Yuan Trung Quốc (CNY)"
+  ],
+  "老头儿": [
+    "xem 老頭子|老头子[lao3 tou2 zi5]"
+  ],
+  "划船": [
+    "chèo thuyền",
+    "môn chèo thuyền",
+    "thuyền nhỏ"
+  ],
+  "交费": [
+    "trả phí"
+  ],
+  "凉水": [
+    "nước mát",
+    "nước chưa đun sôi"
+  ],
+  "跳高": [
+    "nhảy cao (điền kinh)"
+  ],
+  "衣架": [
+    "móc treo quần áo",
+    "giá treo quần áo"
+  ],
+  "外文": [
+    "ngoại ngữ (viết)"
+  ],
+  "短处": [
+    "khuyết điểm",
+    "thiếu sót",
+    "lỗi",
+    "điểm yếu của một người"
+  ],
+  "空儿": [
+    "thời gian rảnh",
+    "thời gian tự do"
+  ],
+  "预习": [
+    "chuẩn bị bài"
+  ],
+  "跳远": [
+    "nhảy xa (điền kinh)"
+  ],
+  "京剧": [
+    "Kinh kịch",
+    "LT:場|场[chang3],齣|出[chu1]"
+  ],
+  "后年": [
+    "năm sau nữa"
+  ],
+  "连忙": [
+    "ngay lập tức",
+    "lập tức"
+  ],
+  "红酒": [
+    "rượu vang đỏ"
+  ]
+}
