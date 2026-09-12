@@ -110,6 +110,7 @@ function WordIntroSlide({ word, onContinue }: { word: Word; onContinue: () => vo
     <div className="flex flex-col items-center gap-4 py-6">
       <div className="text-6xl">{word.simplified}</div>
       <div className="text-2xl text-red-700">{word.pinyin}</div>
+      {word.hanViet && <div className="text-base italic text-stone-500">{word.hanViet}</div>}
       <SpeakButton text={word.simplified} size="lg" />
       {word.traditional !== word.simplified && (
         <div className="text-sm text-stone-500">Traditional: {word.traditional}</div>
@@ -133,7 +134,10 @@ function WordWritingSlide({ word, onContinue }: { word: Word; onContinue: () => 
           <HanziWriterComponent key={`${ch}-${i}`} character={ch} mode="animate" width={140} height={140} />
         ))}
       </div>
-      <div className="text-lg text-stone-700">{word.simplified} — {word.pinyin}</div>
+      <div className="text-lg text-stone-700">
+        {word.simplified} — {word.pinyin}
+        {word.hanViet && ` · ${word.hanViet}`}
+      </div>
       <ContinueButton onClick={onContinue} />
     </div>
   );
@@ -188,6 +192,7 @@ function ReviewIntroSlide({
           <li key={w.id} className="flex items-center gap-3 text-sm text-stone-700">
             <span className="text-lg">{w.simplified}</span>
             <span className="text-stone-500">{w.pinyin}</span>
+            {w.hanViet && <span className="italic text-stone-500">{w.hanViet}</span>}
             <span>{w.meanings[0]}</span>
           </li>
         ))}

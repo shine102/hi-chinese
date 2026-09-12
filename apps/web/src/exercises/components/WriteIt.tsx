@@ -25,6 +25,7 @@ export function WriteIt({ exercise, answered, onAnswer }: ExerciseProps<WriteItE
   if (!charData && !answered) return <Loading label="Loading character…" />;
 
   const pinyin = charData?.pinyin.join(', ') ?? '';
+  const hanViet = charData?.hanViet ?? '';
   const meaning = charData?.definition ?? '';
 
   return (
@@ -34,6 +35,7 @@ export function WriteIt({ exercise, answered, onAnswer }: ExerciseProps<WriteItE
       </p>
       <div className="text-center">
         <p className="text-lg font-medium">{pinyin}</p>
+        {hanViet && <p className="text-sm italic text-stone-500">{hanViet}</p>}
         <p className="text-sm text-stone-600">{meaning}</p>
       </div>
       {answered ? (

@@ -8,6 +8,7 @@ function word(
   meanings: string[],
   unitId: string,
   frequency: number,
+  hanViet: string,
 ): Word {
   return {
     id: `w:${simplified}`,
@@ -15,6 +16,7 @@ function word(
     traditional: simplified,
     pinyin,
     pinyinNumeric,
+    hanViet,
     meanings,
     alternates: [],
     pos: [],
@@ -27,16 +29,16 @@ function word(
 }
 
 export const fixtureWords: Word[] = [
-  word('我', 'wǒ', 'wo3', ['I; me'], 'l1-u01', 1),
-  word('你', 'nǐ', 'ni3', ['you'], 'l1-u01', 2),
-  word('他', 'tā', 'ta1', ['he; him'], 'l1-u01', 3),
-  word('是', 'shì', 'shi4', ['to be; yes'], 'l1-u01', 4),
-  word('不', 'bù', 'bu4', ['not; no'], 'l1-u01', 5),
-  word('好', 'hǎo', 'hao3', ['good; well'], 'l1-u01', 6),
-  word('们', 'men', 'men5', ['plural suffix for pronouns'], 'l1-u02', 7),
-  word('老师', 'lǎoshī', 'lao3shi1', ['teacher'], 'l1-u02', 8),
-  word('学生', 'xuésheng', 'xue2sheng5', ['student'], 'l1-u02', 9),
-  word('吗', 'ma', 'ma5', ['question particle'], 'l1-u02', 10),
+  word('我', 'wǒ', 'wo3', ['I; me'], 'l1-u01', 1, 'Ngã'),
+  word('你', 'nǐ', 'ni3', ['you'], 'l1-u01', 2, 'Nhĩ'),
+  word('他', 'tā', 'ta1', ['he; him'], 'l1-u01', 3, 'Tha'),
+  word('是', 'shì', 'shi4', ['to be; yes'], 'l1-u01', 4, 'Thị'),
+  word('不', 'bù', 'bu4', ['not; no'], 'l1-u01', 5, 'Bất'),
+  word('好', 'hǎo', 'hao3', ['good; well'], 'l1-u01', 6, 'Hảo'),
+  word('们', 'men', 'men5', ['plural suffix for pronouns'], 'l1-u02', 7, 'Môn'),
+  word('老师', 'lǎoshī', 'lao3shi1', ['teacher'], 'l1-u02', 8, 'Lão sư'),
+  word('学生', 'xuésheng', 'xue2sheng5', ['student'], 'l1-u02', 9, 'Học sinh'),
+  word('吗', 'ma', 'ma5', ['question particle'], 'l1-u02', 10, 'Ma'),
 ];
 
 export const fixtureUnit1: UnitChunk = {
@@ -126,6 +128,7 @@ export const fixtureCharacters: CharacterData[] = [
       ],
     ],
     pinyin: ['wǒ'],
+    hanViet: 'Ngã',
     definition: 'I; me',
     radical: '戈',
     decomposition: '⿰扌戈',
@@ -142,6 +145,7 @@ export const fixtureCharacters: CharacterData[] = [
       ],
     ],
     pinyin: ['nǐ'],
+    hanViet: 'Nhĩ',
     definition: 'you',
     radical: '亻',
     decomposition: '⿰亻尔',

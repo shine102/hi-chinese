@@ -9,6 +9,7 @@ function word(simplified: string, level: 1 | 2 | 3, unitId: string): Word {
     traditional: simplified,
     pinyin: 'x',
     pinyinNumeric: 'x1',
+    hanViet: 'X',
     meanings: ['meaning'],
     alternates: [],
     pos: [],

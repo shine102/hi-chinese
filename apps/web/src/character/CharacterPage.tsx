@@ -63,6 +63,7 @@ export function CharacterPage() {
           <h1 className="text-5xl">{ch}</h1>
           <div className="flex items-center gap-2">
             <span className="text-lg text-stone-600">{data.pinyin.join(', ')}</span>
+            {data.hanViet && <span className="text-lg italic text-stone-500">{data.hanViet}</span>}
             <SpeakButton text={ch} />
           </div>
           {data.definition && <p className="text-stone-800">{data.definition}</p>}
@@ -85,6 +86,7 @@ export function CharacterPage() {
                 <div className="flex items-baseline gap-2">
                   <span className="text-lg">{w.simplified}</span>
                   <span className="text-sm text-stone-600">{w.pinyin}</span>
+                  {w.hanViet && <span className="text-sm italic text-stone-500">{w.hanViet}</span>}
                   <span className="text-sm text-stone-500">
                     {w.meanings.slice(0, 2).join('; ')}
                   </span>

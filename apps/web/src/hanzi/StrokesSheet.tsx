@@ -55,6 +55,7 @@ export function StrokesSheet({ word, onClose }: { word: Word; onClose: () => voi
                   <div className="flex flex-col gap-1 pt-2">
                     <div className="text-2xl">{ch}</div>
                     <div className="text-sm text-stone-600">{data.pinyin.join(', ')}</div>
+                    {data.hanViet && <div className="text-sm italic text-stone-500">{data.hanViet}</div>}
                     {data.definition && (
                       <div className="text-sm text-stone-800">{data.definition}</div>
                     )}
