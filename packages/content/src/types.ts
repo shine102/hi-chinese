@@ -108,6 +108,14 @@ export interface AuthoredSentence {
   words: string[];
 }
 
+export interface AuthoredUnit {
+  id: string;
+  level: HskLevel;
+  order: number;
+  title: string;
+  words: string[];
+}
+
 export interface AuthoredGrammar {
   id: string;
   title: string;

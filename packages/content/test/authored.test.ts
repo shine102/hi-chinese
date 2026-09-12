@@ -38,7 +38,7 @@ describe('loadAuthored', () => {
   });
   it('tolerates a missing overrides file and empty folders', async () => {
     const a = await loadAuthored(dir);
-    expect(a).toEqual({ sentences: [], grammar: [], overrides: {} });
+    expect(a).toEqual({ sentences: [], grammar: [], overrides: {}, units: [] });
   });
   it('rejects a file that is not an array', async () => {
     await writeFile(join(dir, 'grammar', 'bad.json'), JSON.stringify({ id: 'g1' }));
@@ -47,5 +47,22 @@ describe('loadAuthored', () => {
   it('rejects a file with invalid JSON', async () => {
     await writeFile(join(dir, 'grammar', 'bad.json'), '[{"id": }');
     await expect(loadAuthored(dir)).rejects.toThrow(/bad\.json.*invalid JSON/);
+  });
+  it('reads authored units from the units/ directory in filename order', async () => {
+    await mkdir(join(dir, 'units'));
+    await writeFile(
+      join(dir, 'units', 'level1.json'),
+      JSON.stringify([
+        { id: 'l1-u01', level: 1, order: 1, title: 'Hello!', words: ['你', '好'] },
+      ]),
+    );
+    const authored = await loadAuthored(dir);
+    expect(authored.units).toEqual([
+      { id: 'l1-u01', level: 1, order: 1, title: 'Hello!', words: ['你', '好'] },
+    ]);
+  });
+  it('returns an empty units array when the units/ directory is absent', async () => {
+    const authored = await loadAuthored(dir);
+    expect(authored.units).toEqual([]);
   });
 });

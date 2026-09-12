@@ -46,6 +46,7 @@ const authored = (overrides: Partial<Authored> = {}): Authored => ({
   sentences: [],
   grammar: [],
   overrides: {},
+  units: [],
   ...overrides,
 });
 

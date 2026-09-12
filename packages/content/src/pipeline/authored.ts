@@ -1,11 +1,12 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
-import type { AuthoredGrammar, AuthoredSentence, PinyinOverrides } from '../types.js';
+import type { AuthoredGrammar, AuthoredSentence, AuthoredUnit, PinyinOverrides } from '../types.js';
 
 export interface Authored {
   sentences: AuthoredSentence[];
   grammar: AuthoredGrammar[];
   overrides: PinyinOverrides;
+  units: AuthoredUnit[];
 }
 
 async function readJsonArrays<T>(dir: string): Promise<T[]> {
@@ -51,5 +52,6 @@ export async function loadAuthored(authoredDir: string): Promise<Authored> {
     sentences: await readJsonArrays<AuthoredSentence>(join(authoredDir, 'sentences')),
     grammar: await readJsonArrays<AuthoredGrammar>(join(authoredDir, 'grammar')),
     overrides,
+    units: await readJsonArrays<AuthoredUnit>(join(authoredDir, 'units')),
   };
 }
