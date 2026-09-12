@@ -537,96 +537,223 @@ git commit -m "feat(content): place authored-level grammar at earliest example u
 
 **Depends on Task 3** (authored grammar placement) — without it the build fails with `[placement:overflow]` on L1 grammar.
 
+**Reconciliation decision (source-as-truth, user-approved):** The shipped L1 content diverged from the authored source in three ways, so the capture must be broader than unit composition:
+1. `words.json.unitId` is stale (482 L1 words point to pre-curation frequency-chunk units, e.g. 的→l1-u01 while the unit files place 的 in l1-u04) — a latent bug the pipeline corrects.
+2. ~105 L1 sentences (`s:l1:new:*`, `s:l1:new3:*`) and 13 grammar points exist only in `public/content`, missing from `authored/` — capture them into source.
+3. 1 grammar (`g:affirmative-negative-questions`) exists only in source; source-as-truth means it appears in the regenerated L1 (an intended addition).
+
+Byte-identical is therefore neither attainable nor desirable. **New acceptance (enforced by the audit script in Step 8):** L1 unit titles + word membership identical to shipped; NO shipped sentence/grammar lost; the only files that change are `manifest.json`, `words.json`, and `units/l1-u*.json` (L2/L3 + characters byte-identical); every `words.json` unitId change is an L1 correction that matches the curated membership; regenerated content fully self-consistent.
+
 **Files:**
-- Create: `packages/content/scripts/extract-l1-units.ts`
-- Create (generated): `packages/content/src/authored/units/level1.json`
+- Remove (leftover untracked from a prior attempt, if present): `packages/content/scripts/extract-l1-units.ts`
+- Create: `packages/content/scripts/capture-l1-content.ts`
+- Create (generated): `packages/content/src/authored/units/level1.json`, `packages/content/src/authored/sentences/level1-captured.json`, `packages/content/src/authored/grammar/level1-captured.json`
 - Regenerate: `apps/web/public/content/**`
 
 **Interfaces:**
-- Consumes: shipped `apps/web/public/content/units/l1-*.json` (each has `{ unit: { id, order, title, wordIds: string[] } }`, wordIds like `"w:你"`).
-- Produces: `authored/units/level1.json` — array of `AuthoredUnit` (words are wordIds with the `w:` prefix stripped), sorted by `order`.
+- Consumes: shipped `apps/web/public/content/units/l1-*.json` (`UnitChunk`: `{ unit: {id,order,title,wordIds}, sentences: Sentence[], grammar: GrammarPoint[] }`).
+- Produces: `authored/units/level1.json` (`AuthoredUnit[]`), `authored/sentences/level1-captured.json` (`AuthoredSentence[]` = shipped L1 sentences not already in source), `authored/grammar/level1-captured.json` (`AuthoredGrammar[]` = shipped L1 grammar not already in source).
 
-- [ ] **Step 1: Ensure raw sources are present for the build**
+- [ ] **Step 1: Ensure raw sources present + clean baseline**
 
-The build reads pinned raw sources cached under `packages/content/raw/` (see `fetch.ts`). Check they exist:
+Run: `ls packages/content/raw` — expect `complete.json`, `dictionary.txt`, `graphics.txt`. If missing: `pnpm --filter @hi-chinese/content fetch`.
+Run: `rm -f packages/content/scripts/extract-l1-units.ts` (drop the leftover untracked script from a prior attempt).
+Confirm the content tree is clean at HEAD, then snapshot the baseline for the audit:
+Run: `git status --porcelain apps/web/public/content` — expect NO output (clean).
+Run: `cp -r apps/web/public/content .superpowers/sdd/2026-09-12-p0-authored-units-safety-net/baseline`
 
-Run: `ls packages/content/raw`
-Expected: `complete.json`, `dictionary.txt`, `graphics.txt`.
-If missing: `pnpm --filter @hi-chinese/content fetch` (downloads the pinned commits).
+- [ ] **Step 2: Write the capture script**
 
-- [ ] **Step 2: Write the extraction script**
-
-Create `packages/content/scripts/extract-l1-units.ts`:
+Create `packages/content/scripts/capture-l1-content.ts`:
 
 ```ts
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { AuthoredUnit, UnitChunk } from '../src/types.js';
+import type { AuthoredGrammar, AuthoredSentence, AuthoredUnit, UnitChunk } from '../src/types.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const shippedUnitsDir = resolve(here, '../../../apps/web/public/content/units');
-const outDir = resolve(here, '../src/authored/units');
+const authoredDir = resolve(here, '../src/authored');
+const unitsOut = join(authoredDir, 'units');
+const sentencesOut = join(authoredDir, 'sentences');
+const grammarOut = join(authoredDir, 'grammar');
 
-const names = (await readdir(shippedUnitsDir))
-  .filter((n) => /^l1-u\d+\.json$/.test(n))
-  .sort();
+const strip = (id: string) => id.replace(/^w:/, '');
+
+// Ids already in the authored source, ignoring our own -captured files so re-runs are idempotent.
+async function existingIds(dir: string): Promise<Set<string>> {
+  const ids = new Set<string>();
+  let names: string[];
+  try {
+    names = (await readdir(dir)).filter((n) => n.endsWith('.json') && !n.endsWith('-captured.json'));
+  } catch {
+    return ids;
+  }
+  for (const n of names) {
+    const arr = JSON.parse(await readFile(join(dir, n), 'utf8')) as { id: string }[];
+    for (const x of arr) ids.add(x.id);
+  }
+  return ids;
+}
+
+const names = (await readdir(shippedUnitsDir)).filter((n) => /^l1-u\d+\.json$/.test(n)).sort();
 
 const units: AuthoredUnit[] = [];
+const sentences = new Map<string, AuthoredSentence>();
+const grammar = new Map<string, AuthoredGrammar>();
 for (const name of names) {
-  const { unit } = JSON.parse(
-    await readFile(join(shippedUnitsDir, name), 'utf8'),
-  ) as UnitChunk;
-  units.push({
-    id: unit.id,
-    level: 1,
-    order: unit.order,
-    title: unit.title,
-    words: unit.wordIds.map((id) => id.replace(/^w:/, '')),
-  });
+  const chunk = JSON.parse(await readFile(join(shippedUnitsDir, name), 'utf8')) as UnitChunk;
+  const u = chunk.unit;
+  units.push({ id: u.id, level: 1, order: u.order, title: u.title, words: u.wordIds.map(strip) });
+  for (const s of chunk.sentences) {
+    if (!sentences.has(s.id)) {
+      sentences.set(s.id, { id: s.id, zh: s.zh, pinyin: s.pinyin, en: s.en, words: s.wordIds.map(strip) });
+    }
+  }
+  for (const g of chunk.grammar) {
+    if (!grammar.has(g.id)) {
+      grammar.set(g.id, {
+        id: g.id,
+        title: g.title,
+        pattern: g.pattern,
+        explanation: g.explanation,
+        level: g.level,
+        examples: [...g.sentenceIds],
+      });
+    }
+  }
 }
 units.sort((a, b) => a.order - b.order);
 
-await mkdir(outDir, { recursive: true });
-await writeFile(join(outDir, 'level1.json'), `${JSON.stringify(units, null, 2)}\n`, 'utf8');
-console.log(`wrote ${units.length} L1 units to ${join(outDir, 'level1.json')}`);
+const haveSent = await existingIds(sentencesOut);
+const haveGram = await existingIds(grammarOut);
+const capturedSentences = [...sentences.values()]
+  .filter((s) => !haveSent.has(s.id))
+  .sort((a, b) => a.id.localeCompare(b.id));
+const capturedGrammar = [...grammar.values()]
+  .filter((g) => !haveGram.has(g.id))
+  .sort((a, b) => a.id.localeCompare(b.id));
+
+const write = (p: string, v: unknown) => writeFile(p, `${JSON.stringify(v, null, 2)}\n`, 'utf8');
+await mkdir(unitsOut, { recursive: true });
+await write(join(unitsOut, 'level1.json'), units);
+await write(join(sentencesOut, 'level1-captured.json'), capturedSentences);
+await write(join(grammarOut, 'level1-captured.json'), capturedGrammar);
+console.log(
+  `units: ${units.length}; captured sentences: ${capturedSentences.length}; captured grammar: ${capturedGrammar.length}`,
+);
 ```
 
-- [ ] **Step 3: Run the extraction**
+- [ ] **Step 3: Run the capture**
 
-Run: `pnpm --filter @hi-chinese/content exec tsx scripts/extract-l1-units.ts`
-Expected: `wrote 42 L1 units to .../src/authored/units/level1.json`.
+Run: `pnpm --filter @hi-chinese/content exec tsx scripts/capture-l1-content.ts`
+Expected: `units: 42; captured sentences: 105; captured grammar: 13` (exact counts may differ by a few; units MUST be 42).
 
-- [ ] **Step 4: Sanity-check the captured file**
-
-Run: `head -20 packages/content/src/authored/units/level1.json`
-Expected: first unit `{ "id": "l1-u01", "level": 1, "order": 1, "title": "Hello!", "words": ["你", "好", ...] }`.
-
-- [ ] **Step 5: Regenerate content**
+- [ ] **Step 4: Regenerate content**
 
 Run: `pnpm --filter @hi-chinese/content build`
-Expected: prints `content <version> written to .../apps/web/public/content` and the counts/levels summary (HSK 1: 42 units, HSK 2: 63 units, HSK 3: 79 units).
+Expected: build SUCCEEDS (no `[placement:*]` errors) and prints the counts/levels summary (HSK 1: 42 units, HSK 2: 63, HSK 3: 79). If the build fails with placement errors, STOP and report BLOCKED with the errors — a captured sentence/grammar has a data problem.
 
-- [ ] **Step 6: Prove byte-identical output (the acceptance gate)**
+- [ ] **Step 5: Write the audit script**
 
-Run: `git status --porcelain apps/web/public/content && git diff --stat apps/web/public/content`
-Expected: the only changed file is `apps/web/public/content/manifest.json`.
+Create `.superpowers/sdd/2026-09-12-p0-authored-units-safety-net/audit-p0.py`:
 
-Run: `git diff apps/web/public/content/manifest.json`
-Expected: the only changed line is `generatedAt`. If ANY `units/*.json`, `words.json`, or `characters/*.json` shows in the diff, STOP — the L1 capture or the ordering is wrong; investigate before continuing (do not commit).
+```python
+import json, glob, os, sys
+BASE = sys.argv[1]                 # clean-HEAD snapshot of apps/web/public/content
+NEW = "apps/web/public/content"
+fails = []
+
+def rel_files(root):
+    return {os.path.relpath(p, root) for p in glob.glob(f"{root}/**/*", recursive=True) if os.path.isfile(p)}
+
+bf, nf = rel_files(BASE), rel_files(NEW)
+if bf != nf:
+    fails.append(f"file set differs: base-only={sorted(bf-nf)[:5]} new-only={sorted(nf-bf)[:5]}")
+changed = {rel for rel in (bf & nf)
+           if open(f"{BASE}/{rel}", "rb").read() != open(f"{NEW}/{rel}", "rb").read()}
+def allowed(rel):
+    return rel in ("manifest.json", "words.json") or (rel.startswith("units/l1-u") and rel.endswith(".json"))
+unexpected = sorted(c for c in changed if not allowed(c))
+if unexpected:
+    fails.append(f"unexpected files changed (L2/L3 + characters must be byte-identical): {unexpected[:10]}")
+print(f"changed files: {len(changed)} | L1-units={sum(1 for c in changed if c.startswith('units/l1-u'))} words.json={'words.json' in changed} manifest={'manifest.json' in changed}")
+
+def l1units(root):
+    return {os.path.basename(f): json.load(open(f)) for f in glob.glob(f"{root}/units/l1-u*.json")}
+bu, nu = l1units(BASE), l1units(NEW)
+bS = nS = None
+b_sent, n_sent, b_gram, n_gram = set(), set(), set(), set()
+for name in bu:
+    b, n = bu[name]["unit"], nu[name]["unit"]
+    if b["title"] != n["title"]:
+        fails.append(f"{name}: title changed {b['title']!r}->{n['title']!r}")
+    if b["wordIds"] != n["wordIds"]:
+        fails.append(f"{name}: wordIds membership changed")
+    b_sent |= {s["id"] for s in bu[name]["sentences"]}
+    n_sent |= {s["id"] for s in nu[name]["sentences"]}
+    b_gram |= {g["id"] for g in bu[name]["grammar"]}
+    n_gram |= {g["id"] for g in nu[name]["grammar"]}
+if b_sent - n_sent:
+    fails.append(f"LOST shipped sentences ({len(b_sent-n_sent)}): {sorted(b_sent-n_sent)[:10]}")
+if b_gram - n_gram:
+    fails.append(f"LOST shipped grammar ({len(b_gram-n_gram)}): {sorted(b_gram-n_gram)[:10]}")
+print(f"L1 sentences base={len(b_sent)} new={len(n_sent)} added={sorted(n_sent-b_sent)[:5]}")
+print(f"L1 grammar   base={len(b_gram)} new={len(n_gram)} added={sorted(n_gram-b_gram)}")
+
+bw = {w["id"]: w for w in json.load(open(f"{BASE}/words.json"))}
+nw = {w["id"]: w for w in json.load(open(f"{NEW}/words.json"))}
+member = {}
+for f in glob.glob(f"{NEW}/units/*.json"):
+    uc = json.load(open(f))
+    for wid in uc["unit"]["wordIds"]:
+        member[wid] = uc["unit"]["id"]
+wchg = nonL1 = inconsistent = 0
+for wid, w in nw.items():
+    if member.get(wid) != w["unitId"]:
+        inconsistent += 1
+        if inconsistent <= 5:
+            fails.append(f"self-consistency: {wid} unitId={w['unitId']} membership={member.get(wid)}")
+    if bw[wid]["unitId"] != w["unitId"]:
+        wchg += 1
+        if w["level"] != 1:
+            nonL1 += 1
+if nonL1:
+    fails.append(f"{nonL1} non-L1 words changed unitId (expected 0)")
+print(f"words.json unitId changes={wchg} non-L1={nonL1} regen-self-consistent={inconsistent == 0}")
+
+if fails:
+    print("AUDIT: FAIL")
+    for f in fails:
+        print("  -", f)
+    sys.exit(1)
+print("AUDIT: PASS")
+```
+
+- [ ] **Step 6: Run the audit (the acceptance gate)**
+
+Run: `python3 .superpowers/sdd/2026-09-12-p0-authored-units-safety-net/audit-p0.py .superpowers/sdd/2026-09-12-p0-authored-units-safety-net/baseline`
+Expected: last line `AUDIT: PASS`, exit code 0. If it prints `AUDIT: FAIL`, STOP, do NOT commit, and report BLOCKED with the full audit output.
 
 - [ ] **Step 7: Full workspace verification**
 
 Run: `pnpm --filter @hi-chinese/content test`
 Run: `pnpm --filter @hi-chinese/content typecheck`
-Run (web unaffected but confirm nothing broke): `pnpm --filter @hi-chinese/web test`
+Run: `pnpm --filter @hi-chinese/web test`
 Expected: all pass.
 
 - [ ] **Step 8: Commit**
 
+Note: `git add apps/web/public/content` picks up modified files; the new capture files under `src/authored/` are new. The audit baseline lives under `.superpowers/` (git-ignored) — do not commit it.
+
 ```bash
-git add packages/content/scripts/extract-l1-units.ts packages/content/src/authored/units/level1.json apps/web/public/content
-git commit -m "feat(content): capture L1 units as authored data; regenerate content reproducibly"
+git add packages/content/scripts/capture-l1-content.ts \
+        packages/content/src/authored/units/level1.json \
+        packages/content/src/authored/sentences/level1-captured.json \
+        packages/content/src/authored/grammar/level1-captured.json \
+        apps/web/public/content
+git commit -m "feat(content): capture L1 units/sentences/grammar as authored source; regenerate reproducibly"
 ```
 
 ---
@@ -638,8 +765,9 @@ git commit -m "feat(content): capture L1 units as authored data; regenerate cont
 - Section 4 `authored/units/levelN.json` loaded → Task 1 (loader) + Task 3 (level1.json created). ✅
 - Section 7 `units.ts` authored-or-fallback → Task 2. ✅
 - Section 7 `run.ts` wiring → Task 2 Step 5. ✅
-- Section 10 P0 byte-identical regen → Task 3 Step 6. ✅
-- Section 11 reproduction + unit tests → Task 1/2 tests + Task 3 diff gate. ✅
+- Section 7 authored grammar placement (earliest, no cap) → Task 3. ✅
+- Section 10 P0 reproducible regen → Task 4. NOTE: byte-identical proved impossible because shipped L1 diverged from source (stale words.json, ~105 sentences + 13 grammar only in output, 1 grammar only in source). Revised to source-as-truth reconciliation with an objective audit (Task 4 Steps 5-6). ✅
+- Section 11 reproduction + unit tests → Task 1/2/3 tests + Task 4 audit gate. ✅
 - Out of P0 scope (correctly deferred): `hanViet`, `vi`, Vietnamese meanings, L2/L3 curation, single-char ordering, web changes.
 
 **Placeholder scan:** none — every step has concrete code or a concrete command.
@@ -650,4 +778,4 @@ git commit -m "feat(content): capture L1 units as authored data; regenerate cont
 
 - `pnpm` binary lives at `~/.npm-global/node_modules/.bin` in this environment; ensure it is on PATH.
 - Do not add a Claude co-author trailer to commits.
-- Task 3 Step 6 is the single most important check in this phase — it is the whole point of P0. A clean diff there means the pipeline is reproducible and later phases can safely regenerate.
+- Task 4 Step 6 (the audit) is the single most important check in this phase. `AUDIT: PASS` means the pipeline is now the complete, self-consistent source of truth for L1 (all shipped content preserved, stale words.json corrected) and later phases can safely regenerate.
