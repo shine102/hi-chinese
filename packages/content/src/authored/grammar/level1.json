@@ -1,339 +1,16 @@
 [
   {
-    "id": "g:shi-sentences",
-    "title": "Linking with 是",
-    "pattern": "A + 是 + B",
-    "explanation": "是 (shì) links a subject to what it is, like English \"to be\". It never changes form: 我是, 你是, 他是 all use the same 是. Negate it with 不是 (bú shì), never with 没.",
-    "level": 1,
-    "examples": ["s:l1:001", "s:l1:004", "s:l1:008"]
-  },
-  {
-    "id": "g:bu-negation",
-    "title": "Negating with 不",
-    "pattern": "不 + verb / adjective",
-    "explanation": "不 (bù) goes directly before a verb or adjective to negate it: 不是 (is not), 不在 (is not at/there). Before a 4th-tone syllable such as 是 or 在, 不 is pronounced bú.",
-    "level": 1,
-    "examples": ["s:l1:003", "s:l1:004"]
-  },
-  {
-    "id": "g:affirmative-negative-questions",
-    "title": "Yes/no questions with verb-不-verb",
-    "pattern": "Subject + verb + 不 + verb (+ object) ?",
-    "explanation": "Repeat the verb with 不 between the two copies to ask a yes/no question: 是不是 (is or isn't?), 在不在 (there or not?). The 不 in the middle is unstressed and usually written with the neutral tone in pinyin.",
-    "level": 1,
-    "examples": ["s:l1:005", "s:l1:006"]
-  },
-  {
-    "id": "g:you-possession",
-    "title": "有 for possession",
-    "pattern": "Subject + 有 + object",
-    "explanation": "有 (yǒu) means \"to have\". Sentence-final 了 after 有 signals a change: the subject did not have it before but has it now.",
-    "level": 1,
-    "examples": ["s:l1:002", "s:l1:007"]
-  },
-  {
-    "id": "g:hen-adjective",
-    "title": "很 + adjective for descriptions",
-    "pattern": "Subject + 很 + adjective",
-    "explanation": "很 (hěn) goes right before an adjective used as the predicate, since Chinese adjectives don't need a separate \"to be\" verb. Even when it isn't emphasizing \"very\", 很 is often still included just to sound natural — an adjective alone can sound like an unfinished comparison. Never add 是 before the adjective.",
-    "level": 1,
-    "examples": ["s:l1:009", "s:l1:010", "s:l1:011", "s:l1:012"]
-  },
-  {
-    "id": "g:neng-ability",
-    "title": "能 for ability or permission",
-    "pattern": "Subject + 能 + verb",
-    "explanation": "能 (néng) means \"can\" — able to do something because of ability, permission, or circumstance. It goes directly before the verb. Negate it with 不能 (bù néng), \"cannot\".",
-    "level": 1,
-    "examples": ["s:l1:013", "s:l1:014", "s:l1:015", "s:l1:016"]
-  },
-  {
-    "id": "g:gei-recipient",
-    "title": "给 for giving to someone",
-    "pattern": "Subject + 给 + person (+ object)",
-    "explanation": "给 (gěi) means \"to give\" or introduces the person something is done \"for/to\". It comes before the recipient: 我给你 means \"I give it to you\". Like other simple verbs, it can stand alone in a short sentence.",
-    "level": 1,
-    "examples": ["s:l1:017", "s:l1:018", "s:l1:019", "s:l1:020"]
-  },
-  {
-    "id": "g:meiyou-negation",
-    "title": "没 for negating past actions",
-    "pattern": "没 + verb",
-    "explanation": "没 (méi) says an action didn't happen, which is different from 不, which negates general facts or habits. 我没去 means \"I didn't go\", not \"I don't go\". 没 is a short form of 没有 in this use.",
-    "level": 1,
-    "examples": ["s:l1:021", "s:l1:022", "s:l1:023", "s:l1:024"]
-  },
-  {
-    "id": "g:shenme-question",
-    "title": "Asking with 什么 (\"what\")",
-    "pattern": "... + 什么 (+ object)?",
-    "explanation": "什么 (shénme) means \"what\". It stays in the position where the answer would go, rather than moving to the front of the sentence the way English \"what\" does. 你看什么? literally means \"you look-at what?\"",
-    "level": 1,
-    "examples": ["s:l1:025", "s:l1:026", "s:l1:027", "s:l1:028"]
-  },
-  {
     "id": "g:ba-suggestion",
     "title": "吧 for suggestions and requests",
     "pattern": "Sentence + 吧",
     "explanation": "吧 (ba) softens a sentence into a suggestion, request, or guess. 我们去吧 sounds like \"Let's go\", friendlier than a plain statement. It always comes at the very end of the sentence.",
     "level": 1,
-    "examples": ["s:l1:029", "s:l1:030", "s:l1:031", "s:l1:032"]
-  },
-  {
-    "id": "g:ma-question",
-    "title": "吗 for yes/no questions",
-    "pattern": "Statement + 吗?",
-    "explanation": "Adding 吗 (ma) to the end of any statement turns it into a yes/no question, with no change in word order. 你好吗? means \"Are you well?\" This is a simpler alternative to verb-不-verb questions — don't combine the two in one sentence.",
-    "level": 1,
-    "examples": ["s:l1:033", "s:l1:034", "s:l1:035", "s:l1:036"]
-  },
-  {
-    "id": "g:tai-le",
-    "title": "太...了 for \"too much\"",
-    "pattern": "太 + adjective + 了",
-    "explanation": "太 (tài) means \"too\" or \"extremely\", and adding a sentence-final 了 emphasizes the degree. 太好了! is a common exclamation meaning \"Great!\" or \"That's wonderful!\", not a literal complaint.",
-    "level": 1,
-    "examples": ["s:l1:037", "s:l1:038", "s:l1:039", "s:l1:040"]
-  },
-  {
-    "id": "g:zui-superlative",
-    "title": "最 for superlatives",
-    "pattern": "最 + adjective",
-    "explanation": "最 (zuì) makes an adjective superlative, like English \"-est\" or \"most\". Place it directly before the adjective: 最好 (best), 最大 (biggest). No extra word for \"the\" is needed.",
-    "level": 1,
-    "examples": ["s:l1:041", "s:l1:042", "s:l1:043", "s:l1:044"]
-  },
-  {
-    "id": "g:ne-followup",
-    "title": "呢 for follow-up questions",
-    "pattern": "..., + noun + 呢?",
-    "explanation": "After stating something, 你呢? asks \"and you?\" without repeating the whole sentence. 呢 (ne) attaches to the topic being asked about and relies on context from what was just said.",
-    "level": 1,
-    "examples": ["s:l1:045", "s:l1:046", "s:l1:047", "s:l1:048"]
-  },
-  {
-    "id": "g:zenme-how",
-    "title": "怎么 for asking \"how\"",
-    "pattern": "怎么 + verb",
-    "explanation": "怎么 (zěnme) asks about manner or method — \"how\". It goes right before the verb: 这个怎么用? (\"How do you use this?\"). 你怎么了? is a fixed way of asking \"What's wrong (with you)?\"",
-    "level": 1,
-    "examples": ["s:l1:049", "s:l1:050", "s:l1:051", "s:l1:052"]
-  },
-  {
-    "id": "g:gen-with",
-    "title": "跟 for \"with someone\"",
-    "pattern": "Subject + 跟 + person + verb",
-    "explanation": "跟 (gēn) introduces a companion — \"with\" someone. It comes before the verb, not after: 我跟你去 (\"I'll go with you\"), not 我去跟你.",
-    "level": 1,
-    "examples": ["s:l1:053", "s:l1:054", "s:l1:055", "s:l1:056"]
-  },
-  {
-    "id": "g:bi-comparison",
-    "title": "比 for comparisons",
-    "pattern": "A + 比 + B + adjective",
-    "explanation": "比 (bǐ) compares two things directly: A 比 B + adjective means \"A is more [adjective] than B\". Don't add 很 before the adjective in this pattern — 比 already carries the comparison.",
-    "level": 1,
-    "examples": ["s:l1:057", "s:l1:058", "s:l1:059", "s:l1:060"]
-  },
-  {
-    "id": "g:jiao-naming",
-    "title": "叫 for names and calling out",
-    "pattern": "Subject + 叫 + name/word",
-    "explanation": "叫 (jiào) means \"to be called\" when introducing a name, and \"to call out to\" when the object is a person. 他叫什么? asks what someone or something is called.",
-    "level": 1,
-    "examples": ["s:l1:061", "s:l1:062", "s:l1:063", "s:l1:064"]
-  },
-  {
-    "id": "g:bie-prohibition",
-    "title": "别 for telling someone not to",
-    "pattern": "别 + verb (+ object)",
-    "explanation": "别 (bié) means \"don't\" and goes right before the verb, giving a direct instruction. Adding 了 at the end, as in 别说了, softens it to \"stop doing that\" rather than a flat prohibition.",
-    "level": 1,
-    "examples": ["s:l1:065", "s:l1:066", "s:l1:067", "s:l1:068"]
-  },
-  {
-    "id": "g:qing-please",
-    "title": "请 for polite requests",
-    "pattern": "请 + (person) + verb",
-    "explanation": "请 (qǐng) makes a request polite, like English \"please\". It comes at the very front of the sentence, before the person being addressed if one is named: 请你来 (\"Please come\").",
-    "level": 1,
-    "examples": ["s:l1:069", "s:l1:070", "s:l1:071", "s:l1:072"]
-  },
-  {
-    "id": "g:sui-age",
-    "title": "岁 for stating age",
-    "pattern": "Subject + number + 岁",
-    "explanation": "To state age, put the number directly before 岁 (suì, \"years old\") with no verb needed — 是 is not used. 我三岁 means \"I am three years old\". 几岁 asks a child's age.",
-    "level": 1,
-    "examples": ["s:l1:073", "s:l1:074", "s:l1:075", "s:l1:076"]
-  },
-  {
-    "id": "g:xian-first",
-    "title": "先 for \"first\" in a sequence",
-    "pattern": "先 + verb",
-    "explanation": "先 (xiān) means to do something first, before something else happens. It goes before the verb: 我先看 (\"I'll look first\"). It's often paired later with 再 (\"then\"), though each word can also stand alone.",
-    "level": 1,
-    "examples": ["s:l1:077", "s:l1:078", "s:l1:079", "s:l1:080"]
-  },
-  {
-    "id": "g:bang-help",
-    "title": "帮 for helping someone",
-    "pattern": "Subject + 帮 + person (+ verb)",
-    "explanation": "帮 (bāng) means \"to help\". Put it before the person being helped, and optionally follow with a verb to say what the help is for: 他帮我们找 (\"He's helping us look\").",
-    "level": 1,
-    "examples": ["s:l1:081", "s:l1:082", "s:l1:083", "s:l1:084"]
-  },
-  {
-    "id": "g:zhengzai-progressive",
-    "title": "正在 for actions in progress",
-    "pattern": "正在 + verb",
-    "explanation": "正在 (zhèngzài) marks an action happening right now, like English \"-ing\". Put it directly before the verb: 我正在看 (\"I'm looking right now\"). It's often shortened to just 正 or just 在 in casual speech, but 正在 is the clearest form for beginners.",
-    "level": 1,
-    "examples": ["s:l1:085", "s:l1:086", "s:l1:087", "s:l1:088"]
-  },
-  {
-    "id": "g:men-plural-suffix",
-    "title": "们 as a plural suffix",
-    "pattern": "person noun + 们",
-    "explanation": "们 (men) attaches to a noun referring to people to make it plural: 孩子们 (\"children\"), 朋友们 (\"friends\"). It's already built into 我们, 你们, and 他们, but can attach to other people-nouns the same way.",
-    "level": 1,
-    "examples": ["s:l1:089", "s:l1:090", "s:l1:091"]
-  },
-  {
-    "id": "g:time-word-position",
-    "title": "Time words at the start of a sentence",
-    "pattern": "Time word + subject + verb",
-    "explanation": "Words like 明天 (\"tomorrow\") and 今天 (\"today\") usually come at the very start of a sentence or right after the subject — never at the end the way English often puts them. 明天我去 means \"Tomorrow I'll go\", with the time word up front.",
-    "level": 1,
-    "examples": ["s:l1:092", "s:l1:093", "s:l1:094", "s:l1:095", "s:l1:175"]
-  },
-  {
-    "id": "g:duoshao-question",
-    "title": "多少 for \"how many/how much\"",
-    "pattern": "多少 + (measure word) + noun?",
-    "explanation": "多少 (duōshao) asks about quantity, especially larger numbers, prices, or amounts: 多少钱? (\"How much money?\"). Unlike 几, 多少 doesn't require a measure word before the noun, though one can still be added.",
-    "level": 1,
-    "examples": ["s:l1:096", "s:l1:097", "s:l1:098", "s:l1:099"]
-  },
-  {
-    "id": "g:di-ordinal",
-    "title": "第 for ordinal numbers",
-    "pattern": "第 + number",
-    "explanation": "第 (dì) turns a plain number into an ordinal: 第二 (\"second\"), 第一 (\"first\"). Compare 两个 (\"two [things]\") with 第二个 (\"the second [thing]\") — the meaning changes completely once 第 is added.",
-    "level": 1,
-    "examples": ["s:l1:100", "s:l1:101", "s:l1:102", "s:l1:103"]
-  },
-  {
-    "id": "g:zhende-confirm",
-    "title": "真的 for \"really\" and \"true\"",
-    "pattern": "真的 + verb/adjective, or 是真的",
-    "explanation": "真的 (zhēnde) emphasizes that something is genuinely true, either as \"really\" before a verb (你真的想去吗?) or as \"true\" after 是 (这是真的). It's a common way to react to surprising news.",
-    "level": 1,
-    "examples": ["s:l1:104", "s:l1:105", "s:l1:106", "s:l1:107"]
-  },
-  {
-    "id": "g:er-vs-liang",
-    "title": "二 vs 两 for the number two",
-    "pattern": "两 + measure word / 二 in counting and labels",
-    "explanation": "Both 二 (èr) and 两 (liǎng) mean \"two\", but they aren't interchangeable. Use 两 before a measure word like 个 when counting things (两个), and use 二 for counting in sequence, dates, and labels like 二月 (February) or 第二 (second).",
-    "level": 1,
-    "examples": ["s:l1:108", "s:l1:109", "s:l1:110", "s:l1:111"]
-  },
-  {
-    "id": "g:measure-bei",
-    "title": "杯 as a measure word for drinks",
-    "pattern": "Number + 杯 + noun",
-    "explanation": "杯 (bēi) is the measure word for cups or glasses of a drink: 一杯水 (\"a cup of water\"). Like 个, it goes between the number and the noun and is required — you can't say 一水.",
-    "level": 1,
-    "examples": ["s:l1:112", "s:l1:113", "s:l1:114", "s:l1:115"]
-  },
-  {
-    "id": "g:nali-where",
-    "title": "哪里/那里 for location",
-    "pattern": "在 + 哪里/那里",
-    "explanation": "哪里 (nǎlǐ) asks \"where\", and 那里 (nàlǐ) answers \"there\". Both pair naturally with 在: 你在哪里? (\"Where are you?\") and 他在那里 (\"He's over there\").",
-    "level": 1,
-    "examples": ["s:l1:116", "s:l1:117", "s:l1:118", "s:l1:119"]
-  },
-  {
-    "id": "g:mingzi-name",
-    "title": "Asking someone's name with 名字",
-    "pattern": "叫 + 什么 + 名字?",
-    "explanation": "你叫什么名字? (\"What's your name?\") is the standard way to ask a name, combining 叫 (\"to be called\") with 名字 (\"name\"). 名字 can also stand on its own as a noun, as in 他的名字 (\"his name\").",
-    "level": 1,
-    "examples": ["s:l1:120", "s:l1:121", "s:l1:122", "s:l1:123"]
-  },
-  {
-    "id": "g:jieguo-complement",
-    "title": "Resultative complements with 到 and 见",
-    "pattern": "verb + 到 / 见",
-    "explanation": "Adding 到 (dào) or 见 (jiàn) right after a verb shows the action succeeded, not just that it was attempted: 找到 (\"found\", not just \"looked for\"), 看见 (\"saw\", not just \"looked at\"), 听到 (\"heard\"), 回到 (\"made it back to\"). Without the complement, 看 and 听 only describe the effort, not the outcome.",
-    "level": 1,
-    "examples": ["s:l1:124", "s:l1:125", "s:l1:126", "s:l1:127"]
-  },
-  {
-    "id": "g:buyong-neednt",
-    "title": "不用 for \"no need to\"",
-    "pattern": "不用 + verb",
-    "explanation": "不用 (búyòng) means there's no need to do something — softer than telling someone not to with 别. 不用了，谢谢 (\"No need, thanks\") is a common way to politely decline an offer.",
-    "level": 1,
-    "examples": ["s:l1:128", "s:l1:129", "s:l1:130", "s:l1:131"]
-  },
-  {
-    "id": "g:changchang-frequency",
-    "title": "常/常常 for \"often\"",
-    "pattern": "常 / 常常 + verb",
-    "explanation": "常 (cháng) means \"often\", and doubling it to 常常 (chángcháng) makes the same meaning a little more emphatic and conversational. Both go directly before the verb, just like other frequency adverbs such as 也 and 都.",
-    "level": 1,
-    "examples": ["s:l1:132", "s:l1:133", "s:l1:134", "s:l1:135"]
-  },
-  {
-    "id": "g:gei-dianhua",
-    "title": "给...打电话 for calling someone",
-    "pattern": "给 + person + 打电话",
-    "explanation": "打电话 (dǎ diànhuà) means \"to make a phone call\". To say who you're calling, insert 给 + person right before it: 我给你打电话 (\"I'll call you\"). Don't put the person directly before 打电话 without 给.",
-    "level": 1,
-    "examples": ["s:l1:136", "s:l1:137", "s:l1:138", "s:l1:139"]
-  },
-  {
-    "id": "g:vo-compounds",
-    "title": "Verb-object compound words",
-    "pattern": "verb + built-in object (吃饭, 上班, 见面, 起床, 唱歌...)",
-    "explanation": "Many common actions are written as a fixed verb + object pair that work together like a single verb: 吃饭 (\"to eat/have a meal\"), 上班 (\"to go to work\"), 见面 (\"to meet\"), 起床 (\"to get up\"), 唱歌 (\"to sing\"). Treat the whole pair as one unit — don't insert another object after it the way you would with an ordinary verb.",
-    "level": 1,
-    "examples": ["s:l1:140", "s:l1:141", "s:l1:142", "s:l1:143", "s:l1:144"]
-  },
-  {
-    "id": "g:duibuqi-apology",
-    "title": "对不起 and 没什么",
-    "pattern": "对不起 (apology) / 没什么 (it's nothing)",
-    "explanation": "对不起 (duìbuqǐ) means \"I'm sorry\" or \"excuse me\", used to apologize or get someone's attention. 没什么 (méi shénme) is a common reply meaning \"it's nothing\" or \"no big deal\".",
-    "level": 1,
-    "examples": ["s:l1:145", "s:l1:146", "s:l1:147", "s:l1:148"]
-  },
-  {
-    "id": "g:zuihao-suggestion",
-    "title": "最好 for \"had better\"",
-    "pattern": "(Subject +) 最好 + verb",
-    "explanation": "最好 (zuìhǎo) softens advice into \"had better\" or \"(it's) best to\": 你最好休息 (\"You'd better rest\"). It can also open a sentence with no subject, as general advice: 最好现在走 (\"Best to leave now\").",
-    "level": 1,
-    "examples": ["s:l1:149", "s:l1:150", "s:l1:151", "s:l1:152"]
-  },
-  {
-    "id": "g:pangbian-location",
-    "title": "旁边 and 中间 for relative position",
-    "pattern": "Noun + 旁边 / 中间",
-    "explanation": "旁边 (pángbiān, \"next to/beside\") and 中间 (zhōngjiān, \"in the middle\") describe where something is relative to something else. Combine them with 在: 他在我旁边 (\"He's next to me\").",
-    "level": 1,
-    "examples": ["s:l1:153", "s:l1:154", "s:l1:155", "s:l1:156"]
-  },
-  {
-    "id": "g:xingqi-week",
-    "title": "星期 + number for days of the week",
-    "pattern": "星期 + number (一-六) / 星期 + 几?",
-    "explanation": "星期 (xīngqī) means \"week\", and adding a number one through six names that day of the week (星期一 = Monday). Ask which day it is with 星期几?. Sunday uses a different word, covered later.",
-    "level": 1,
-    "examples": ["s:l1:157", "s:l1:158", "s:l1:159", "s:l1:160"]
+    "examples": [
+      "s:l1:029",
+      "s:l1:030",
+      "s:l1:031",
+      "s:l1:032"
+    ]
   },
   {
     "id": "g:bai-hundred",
@@ -341,119 +18,25 @@
     "pattern": "Number + 百 (+ measure word)",
     "explanation": "百 (bǎi) means \"hundred\". Build numbers the same way as with 十: 一百 (100), 两百 (200) — use 两, not 二, before 百 just as with other measure words.",
     "level": 1,
-    "examples": ["s:l1:161", "s:l1:162", "s:l1:163", "s:l1:164"]
+    "examples": [
+      "s:l1:161",
+      "s:l1:162",
+      "s:l1:163",
+      "s:l1:164"
+    ]
   },
   {
-    "id": "g:zher-nar-colloquial",
-    "title": "这儿/哪儿 as spoken alternatives",
-    "pattern": "这儿 / 哪儿",
-    "explanation": "这儿 (zhèr) and 哪儿 (nǎr) are casual, conversational equivalents of 这里 (\"here\") and 哪里 (\"where\"). They're used exactly the same way, most often right after 在.",
+    "id": "g:bang-help",
+    "title": "帮 for helping someone",
+    "pattern": "Subject + 帮 + person (+ verb)",
+    "explanation": "帮 (bāng) means \"to help\". Put it before the person being helped, and optionally follow with a verb to say what the help is for: 他帮我们找 (\"He's helping us look\").",
     "level": 1,
-    "examples": ["s:l1:165", "s:l1:166", "s:l1:167", "s:l1:168"]
-  },
-  {
-    "id": "g:ganshenme-colloquial",
-    "title": "干什么 as a casual \"what are you doing\"",
-    "pattern": "(在) + 干什么?",
-    "explanation": "干什么 (gànshénme) is a casual way to ask what someone is doing or up to, similar to 做什么 but more conversational. It's often paired with 在 to ask about an action in progress: 你在干什么? (\"What are you doing?\")",
-    "level": 1,
-    "examples": ["s:l1:169", "s:l1:170", "s:l1:171"]
-  },
-  {
-    "id": "g:budui-wrong",
-    "title": "不对 for \"wrong/incorrect\"",
-    "pattern": "Subject + 不对",
-    "explanation": "不对 (búduì) is a fixed phrase meaning \"wrong\" or \"incorrect\", used as a complete predicate on its own: 这不对 (\"This is wrong\"). It's a quick way to correct someone or point out a mistake.",
-    "level": 1,
-    "examples": ["s:l1:172", "s:l1:173", "s:l1:174"]
-  },
-  {
-    "id": "g:fangwei-bian",
-    "title": "方位词 + 边 for location words",
-    "pattern": "direction + 边 (东边/西边/南边/北边/上边/下边/前边/后边/左边/右边/里边/外边)",
-    "explanation": "Adding 边 (biān) to a direction or position word makes a full location noun: 左边 (\"the left side\"), 里边 (\"the inside\"), 前边 (\"the front\"). These combine naturally with 在: 商店在右边 (\"The store is on the right\").",
-    "level": 1,
-    "examples": ["s:l1:176", "s:l1:177", "s:l1:178", "s:l1:179", "s:l1:180"]
-  },
-  {
-    "id": "g:meiguanxi-itsok",
-    "title": "没关系 for \"it's OK\"",
-    "pattern": "没关系",
-    "explanation": "没关系 (méi guānxi) means \"it doesn't matter\" or \"no worries\" — a common reply when someone apologizes or worries about causing trouble. It pairs naturally with 对不起.",
-    "level": 1,
-    "examples": ["s:l1:181", "s:l1:182", "s:l1:183"]
-  },
-  {
-    "id": "g:qingwen-excuseme",
-    "title": "请问 for \"excuse me, may I ask\"",
-    "pattern": "请问, + question",
-    "explanation": "请问 (qǐngwèn) politely opens a question, similar to \"Excuse me, ...\" or \"May I ask...\". It always comes first, before the actual question.",
-    "level": 1,
-    "examples": ["s:l1:184", "s:l1:185", "s:l1:186"]
-  },
-  {
-    "id": "g:xuexiao-sheng",
-    "title": "School levels and their students",
-    "pattern": "小学/中学/大学 (+ 生)",
-    "explanation": "小学 (\"elementary school\"), 中学 (\"middle school\"), and 大学 (\"university\") each combine with 生 to name a student at that level: 小学生, 中学生, 大学生. 学生 alone is the general word for \"student\".",
-    "level": 1,
-    "examples": ["s:l1:187", "s:l1:188", "s:l1:189", "s:l1:190"]
-  },
-  {
-    "id": "g:yidianr-quantity",
-    "title": "一点儿 for \"a little\"",
-    "pattern": "verb/adjective + 一点儿",
-    "explanation": "一点儿 (yìdiǎnr) means \"a little\" or \"a bit\". After an adjective, it softens a comparison or request: 慢一点儿 (\"a little slower\"), 大一点儿 (\"a bit bigger\"). After a verb like 要 or 会, it just means a small amount.",
-    "level": 1,
-    "examples": ["s:l1:191", "s:l1:192", "s:l1:193", "s:l1:194"]
-  },
-  {
-    "id": "g:erhua-suffix",
-    "title": "儿 as a colloquial suffix (erhua)",
-    "pattern": "word + 儿",
-    "explanation": "Adding 儿 (r) to certain words gives them a casual, spoken flavor typical of northern Mandarin: 那 → 那儿 (\"there\"), 玩 → 玩儿 (\"to play\"), 女孩 → 女孩儿 (\"girl\"). It's written as its own character but pronounced fused onto the syllable before it, and doesn't change the core meaning.",
-    "level": 1,
-    "examples": ["s:l1:195", "s:l1:196", "s:l1:197", "s:l1:198", "s:l1:199"]
-  },
-  {
-    "id": "g:buke-qi",
-    "title": "不客气 for \"you're welcome\"",
-    "pattern": "不客气",
-    "explanation": "不客气 (bú kèqi) is the standard reply to 谢谢 (\"thank you\"), similar to \"you're welcome\" or \"don't mention it\". Literally it means \"don't be (so) polite\".",
-    "level": 1,
-    "examples": ["s:l1:200", "s:l1:201", "s:l1:202"]
-  },
-  {
-    "id": "g:xiangdui-shijian",
-    "title": "The five relative day words",
-    "pattern": "前天 / 昨天 / 今天 / 明天 / 后天",
-    "explanation": "Chinese has a tidy set of words for days relative to today: 前天 (\"the day before yesterday\"), 昨天 (\"yesterday\"), 今天 (\"today\"), 明天 (\"tomorrow\"), 后天 (\"the day after tomorrow\"). Like other time words, they go at the start of the sentence or right after the subject.",
-    "level": 1,
-    "examples": ["s:l1:203", "s:l1:204", "s:l1:205", "s:l1:206"]
-  },
-  {
-    "id": "g:xingqitian-sunday",
-    "title": "星期天 and 星期日 for Sunday",
-    "pattern": "星期天 / 星期日",
-    "explanation": "Unlike the numbered weekdays (星期一 through 星期六), Sunday breaks the pattern: it's 星期天 or, more formally, 星期日 — both mean the same thing and are used interchangeably.",
-    "level": 1,
-    "examples": ["s:l1:207", "s:l1:208", "s:l1:209"]
-  },
-  {
-    "id": "g:yixiar-brief-verb",
-    "title": "verb + 一下儿 for a quick action",
-    "pattern": "verb + 一下(儿)",
-    "explanation": "Adding 一下儿 (yíxiàr) right after a verb makes the action sound brief, casual, or low-pressure — similar to \"just a second\" in English: 看一下儿 (\"take a quick look\"), 等一下儿 (\"wait a moment\"). It softens requests, making them sound more polite.",
-    "level": 1,
-    "examples": ["s:l1:210", "s:l1:211", "s:l1:212"]
-  },
-  {
-    "id": "g:zuoxia-settle",
-    "title": "坐下 for \"sit down\"",
-    "pattern": "坐下",
-    "explanation": "坐下 (zuòxia) combines 坐 (\"to sit\") with 下 to describe settling into a seated position — \"to sit down\". Use it for the action of sitting down, as opposed to 坐 alone, which can also mean simply \"to be sitting\".",
-    "level": 1,
-    "examples": ["s:l1:213", "s:l1:214", "s:l1:215"]
+    "examples": [
+      "s:l1:081",
+      "s:l1:082",
+      "s:l1:083",
+      "s:l1:084"
+    ]
   },
   {
     "id": "g:banian-halfunit",
@@ -461,7 +44,49 @@
     "pattern": "半 + time word (天/年)",
     "explanation": "半 (\"half\") combines with time words to describe a duration: 半天 (\"half a day\", often used loosely to mean \"a long while\"), 半年 (\"half a year\"). Place the resulting phrase where any duration or time word would go.",
     "level": 1,
-    "examples": ["s:l1:216", "s:l1:217", "s:l1:218"]
+    "examples": [
+      "s:l1:216",
+      "s:l1:217",
+      "s:l1:218"
+    ]
+  },
+  {
+    "id": "g:bi-comparison",
+    "title": "比 for comparisons",
+    "pattern": "A + 比 + B + adjective",
+    "explanation": "比 (bǐ) compares two things directly: A 比 B + adjective means \"A is more [adjective] than B\". Don't add 很 before the adjective in this pattern — 比 already carries the comparison.",
+    "level": 1,
+    "examples": [
+      "s:l1:057",
+      "s:l1:058",
+      "s:l1:059",
+      "s:l1:060"
+    ]
+  },
+  {
+    "id": "g:bie-prohibition",
+    "title": "别 for telling someone not to",
+    "pattern": "别 + verb (+ object)",
+    "explanation": "别 (bié) means \"don't\" and goes right before the verb, giving a direct instruction. Adding 了 at the end, as in 别说了, softens it to \"stop doing that\" rather than a flat prohibition.",
+    "level": 1,
+    "examples": [
+      "s:l1:065",
+      "s:l1:066",
+      "s:l1:067",
+      "s:l1:068"
+    ]
+  },
+  {
+    "id": "g:bu-negation",
+    "title": "Negating with 不",
+    "pattern": "不 + verb / adjective",
+    "explanation": "不 (bù) goes directly before a verb or adjective to negate it: 不是 (is not), 不在 (is not at/there). Before a 4th-tone syllable such as 是 or 在, 不 is pronounced bú.",
+    "level": 1,
+    "examples": [
+      "s:l1:003",
+      "s:l1:004",
+      "s:l1:005"
+    ]
   },
   {
     "id": "g:buda-notvery",
@@ -469,7 +94,237 @@
     "pattern": "不大 + verb/adjective",
     "explanation": "不大 (bú dà) means \"not very\" or \"not really\", softening a negative statement: 不大喜欢 (\"doesn't like very much\"), 不大想去 (\"doesn't really want to go\"). It's a gentler alternative to a flat 不喜欢 or 不想去.",
     "level": 1,
-    "examples": ["s:l1:219", "s:l1:220", "s:l1:221"]
+    "examples": [
+      "s:l1:219",
+      "s:l1:220",
+      "s:l1:221"
+    ]
+  },
+  {
+    "id": "g:budui-wrong",
+    "title": "不对 for \"wrong/incorrect\"",
+    "pattern": "Subject + 不对",
+    "explanation": "不对 (búduì) is a fixed phrase meaning \"wrong\" or \"incorrect\", used as a complete predicate on its own: 这不对 (\"This is wrong\"). It's a quick way to correct someone or point out a mistake.",
+    "level": 1,
+    "examples": [
+      "s:l1:172",
+      "s:l1:173",
+      "s:l1:174"
+    ]
+  },
+  {
+    "id": "g:buke-qi",
+    "title": "不客气 for \"you're welcome\"",
+    "pattern": "不客气",
+    "explanation": "不客气 (bú kèqi) is the standard reply to 谢谢 (\"thank you\"), similar to \"you're welcome\" or \"don't mention it\". Literally it means \"don't be (so) polite\".",
+    "level": 1,
+    "examples": [
+      "s:l1:200",
+      "s:l1:201",
+      "s:l1:202"
+    ]
+  },
+  {
+    "id": "g:buyong-neednt",
+    "title": "不用 for \"no need to\"",
+    "pattern": "不用 + verb",
+    "explanation": "不用 (búyòng) means there's no need to do something — softer than telling someone not to with 别. 不用了，谢谢 (\"No need, thanks\") is a common way to politely decline an offer.",
+    "level": 1,
+    "examples": [
+      "s:l1:128",
+      "s:l1:129",
+      "s:l1:130",
+      "s:l1:131"
+    ]
+  },
+  {
+    "id": "g:changchang-frequency",
+    "title": "常/常常 for \"often\"",
+    "pattern": "常 / 常常 + verb",
+    "explanation": "常 (cháng) means \"often\", and doubling it to 常常 (chángcháng) makes the same meaning a little more emphatic and conversational. Both go directly before the verb, just like other frequency adverbs such as 也 and 都.",
+    "level": 1,
+    "examples": [
+      "s:l1:132",
+      "s:l1:133",
+      "s:l1:134",
+      "s:l1:135"
+    ]
+  },
+  {
+    "id": "g:chuan-clothes",
+    "title": "Wearing clothes with 穿",
+    "pattern": "subject + 穿 + clothing",
+    "explanation": "穿 (chuān) means 'to wear' for clothing: 他穿新衣服 (He wears new clothes). 好看 (hǎokàn, good-looking) can describe people or things.",
+    "level": 1,
+    "examples": [
+      "s:l1:new:070",
+      "s:l1:new:071"
+    ]
+  },
+  {
+    "id": "g:dao-destination",
+    "title": "到 for reaching a destination",
+    "pattern": "来到 / 回到 + place",
+    "explanation": "到 (dào) means 'to arrive at'. Combined with 来 or 回 it shows completed movement toward a destination: 来到北京 (came to Beijing), 回到中国 (returned to China).",
+    "level": 1,
+    "examples": [
+      "s:l1:new3:015",
+      "s:l1:new3:016"
+    ]
+  },
+  {
+    "id": "g:di-ordinal",
+    "title": "第 for ordinal numbers",
+    "pattern": "第 + number",
+    "explanation": "第 (dì) turns a plain number into an ordinal: 第二 (\"second\"), 第一 (\"first\"). Compare 两个 (\"two [things]\") with 第二个 (\"the second [thing]\") — the meaning changes completely once 第 is added.",
+    "level": 1,
+    "examples": [
+      "s:l1:100",
+      "s:l1:101",
+      "s:l1:102",
+      "s:l1:103"
+    ]
+  },
+  {
+    "id": "g:direction-bian",
+    "title": "Direction + 边",
+    "pattern": "方位词 + 边",
+    "explanation": "Add 边 (biān, side) to a direction word to say 'on the left/right/east/etc. side': 左边 (left side), 右边 (right side), 前边 (front), 后边 (back). These follow 在 to say where something is: 在左边 (on the left).",
+    "level": 1,
+    "examples": [
+      "s:l1:new3:009",
+      "s:l1:new3:010",
+      "s:l1:new3:011"
+    ]
+  },
+  {
+    "id": "g:directions-basic",
+    "title": "Basic direction words",
+    "pattern": "东/西/南/北 + noun",
+    "explanation": "Direction words come before what they describe: 东 (dōng, east), 西 (xī, west), 南 (nán, south), 北 (běi, north). 上 (up) and 下 (down) also indicate direction.",
+    "level": 1,
+    "examples": [
+      "s:l1:new:060",
+      "s:l1:new:061"
+    ]
+  },
+  {
+    "id": "g:duibuqi-apology",
+    "title": "对不起 and 没什么",
+    "pattern": "对不起 (apology) / 没什么 (it's nothing)",
+    "explanation": "对不起 (duìbuqǐ) means \"I'm sorry\" or \"excuse me\", used to apologize or get someone's attention. 没什么 (méi shénme) is a common reply meaning \"it's nothing\" or \"no big deal\".",
+    "level": 1,
+    "examples": [
+      "s:l1:145",
+      "s:l1:146",
+      "s:l1:147",
+      "s:l1:148"
+    ]
+  },
+  {
+    "id": "g:duoshao-question",
+    "title": "多少 for \"how many/how much\"",
+    "pattern": "多少 + (measure word) + noun?",
+    "explanation": "多少 (duōshao) asks about quantity, especially larger numbers, prices, or amounts: 多少钱? (\"How much money?\"). Unlike 几, 多少 doesn't require a measure word before the noun, though one can still be added.",
+    "level": 1,
+    "examples": [
+      "s:l1:096",
+      "s:l1:097",
+      "s:l1:098",
+      "s:l1:099"
+    ]
+  },
+  {
+    "id": "g:er-vs-liang",
+    "title": "二 vs 两 for the number two",
+    "pattern": "两 + measure word / 二 in counting and labels",
+    "explanation": "Both 二 (èr) and 两 (liǎng) mean \"two\", but they aren't interchangeable. Use 两 before a measure word like 个 when counting things (两个), and use 二 for counting in sequence, dates, and labels like 二月 (February) or 第二 (second).",
+    "level": 1,
+    "examples": [
+      "s:l1:108",
+      "s:l1:109",
+      "s:l1:110",
+      "s:l1:111"
+    ]
+  },
+  {
+    "id": "g:erhua-suffix",
+    "title": "儿 as a colloquial suffix (erhua)",
+    "pattern": "word + 儿",
+    "explanation": "Adding 儿 (r) to certain words gives them a casual, spoken flavor typical of northern Mandarin: 那 → 那儿 (\"there\"), 玩 → 玩儿 (\"to play\"), 女孩 → 女孩儿 (\"girl\"). It's written as its own character but pronounced fused onto the syllable before it, and doesn't change the core meaning.",
+    "level": 1,
+    "examples": [
+      "s:l1:195",
+      "s:l1:196",
+      "s:l1:197",
+      "s:l1:198",
+      "s:l1:199"
+    ]
+  },
+  {
+    "id": "g:fangwei-bian",
+    "title": "方位词 + 边 for location words",
+    "pattern": "direction + 边 (东边/西边/南边/北边/上边/下边/前边/后边/左边/右边/里边/外边)",
+    "explanation": "Adding 边 (biān) to a direction or position word makes a full location noun: 左边 (\"the left side\"), 里边 (\"the inside\"), 前边 (\"the front\"). These combine naturally with 在: 商店在右边 (\"The store is on the right\").",
+    "level": 1,
+    "examples": [
+      "s:l1:176",
+      "s:l1:177",
+      "s:l1:178",
+      "s:l1:179",
+      "s:l1:180"
+    ]
+  },
+  {
+    "id": "g:ganshenme-colloquial",
+    "title": "干什么 as a casual \"what are you doing\"",
+    "pattern": "(在) + 干什么?",
+    "explanation": "干什么 (gànshénme) is a casual way to ask what someone is doing or up to, similar to 做什么 but more conversational. It's often paired with 在 to ask about an action in progress: 你在干什么? (\"What are you doing?\")",
+    "level": 1,
+    "examples": [
+      "s:l1:169",
+      "s:l1:170",
+      "s:l1:171"
+    ]
+  },
+  {
+    "id": "g:gei-dianhua",
+    "title": "给...打电话 for calling someone",
+    "pattern": "给 + person + 打电话",
+    "explanation": "打电话 (dǎ diànhuà) means \"to make a phone call\". To say who you're calling, insert 给 + person right before it: 我给你打电话 (\"I'll call you\"). Don't put the person directly before 打电话 without 给.",
+    "level": 1,
+    "examples": [
+      "s:l1:136",
+      "s:l1:137",
+      "s:l1:138",
+      "s:l1:139"
+    ]
+  },
+  {
+    "id": "g:gei-recipient",
+    "title": "给 for giving to someone",
+    "pattern": "Subject + 给 + person (+ object)",
+    "explanation": "给 (gěi) means \"to give\" or introduces the person something is done \"for/to\". It comes before the recipient: 我给你 means \"I give it to you\". Like other simple verbs, it can stand alone in a short sentence.",
+    "level": 1,
+    "examples": [
+      "s:l1:017",
+      "s:l1:018",
+      "s:l1:019",
+      "s:l1:020"
+    ]
+  },
+  {
+    "id": "g:gen-with",
+    "title": "跟 for \"with someone\"",
+    "pattern": "Subject + 跟 + person + verb",
+    "explanation": "跟 (gēn) introduces a companion — \"with\" someone. It comes before the verb, not after: 我跟你去 (\"I'll go with you\"), not 我去跟你.",
+    "level": 1,
+    "examples": [
+      "s:l1:053",
+      "s:l1:054",
+      "s:l1:055",
+      "s:l1:056"
+    ]
   },
   {
     "id": "g:hanzi-hanyu",
@@ -477,7 +332,50 @@
     "pattern": "汉语/中文 (the language) vs 汉字 (the characters)",
     "explanation": "汉语 (Hànyǔ) and 中文 (Zhōngwén) both mean \"the Chinese language\" and are largely interchangeable in speech. 汉字 (Hànzì) refers specifically to Chinese written characters, not the spoken language.",
     "level": 1,
-    "examples": ["s:l1:222", "s:l1:223", "s:l1:224"]
+    "examples": [
+      "s:l1:222",
+      "s:l1:223",
+      "s:l1:224"
+    ]
+  },
+  {
+    "id": "g:hen-adjective",
+    "title": "很 + adjective for descriptions",
+    "pattern": "Subject + 很 + adjective",
+    "explanation": "很 (hěn) goes right before an adjective used as the predicate, since Chinese adjectives don't need a separate \"to be\" verb. Even when it isn't emphasizing \"very\", 很 is often still included just to sound natural — an adjective alone can sound like an unfinished comparison. Never add 是 before the adjective.",
+    "level": 1,
+    "examples": [
+      "s:l1:009",
+      "s:l1:010",
+      "s:l1:011",
+      "s:l1:012"
+    ]
+  },
+  {
+    "id": "g:jiao-naming",
+    "title": "叫 for names and calling out",
+    "pattern": "Subject + 叫 + name/word",
+    "explanation": "叫 (jiào) means \"to be called\" when introducing a name, and \"to call out to\" when the object is a person. 他叫什么? asks what someone or something is called.",
+    "level": 1,
+    "examples": [
+      "s:l1:061",
+      "s:l1:062",
+      "s:l1:063",
+      "s:l1:064"
+    ]
+  },
+  {
+    "id": "g:jieguo-complement",
+    "title": "Resultative complements with 到 and 见",
+    "pattern": "verb + 到 / 见",
+    "explanation": "Adding 到 (dào) or 见 (jiàn) right after a verb shows the action succeeded, not just that it was attempted: 找到 (\"found\", not just \"looked for\"), 看见 (\"saw\", not just \"looked at\"), 听到 (\"heard\"), 回到 (\"made it back to\"). Without the complement, 看 and 听 only describe the effort, not the outcome.",
+    "level": 1,
+    "examples": [
+      "s:l1:124",
+      "s:l1:125",
+      "s:l1:126",
+      "s:l1:127"
+    ]
   },
   {
     "id": "g:kaihui-vo",
@@ -485,6 +383,537 @@
     "pattern": "开 + object (会/车/玩笑)",
     "explanation": "开 (kāi) changes meaning depending on what follows it: 开会 (\"to hold/attend a meeting\"), 开车 (\"to drive\"), 开玩笑 (\"to joke around\"). Each combination is learned as its own fixed expression rather than built freshly each time.",
     "level": 1,
-    "examples": ["s:l1:225", "s:l1:226", "s:l1:227"]
+    "examples": [
+      "s:l1:225",
+      "s:l1:226",
+      "s:l1:227"
+    ]
+  },
+  {
+    "id": "g:kan-bing",
+    "title": "Going to the doctor with 看病",
+    "pattern": "去 + 医院 + 看病",
+    "explanation": "看病 (kàn bìng) means 'to see a doctor'. Use 去医院看病 to say 'go to the hospital to see a doctor'.",
+    "level": 1,
+    "examples": [
+      "s:l1:new:042",
+      "s:l1:new:043"
+    ]
+  },
+  {
+    "id": "g:ma-question",
+    "title": "吗 for yes/no questions",
+    "pattern": "Statement + 吗?",
+    "explanation": "Adding 吗 (ma) to the end of any statement turns it into a yes/no question, with no change in word order. 你好吗? means \"Are you well?\" This is a simpler alternative to verb-不-verb questions — don't combine the two in one sentence.",
+    "level": 1,
+    "examples": [
+      "s:l1:033",
+      "s:l1:034",
+      "s:l1:035",
+      "s:l1:036"
+    ]
+  },
+  {
+    "id": "g:meal-times",
+    "title": "Meal words: 早饭, 午饭, 晚饭",
+    "pattern": "吃 + 早饭 / 午饭 / 晚饭",
+    "explanation": "Chinese names meals by time of day: 早饭 (morning rice = breakfast), 午饭 (noon rice = lunch), 晚饭 (evening rice = dinner). Use 吃 before them: 吃早饭 (eat breakfast).",
+    "level": 1,
+    "examples": [
+      "s:l1:new3:001",
+      "s:l1:new3:002",
+      "s:l1:new3:003"
+    ]
+  },
+  {
+    "id": "g:measure-bei",
+    "title": "杯 as a measure word for drinks",
+    "pattern": "Number + 杯 + noun",
+    "explanation": "杯 (bēi) is the measure word for cups or glasses of a drink: 一杯水 (\"a cup of water\"). Like 个, it goes between the number and the noun and is required — you can't say 一水.",
+    "level": 1,
+    "examples": [
+      "s:l1:112",
+      "s:l1:113",
+      "s:l1:114",
+      "s:l1:115"
+    ]
+  },
+  {
+    "id": "g:meiguanxi-itsok",
+    "title": "没关系 for \"it's OK\"",
+    "pattern": "没关系",
+    "explanation": "没关系 (méi guānxi) means \"it doesn't matter\" or \"no worries\" — a common reply when someone apologizes or worries about causing trouble. It pairs naturally with 对不起.",
+    "level": 1,
+    "examples": [
+      "s:l1:181",
+      "s:l1:182",
+      "s:l1:183"
+    ]
+  },
+  {
+    "id": "g:meiyou-negation",
+    "title": "没 for negating past actions",
+    "pattern": "没 + verb",
+    "explanation": "没 (méi) says an action didn't happen, which is different from 不, which negates general facts or habits. 我没去 means \"I didn't go\", not \"I don't go\". 没 is a short form of 没有 in this use.",
+    "level": 1,
+    "examples": [
+      "s:l1:021",
+      "s:l1:022",
+      "s:l1:023",
+      "s:l1:024"
+    ]
+  },
+  {
+    "id": "g:men-plural-suffix",
+    "title": "们 as a plural suffix",
+    "pattern": "person noun + 们",
+    "explanation": "们 (men) attaches to a noun referring to people to make it plural: 孩子们 (\"children\"), 朋友们 (\"friends\"). It's already built into 我们, 你们, and 他们, but can attach to other people-nouns the same way.",
+    "level": 1,
+    "examples": [
+      "s:l1:089",
+      "s:l1:090",
+      "s:l1:091"
+    ]
+  },
+  {
+    "id": "g:mingzi-name",
+    "title": "Asking someone's name with 名字",
+    "pattern": "叫 + 什么 + 名字?",
+    "explanation": "你叫什么名字? (\"What's your name?\") is the standard way to ask a name, combining 叫 (\"to be called\") with 名字 (\"name\"). 名字 can also stand on its own as a noun, as in 他的名字 (\"his name\").",
+    "level": 1,
+    "examples": [
+      "s:l1:120",
+      "s:l1:121",
+      "s:l1:122",
+      "s:l1:123"
+    ]
+  },
+  {
+    "id": "g:nali-where",
+    "title": "哪里/那里 for location",
+    "pattern": "在 + 哪里/那里",
+    "explanation": "哪里 (nǎlǐ) asks \"where\", and 那里 (nàlǐ) answers \"there\". Both pair naturally with 在: 你在哪里? (\"Where are you?\") and 他在那里 (\"He's over there\").",
+    "level": 1,
+    "examples": [
+      "s:l1:116",
+      "s:l1:117",
+      "s:l1:118",
+      "s:l1:119"
+    ]
+  },
+  {
+    "id": "g:ne-followup",
+    "title": "呢 for follow-up questions",
+    "pattern": "..., + noun + 呢?",
+    "explanation": "After stating something, 你呢? asks \"and you?\" without repeating the whole sentence. 呢 (ne) attaches to the topic being asked about and relies on context from what was just said.",
+    "level": 1,
+    "examples": [
+      "s:l1:045",
+      "s:l1:046",
+      "s:l1:047",
+      "s:l1:048"
+    ]
+  },
+  {
+    "id": "g:neng-ability",
+    "title": "能 for ability or permission",
+    "pattern": "Subject + 能 + verb",
+    "explanation": "能 (néng) means \"can\" — able to do something because of ability, permission, or circumstance. It goes directly before the verb. Negate it with 不能 (bù néng), \"cannot\".",
+    "level": 1,
+    "examples": [
+      "s:l1:013",
+      "s:l1:014",
+      "s:l1:015",
+      "s:l1:016"
+    ]
+  },
+  {
+    "id": "g:pangbian-location",
+    "title": "旁边 and 中间 for relative position",
+    "pattern": "Noun + 旁边 / 中间",
+    "explanation": "旁边 (pángbiān, \"next to/beside\") and 中间 (zhōngjiān, \"in the middle\") describe where something is relative to something else. Combine them with 在: 他在我旁边 (\"He's next to me\").",
+    "level": 1,
+    "examples": [
+      "s:l1:153",
+      "s:l1:154",
+      "s:l1:155",
+      "s:l1:156"
+    ]
+  },
+  {
+    "id": "g:qing-please",
+    "title": "请 for polite requests",
+    "pattern": "请 + (person) + verb",
+    "explanation": "请 (qǐng) makes a request polite, like English \"please\". It comes at the very front of the sentence, before the person being addressed if one is named: 请你来 (\"Please come\").",
+    "level": 1,
+    "examples": [
+      "s:l1:069",
+      "s:l1:070",
+      "s:l1:071",
+      "s:l1:072"
+    ]
+  },
+  {
+    "id": "g:qingwen-excuseme",
+    "title": "请问 for \"excuse me, may I ask\"",
+    "pattern": "请问, + question",
+    "explanation": "请问 (qǐngwèn) politely opens a question, similar to \"Excuse me, ...\" or \"May I ask...\". It always comes first, before the actual question.",
+    "level": 1,
+    "examples": [
+      "s:l1:184",
+      "s:l1:185",
+      "s:l1:186"
+    ]
+  },
+  {
+    "id": "g:shenme-question",
+    "title": "Asking with 什么 (\"what\")",
+    "pattern": "... + 什么 (+ object)?",
+    "explanation": "什么 (shénme) means \"what\". It stays in the position where the answer would go, rather than moving to the front of the sentence the way English \"what\" does. 你看什么? literally means \"you look-at what?\"",
+    "level": 1,
+    "examples": [
+      "s:l1:025",
+      "s:l1:026",
+      "s:l1:027",
+      "s:l1:028"
+    ]
+  },
+  {
+    "id": "g:shi-family",
+    "title": "Introducing family with 是",
+    "pattern": "person + 是 + 我 + family member",
+    "explanation": "Use 是 (shì) to identify a family member: 他是我爸爸 (He is my dad). The pattern works for any family role.",
+    "level": 1,
+    "examples": [
+      "s:l1:new:001",
+      "s:l1:new:002",
+      "s:l1:new:003"
+    ]
+  },
+  {
+    "id": "g:shi-sentences",
+    "title": "Linking with 是",
+    "pattern": "A + 是 + B",
+    "explanation": "是 (shì) links a subject to what it is, like English \"to be\". It never changes form: 我是, 你是, 他是 all use the same 是. Negate it with 不是 (bú shì), never with 没.",
+    "level": 1,
+    "examples": [
+      "s:l1:001",
+      "s:l1:004",
+      "s:l1:008",
+      "s:l1:005",
+      "s:l1:007"
+    ]
+  },
+  {
+    "id": "g:short-family",
+    "title": "Short family forms: 哥, 姐, 弟, 妹",
+    "pattern": "哥 / 姐 / 弟 / 妹",
+    "explanation": "In casual speech, family titles can be shortened: 哥 (gē, older brother) instead of 哥哥, 姐 (jiě, older sister) instead of 姐姐, etc. These short forms also combine with other words: 男生 (boy student), 女生 (girl student).",
+    "level": 1,
+    "examples": [
+      "s:l1:new3:029",
+      "s:l1:new3:030"
+    ]
+  },
+  {
+    "id": "g:sui-age",
+    "title": "岁 for stating age",
+    "pattern": "Subject + number + 岁",
+    "explanation": "To state age, put the number directly before 岁 (suì, \"years old\") with no verb needed — 是 is not used. 我三岁 means \"I am three years old\". 几岁 asks a child's age.",
+    "level": 1,
+    "examples": [
+      "s:l1:073",
+      "s:l1:074",
+      "s:l1:075",
+      "s:l1:076"
+    ]
+  },
+  {
+    "id": "g:tai-le",
+    "title": "太...了 for \"too much\"",
+    "pattern": "太 + adjective + 了",
+    "explanation": "太 (tài) means \"too\" or \"extremely\", and adding a sentence-final 了 emphasizes the degree. 太好了! is a common exclamation meaning \"Great!\" or \"That's wonderful!\", not a literal complaint.",
+    "level": 1,
+    "examples": [
+      "s:l1:037",
+      "s:l1:038",
+      "s:l1:039",
+      "s:l1:040"
+    ]
+  },
+  {
+    "id": "g:time-of-day",
+    "title": "Telling time with 点 and 分",
+    "pattern": "number + 点 (+ number + 分)",
+    "explanation": "点 (diǎn) marks the hour and 分 (fēn) marks minutes: 三点 (3 o'clock), 三点十分 (3:10). Time goes before the verb: 我早上来 (I come in the morning).",
+    "level": 1,
+    "examples": [
+      "s:l1:new:052",
+      "s:l1:new:053"
+    ]
+  },
+  {
+    "id": "g:time-word-position",
+    "title": "Time words at the start of a sentence",
+    "pattern": "Time word + subject + verb",
+    "explanation": "Words like 明天 (\"tomorrow\") and 今天 (\"today\") usually come at the very start of a sentence or right after the subject — never at the end the way English often puts them. 明天我去 means \"Tomorrow I'll go\", with the time word up front.",
+    "level": 1,
+    "examples": [
+      "s:l1:092",
+      "s:l1:093",
+      "s:l1:094",
+      "s:l1:095",
+      "s:l1:175"
+    ]
+  },
+  {
+    "id": "g:vo-compounds",
+    "title": "Verb-object compound words",
+    "pattern": "verb + built-in object (吃饭, 上班, 见面, 起床, 唱歌...)",
+    "explanation": "Many common actions are written as a fixed verb + object pair that work together like a single verb: 吃饭 (\"to eat/have a meal\"), 上班 (\"to go to work\"), 见面 (\"to meet\"), 起床 (\"to get up\"), 唱歌 (\"to sing\"). Treat the whole pair as one unit — don't insert another object after it the way you would with an ordinary verb.",
+    "level": 1,
+    "examples": [
+      "s:l1:140",
+      "s:l1:141",
+      "s:l1:142",
+      "s:l1:143",
+      "s:l1:144"
+    ]
+  },
+  {
+    "id": "g:want-verb",
+    "title": "Saying what you want with 要",
+    "pattern": "subject + 要 + verb + object",
+    "explanation": "要 (yào) before a verb means 'want to': 我要吃饭 (I want to eat). 要 can also mean 'need' or 'will'.",
+    "level": 1,
+    "examples": [
+      "s:l1:new:020",
+      "s:l1:new:021"
+    ]
+  },
+  {
+    "id": "g:weather-desc",
+    "title": "Describing weather with 天气",
+    "pattern": "天气 + adjective",
+    "explanation": "天气 (tiānqì) means 'weather'. Describe it directly: 天气好 (The weather is good), 天气冷 (The weather is cold).",
+    "level": 1,
+    "examples": [
+      "s:l1:new:080",
+      "s:l1:new:081"
+    ]
+  },
+  {
+    "id": "g:xian-first",
+    "title": "先 for \"first\" in a sequence",
+    "pattern": "先 + verb",
+    "explanation": "先 (xiān) means to do something first, before something else happens. It goes before the verb: 我先看 (\"I'll look first\"). It's often paired later with 再 (\"then\"), though each word can also stand alone.",
+    "level": 1,
+    "examples": [
+      "s:l1:077",
+      "s:l1:078",
+      "s:l1:079",
+      "s:l1:080"
+    ]
+  },
+  {
+    "id": "g:xiangdui-shijian",
+    "title": "The five relative day words",
+    "pattern": "前天 / 昨天 / 今天 / 明天 / 后天",
+    "explanation": "Chinese has a tidy set of words for days relative to today: 前天 (\"the day before yesterday\"), 昨天 (\"yesterday\"), 今天 (\"today\"), 明天 (\"tomorrow\"), 后天 (\"the day after tomorrow\"). Like other time words, they go at the start of the sentence or right after the subject.",
+    "level": 1,
+    "examples": [
+      "s:l1:203",
+      "s:l1:204",
+      "s:l1:205",
+      "s:l1:206"
+    ]
+  },
+  {
+    "id": "g:xingqi-week",
+    "title": "星期 + number for days of the week",
+    "pattern": "星期 + number (一-六) / 星期 + 几?",
+    "explanation": "星期 (xīngqī) means \"week\", and adding a number one through six names that day of the week (星期一 = Monday). Ask which day it is with 星期几?. Sunday uses a different word, covered later.",
+    "level": 1,
+    "examples": [
+      "s:l1:157",
+      "s:l1:158",
+      "s:l1:159",
+      "s:l1:160"
+    ]
+  },
+  {
+    "id": "g:xingqitian-sunday",
+    "title": "星期天 and 星期日 for Sunday",
+    "pattern": "星期天 / 星期日",
+    "explanation": "Unlike the numbered weekdays (星期一 through 星期六), Sunday breaks the pattern: it's 星期天 or, more formally, 星期日 — both mean the same thing and are used interchangeably.",
+    "level": 1,
+    "examples": [
+      "s:l1:207",
+      "s:l1:208",
+      "s:l1:209"
+    ]
+  },
+  {
+    "id": "g:xuexi-study",
+    "title": "学习 for studying",
+    "pattern": "学习 + subject / skill",
+    "explanation": "学习 (xuéxí) means 'to study' and is more formal than 学 alone. 读书 (dúshū, read books) is a general term for studying or reading.",
+    "level": 1,
+    "examples": [
+      "s:l1:new3:022",
+      "s:l1:new3:023",
+      "s:l1:new3:024"
+    ]
+  },
+  {
+    "id": "g:xuexiao-sheng",
+    "title": "School levels and their students",
+    "pattern": "小学/中学/大学 (+ 生)",
+    "explanation": "小学 (\"elementary school\"), 中学 (\"middle school\"), and 大学 (\"university\") each combine with 生 to name a student at that level: 小学生, 中学生, 大学生. 学生 alone is the general word for \"student\".",
+    "level": 1,
+    "examples": [
+      "s:l1:187",
+      "s:l1:188",
+      "s:l1:189",
+      "s:l1:190"
+    ]
+  },
+  {
+    "id": "g:yidianr-quantity",
+    "title": "一点儿 for \"a little\"",
+    "pattern": "verb/adjective + 一点儿",
+    "explanation": "一点儿 (yìdiǎnr) means \"a little\" or \"a bit\". After an adjective, it softens a comparison or request: 慢一点儿 (\"a little slower\"), 大一点儿 (\"a bit bigger\"). After a verb like 要 or 会, it just means a small amount.",
+    "level": 1,
+    "examples": [
+      "s:l1:191",
+      "s:l1:192",
+      "s:l1:193",
+      "s:l1:194"
+    ]
+  },
+  {
+    "id": "g:yixiar-brief-verb",
+    "title": "verb + 一下儿 for a quick action",
+    "pattern": "verb + 一下(儿)",
+    "explanation": "Adding 一下儿 (yíxiàr) right after a verb makes the action sound brief, casual, or low-pressure — similar to \"just a second\" in English: 看一下儿 (\"take a quick look\"), 等一下儿 (\"wait a moment\"). It softens requests, making them sound more polite.",
+    "level": 1,
+    "examples": [
+      "s:l1:210",
+      "s:l1:211",
+      "s:l1:212"
+    ]
+  },
+  {
+    "id": "g:you-possession",
+    "title": "有 for possession",
+    "pattern": "Subject + 有 + object",
+    "explanation": "有 (yǒu) means \"to have\". Sentence-final 了 after 有 signals a change: the subject did not have it before but has it now.",
+    "level": 1,
+    "examples": [
+      "s:l1:113",
+      "s:l1:002",
+      "s:l1:110"
+    ]
+  },
+  {
+    "id": "g:zai-location",
+    "title": "Location with 在",
+    "pattern": "person/thing + 在 + place",
+    "explanation": "在 (zài) marks where someone or something is: 我在家里 (I'm at home). Put the location after 在.",
+    "level": 1,
+    "examples": [
+      "s:l1:new:030",
+      "s:l1:new:031"
+    ]
+  },
+  {
+    "id": "g:zenme-how",
+    "title": "怎么 for asking \"how\"",
+    "pattern": "怎么 + verb",
+    "explanation": "怎么 (zěnme) asks about manner or method — \"how\". It goes right before the verb: 这个怎么用? (\"How do you use this?\"). 你怎么了? is a fixed way of asking \"What's wrong (with you)?\"",
+    "level": 1,
+    "examples": [
+      "s:l1:049",
+      "s:l1:050",
+      "s:l1:051",
+      "s:l1:052"
+    ]
+  },
+  {
+    "id": "g:zhende-confirm",
+    "title": "真的 for \"really\" and \"true\"",
+    "pattern": "真的 + verb/adjective, or 是真的",
+    "explanation": "真的 (zhēnde) emphasizes that something is genuinely true, either as \"really\" before a verb (你真的想去吗?) or as \"true\" after 是 (这是真的). It's a common way to react to surprising news.",
+    "level": 1,
+    "examples": [
+      "s:l1:104",
+      "s:l1:105",
+      "s:l1:106",
+      "s:l1:107"
+    ]
+  },
+  {
+    "id": "g:zhengzai-progressive",
+    "title": "正在 for actions in progress",
+    "pattern": "正在 + verb",
+    "explanation": "正在 (zhèngzài) marks an action happening right now, like English \"-ing\". Put it directly before the verb: 我正在看 (\"I'm looking right now\"). It's often shortened to just 正 or just 在 in casual speech, but 正在 is the clearest form for beginners.",
+    "level": 1,
+    "examples": [
+      "s:l1:085",
+      "s:l1:086",
+      "s:l1:087",
+      "s:l1:088"
+    ]
+  },
+  {
+    "id": "g:zher-nar-colloquial",
+    "title": "这儿/哪儿 as spoken alternatives",
+    "pattern": "这儿 / 哪儿",
+    "explanation": "这儿 (zhèr) and 哪儿 (nǎr) are casual, conversational equivalents of 这里 (\"here\") and 哪里 (\"where\"). They're used exactly the same way, most often right after 在.",
+    "level": 1,
+    "examples": [
+      "s:l1:165",
+      "s:l1:166",
+      "s:l1:167",
+      "s:l1:168"
+    ]
+  },
+  {
+    "id": "g:zui-superlative",
+    "title": "最 for superlatives",
+    "pattern": "最 + adjective",
+    "explanation": "最 (zuì) makes an adjective superlative, like English \"-est\" or \"most\". Place it directly before the adjective: 最好 (best), 最大 (biggest). No extra word for \"the\" is needed.",
+    "level": 1,
+    "examples": [
+      "s:l1:041",
+      "s:l1:042",
+      "s:l1:043",
+      "s:l1:044"
+    ]
+  },
+  {
+    "id": "g:zuihao-suggestion",
+    "title": "最好 for \"had better\"",
+    "pattern": "(Subject +) 最好 + verb",
+    "explanation": "最好 (zuìhǎo) softens advice into \"had better\" or \"(it's) best to\": 你最好休息 (\"You'd better rest\"). It can also open a sentence with no subject, as general advice: 最好现在走 (\"Best to leave now\").",
+    "level": 1,
+    "examples": [
+      "s:l1:149",
+      "s:l1:150",
+      "s:l1:151",
+      "s:l1:152"
+    ]
+  },
+  {
+    "id": "g:zuoxia-settle",
+    "title": "坐下 for \"sit down\"",
+    "pattern": "坐下",
+    "explanation": "坐下 (zuòxia) combines 坐 (\"to sit\") with 下 to describe settling into a seated position — \"to sit down\". Use it for the action of sitting down, as opposed to 坐 alone, which can also mean simply \"to be sitting\".",
+    "level": 1,
+    "examples": [
+      "s:l1:213",
+      "s:l1:214",
+      "s:l1:215"
+    ]
   }
 ]
