@@ -43,3 +43,21 @@ describe('char-map.json', () => {
     for (const [ch, hv] of Object.entries(oracle)) expect(map[ch]).toBe(hv);
   });
 });
+
+describe('word-overrides.json', () => {
+  it('is a valid string→string map with Title-Case space-joined values', async () => {
+    const ov = (await readJson(resolve(authored, 'hanviet/word-overrides.json'))) as Record<string, string>;
+    const bad = Object.entries(ov).filter(
+      ([, v]) => v.trim() === '' || v.split(' ').some((s) => !TITLE.test(s)),
+    );
+    expect(bad).toEqual([]);
+  });
+
+  it('includes the known 行=Hàng polyphone words and not redundant defaults', async () => {
+    const ov = (await readJson(resolve(authored, 'hanviet/word-overrides.json'))) as Record<string, string>;
+    expect(ov['银行']).toBe('Ngân Hàng');
+    // default-correct words must NOT be overridden
+    expect(ov['谢谢']).toBeUndefined();
+    expect(ov['再见']).toBeUndefined();
+  });
+});
