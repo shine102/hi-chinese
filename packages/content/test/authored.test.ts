@@ -38,7 +38,7 @@ describe('loadAuthored', () => {
   });
   it('tolerates a missing overrides file and empty folders', async () => {
     const a = await loadAuthored(dir);
-    expect(a).toEqual({ sentences: [], grammar: [], overrides: {}, units: [] });
+    expect(a).toEqual({ sentences: [], grammar: [], overrides: {}, units: [], hanViet: { charMap: {}, wordOverrides: {} } });
   });
   it('rejects a file that is not an array', async () => {
     await writeFile(join(dir, 'grammar', 'bad.json'), JSON.stringify({ id: 'g1' }));
@@ -64,5 +64,23 @@ describe('loadAuthored', () => {
   it('returns an empty units array when the units/ directory is absent', async () => {
     const authored = await loadAuthored(dir);
     expect(authored.units).toEqual([]);
+  });
+  it('reads hanviet charMap and wordOverrides from files', async () => {
+    await mkdir(join(dir, 'hanviet'));
+    await writeFile(
+      join(dir, 'hanviet', 'char-map.json'),
+      JSON.stringify({ 再: 'Tái', 见: 'Kiến' }),
+    );
+    await writeFile(
+      join(dir, 'hanviet', 'word-overrides.json'),
+      JSON.stringify({ 银行: 'Ngân Hàng' }),
+    );
+    const authored = await loadAuthored(dir);
+    expect(authored.hanViet.charMap).toEqual({ 再: 'Tái', 见: 'Kiến' });
+    expect(authored.hanViet.wordOverrides).toEqual({ 银行: 'Ngân Hàng' });
+  });
+  it('returns empty hanviet objects when hanviet/ directory is absent', async () => {
+    const authored = await loadAuthored(dir);
+    expect(authored.hanViet).toEqual({ charMap: {}, wordOverrides: {} });
   });
 });

@@ -126,3 +126,13 @@ export interface AuthoredGrammar {
 }
 
 export type PinyinOverrides = Record<string, string>;
+
+export interface AuthoredHanViet {
+  charMap: Record<string, string>;
+  wordOverrides: Record<string, string>;
+}
+
+export interface HanVietResolver {
+  char(ch: string): string;
+  word(simplified: string): string;
+}

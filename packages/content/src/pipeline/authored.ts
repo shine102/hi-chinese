@@ -1,12 +1,13 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
-import type { AuthoredGrammar, AuthoredSentence, AuthoredUnit, PinyinOverrides } from '../types.js';
+import type { AuthoredGrammar, AuthoredHanViet, AuthoredSentence, AuthoredUnit, PinyinOverrides } from '../types.js';
 
 export interface Authored {
   sentences: AuthoredSentence[];
   grammar: AuthoredGrammar[];
   overrides: PinyinOverrides;
   units: AuthoredUnit[];
+  hanViet: AuthoredHanViet;
 }
 
 async function readJsonArrays<T>(dir: string): Promise<T[]> {
@@ -32,6 +33,21 @@ async function readJsonArrays<T>(dir: string): Promise<T[]> {
   return out;
 }
 
+async function readJsonObject<T>(path: string): Promise<T> {
+  let text: string | undefined;
+  try {
+    text = await readFile(path, 'utf8');
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code !== 'ENOENT') throw e;
+    return {} as T;
+  }
+  try {
+    return JSON.parse(text) as T;
+  } catch (e) {
+    throw new Error(`${path}: invalid JSON: ${(e as Error).message}`);
+  }
+}
+
 export async function loadAuthored(authoredDir: string): Promise<Authored> {
   let overrides: PinyinOverrides = {};
   const overridesPath = join(authoredDir, 'pinyin-overrides.json');
@@ -53,5 +69,9 @@ export async function loadAuthored(authoredDir: string): Promise<Authored> {
     grammar: await readJsonArrays<AuthoredGrammar>(join(authoredDir, 'grammar')),
     overrides,
     units: await readJsonArrays<AuthoredUnit>(join(authoredDir, 'units')),
+    hanViet: {
+      charMap: await readJsonObject<Record<string, string>>(join(authoredDir, 'hanviet', 'char-map.json')),
+      wordOverrides: await readJsonObject<Record<string, string>>(join(authoredDir, 'hanviet', 'word-overrides.json')),
+    },
   };
 }

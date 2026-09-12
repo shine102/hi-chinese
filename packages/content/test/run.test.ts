@@ -47,6 +47,7 @@ const authored = (overrides: Partial<Authored> = {}): Authored => ({
   grammar: [],
   overrides: {},
   units: [],
+  hanViet: { charMap: {}, wordOverrides: {} },
   ...overrides,
 });
 
