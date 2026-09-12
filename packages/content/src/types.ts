@@ -12,6 +12,7 @@ export interface Word {
   traditional: string;
   pinyin: string;
   pinyinNumeric: string;
+  hanViet: string;
   meanings: string[];
   alternates: WordReading[];
   pos: string[];
@@ -27,6 +28,7 @@ export interface CharacterData {
   strokes: string[];
   medians: number[][][];
   pinyin: string[];
+  hanViet: string;
   definition: string | null;
   radical: string;
   decomposition: string;

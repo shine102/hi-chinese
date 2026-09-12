@@ -1,5 +1,6 @@
 import type { Authored } from './authored.js';
 import { buildCharacters } from './characters.js';
+import { makeHanViet } from './hanviet.js';
 import { parseHskWords, type RawHskEntry } from './hsk.js';
 import { attachToUnits, placeAuthoredGrammar, placeGrammar, placeSentences } from './placement.js';
 import { assignUnits } from './units.js';
@@ -17,7 +18,8 @@ export type RunResult = { ok: true; bundle: ContentBundle } | { ok: false; probl
 
 export function assembleContent(inputs: RunInputs): RunResult {
   const entries = JSON.parse(inputs.hskJson) as RawHskEntry[];
-  const parsed = parseHskWords(entries, inputs.authored.overrides);
+  const hanViet = makeHanViet(inputs.authored.hanViet);
+  const parsed = parseHskWords(entries, inputs.authored.overrides, hanViet);
   const { units: bareUnits, words } = assignUnits(parsed, inputs.authored.units);
 
   const { sentences, errors: sentenceErrors } = placeSentences(
@@ -44,6 +46,7 @@ export function assembleContent(inputs: RunInputs): RunResult {
     inputs.dictionaryText,
     inputs.graphicsText,
     words,
+    (ch) => hanViet.char(ch),
   );
 
   const bundle: ContentBundle = { words, characters, units, grammar, sentences };

@@ -1,5 +1,5 @@
 import { compareWords, uniqueHanChars, wordId } from '../ids.js';
-import type { HskLevel, PinyinOverrides, Word, WordReading } from '../types.js';
+import type { HanVietResolver, HskLevel, PinyinOverrides, Word, WordReading } from '../types.js';
 
 export interface RawHskForm {
   traditional: string;
@@ -78,7 +78,11 @@ export function chooseReading(
   return { chosen, others: forms.filter((f) => f !== chosen) };
 }
 
-export function normalizeWord(entry: RawHskEntry, overrides: PinyinOverrides): Word | null {
+export function normalizeWord(
+  entry: RawHskEntry,
+  overrides: PinyinOverrides,
+  hanViet: HanVietResolver,
+): Word | null {
   const level = hskLevelOf(entry);
   if (level === null) return null;
   const { chosen, others } = chooseReading(entry, overrides);
@@ -93,6 +97,7 @@ export function normalizeWord(entry: RawHskEntry, overrides: PinyinOverrides): W
     traditional: chosen.traditional,
     pinyin: chosen.transcriptions.pinyin,
     pinyinNumeric: chosen.transcriptions.numeric,
+    hanViet: hanViet.word(entry.simplified),
     meanings: chosen.meanings,
     alternates,
     pos: entry.pos ?? [],
@@ -104,12 +109,16 @@ export function normalizeWord(entry: RawHskEntry, overrides: PinyinOverrides): W
   };
 }
 
-export function parseHskWords(entries: RawHskEntry[], overrides: PinyinOverrides): Word[] {
+export function parseHskWords(
+  entries: RawHskEntry[],
+  overrides: PinyinOverrides,
+  hanViet: HanVietResolver,
+): Word[] {
   const seen = new Set<string>();
   const words: Word[] = [];
   for (const entry of entries) {
     if (seen.has(entry.simplified)) continue;
-    const word = normalizeWord(entry, overrides);
+    const word = normalizeWord(entry, overrides, hanViet);
     if (!word) continue;
     seen.add(entry.simplified);
     words.push(word);

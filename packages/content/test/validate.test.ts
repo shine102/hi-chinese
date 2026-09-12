@@ -15,6 +15,7 @@ const word = (s: string, unitId: string, over: Partial<Word> = {}): Word => ({
   traditional: s,
   pinyin: 'x',
   pinyinNumeric: 'x1',
+  hanViet: 'X',
   meanings: ['m'],
   alternates: [],
   pos: [],
@@ -30,6 +31,7 @@ const char = (c: string, over: Partial<CharacterData> = {}): CharacterData => ({
   strokes: ['M 0 0'],
   medians: [[[0, 0]]],
   pinyin: [],
+  hanViet: 'X',
   definition: null,
   radical: '',
   decomposition: '',
@@ -101,6 +103,16 @@ describe('validateContent', () => {
     b.words[0] = word('我', 'l1-u01', { meanings: [] });
     b.words[1] = word('是', 'l1-u01', { pinyin: '' });
     expect(rules(b)).toEqual(expect.arrayContaining(['word-meaning', 'word-pinyin']));
+  });
+  it('rejects a word without hanViet', () => {
+    const b = bundle();
+    b.words[0] = word('我', 'l1-u01', { hanViet: '' });
+    expect(rules(b)).toContain('word-hanviet');
+  });
+  it('rejects a character without hanViet', () => {
+    const b = bundle();
+    b.characters[0] = char('我', { hanViet: '' });
+    expect(rules(b)).toContain('char-hanviet');
   });
   it('rejects word/unit mismatches and empty units', () => {
     const b = bundle();

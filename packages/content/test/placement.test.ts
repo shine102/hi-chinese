@@ -24,6 +24,7 @@ const word = (s: string, unitId: string, level: 1 | 2): Word => ({
   traditional: s,
   pinyin: 'x',
   pinyinNumeric: 'x1',
+  hanViet: 'X',
   meanings: ['x'],
   alternates: [],
   pos: [],

@@ -9,6 +9,8 @@ import {
   type RawHskForm,
 } from '../src/pipeline/hsk.js';
 
+const hanViet = { char: () => 'X', word: () => 'X X' };
+
 const form = (numeric: string, pinyin: string, meanings: string[]): RawHskForm => ({
   traditional: 'X',
   transcriptions: { pinyin, numeric },
@@ -112,7 +114,7 @@ describe('chooseReading', () => {
 
 describe('normalizeWord', () => {
   it('produces a Word with chosen reading, alternates, characters and empty unitId', () => {
-    const w = normalizeWord(le, { 了: 'le5' })!;
+    const w = normalizeWord(le, { 了: 'le5' }, hanViet)!;
     expect(w).toMatchObject({
       id: 'w:了',
       simplified: '了',
@@ -136,13 +138,13 @@ describe('normalizeWord', () => {
     ]);
   });
   it('keeps classifiers and multi-character words', () => {
-    const w = normalizeWord(aihao, {})!;
+    const w = normalizeWord(aihao, {}, hanViet)!;
     expect(w.classifiers).toEqual(['个']);
     expect(w.characters).toEqual(['爱', '好']);
     expect(w.traditional).toBe('愛好');
   });
   it('returns null outside levels 1-3', () => {
-    expect(normalizeWord(levelFour, {})).toBeNull();
+    expect(normalizeWord(levelFour, {}, hanViet)).toBeNull();
   });
 });
 
@@ -151,6 +153,7 @@ describe('parseHskWords', () => {
     const words = parseHskWords(
       [levelFour, aihao, shuo, { ...shuo }, le, { ...ye, level: ['new-2'] }],
       {},
+      hanViet,
     );
     expect(words.map((w) => w.simplified)).toEqual(['了', '说', '爱好', '也']);
   });

@@ -8,6 +8,7 @@ const mk = (simplified: string, level: HskLevel, frequency: number): Word => ({
   traditional: simplified,
   pinyin: 'x',
   pinyinNumeric: 'x1',
+  hanViet: 'X',
   meanings: ['x'],
   alternates: [],
   pos: [],

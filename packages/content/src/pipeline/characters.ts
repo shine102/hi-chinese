@@ -28,6 +28,7 @@ export function buildCharacters(
   dictionaryText: string,
   graphicsText: string,
   words: Word[],
+  charHanViet: (ch: string) => string,
 ): { characters: CharacterData[]; missing: string[] } {
   const wordIdsByChar = new Map<string, string[]>();
   for (const w of words) {
@@ -61,6 +62,7 @@ export function buildCharacters(
       strokes: g.strokes,
       medians: g.medians,
       pinyin: d?.pinyin ?? [],
+      hanViet: charHanViet(ch),
       definition: d?.definition ?? null,
       radical: d?.radical ?? '',
       decomposition: d?.decomposition ?? '',

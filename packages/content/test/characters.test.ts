@@ -20,6 +20,7 @@ const word = (simplified: string, characters: string[]): Word => ({
   traditional: simplified,
   pinyin: '',
   pinyinNumeric: '',
+  hanViet: 'X',
   meanings: ['x'],
   alternates: [],
   pos: [],
@@ -42,10 +43,12 @@ describe('parseJsonLines', () => {
 
 describe('buildCharacters', () => {
   it('returns data only for characters used by words, with word back-references', () => {
-    const { characters, missing } = buildCharacters(dictionary, graphics, [
-      word('你', ['你']),
-      word('你好', ['你', '好']),
-    ]);
+    const { characters, missing } = buildCharacters(
+      dictionary,
+      graphics,
+      [word('你', ['你']), word('你好', ['你', '好'])],
+      () => 'X',
+    );
     expect(missing).toEqual(['好']);
     expect(characters).toHaveLength(1);
     expect(characters[0]).toEqual({
@@ -62,6 +65,7 @@ describe('buildCharacters', () => {
         ],
       ],
       pinyin: ['nǐ'],
+      hanViet: 'X',
       definition: 'you, second person pronoun',
       radical: '亻',
       decomposition: '⿰亻尔',
@@ -70,7 +74,7 @@ describe('buildCharacters', () => {
   });
 
   it('uses null definition and empty fields when the dictionary lacks the character', () => {
-    const { characters } = buildCharacters('', graphics, [word('你', ['你'])]);
+    const { characters } = buildCharacters('', graphics, [word('你', ['你'])], () => 'X');
     expect(characters[0]).toMatchObject({
       character: '你',
       definition: null,

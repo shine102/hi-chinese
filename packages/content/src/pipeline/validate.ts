@@ -49,6 +49,7 @@ export function validateContent(b: ContentBundle): ValidationError[] {
   for (const w of b.words) {
     if (w.meanings.length === 0) err('word-meaning', w.id, `${w.simplified} has no meanings`);
     if (w.pinyin.trim() === '') err('word-pinyin', w.id, `${w.simplified} has no pinyin`);
+    if (w.hanViet.trim() === '') err('word-hanviet', w.id, `${w.simplified} has no hanViet`);
     const u = unitById.get(w.unitId);
     if (!u) err('word-unit', w.id, `${w.simplified} has unknown unit ${w.unitId}`);
     else if (!u.wordIds.includes(w.id))
@@ -89,6 +90,7 @@ export function validateContent(b: ContentBundle): ValidationError[] {
         `${c.character}: ${c.strokes.length} strokes, ${c.medians.length} medians`,
       );
     }
+    if (c.hanViet.trim() === '') err('char-hanviet', c.character, `${c.character} has no hanViet`);
   }
 
   // sentences

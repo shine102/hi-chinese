@@ -2,6 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadAuthored } from '../src/pipeline/authored.js';
+import { makeHanViet } from '../src/pipeline/hanviet.js';
 import { parseHskWords, type RawHskEntry } from '../src/pipeline/hsk.js';
 import { assignUnits } from '../src/pipeline/units.js';
 import { fetchRaw } from '../src/pipeline/fetch.js';
@@ -20,9 +21,10 @@ if (!levelArg || !['1', '2', '3'].includes(levelArg)) {
 const level = Number(levelArg) as HskLevel;
 
 const raw = await fetchRaw(rawDir);
-const { overrides } = await loadAuthored(authoredDir);
+const { overrides, hanViet: hanVietData } = await loadAuthored(authoredDir);
+const hanViet = makeHanViet(hanVietData);
 const entries = JSON.parse(await readFile(raw.hsk, 'utf8')) as RawHskEntry[];
-const parsed = parseHskWords(entries, overrides);
+const parsed = parseHskWords(entries, overrides, hanViet);
 const { units, words } = assignUnits(parsed);
 
 const wordById = new Map(words.map((w) => [w.id, w]));

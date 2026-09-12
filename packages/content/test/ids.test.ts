@@ -26,6 +26,7 @@ describe('ids', () => {
       traditional: simplified,
       pinyin: 'x',
       pinyinNumeric: 'x1',
+      hanViet: 'X',
       meanings: ['x'],
       alternates: [],
       pos: [],
