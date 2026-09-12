@@ -112,7 +112,9 @@
     "một cá nhân có năng lực",
     "rồi thì và chỉ rồi thì",
     "vừa mới",
-    "(trước một biểu hiện về số lượng) chỉ"
+    "(trước một biểu hiện về số lượng) chỉ",
+    "(biến thể của 才[cai2]) vừa mới",
+    "(biến thể của 才[cai2]) (trước một biểu thức chỉ số lượng) chỉ"
   ],
   "像": [
     "giống",
@@ -126,7 +128,23 @@
   ],
   "当": [
     "(từ tượng thanh) đong",
-    "đinh đong (chuông)"
+    "đinh đong (chuông)",
+    "làm",
+    "làm việc",
+    "quản lý",
+    "chịu đựng",
+    "khi",
+    "trong lúc",
+    "nên",
+    "phải",
+    "tương xứng",
+    "bằng",
+    "giống",
+    "cản trở",
+    "đúng lúc (thời gian hoặc địa điểm)",
+    "tại chỗ",
+    "ngay",
+    "lúc đó"
   ],
   "所以": [
     "vì vậy",
@@ -155,7 +173,15 @@
     "luôn luôn",
     "suốt",
     "dùng làm hậu tố cho...",
-    "hướng đến..."
+    "hướng đến...",
+    "có xu hướng",
+    "hướng dẫn",
+    "biến thể của 向[xiang4]",
+    "hướng đi",
+    "đối mặt",
+    "đến",
+    "về",
+    "ngay trước"
   ],
   "这么": [
     "nhiều như vậy",
@@ -386,7 +412,10 @@
     "tất cả",
     "khắp",
     "triệt để",
-    "hỗ trợ tài chính"
+    "hỗ trợ tài chính",
+    "tuần",
+    "hàng tuần",
+    "biến thể của 周[zhou1]"
   ],
   "过去": [
     "(trong quá khứ); trước đây; trước đó",
@@ -792,7 +821,12 @@
     "bên",
     "bề mặt",
     "khía cạnh",
-    "Lượng từ cho vật có bề mặt phẳng như trống, gương, cờ, v.v."
+    "Lượng từ cho vật có bề mặt phẳng như trống, gương, cờ, v.v.",
+    "bột",
+    "mì",
+    "(thức ăn) mềm (không giòn)",
+    "(tiếng lóng) (người) kém cỏi",
+    "nhu nhược"
   ],
   "活动": [
     "tập thể dục",
@@ -937,10 +971,20 @@
   ],
   "药": [
     "lá của cây diên vĩ",
-    "biến thể của 藥|药[yao4]"
+    "biến thể của 藥|药[yao4]",
+    "thuốc",
+    "dược phẩm",
+    "chất dùng cho mục đích cụ thể (ví dụ: đầu độc, nổ, lên men)",
+    "LT:種|种[zhong3],服[fu4],味[wei4]",
+    "đầu độc"
   ],
   "留": [
-    "biến thể cũ của 留[liu2]"
+    "để lại (tin nhắn, v.v.)",
+    "giữ lại",
+    "ở lại",
+    "duy trì",
+    "bảo tồn",
+    "lưu giữ"
   ],
   "家庭": [
     "gia đình",
@@ -1035,7 +1079,9 @@
     "kiềm chế",
     "vượt qua",
     "gram",
-    "đơn vị diện tích đất của Tây Tạng, khoảng 6 are"
+    "đơn vị diện tích đất của Tây Tạng, khoảng 6 are",
+    "biến thể của 克[ke4]",
+    "lật đổ"
   ],
   "愿意": [
     "muốn",
@@ -1447,7 +1493,8 @@
     "nhân tạo",
     "mượn",
     "nếu",
-    "giả sử"
+    "giả sử",
+    "biến thể của 假[jia3]"
   ],
   "后来": [
     "sau này; sau đó",
@@ -1496,7 +1543,7 @@
     "(phương ngữ) nhiều"
   ],
   "夜": [
-    "biến thể của 夜[ye4]"
+    "đêm"
   ],
   "十分": [
     "rất",
@@ -1569,7 +1616,8 @@
   ],
   "刚才": [
     "vừa nãy",
-    "mới đây"
+    "mới đây",
+    "vừa mới (biến thể của 剛才|刚才[gang1 cai2])"
   ],
   "猫": [
     "mèo (LT: 隻|只[zhi1])",
@@ -1680,7 +1728,9 @@
   ],
   "腿": [
     "chân",
-    "Lượng từ:條|条[tiao2]"
+    "Lượng từ:條|条[tiao2]",
+    "xương hông",
+    "biến thể cũ của 腿[tui3]"
   ],
   "全国": [
     "cả nước",
@@ -1767,7 +1817,8 @@
   ],
   "喂": [
     "này",
-    "cho ăn (động vật, em bé, người bệnh v.v.)"
+    "cho ăn (động vật, em bé, người bệnh v.v.)",
+    "cho ăn"
   ],
   "心情": [
     "tâm trạng; trạng thái tinh thần",
@@ -1813,10 +1864,15 @@
     "mô hình",
     "bảng (liệt kê thông tin)",
     "biểu mẫu",
-    "đồng hồ đo (đo lường cái gì đó)"
+    "đồng hồ đo (đo lường cái gì đó)",
+    "đồng hồ (dụng cụ đo thời gian)",
+    "đồng hồ đo; máy đo"
   ],
   "船": [
-    "biến thể của 船[chuan2]"
+    "thuyền",
+    "tàu",
+    "tàu thủy",
+    "LT:條|条[tiao2],艘[sou1],隻|只[zhi1]"
   ],
   "养": [
     "nuôi (động vật)",
@@ -1832,7 +1888,9 @@
     "(tiếng lóng) gái mại dâm"
   ],
   "遍": [
-    "biến thể của 遍[bian4]"
+    "khắp mọi nơi",
+    "khắp",
+    "lượng từ cho hành động: một lần"
   ],
   "怎么样": [
     "như thế nào?",
@@ -1968,10 +2026,14 @@
     "LT: 個|个[ge4]"
   ],
   "占": [
-    "biến thể của 占[zhan4]"
+    "chiếm giữ",
+    "chiếm đóng",
+    "chiếm"
   ],
   "词": [
-    "biến thể cũ của 詞|词[ci2]"
+    "từ",
+    "ngôn từ; lời nói; lời bài hát",
+    "một thể thơ trữ tình, thịnh hành thời Tống 宋朝|宋朝[Song4 chao2] (LT:首[shou3])"
   ],
   "鸟": [
     "chim",
@@ -1994,7 +2056,9 @@
     "dị thảo chàm"
   ],
   "纸": [
-    "biến thể của 紙|纸[zhi3]"
+    "giấy",
+    "LT:張|张[zhang1],沓[da2]",
+    "lượng từ cho tài liệu, thư từ, v.v."
   ],
   "背": [
     "lưng của cơ thể hoặc vật",
@@ -2113,7 +2177,8 @@
     "một nghìn"
   ],
   "墙": [
-    "biến thể của 牆|墙[qiang2], tường"
+    "tường (LT: 面[mian4], 堵[du3])",
+    "(tiếng lóng) chặn (trang web) (thường ở dạng bị động: 被牆|被墙[bei4 qiang2])"
   ],
   "满意": [
     "hài lòng",
@@ -2432,7 +2497,16 @@
     "luộc và giũ lụa thô"
   ],
   "举": [
-    "biến thể của 舉|举[ju3]"
+    "nâng",
+    "giơ lên",
+    "dẫn chứng",
+    "liệt kê",
+    "hành động",
+    "giơ",
+    "chọn",
+    "bầu",
+    "cử động",
+    "việc làm"
   ],
   "多久": [
     "(về thời gian) bao lâu?",
@@ -2542,7 +2616,13 @@
     "an tâm"
   ],
   "草": [
-    "biến thể của 草[cao3]"
+    "cỏ",
+    "rơm",
+    "bản thảo",
+    "phác thảo (một văn kiện)",
+    "cẩu thả",
+    "sơ sài",
+    "LT:棵[ke1],撮[zuo3],株[zhu1],根[gen1]"
   ],
   "湖": [
     "hồ",
@@ -2727,7 +2807,9 @@
     "cho qua một cách nhẹ nhàng"
   ],
   "碰": [
-    "biến thể của 碰[peng4]"
+    "chạm",
+    "gặp",
+    "va phải"
   ],
   "请求": [
     "yêu cầu; hỏi",
@@ -2737,7 +2819,9 @@
     "chính xác; đúng; chuẩn xác"
   ],
   "碗": [
-    "biến thể của 碗[wan3]"
+    "bát",
+    "chén",
+    "LT:隻|只[zhi1],個|个[ge4]"
   ],
   "碰到": [
     "tình cờ gặp",
@@ -2848,7 +2932,8 @@
     "LT:個|个[ge4]"
   ],
   "咱": [
-    "biến thể của 咱[zan2]"
+    "tôi hoặc tao",
+    "chúng ta (bao gồm cả người nói và người nghe)"
   ],
   "平安": [
     "bình an",
@@ -2891,7 +2976,9 @@
     "LT:個|个[ge4]"
   ],
   "云": [
-    "(văn cổ) nói"
+    "(văn cổ) nói",
+    "mây",
+    "LT:朵[duo3]"
   ],
   "青年": [
     "thanh niên",

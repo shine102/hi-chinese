@@ -29,6 +29,42 @@ function dedupe(items: string[]): string[] {
   return [...new Set(items)];
 }
 
+// CVDICT (like CC-CEDICT) carries cross-reference/variant "stub" entries
+// alongside the real definition for the same Han character, and sometimes
+// several such stubs share the EXACT SAME pinyin as each other (and as the
+// course's pinyin) — e.g. for 只[zhi3]: the real entry "chỉ/chỉ đơn thuần/..."
+// plus two duplicate "biến thể của 只[zhi3]" cross-reference stubs. Naively
+// taking the first pinyin-matching entry can pick a stub over the real
+// definition. isWeakMeaningVi flags meanings that are pure cross-references
+// (variant-of, surname-reading markers, "see X") rather than real content.
+// Note: JS regex `\b` only recognizes ASCII word characters, so it does not
+// work as a boundary after Vietnamese diacritics (e.g. "thể", "là") — use
+// explicit trailing spaces/brackets instead.
+const WEAK_MEANING_VI =
+  /^(biến thể |dạng biến thể |cũng (viết|đọc) là|xem |họ \[)|\(họ\)$/i;
+
+function isWeakMeaning(meaning: string): boolean {
+  return WEAK_MEANING_VI.test(meaning.trim());
+}
+
+function hasRealContent(entry: CedictEntry): boolean {
+  return entry.meanings.some((m) => !isWeakMeaning(m));
+}
+
+// Among a group of CEDICT entries that tie on the pinyin we're matching
+// against, prefer entries with at least one non-weak (real) meaning over
+// pure cross-reference/variant stubs. If exactly one entry has real content,
+// use it directly (not ambiguous — the "duplicate" was just dictionary noise).
+// If more than one has real content, concatenate them and flag ambiguous
+// (same as the cross-pinyin heteronym case). Only fall back to weak-only
+// stubs if literally nothing else is available for that pinyin.
+function resolveTied(candidates: CedictEntry[]): { meanings: string[]; ambiguous: boolean } {
+  const real = candidates.filter(hasRealContent);
+  const pool = real.length > 0 ? real : candidates;
+  if (pool.length === 1) return { meanings: pool[0]!.meanings, ambiguous: false };
+  return { meanings: dedupe(pool.flatMap((e) => e.meanings)), ambiguous: true };
+}
+
 export function matchWordMeanings(
   word: { simplified: string; pinyinNumeric: string },
   cedictBySimplified: Map<string, CedictEntry[]>,
@@ -37,13 +73,16 @@ export function matchWordMeanings(
   if (!entries || entries.length === 0) return { meanings: null, ambiguous: false };
   if (entries.length === 1) return { meanings: entries[0]!.meanings, ambiguous: false };
 
-  const exact = entries.find(
-    (e) => normalizeCedictPinyin(e.pinyin) === word.pinyinNumeric,
-  );
-  if (exact) return { meanings: exact.meanings, ambiguous: false };
+  const target = entries.filter((e) => normalizeCedictPinyin(e.pinyin) === word.pinyinNumeric);
+  if (target.length > 0) {
+    const r = resolveTied(target);
+    return { meanings: r.meanings, ambiguous: r.ambiguous };
+  }
 
-  const meanings = dedupe(entries.flatMap((e) => e.meanings));
-  return { meanings, ambiguous: true };
+  // No entry shares the course's exact pinyin reading: concatenate everything
+  // (preferring real content over pure stubs) and always flag for review.
+  const r = resolveTied(entries);
+  return { meanings: r.meanings, ambiguous: true };
 }
 
 export function matchCharDefinition(
@@ -57,13 +96,16 @@ export function matchCharDefinition(
   }
 
   const charNumericReadings = char.pinyin.map((p) => pinyinToNumeric(p));
-  const exact = entries.find((e) =>
+  const target = entries.filter((e) =>
     charNumericReadings.includes(normalizeCedictPinyin(e.pinyin)),
   );
-  if (exact) return { definition: exact.meanings.join(', '), ambiguous: false };
+  if (target.length > 0) {
+    const r = resolveTied(target);
+    return { definition: r.meanings.join(', '), ambiguous: r.ambiguous };
+  }
 
-  const meanings = dedupe(entries.flatMap((e) => e.meanings));
-  return { definition: meanings.join(', '), ambiguous: true };
+  const r = resolveTied(entries);
+  return { definition: r.meanings.join(', '), ambiguous: true };
 }
 
 interface CourseWord {

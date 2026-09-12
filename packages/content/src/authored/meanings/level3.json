@@ -20,7 +20,11 @@
     "(dùng với 也[ye3]) ngay cả; thậm chí nếu"
   ],
   "时": [
-    "biến thể cũ của 時|时[shi2]"
+    "giờ",
+    "thời gian",
+    "khi",
+    "mùa",
+    "giai đoạn"
   ],
   "需要": [
     "cần; muốn; yêu cầu; đòi hỏi",
@@ -326,7 +330,21 @@
     "LT:種|种[zhong3]"
   ],
   "管": [
-    "biến thể của 管[guan3]"
+    "chăm sóc",
+    "kiểm soát",
+    "quản lý",
+    "phụ trách",
+    "trông nom",
+    "vận hành",
+    "quan tâm",
+    "ống",
+    "đường ống",
+    "nhạc cụ họ gỗ",
+    "lượng từ cho vật hình ống",
+    "tiểu từ giống 把[ba3] trong cấu trúc 管...叫",
+    "bút lông",
+    "(khẩu ngữ) đến",
+    "hướng tới"
   ],
   "支持": [
     "tán thành",
@@ -532,7 +550,13 @@
     "có khả năng; dễ có thể; có khuynh hướng"
   ],
   "联系": [
-    "biến thể của 聯繫|联系[lian2 xi4]"
+    "kết nối",
+    "liên hệ",
+    "quan hệ",
+    "liên lạc",
+    "tích hợp",
+    "liên kết",
+    "tiếp xúc"
   ],
   "合作": [
     "hợp tác; cộng tác; làm việc cùng nhau"
@@ -559,7 +583,12 @@
     "(của biên tập viên hoặc tác giả) đưa ra bình luận"
   ],
   "线": [
-    "biến thể của 線|线[xian4]"
+    "chỉ",
+    "sợi",
+    "dây",
+    "đường",
+    "LT:條|条[tiao2],股[gu3],根[gen1]",
+    "(sau một con số) hạng (xếp hạng không chính thức của một thành phố ở Trung Quốc)"
   ],
   "报告": [
     "thông báo",
@@ -573,7 +602,17 @@
   ],
   "台": [
     "(văn cổ) ông (trong thư từ)",
-    "biến thể của 臺|台[tai2]"
+    "biến thể của 臺|台[tai2]",
+    "bàn; cái bàn; quầy",
+    "bục",
+    "sân khấu",
+    "sân",
+    "đài",
+    "hỗ trợ",
+    "nhà ga",
+    "đài phát thanh",
+    "lượng từ cho xe cộ hoặc máy móc",
+    "bão"
   ],
   "生命": [
     "sự sống (như đặc trưng của sinh vật)",
@@ -961,7 +1000,7 @@
     "LT:個|个[ge4]"
   ],
   "深": [
-    "biến thể cũ của 深[shen1]"
+    "sâu (cả nghĩa đen và bóng)"
   ],
   "各": [
     "mỗi",
@@ -1174,12 +1213,23 @@
     "LT:個|个[ge4]"
   ],
   "群": [
-    "biến thể của 群[qun2]"
+    "nhóm",
+    "đám",
+    "bầy, đàn, nhóm v.v."
   ],
   "照": [
     "biến thể của 照[zhao4]",
     "chiếu",
-    "soi sáng"
+    "soi sáng",
+    "theo",
+    "theo như",
+    "soi",
+    "phản chiếu",
+    "nhìn (hình phản chiếu)",
+    "chụp (ảnh)",
+    "ảnh",
+    "theo yêu cầu",
+    "như trước"
   ],
   "环境": [
     "môi trường",
@@ -1208,7 +1258,9 @@
     "càng hơn"
   ],
   "老板": [
-    "biến thể của 老闆|老板[lao3 ban3]"
+    "sếp",
+    "chủ doanh nghiệp",
+    "LT:個|个[ge4]"
   ],
   "市场": [
     "khu chợ",
@@ -1256,7 +1308,9 @@
     "trang trọng; chính thức"
   ],
   "救": [
-    "biến thể của 救[jiu4]"
+    "cứu",
+    "cứu giúp",
+    "cứu thoát"
   ],
   "从来": [
     "luôn luôn",
@@ -1591,7 +1645,14 @@
     "cho phép",
     "chấp thuận",
     "theo",
-    "phù hợp với"
+    "phù hợp với",
+    "chính xác",
+    "tiêu chuẩn",
+    "chắc chắn",
+    "nhất định",
+    "sắp trở thành (cô dâu, con rể, v.v.)",
+    "chuẩn-",
+    "cận-"
   ],
   "输": [
     "thua; bị đánh bại",
@@ -1621,7 +1682,12 @@
     "liên quan đến",
     "buộc",
     "ràng buộc",
-    "là (văn học)"
+    "là (văn học)",
+    "hệ thống",
+    "khoa",
+    "ban",
+    "bắt giữ",
+    "lo lắng"
   ],
   "增加": [
     "tăng; tăng thêm"
@@ -1689,7 +1755,8 @@
     "dưới",
     "tiếp theo",
     "sau đây",
-    "cũng đọc là [xia4 mian5]"
+    "cũng đọc là [xia4 mian5]",
+    "luộc mì"
   ],
   "理论": [
     "lý thuyết",
@@ -1709,7 +1776,14 @@
   "期": [
     "biến thể của 期[qi1]",
     "thời kỳ",
-    "chu kỳ"
+    "chu kỳ",
+    "một khoảng thời gian",
+    "giai đoạn",
+    "lượng từ cho số phát hành của tạp chí, khóa học",
+    "thời gian",
+    "học kỳ",
+    "kỳ vọng",
+    "âm đọc ở Đài Loan: [qi2]"
   ],
   "姑娘": [
     "cô gái",
@@ -1857,7 +1931,8 @@
     "trung đoàn",
     "nhóm",
     "hội",
-    "lượng từ cho một khối hoặc chất mềm: nắm (giấy), cuộn (len), đám (khói)"
+    "lượng từ cho một khối hoặc chất mềm: nắm (giấy), cuộn (len), đám (khói)",
+    "bánh hấp"
   ],
   "世纪": [
     "thế kỷ",
@@ -1885,7 +1960,13 @@
   ],
   "证": [
     "khiển trách",
-    "biến thể của 證|证[zheng4]"
+    "biến thể của 證|证[zheng4]",
+    "chứng chỉ",
+    "bằng chứng",
+    "chứng minh",
+    "biểu thị",
+    "xác nhận",
+    "biến thể của 症[zheng4]"
   ],
   "不得不": [
     "không có lựa chọn nào khác ngoài",
@@ -2015,7 +2096,11 @@
   "布": [
     "biến thể của 布[bu4]",
     "thông báo",
-    "lan truyền"
+    "lan truyền",
+    "vải",
+    "tuyên bố",
+    "truyền ra",
+    "làm cho biết"
   ],
   "咖啡": [
     "cà phê (từ mượn)",
@@ -2065,7 +2150,10 @@
   "钟": [
     "cốc không quai; ly rượu",
     "hình thức kết hợp, tập trung (tình cảm, v.v.)",
-    "biến thể của 鐘|钟[zhong1]"
+    "biến thể của 鐘|钟[zhong1]",
+    "một cái chuông (lớn) (LT: 架[jia4])",
+    "đồng hồ (LT: 座[zuo4])",
+    "khoảng thời gian; giờ (LT: 點|点[dian3], 分[fen1], 秒[miao3]) (như trong 三點鐘|三点钟[san1dian3zhong1] \"ba giờ\" hoặc \"ba tiếng\" hoặc 五分鐘|五分钟[wu3fen1zhong1] \"năm phút\" v.v.)"
   ],
   "接近": [
     "tiếp cận; đến gần"
@@ -2218,7 +2306,9 @@
     "bao vây",
     "bị áp lực",
     "mắc kẹt",
-    "cùng quẫn"
+    "cùng quẫn",
+    "buồn ngủ",
+    "mệt mỏi"
   ],
   "初": [
     "lúc đầu",
@@ -2517,7 +2607,11 @@
   ],
   "游": [
     "bơi",
-    "biến thể của 遊|游[you2]"
+    "biến thể của 遊|游[you2]",
+    "đi",
+    "du lịch",
+    "đi rong ruổi",
+    "du hành"
   ],
   "指导": [
     "hướng dẫn",
@@ -2553,7 +2647,11 @@
     "chặt (tiếng lóng)"
   ],
   "录": [
-    "khắc gỗ"
+    "khắc gỗ",
+    "nhật ký",
+    "ghi chép",
+    "quay",
+    "sao chép"
   ],
   "提前": [
     "dời lên ngày sớm hơn",
@@ -2739,7 +2837,15 @@
     "một trong tám loại nhạc cụ cổ đại 八音[ba1 yin1]"
   ],
   "念": [
-    "biến thể của 念[nian4], đọc to"
+    "đọc",
+    "học (một môn)",
+    "theo học (một trường)",
+    "đọc to",
+    "la mắng (LT:頓|顿[dun4])",
+    "nhớ (ai đó)",
+    "ý tưởng",
+    "hồi tưởng",
+    "hai mươi (chữ số chống gian lận trong ngân hàng tương ứng với 廿[nian4])"
   ],
   "进步": [
     "tiến bộ; cải thiện",
@@ -3618,7 +3724,10 @@
   ],
   "裤子": [
     "biến thể của 褲子|裤子, quần dài",
-    "quần tây"
+    "quần tây",
+    "quần dài",
+    "quần",
+    "LT:條|条[tiao2]"
   ],
   "运输": [
     "vận chuyển",
@@ -3968,7 +4077,12 @@
     "chào tạm biệt; nói lời tạm biệt"
   ],
   "反复": [
-    "biến thể của 反覆|反复[fan3 fu4]"
+    "lặp đi lặp lại",
+    "làm đi làm lại",
+    "lật ngược",
+    "không ổn định",
+    "đi đi lại lại",
+    "(bệnh) tái phát"
   ],
   "场所": [
     "địa điểm",

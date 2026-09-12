@@ -21,7 +21,8 @@
     "(phó từ để nhấn mạnh)"
   ],
   "你": [
-    "bạn (ngôi thứ hai thông dụng, khác với kính trọng 您[nin2])"
+    "bạn (ngôi thứ hai thông dụng, khác với kính trọng 您[nin2])",
+    "bạn (Lưu ý: Ở Đài Loan, 妳 được dùng để chỉ nữ giới, nhưng ở Trung Quốc đại lục, từ này không phổ biến. Thay vào đó, 你 được dùng cho cả nam và nữ.)"
   ],
   "在": [
     "tồn tại; còn sống",
@@ -66,7 +67,14 @@
     "(dạng kết hợp) cá nhân"
   ],
   "和": [
-    "biến thể cũ của 和[he2]"
+    "(nối hai danh từ) và; cùng với; với (cách đọc ở Đài Loan [han4])",
+    "(toán học) tổng",
+    "làm hoà",
+    "(thể thao) hoà; trận hoà",
+    "(dạng kết hợp) hài hoà",
+    "(dạng kết hợp) Nhật Bản; Nhật",
+    "biến thể cũ của 和[he2]",
+    "hòa hợp"
   ],
   "人": [
     "người; mọi người",
@@ -319,7 +327,14 @@
     "(phương ngữ) chú (anh em của cha)"
   ],
   "从": [
-    "biến thể của 從|从[cong2]"
+    "từ; thông qua; qua",
+    "(hình vị) theo",
+    "(hình vị) tuân theo",
+    "(hình vị) tham gia (một hoạt động)",
+    "(dùng trước phủ định) từng",
+    "(hình vị) (cách phát âm tại Đài Loan [zong4]) người hầu; người tuỳ tùng",
+    "(hình vị) (cách phát âm tại Đài Loan [zong4]) trợ lý; phụ tá; cấp dưới",
+    "(hình vị) (cách phát âm tại Đài Loan [zong4]) có quan hệ cùng ông nội hoặc tổ tiên đời trước"
   ],
   "下": [
     "xuống",
@@ -340,7 +355,15 @@
     "(phương ngữ) được; ổn"
   ],
   "里": [
-    "biến thể của 裡|里[li3]"
+    "lót",
+    "bên trong",
+    "phía trong",
+    "nội bộ",
+    "cũng viết 裏|里[li3]",
+    "dặm, đơn vị đo chiều dài cổ, xấp xỉ 500 m",
+    "khu xóm",
+    "đơn vị hành chính cổ gồm 25 gia đình",
+    "(Đài Loan) lý, đơn vị hành chính giữa cấp thị trấn 鎮|镇[zhen4] và khu phố 鄰|邻[lin2]"
   ],
   "真": [
     "thật",
@@ -360,7 +383,10 @@
   ],
   "年": [
     "năm",
-    "Lượng từ: 個|个[ge4]"
+    "Lượng từ: 個|个[ge4]",
+    "ngũ cốc",
+    "mùa thu hoạch (cũ)",
+    "biến thể của 年[nian2]"
   ],
   "用": [
     "sử dụng",
@@ -419,7 +445,8 @@
     "cực kỳ"
   ],
   "最": [
-    "biến thể của 最[zui4]"
+    "nhất",
+    "tính từ so sánh nhất"
   ],
   "再": [
     "lại; một lần nữa; tái-",
@@ -499,10 +526,23 @@
     "hoàng hậu",
     "nữ hoàng",
     "(cổ đại) quân vương",
-    "người cai trị"
+    "người cai trị",
+    "phía sau",
+    "đằng sau",
+    "sau này",
+    "sau",
+    "sau đó",
+    "hậu-"
   ],
   "家": [
-    "dùng trong 傢伙|家伙[jia1 huo5] và 傢俱|家俱[jia1 ju4]"
+    "dùng trong 傢伙|家伙[jia1 huo5] và 傢俱|家俱[jia1 ju4]",
+    "nhà",
+    "gia đình",
+    "(lịch sự) của tôi (chị, chú, v.v.)",
+    "lượng từ cho gia đình hoặc doanh nghiệp",
+    "chỉ các trường phái triết học Trung Quốc thời Tiền Hán",
+    "hậu tố danh từ cho chuyên gia trong một hoạt động nào đó, như nhạc sĩ hoặc nhà cách mạng, tương ứng với tiếng Anh -ist, -er, -ary hoặc -ian",
+    "LT:個|个[ge4]"
   ],
   "你们": [
     "các bạn (số nhiều)"
@@ -761,7 +801,7 @@
     "trẻ em"
   ],
   "这里": [
-    "biến thể của 這裡|这里[zhe4 li3]"
+    "ở đây"
   ],
   "别": [
     "rời khỏi; chia tay",
@@ -806,7 +846,8 @@
     "chủng tộc Hồi (người Hồi giáo Trung Quốc)",
     "lần",
     "lượng từ cho hành động trong vở kịch",
-    "phần hoặc chương (của sách kinh điển)"
+    "phần hoặc chương (của sách kinh điển)",
+    "cong"
   ],
   "东西": [
     "đồ vật",
@@ -871,7 +912,10 @@
   ],
   "岁": [
     "biến thể của 歲|岁[sui4], năm",
-    "tuổi"
+    "tuổi",
+    "lượng từ cho năm (tuổi)",
+    "năm",
+    "năm (mùa vụ)"
   ],
   "行": [
     "đi",
@@ -929,7 +973,12 @@
     "(hậu tố chỉ sự chắc chắn, ổn định, hoặc dừng lại)"
   ],
   "拿": [
-    "biến thể cũ của 拿[na2]"
+    "cầm",
+    "nắm",
+    "bắt",
+    "chụp",
+    "lấy",
+    "(dùng giống như 把[ba3]: đánh dấu danh từ phía sau là tân ngữ)"
   ],
   "高": [
     "cao",
@@ -1032,7 +1081,8 @@
     "0,01 nhân dân tệ (đơn vị tiền tệ)"
   ],
   "笑": [
-    "biến thể cũ của 笑[xiao4]"
+    "cười; mỉm cười",
+    "cười nhạo"
   ],
   "女人": [
     "phụ nữ"
@@ -1046,7 +1096,19 @@
     "hơi"
   ],
   "帮": [
-    "biến thể cũ của 幫|帮[bang1]"
+    "giúp",
+    "hỗ trợ",
+    "ủng hộ",
+    "giúp ai đó (tức là như một sự giúp đỡ)",
+    "thuê (làm công)",
+    "bên (của thùng, thuyền, v.v.)",
+    "lớp ngoài",
+    "phần trên (của giày)",
+    "nhóm",
+    "băng",
+    "đảng",
+    "phái",
+    "hội kín"
   ],
   "日": [
     "mặt trời",
@@ -1132,7 +1194,9 @@
     "lòe loẹt",
     "tiêu (tiền, thời gian)",
     "(khẩu ngữ) dâm đãng",
-    "dâm ô"
+    "dâm ô",
+    "biến thể của 花[hua1]",
+    "cũng đọc là [wei3]"
   ],
   "坐": [
     "ngồi",
@@ -1410,7 +1474,9 @@
   "杯": [
     "cái cúp",
     "cúp vô địch",
-    "lượng từ cho một số đồ chứa chất lỏng: ly, cốc"
+    "lượng từ cho một số đồ chứa chất lỏng: ly, cốc",
+    "biến thể của 杯[bei1]",
+    "cúp chiến thắng"
   ],
   "记得": [
     "nhớ"
@@ -1450,7 +1516,10 @@
     "dù ở đâu",
     "không nơi nào (câu trả lời phủ định cho câu hỏi)",
     "cách nói khiêm tốn phủ nhận lời khen",
-    "cũng viết 哪裡|哪里"
+    "cũng viết 哪裡|哪里",
+    "bất kỳ đâu",
+    "bất cứ nơi nào",
+    "biểu hiện khiêm tốn phủ nhận lời khen"
   ],
   "包": [
     "che phủ",
@@ -2105,7 +2174,13 @@
     "biến thể của 考[kao3]",
     "kiểm tra",
     "thi",
-    "làm bài kiểm tra"
+    "làm bài kiểm tra",
+    "xác minh",
+    "thử nghiệm",
+    "khám xét",
+    "tham gia kỳ thi",
+    "dự thi đầu vào",
+    "người cha đã mất"
   ],
   "九": [
     "chín",
@@ -2255,7 +2330,9 @@
   "奶": [
     "vú",
     "sữa",
-    "cho bú"
+    "cho bú",
+    "mẹ",
+    "biến thể của 奶[nai3]"
   ],
   "门口": [
     "cửa ra vào",
