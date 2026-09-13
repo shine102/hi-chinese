@@ -82,6 +82,7 @@ export function normalizeWord(
   entry: RawHskEntry,
   overrides: PinyinOverrides,
   hanViet: HanVietResolver,
+  viMeanings: Record<string, string[]>,
 ): Word | null {
   const level = hskLevelOf(entry);
   if (level === null) return null;
@@ -98,7 +99,7 @@ export function normalizeWord(
     pinyin: chosen.transcriptions.pinyin,
     pinyinNumeric: chosen.transcriptions.numeric,
     hanViet: hanViet.word(entry.simplified),
-    meanings: chosen.meanings,
+    meanings: viMeanings[entry.simplified] ?? chosen.meanings,
     alternates,
     pos: entry.pos ?? [],
     classifiers: chosen.classifiers ?? [],
@@ -113,12 +114,13 @@ export function parseHskWords(
   entries: RawHskEntry[],
   overrides: PinyinOverrides,
   hanViet: HanVietResolver,
+  viMeanings: Record<string, string[]>,
 ): Word[] {
   const seen = new Set<string>();
   const words: Word[] = [];
   for (const entry of entries) {
     if (seen.has(entry.simplified)) continue;
-    const word = normalizeWord(entry, overrides, hanViet);
+    const word = normalizeWord(entry, overrides, hanViet, viMeanings);
     if (!word) continue;
     seen.add(entry.simplified);
     words.push(word);

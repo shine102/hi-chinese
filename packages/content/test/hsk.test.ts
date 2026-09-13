@@ -114,7 +114,7 @@ describe('chooseReading', () => {
 
 describe('normalizeWord', () => {
   it('produces a Word with chosen reading, alternates, characters and empty unitId', () => {
-    const w = normalizeWord(le, { 了: 'le5' }, hanViet)!;
+    const w = normalizeWord(le, { 了: 'le5' }, hanViet, {})!;
     expect(w).toMatchObject({
       id: 'w:了',
       simplified: '了',
@@ -138,13 +138,32 @@ describe('normalizeWord', () => {
     ]);
   });
   it('keeps classifiers and multi-character words', () => {
-    const w = normalizeWord(aihao, {}, hanViet)!;
+    const w = normalizeWord(aihao, {}, hanViet, {})!;
     expect(w.classifiers).toEqual(['个']);
     expect(w.characters).toEqual(['爱', '好']);
     expect(w.traditional).toBe('愛好');
   });
   it('returns null outside levels 1-3', () => {
-    expect(normalizeWord(levelFour, {}, hanViet)).toBeNull();
+    expect(normalizeWord(levelFour, {}, hanViet, {})).toBeNull();
+  });
+  it('uses the Vietnamese meaning when seeded, keeping alternates in English', () => {
+    const w = normalizeWord(le, { 了: 'le5' }, hanViet, { 了: ['rồi (trợ từ)'] })!;
+    expect(w.meanings).toEqual(['rồi (trợ từ)']);
+    expect(w.alternates).toEqual([
+      {
+        pinyin: 'liǎo',
+        pinyinNumeric: 'liao3',
+        meanings: ['to finish', 'to settle', 'to understand', 'clear'],
+      },
+    ]);
+  });
+  it('falls back to the English meaning when not seeded', () => {
+    const w = normalizeWord(le, { 了: 'le5' }, hanViet, {})!;
+    expect(w.meanings).toEqual([
+      '(completed action marker)',
+      '(modal particle)',
+      '(change of state)',
+    ]);
   });
 });
 
@@ -154,7 +173,12 @@ describe('parseHskWords', () => {
       [levelFour, aihao, shuo, { ...shuo }, le, { ...ye, level: ['new-2'] }],
       {},
       hanViet,
+      {},
     );
     expect(words.map((w) => w.simplified)).toEqual(['了', '说', '爱好', '也']);
+  });
+  it('threads Vietnamese meanings through to the resulting words', () => {
+    const words = parseHskWords([le], {}, hanViet, { 了: ['rồi (trợ từ)'] });
+    expect(words[0]!.meanings).toEqual(['rồi (trợ từ)']);
   });
 });

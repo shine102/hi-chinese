@@ -48,6 +48,7 @@ describe('buildCharacters', () => {
       graphics,
       [word('你', ['你']), word('你好', ['你', '好'])],
       () => 'X',
+      {},
     );
     expect(missing).toEqual(['好']);
     expect(characters).toHaveLength(1);
@@ -74,7 +75,7 @@ describe('buildCharacters', () => {
   });
 
   it('uses null definition and empty fields when the dictionary lacks the character', () => {
-    const { characters } = buildCharacters('', graphics, [word('你', ['你'])], () => 'X');
+    const { characters } = buildCharacters('', graphics, [word('你', ['你'])], () => 'X', {});
     expect(characters[0]).toMatchObject({
       character: '你',
       definition: null,
@@ -82,5 +83,16 @@ describe('buildCharacters', () => {
       radical: '',
       decomposition: '',
     });
+  });
+
+  it('uses the Vietnamese definition when seeded, overriding the dictionary one', () => {
+    const { characters } = buildCharacters(
+      dictionary,
+      graphics,
+      [word('你', ['你'])],
+      () => 'X',
+      { 你: 'bạn' },
+    );
+    expect(characters[0]!.definition).toBe('bạn');
   });
 });

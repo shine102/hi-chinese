@@ -38,7 +38,15 @@ describe('loadAuthored', () => {
   });
   it('tolerates a missing overrides file and empty folders', async () => {
     const a = await loadAuthored(dir);
-    expect(a).toEqual({ sentences: [], grammar: [], overrides: {}, units: [], hanViet: { charMap: {}, wordOverrides: {} } });
+    expect(a).toEqual({
+      sentences: [],
+      grammar: [],
+      overrides: {},
+      units: [],
+      hanViet: { charMap: {}, wordOverrides: {} },
+      meanings: {},
+      charDefinitions: {},
+    });
   });
   it('rejects a file that is not an array', async () => {
     await writeFile(join(dir, 'grammar', 'bad.json'), JSON.stringify({ id: 'g1' }));
@@ -82,5 +90,26 @@ describe('loadAuthored', () => {
   it('returns empty hanviet objects when hanviet/ directory is absent', async () => {
     const authored = await loadAuthored(dir);
     expect(authored.hanViet).toEqual({ charMap: {}, wordOverrides: {} });
+  });
+  it('merges meanings and char-definitions across multiple files', async () => {
+    await mkdir(join(dir, 'meanings'));
+    await writeFile(join(dir, 'meanings', 'a.json'), JSON.stringify({ 你: ['bạn'] }));
+    await writeFile(join(dir, 'meanings', 'b.json'), JSON.stringify({ 好: ['tốt'] }));
+    await mkdir(join(dir, 'char-definitions'));
+    await writeFile(join(dir, 'char-definitions', 'a.json'), JSON.stringify({ 你: 'bạn' }));
+    const authored = await loadAuthored(dir);
+    expect(authored.meanings).toEqual({ 你: ['bạn'], 好: ['tốt'] });
+    expect(authored.charDefinitions).toEqual({ 你: 'bạn' });
+  });
+  it('returns empty meanings/charDefinitions when their directories are absent', async () => {
+    const authored = await loadAuthored(dir);
+    expect(authored.meanings).toEqual({});
+    expect(authored.charDefinitions).toEqual({});
+  });
+  it('rejects a duplicate key across meanings files', async () => {
+    await mkdir(join(dir, 'meanings'));
+    await writeFile(join(dir, 'meanings', 'a.json'), JSON.stringify({ 你: ['bạn'] }));
+    await writeFile(join(dir, 'meanings', 'b.json'), JSON.stringify({ 你: ['bạn 2'] }));
+    await expect(loadAuthored(dir)).rejects.toThrow(/already defined/);
   });
 });

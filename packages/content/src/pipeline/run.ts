@@ -19,7 +19,7 @@ export type RunResult = { ok: true; bundle: ContentBundle } | { ok: false; probl
 export function assembleContent(inputs: RunInputs): RunResult {
   const entries = JSON.parse(inputs.hskJson) as RawHskEntry[];
   const hanViet = makeHanViet(inputs.authored.hanViet);
-  const parsed = parseHskWords(entries, inputs.authored.overrides, hanViet);
+  const parsed = parseHskWords(entries, inputs.authored.overrides, hanViet, inputs.authored.meanings);
   const { units: bareUnits, words } = assignUnits(parsed, inputs.authored.units);
 
   const { sentences, errors: sentenceErrors } = placeSentences(
@@ -47,6 +47,7 @@ export function assembleContent(inputs: RunInputs): RunResult {
     inputs.graphicsText,
     words,
     (ch) => hanViet.char(ch),
+    inputs.authored.charDefinitions,
   );
 
   const bundle: ContentBundle = { words, characters, units, grammar, sentences };

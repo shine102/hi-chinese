@@ -5,6 +5,7 @@ import { loadAuthored } from '../src/pipeline/authored.js';
 import { writeContent } from '../src/pipeline/build.js';
 import { fetchRaw } from '../src/pipeline/fetch.js';
 import { assembleContent } from '../src/pipeline/run.js';
+import { findEnglishFallbacks } from '../src/pipeline/vietnamese-coverage.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const rawDir = resolve(here, '../raw');
@@ -34,3 +35,14 @@ console.log(
 );
 console.log(manifest.counts);
 for (const level of manifest.levels) console.log(`  ${level.title}: ${level.unitIds.length} units`);
+
+const coverage = findEnglishFallbacks(result.bundle, authored.meanings, authored.charDefinitions);
+if (coverage.wordsOnEnglishFallback.length > 0 || coverage.charactersOnEnglishFallback.length > 0) {
+  console.warn('warning: Vietnamese content coverage gaps (English fallback still in use):');
+  if (coverage.wordsOnEnglishFallback.length > 0) {
+    console.warn(`  words: ${coverage.wordsOnEnglishFallback.join(', ')}`);
+  }
+  if (coverage.charactersOnEnglishFallback.length > 0) {
+    console.warn(`  characters: ${coverage.charactersOnEnglishFallback.join(', ')}`);
+  }
+}

@@ -21,10 +21,10 @@ if (!levelArg || !['1', '2', '3'].includes(levelArg)) {
 const level = Number(levelArg) as HskLevel;
 
 const raw = await fetchRaw(rawDir);
-const { overrides, hanViet: hanVietData } = await loadAuthored(authoredDir);
+const { overrides, hanViet: hanVietData, meanings } = await loadAuthored(authoredDir);
 const hanViet = makeHanViet(hanVietData);
 const entries = JSON.parse(await readFile(raw.hsk, 'utf8')) as RawHskEntry[];
-const parsed = parseHskWords(entries, overrides, hanViet);
+const parsed = parseHskWords(entries, overrides, hanViet, meanings);
 const { units, words } = assignUnits(parsed);
 
 const wordById = new Map(words.map((w) => [w.id, w]));

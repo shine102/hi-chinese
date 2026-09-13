@@ -48,6 +48,8 @@ const authored = (overrides: Partial<Authored> = {}): Authored => ({
   overrides: {},
   units: [],
   hanViet: { charMap: { 我: 'Ngã', 是: 'Thị', 你: 'Nễ', 猫: 'Miêu' }, wordOverrides: {} },
+  meanings: {},
+  charDefinitions: {},
   ...overrides,
 });
 

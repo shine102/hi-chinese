@@ -8,6 +8,8 @@ export interface Authored {
   overrides: PinyinOverrides;
   units: AuthoredUnit[];
   hanViet: AuthoredHanViet;
+  meanings: Record<string, string[]>;
+  charDefinitions: Record<string, string>;
 }
 
 async function readJsonArrays<T>(dir: string): Promise<T[]> {
@@ -29,6 +31,34 @@ async function readJsonArrays<T>(dir: string): Promise<T[]> {
     }
     if (!Array.isArray(parsed)) throw new Error(`${path}: expected a JSON array`);
     out.push(...(parsed as T[]));
+  }
+  return out;
+}
+
+async function readJsonObjectsMerged(dir: string): Promise<Record<string, unknown>> {
+  let names: string[];
+  try {
+    names = (await readdir(dir)).filter((n) => n.endsWith('.json')).sort();
+  } catch {
+    return {};
+  }
+  const out: Record<string, unknown> = {};
+  for (const name of names) {
+    const path = join(dir, name);
+    const text = await readFile(path, 'utf8');
+    let parsed: unknown;
+    try {
+      parsed = JSON.parse(text);
+    } catch (e) {
+      throw new Error(`${path}: invalid JSON: ${(e as Error).message}`);
+    }
+    if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) {
+      throw new Error(`${path}: expected a JSON object`);
+    }
+    for (const [k, v] of Object.entries(parsed as Record<string, unknown>)) {
+      if (k in out) throw new Error(`${path}: key "${k}" is already defined by another file in ${dir}`);
+      out[k] = v;
+    }
   }
   return out;
 }
@@ -73,5 +103,9 @@ export async function loadAuthored(authoredDir: string): Promise<Authored> {
       charMap: await readJsonObject<Record<string, string>>(join(authoredDir, 'hanviet', 'char-map.json')),
       wordOverrides: await readJsonObject<Record<string, string>>(join(authoredDir, 'hanviet', 'word-overrides.json')),
     },
+    meanings: (await readJsonObjectsMerged(join(authoredDir, 'meanings'))) as Record<string, string[]>,
+    charDefinitions: (await readJsonObjectsMerged(
+      join(authoredDir, 'char-definitions'),
+    )) as Record<string, string>,
   };
 }
