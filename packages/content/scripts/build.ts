@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { loadAuthored } from '../src/pipeline/authored.js';
 import { writeContent } from '../src/pipeline/build.js';
 import { fetchRaw } from '../src/pipeline/fetch.js';
+import { findOrderViolations } from '../src/pipeline/curriculum-order.js';
 import { assembleContent } from '../src/pipeline/run.js';
 import { findEnglishFallbacks } from '../src/pipeline/vietnamese-coverage.js';
 
@@ -44,5 +45,15 @@ if (coverage.wordsOnEnglishFallback.length > 0 || coverage.charactersOnEnglishFa
   }
   if (coverage.charactersOnEnglishFallback.length > 0) {
     console.warn(`  characters: ${coverage.charactersOnEnglishFallback.join(', ')}`);
+  }
+}
+
+const orderViolations = findOrderViolations(result.bundle);
+if (orderViolations.length > 0) {
+  console.warn(
+    `warning: ${orderViolations.length} curriculum-order issue(s) (compound taught at/before its own character):`,
+  );
+  for (const v of orderViolations) {
+    console.warn(`  ${v.word} (${v.unitId}) uses ${v.char} (${v.charUnitId})`);
   }
 }
