@@ -164,7 +164,7 @@ function GrammarIntroSlide({
               <div>
                 <div className="text-lg">{s.zh}</div>
                 <div className="text-sm text-stone-600">{s.pinyin}</div>
-                <div className="text-sm text-stone-800">{s.en}</div>
+                <div className="text-sm text-stone-800">{s.vi}</div>
               </div>
               <SpeakButton text={s.zh} />
             </li>

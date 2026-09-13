@@ -20,7 +20,7 @@ export function FillBlank({ exercise, answered, onAnswer }: ExerciseProps<FillBl
           ),
         )}
       </p>
-      <p className="text-stone-600">{exercise.en}</p>
+      <p className="text-stone-600">{exercise.vi}</p>
       <ChoiceList
         options={exercise.options}
         correctIndex={exercise.correctIndex}

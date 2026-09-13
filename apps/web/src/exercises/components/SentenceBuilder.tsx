@@ -31,7 +31,7 @@ export function SentenceBuilder({
   return (
     <div className="flex flex-col gap-4">
       <p className="text-sm text-stone-500">Build the sentence</p>
-      <p className="text-lg text-stone-800">{exercise.en}</p>
+      <p className="text-lg text-stone-800">{exercise.vi}</p>
       <div
         data-testid="tile-answer"
         className="flex min-h-14 flex-wrap gap-2 rounded-lg border-2 border-dashed border-stone-300 p-2"

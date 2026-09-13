@@ -72,7 +72,7 @@ export function MatchPairs({ exercise, answered, onAnswer }: ExerciseProps<Match
                 className={`${base} ${shake === i ? 'border-red-500 bg-red-50' : 'border-stone-300 bg-white'}`}
                 {...devAttr('data-pair-right', i)}
               >
-                {exercise.pairs[i]!.en}
+                {exercise.pairs[i]!.vi}
               </button>
             </li>
           ))}

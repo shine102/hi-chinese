@@ -135,7 +135,7 @@ describe('generateSession', () => {
       expect(e.answer).toEqual(tokensOf(sentence, words));
       expect(e.tiles).toHaveLength(e.answer.length + 2);
       for (const t of e.answer) expect(e.tiles).toContain(t);
-      expect(e.en).toBe(sentence.en);
+      expect(e.vi).toBe(sentence.vi);
       expect(e.speech).toBe(sentence.zh);
     }
   });
@@ -144,7 +144,7 @@ describe('generateSession', () => {
     const [pairs] = byKind(session, 'match-pairs');
     if (pairs?.kind !== 'match-pairs') throw new Error('expected match-pairs');
     expect(pairs.pairs).toHaveLength(5);
-    expect(new Set(pairs.pairs.map((p) => p.en)).size).toBe(5);
+    expect(new Set(pairs.pairs.map((p) => p.vi)).size).toBe(5);
     for (const p of pairs.pairs)
       expect(newWordIds.has(p.wordId) || reviewWordIds.has(p.wordId)).toBe(true);
   });

@@ -16,7 +16,7 @@ const builder: Exercise = {
   kind: 'sentence-builder',
   id: 'sb:1',
   sentenceId: 's:l1:002',
-  en: 'I am not him.',
+  vi: 'I am not him.',
   speech: '我不是他。',
   answer: ['我', '不', '是', '他'],
   tiles: ['他', '我', '好', '不', '是', '你'],
@@ -25,8 +25,8 @@ const pairs: Exercise = {
   kind: 'match-pairs',
   id: 'mp:1',
   pairs: [
-    { wordId: 'w:我', zh: '我', en: 'I' },
-    { wordId: 'w:你', zh: '你', en: 'you' },
+    { wordId: 'w:我', zh: '我', vi: 'I' },
+    { wordId: 'w:你', zh: '你', vi: 'you' },
   ],
 };
 

@@ -21,10 +21,10 @@ describe('computeLessons', () => {
   };
 
   const sentences: Sentence[] = [
-    { id: 's:1', zh: '一二', pinyin: '', en: '', wordIds: ['w:1','w:2'], unitId: 'l1-u01' },
-    { id: 's:2', zh: '三四', pinyin: '', en: '', wordIds: ['w:3','w:4'], unitId: 'l1-u01' },
-    { id: 's:3', zh: '五六', pinyin: '', en: '', wordIds: ['w:5','w:6'], unitId: 'l1-u01' },
-    { id: 's:4', zh: '九十', pinyin: '', en: '', wordIds: ['w:9','w:10'], unitId: 'l1-u01' },
+    { id: 's:1', zh: '一二', pinyin: '', vi: '', wordIds: ['w:1','w:2'], unitId: 'l1-u01' },
+    { id: 's:2', zh: '三四', pinyin: '', vi: '', wordIds: ['w:3','w:4'], unitId: 'l1-u01' },
+    { id: 's:3', zh: '五六', pinyin: '', vi: '', wordIds: ['w:5','w:6'], unitId: 'l1-u01' },
+    { id: 's:4', zh: '九十', pinyin: '', vi: '', wordIds: ['w:9','w:10'], unitId: 'l1-u01' },
   ];
 
   const grammar: GrammarPoint[] = [

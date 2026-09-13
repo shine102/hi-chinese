@@ -171,11 +171,11 @@ export function matchPairs(unitWords: readonly Word[], rng: Rng, id: IdGen): Mat
   const seen = new Set<string>();
   const pairs: MatchPairsExercise['pairs'] = [];
   for (const w of shuffle(unitWords, rng)) {
-    const en = primaryMeaning(w);
-    if (seen.has(en) || seen.has(w.simplified)) continue;
-    seen.add(en);
+    const vi = primaryMeaning(w);
+    if (seen.has(vi) || seen.has(w.simplified)) continue;
+    seen.add(vi);
     seen.add(w.simplified);
-    pairs.push({ wordId: w.id, zh: w.simplified, en });
+    pairs.push({ wordId: w.id, zh: w.simplified, vi });
     if (pairs.length === 5) break;
   }
   return pairs.length === 5 ? { kind: 'match-pairs', id: id('mp'), pairs } : null;
@@ -194,7 +194,7 @@ export function sentenceBuilder(
     kind: 'sentence-builder',
     id: id('sb'),
     sentenceId: sentence.id,
-    en: sentence.en,
+    vi: sentence.vi,
     speech: sentence.zh,
     answer,
     tiles: shuffle([...answer, ...distractors], rng),
@@ -228,7 +228,7 @@ export function fillBlank(
     grammarId: grammar?.id ?? null,
     tokens,
     blankIndex,
-    en: sentence.en,
+    vi: sentence.vi,
     options,
     correctIndex,
   };

@@ -25,14 +25,14 @@ export interface ListenPickExercise {
 export interface MatchPairsExercise {
   kind: 'match-pairs';
   id: string;
-  pairs: { wordId: string; zh: string; en: string }[];
+  pairs: { wordId: string; zh: string; vi: string }[];
 }
 
 export interface SentenceBuilderExercise {
   kind: 'sentence-builder';
   id: string;
   sentenceId: string;
-  en: string;
+  vi: string;
   speech: string;
   answer: string[];
   /** Shuffled: the answer tokens plus two distractors. */
@@ -46,7 +46,7 @@ export interface FillBlankExercise {
   grammarId: string | null;
   tokens: string[];
   blankIndex: number;
-  en: string;
+  vi: string;
   options: string[];
   correctIndex: number;
 }
@@ -100,7 +100,7 @@ export function correctAnswerText(exercise: Exercise): string {
     case 'sentence-builder':
       return exercise.answer.join('');
     case 'match-pairs':
-      return exercise.pairs.map((p) => `${p.zh} = ${p.en}`).join(', ');
+      return exercise.pairs.map((p) => `${p.zh} = ${p.vi}`).join(', ');
     case 'write-it':
       return exercise.character;
   }
