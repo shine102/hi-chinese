@@ -9,10 +9,14 @@ const LINE_RE = /^(\S+) (\S+) \[([^\]]*)\] \/(.+)\/$/;
 
 // CEDICT-family dictionaries embed classifier/measure-word annotations as one
 // of the slash-delimited senses (e.g. English CEDICT uses "CL:...", CVDICT's
-// Vietnamese translation of that convention uses "LT:..." for "loại từ").
-// This is redundant with the app's own `Word.classifiers` field and must not
-// leak into `meanings` as if it were a real semantic sense.
-const CLASSIFIER_ANNOTATION_RE = /^(LT|CL):/i;
+// Vietnamese translation of that convention uses "LT:..." or the spelled-out
+// "Lượng từ: ..." for "loại từ"/"lượng từ"). CVDICT also embeds Kangxi radical
+// index metadata ("Bộ Khang Hy số N") as its own slash-delimited sense. Both
+// are bibliographic/redundant metadata (classifiers are covered separately by
+// the app's own `Word.classifiers` field) and must not leak into `meanings`
+// as if they were real semantic senses.
+const CLASSIFIER_ANNOTATION_RE = /^(LT|CL):|^lượng từ\s*:/i;
+const KANGXI_RADICAL_ANNOTATION_RE = /^Bộ Khang Hy số/i;
 
 export function parseCedictLine(line: string): CedictEntry | null {
   const trimmed = line.trimEnd();
@@ -23,7 +27,8 @@ export function parseCedictLine(line: string): CedictEntry | null {
   const meanings = sensesRaw!
     .split('/')
     .filter((s) => s.length > 0)
-    .filter((s) => !CLASSIFIER_ANNOTATION_RE.test(s.trimStart()));
+    .filter((s) => !CLASSIFIER_ANNOTATION_RE.test(s.trimStart()))
+    .filter((s) => !KANGXI_RADICAL_ANNOTATION_RE.test(s.trimStart()));
   return { traditional: traditional!, simplified: simplified!, pinyin: pinyin!, meanings };
 }
 

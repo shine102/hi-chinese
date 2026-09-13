@@ -60,6 +60,47 @@ describe('parseCedictLine', () => {
       meanings: ['chồng'],
     });
   });
+
+  it('filters the spelled-out "Lượng từ:" classifier annotation', () => {
+    // Real CVDICT.u8 line for 血 (packages/content/raw/CVDICT.u8:95905).
+    const line = '血 血 [xue4] /máu/khẩu ngữ đọc là [xie3]/Lượng từ: 滴[di1],片[pian4]/';
+    expect(parseCedictLine(line)).toEqual({
+      traditional: '血',
+      simplified: '血',
+      pinyin: 'xue4',
+      meanings: ['máu', 'khẩu ngữ đọc là [xie3]'],
+    });
+  });
+
+  it('filters both a "Lượng từ:" annotation and a "Bộ Khang Hy số" radical annotation', () => {
+    // Real CVDICT.u8 line for 衣 (packages/content/raw/CVDICT.u8:96373).
+    const line = '衣 衣 [yi1] /quần áo/Lượng từ: 件[jian4]/Bộ Khang Hy số 145/';
+    expect(parseCedictLine(line)).toEqual({
+      traditional: '衣',
+      simplified: '衣',
+      pinyin: 'yi1',
+      meanings: ['quần áo'],
+    });
+  });
+
+  it('filters a lowercase "lượng từ:" annotation whose classifier list contains an internal comma', () => {
+    // Real CVDICT.u8 line for 腳/脚 (packages/content/raw/CVDICT.u8:89226). The
+    // "lượng từ: 雙|双[shuang1], 隻|只[zhi1]" sense has an internal ", " — this
+    // must be dropped as one whole slash-delimited sense, not re-split on ", ".
+    const line =
+      '腳 脚 [jiao3] /bàn chân/chân (của động vật hoặc đồ vật)/đế, chân (của đồ vật)/lượng từ: 雙|双[shuang1], 隻|只[zhi1]/lượng từ cho cú đá/';
+    expect(parseCedictLine(line)).toEqual({
+      traditional: '腳',
+      simplified: '脚',
+      pinyin: 'jiao3',
+      meanings: [
+        'bàn chân',
+        'chân (của động vật hoặc đồ vật)',
+        'đế, chân (của đồ vật)',
+        'lượng từ cho cú đá',
+      ],
+    });
+  });
 });
 
 describe('parseCedict', () => {
