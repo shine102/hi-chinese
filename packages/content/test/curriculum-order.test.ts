@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { findOrderViolations } from '../src/pipeline/curriculum-order.js';
 import type { HskLevel, Unit, Word } from '../src/types.js';
 
-const mkWord = (simplified: string, unitId: string): Word => ({
+const mkWord = (simplified: string, unitId: string, level: HskLevel = 1): Word => ({
   id: `w:${simplified}`,
   simplified,
   traditional: simplified,
@@ -13,7 +13,7 @@ const mkWord = (simplified: string, unitId: string): Word => ({
   alternates: [],
   pos: [],
   classifiers: [],
-  level: 1 as HskLevel,
+  level,
   frequency: 1,
   characters: [...simplified],
   unitId,
@@ -70,5 +70,17 @@ describe('findOrderViolations', () => {
     const units = [mkUnit('u02', 2, ['w:爸爸']), mkUnit('u03', 3, ['w:爸'])];
     const violations = findOrderViolations({ words, units });
     expect(violations).toHaveLength(1);
+  });
+
+  it('does not flag when the constituent char-word has a strictly higher HSK level', () => {
+    const words = [mkWord('名字', 'u01', 1), mkWord('名', 'u02', 2)];
+    const units = [mkUnit('u01', 1, ['w:名字']), mkUnit('u02', 2, ['w:名'])];
+    expect(findOrderViolations({ words, units })).toEqual([]);
+  });
+
+  it('still flags when the constituent char-word has the same HSK level', () => {
+    const words = [mkWord('名字', 'u01', 2), mkWord('名', 'u02', 2)];
+    const units = [mkUnit('u01', 1, ['w:名字']), mkUnit('u02', 2, ['w:名'])];
+    expect(findOrderViolations({ words, units })).toHaveLength(1);
   });
 });

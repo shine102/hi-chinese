@@ -14,6 +14,11 @@ export interface OrderViolation {
  * of their own constituent characters (when that character is itself a course word). This
  * is a curation signal, not a hard rule: some holistic high-frequency terms (e.g. 谢谢) are
  * deliberately taught before their parts, so callers should warn rather than fail the build.
+ *
+ * A character whose own HSK level is HIGHER than the compound's level is skipped: HSK itself
+ * lists that character as harder than the compound built from it (e.g. 名字 is HSK1 but 名 is
+ * only an HSK2 headword), so no curation choice can front-load it without breaking the level
+ * structure. That is not a curation defect, just a property of the source word list.
  */
 export function findOrderViolations(
   bundle: Pick<ContentBundle, 'words' | 'units'>,
@@ -33,6 +38,7 @@ export function findOrderViolations(
       seenChars.add(ch);
       const charWord = wordBySimplified.get(ch);
       if (!charWord) continue;
+      if (charWord.level > w.level) continue;
       const wOrder = unitOrderById.get(w.unitId);
       const cOrder = unitOrderById.get(charWord.unitId);
       if (wOrder === undefined || cOrder === undefined) continue;

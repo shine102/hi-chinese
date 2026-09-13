@@ -10,26 +10,25 @@ const content = resolve(here, '../../../apps/web/public/content');
 
 const readJson = async (p: string) => JSON.parse(await readFile(p, 'utf8'));
 
-// Regression guard: P3 re-curated level 1 so single-character words are taught at or before
-// any compound built from them (docs/superpowers/plans/2026-09-13-p3-l1-word-order.md). This
-// checks the shipped data directly so a future hand-edit to units/level1.json that
-// reintroduces a compound-before-its-character ordering fails here rather than shipping
-// silently. L2/L3 are not yet curated this way (P4/P5) and are intentionally excluded.
-describe('Curriculum word order (level 1)', () => {
+// Regression guard: P3 re-curated level 1 and P4/P5 re-curated levels 2/3 so every
+// single-character word is taught at or before any compound built from it — with one
+// principled exception baked into findOrderViolations itself: a constituent character whose
+// own HSK level is HIGHER than the compound's level is not a curation defect (HSK itself made
+// that character harder than the compound, e.g. 名字 is HSK1 but 名 is only an HSK2 headword),
+// so those don't count as violations at all. This checks the shipped data directly, across
+// every level, so a future hand-edit to any units/levelN.json that reintroduces a real
+// compound-before-its-character ordering fails here rather than shipping silently.
+describe('Curriculum word order (all levels)', () => {
   it('has no compound taught at or before its own constituent character', async () => {
     const words = (await readJson(resolve(content, 'words.json'))) as Word[];
-    const unitFiles = (await readdir(resolve(content, 'units'))).filter(
-      (f) => f.startsWith('l1-') && f.endsWith('.json'),
-    );
+    const unitFiles = (await readdir(resolve(content, 'units'))).filter((f) => f.endsWith('.json'));
     const units: Unit[] = [];
     for (const f of unitFiles) {
       const chunk = (await readJson(resolve(content, 'units', f))) as { unit: Unit };
       units.push(chunk.unit);
     }
-    const l1WordIds = new Set(units.flatMap((u) => u.wordIds));
-    const l1Words = words.filter((w) => l1WordIds.has(w.id));
 
-    const violations = findOrderViolations({ words: l1Words, units });
+    const violations = findOrderViolations({ words, units });
     expect(violations).toEqual([]);
   });
 });

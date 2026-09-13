@@ -27,16 +27,32 @@ export function assembleContent(inputs: RunInputs): RunResult {
     words,
     bareUnits,
   );
-  const authoredLevels = new Set(inputs.authored.units.map((u) => u.level));
+  // Level 1 is the introduction level: its example sentences use only level-1 vocabulary, so
+  // placing a grammar point at the EARLIEST unit among its examples is unambiguous and pedagogically
+  // right (explain the pattern as soon as it's first demonstrable). Levels 2/3 don't get this
+  // treatment even once they have authored (thematic) units: their example sentences deliberately
+  // reuse simple, lower-level filler vocabulary so the sentence highlights the new pattern rather
+  // than new words — which means the EARLIEST placement is fragile (any one "easy" example sentence
+  // drags a whole grammar point's placement down to an earlier level, an authoring mismatch that
+  // isn't really a mismatch). `placeGrammar`'s LATEST + cap/spill + graceful under-level fallback is
+  // robust to that and is used for every level except 1, unconditionally.
   const { grammar: authoredGrammar, errors: authoredGrammarErrors } = placeAuthoredGrammar(
-    inputs.authored.grammar.filter((g) => authoredLevels.has(g.level)),
+    inputs.authored.grammar.filter((g) => g.level === 1),
     sentences,
     bareUnits,
   );
+  // maxPerUnit raised from the default 2 to 4: thematic (not frequency-chunked) L2/L3 units cluster
+  // grammar points that share trigger vocabulary (e.g. time-expression or cognition-verb themes)
+  // into the same few units far more than the near-uniform frequency chunking the default assumed.
+  // Total grammar count is well within overall level capacity — this is a distribution problem, not
+  // a capacity one — so a moderate cap increase (verified empirically to clear all placement
+  // conflicts for the current L2/L3 grammar set, still forward-only/same-level, never displacing a
+  // point before its own example vocabulary is taught) is the correct fix, not a bigger cap value.
   const { grammar: pipelineGrammar, errors: pipelineGrammarErrors } = placeGrammar(
-    inputs.authored.grammar.filter((g) => !authoredLevels.has(g.level)),
+    inputs.authored.grammar.filter((g) => g.level !== 1),
     sentences,
     bareUnits,
+    4,
   );
   const grammar = [...authoredGrammar, ...pipelineGrammar];
   const grammarErrors = [...authoredGrammarErrors, ...pipelineGrammarErrors];
