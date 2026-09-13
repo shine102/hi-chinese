@@ -38,15 +38,10 @@
     "LT:個|个[ge4]"
   ],
   "并": [
-    "và",
-    "hơn nữa",
-    "cũng",
-    "cùng với",
-    "(không) hề",
-    "đồng thời",
-    "kết hợp",
-    "gia nhập",
-    "sáp nhập"
+    "và; hơn nữa; cũng",
+    "cùng với; đồng thời",
+    "(không) hề (dùng để phủ định)",
+    "sáp nhập; hợp nhất"
   ],
   "所": [
     "thực ra",
@@ -601,18 +596,9 @@
     "LT:篇[pian1],份[fen4],個|个[ge4],通[tong4]"
   ],
   "台": [
-    "(văn cổ) ông (trong thư từ)",
-    "biến thể của 臺|台[tai2]",
-    "bàn; cái bàn; quầy",
-    "bục",
-    "sân khấu",
-    "sân",
-    "đài",
-    "hỗ trợ",
-    "nhà ga",
-    "đài phát thanh",
-    "lượng từ cho xe cộ hoặc máy móc",
-    "bão"
+    "đài (truyền hình, phát thanh)",
+    "sân khấu; bục; đài",
+    "lượng từ cho máy móc, xe cộ: cái, chiếc"
   ],
   "生命": [
     "sự sống (như đặc trưng của sinh vật)",
@@ -1218,18 +1204,9 @@
     "bầy, đàn, nhóm v.v."
   ],
   "照": [
-    "biến thể của 照[zhao4]",
-    "chiếu",
-    "soi sáng",
-    "theo",
-    "theo như",
-    "soi",
-    "phản chiếu",
-    "nhìn (hình phản chiếu)",
     "chụp (ảnh)",
-    "ảnh",
-    "theo yêu cầu",
-    "như trước"
+    "chiếu; soi sáng",
+    "theo; theo như"
   ],
   "环境": [
     "môi trường",
@@ -1642,17 +1619,9 @@
     "(tượng thanh) cười to"
   ],
   "准": [
-    "cho phép",
-    "chấp thuận",
-    "theo",
-    "phù hợp với",
-    "chính xác",
-    "tiêu chuẩn",
-    "chắc chắn",
-    "nhất định",
-    "sắp trở thành (cô dâu, con rể, v.v.)",
-    "chuẩn-",
-    "cận-"
+    "chuẩn; chính xác",
+    "cho phép; chấp thuận",
+    "chắc chắn; nhất định"
   ],
   "输": [
     "thua; bị đánh bại",
@@ -1678,16 +1647,8 @@
     "(thông tục) nếu"
   ],
   "系": [
-    "kết nối",
-    "liên quan đến",
-    "buộc",
-    "ràng buộc",
-    "là (văn học)",
-    "hệ thống",
-    "khoa",
-    "ban",
-    "bắt giữ",
-    "lo lắng"
+    "khoa; ngành (ở trường đại học)",
+    "buộc; thắt (dây)"
   ],
   "增加": [
     "tăng; tăng thêm"
@@ -1751,12 +1712,8 @@
     "đại (địa chất)"
   ],
   "下面": [
-    "bên dưới",
-    "dưới",
-    "tiếp theo",
-    "sau đây",
-    "cũng đọc là [xia4 mian5]",
-    "luộc mì"
+    "bên dưới; phía dưới",
+    "tiếp theo; sau đây"
   ],
   "理论": [
     "lý thuyết",
@@ -1774,16 +1731,9 @@
     "công bố"
   ],
   "期": [
-    "biến thể của 期[qi1]",
-    "thời kỳ",
-    "chu kỳ",
-    "một khoảng thời gian",
-    "giai đoạn",
-    "lượng từ cho số phát hành của tạp chí, khóa học",
-    "thời gian",
-    "học kỳ",
-    "kỳ vọng",
-    "âm đọc ở Đài Loan: [qi2]"
+    "kỳ; giai đoạn; thời hạn",
+    "kỳ vọng; mong đợi",
+    "lượng từ cho số phát hành (báo, tạp chí)"
   ],
   "姑娘": [
     "cô gái",
@@ -1923,16 +1873,8 @@
     "(cũ) đơn vị hành chính trong hệ thống bảo giáp 保甲[bao3jia3]"
   ],
   "团": [
-    "tròn",
-    "cục",
-    "khối",
-    "cuộn thành bóng",
-    "tụ tập",
-    "trung đoàn",
-    "nhóm",
-    "hội",
-    "lượng từ cho một khối hoặc chất mềm: nắm (giấy), cuộn (len), đám (khói)",
-    "bánh hấp"
+    "đoàn; nhóm; tổ chức",
+    "lượng từ cho khối/cục mềm: cuộn, nắm, đám"
   ],
   "世纪": [
     "thế kỷ",
@@ -1959,14 +1901,8 @@
     "đối phương"
   ],
   "证": [
-    "khiển trách",
-    "biến thể của 證|证[zheng4]",
-    "chứng chỉ",
-    "bằng chứng",
-    "chứng minh",
-    "biểu thị",
-    "xác nhận",
-    "biến thể của 症[zheng4]"
+    "chứng chỉ; giấy chứng nhận",
+    "chứng minh; xác nhận"
   ],
   "不得不": [
     "không có lựa chọn nào khác ngoài",
@@ -2094,13 +2030,8 @@
     "đủ; đủ mức"
   ],
   "布": [
-    "biến thể của 布[bu4]",
-    "thông báo",
-    "lan truyền",
     "vải",
-    "tuyên bố",
-    "truyền ra",
-    "làm cho biết"
+    "công bố; tuyên bố; truyền ra"
   ],
   "咖啡": [
     "cà phê (từ mượn)",
@@ -2148,12 +2079,8 @@
     "một người nhất định phải"
   ],
   "钟": [
-    "cốc không quai; ly rượu",
-    "hình thức kết hợp, tập trung (tình cảm, v.v.)",
-    "biến thể của 鐘|钟[zhong1]",
-    "một cái chuông (lớn) (LT: 架[jia4])",
-    "đồng hồ (LT: 座[zuo4])",
-    "khoảng thời gian; giờ (LT: 點|点[dian3], 分[fen1], 秒[miao3]) (như trong 三點鐘|三点钟[san1dian3zhong1] \"ba giờ\" hoặc \"ba tiếng\" hoặc 五分鐘|五分钟[wu3fen1zhong1] \"năm phút\" v.v.)"
+    "đồng hồ (treo tường/để bàn)",
+    "giờ; phút (đo thời gian, ví dụ: 三点钟)"
   ],
   "接近": [
     "tiếp cận; đến gần"
@@ -2302,13 +2229,8 @@
     "tham gia (kinh doanh, v.v.); điều hành; vận hành"
   ],
   "困": [
-    "bẫy",
-    "bao vây",
-    "bị áp lực",
-    "mắc kẹt",
-    "cùng quẫn",
-    "buồn ngủ",
-    "mệt mỏi"
+    "buồn ngủ; mệt mỏi",
+    "khó khăn; bị mắc kẹt; bị bao vây"
   ],
   "初": [
     "lúc đầu",
@@ -2606,12 +2528,8 @@
     "tăng trưởng"
   ],
   "游": [
-    "bơi",
-    "biến thể của 遊|游[you2]",
-    "đi",
-    "du lịch",
-    "đi rong ruổi",
-    "du hành"
+    "bơi (bơi lội)",
+    "du lịch; đi chơi; dạo chơi"
   ],
   "指导": [
     "hướng dẫn",
@@ -2647,11 +2565,7 @@
     "chặt (tiếng lóng)"
   ],
   "录": [
-    "khắc gỗ",
-    "nhật ký",
-    "ghi chép",
-    "quay",
-    "sao chép"
+    "ghi; ghi âm; ghi hình"
   ],
   "提前": [
     "dời lên ngày sớm hơn",
@@ -3723,11 +3637,7 @@
     "cấu thành"
   ],
   "裤子": [
-    "biến thể của 褲子|裤子, quần dài",
-    "quần tây",
-    "quần dài",
-    "quần",
-    "LT:條|条[tiao2]"
+    "quần; quần dài"
   ],
   "运输": [
     "vận chuyển",

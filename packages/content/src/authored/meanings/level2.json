@@ -107,14 +107,8 @@
     "LT:個|个[ge4]"
   ],
   "才": [
-    "khả năng; tài năng",
-    "người thuộc một kiểu nào đó",
-    "một cá nhân có năng lực",
-    "rồi thì và chỉ rồi thì",
-    "vừa mới",
-    "(trước một biểu hiện về số lượng) chỉ",
-    "(biến thể của 才[cai2]) vừa mới",
-    "(biến thể của 才[cai2]) (trước một biểu thức chỉ số lượng) chỉ"
+    "mới; vừa mới",
+    "chỉ (dùng trước số lượng để nhấn mạnh ít)"
   ],
   "像": [
     "giống",
@@ -127,24 +121,8 @@
     "hình ảnh trong ánh xạ (toán học)"
   ],
   "当": [
-    "(từ tượng thanh) đong",
-    "đinh đong (chuông)",
-    "làm",
-    "làm việc",
-    "quản lý",
-    "chịu đựng",
-    "khi",
-    "trong lúc",
-    "nên",
-    "phải",
-    "tương xứng",
-    "bằng",
-    "giống",
-    "cản trở",
-    "đúng lúc (thời gian hoặc địa điểm)",
-    "tại chỗ",
-    "ngay",
-    "lúc đó"
+    "khi; lúc (dùng trong 当...的时候)",
+    "làm; đảm nhiệm (chức vụ)"
   ],
   "所以": [
     "vì vậy",
@@ -162,26 +140,8 @@
     "nếu vậy"
   ],
   "向": [
-    "hướng",
-    "về phía",
-    "quay về",
-    "phương hướng",
-    "hỗ trợ",
-    "đứng về phía",
-    "ngay trước đây",
-    "trước đây",
-    "luôn luôn",
-    "suốt",
-    "dùng làm hậu tố cho...",
-    "hướng đến...",
-    "có xu hướng",
-    "hướng dẫn",
-    "biến thể của 向[xiang4]",
-    "hướng đi",
-    "đối mặt",
-    "đến",
-    "về",
-    "ngay trước"
+    "hướng về phía; về phía",
+    "phương hướng"
   ],
   "这么": [
     "nhiều như vậy",
@@ -402,20 +362,7 @@
     "bằng cách; thông qua; qua"
   ],
   "周": [
-    "đi một vòng",
-    "xoay vòng",
-    "đường tròn",
-    "chu vi",
-    "vòng",
-    "chu kỳ",
-    "hoàn thành",
-    "tất cả",
-    "khắp",
-    "triệt để",
-    "hỗ trợ tài chính",
-    "tuần",
-    "hàng tuần",
-    "biến thể của 周[zhou1]"
+    "tuần; tuần lễ"
   ],
   "过去": [
     "(trong quá khứ); trước đây; trước đó",
@@ -817,16 +764,9 @@
     "có thể"
   ],
   "面": [
-    "mặt",
-    "bên",
-    "bề mặt",
-    "khía cạnh",
-    "Lượng từ cho vật có bề mặt phẳng như trống, gương, cờ, v.v.",
-    "bột",
-    "mì",
-    "(thức ăn) mềm (không giòn)",
-    "(tiếng lóng) (người) kém cỏi",
-    "nhu nhược"
+    "mặt; bề mặt",
+    "mì (sợi mì)",
+    "lượng từ cho vật có bề mặt phẳng: tấm, mảnh"
   ],
   "活动": [
     "tập thể dục",
@@ -970,13 +910,7 @@
     "lượng từ cho xe cộ"
   ],
   "药": [
-    "lá của cây diên vĩ",
-    "biến thể của 藥|药[yao4]",
-    "thuốc",
-    "dược phẩm",
-    "chất dùng cho mục đích cụ thể (ví dụ: đầu độc, nổ, lên men)",
-    "LT:種|种[zhong3],服[fu4],味[wei4]",
-    "đầu độc"
+    "thuốc; dược phẩm"
   ],
   "留": [
     "để lại (tin nhắn, v.v.)",
@@ -1074,14 +1008,7 @@
     "giống như"
   ],
   "克": [
-    "có thể",
-    "chế ngự",
-    "kiềm chế",
-    "vượt qua",
-    "gram",
-    "đơn vị diện tích đất của Tây Tạng, khoảng 6 are",
-    "biến thể của 克[ke4]",
-    "lật đổ"
+    "gram (đơn vị khối lượng)"
   ],
   "愿意": [
     "muốn",
@@ -1488,13 +1415,8 @@
     "như là"
   ],
   "假": [
-    "giả",
-    "sai",
-    "nhân tạo",
-    "mượn",
-    "nếu",
-    "giả sử",
-    "biến thể của 假[jia3]"
+    "giả; giả dối; không thật",
+    "nếu; giả sử"
   ],
   "后来": [
     "sau này; sau đó",
@@ -1615,9 +1537,7 @@
     "đạt được; thực hiện; nhận ra; làm cho xảy ra"
   ],
   "刚才": [
-    "vừa nãy",
-    "mới đây",
-    "vừa mới (biến thể của 剛才|刚才[gang1 cai2])"
+    "vừa nãy; mới đây"
   ],
   "猫": [
     "mèo (LT: 隻|只[zhi1])",
@@ -1727,10 +1647,7 @@
     "tim; tâm trí"
   ],
   "腿": [
-    "chân",
-    "Lượng từ:條|条[tiao2]",
-    "xương hông",
-    "biến thể cũ của 腿[tui3]"
+    "chân (bộ phận cơ thể)"
   ],
   "全国": [
     "cả nước",
@@ -1816,9 +1733,8 @@
     "LT:門|门[men2],個|个[ge4],種|种[zhong3]"
   ],
   "喂": [
-    "này",
-    "cho ăn (động vật, em bé, người bệnh v.v.)",
-    "cho ăn"
+    "này; alô (dùng để gọi hoặc trả lời điện thoại)",
+    "cho ăn (con vật, em bé, v.v.)"
   ],
   "心情": [
     "tâm trạng; trạng thái tinh thần",
@@ -1858,15 +1774,9 @@
     "(triết học) hiện thực"
   ],
   "表": [
-    "bề mặt bên ngoài",
-    "quan hệ họ hàng qua nữ giới",
-    "thể hiện (ý kiến của một người)",
-    "mô hình",
-    "bảng (liệt kê thông tin)",
-    "biểu mẫu",
-    "đồng hồ đo (đo lường cái gì đó)",
-    "đồng hồ (dụng cụ đo thời gian)",
-    "đồng hồ đo; máy đo"
+    "đồng hồ (đeo tay)",
+    "bảng; biểu (liệt kê thông tin)",
+    "thể hiện; bày tỏ (ý kiến)"
   ],
   "船": [
     "thuyền",
@@ -2976,9 +2886,7 @@
     "LT:個|个[ge4]"
   ],
   "云": [
-    "(văn cổ) nói",
-    "mây",
-    "LT:朵[duo3]"
+    "mây"
   ],
   "青年": [
     "thanh niên",
