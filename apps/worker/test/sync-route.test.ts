@@ -70,6 +70,30 @@ describe('POST /api/sync', () => {
     expect(res.status).toBe(401);
   });
 
+  it('keeps progress isolated between two different users', async () => {
+    await post(
+      JSON.stringify({
+        cursor: 0,
+        changes: {
+          ...emptyChanges(),
+          unitProgress: [
+            {
+              unitId: 'l1-u01',
+              status: 'completed',
+              completedAt: 1000,
+              completedLessons: [0, 1, 2],
+              updatedAt: 1000,
+            },
+          ],
+        },
+      }),
+      'test-passphrase',
+    );
+
+    const other = await post(JSON.stringify({ cursor: 0, changes: emptyChanges() }), 'test-passphrase-2');
+    expect(((await other.json()) as SyncResponse).changes.unitProgress).toEqual([]);
+  });
+
   it('rejects GET on the sync route', async () => {
     const res = await SELF.fetch('https://hi.test/api/sync', {
       headers: { authorization: 'Bearer test-passphrase' },

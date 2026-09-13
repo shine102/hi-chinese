@@ -9,13 +9,10 @@ export default defineConfig(async () => {
       cloudflareTest({
         wrangler: { configPath: './wrangler.jsonc' },
         miniflare: {
-          // Test-only bindings: migrations to apply in the setup file, and the
-          // passphrase the auth tests send. Never a real secret.
-          // Wrangler (via this plugin) also loads apps/worker/.dev.vars when it
-          // exists, but explicit `bindings` here take precedence over it, so the
-          // suite always sees SYNC_PASSPHRASE = 'test-passphrase' regardless of
-          // whatever a developer's local .dev.vars sets.
-          bindings: { TEST_MIGRATIONS: migrations, SYNC_PASSPHRASE: 'test-passphrase' },
+          // Test-only binding: migrations to apply in the setup file. Auth
+          // in tests now goes through a seeded `users` row (see
+          // test/apply-migrations.ts), not an env var.
+          bindings: { TEST_MIGRATIONS: migrations },
         },
       }),
     ],

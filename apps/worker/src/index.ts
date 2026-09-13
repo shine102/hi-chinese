@@ -26,7 +26,7 @@ app.post('/api/sync', async (c) => {
   }
   const parsed = parseSyncRequest(body);
   if (!parsed.ok) return c.json({ error: parsed.error }, 400);
-  const result = await applySync(c.env.DB, parsed.value);
+  const result = await applySync(c.env.DB, c.get('userId'), parsed.value);
   return c.json(result);
 });
 

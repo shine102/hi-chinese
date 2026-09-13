@@ -21,11 +21,14 @@ describe('GET /api/health', () => {
 });
 
 describe('test harness', () => {
-  it('has a migrated D1 and the test passphrase', async () => {
+  it('has a migrated D1 and a seeded test user', async () => {
     const row = await env.DB.prepare('SELECT seq FROM sync_meta WHERE id = 1').first<{
       seq: number;
     }>();
     expect(row).toEqual({ seq: 0 });
-    expect(env.SYNC_PASSPHRASE).toBe('test-passphrase');
+    const user = await env.DB.prepare('SELECT user_id FROM users WHERE user_id = ?1')
+      .bind('test-user')
+      .first<{ user_id: string }>();
+    expect(user).toEqual({ user_id: 'test-user' });
   });
 });

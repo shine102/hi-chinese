@@ -1,19 +1,6 @@
 import { SELF } from 'cloudflare:test';
 import { describe, expect, it } from 'vitest';
-import { constantTimeEqual, extractBearer } from '../src/auth.js';
-import app from '../src/index.js';
-import { env } from 'cloudflare:workers';
-
-describe('constantTimeEqual', () => {
-  it('is true only for identical strings', () => {
-    expect(constantTimeEqual('abc', 'abc')).toBe(true);
-    expect(constantTimeEqual('abc', 'abd')).toBe(false);
-    expect(constantTimeEqual('abc', 'ab')).toBe(false);
-    expect(constantTimeEqual('', '')).toBe(true);
-    expect(constantTimeEqual('密码', '密码')).toBe(true);
-    expect(constantTimeEqual('密码', '密碼')).toBe(false);
-  });
-});
+import { extractBearer } from '../src/auth.js';
 
 describe('extractBearer', () => {
   it('extracts the token case-insensitively and trims whitespace', () => {
@@ -32,7 +19,8 @@ describe('requirePassphrase on /api/sync', () => {
     expect(res.status).toBe(401);
     expect(await res.json()).toEqual({ error: 'unauthorized' });
   });
-  it('rejects a wrong token with 401', async () => {
+
+  it('rejects an unknown token with 401', async () => {
     const res = await SELF.fetch('https://hi.test/api/sync', {
       method: 'POST',
       headers: { authorization: 'Bearer wrong' },
@@ -40,22 +28,17 @@ describe('requirePassphrase on /api/sync', () => {
     });
     expect(res.status).toBe(401);
   });
-  it('lets the right token through to the route', async () => {
+
+  it('lets a known passphrase through to the route', async () => {
     const res = await SELF.fetch('https://hi.test/api/sync', {
       method: 'POST',
       headers: { authorization: 'Bearer test-passphrase' },
       body: '{}',
     });
+    // Auth passed; the route now fails on body parsing instead.
     expect(res.status).toBe(400);
   });
-  it('returns 500 when the passphrase secret is not configured', async () => {
-    const res = await app.fetch(
-      new Request('https://hi.test/api/sync', { method: 'POST', body: '{}' }),
-      { ...env, SYNC_PASSPHRASE: '' },
-    );
-    expect(res.status).toBe(500);
-    expect(await res.json()).toEqual({ error: 'server not configured' });
-  });
+
   it('does not guard the health route', async () => {
     const res = await SELF.fetch('https://hi.test/api/health');
     expect(res.status).toBe(200);
