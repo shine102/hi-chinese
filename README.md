@@ -24,10 +24,11 @@ Roadmap: `docs/superpowers/plans/README.md`.
     pnpm build                   # content build, then vite build into apps/web/dist
     pnpm e2e                     # Playwright: complete a unit end to end (see apps/web/e2e)
 
-First run: `pnpm worker:migrate:local`, copy `apps/worker/.dev.vars.example` to `.dev.vars`, then
-`pnpm dev` and open http://127.0.0.1:5173. Enter the passphrase from `.dev.vars` once; it is stored
-in IndexedDB and sent as a bearer token. To try the production layout locally, `pnpm build` then
-`pnpm worker:dev` and open http://127.0.0.1:8787 (the Worker serves `apps/web/dist` as static assets).
+First run: `pnpm worker:migrate:local`, then `pnpm -F @hi-chinese/worker add-user -- --user-id dev --local`
+(prints a one-time passphrase), then `pnpm dev` and open http://127.0.0.1:5173. Enter that passphrase
+once; it is stored in IndexedDB and sent as a bearer token. To try the production layout locally,
+`pnpm build` then `pnpm worker:dev` and open http://127.0.0.1:8787 (the Worker serves `apps/web/dist`
+as static assets).
 
 Offline: after the first load the service worker precaches the app and all content chunks (about
 5 MB). A new deploy shows a "new version" toast instead of reloading mid-session.
@@ -42,10 +43,10 @@ Offline: after the first load the service worker precaches the app and all conte
 
     pnpm worker:test             # Vitest inside workerd against a migrated local D1
     pnpm worker:migrate:local    # apply migrations to the local dev database
-    cp apps/worker/.dev.vars.example apps/worker/.dev.vars   # set SYNC_PASSPHRASE
+    pnpm -F @hi-chinese/worker add-user -- --user-id dev --local   # provision a user, prints a passphrase
     pnpm worker:dev              # http://127.0.0.1:8787
 
-Endpoints: `GET /api/health`, `POST /api/sync` (header `Authorization: Bearer <SYNC_PASSPHRASE>`,
+Endpoints: `GET /api/health`, `POST /api/sync` (header `Authorization: Bearer <per-user passphrase>`,
 body `{ cursor, changes: { unitProgress, cards, activity } }`, response same shape). Rows merge by
 last write wins on `updatedAt`; `cursor` is the server sequence number to send next time.
 A pushed row that is missing from the response lost last-write-wins (the server already had a
@@ -58,8 +59,9 @@ that table or on next sync. Pushed rows that win are echoed back with the new se
     cd apps/worker
     pnpm exec wrangler login
     pnpm exec wrangler d1 create hi-chinese      # paste the printed database_id into wrangler.jsonc
-    pnpm db:migrate:remote
-    pnpm exec wrangler secret put SYNC_PASSPHRASE
+    pnpm db:migrate:remote                       # 0004 drops and recreates unit_progress/cards/activity —
+                                                  # only run this against a fresh/disposable database
+    pnpm run add-user -- --user-id <your-id> --remote   # provision yourself, prints a one-time passphrase
     pnpm run deploy
 
 ## Layout

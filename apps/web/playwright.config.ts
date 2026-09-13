@@ -26,7 +26,12 @@ export default defineConfig({
       command:
         'rm -rf .wrangler/e2e && mkdir -p ../web/dist && ' +
         'pnpm exec wrangler d1 migrations apply hi-chinese --local --persist-to .wrangler/e2e && ' +
-        'pnpm exec wrangler dev --port 8787 --persist-to .wrangler/e2e --var SYNC_PASSPHRASE:test-passphrase',
+        // SHA-256 hex digest of the literal string "test-passphrase" — must stay the
+        // same passphrase apps/worker/test/apply-migrations.ts seeds for the worker's
+        // own Vitest suite, so the e2e specs' typed-in passphrase keeps working.
+        'pnpm exec wrangler d1 execute hi-chinese --local --persist-to .wrangler/e2e --command ' +
+        '"INSERT INTO users (user_id, passphrase_hash, display_name, created_at) VALUES (\'test-user\', \'7574f01b9ebd3b25e3640f88427260f605874ba76fefed802421d8ba9e238c93\', \'Test User\', 0)" && ' +
+        'pnpm exec wrangler dev --port 8787 --persist-to .wrangler/e2e',
       cwd: '../worker',
       url: 'http://127.0.0.1:8787/api/health',
       timeout: 120_000,
