@@ -1,841 +1,841 @@
 [
   {
     "id": "g:ba-disposal",
-    "title": "The 把 disposal sentence",
+    "title": "Câu chữ 把 (câu xử trí)",
     "pattern": "主语 + 把 + 宾语 + 动词 + 其他成分",
-    "explanation": "把 (bǎ) moves the object in front of the verb when you want to emphasize what happens to it. The verb can't stand alone after 把 — it usually needs a complement, 了, or a repeated verb to show the result. This structure is common whenever an action changes, moves, or finishes something specific.",
+    "explanation": "把 (bǎ) đưa tân ngữ ra trước động từ khi bạn muốn nhấn mạnh điều xảy ra với nó. Động từ không thể đứng một mình sau 把 — thường cần có bổ ngữ, 了, hoặc động từ lặp lại để thể hiện kết quả. Cấu trúc này rất phổ biến khi một hành động làm thay đổi, di chuyển, hoặc hoàn thành một điều gì đó cụ thể.",
     "level": 3,
     "examples": ["s:l3:001", "s:l3:002", "s:l3:003", "s:l3:004"]
   },
   {
     "id": "g:bei-passive",
-    "title": "The 被 passive sentence",
+    "title": "Câu bị động với 被",
     "pattern": "受事 + 被 + (施事) + 动词 + 其他成分",
-    "explanation": "被 (bèi) marks the passive voice: the subject is the receiver of the action, not the doer. The person or thing doing the action can go right after 被, or be left out if it isn't important. Like 把, the verb after 被 usually needs a complement or 了 to sound complete.",
+    "explanation": "被 (bèi) đánh dấu thể bị động: chủ ngữ là đối tượng chịu tác động của hành động, chứ không phải người thực hiện. Người hoặc vật gây ra hành động có thể đứng ngay sau 被, hoặc được lược bỏ nếu không quan trọng. Giống như 把, động từ sau 被 thường cần có bổ ngữ hoặc 了 để câu nghe trọn vẹn.",
     "level": 3,
     "examples": ["s:l3:005", "s:l3:006", "s:l3:007", "s:l3:008"]
   },
   {
     "id": "g:weile-purpose",
-    "title": "Purpose with 为了",
+    "title": "Mục đích với 为了",
     "pattern": "为了 + 目的，(主语) + 动词短语",
-    "explanation": "为了 (wèile) introduces the goal or purpose of an action, like English \"in order to\". It sits at the very start of the sentence, before the goal, and the main clause with the actual action follows. Unlike 因为...所以, 为了 gives a reason you are aiming for, not a cause that already happened.",
+    "explanation": "为了 (wèile) giới thiệu mục tiêu hoặc mục đích của một hành động, giống như \"để\" trong tiếng Việt. Nó đứng ở đầu câu, trước mục tiêu, và mệnh đề chính chứa hành động thực sự theo sau. Khác với 因为...所以, 为了 đưa ra một lý do bạn đang hướng tới, chứ không phải một nguyên nhân đã xảy ra rồi.",
     "level": 3,
     "examples": ["s:l3:009", "s:l3:010", "s:l3:011", "s:l3:012"]
   },
   {
     "id": "g:zhishi-merely",
-    "title": "Just, merely with 只是",
+    "title": "Chỉ, chỉ là với 只是",
     "pattern": "(主语) + 只是 + 动词/形容词短语",
-    "explanation": "只是 (zhǐshì) means \"just, merely, only\" — it softens a statement by saying something is nothing more than what's mentioned. It often appears in explanations that downplay a situation, narrowing the claim to one small fact.",
+    "explanation": "只是 (zhǐshì) nghĩa là \"chỉ, chỉ là, chẳng qua là\" — làm dịu bớt một câu nói bằng cách khẳng định điều gì đó không hơn gì so với những gì đã nêu. Nó thường xuất hiện trong những lời giải thích nhằm giảm nhẹ mức độ nghiêm trọng của một tình huống, thu hẹp lại thành một sự việc nhỏ.",
     "level": 3,
     "examples": ["s:l3:013", "s:l3:014", "s:l3:015"]
   },
   {
     "id": "g:lian-dou-ye-even",
-    "title": "Even... with 连...都/也",
+    "title": "Ngay cả... cũng với 连...都/也",
     "pattern": "连 + 名词/短语 + 都/也 + 动词短语",
-    "explanation": "连 (lián) highlights an extreme example, usually paired with 都 or 也 before the verb, to mean \"even\". It's often used with a negative verb to stress how surprising or extreme something is — for example, \"even I don't know\".",
+    "explanation": "连 (lián) nhấn mạnh một ví dụ cực đoan, thường đi kèm 都 hoặc 也 trước động từ, để mang nghĩa \"ngay cả... cũng\". Nó thường dùng với động từ phủ định để nhấn mạnh điều gì đó bất ngờ hoặc cực đoan đến mức nào — ví dụ, \"ngay cả tôi cũng không biết\".",
     "level": 3,
     "examples": ["s:l3:016", "s:l3:017", "s:l3:018", "s:l3:019"]
   },
   {
     "id": "g:zhiyou-cai",
-    "title": "Only if... then with 只有...才",
+    "title": "Chỉ khi... mới với 只有...才",
     "pattern": "只有 + 条件，(主语) + 才 + 结果",
-    "explanation": "只有 (zhǐyǒu) states the one necessary condition for something to happen, and 才 (cái) in the result clause means \"only then\". Together they say a result can happen in no other way except through this one condition — a stronger, more exclusive version of 如果...就.",
+    "explanation": "只有 (zhǐyǒu) nêu ra điều kiện duy nhất cần thiết để một điều gì đó xảy ra, và 才 (cái) trong mệnh đề kết quả nghĩa là \"mới\". Cùng nhau, chúng khẳng định một kết quả không thể xảy ra bằng cách nào khác ngoài điều kiện duy nhất này — một phiên bản mạnh hơn, mang tính loại trừ hơn so với 如果...就.",
     "level": 3,
     "examples": ["s:l3:020", "s:l3:021", "s:l3:022", "s:l3:023"]
   },
   {
     "id": "g:shi-causative",
-    "title": "Formal causative with 使",
+    "title": "Thể sai khiến trang trọng với 使",
     "pattern": "A + 使 + B + 形容词/动词短语",
-    "explanation": "使 (shǐ) is a more formal, written way to say 让 or 叫 — \"to make/cause someone or something to be a certain way\". It's common in written Chinese, news, and essays, often followed by an adjective or a change-of-state verb rather than a concrete action.",
+    "explanation": "使 (shǐ) là cách nói trang trọng hơn, mang tính văn viết của 让 hoặc 叫 — nghĩa là \"khiến cho ai đó hoặc điều gì đó trở nên như thế nào\". Nó phổ biến trong tiếng Trung viết, bản tin, và bài luận, thường theo sau bởi một tính từ hoặc động từ chỉ sự thay đổi trạng thái hơn là một hành động cụ thể.",
     "level": 3,
     "examples": ["s:l3:024", "s:l3:025", "s:l3:026", "s:l3:027"]
   },
   {
     "id": "g:dangran-ofcourse",
-    "title": "Of course with 当然",
+    "title": "Đương nhiên với 当然",
     "pattern": "(主语) + 当然 + 动词/形容词短语",
-    "explanation": "当然 (dāngrán) means \"of course, naturally\" — used to confirm something is obviously true or to agree enthusiastically. It usually goes right before the verb or adjective, and can also stand alone as a reply meaning \"Of course!\".",
+    "explanation": "当然 (dāngrán) nghĩa là \"đương nhiên, tất nhiên\" — dùng để khẳng định điều gì đó hiển nhiên đúng hoặc để đồng ý một cách nhiệt tình. Nó thường đứng ngay trước động từ hoặc tính từ, và cũng có thể đứng riêng như một câu trả lời nghĩa là \"Đương nhiên rồi!\".",
     "level": 3,
     "examples": ["s:l3:028", "s:l3:029", "s:l3:030"]
   },
   {
     "id": "g:jile-extremely",
-    "title": "Extremely with 形容词 + 极了",
+    "title": "Cực kỳ với tính từ + 极了",
     "pattern": "形容词 + 极了",
-    "explanation": "极了 (jíle) goes right after an adjective to mean \"extremely, to the max\" — a stronger, more colloquial version of 很 or 非常. It always comes after the adjective, never before, and often ends the sentence.",
+    "explanation": "极了 (jíle) đứng ngay sau một tính từ để nghĩa là \"cực kỳ, hết sức\" — một phiên bản mạnh hơn, mang tính khẩu ngữ hơn 很 hoặc 非常. Nó luôn đứng sau tính từ, không bao giờ đứng trước, và thường kết thúc câu.",
     "level": 3,
     "examples": ["s:l3:031", "s:l3:032", "s:l3:033", "s:l3:034"]
   },
   {
     "id": "g:zhongyu-finally",
-    "title": "Finally with 终于",
+    "title": "Cuối cùng với 终于",
     "pattern": "(主语) + 终于 + 动词短语 + 了",
-    "explanation": "终于 (zhōngyú) means \"finally, at last\" — it marks the end of a long wait or effort, usually paired with 了 at the end of the sentence. It carries a sense of relief or achievement after something difficult or long-awaited.",
+    "explanation": "终于 (zhōngyú) nghĩa là \"cuối cùng, rốt cuộc\" — đánh dấu sự kết thúc của một khoảng chờ đợi hoặc nỗ lực dài, thường đi kèm 了 ở cuối câu. Nó mang theo cảm giác nhẹ nhõm hoặc thành tựu sau điều gì đó khó khăn hoặc chờ đợi đã lâu.",
     "level": 3,
     "examples": ["s:l3:035", "s:l3:036", "s:l3:037"]
   },
   {
     "id": "g:chule-haiye-besides",
-    "title": "In addition to with 除了...还/也",
+    "title": "Ngoài ra còn với 除了...还/也",
     "pattern": "除了 + A，(主语) + 还/也 + B",
-    "explanation": "除了 (chúle) here means \"in addition to, besides\" rather than \"except\" — paired with 还 or 也 in the second clause, it adds more information on top of what's mentioned. This differs from 除了...以外，都, which means \"except for\".",
+    "explanation": "除了 (chúle) ở đây nghĩa là \"ngoài ra, bên cạnh đó\" chứ không phải \"trừ ra\" — kết hợp với 还 hoặc 也 ở mệnh đề sau, nó bổ sung thêm thông tin ngoài những gì đã nêu. Điều này khác với 除了...以外，都, nghĩa là \"ngoại trừ\".",
     "level": 3,
     "examples": ["s:l3:038", "s:l3:039", "s:l3:040", "s:l3:041"]
   },
   {
     "id": "g:turan-suddenly",
-    "title": "Suddenly with 突然",
+    "title": "Đột nhiên với 突然",
     "pattern": "(主语) + 突然 + 动词短语",
-    "explanation": "突然 (tūrán) describes something happening suddenly, without warning. It can go before the subject or right before the verb, and often appears with 了 to mark a sudden change.",
+    "explanation": "突然 (tūrán) miêu tả điều gì đó xảy ra đột ngột, không báo trước. Nó có thể đứng trước chủ ngữ hoặc ngay trước động từ, và thường đi kèm 了 để đánh dấu một sự thay đổi bất ngờ.",
     "level": 3,
     "examples": ["s:l3:042", "s:l3:043", "s:l3:044"]
   },
   {
     "id": "g:yinci-therefore",
-    "title": "Therefore with 因此",
+    "title": "Do đó với 因此",
     "pattern": "..., 因此 + 结果",
-    "explanation": "因此 (yīncǐ) means \"therefore, as a result\" — a more formal, written alternative to 所以. It links a reason already stated to a resulting conclusion, and is common in essays, news, and explanations.",
+    "explanation": "因此 (yīncǐ) nghĩa là \"do đó, vì vậy\" — một cách nói trang trọng hơn, mang tính văn viết thay cho 所以. Nó nối một lý do đã nêu với một kết luận là kết quả của nó, và thường xuất hiện trong bài luận, bản tin, và các lời giải thích.",
     "level": 3,
     "examples": ["s:l3:045", "s:l3:046", "s:l3:047"]
   },
   {
     "id": "g:cengjing-once",
-    "title": "Once, in the past with 曾经",
+    "title": "Từng, đã có lúc với 曾经",
     "pattern": "(主语) + 曾经 + 动词短语",
-    "explanation": "曾经 (céngjīng) marks that something happened at some point in the past, but may not still be true — like English \"once, at one time\". It goes before the verb and pairs naturally with 过 to show past experience.",
+    "explanation": "曾经 (céngjīng) đánh dấu rằng điều gì đó đã xảy ra vào một thời điểm nào đó trong quá khứ, nhưng có thể không còn đúng nữa — giống \"từng, đã có lúc\" trong tiếng Việt. Nó đứng trước động từ và thường đi kèm tự nhiên với 过 để thể hiện kinh nghiệm trong quá khứ.",
     "level": 3,
     "examples": ["s:l3:048", "s:l3:049", "s:l3:050"]
   },
   {
     "id": "g:daodi-after-all",
-    "title": "Pressing for an answer with 到底",
+    "title": "Truy hỏi đến cùng với 到底",
     "pattern": "到底 + 疑问句",
-    "explanation": "到底 (dàodǐ) adds emphasis to a question, meaning \"exactly, on earth, after all\" — it shows the speaker really wants to know the answer. It usually sits right before the question word or verb.",
+    "explanation": "到底 (dàodǐ) làm tăng mức độ nhấn mạnh cho một câu hỏi, nghĩa là \"rốt cuộc, cuối cùng thì\" — thể hiện người hỏi thực sự muốn biết câu trả lời. Nó thường đứng ngay trước từ để hỏi hoặc động từ.",
     "level": 3,
     "examples": ["s:l3:051", "s:l3:052", "s:l3:053", "s:l3:054"]
   },
   {
     "id": "g:xiaqu-continue",
-    "title": "Continuing on with V + 下去",
+    "title": "Tiếp tục với động từ + 下去",
     "pattern": "动词 + 下去",
-    "explanation": "下去 (xiàqù) after a verb shows that an ongoing action will continue into the future — \"keep on doing something\". It's often used to encourage someone to persist, or to describe something that keeps happening.",
+    "explanation": "下去 (xiàqù) đứng sau động từ thể hiện một hành động đang diễn ra sẽ tiếp tục vào tương lai — \"tiếp tục làm gì đó\". Nó thường dùng để khích lệ ai đó kiên trì, hoặc để miêu tả điều gì đó cứ tiếp diễn.",
     "level": 3,
     "examples": ["s:l3:055", "s:l3:056", "s:l3:057", "s:l3:058"]
   },
   {
     "id": "g:bingqie-moreover",
-    "title": "Moreover with 并且",
+    "title": "Hơn nữa với 并且",
     "pattern": "..., 并且 + 补充信息",
-    "explanation": "并且 (bìngqiě) links two related actions or facts happening together, meaning \"and, moreover, furthermore\". It's more formal than 而且 and often joins two verb phrases describing the same subject.",
+    "explanation": "并且 (bìngqiě) nối hai hành động hoặc sự việc có liên quan xảy ra cùng nhau, nghĩa là \"và, hơn nữa, ngoài ra\". Nó trang trọng hơn 而且 và thường nối hai cụm động từ miêu tả cùng một chủ ngữ.",
     "level": 3,
     "examples": ["s:l3:059", "s:l3:060", "s:l3:061"]
   },
   {
     "id": "g:shouxian-ranhou",
-    "title": "Sequencing with 首先...然后",
+    "title": "Sắp xếp trình tự với 首先...然后",
     "pattern": "首先 + 第一步，然后 + 第二步",
-    "explanation": "首先 (shǒuxiān) means \"first of all\" and introduces the first step of a process; 然后 (ránhòu) then introduces what comes next. Together they help you lay out instructions or a story in clear order.",
+    "explanation": "首先 (shǒuxiān) nghĩa là \"trước hết, đầu tiên\" và giới thiệu bước đầu tiên của một quá trình; 然后 (ránhòu) sau đó giới thiệu bước tiếp theo. Cùng nhau, chúng giúp bạn trình bày hướng dẫn hoặc một câu chuyện theo trình tự rõ ràng.",
     "level": 3,
     "examples": ["s:l3:062", "s:l3:063", "s:l3:064"]
   },
   {
     "id": "g:zhishao-atleast",
-    "title": "At least with 至少",
+    "title": "Ít nhất với 至少",
     "pattern": "至少 + 数量/程度",
-    "explanation": "至少 (zhìshǎo) means \"at least\" — it sets a minimum amount, time, or degree, showing that the real number could be higher. It usually comes right before the quantity or requirement it's describing.",
+    "explanation": "至少 (zhìshǎo) nghĩa là \"ít nhất\" — đặt ra một mức tối thiểu về số lượng, thời gian, hoặc mức độ, cho thấy con số thực tế có thể còn cao hơn. Nó thường đứng ngay trước số lượng hoặc yêu cầu mà nó miêu tả.",
     "level": 3,
     "examples": ["s:l3:065", "s:l3:066", "s:l3:067"]
   },
   {
     "id": "g:zaocheng-result-in",
-    "title": "Causing a result with 造成",
+    "title": "Gây ra hậu quả với 造成",
     "pattern": "原因 + 造成 + (不好的)结果",
-    "explanation": "造成 (zàochéng) means \"to cause, bring about\" — usually followed by a negative or serious result, like a problem, loss, or injury. It's a formal verb often used in news reports and explanations.",
+    "explanation": "造成 (zàochéng) nghĩa là \"gây ra, dẫn đến\" — thường theo sau bởi một kết quả tiêu cực hoặc nghiêm trọng, như một vấn đề, tổn thất, hoặc thương tích. Đây là một động từ trang trọng, thường dùng trong bản tin và lời giải thích.",
     "level": 3,
     "examples": ["s:l3:068", "s:l3:069", "s:l3:070"]
   },
   {
     "id": "g:youyu-formal-cause",
-    "title": "Formal cause with 由于",
+    "title": "Nguyên nhân trang trọng với 由于",
     "pattern": "由于 + 原因，(主语) + 结果",
-    "explanation": "由于 (yóuyú) is a formal way to say \"because of, due to\" — common in written Chinese and news. Like 因为, it can start the sentence, but it can also come directly before a short noun phrase rather than a full clause.",
+    "explanation": "由于 (yóuyú) là cách trang trọng để nói \"do, bởi vì\" — phổ biến trong tiếng Trung viết và bản tin. Giống như 因为, nó có thể mở đầu câu, nhưng cũng có thể đứng ngay trước một cụm danh từ ngắn thay vì một mệnh đề đầy đủ.",
     "level": 3,
     "examples": ["s:l3:071", "s:l3:072", "s:l3:073"]
   },
   {
     "id": "g:miandui-facing",
-    "title": "Facing a challenge with 面对",
+    "title": "Đối mặt với thử thách bằng 面对",
     "pattern": "面对 + 困难/问题，(主语) + 动词短语",
-    "explanation": "面对 (miànduì) means \"to face, confront\" — usually followed by something difficult like a problem or challenge. It's often used at the start of a sentence to show how someone responds to a situation.",
+    "explanation": "面对 (miànduì) nghĩa là \"đối mặt, đương đầu với\" — thường theo sau bởi điều gì đó khó khăn như một vấn đề hay thử thách. Nó thường đứng ở đầu câu để thể hiện cách ai đó phản ứng trước một tình huống.",
     "level": 3,
     "examples": ["s:l3:074", "s:l3:075", "s:l3:076"]
   },
   {
     "id": "g:rengran-still",
-    "title": "Still, as before with 仍然",
+    "title": "Vẫn như cũ với 仍然",
     "pattern": "(主语) + 仍然 + 动词/形容词短语",
-    "explanation": "仍然 (réngrán) means \"still, as before\" — it shows that a situation hasn't changed even though something might have been expected to change it. It's more formal than 还.",
+    "explanation": "仍然 (réngrán) nghĩa là \"vẫn, như trước\" — cho thấy một tình huống chưa thay đổi dù có điều gì đó có thể đã được kỳ vọng sẽ làm nó thay đổi. Nó trang trọng hơn 还.",
     "level": 3,
     "examples": ["s:l3:077", "s:l3:078", "s:l3:079"]
   },
   {
     "id": "g:zhide-worth",
-    "title": "Worth doing with 值得",
+    "title": "Đáng làm với 值得",
     "pattern": "(这/那) + 值得 + 动词",
-    "explanation": "值得 (zhídé) means \"to be worth (doing)\" — followed directly by a verb, it says an action is worthwhile. It's often used to recommend something, like a book, a movie, or a way of doing things.",
+    "explanation": "值得 (zhídé) nghĩa là \"đáng, xứng đáng (để làm)\" — theo ngay sau bởi một động từ, nó khẳng định một hành động là đáng làm. Nó thường dùng để giới thiệu, khuyên dùng điều gì đó, như một cuốn sách, một bộ phim, hay một cách làm việc.",
     "level": 3,
     "examples": ["s:l3:080", "s:l3:081", "s:l3:082", "s:l3:083"]
   },
   {
     "id": "g:jin-only",
-    "title": "Only, merely with 仅/仅仅",
+    "title": "Chỉ, chỉ có với 仅/仅仅",
     "pattern": "仅(仅) + 数量/范围",
-    "explanation": "仅 (jǐn) or its doubled form 仅仅 (jǐnjǐn) means \"only, merely\" — a formal way to limit a number or scope, similar to 只 but more written in style. It usually comes right before the number or fact being limited.",
+    "explanation": "仅 (jǐn) hoặc dạng nhân đôi 仅仅 (jǐnjǐn) nghĩa là \"chỉ, chỉ có\" — một cách nói trang trọng để giới hạn một con số hoặc phạm vi, tương tự 只 nhưng thiên về văn viết hơn. Nó thường đứng ngay trước con số hoặc sự việc bị giới hạn.",
     "level": 3,
     "examples": ["s:l3:084", "s:l3:085", "s:l3:086"]
   },
   {
     "id": "g:benlai-originally",
-    "title": "Originally with 本来",
+    "title": "Vốn dĩ với 本来",
     "pattern": "(主语) + 本来 + 想/是/要 + ..., 后来/但是 + 转变",
-    "explanation": "本来 (běnlái) means \"originally, at first\" — it sets up what someone planned or believed before things changed. It's often followed by a contrast showing what actually happened instead.",
+    "explanation": "本来 (běnlái) nghĩa là \"vốn dĩ, ban đầu\" — thiết lập điều ai đó đã dự định hoặc tin tưởng trước khi mọi thứ thay đổi. Nó thường được theo sau bởi một sự tương phản cho thấy điều thực sự đã xảy ra.",
     "level": 3,
     "examples": ["s:l3:087", "s:l3:088", "s:l3:089"]
   },
   {
     "id": "g:nandao-rhetorical",
-    "title": "Rhetorical questions with 难道...吗",
+    "title": "Câu hỏi tu từ với 难道...吗",
     "pattern": "难道 + 主语 + 动词短语 + 吗？",
-    "explanation": "难道 (nándào) turns a statement into a rhetorical question that expects the opposite answer — like saying \"Don't tell me...?\" or \"Surely not...?\" in English. It often pairs with 吗 at the end, and shows the speaker's surprise or disbelief.",
+    "explanation": "难道 (nándào) biến một câu khẳng định thành một câu hỏi tu từ mong đợi câu trả lời ngược lại — giống như nói \"Chẳng lẽ...?\" trong tiếng Việt. Nó thường đi kèm 吗 ở cuối câu, và thể hiện sự ngạc nhiên hoặc hoài nghi của người nói.",
     "level": 3,
     "examples": ["s:l3:090", "s:l3:091", "s:l3:092", "s:l3:093"]
   },
   {
     "id": "g:xiangdang-fairly",
-    "title": "Fairly, quite with 相当",
+    "title": "Khá, tương đối với 相当",
     "pattern": "相当 + 形容词",
-    "explanation": "相当 (xiāngdāng) means \"fairly, quite, considerably\" — a bit stronger and more formal than 很, describing a fairly high degree. It goes right before an adjective.",
+    "explanation": "相当 (xiāngdāng) nghĩa là \"khá, tương đối, đáng kể\" — mạnh hơn và trang trọng hơn một chút so với 很, miêu tả một mức độ khá cao. Nó đứng ngay trước một tính từ.",
     "level": 3,
     "examples": ["s:l3:094", "s:l3:095", "s:l3:096"]
   },
   {
     "id": "g:gengjia-even-more",
-    "title": "Even more with 更加",
+    "title": "Càng thêm với 更加",
     "pattern": "更加 + 形容词/动词",
-    "explanation": "更加 (gèngjiā) means \"even more\" — a more formal, written version of 更, used to show an increase compared to before. It goes right before the adjective or verb being intensified.",
+    "explanation": "更加 (gèngjiā) nghĩa là \"càng thêm, hơn nữa\" — một phiên bản trang trọng, mang tính văn viết hơn của 更, dùng để thể hiện sự tăng lên so với trước đó. Nó đứng ngay trước tính từ hoặc động từ được nhấn mạnh.",
     "level": 3,
     "examples": ["s:l3:097", "s:l3:098", "s:l3:099"]
   },
   {
     "id": "g:conglai-never",
-    "title": "Never with 从来不/没",
+    "title": "Chưa bao giờ với 从来不/没",
     "pattern": "(主语) + 从来 + 不/没 + 动词",
-    "explanation": "从来 (cónglái) means \"ever, always\" and is nearly always paired with 不 or 没 to mean \"never\". It emphasizes that something has (or hasn't) been true the entire time, without exception.",
+    "explanation": "从来 (cónglái) nghĩa là \"từ trước đến nay, luôn luôn\" và hầu như luôn đi kèm 不 hoặc 没 để mang nghĩa \"chưa bao giờ\". Nó nhấn mạnh rằng điều gì đó đã (hoặc chưa) đúng trong suốt thời gian qua, không có ngoại lệ.",
     "level": 3,
     "examples": ["s:l3:100", "s:l3:101", "s:l3:102"]
   },
   {
     "id": "g:renhe-dou",
-    "title": "Any... at all with 任何...都",
+    "title": "Bất kỳ... cũng với 任何...都",
     "pattern": "任何 + 名词 + 都 + 动词短语",
-    "explanation": "任何 (rènhé) means \"any\" in the broadest sense — \"any at all, no matter which one\". It's almost always followed by 都 before the verb to stress that the statement applies without exception.",
+    "explanation": "任何 (rènhé) nghĩa là \"bất kỳ\" theo nghĩa rộng nhất — \"bất kỳ cái nào, không phân biệt cái nào\". Nó hầu như luôn được theo sau bởi 都 trước động từ để nhấn mạnh rằng điều được nói đến áp dụng không có ngoại lệ.",
     "level": 3,
     "examples": ["s:l3:103", "s:l3:104", "s:l3:105"]
   },
   {
     "id": "g:zhidao-cai-notuntil",
-    "title": "Not until... with 直到...才",
+    "title": "Mãi đến... mới với 直到...才",
     "pattern": "直到 + 时间/事件，(主语) + 才 + 结果",
-    "explanation": "直到 (zhídào) means \"until, up to\" — paired with 才 in the main clause, it says something didn't happen until a certain point. It stresses how long you had to wait for the result.",
+    "explanation": "直到 (zhídào) nghĩa là \"cho đến tận\" — kết hợp với 才 trong mệnh đề chính, nó khẳng định điều gì đó không xảy ra cho đến một thời điểm nhất định. Nó nhấn mạnh việc phải chờ đợi lâu như thế nào mới có được kết quả.",
     "level": 3,
     "examples": ["s:l3:106", "s:l3:107", "s:l3:108"]
   },
   {
     "id": "g:yaoshi-jiu",
-    "title": "A casual if with 要是...就",
+    "title": "Cách nói \"nếu\" thân mật với 要是...就",
     "pattern": "要是 + 条件，(主语) + 就 + 结果",
-    "explanation": "要是 (yàoshi) is a colloquial way of saying \"if\", used mostly in spoken Chinese instead of 如果. The result clause still uses 就 to mean \"then\", just like with 如果...就.",
+    "explanation": "要是 (yàoshi) là cách nói khẩu ngữ của \"nếu\", chủ yếu dùng trong văn nói thay cho 如果. Mệnh đề kết quả vẫn dùng 就 để mang nghĩa \"thì\", giống hệt như với 如果...就.",
     "level": 3,
     "examples": ["s:l3:109", "s:l3:110", "s:l3:111"]
   },
   {
     "id": "g:anzhao-according",
-    "title": "According to with 按照",
+    "title": "Theo, dựa theo với 按照",
     "pattern": "按照 + 标准/规定，(主语) + 动词短语",
-    "explanation": "按照 (ànzhào) means \"according to, in accordance with\" — it introduces a rule, standard, or plan that an action follows. It usually starts the sentence, before the subject.",
+    "explanation": "按照 (ànzhào) nghĩa là \"theo, dựa theo\" — giới thiệu một quy tắc, tiêu chuẩn, hoặc kế hoạch mà một hành động tuân theo. Nó thường mở đầu câu, đứng trước chủ ngữ.",
     "level": 3,
     "examples": ["s:l3:112", "s:l3:113", "s:l3:114"]
   },
   {
     "id": "g:xianran-obviously",
-    "title": "Obviously with 显然",
+    "title": "Rõ ràng với 显然",
     "pattern": "显然，... / (主语) + 显然 + 动词/形容词短语",
-    "explanation": "显然 (xiǎnrán) means \"obviously, clearly\" — used when a conclusion is easy to see from the facts. It can start the sentence or sit right before the verb or adjective.",
+    "explanation": "显然 (xiǎnrán) nghĩa là \"rõ ràng, hiển nhiên\" — dùng khi một kết luận dễ dàng thấy được từ các sự việc. Nó có thể mở đầu câu hoặc đứng ngay trước động từ hoặc tính từ.",
     "level": 3,
     "examples": ["s:l3:115", "s:l3:116", "s:l3:117"]
   },
   {
     "id": "g:budebu-haveto",
-    "title": "Having no choice with 不得不",
+    "title": "Buộc phải với 不得不",
     "pattern": "(主语) + 不得不 + 动词短语",
-    "explanation": "不得不 (bùdébù) means \"can't help but, have no choice but to\" — it shows the subject is forced into an action by circumstances, not by their own will. It goes right before the verb.",
+    "explanation": "不得不 (bùdébù) nghĩa là \"không thể không, buộc phải\" — cho thấy chủ ngữ bị hoàn cảnh ép buộc phải hành động, chứ không phải theo ý muốn của bản thân. Nó đứng ngay trước động từ.",
     "level": 3,
     "examples": ["s:l3:118", "s:l3:119", "s:l3:120"]
   },
   {
     "id": "g:dagai-probably",
-    "title": "Probably, roughly with 大概",
+    "title": "Có lẽ, khoảng chừng với 大概",
     "pattern": "大概 + 数量/情况",
-    "explanation": "大概 (dàgài) means \"probably, roughly, approximately\" — used when giving an estimate rather than an exact number or fact. It usually comes before a number, time, or guess about a situation.",
+    "explanation": "大概 (dàgài) nghĩa là \"có lẽ, khoảng chừng, xấp xỉ\" — dùng khi đưa ra một ước tính thay vì một con số hoặc sự việc chính xác. Nó thường đứng trước một con số, thời gian, hoặc phỏng đoán về một tình huống.",
     "level": 3,
     "examples": ["s:l3:121", "s:l3:122", "s:l3:123"]
   },
   {
     "id": "g:manman-gradually",
-    "title": "Gradually, slowly with 慢慢",
+    "title": "Từ từ, dần dần với 慢慢",
     "pattern": "(主语) + 慢慢 + (地) + 动词",
-    "explanation": "慢慢 (mànmàn) means \"slowly, gradually\" — it can describe the physical speed of an action or a gradual change over time. It often takes 地 before the verb in careful writing, though 地 is often dropped in speech.",
+    "explanation": "慢慢 (mànmàn) nghĩa là \"từ từ, dần dần\" — có thể miêu tả tốc độ thực tế của một hành động hoặc một sự thay đổi diễn ra dần dần theo thời gian. Nó thường đi kèm 地 trước động từ trong văn viết cẩn thận, dù 地 hay bị lược bỏ trong lời nói.",
     "level": 3,
     "examples": ["s:l3:124", "s:l3:125", "s:l3:126"]
   },
   {
     "id": "g:shishishang-infact",
-    "title": "In fact with 事实上",
+    "title": "Thực ra với 事实上",
     "pattern": "事实上，...",
-    "explanation": "事实上 (shìshí shang) means \"in fact, actually\" — it introduces the real situation, often correcting a wrong impression given earlier. It typically starts the sentence.",
+    "explanation": "事实上 (shìshí shang) nghĩa là \"thực ra, trên thực tế\" — giới thiệu tình huống thực sự, thường để đính chính một ấn tượng sai đã được nêu trước đó. Nó thường mở đầu câu.",
     "level": 3,
     "examples": ["s:l3:127", "s:l3:128", "s:l3:129"]
   },
   {
     "id": "g:v-huai-resultative",
-    "title": "Breaking something with V + 坏",
+    "title": "Làm hỏng với động từ + 坏",
     "pattern": "动词 + 坏 (+ 了)",
-    "explanation": "坏 (huài) after a verb shows that the action ruined or broke something — \"break, ruin, spoil\" as a result. It's a classic resultative complement, always attached right after the verb.",
+    "explanation": "坏 (huài) đứng sau động từ cho thấy hành động đã làm hỏng hoặc phá hủy điều gì đó — \"làm hỏng, làm vỡ\" như một kết quả. Đây là một bổ ngữ kết quả điển hình, luôn gắn ngay sau động từ.",
     "level": 3,
     "examples": ["s:l3:130", "s:l3:131", "s:l3:132"]
   },
   {
     "id": "g:potential-complement-liao",
-    "title": "Potential complement: V + 得/不 + 了",
+    "title": "Bổ ngữ khả năng: động từ + 得/不 + 了",
     "pattern": "动词 + 得/不 + 了",
-    "explanation": "得 or 不 between a verb and 了 asks or states whether an action is possible to complete — \"can/can't manage to do something\". 得了 (de liǎo) means it's possible, and 不了 (bu liǎo) means it isn't, often because of a physical or practical limit.",
+    "explanation": "得 hoặc 不 đứng giữa động từ và 了 dùng để hỏi hoặc khẳng định một hành động có thể hoàn thành được hay không — \"có thể/không thể làm xong điều gì đó\". 得了 (de liǎo) nghĩa là có thể, còn 不了 (bu liǎo) nghĩa là không thể, thường vì một giới hạn về vật lý hoặc thực tế.",
     "level": 3,
     "examples": ["s:l3:133", "s:l3:134", "s:l3:135"]
   },
   {
     "id": "g:you-agent",
-    "title": "Assigning responsibility with 由",
+    "title": "Phân công trách nhiệm với 由",
     "pattern": "事情 + 由 + 人 + 负责/决定/做",
-    "explanation": "由 (yóu) marks who is responsible for something or who will carry it out — \"by, from\" in the sense of assigning a task. It goes right before the person in charge.",
+    "explanation": "由 (yóu) đánh dấu ai là người chịu trách nhiệm về điều gì đó hoặc ai sẽ thực hiện nó — nghĩa \"do\" theo nghĩa giao việc. Nó đứng ngay trước người phụ trách.",
     "level": 3,
     "examples": ["s:l3:136", "s:l3:137", "s:l3:138"]
   },
   {
     "id": "g:bujin-haiye",
-    "title": "Not only... but also with 不仅...还/也",
+    "title": "Không chỉ... mà còn với 不仅...还/也",
     "pattern": "不仅 + A，(主语) + 还/也 + B",
-    "explanation": "不仅 (bùjǐn) means \"not only\" — like 不但, it's followed by 还 or 也 to add a second, often stronger point. 不仅 is a little more formal and common in writing.",
+    "explanation": "不仅 (bùjǐn) nghĩa là \"không chỉ\" — giống 不但, nó được theo sau bởi 还 hoặc 也 để thêm một ý thứ hai, thường mạnh hơn. 不仅 trang trọng hơn một chút và phổ biến trong văn viết.",
     "level": 3,
     "examples": ["s:l3:139", "s:l3:140", "s:l3:141"]
   },
   {
     "id": "g:jianzhi-simply",
-    "title": "Simply, virtually with 简直",
+    "title": "Quả thật, đơn giản là với 简直",
     "pattern": "(主语) + 简直 + 形容词/动词短语",
-    "explanation": "简直 (jiǎnzhí) means \"simply, virtually, practically\" — used for exaggeration, showing something is almost too much to believe. It goes right before the adjective or verb it emphasizes, often with 了 at the end.",
+    "explanation": "简直 (jiǎnzhí) nghĩa là \"quả thật, đơn giản là, gần như\" — dùng để phóng đại, cho thấy điều gì đó gần như khó tin. Nó đứng ngay trước tính từ hoặc động từ mà nó nhấn mạnh, thường đi kèm 了 ở cuối câu.",
     "level": 3,
     "examples": ["s:l3:142", "s:l3:143", "s:l3:144"]
   },
   {
     "id": "g:fanzheng-anyway",
-    "title": "Anyway, in any case with 反正",
+    "title": "Dù sao thì với 反正",
     "pattern": "反正 + 主语 + 动词短语",
-    "explanation": "反正 (fǎnzhèng) means \"anyway, in any case\" — it shows that no matter what happens, the outcome or attitude stays the same. It's common in casual speech to dismiss other possibilities.",
+    "explanation": "反正 (fǎnzhèng) nghĩa là \"dù sao thì, trong mọi trường hợp\" — cho thấy dù chuyện gì xảy ra, kết quả hoặc thái độ vẫn không đổi. Nó thường dùng trong văn nói thân mật để gạt bỏ các khả năng khác.",
     "level": 3,
     "examples": ["s:l3:145", "s:l3:146", "s:l3:147"]
   },
   {
     "id": "g:kongpa-afraid",
-    "title": "I'm afraid that... with 恐怕",
+    "title": "Sợ là... với 恐怕",
     "pattern": "恐怕 + 不好的猜测",
-    "explanation": "恐怕 (kǒngpà) means \"I'm afraid that..., probably\" — used to soften a negative guess or worry, showing the speaker isn't fully certain but expects something unwelcome.",
+    "explanation": "恐怕 (kǒngpà) nghĩa là \"sợ là..., có lẽ\" — dùng để làm dịu bớt một phỏng đoán tiêu cực hoặc một mối lo, cho thấy người nói không hoàn toàn chắc chắn nhưng dự đoán điều gì đó không mấy dễ chịu.",
     "level": 3,
     "examples": ["s:l3:148", "s:l3:149", "s:l3:150"]
   },
   {
     "id": "g:jinliang-asmuchaspossible",
-    "title": "As much as possible with 尽量",
+    "title": "Cố gắng hết sức với 尽量",
     "pattern": "尽量 + 动词短语",
-    "explanation": "尽量 (jǐnliàng) means \"as much/far as possible\" — it encourages doing something to the greatest extent one can. It goes right before the verb, often in requests or advice.",
+    "explanation": "尽量 (jǐnliàng) nghĩa là \"càng nhiều/càng xa càng tốt, hết sức có thể\" — khuyến khích làm điều gì đó ở mức tối đa có thể. Nó đứng ngay trước động từ, thường trong các lời đề nghị hoặc lời khuyên.",
     "level": 3,
     "examples": ["s:l3:151", "s:l3:152", "s:l3:153"]
   },
   {
     "id": "g:jishi-promptly",
-    "title": "Promptly, in time with 及时",
+    "title": "Kịp thời với 及时",
     "pattern": "及时 + 动词",
-    "explanation": "及时 (jíshí) means \"promptly, in time\" — it describes doing something at just the right moment, without delay. It usually comes right before the verb.",
+    "explanation": "及时 (jíshí) nghĩa là \"kịp thời, đúng lúc\" — miêu tả việc làm điều gì đó vào đúng thời điểm, không chậm trễ. Nó thường đứng ngay trước động từ.",
     "level": 3,
     "examples": ["s:l3:154", "s:l3:155", "s:l3:156"]
   },
   {
     "id": "g:lianxu-innarow",
-    "title": "In a row with 连续",
+    "title": "Liên tục với 连续",
     "pattern": "连续 + 数量 + 量词 + 名词",
-    "explanation": "连续 (liánxù) means \"continuous, in a row\" — placed before a number and measure word, it shows something repeats without a break. It's common for describing streaks, like consecutive days or wins.",
+    "explanation": "连续 (liánxù) nghĩa là \"liên tục, liền một mạch\" — đặt trước một con số và lượng từ, nó cho thấy điều gì đó lặp lại không ngừng nghỉ. Nó thường dùng để miêu tả một chuỗi liên tiếp, như số ngày liền hoặc số trận thắng liên tiếp.",
     "level": 3,
     "examples": ["s:l3:157", "s:l3:158", "s:l3:159"]
   },
   {
     "id": "g:tongchang-usually",
-    "title": "Usually, normally with 通常",
+    "title": "Thường, thông thường với 通常",
     "pattern": "(主语) + 通常 + 动词短语",
-    "explanation": "通常 (tōngcháng) means \"usually, normally\" — it describes what typically happens, similar to 一般. It goes before the verb, often at the start of a sentence about daily habits.",
+    "explanation": "通常 (tōngcháng) nghĩa là \"thường, thông thường\" — miêu tả điều thường xảy ra, tương tự 一般. Nó đứng trước động từ, thường ở đầu câu nói về thói quen hằng ngày.",
     "level": 3,
     "examples": ["s:l3:160", "s:l3:161", "s:l3:162"]
   },
   {
     "id": "g:huxiang-mutual",
-    "title": "Each other, mutually with 互相",
+    "title": "Lẫn nhau, tương hỗ với 互相",
     "pattern": "(双方) + 互相 + 动词",
-    "explanation": "互相 (hùxiāng) means \"each other, mutually\" — it goes before a verb to show that two or more people do the same action to one another. It's often used with verbs like 帮助, 认识, 关心.",
+    "explanation": "互相 (hùxiāng) nghĩa là \"lẫn nhau, tương hỗ\" — đứng trước động từ để cho thấy hai người trở lên cùng làm một hành động với nhau. Nó thường dùng với các động từ như 帮助, 认识, 关心.",
     "level": 3,
     "examples": ["s:l3:163", "s:l3:164", "s:l3:165"]
   },
   {
     "id": "g:qinzi-personally",
-    "title": "In person with 亲自",
+    "title": "Đích thân với 亲自",
     "pattern": "(主语) + 亲自 + 动词",
-    "explanation": "亲自 (qīnzì) means \"personally, in person\" — it emphasizes that someone did something themselves, rather than through someone else. It goes right before the verb.",
+    "explanation": "亲自 (qīnzì) nghĩa là \"đích thân, tự mình\" — nhấn mạnh rằng ai đó đã tự làm điều gì đó, chứ không nhờ qua người khác. Nó đứng ngay trước động từ.",
     "level": 3,
     "examples": ["s:l3:166", "s:l3:167", "s:l3:168"]
   },
   {
     "id": "g:xiande-seem",
-    "title": "To seem, appear with 显得",
+    "title": "Trông có vẻ với 显得",
     "pattern": "(主语) + 显得 + 形容词",
-    "explanation": "显得 (xiǎnde) means \"to appear, seem, look\" — it's followed by an adjective describing how someone or something comes across, based on how they act or look.",
+    "explanation": "显得 (xiǎnde) nghĩa là \"trông có vẻ, tỏ ra\" — theo sau bởi một tính từ miêu tả ấn tượng mà ai đó hoặc điều gì đó tạo ra, dựa trên cách họ hành động hoặc trông như thế nào.",
     "level": 3,
     "examples": ["s:l3:169", "s:l3:170", "s:l3:171"]
   },
   {
     "id": "g:zhudong-proactively",
-    "title": "Taking the initiative with 主动",
+    "title": "Chủ động với 主动",
     "pattern": "(主语) + 主动 + 动词",
-    "explanation": "主动 (zhǔdòng) means \"to take the initiative, proactively\" — it describes doing something without being asked or forced. It goes right before the verb.",
+    "explanation": "主动 (zhǔdòng) nghĩa là \"chủ động, tự nguyện\" — miêu tả việc làm điều gì đó mà không cần ai yêu cầu hay ép buộc. Nó đứng ngay trước động từ.",
     "level": 3,
     "examples": ["s:l3:172", "s:l3:173", "s:l3:174"]
   },
   {
     "id": "g:ba-v-cheng",
-    "title": "Turning into with 把...V成",
+    "title": "Biến thành với 把...V成",
     "pattern": "主语 + 把 + 宾语 + 动词 + 成 + 结果",
-    "explanation": "Adding 成 (chéng) after the verb in a 把 sentence shows the object was changed into something new — \"turn A into B\". It's a common extension of the basic 把 structure for talking about transformations, exchanges, or writing something as something else.",
+    "explanation": "Thêm 成 (chéng) sau động từ trong câu chữ 把 cho thấy tân ngữ đã bị biến đổi thành một thứ mới — \"biến A thành B\". Đây là một mở rộng phổ biến của cấu trúc 把 cơ bản, dùng khi nói về sự chuyển đổi, trao đổi, hoặc viết điều gì đó thành một dạng khác.",
     "level": 3,
     "examples": ["s:l3:175", "s:l3:176", "s:l3:177"]
   },
   {
     "id": "g:ba-v-gei",
-    "title": "Giving to someone with 把...V给",
+    "title": "Trao cho ai đó với 把...V给",
     "pattern": "主语 + 把 + 宾语 + 动词 + 给 + 对象",
-    "explanation": "Adding 给 (gěi) after the verb in a 把 sentence shows the object ends up with someone — \"do X to it and give it to someone\". It's common with verbs like 送, 还, 卖, 发 that involve handing something over.",
+    "explanation": "Thêm 给 (gěi) sau động từ trong câu chữ 把 cho thấy tân ngữ cuối cùng thuộc về ai đó — \"làm gì đó với nó rồi đưa cho ai đó\". Nó thường dùng với các động từ như 送, 还, 卖, 发 liên quan đến việc trao đồ vật cho người khác.",
     "level": 3,
     "examples": ["s:l3:178", "s:l3:179", "s:l3:180"]
   },
   {
     "id": "g:jiao-rang-passive",
-    "title": "Informal passive with 叫/让",
+    "title": "Câu bị động thân mật với 叫/让",
     "pattern": "受事 + 叫/让 + 施事 + 动词 + 其他成分",
-    "explanation": "In casual speech, 叫 (jiào) and 让 (ràng) can work just like 被 to mark a passive sentence — the subject has something done to it by someone else. This is common in everyday conversation, while 被 sounds more formal or written.",
+    "explanation": "Trong văn nói thân mật, 叫 (jiào) và 让 (ràng) có thể hoạt động giống hệt 被 để đánh dấu câu bị động — chủ ngữ chịu tác động từ ai đó khác. Cách nói này phổ biến trong giao tiếp hằng ngày, trong khi 被 nghe trang trọng hoặc mang tính văn viết hơn.",
     "level": 3,
     "examples": ["s:l3:181", "s:l3:182", "s:l3:183"]
   },
   {
     "id": "g:potential-complement-xia",
-    "title": "Potential complement: V + 得/不 + 下",
+    "title": "Bổ ngữ khả năng: động từ + 得/不 + 下",
     "pattern": "动词 + 得/不 + 下",
-    "explanation": "得 or 不 plus 下 after a verb asks whether something has enough room or capacity — \"fit, hold\". 得下 (de xià) means there's enough space, and 不下 (bu xià) means there isn't.",
+    "explanation": "得 hoặc 不 cộng với 下 sau động từ dùng để hỏi xem có đủ chỗ hoặc sức chứa hay không — \"vừa, chứa được\". 得下 (de xià) nghĩa là có đủ chỗ, còn 不下 (bu xià) nghĩa là không đủ.",
     "level": 3,
     "examples": ["s:l3:184", "s:l3:185", "s:l3:186"]
   },
   {
     "id": "g:jiao-comparative",
-    "title": "Formal comparison with 较",
+    "title": "So sánh trang trọng với 较",
     "pattern": "较 + 形容词",
-    "explanation": "较 (jiào) is a formal, written way to say \"relatively, comparatively\" — similar to 比较 but shorter and more common in reports or writing. It goes right before an adjective.",
+    "explanation": "较 (jiào) là cách nói trang trọng, mang tính văn viết của \"tương đối, so ra\" — tương tự 比较 nhưng ngắn gọn hơn và phổ biến hơn trong báo cáo hoặc văn viết. Nó đứng ngay trước một tính từ.",
     "level": 3,
     "examples": ["s:l3:187", "s:l3:188", "s:l3:189"]
   },
   {
     "id": "g:shizhong-throughout",
-    "title": "All along with 始终",
+    "title": "Luôn luôn, từ đầu đến cuối với 始终",
     "pattern": "(主语) + 始终 + 动词/形容词短语",
-    "explanation": "始终 (shǐzhōng) means \"all along, from beginning to end\" — it emphasizes that something stayed the same the whole time, without changing. It's more formal than 一直.",
+    "explanation": "始终 (shǐzhōng) nghĩa là \"luôn luôn, từ đầu đến cuối\" — nhấn mạnh rằng điều gì đó vẫn giữ nguyên suốt cả quá trình, không hề thay đổi. Nó trang trọng hơn 一直.",
     "level": 3,
     "examples": ["s:l3:190", "s:l3:191", "s:l3:192"]
   },
   {
     "id": "g:guoran-asexpected",
-    "title": "Just as expected with 果然",
+    "title": "Quả nhiên, đúng như dự đoán với 果然",
     "pattern": "(主语) + 果然 + 动词/形容词短语",
-    "explanation": "果然 (guǒrán) means \"sure enough, just as expected\" — used when something turns out exactly as predicted or guessed. It goes right before the verb or adjective.",
+    "explanation": "果然 (guǒrán) nghĩa là \"quả nhiên, đúng như dự đoán\" — dùng khi điều gì đó diễn ra chính xác như đã dự đoán hoặc phỏng đoán. Nó đứng ngay trước động từ hoặc tính từ.",
     "level": 3,
     "examples": ["s:l3:193", "s:l3:194", "s:l3:195"]
   },
   {
     "id": "g:zhihao-onlyoption",
-    "title": "Left with no choice but with 只好",
+    "title": "Đành phải với 只好",
     "pattern": "(主语) + 只好 + 动词短语",
-    "explanation": "只好 (zhǐhǎo) means \"to have no choice but to, to have to settle for\" — used when the best option left isn't ideal. Compared to 不得不, 只好 focuses more on settling for the only option that remains.",
+    "explanation": "只好 (zhǐhǎo) nghĩa là \"đành phải, đành phải chấp nhận\" — dùng khi lựa chọn tốt nhất còn lại không phải là điều lý tưởng. So với 不得不, 只好 nhấn mạnh nhiều hơn vào việc chấp nhận lựa chọn duy nhất còn lại.",
     "level": 3,
     "examples": ["s:l3:196", "s:l3:197", "s:l3:198"]
   },
   {
     "id": "g:bulun-dou",
-    "title": "No matter what with 不论...都",
+    "title": "Dù thế nào với 不论...都",
     "pattern": "不论 + 疑问词/选择，(主语) + 都 + 结果",
-    "explanation": "不论 (bùlùn) means \"no matter, regardless of\" — often followed by a question word like 谁/什么/怎么 or an either-or choice, with 都 in the result clause. It shows the outcome stays the same in every case.",
+    "explanation": "不论 (bùlùn) nghĩa là \"bất kể, dù thế nào\" — thường theo sau bởi một từ để hỏi như 谁/什么/怎么 hoặc một lựa chọn kiểu này-hay-kia, cùng với 都 trong mệnh đề kết quả. Nó cho thấy kết quả vẫn giữ nguyên trong mọi trường hợp.",
     "level": 3,
     "examples": ["s:l3:199", "s:l3:200", "s:l3:201"]
   },
   {
     "id": "g:wangwang-often",
-    "title": "Often, tends to with 往往",
+    "title": "Thường hay, có xu hướng với 往往",
     "pattern": "(主语) + 往往 + 动词短语",
-    "explanation": "往往 (wǎngwǎng) means \"often, tends to\" — it describes a pattern based on past experience or general observation, not a fixed habit like 常常. It goes before the verb.",
+    "explanation": "往往 (wǎngwǎng) nghĩa là \"thường hay, có xu hướng\" — miêu tả một quy luật dựa trên kinh nghiệm hoặc quan sát chung, chứ không phải một thói quen cố định như 常常. Nó đứng trước động từ.",
     "level": 3,
     "examples": ["s:l3:202", "s:l3:203", "s:l3:204"]
   },
   {
     "id": "g:jushuo-reportedly",
-    "title": "It's said that with 据说",
+    "title": "Nghe nói với 据说",
     "pattern": "据说，...",
-    "explanation": "据说 (jùshuō) means \"it's said that, reportedly\" — used to share information you heard from others, without confirming it yourself. It starts the sentence.",
+    "explanation": "据说 (jùshuō) nghĩa là \"nghe nói, theo lời đồn\" — dùng để chia sẻ thông tin nghe được từ người khác, mà không tự mình xác nhận. Nó mở đầu câu.",
     "level": 3,
     "examples": ["s:l3:205", "s:l3:206", "s:l3:207"]
   },
   {
     "id": "g:kanqilai-seems",
-    "title": "Looks like with 看起来/看上去",
+    "title": "Trông có vẻ với 看起来/看上去",
     "pattern": "(主语) + 看起来/看上去 + 形容词",
-    "explanation": "看起来 (kàn qǐlái) and 看上去 (kàn shàngqù) both mean \"it looks like, it seems\" — describing an impression based on appearance. They go right before an adjective, and are used interchangeably.",
+    "explanation": "看起来 (kàn qǐlái) và 看上去 (kàn shàngqù) đều nghĩa là \"trông có vẻ, có vẻ như\" — miêu tả ấn tượng dựa trên hình thức bên ngoài. Cả hai đứng ngay trước một tính từ, và được dùng thay thế cho nhau.",
     "level": 3,
     "examples": ["s:l3:208", "s:l3:209", "s:l3:210"]
   },
   {
     "id": "g:zhijin-sofar",
-    "title": "Up to now with 至今",
+    "title": "Cho đến nay với 至今",
     "pattern": "(主语) + 至今 + 还/仍然 + 没有/动词短语",
-    "explanation": "至今 (zhìjīn) means \"up to now, so far\" — it marks a situation that has continued from the past into the present. It's often paired with 还 or 没有.",
+    "explanation": "至今 (zhìjīn) nghĩa là \"cho đến nay, đến tận bây giờ\" — đánh dấu một tình huống đã kéo dài từ quá khứ đến hiện tại. Nó thường đi kèm 还 hoặc 没有.",
     "level": 3,
     "examples": ["s:l3:211", "s:l3:212", "s:l3:213"]
   },
   {
     "id": "g:dangchu-backthen",
-    "title": "Back then with 当初",
+    "title": "Hồi đó với 当初",
     "pattern": "当初，(主语) + 动词短语",
-    "explanation": "当初 (dāngchū) means \"originally, back then\" — it looks back at a past decision or situation, often used when reflecting on whether that past choice was right. It starts the sentence or clause.",
+    "explanation": "当初 (dāngchū) nghĩa là \"ban đầu, hồi đó\" — nhìn lại một quyết định hoặc tình huống trong quá khứ, thường dùng khi suy ngẫm xem lựa chọn khi đó có đúng đắn hay không. Nó mở đầu câu hoặc mệnh đề.",
     "level": 3,
     "examples": ["s:l3:214", "s:l3:215", "s:l3:216"]
   },
   {
     "id": "g:v-zhu-resultative",
-    "title": "Holding firm with V + 住",
+    "title": "Giữ chặt, cố định với động từ + 住",
     "pattern": "动词 + 住",
-    "explanation": "住 (zhù) after a verb shows an action makes something stay in place or fixed — \"catch and hold, remember firmly, stop\". It's a common resultative complement, seen in words like 抓住 (catch hold of) and 记住 (remember firmly).",
+    "explanation": "住 (zhù) đứng sau động từ cho thấy hành động khiến điều gì đó ở yên tại chỗ hoặc cố định — \"nắm chặt, ghi nhớ chắc, dừng lại\". Đây là một bổ ngữ kết quả phổ biến, xuất hiện trong các từ như 抓住 (nắm chặt) và 记住 (ghi nhớ chắc).",
     "level": 3,
     "examples": ["s:l3:217", "s:l3:218", "s:l3:219"]
   },
   {
     "id": "g:v-qilai-inchoative",
-    "title": "Starting to with 形容词/动词 + 起来",
+    "title": "Bắt đầu với tính từ/động từ + 起来",
     "pattern": "形容词/动词 + 起来",
-    "explanation": "起来 (qǐlái) after an adjective or verb can mark the start of a new state — \"start to become, get into doing\". Unlike its literal sense of standing up, here it shows a change beginning and continuing.",
+    "explanation": "起来 (qǐlái) sau một tính từ hoặc động từ có thể đánh dấu sự bắt đầu của một trạng thái mới — \"bắt đầu trở nên, bắt đầu làm gì đó\". Khác với nghĩa đen là \"đứng dậy\", ở đây nó thể hiện một sự thay đổi bắt đầu và tiếp diễn.",
     "level": 3,
     "examples": ["s:l3:220", "s:l3:221", "s:l3:222"]
   },
   {
     "id": "g:yue-yue-parallel",
-    "title": "The more... the more... with 越...越...",
+    "title": "Càng... càng... với 越...越...",
     "pattern": "越 + A，越 + B",
-    "explanation": "越...越... (yuè...yuè...) links two changes that happen together — \"the more A, the more B\". Both clauses use 越 before a verb or adjective, showing they rise or fall in step.",
+    "explanation": "越...越... (yuè...yuè...) nối hai sự thay đổi xảy ra song song — \"càng A thì càng B\". Cả hai mệnh đề đều dùng 越 trước động từ hoặc tính từ, cho thấy chúng cùng tăng hoặc cùng giảm.",
     "level": 3,
     "examples": ["s:l3:223", "s:l3:224", "s:l3:225"]
   },
   {
     "id": "g:meiyou-comparison",
-    "title": "Negative comparison with 没有",
+    "title": "So sánh phủ định với 没有",
     "pattern": "A + 没有 + B + (这么/那么) + 形容词",
-    "explanation": "没有 (méiyǒu) can make a comparison negative — \"A is not as [adjective] as B\". It's a common alternative to 不比, often paired with 这么 or 那么 before the adjective.",
+    "explanation": "没有 (méiyǒu) có thể biến một câu so sánh thành phủ định — \"A không [tính từ] bằng B\". Đây là một cách thay thế phổ biến cho 不比, thường đi kèm 这么 hoặc 那么 trước tính từ.",
     "level": 3,
     "examples": ["s:l3:226", "s:l3:227", "s:l3:228"]
   },
   {
     "id": "g:yibian-yibian",
-    "title": "Doing two things at once with 一边...一边...",
+    "title": "Làm hai việc cùng lúc với 一边...一边...",
     "pattern": "一边 + 动词1，一边 + 动词2",
-    "explanation": "一边...一边... (yìbiān...yìbiān...) shows two actions happening at the same time, done by the same person — \"while doing A, also doing B\". Both verbs go right after 一边.",
+    "explanation": "一边...一边... (yìbiān...yìbiān...) thể hiện hai hành động xảy ra cùng lúc, do cùng một người thực hiện — \"vừa làm A vừa làm B\". Cả hai động từ đều đứng ngay sau 一边.",
     "level": 3,
     "examples": ["s:l3:229", "s:l3:230", "s:l3:231"]
   },
   {
     "id": "g:you-you-both",
-    "title": "Both... and... with 又...又...",
+    "title": "Vừa... vừa... với 又...又...",
     "pattern": "又 + 形容词1，又 + 形容词2",
-    "explanation": "又...又... (yòu...yòu...) links two qualities or actions that are both true at the same time — \"both A and B\". It's often used with two adjectives describing the same subject.",
+    "explanation": "又...又... (yòu...yòu...) nối hai đặc điểm hoặc hành động cùng đúng vào một lúc — \"vừa A vừa B\". Nó thường dùng với hai tính từ miêu tả cùng một chủ ngữ.",
     "level": 3,
     "examples": ["s:l3:232", "s:l3:233", "s:l3:234"]
   },
   {
     "id": "g:yi-jiu-assoonas",
-    "title": "As soon as... then... with 一...就...",
+    "title": "Vừa... là... ngay với 一...就...",
     "pattern": "一 + 动词1，就 + 动词2",
-    "explanation": "一...就... (yī...jiù...) links two actions that happen right after each other — \"as soon as A happens, B happens\". The first verb follows 一, and the second follows 就.",
+    "explanation": "一...就... (yī...jiù...) nối hai hành động xảy ra ngay sau nhau — \"vừa A xong là B ngay\". Động từ thứ nhất theo sau 一, còn động từ thứ hai theo sau 就.",
     "level": 3,
     "examples": ["s:l3:235", "s:l3:236", "s:l3:237"]
   },
   {
     "id": "g:de-relative-clause",
-    "title": "Relative clauses with 的",
+    "title": "Mệnh đề quan hệ với 的",
     "pattern": "动词短语 + 的 + 名词",
-    "explanation": "的 (de) can turn a whole verb phrase into a description of a noun, like an English relative clause — \"the book [that] I bought\", \"the person [who] is singing\". The descriptive clause comes first, then 的, then the noun it modifies.",
+    "explanation": "的 (de) có thể biến cả một cụm động từ thành lời miêu tả cho một danh từ, giống như mệnh đề quan hệ trong tiếng Việt — \"cuốn sách [mà] tôi mua\", \"người [đang] hát\". Cụm miêu tả đứng trước, sau đó đến 的, rồi mới đến danh từ mà nó bổ nghĩa.",
     "level": 3,
     "examples": ["s:l3:238", "s:l3:239", "s:l3:240", "s:l3:241", "s:l3:242"]
   },
   {
     "id": "g:suo-nominalizer",
-    "title": "The 所 nominalizer in formal writing",
+    "title": "Trợ từ danh hóa 所 trong văn viết trang trọng",
     "pattern": "(主语) + 所 + 动词 + 的 + 名词",
-    "explanation": "所 (suǒ) can go right before a verb in formal or written Chinese, turning the verb phrase into something like \"what/that which [subject] verbs\". It's most often followed by 的 and a noun, and mainly used with two-syllable verbs like 说, 做, 想, 知道.",
+    "explanation": "所 (suǒ) có thể đứng ngay trước động từ trong tiếng Trung trang trọng hoặc văn viết, biến cụm động từ thành thứ gì đó giống như \"điều mà [chủ ngữ] làm\". Nó thường được theo sau bởi 的 và một danh từ, và chủ yếu dùng với các động từ hai âm tiết như 说, 做, 想, 知道.",
     "level": 3,
     "examples": ["s:l3:243", "s:l3:244", "s:l3:245"]
   },
   {
     "id": "g:zhengzheng-whole",
-    "title": "A whole, full amount with 整整",
+    "title": "Trọn vẹn, đầy đủ với 整整",
     "pattern": "整整 + 数量 + 量词",
-    "explanation": "整整 (zhěngzhěng) emphasizes that an amount is a full, whole quantity — \"a whole..., a full...\". It goes right before the number and measure word, stressing there's no less than that.",
+    "explanation": "整整 (zhěngzhěng) nhấn mạnh rằng một số lượng là trọn vẹn, đầy đủ — \"trọn..., đủ cả...\". Nó đứng ngay trước con số và lượng từ, nhấn mạnh rằng không ít hơn con số đó.",
     "level": 3,
     "examples": ["s:l3:246", "s:l3:247", "s:l3:248"]
   },
   {
     "id": "g:fanfu-repeatedly",
-    "title": "Over and over with 反复",
+    "title": "Lặp đi lặp lại với 反复",
     "pattern": "反复 + 动词",
-    "explanation": "反复 (fǎnfù) means \"repeatedly, over and over again\" — it describes an action done many times to make sure it's right. It goes right before the verb.",
+    "explanation": "反复 (fǎnfù) nghĩa là \"lặp đi lặp lại, nhiều lần\" — miêu tả một hành động được làm đi làm lại nhiều lần để chắc chắn nó đúng. Nó đứng ngay trước động từ.",
     "level": 3,
     "examples": ["s:l3:249", "s:l3:250", "s:l3:251"]
   },
   {
     "id": "g:zaoyi-longago",
-    "title": "Already, long since with 早已",
+    "title": "Đã từ lâu với 早已",
     "pattern": "(主语) + 早已 + 动词短语 + 了",
-    "explanation": "早已 (zǎoyǐ) means \"already, long since\" — a stronger, more formal version of 已经, showing that something happened a long time before now. It goes right before the verb.",
+    "explanation": "早已 (zǎoyǐ) nghĩa là \"đã từ lâu, đã lâu rồi\" — một phiên bản mạnh hơn, trang trọng hơn của 已经, cho thấy điều gì đó đã xảy ra từ rất lâu trước hiện tại. Nó đứng ngay trước động từ.",
     "level": 3,
     "examples": ["s:l3:252", "s:l3:253", "s:l3:254"]
   },
   {
     "id": "g:yifangmian-lingyifangmian",
-    "title": "On one hand... on the other hand... with 一方面...另一方面...",
+    "title": "Một mặt... mặt khác... với 一方面...另一方面...",
     "pattern": "一方面 + A，另一方面 + B",
-    "explanation": "一方面...另一方面... (yī fāngmiàn...lìng yī fāngmiàn...) presents two sides of a situation — \"on one hand..., on the other hand...\". It's common in formal explanations that weigh different factors.",
+    "explanation": "一方面...另一方面... (yī fāngmiàn...lìng yī fāngmiàn...) trình bày hai mặt của một tình huống — \"một mặt..., mặt khác...\". Nó phổ biến trong các lời giải thích trang trọng cân nhắc nhiều yếu tố khác nhau.",
     "level": 3,
     "examples": ["s:l3:255", "s:l3:256", "s:l3:257"]
   },
   {
     "id": "g:jianjue-resolutely",
-    "title": "Resolutely with 坚决",
+    "title": "Kiên quyết với 坚决",
     "pattern": "(主语) + 坚决 + 动词短语",
-    "explanation": "坚决 (jiānjué) means \"resolutely, firmly\" — describing an action or decision made with strong, unwavering determination. It goes right before the verb.",
+    "explanation": "坚决 (jiānjué) nghĩa là \"kiên quyết, cương quyết\" — miêu tả một hành động hoặc quyết định được đưa ra với sự quyết tâm mạnh mẽ, không lay chuyển. Nó đứng ngay trước động từ.",
     "level": 3,
     "examples": ["s:l3:258", "s:l3:259", "s:l3:260"]
   },
   {
     "id": "g:biran-inevitably",
-    "title": "Inevitably with 必然",
+    "title": "Tất yếu với 必然",
     "pattern": "(主语) + 必然 + 动词短语",
-    "explanation": "必然 (bìrán) means \"inevitably, necessarily\" — it shows a result that's bound to happen given the situation, with no real alternative. It's formal and common in writing.",
+    "explanation": "必然 (bìrán) nghĩa là \"tất yếu, chắc chắn phải xảy ra\" — cho thấy một kết quả nhất định sẽ xảy ra dựa trên tình huống, không có lựa chọn nào khác thực sự. Nó mang tính trang trọng và phổ biến trong văn viết.",
     "level": 3,
     "examples": ["s:l3:261", "s:l3:262", "s:l3:263"]
   },
   {
     "id": "g:pubian-widely",
-    "title": "Commonly, widely with 普遍",
+    "title": "Phổ biến, rộng rãi với 普遍",
     "pattern": "普遍 + 动词/形容词",
-    "explanation": "普遍 (pǔbiàn) means \"widely, commonly, universally\" — describing something true for most people or cases, not just a few. It goes right before the verb or adjective.",
+    "explanation": "普遍 (pǔbiàn) nghĩa là \"rộng rãi, phổ biến, khắp nơi\" — miêu tả điều gì đó đúng với đa số người hoặc trường hợp, không chỉ một vài trường hợp riêng lẻ. Nó đứng ngay trước động từ hoặc tính từ.",
     "level": 3,
     "examples": ["s:l3:264", "s:l3:265", "s:l3:266"]
   },
   {
     "id": "g:gongyou-total",
-    "title": "Totaling, altogether with 共有",
+    "title": "Tổng cộng có với 共有",
     "pattern": "(地方/范围) + 共有 + 数量 + 名词",
-    "explanation": "共有 (gòngyǒu) means \"to have a total of, altogether there are\" — used when counting up everything in a group. It goes right before the total number and noun.",
+    "explanation": "共有 (gòngyǒu) nghĩa là \"có tổng cộng, tính chung lại có\" — dùng khi đếm tổng số mọi thứ trong một nhóm. Nó đứng ngay trước tổng số lượng và danh từ.",
     "level": 3,
     "examples": ["s:l3:267", "s:l3:268", "s:l3:269"]
   },
   {
     "id": "g:ganma-whyonearth",
-    "title": "What for? with 干吗",
+    "title": "Làm gì vậy? với 干吗",
     "pattern": "干吗 + 动词短语？",
-    "explanation": "干吗 (gànmá) is a casual way to ask \"what for, why\" — often showing a bit of surprise or mild complaint about someone's action. It's common in spoken Chinese.",
+    "explanation": "干吗 (gànmá) là cách hỏi thân mật \"để làm gì, tại sao\" — thường thể hiện chút ngạc nhiên hoặc phàn nàn nhẹ về hành động của ai đó. Nó phổ biến trong văn nói.",
     "level": 3,
     "examples": ["s:l3:270", "s:l3:271", "s:l3:272"]
   },
   {
     "id": "g:qianhou-around",
-    "title": "Around a time with 前后",
+    "title": "Khoảng thời gian với 前后",
     "pattern": "时间/节日 + 前后",
-    "explanation": "前后 (qiánhòu) after a time word or festival name means \"around, or so\" — showing the event happens close to that point, a bit before or after. It comes right after the time expression.",
+    "explanation": "前后 (qiánhòu) đứng sau một từ chỉ thời gian hoặc tên một dịp lễ, nghĩa là \"khoảng, xấp xỉ\" — cho thấy sự việc xảy ra gần thời điểm đó, sớm hoặc muộn hơn một chút. Nó đứng ngay sau cụm từ chỉ thời gian.",
     "level": 3,
     "examples": ["s:l3:273", "s:l3:274", "s:l3:275"]
   },
   {
     "id": "g:buguang-notonly",
-    "title": "Not only... but also with 不光...还/也",
+    "title": "Không chỉ... mà còn với 不光...还/也",
     "pattern": "不光 + A，(主语) + 还/也 + B",
-    "explanation": "不光 (bùguāng) is a casual, spoken way to say \"not only\" — just like 不但 and 不仅, it pairs with 还 or 也 in the next clause to add more information.",
+    "explanation": "不光 (bùguāng) là cách nói thân mật, khẩu ngữ của \"không chỉ\" — giống như 不但 và 不仅, nó kết hợp với 还 hoặc 也 ở mệnh đề sau để bổ sung thêm thông tin.",
     "level": 3,
     "examples": ["s:l3:276", "s:l3:277", "s:l3:278"]
   },
   {
     "id": "g:jiangjin-nearly",
-    "title": "Nearly, close to with 将近",
+    "title": "Gần, sắp tới với 将近",
     "pattern": "将近 + 数量",
-    "explanation": "将近 (jiāngjìn) means \"nearly, close to\" — it goes right before a number, showing the real amount is just short of it. It's often used for quantities, distances, or lengths of time.",
+    "explanation": "将近 (jiāngjìn) nghĩa là \"gần, sắp đạt tới\" — đứng ngay trước một con số, cho thấy con số thực tế còn thiếu một chút mới đạt tới đó. Nó thường dùng cho số lượng, khoảng cách, hoặc độ dài thời gian.",
     "level": 3,
     "examples": ["s:l3:279", "s:l3:280", "s:l3:281"]
   },
   {
     "id": "g:lianmang-hastily",
-    "title": "Hastily, at once with 连忙",
+    "title": "Vội vàng, ngay lập tức với 连忙",
     "pattern": "(主语) + 连忙 + 动词短语",
-    "explanation": "连忙 (liánmáng) means \"hastily, at once\" — describing a quick reaction to something that just happened. It goes right before the verb, often at the start of a response in a story.",
+    "explanation": "连忙 (liánmáng) nghĩa là \"vội vàng, ngay lập tức\" — miêu tả một phản ứng nhanh chóng trước điều gì đó vừa xảy ra. Nó đứng ngay trước động từ, thường ở đầu một phản ứng trong câu chuyện.",
     "level": 3,
     "examples": ["s:l3:282", "s:l3:283", "s:l3:284"]
   },
   {
     "id": "g:youdeshi-plentyof",
-    "title": "Plenty of with 有的是",
+    "title": "Thiếu gì, có thừa với 有的是",
     "pattern": "(某地方) + 有的是 + 名词",
-    "explanation": "有的是 (yǒudeshì) means \"there's plenty of, no shortage of\" — used to reassure someone there's more than enough of something. It replaces 有 when you want to stress abundance.",
+    "explanation": "有的是 (yǒudeshì) nghĩa là \"thiếu gì, có thừa, không hề thiếu\" — dùng để trấn an ai đó rằng có nhiều hơn đủ một thứ gì đó. Nó thay thế cho 有 khi muốn nhấn mạnh sự dồi dào.",
     "level": 3,
     "examples": ["s:l3:285", "s:l3:286", "s:l3:287"]
   },
   {
     "id": "g:ba-v-zai",
-    "title": "Placing something with 把...V在",
+    "title": "Đặt vào vị trí với 把...V在",
     "pattern": "主语 + 把 + 宾语 + 动词 + 在 + 地点",
-    "explanation": "Adding 在 (zài) after the verb in a 把 sentence shows exactly where the object ends up — \"do X to it, ending up at this place\". It's common with verbs like 放, 写, 挂, 停.",
+    "explanation": "Thêm 在 (zài) sau động từ trong câu chữ 把 cho thấy chính xác tân ngữ kết thúc ở đâu — \"làm gì đó với nó, để nó ở nơi này\". Nó thường dùng với các động từ như 放, 写, 挂, 停.",
     "level": 3,
     "examples": ["s:l3:288", "s:l3:289", "s:l3:290"]
   },
   {
     "id": "g:qianwan-dontever",
-    "title": "Whatever you do... with 千万",
+    "title": "Nhất định đừng... với 千万",
     "pattern": "千万 + 不要/别 + 动词短语",
-    "explanation": "千万 (qiānwàn) adds strong emphasis to a warning or request — \"whatever you do, be sure to (not)...\". It's almost always paired with 不要 or 别 right before the verb.",
+    "explanation": "千万 (qiānwàn) nhấn mạnh mạnh mẽ cho một lời cảnh báo hoặc yêu cầu — \"dù thế nào cũng nhất định phải (đừng)...\". Nó hầu như luôn đi kèm 不要 hoặc 别 ngay trước động từ.",
     "level": 3,
     "examples": ["s:l3:291", "s:l3:292", "s:l3:293", "s:l3:294"]
   },
   {
     "id": "g:juyou-formal-have",
-    "title": "Possessing formally with 具有",
+    "title": "Sở hữu trang trọng với 具有",
     "pattern": "(主语) + 具有 + 抽象名词",
-    "explanation": "具有 (jùyǒu) is a formal way to say \"to possess, to have\" — used with abstract qualities or characteristics rather than physical objects. It's common in written or professional Chinese.",
+    "explanation": "具有 (jùyǒu) là cách trang trọng để nói \"sở hữu, có\" — dùng với các phẩm chất hoặc đặc điểm trừu tượng thay vì đồ vật cụ thể. Nó phổ biến trong tiếng Trung viết hoặc mang tính chuyên môn.",
     "level": 3,
     "examples": ["s:l3:295", "s:l3:296", "s:l3:297"]
   },
   {
     "id": "g:dayue-approximately",
-    "title": "Approximately with 大约",
+    "title": "Xấp xỉ, khoảng với 大约",
     "pattern": "大约 + 数量",
-    "explanation": "大约 (dàyuē) means \"approximately, about\" — used before a number or time to show it's an estimate, not exact. It's similar to 大概 but a little more common right before precise numbers.",
+    "explanation": "大约 (dàyuē) nghĩa là \"xấp xỉ, khoảng chừng\" — dùng trước một con số hoặc thời gian để cho thấy đó là một ước tính, không chính xác tuyệt đối. Nó tương tự 大概 nhưng phổ biến hơn một chút khi đứng ngay trước những con số cụ thể.",
     "level": 3,
     "examples": ["s:l3:298", "s:l3:299", "s:l3:300"]
   },
   {
     "id": "g:qianwang-formal-goto",
-    "title": "Heading to with 前往",
+    "title": "Hướng đến với 前往",
     "pattern": "(主语) + 前往 + 地点",
-    "explanation": "前往 (qiánwǎng) is a formal, written way to say \"to head to, to go to\" — used instead of 去 in news, announcements, and formal writing.",
+    "explanation": "前往 (qiánwǎng) là cách nói trang trọng, mang tính văn viết của \"đi đến, hướng đến\" — dùng thay cho 去 trong bản tin, thông báo, và văn viết trang trọng.",
     "level": 3,
     "examples": ["s:l3:301", "s:l3:302", "s:l3:303"]
   },
   {
     "id": "g:ganquai-hurryup",
-    "title": "Hurry up and... with 赶快",
+    "title": "Mau lên, nhanh lên với 赶快",
     "pattern": "赶快 + 动词短语",
-    "explanation": "赶快 (gǎnkuài) means \"hurry up and, quickly\" — used to urge someone to act fast, often in a request or command. It goes right before the verb.",
+    "explanation": "赶快 (gǎnkuài) nghĩa là \"mau lên, nhanh lên\" — dùng để thúc giục ai đó hành động nhanh, thường trong một lời yêu cầu hoặc mệnh lệnh. Nó đứng ngay trước động từ.",
     "level": 3,
     "examples": ["s:l3:304", "s:l3:305", "s:l3:306"]
   },
   {
     "id": "g:jibenshang-basically",
-    "title": "Basically, by and large with 基本上",
+    "title": "Về cơ bản với 基本上",
     "pattern": "(主语) + 基本上 + 动词/形容词短语",
-    "explanation": "基本上 (jīběn shang) means \"basically, by and large\" — it shows something is mostly true or mostly finished, allowing for small exceptions. It goes before the verb or adjective.",
+    "explanation": "基本上 (jīběn shang) nghĩa là \"về cơ bản, nhìn chung\" — cho thấy điều gì đó phần lớn là đúng hoặc phần lớn đã hoàn thành, vẫn còn chỗ cho một vài ngoại lệ nhỏ. Nó đứng trước động từ hoặc tính từ.",
     "level": 3,
     "examples": ["s:l3:307", "s:l3:308", "s:l3:309"]
   },
   {
     "id": "g:yuji-estimate",
-    "title": "Expected to with 预计",
+    "title": "Dự kiến với 预计",
     "pattern": "预计 + 主语 + 动词短语",
-    "explanation": "预计 (yùjì) means \"to estimate, to expect\" — used before a prediction about the future, like a schedule, weather, or result. It usually starts the sentence.",
+    "explanation": "预计 (yùjì) nghĩa là \"ước tính, dự kiến\" — dùng trước một dự đoán về tương lai, như lịch trình, thời tiết, hoặc kết quả. Nó thường mở đầu câu.",
     "level": 3,
     "examples": ["s:l3:310", "s:l3:311", "s:l3:312"]
   },
   {
     "id": "g:shouxian-qici-zuihou",
-    "title": "Listing steps with 首先...其次...最后",
+    "title": "Liệt kê các bước với 首先...其次...最后",
     "pattern": "首先 + 第一点，其次 + 第二点，最后 + 第三点",
-    "explanation": "This three-part sequence lays out steps clearly: 首先 (shǒuxiān) for the first point, 其次 (qícì) for the next, and 最后 (zuìhòu) for the last. It's very common in speeches, instructions, and essays.",
+    "explanation": "Chuỗi ba phần này trình bày các bước rõ ràng: 首先 (shǒuxiān) cho điểm đầu tiên, 其次 (qícì) cho điểm tiếp theo, và 最后 (zuìhòu) cho điểm cuối cùng. Nó rất phổ biến trong bài phát biểu, hướng dẫn, và bài luận.",
     "level": 3,
     "examples": ["s:l3:313", "s:l3:314", "s:l3:315"]
   },
   {
     "id": "g:zijue-consciously",
-    "title": "On one's own accord with 自觉",
+    "title": "Tự giác với 自觉",
     "pattern": "(主语) + 自觉 (地) + 动词短语",
-    "explanation": "自觉 (zìjué) means \"consciously, on one's own initiative\" — describing someone who does the right thing without being told or watched. It goes right before the verb, often with 地.",
+    "explanation": "自觉 (zìjué) nghĩa là \"tự giác, chủ động ý thức\" — miêu tả một người làm điều đúng đắn mà không cần ai nhắc nhở hay giám sát. Nó đứng ngay trước động từ, thường đi kèm 地.",
     "level": 3,
     "examples": ["s:l3:316", "s:l3:317", "s:l3:318"]
   },
   {
     "id": "g:v-kai-resultative",
-    "title": "Opening or separating with V + 开",
+    "title": "Mở ra hoặc tách rời với động từ + 开",
     "pattern": "动词 + 开",
-    "explanation": "开 (kāi) after a verb shows something opens up or moves apart — \"push open, move away, separate\". It's a common resultative complement, as in 推开 (push open), 走开 (go away), and 分开 (split apart).",
+    "explanation": "开 (kāi) đứng sau động từ cho thấy điều gì đó mở ra hoặc tách rời — \"đẩy mở, đi khỏi, tách ra\". Đây là một bổ ngữ kết quả phổ biến, như trong 推开 (đẩy mở), 走开 (tránh ra, đi chỗ khác), và 分开 (tách rời).",
     "level": 3,
     "examples": ["s:l3:319", "s:l3:320", "s:l3:321"]
   },
   {
     "id": "g:zongshi-always",
-    "title": "Always with 总是",
+    "title": "Lúc nào cũng với 总是",
     "pattern": "(主语) + 总是 + 动词短语",
-    "explanation": "总是 (zǒngshì) means \"always\" — describing something that happens every time, without exception. It goes right before the verb, similar to 老是 but more neutral in tone.",
+    "explanation": "总是 (zǒngshì) nghĩa là \"luôn luôn, lúc nào cũng\" — miêu tả điều gì đó xảy ra mỗi lần, không có ngoại lệ. Nó đứng ngay trước động từ, tương tự 老是 nhưng trung tính hơn về sắc thái.",
     "level": 3,
     "examples": ["s:l3:322", "s:l3:323", "s:l3:324"]
   },
   {
     "id": "g:quanmian-comprehensive",
-    "title": "Comprehensively with 全面",
+    "title": "Toàn diện với 全面",
     "pattern": "全面 + 动词",
-    "explanation": "全面 (quánmiàn) means \"comprehensively, in all respects\" — describing an action or understanding that covers every aspect, not just part of it. It goes right before the verb.",
+    "explanation": "全面 (quánmiàn) nghĩa là \"toàn diện, ở mọi mặt\" — miêu tả một hành động hoặc sự hiểu biết bao quát mọi khía cạnh, chứ không chỉ một phần. Nó đứng ngay trước động từ.",
     "level": 3,
     "examples": ["s:l3:325", "s:l3:326", "s:l3:327", "s:l3:328"]
   },
   {
     "id": "g:v-chu-resultative",
-    "title": "Bringing out with V + 出",
+    "title": "Đưa ra, phát hiện ra với động từ + 出",
     "pattern": "动词 + 出",
-    "explanation": "出 (chū) after a verb shows something comes out or is revealed through the action — \"figure out, point out, take out\". It's a very productive resultative complement, seen in words like 找出, 拿出, 提出, and 指出.",
+    "explanation": "出 (chū) đứng sau động từ cho thấy điều gì đó xuất hiện ra hoặc được bộc lộ qua hành động — \"nghĩ ra, chỉ ra, lấy ra\". Đây là một bổ ngữ kết quả rất linh hoạt, xuất hiện trong các từ như 找出, 拿出, 提出, và 指出.",
     "level": 3,
     "examples": ["s:l3:329", "s:l3:330", "s:l3:331", "s:l3:332"]
   }
