@@ -17,8 +17,8 @@ import { applySync } from '../src/sync-store.js';
 // These tests call applySync directly (bypassing the auth middleware that
 // normally looks up a user_id from `users`), so the synthetic user ids below
 // must exist for themselves: unit_progress/cards/activity all carry a
-// `user_id REFERENCES users(user_id)`, and Miniflare's D1 enforces that
-// foreign key (unlike production D1, which does not — see the comment in
+// `user_id REFERENCES users(user_id)`, and D1 enforces that foreign key by
+// default in production too — not just here (see the comment in
 // migrations/0004_multi_user.sql). The inserts are idempotent so they're
 // safe to repeat every test.
 beforeEach(async () => {

@@ -17,11 +17,15 @@ CREATE TABLE users (
   created_at INTEGER NOT NULL
 );
 
--- `user_id` below is not FK-enforced at runtime: SQLite foreign keys are
--- off unless a connection opts in with `PRAGMA foreign_keys = ON`, which D1
--- does not do. The REFERENCES clause is documentation; the real guarantee
--- is that requirePassphrase only ever hands sync-store a user_id it just
--- looked up in `users`.
+-- `user_id` below IS FK-enforced at runtime: unlike vanilla SQLite (where
+-- foreign keys are off unless a connection opts in with
+-- `PRAGMA foreign_keys = ON`), D1 enforces foreign key constraints by
+-- default and gives no way to turn that off (see
+-- https://developers.cloudflare.com/d1/sql-api/foreign-keys/). So every row
+-- here must reference a real `users` row; requirePassphrase is the only
+-- code path that legitimately produces a user_id (looked up in `users`) to
+-- pass to sync-store, and test code that writes these tables directly must
+-- seed a real user row first.
 CREATE TABLE unit_progress (
   user_id TEXT NOT NULL REFERENCES users(user_id),
   unit_id TEXT NOT NULL,
