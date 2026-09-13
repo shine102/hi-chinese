@@ -287,6 +287,7 @@ function LessonFlowInner({
     );
     void completeLesson(db, {
       unitId: chunk.unit.id,
+      lessonIndex: lesson.index,
       totalLessons,
       wordIds: lesson.wordIds,
       characters,

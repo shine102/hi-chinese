@@ -12,7 +12,7 @@ export async function markUnitStarted(db: HiChineseDb, unitId: string, now: numb
       unitId,
       status: 'in-progress',
       completedAt: null,
-      lessonsCompleted: 0,
+      completedLessons: [],
       updatedAt,
     });
     await db.outbox.put(outboxEntry('unitProgress', unitId, updatedAt));
@@ -21,6 +21,8 @@ export async function markUnitStarted(db: HiChineseDb, unitId: string, now: numb
 
 export interface CompleteLessonInput {
   unitId: string;
+  /** Index of the sub-lesson just finished (Lesson.index from computeLessons) */
+  lessonIndex: number;
   /** Total lessons in this unit (from lessonCount) */
   totalLessons: number;
   /** Word IDs learned in this specific sub-lesson */
@@ -31,26 +33,30 @@ export interface CompleteLessonInput {
 }
 
 /**
- * Records completion of one sub-lesson within a unit: increments
- * `lessonsCompleted`, creates review cards for only this sub-lesson's words
- * and characters (skipping ones that already exist), counts a lesson for
- * today, and marks the unit completed once the last sub-lesson finishes.
- * One transaction: either all of it lands or none.
+ * Records completion of one sub-lesson within a unit: adds `lessonIndex` to
+ * the set of completed sub-lessons (idempotent — finishing the same
+ * sub-lesson twice, e.g. out of order, doesn't double count), creates review
+ * cards for only this sub-lesson's words and characters (skipping ones that
+ * already exist), counts a lesson for today, and marks the unit completed
+ * once every sub-lesson has been finished. One transaction: either all of it
+ * lands or none.
  */
 export async function completeLesson(db: HiChineseDb, input: CompleteLessonInput): Promise<void> {
-  const { unitId, totalLessons, now } = input;
+  const { unitId, lessonIndex, totalLessons, now } = input;
   await db.transaction('rw', [db.unitProgress, db.cards, db.activity, db.outbox], async () => {
     const outbox: OutboxRow[] = [];
 
     const prev = await db.unitProgress.get(unitId);
-    const newCount = (prev?.lessonsCompleted ?? 0) + 1;
-    const done = newCount >= totalLessons;
+    const completedLessons = Array.from(
+      new Set([...(prev?.completedLessons ?? []), lessonIndex]),
+    ).sort((a, b) => a - b);
+    const done = completedLessons.length >= totalLessons;
     const unitUpdatedAt = nextUpdatedAt(prev?.updatedAt, now);
     await db.unitProgress.put({
       unitId,
       status: done ? 'completed' : 'in-progress',
       completedAt: done ? now : null,
-      lessonsCompleted: newCount,
+      completedLessons,
       updatedAt: unitUpdatedAt,
     });
     outbox.push(outboxEntry('unitProgress', unitId, unitUpdatedAt));

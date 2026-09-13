@@ -58,6 +58,7 @@ describe('syncOnce', () => {
   it('pushes the outbox with the bearer passphrase and cursor, then clears it and stores the new cursor', async () => {
     await completeLesson(db, {
       unitId: 'l1-u01',
+      lessonIndex: 0,
       totalLessons: 1,
       wordIds: ['w:我'],
       characters: ['我'],
@@ -90,21 +91,21 @@ describe('syncOnce', () => {
             unitId: 'l1-u01',
             status: 'completed',
             completedAt: 2000,
-            lessonsCompleted: 0,
+            completedLessons: [],
             updatedAt: 2000,
           },
           {
             unitId: 'l1-u02',
             status: 'completed',
             completedAt: 100,
-            lessonsCompleted: 0,
+            completedLessons: [],
             updatedAt: 100,
           },
           {
             unitId: 'l1-u03',
             status: 'in-progress',
             completedAt: null,
-            lessonsCompleted: 0,
+            completedLessons: [],
             updatedAt: 50,
           },
         ],
@@ -129,7 +130,7 @@ describe('syncOnce', () => {
         unitId: 'l1-u01',
         status: 'completed',
         completedAt: 1500,
-        lessonsCompleted: 0,
+        completedLessons: [],
         updatedAt: 1500,
       });
       await db.outbox.put({
@@ -176,6 +177,7 @@ describe('syncOnce', () => {
     const wordIds = Array.from({ length: 300 }, (_, i) => `w:x${i}`); // 600 cards
     await completeLesson(db, {
       unitId: 'l1-u01',
+      lessonIndex: 0,
       totalLessons: 1,
       wordIds,
       characters: [],

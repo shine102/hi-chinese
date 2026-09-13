@@ -12,12 +12,12 @@ import type {
 const SEQ_SUBQUERY = '(SELECT seq FROM sync_meta WHERE id = 1)';
 
 const UPSERT_UNIT = `
-INSERT INTO unit_progress (unit_id, status, completed_at, lessons_completed, updated_at, seq)
+INSERT INTO unit_progress (unit_id, status, completed_at, completed_lessons, updated_at, seq)
 VALUES (?1, ?2, ?3, ?4, ?5, ${SEQ_SUBQUERY})
 ON CONFLICT(unit_id) DO UPDATE SET
   status = excluded.status,
   completed_at = excluded.completed_at,
-  lessons_completed = excluded.lessons_completed,
+  completed_lessons = excluded.completed_lessons,
   updated_at = excluded.updated_at,
   seq = excluded.seq
 WHERE excluded.updated_at > unit_progress.updated_at`;
@@ -46,7 +46,7 @@ interface UnitDbRow {
   unit_id: string;
   status: string;
   completed_at: number | null;
-  lessons_completed: number;
+  completed_lessons: string;
   updated_at: number;
   seq: number;
 }
@@ -83,7 +83,7 @@ export async function applySync(db: D1Database, req: SyncRequest): Promise<SyncR
       statements.push(
         db
           .prepare(UPSERT_UNIT)
-          .bind(r.unitId, r.status, r.completedAt, r.lessonsCompleted, r.updatedAt),
+          .bind(r.unitId, r.status, r.completedAt, JSON.stringify(r.completedLessons), r.updatedAt),
       );
     }
     for (const r of cards) {
@@ -105,7 +105,7 @@ export async function applySync(db: D1Database, req: SyncRequest): Promise<SyncR
   const [units, cardRows, activityRows] = (await db.batch([
     db
       .prepare(
-        'SELECT unit_id, status, completed_at, lessons_completed, updated_at, seq FROM unit_progress WHERE seq > ?1 ORDER BY seq, unit_id',
+        'SELECT unit_id, status, completed_at, completed_lessons, updated_at, seq FROM unit_progress WHERE seq > ?1 ORDER BY seq, unit_id',
       )
       .bind(cursor),
     db
@@ -132,7 +132,7 @@ export async function applySync(db: D1Database, req: SyncRequest): Promise<SyncR
         unitId: r.unit_id,
         status: r.status as UnitStatus,
         completedAt: r.completed_at,
-        lessonsCompleted: r.lessons_completed ?? 0,
+        completedLessons: JSON.parse(r.completed_lessons ?? '[]') as number[],
         updatedAt: r.updated_at,
       })),
       cards: cardRows.results.map((r): CardRow => ({

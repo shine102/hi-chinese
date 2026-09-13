@@ -38,7 +38,7 @@ describe('markUnitStarted', () => {
       unitId: 'l1-u01',
       status: 'in-progress',
       completedAt: null,
-      lessonsCompleted: 0,
+      completedLessons: [],
       updatedAt: 1000,
     });
     expect(await db.outbox.toArray()).toEqual([
@@ -50,40 +50,63 @@ describe('markUnitStarted', () => {
 describe('completeLesson', () => {
   const baseInput: CompleteLessonInput = {
     unitId: 'l1-u01',
+    lessonIndex: 0,
     totalLessons: 3,
     wordIds: ['w:我', 'w:你'],
     characters: ['我', '你'],
     now: 5000,
   };
 
-  it('creates an in-progress row with lessonsCompleted=1 for the first lesson', async () => {
+  it('creates an in-progress row with completedLessons=[0] for the first lesson', async () => {
     await completeLesson(db, baseInput);
     const row = await db.unitProgress.get('l1-u01');
     expect(row).toEqual({
       unitId: 'l1-u01',
       status: 'in-progress',
       completedAt: null,
-      lessonsCompleted: 1,
+      completedLessons: [0],
       updatedAt: 5000,
     });
   });
 
-  it('increments lessonsCompleted on subsequent lessons', async () => {
+  it('adds to completedLessons on subsequent lessons', async () => {
     await completeLesson(db, baseInput);
-    await completeLesson(db, { ...baseInput, wordIds: ['w:他', 'w:是'], characters: ['他', '是'], now: 6000 });
+    await completeLesson(db, {
+      ...baseInput,
+      lessonIndex: 1,
+      wordIds: ['w:他', 'w:是'],
+      characters: ['他', '是'],
+      now: 6000,
+    });
     const row = await db.unitProgress.get('l1-u01');
-    expect(row?.lessonsCompleted).toBe(2);
+    expect(row?.completedLessons).toEqual([0, 1]);
     expect(row?.status).toBe('in-progress');
   });
 
-  it('marks unit completed when last lesson finishes', async () => {
+  it('marks unit completed when the last remaining lesson finishes', async () => {
     await completeLesson(db, baseInput);
-    await completeLesson(db, { ...baseInput, now: 6000 });
-    await completeLesson(db, { ...baseInput, now: 7000 });
+    await completeLesson(db, { ...baseInput, lessonIndex: 1, now: 6000 });
+    await completeLesson(db, { ...baseInput, lessonIndex: 2, now: 7000 });
     const row = await db.unitProgress.get('l1-u01');
-    expect(row?.lessonsCompleted).toBe(3);
+    expect(row?.completedLessons).toEqual([0, 1, 2]);
     expect(row?.status).toBe('completed');
     expect(row?.completedAt).toBe(7000);
+  });
+
+  it('completing sub-lessons out of order marks the right ones done, not just a count', async () => {
+    // Finishing sub-lesson 2 before 0 or 1 must not register as "the first lesson done".
+    await completeLesson(db, { ...baseInput, lessonIndex: 2, now: 5000 });
+    const row = await db.unitProgress.get('l1-u01');
+    expect(row?.completedLessons).toEqual([2]);
+    expect(row?.status).toBe('in-progress');
+  });
+
+  it('is idempotent when the same sub-lesson is completed twice', async () => {
+    await completeLesson(db, baseInput);
+    await completeLesson(db, { ...baseInput, now: 6000 });
+    const row = await db.unitProgress.get('l1-u01');
+    expect(row?.completedLessons).toEqual([0]);
+    expect(row?.status).toBe('in-progress');
   });
 
   it('creates review cards only for this sub-lesson words', async () => {

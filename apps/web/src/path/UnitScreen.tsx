@@ -35,8 +35,11 @@ export function UnitScreen() {
 
   const lessons = computeLessons(chunk.chunk.unit, chunk.chunk.grammar, chunk.chunk.sentences);
   const progress = rows.find((r) => r.unitId === unitId);
-  const completed =
-    progress?.status === 'completed' ? lessons.length : (progress?.lessonsCompleted ?? 0);
+  const completedSet =
+    progress?.status === 'completed'
+      ? new Set(lessons.map((_, i) => i))
+      : new Set(progress?.completedLessons ?? []);
+  const firstIncomplete = lessons.findIndex((_, i) => !completedSet.has(i));
 
   return (
     <div className="flex flex-col gap-6">
@@ -48,8 +51,8 @@ export function UnitScreen() {
       </div>
       <ol className="flex flex-col gap-2">
         {lessons.map((lesson, i) => {
-          const done = i < completed;
-          const current = i === completed && completed < lessons.length;
+          const done = completedSet.has(i);
+          const current = i === firstIncomplete;
           const words = lesson.wordIds
             .map((id) => content.words.get(id)?.simplified)
             .filter(Boolean)

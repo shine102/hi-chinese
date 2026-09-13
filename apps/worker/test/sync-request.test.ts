@@ -21,7 +21,7 @@ const valid = {
         unitId: 'l1-u01',
         status: 'completed',
         completedAt: 1_700_000_000_000,
-        lessonsCompleted: 3,
+        completedLessons: [0, 1, 2],
         updatedAt: 1_700_000_000_001,
       },
     ],
@@ -106,6 +106,24 @@ describe('parseSyncRequest', () => {
         changes: { ...valid.changes, unitProgress: [{ ...row, completedAt: -1 }] },
       }),
     ).toMatch(/completedAt/);
+  });
+  it('rejects a non-array completedLessons', () => {
+    const row = valid.changes.unitProgress[0]!;
+    expect(
+      fail({
+        ...valid,
+        changes: { ...valid.changes, unitProgress: [{ ...row, completedLessons: 3 }] },
+      }),
+    ).toMatch(/^changes\.unitProgress\[0\]\.completedLessons: expected array/);
+  });
+  it('rejects a negative lesson index in completedLessons', () => {
+    const row = valid.changes.unitProgress[0]!;
+    expect(
+      fail({
+        ...valid,
+        changes: { ...valid.changes, unitProgress: [{ ...row, completedLessons: [0, -1] }] },
+      }),
+    ).toMatch(/^changes\.unitProgress\[0\]\.completedLessons\[1\]: /);
   });
   it('rejects bad card rows', () => {
     const row = valid.changes.cards[0]!;

@@ -96,7 +96,7 @@ export function PathScreen() {
             {level.unitIds.map((id) => {
               const unit = content.unitById.get(id);
               if (!unit) return null;
-              return <UnitNode key={id} unit={unit} state={states.get(id) ?? 'locked'} lessonsCompleted={progressByUnit.get(id)?.lessonsCompleted ?? 0} />;
+              return <UnitNode key={id} unit={unit} state={states.get(id) ?? 'locked'} lessonsCompleted={progressByUnit.get(id)?.completedLessons.length ?? 0} />;
             })}
           </ol>
         </section>

@@ -46,7 +46,7 @@ describe('POST /api/sync', () => {
               unitId: 'l1-u01',
               status: 'completed',
               completedAt: 1000,
-              lessonsCompleted: 0,
+              completedLessons: [0, 1, 2],
               updatedAt: 1000,
             },
           ],
@@ -58,7 +58,7 @@ describe('POST /api/sync', () => {
     const body = (await first.json()) as SyncResponse;
     expect(body.cursor).toBe(1);
     expect(body.changes.unitProgress).toEqual([
-      { unitId: 'l1-u01', status: 'completed', completedAt: 1000, lessonsCompleted: 0, updatedAt: 1000 },
+      { unitId: 'l1-u01', status: 'completed', completedAt: 1000, completedLessons: [0, 1, 2], updatedAt: 1000 },
     ]);
 
     const fresh = await post(JSON.stringify({ cursor: 0, changes: emptyChanges() }));

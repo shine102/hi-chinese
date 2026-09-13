@@ -46,6 +46,17 @@ export function openDb(name = 'hi-chinese'): HiChineseDb {
     outbox: 'key, table',
     meta: 'key',
   });
+  // `lessonsCompleted` (a count) was replaced by `completedLessons` (the actual
+  // set of finished sub-lesson indices) — a plain count couldn't tell which
+  // sub-lesson had been done, so completing lesson 5 out of order registered as
+  // lesson 1. Same reasoning as v2: non-indexed, read with `?? []`, no upgrade needed.
+  d.version(3).stores({
+    unitProgress: 'unitId, status',
+    cards: 'cardId, kind, fsrs.due',
+    activity: 'date',
+    outbox: 'key, table',
+    meta: 'key',
+  });
   // Dexie's db.delete() defaults to { disableAutoOpen: true }, which would leave this
   // instance permanently unable to reopen itself on the next table operation. Tests
   // reset state between cases with `await db.delete()` on the shared singleton and

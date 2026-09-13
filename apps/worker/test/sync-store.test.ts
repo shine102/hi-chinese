@@ -26,7 +26,7 @@ const unit = (over: Partial<UnitProgressRow> = {}): UnitProgressRow => ({
   unitId: 'l1-u01',
   status: 'in-progress',
   completedAt: null,
-  lessonsCompleted: 0,
+  completedLessons: [],
   updatedAt: 1000,
   ...over,
 });

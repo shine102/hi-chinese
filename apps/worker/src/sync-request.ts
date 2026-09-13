@@ -68,25 +68,30 @@ function readNumberOrNull(v: unknown, path: string): number | null {
   return v;
 }
 
-function readArray(v: unknown, path: string): unknown[] {
+function readArray(v: unknown, path: string, maxLen = MAX_ROWS_PER_TABLE): unknown[] {
   if (!Array.isArray(v)) fail(path, 'expected array');
-  if (v.length > MAX_ROWS_PER_TABLE) fail(path, `too many rows (max ${MAX_ROWS_PER_TABLE})`);
+  if (v.length > maxLen) fail(path, `too many rows (max ${maxLen})`);
   return v as unknown[];
 }
+
+/** A unit has at most a few dozen sub-lessons; this is generous headroom, not a real cap. */
+const MAX_LESSON_INDICES = 1000;
 
 function parseUnitProgress(v: unknown, path: string): UnitProgressRow {
   const obj = readRecord(v, path);
   const status = obj['status'];
   if (status !== 'in-progress' && status !== 'completed')
     fail(`${path}.status`, 'expected in-progress or completed');
+  const completedLessons = readArray(
+    obj['completedLessons'],
+    `${path}.completedLessons`,
+    MAX_LESSON_INDICES,
+  ).map((n, i) => readInt(n, `${path}.completedLessons[${i}]`, 0));
   return {
     unitId: readString(obj['unitId'], `${path}.unitId`, 200),
     status: status as UnitStatus,
     completedAt: readIntOrNull(obj['completedAt'], `${path}.completedAt`, 0),
-    lessonsCompleted:
-      typeof obj['lessonsCompleted'] === 'number'
-        ? readInt(obj['lessonsCompleted'], `${path}.lessonsCompleted`, 0)
-        : 0,
+    completedLessons,
     updatedAt: readInt(obj['updatedAt'], `${path}.updatedAt`, 1),
   };
 }

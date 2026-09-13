@@ -4,7 +4,8 @@ export interface UnitProgressRow {
   unitId: string;
   status: UnitStatus;
   completedAt: number | null;
-  lessonsCompleted: number;
+  /** Sorted, deduplicated indices of the unit's sub-lessons the learner has finished. */
+  completedLessons: number[];
   updatedAt: number;
 }
 

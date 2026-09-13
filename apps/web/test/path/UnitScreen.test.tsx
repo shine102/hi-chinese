@@ -72,7 +72,7 @@ describe('UnitScreen', () => {
       unitId: 'l1-u01',
       status: 'in-progress',
       completedAt: null,
-      lessonsCompleted: 1,
+      completedLessons: [0],
       updatedAt: 100,
     });
     renderApp('/unit/l1-u01');
@@ -84,6 +84,26 @@ describe('UnitScreen', () => {
     const lesson1 = screen.getByTestId('lesson-1');
     expect(lesson1.dataset['done']).toBe('false');
     expect(lesson1.textContent).toContain('Start');
+  });
+
+  it('marks the actual completed sub-lesson done, even when finished out of order', async () => {
+    stubFetch(noSync);
+    await db.unitProgress.put({
+      unitId: 'l1-u01',
+      status: 'in-progress',
+      completedAt: null,
+      completedLessons: [1],
+      updatedAt: 100,
+    });
+    renderApp('/unit/l1-u01');
+
+    const lesson0 = await screen.findByTestId('lesson-0');
+    expect(lesson0.dataset['done']).toBe('false');
+    expect(lesson0.textContent).toContain('Start');
+
+    const lesson1 = screen.getByTestId('lesson-1');
+    expect(lesson1.dataset['done']).toBe('true');
+    expect(lesson1.textContent).toContain('Done');
   });
 
   it('explains a locked unit instead of listing its lessons', async () => {

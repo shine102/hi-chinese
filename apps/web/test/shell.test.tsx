@@ -55,7 +55,7 @@ describe('app shell', () => {
               unitId: 'l1-u01',
               status: 'completed',
               completedAt: 100,
-              lessonsCompleted: 0,
+              completedLessons: [],
               updatedAt: 100,
             },
           ],
