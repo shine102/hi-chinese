@@ -39,7 +39,7 @@ export interface Sentence {
   id: string;
   zh: string;
   pinyin: string;
-  en: string;
+  vi: string;
   wordIds: string[];
   unitId: string;
 }
@@ -106,7 +106,7 @@ export interface AuthoredSentence {
   id: string;
   zh: string;
   pinyin: string;
-  en: string;
+  vi: string;
   words: string[];
 }
 

@@ -63,12 +63,12 @@ function bundle(): ContentBundle {
   const words = [word('我', 'l1-u01'), word('是', 'l1-u01'), word('你', 'l1-u02')];
   const characters = [char('我'), char('是'), char('你')];
   const sentences: Sentence[] = [
-    { id: 's1', zh: '我是。', pinyin: 'x', en: 'x', wordIds: ['w:我', 'w:是'], unitId: 'l1-u01' },
+    { id: 's1', zh: '我是。', pinyin: 'x', vi: 'x', wordIds: ['w:我', 'w:是'], unitId: 'l1-u01' },
     {
       id: 's2',
       zh: '你是我。',
       pinyin: 'x',
-      en: 'x',
+      vi: 'x',
       wordIds: ['w:你', 'w:是', 'w:我'],
       unitId: 'l1-u02',
     },
@@ -113,6 +113,16 @@ describe('validateContent', () => {
     const b = bundle();
     b.characters[0] = char('我', { hanViet: '' });
     expect(rules(b)).toContain('char-hanviet');
+  });
+  it('rejects a sentence without a Vietnamese translation', () => {
+    const b = bundle();
+    b.sentences[0] = { ...b.sentences[0]!, vi: '' };
+    expect(rules(b)).toContain('sentence-vi');
+  });
+  it('accepts a sentence with a non-empty Vietnamese translation', () => {
+    const b = bundle();
+    b.sentences[0] = { ...b.sentences[0]!, vi: 'Tôi là.' };
+    expect(rules(b)).not.toContain('sentence-vi');
   });
   it('rejects word/unit mismatches and empty units', () => {
     const b = bundle();

@@ -3,7 +3,7 @@
     "id": "s:l1:001",
     "zh": "这是我的。",
     "pinyin": "Zhè shì wǒ de.",
-    "en": "This is mine.",
+    "vi": "This is mine.",
     "words": [
       "这",
       "是",
@@ -15,7 +15,7 @@
     "id": "s:l1:002",
     "zh": "我有这个。",
     "pinyin": "Wǒ yǒu zhège.",
-    "en": "I have this one.",
+    "vi": "I have this one.",
     "words": [
       "我",
       "有",
@@ -27,7 +27,7 @@
     "id": "s:l1:003",
     "zh": "他不在。",
     "pinyin": "Tā bú zài.",
-    "en": "He is not here.",
+    "vi": "He is not here.",
     "words": [
       "他",
       "不",
@@ -38,7 +38,7 @@
     "id": "s:l1:004",
     "zh": "我不是你。",
     "pinyin": "Wǒ bú shì nǐ.",
-    "en": "I am not you.",
+    "vi": "I am not you.",
     "words": [
       "我",
       "不",
@@ -50,7 +50,7 @@
     "id": "s:l1:005",
     "zh": "他不是我。",
     "pinyin": "Tā bú shì wǒ.",
-    "en": "He is not me.",
+    "vi": "He is not me.",
     "words": [
       "他",
       "不",
@@ -62,7 +62,7 @@
     "id": "s:l1:006",
     "zh": "你在这。",
     "pinyin": "Nǐ zài zhè.",
-    "en": "You are here.",
+    "vi": "You are here.",
     "words": [
       "你",
       "在",
@@ -73,7 +73,7 @@
     "id": "s:l1:007",
     "zh": "我是他。",
     "pinyin": "Wǒ shì tā.",
-    "en": "I am him.",
+    "vi": "I am him.",
     "words": [
       "我",
       "是",
@@ -84,7 +84,7 @@
     "id": "s:l1:008",
     "zh": "这个是你的。",
     "pinyin": "Zhège shì nǐ de.",
-    "en": "This one is yours.",
+    "vi": "This one is yours.",
     "words": [
       "这",
       "个",
@@ -97,7 +97,7 @@
     "id": "s:l1:009",
     "zh": "她很好。",
     "pinyin": "Tā hěn hǎo.",
-    "en": "She is very good.",
+    "vi": "She is very good.",
     "words": [
       "她",
       "很",
@@ -108,7 +108,7 @@
     "id": "s:l1:010",
     "zh": "我们都很好。",
     "pinyin": "Wǒmen dōu hěn hǎo.",
-    "en": "We are all fine.",
+    "vi": "We are all fine.",
     "words": [
       "我们",
       "都",
@@ -120,7 +120,7 @@
     "id": "s:l1:011",
     "zh": "你也很好。",
     "pinyin": "Nǐ yě hěn hǎo.",
-    "en": "You are great too.",
+    "vi": "You are great too.",
     "words": [
       "你",
       "也",
@@ -132,7 +132,7 @@
     "id": "s:l1:012",
     "zh": "这个很好。",
     "pinyin": "Zhège hěn hǎo.",
-    "en": "This one is very good.",
+    "vi": "This one is very good.",
     "words": [
       "这",
       "个",
@@ -144,7 +144,7 @@
     "id": "s:l1:013",
     "zh": "我能去。",
     "pinyin": "Wǒ néng qù.",
-    "en": "I can go.",
+    "vi": "I can go.",
     "words": [
       "我",
       "能",
@@ -155,7 +155,7 @@
     "id": "s:l1:014",
     "zh": "他不能来。",
     "pinyin": "Tā bù néng lái.",
-    "en": "He can't come.",
+    "vi": "He can't come.",
     "words": [
       "他",
       "不",
@@ -167,7 +167,7 @@
     "id": "s:l1:015",
     "zh": "你能来。",
     "pinyin": "Nǐ néng lái.",
-    "en": "You can come.",
+    "vi": "You can come.",
     "words": [
       "你",
       "能",
@@ -178,7 +178,7 @@
     "id": "s:l1:016",
     "zh": "我们都能去。",
     "pinyin": "Wǒmen dōu néng qù.",
-    "en": "We can all go.",
+    "vi": "We can all go.",
     "words": [
       "我们",
       "都",
@@ -190,7 +190,7 @@
     "id": "s:l1:017",
     "zh": "我给你。",
     "pinyin": "Wǒ gěi nǐ.",
-    "en": "I'll give it to you.",
+    "vi": "I'll give it to you.",
     "words": [
       "我",
       "给",
@@ -201,7 +201,7 @@
     "id": "s:l1:018",
     "zh": "他给我们。",
     "pinyin": "Tā gěi wǒmen.",
-    "en": "He gives it to us.",
+    "vi": "He gives it to us.",
     "words": [
       "他",
       "给",
@@ -212,7 +212,7 @@
     "id": "s:l1:019",
     "zh": "你给他。",
     "pinyin": "Nǐ gěi tā.",
-    "en": "Give it to him.",
+    "vi": "Give it to him.",
     "words": [
       "你",
       "给",
@@ -223,7 +223,7 @@
     "id": "s:l1:020",
     "zh": "我给你一个。",
     "pinyin": "Wǒ gěi nǐ yí gè.",
-    "en": "I'll give you one.",
+    "vi": "I'll give you one.",
     "words": [
       "我",
       "给",
@@ -236,7 +236,7 @@
     "id": "s:l1:021",
     "zh": "我没去。",
     "pinyin": "Wǒ méi qù.",
-    "en": "I didn't go.",
+    "vi": "I didn't go.",
     "words": [
       "我",
       "没",
@@ -247,7 +247,7 @@
     "id": "s:l1:022",
     "zh": "他没看。",
     "pinyin": "Tā méi kàn.",
-    "en": "He didn't look.",
+    "vi": "He didn't look.",
     "words": [
       "他",
       "没",
@@ -258,7 +258,7 @@
     "id": "s:l1:023",
     "zh": "我们没做。",
     "pinyin": "Wǒmen méi zuò.",
-    "en": "We didn't do it.",
+    "vi": "We didn't do it.",
     "words": [
       "我们",
       "没",
@@ -269,7 +269,7 @@
     "id": "s:l1:024",
     "zh": "你没来。",
     "pinyin": "Nǐ méi lái.",
-    "en": "You didn't come.",
+    "vi": "You didn't come.",
     "words": [
       "你",
       "没",
@@ -280,7 +280,7 @@
     "id": "s:l1:025",
     "zh": "你想做什么？",
     "pinyin": "Nǐ xiǎng zuò shénme?",
-    "en": "What do you want to do?",
+    "vi": "What do you want to do?",
     "words": [
       "你",
       "想",
@@ -292,7 +292,7 @@
     "id": "s:l1:026",
     "zh": "他说什么？",
     "pinyin": "Tā shuō shénme?",
-    "en": "What did he say?",
+    "vi": "What did he say?",
     "words": [
       "他",
       "说",
@@ -303,7 +303,7 @@
     "id": "s:l1:027",
     "zh": "这是什么？",
     "pinyin": "Zhè shì shénme?",
-    "en": "What is this?",
+    "vi": "What is this?",
     "words": [
       "这",
       "是",
@@ -314,7 +314,7 @@
     "id": "s:l1:028",
     "zh": "你看什么？",
     "pinyin": "Nǐ kàn shénme?",
-    "en": "What are you looking at?",
+    "vi": "What are you looking at?",
     "words": [
       "你",
       "看",
@@ -325,7 +325,7 @@
     "id": "s:l1:029",
     "zh": "我们去吧。",
     "pinyin": "Wǒmen qù ba.",
-    "en": "Let's go.",
+    "vi": "Let's go.",
     "words": [
       "我们",
       "去",
@@ -336,7 +336,7 @@
     "id": "s:l1:030",
     "zh": "你说吧。",
     "pinyin": "Nǐ shuō ba.",
-    "en": "Go ahead, say it.",
+    "vi": "Go ahead, say it.",
     "words": [
       "你",
       "说",
@@ -347,7 +347,7 @@
     "id": "s:l1:031",
     "zh": "我们看吧。",
     "pinyin": "Wǒmen kàn ba.",
-    "en": "Let's take a look.",
+    "vi": "Let's take a look.",
     "words": [
       "我们",
       "看",
@@ -358,7 +358,7 @@
     "id": "s:l1:032",
     "zh": "你来吧。",
     "pinyin": "Nǐ lái ba.",
-    "en": "Come on then.",
+    "vi": "Come on then.",
     "words": [
       "你",
       "来",
@@ -369,7 +369,7 @@
     "id": "s:l1:033",
     "zh": "你好吗？",
     "pinyin": "Nǐ hǎo ma?",
-    "en": "How are you?",
+    "vi": "How are you?",
     "words": [
       "你",
       "好",
@@ -380,7 +380,7 @@
     "id": "s:l1:034",
     "zh": "他在吗？",
     "pinyin": "Tā zài ma?",
-    "en": "Is he there?",
+    "vi": "Is he there?",
     "words": [
       "他",
       "在",
@@ -391,7 +391,7 @@
     "id": "s:l1:035",
     "zh": "你想去吗？",
     "pinyin": "Nǐ xiǎng qù ma?",
-    "en": "Do you want to go?",
+    "vi": "Do you want to go?",
     "words": [
       "你",
       "想",
@@ -403,7 +403,7 @@
     "id": "s:l1:036",
     "zh": "你是他吗？",
     "pinyin": "Nǐ shì tā ma?",
-    "en": "Are you him?",
+    "vi": "Are you him?",
     "words": [
       "你",
       "是",
@@ -415,7 +415,7 @@
     "id": "s:l1:037",
     "zh": "太好了！",
     "pinyin": "Tài hǎo le!",
-    "en": "That's wonderful!",
+    "vi": "That's wonderful!",
     "words": [
       "太",
       "好",
@@ -426,7 +426,7 @@
     "id": "s:l1:038",
     "zh": "这个太大了。",
     "pinyin": "Zhège tài dà le.",
-    "en": "This one is too big.",
+    "vi": "This one is too big.",
     "words": [
       "这",
       "个",
@@ -439,7 +439,7 @@
     "id": "s:l1:039",
     "zh": "你太好了。",
     "pinyin": "Nǐ tài hǎo le.",
-    "en": "You're too kind.",
+    "vi": "You're too kind.",
     "words": [
       "你",
       "太",
@@ -451,7 +451,7 @@
     "id": "s:l1:040",
     "zh": "我们太多了。",
     "pinyin": "Wǒmen tài duō le.",
-    "en": "There are too many of us.",
+    "vi": "There are too many of us.",
     "words": [
       "我们",
       "太",
@@ -463,7 +463,7 @@
     "id": "s:l1:041",
     "zh": "这个最好。",
     "pinyin": "Zhège zuì hǎo.",
-    "en": "This one is the best.",
+    "vi": "This one is the best.",
     "words": [
       "这",
       "个",
@@ -475,7 +475,7 @@
     "id": "s:l1:042",
     "zh": "他最大。",
     "pinyin": "Tā zuì dà.",
-    "en": "He is the oldest.",
+    "vi": "He is the oldest.",
     "words": [
       "他",
       "最",
@@ -486,7 +486,7 @@
     "id": "s:l1:043",
     "zh": "那个最小。",
     "pinyin": "Nàge zuì xiǎo.",
-    "en": "That one is the smallest.",
+    "vi": "That one is the smallest.",
     "words": [
       "那",
       "个",
@@ -498,7 +498,7 @@
     "id": "s:l1:044",
     "zh": "我最想去。",
     "pinyin": "Wǒ zuì xiǎng qù.",
-    "en": "I want to go the most.",
+    "vi": "I want to go the most.",
     "words": [
       "我",
       "最",
@@ -510,7 +510,7 @@
     "id": "s:l1:045",
     "zh": "我很好，你呢？",
     "pinyin": "Wǒ hěn hǎo, nǐ ne?",
-    "en": "I'm fine, and you?",
+    "vi": "I'm fine, and you?",
     "words": [
       "我",
       "很",
@@ -523,7 +523,7 @@
     "id": "s:l1:046",
     "zh": "他在，你呢？",
     "pinyin": "Tā zài, nǐ ne?",
-    "en": "He's here, what about you?",
+    "vi": "He's here, what about you?",
     "words": [
       "他",
       "在",
@@ -535,7 +535,7 @@
     "id": "s:l1:047",
     "zh": "我们都想去，他呢？",
     "pinyin": "Wǒmen dōu xiǎng qù, tā ne?",
-    "en": "We all want to go, what about him?",
+    "vi": "We all want to go, what about him?",
     "words": [
       "我们",
       "都",
@@ -549,7 +549,7 @@
     "id": "s:l1:048",
     "zh": "这个是我的，那个呢？",
     "pinyin": "Zhège shì wǒ de, nàge ne?",
-    "en": "This one is mine, what about that one?",
+    "vi": "This one is mine, what about that one?",
     "words": [
       "这",
       "个",
@@ -565,7 +565,7 @@
     "id": "s:l1:049",
     "zh": "你怎么知道？",
     "pinyin": "Nǐ zěnme zhīdào?",
-    "en": "How do you know?",
+    "vi": "How do you know?",
     "words": [
       "你",
       "怎么",
@@ -576,7 +576,7 @@
     "id": "s:l1:050",
     "zh": "这个怎么用？",
     "pinyin": "Zhège zěnme yòng?",
-    "en": "How do you use this?",
+    "vi": "How do you use this?",
     "words": [
       "这",
       "个",
@@ -588,7 +588,7 @@
     "id": "s:l1:051",
     "zh": "他怎么走？",
     "pinyin": "Tā zěnme zǒu?",
-    "en": "How does he go?",
+    "vi": "How does he go?",
     "words": [
       "他",
       "怎么",
@@ -599,7 +599,7 @@
     "id": "s:l1:052",
     "zh": "你怎么了？",
     "pinyin": "Nǐ zěnme le?",
-    "en": "What's wrong with you?",
+    "vi": "What's wrong with you?",
     "words": [
       "你",
       "怎么",
@@ -610,7 +610,7 @@
     "id": "s:l1:053",
     "zh": "我跟你去。",
     "pinyin": "Wǒ gēn nǐ qù.",
-    "en": "I'll go with you.",
+    "vi": "I'll go with you.",
     "words": [
       "我",
       "跟",
@@ -622,7 +622,7 @@
     "id": "s:l1:054",
     "zh": "他跟谁去？",
     "pinyin": "Tā gēn shéi qù?",
-    "en": "Who is he going with?",
+    "vi": "Who is he going with?",
     "words": [
       "他",
       "跟",
@@ -634,7 +634,7 @@
     "id": "s:l1:055",
     "zh": "你跟他说。",
     "pinyin": "Nǐ gēn tā shuō.",
-    "en": "Talk to him.",
+    "vi": "Talk to him.",
     "words": [
       "你",
       "跟",
@@ -646,7 +646,7 @@
     "id": "s:l1:056",
     "zh": "我喜欢跟你说。",
     "pinyin": "Wǒ xǐhuan gēn nǐ shuō.",
-    "en": "I like talking with you.",
+    "vi": "I like talking with you.",
     "words": [
       "我",
       "喜欢",
@@ -659,7 +659,7 @@
     "id": "s:l1:057",
     "zh": "他比我快。",
     "pinyin": "Tā bǐ wǒ kuài.",
-    "en": "He is faster than me.",
+    "vi": "He is faster than me.",
     "words": [
       "他",
       "比",
@@ -671,7 +671,7 @@
     "id": "s:l1:058",
     "zh": "这个比那个好。",
     "pinyin": "Zhège bǐ nàge hǎo.",
-    "en": "This one is better than that one.",
+    "vi": "This one is better than that one.",
     "words": [
       "这",
       "个",
@@ -685,7 +685,7 @@
     "id": "s:l1:059",
     "zh": "我比他大。",
     "pinyin": "Wǒ bǐ tā dà.",
-    "en": "I am older than him.",
+    "vi": "I am older than him.",
     "words": [
       "我",
       "比",
@@ -697,7 +697,7 @@
     "id": "s:l1:060",
     "zh": "那个比这个小。",
     "pinyin": "Nàge bǐ zhège xiǎo.",
-    "en": "That one is smaller than this one.",
+    "vi": "That one is smaller than this one.",
     "words": [
       "那",
       "个",
@@ -711,7 +711,7 @@
     "id": "s:l1:061",
     "zh": "他叫什么？",
     "pinyin": "Tā jiào shénme?",
-    "en": "What's he called?",
+    "vi": "What's he called?",
     "words": [
       "他",
       "叫",
@@ -722,7 +722,7 @@
     "id": "s:l1:062",
     "zh": "我叫他。",
     "pinyin": "Wǒ jiào tā.",
-    "en": "I called him.",
+    "vi": "I called him.",
     "words": [
       "我",
       "叫",
@@ -733,7 +733,7 @@
     "id": "s:l1:063",
     "zh": "你叫谁？",
     "pinyin": "Nǐ jiào shéi?",
-    "en": "Who are you calling?",
+    "vi": "Who are you calling?",
     "words": [
       "你",
       "叫",
@@ -744,7 +744,7 @@
     "id": "s:l1:064",
     "zh": "这个叫什么？",
     "pinyin": "Zhège jiào shénme?",
-    "en": "What is this called?",
+    "vi": "What is this called?",
     "words": [
       "这",
       "个",
@@ -756,7 +756,7 @@
     "id": "s:l1:065",
     "zh": "别说了。",
     "pinyin": "Bié shuō le.",
-    "en": "Stop talking.",
+    "vi": "Stop talking.",
     "words": [
       "别",
       "说",
@@ -767,7 +767,7 @@
     "id": "s:l1:066",
     "zh": "别去。",
     "pinyin": "Bié qù.",
-    "en": "Don't go.",
+    "vi": "Don't go.",
     "words": [
       "别",
       "去"
@@ -777,7 +777,7 @@
     "id": "s:l1:067",
     "zh": "别买这个。",
     "pinyin": "Bié mǎi zhège.",
-    "en": "Don't buy this one.",
+    "vi": "Don't buy this one.",
     "words": [
       "别",
       "买",
@@ -789,7 +789,7 @@
     "id": "s:l1:068",
     "zh": "你别想了。",
     "pinyin": "Nǐ bié xiǎng le.",
-    "en": "Stop thinking about it.",
+    "vi": "Stop thinking about it.",
     "words": [
       "你",
       "别",
@@ -801,7 +801,7 @@
     "id": "s:l1:069",
     "zh": "请说。",
     "pinyin": "Qǐng shuō.",
-    "en": "Please speak.",
+    "vi": "Please speak.",
     "words": [
       "请",
       "说"
@@ -811,7 +811,7 @@
     "id": "s:l1:070",
     "zh": "请你来。",
     "pinyin": "Qǐng nǐ lái.",
-    "en": "Please come.",
+    "vi": "Please come.",
     "words": [
       "请",
       "你",
@@ -822,7 +822,7 @@
     "id": "s:l1:071",
     "zh": "请给我。",
     "pinyin": "Qǐng gěi wǒ.",
-    "en": "Please give it to me.",
+    "vi": "Please give it to me.",
     "words": [
       "请",
       "给",
@@ -833,7 +833,7 @@
     "id": "s:l1:072",
     "zh": "请看这个。",
     "pinyin": "Qǐng kàn zhège.",
-    "en": "Please look at this.",
+    "vi": "Please look at this.",
     "words": [
       "请",
       "看",
@@ -845,7 +845,7 @@
     "id": "s:l1:073",
     "zh": "我三岁。",
     "pinyin": "Wǒ sān suì.",
-    "en": "I am three years old.",
+    "vi": "I am three years old.",
     "words": [
       "我",
       "三",
@@ -856,7 +856,7 @@
     "id": "s:l1:074",
     "zh": "他两岁。",
     "pinyin": "Tā liǎng suì.",
-    "en": "He is two years old.",
+    "vi": "He is two years old.",
     "words": [
       "他",
       "两",
@@ -867,7 +867,7 @@
     "id": "s:l1:075",
     "zh": "你几岁？",
     "pinyin": "Nǐ jǐ suì?",
-    "en": "How old are you?",
+    "vi": "How old are you?",
     "words": [
       "你",
       "几",
@@ -878,7 +878,7 @@
     "id": "s:l1:076",
     "zh": "她三岁了。",
     "pinyin": "Tā sān suì le.",
-    "en": "She just turned three.",
+    "vi": "She just turned three.",
     "words": [
       "她",
       "三",
@@ -890,7 +890,7 @@
     "id": "s:l1:077",
     "zh": "我先看。",
     "pinyin": "Wǒ xiān kàn.",
-    "en": "I'll look first.",
+    "vi": "I'll look first.",
     "words": [
       "我",
       "先",
@@ -901,7 +901,7 @@
     "id": "s:l1:078",
     "zh": "你先说。",
     "pinyin": "Nǐ xiān shuō.",
-    "en": "You go first.",
+    "vi": "You go first.",
     "words": [
       "你",
       "先",
@@ -912,7 +912,7 @@
     "id": "s:l1:079",
     "zh": "他先走了。",
     "pinyin": "Tā xiān zǒu le.",
-    "en": "He left first.",
+    "vi": "He left first.",
     "words": [
       "他",
       "先",
@@ -924,7 +924,7 @@
     "id": "s:l1:080",
     "zh": "我们先去这里。",
     "pinyin": "Wǒmen xiān qù zhèlǐ.",
-    "en": "Let's go here first.",
+    "vi": "Let's go here first.",
     "words": [
       "我们",
       "先",
@@ -936,7 +936,7 @@
     "id": "s:l1:081",
     "zh": "我帮你。",
     "pinyin": "Wǒ bāng nǐ.",
-    "en": "I'll help you.",
+    "vi": "I'll help you.",
     "words": [
       "我",
       "帮",
@@ -947,7 +947,7 @@
     "id": "s:l1:082",
     "zh": "他帮我们找。",
     "pinyin": "Tā bāng wǒmen zhǎo.",
-    "en": "He's helping us look for it.",
+    "vi": "He's helping us look for it.",
     "words": [
       "他",
       "帮",
@@ -959,7 +959,7 @@
     "id": "s:l1:083",
     "zh": "你能帮我吗？",
     "pinyin": "Nǐ néng bāng wǒ ma?",
-    "en": "Can you help me?",
+    "vi": "Can you help me?",
     "words": [
       "你",
       "能",
@@ -972,7 +972,7 @@
     "id": "s:l1:084",
     "zh": "请你帮他。",
     "pinyin": "Qǐng nǐ bāng tā.",
-    "en": "Please help him.",
+    "vi": "Please help him.",
     "words": [
       "请",
       "你",
@@ -984,7 +984,7 @@
     "id": "s:l1:085",
     "zh": "我正在看。",
     "pinyin": "Wǒ zhèngzài kàn.",
-    "en": "I'm looking right now.",
+    "vi": "I'm looking right now.",
     "words": [
       "我",
       "正在",
@@ -995,7 +995,7 @@
     "id": "s:l1:086",
     "zh": "他正在喝水。",
     "pinyin": "Tā zhèngzài hē shuǐ.",
-    "en": "He's drinking water.",
+    "vi": "He's drinking water.",
     "words": [
       "他",
       "正在",
@@ -1007,7 +1007,7 @@
     "id": "s:l1:087",
     "zh": "你正在做什么？",
     "pinyin": "Nǐ zhèngzài zuò shénme?",
-    "en": "What are you doing right now?",
+    "vi": "What are you doing right now?",
     "words": [
       "你",
       "正在",
@@ -1019,7 +1019,7 @@
     "id": "s:l1:088",
     "zh": "她正在说。",
     "pinyin": "Tā zhèngzài shuō.",
-    "en": "She's speaking right now.",
+    "vi": "She's speaking right now.",
     "words": [
       "她",
       "正在",
@@ -1030,7 +1030,7 @@
     "id": "s:l1:089",
     "zh": "孩子们很好。",
     "pinyin": "Háizimen hěn hǎo.",
-    "en": "The children are doing well.",
+    "vi": "The children are doing well.",
     "words": [
       "孩子",
       "们",
@@ -1042,7 +1042,7 @@
     "id": "s:l1:090",
     "zh": "朋友们都来了。",
     "pinyin": "Péngyoumen dōu lái le.",
-    "en": "The friends all came.",
+    "vi": "The friends all came.",
     "words": [
       "朋友",
       "们",
@@ -1055,7 +1055,7 @@
     "id": "s:l1:091",
     "zh": "我们帮孩子们。",
     "pinyin": "Wǒmen bāng háizimen.",
-    "en": "We help the children.",
+    "vi": "We help the children.",
     "words": [
       "我们",
       "帮",
@@ -1067,7 +1067,7 @@
     "id": "s:l1:092",
     "zh": "明天我去。",
     "pinyin": "Míngtiān wǒ qù.",
-    "en": "Tomorrow I'll go.",
+    "vi": "Tomorrow I'll go.",
     "words": [
       "明天",
       "我",
@@ -1078,7 +1078,7 @@
     "id": "s:l1:093",
     "zh": "今天我很好。",
     "pinyin": "Jīntiān wǒ hěn hǎo.",
-    "en": "Today I'm doing well.",
+    "vi": "Today I'm doing well.",
     "words": [
       "今天",
       "我",
@@ -1090,7 +1090,7 @@
     "id": "s:l1:094",
     "zh": "我明天回来。",
     "pinyin": "Wǒ míngtiān huílai.",
-    "en": "I'll come back tomorrow.",
+    "vi": "I'll come back tomorrow.",
     "words": [
       "我",
       "明天",
@@ -1101,7 +1101,7 @@
     "id": "s:l1:095",
     "zh": "晚上你在家吗？",
     "pinyin": "Wǎnshang nǐ zài jiā ma?",
-    "en": "Are you home in the evening?",
+    "vi": "Are you home in the evening?",
     "words": [
       "晚上",
       "你",
@@ -1114,7 +1114,7 @@
     "id": "s:l1:096",
     "zh": "这个多少钱？",
     "pinyin": "Zhège duōshao qián?",
-    "en": "How much is this?",
+    "vi": "How much is this?",
     "words": [
       "这",
       "个",
@@ -1126,7 +1126,7 @@
     "id": "s:l1:097",
     "zh": "你们有多少人？",
     "pinyin": "Nǐmen yǒu duōshao rén?",
-    "en": "How many people do you have?",
+    "vi": "How many people do you have?",
     "words": [
       "你们",
       "有",
@@ -1138,7 +1138,7 @@
     "id": "s:l1:098",
     "zh": "你要多少？",
     "pinyin": "Nǐ yào duōshao?",
-    "en": "How much do you want?",
+    "vi": "How much do you want?",
     "words": [
       "你",
       "要",
@@ -1149,7 +1149,7 @@
     "id": "s:l1:099",
     "zh": "你想要多少个？",
     "pinyin": "Nǐ xiǎng yào duōshao gè?",
-    "en": "How many would you like?",
+    "vi": "How many would you like?",
     "words": [
       "你",
       "想",
@@ -1162,7 +1162,7 @@
     "id": "s:l1:100",
     "zh": "这是第二个。",
     "pinyin": "Zhè shì dì èr gè.",
-    "en": "This is the second one.",
+    "vi": "This is the second one.",
     "words": [
       "这",
       "是",
@@ -1174,7 +1174,7 @@
     "id": "s:l1:101",
     "zh": "他是第二。",
     "pinyin": "Tā shì dì èr.",
-    "en": "He is second.",
+    "vi": "He is second.",
     "words": [
       "他",
       "是",
@@ -1185,7 +1185,7 @@
     "id": "s:l1:102",
     "zh": "我先看第二个。",
     "pinyin": "Wǒ xiān kàn dì èr gè.",
-    "en": "I'll look at the second one first.",
+    "vi": "I'll look at the second one first.",
     "words": [
       "我",
       "先",
@@ -1198,7 +1198,7 @@
     "id": "s:l1:103",
     "zh": "那个是第二。",
     "pinyin": "Nàge shì dì èr.",
-    "en": "That one is second.",
+    "vi": "That one is second.",
     "words": [
       "那",
       "个",
@@ -1210,7 +1210,7 @@
     "id": "s:l1:104",
     "zh": "这是真的。",
     "pinyin": "Zhè shì zhēnde.",
-    "en": "This is real.",
+    "vi": "This is real.",
     "words": [
       "这",
       "是",
@@ -1221,7 +1221,7 @@
     "id": "s:l1:105",
     "zh": "你真的想去吗？",
     "pinyin": "Nǐ zhēnde xiǎng qù ma?",
-    "en": "Do you really want to go?",
+    "vi": "Do you really want to go?",
     "words": [
       "你",
       "真的",
@@ -1234,7 +1234,7 @@
     "id": "s:l1:106",
     "zh": "他真的来了。",
     "pinyin": "Tā zhēnde lái le.",
-    "en": "He really came.",
+    "vi": "He really came.",
     "words": [
       "他",
       "真的",
@@ -1246,7 +1246,7 @@
     "id": "s:l1:107",
     "zh": "我真的没去。",
     "pinyin": "Wǒ zhēnde méi qù.",
-    "en": "I really didn't go.",
+    "vi": "I really didn't go.",
     "words": [
       "我",
       "真的",
@@ -1258,7 +1258,7 @@
     "id": "s:l1:108",
     "zh": "我有两个儿子。",
     "pinyin": "Wǒ yǒu liǎng gè érzi.",
-    "en": "I have two sons.",
+    "vi": "I have two sons.",
     "words": [
       "我",
       "有",
@@ -1271,7 +1271,7 @@
     "id": "s:l1:109",
     "zh": "现在是二月。",
     "pinyin": "Xiànzài shì èr yuè.",
-    "en": "It's February now.",
+    "vi": "It's February now.",
     "words": [
       "现在",
       "是",
@@ -1283,7 +1283,7 @@
     "id": "s:l1:110",
     "zh": "他有两个。",
     "pinyin": "Tā yǒu liǎng gè.",
-    "en": "He has two.",
+    "vi": "He has two.",
     "words": [
       "他",
       "有",
@@ -1295,7 +1295,7 @@
     "id": "s:l1:111",
     "zh": "这是第二个，不是两个。",
     "pinyin": "Zhè shì dì èr gè, bú shì liǎng gè.",
-    "en": "This is the second one, not two of them.",
+    "vi": "This is the second one, not two of them.",
     "words": [
       "这",
       "是",
@@ -1311,7 +1311,7 @@
     "id": "s:l1:112",
     "zh": "我要一杯水。",
     "pinyin": "Wǒ yào yì bēi shuǐ.",
-    "en": "I'd like a cup of water.",
+    "vi": "I'd like a cup of water.",
     "words": [
       "我",
       "要",
@@ -1324,7 +1324,7 @@
     "id": "s:l1:113",
     "zh": "他有一杯。",
     "pinyin": "Tā yǒu yì bēi.",
-    "en": "He has one cup.",
+    "vi": "He has one cup.",
     "words": [
       "他",
       "有",
@@ -1336,7 +1336,7 @@
     "id": "s:l1:114",
     "zh": "给我一杯。",
     "pinyin": "Gěi wǒ yì bēi.",
-    "en": "Give me a cup.",
+    "vi": "Give me a cup.",
     "words": [
       "给",
       "我",
@@ -1348,7 +1348,7 @@
     "id": "s:l1:115",
     "zh": "你要几杯？",
     "pinyin": "Nǐ yào jǐ bēi?",
-    "en": "How many cups do you want?",
+    "vi": "How many cups do you want?",
     "words": [
       "你",
       "要",
@@ -1360,7 +1360,7 @@
     "id": "s:l1:116",
     "zh": "你在哪里？",
     "pinyin": "Nǐ zài nǎlǐ?",
-    "en": "Where are you?",
+    "vi": "Where are you?",
     "words": [
       "你",
       "在",
@@ -1371,7 +1371,7 @@
     "id": "s:l1:117",
     "zh": "他在那里。",
     "pinyin": "Tā zài nàlǐ.",
-    "en": "He's over there.",
+    "vi": "He's over there.",
     "words": [
       "他",
       "在",
@@ -1382,7 +1382,7 @@
     "id": "s:l1:118",
     "zh": "老师在哪里？",
     "pinyin": "Lǎoshī zài nǎlǐ?",
-    "en": "Where is the teacher?",
+    "vi": "Where is the teacher?",
     "words": [
       "老师",
       "在",
@@ -1393,7 +1393,7 @@
     "id": "s:l1:119",
     "zh": "我们去那里吧。",
     "pinyin": "Wǒmen qù nàlǐ ba.",
-    "en": "Let's go there.",
+    "vi": "Let's go there.",
     "words": [
       "我们",
       "去",
@@ -1405,7 +1405,7 @@
     "id": "s:l1:120",
     "zh": "你叫什么名字？",
     "pinyin": "Nǐ jiào shénme míngzi?",
-    "en": "What's your name?",
+    "vi": "What's your name?",
     "words": [
       "你",
       "叫",
@@ -1417,7 +1417,7 @@
     "id": "s:l1:121",
     "zh": "他叫什么名字？",
     "pinyin": "Tā jiào shénme míngzi?",
-    "en": "What's his name?",
+    "vi": "What's his name?",
     "words": [
       "他",
       "叫",
@@ -1429,7 +1429,7 @@
     "id": "s:l1:122",
     "zh": "我不知道他的名字。",
     "pinyin": "Wǒ bù zhīdào tā de míngzi.",
-    "en": "I don't know his name.",
+    "vi": "I don't know his name.",
     "words": [
       "我",
       "不",
@@ -1443,7 +1443,7 @@
     "id": "s:l1:123",
     "zh": "她们的名字很好。",
     "pinyin": "Tāmen de míngzi hěn hǎo.",
-    "en": "Their names are lovely.",
+    "vi": "Their names are lovely.",
     "words": [
       "她们",
       "的",
@@ -1456,7 +1456,7 @@
     "id": "s:l1:124",
     "zh": "我看见他了。",
     "pinyin": "Wǒ kànjiàn tā le.",
-    "en": "I saw him.",
+    "vi": "I saw him.",
     "words": [
       "我",
       "看见",
@@ -1468,7 +1468,7 @@
     "id": "s:l1:125",
     "zh": "你听到了吗？",
     "pinyin": "Nǐ tīngdào le ma?",
-    "en": "Did you hear it?",
+    "vi": "Did you hear it?",
     "words": [
       "你",
       "听到",
@@ -1480,7 +1480,7 @@
     "id": "s:l1:126",
     "zh": "他回到家里了。",
     "pinyin": "Tā huídào jiālǐ le.",
-    "en": "He got back home.",
+    "vi": "He got back home.",
     "words": [
       "他",
       "回到",
@@ -1492,7 +1492,7 @@
     "id": "s:l1:127",
     "zh": "我找到了。",
     "pinyin": "Wǒ zhǎodào le.",
-    "en": "I found it.",
+    "vi": "I found it.",
     "words": [
       "我",
       "找到",
@@ -1503,7 +1503,7 @@
     "id": "s:l1:128",
     "zh": "你不用来。",
     "pinyin": "Nǐ búyòng lái.",
-    "en": "You don't need to come.",
+    "vi": "You don't need to come.",
     "words": [
       "你",
       "不用",
@@ -1514,7 +1514,7 @@
     "id": "s:l1:129",
     "zh": "你不用做。",
     "pinyin": "Nǐ búyòng zuò.",
-    "en": "You don't need to do it.",
+    "vi": "You don't need to do it.",
     "words": [
       "你",
       "不用",
@@ -1525,7 +1525,7 @@
     "id": "s:l1:130",
     "zh": "我们不用去。",
     "pinyin": "Wǒmen búyòng qù.",
-    "en": "We don't need to go.",
+    "vi": "We don't need to go.",
     "words": [
       "我们",
       "不用",
@@ -1536,7 +1536,7 @@
     "id": "s:l1:131",
     "zh": "不用了，谢谢。",
     "pinyin": "Búyòng le, xièxie.",
-    "en": "No need, thanks.",
+    "vi": "No need, thanks.",
     "words": [
       "不用",
       "了",
@@ -1547,7 +1547,7 @@
     "id": "s:l1:132",
     "zh": "我常去。",
     "pinyin": "Wǒ cháng qù.",
-    "en": "I often go.",
+    "vi": "I often go.",
     "words": [
       "我",
       "常",
@@ -1558,7 +1558,7 @@
     "id": "s:l1:133",
     "zh": "他常说。",
     "pinyin": "Tā cháng shuō.",
-    "en": "He often says that.",
+    "vi": "He often says that.",
     "words": [
       "他",
       "常",
@@ -1569,7 +1569,7 @@
     "id": "s:l1:134",
     "zh": "你常常来吗？",
     "pinyin": "Nǐ chángcháng lái ma?",
-    "en": "Do you often come?",
+    "vi": "Do you often come?",
     "words": [
       "你",
       "常常",
@@ -1581,7 +1581,7 @@
     "id": "s:l1:135",
     "zh": "我们常常在一起。",
     "pinyin": "Wǒmen chángcháng zài yìqǐ.",
-    "en": "We're often together.",
+    "vi": "We're often together.",
     "words": [
       "我们",
       "常常",
@@ -1593,7 +1593,7 @@
     "id": "s:l1:136",
     "zh": "我给你打电话。",
     "pinyin": "Wǒ gěi nǐ dǎ diànhuà.",
-    "en": "I'll call you.",
+    "vi": "I'll call you.",
     "words": [
       "我",
       "给",
@@ -1605,7 +1605,7 @@
     "id": "s:l1:137",
     "zh": "他给我打电话了。",
     "pinyin": "Tā gěi wǒ dǎ diànhuà le.",
-    "en": "He called me.",
+    "vi": "He called me.",
     "words": [
       "他",
       "给",
@@ -1618,7 +1618,7 @@
     "id": "s:l1:138",
     "zh": "请给我打电话。",
     "pinyin": "Qǐng gěi wǒ dǎ diànhuà.",
-    "en": "Please call me.",
+    "vi": "Please call me.",
     "words": [
       "请",
       "给",
@@ -1630,7 +1630,7 @@
     "id": "s:l1:139",
     "zh": "你给谁打电话？",
     "pinyin": "Nǐ gěi shéi dǎ diànhuà?",
-    "en": "Who are you calling?",
+    "vi": "Who are you calling?",
     "words": [
       "你",
       "给",
@@ -1642,7 +1642,7 @@
     "id": "s:l1:140",
     "zh": "我们去吃饭吧。",
     "pinyin": "Wǒmen qù chīfàn ba.",
-    "en": "Let's go eat.",
+    "vi": "Let's go eat.",
     "words": [
       "我们",
       "去",
@@ -1654,7 +1654,7 @@
     "id": "s:l1:141",
     "zh": "他明天上班。",
     "pinyin": "Tā míngtiān shàngbān.",
-    "en": "He goes to work tomorrow.",
+    "vi": "He goes to work tomorrow.",
     "words": [
       "他",
       "明天",
@@ -1665,7 +1665,7 @@
     "id": "s:l1:142",
     "zh": "我们明天见面。",
     "pinyin": "Wǒmen míngtiān jiànmiàn.",
-    "en": "Let's meet tomorrow.",
+    "vi": "Let's meet tomorrow.",
     "words": [
       "我们",
       "明天",
@@ -1676,7 +1676,7 @@
     "id": "s:l1:143",
     "zh": "你几点起床？",
     "pinyin": "Nǐ jǐ diǎn qǐchuáng?",
-    "en": "What time do you get up?",
+    "vi": "What time do you get up?",
     "words": [
       "你",
       "几",
@@ -1688,7 +1688,7 @@
     "id": "s:l1:144",
     "zh": "我喜欢唱歌。",
     "pinyin": "Wǒ xǐhuan chànggē.",
-    "en": "I like singing.",
+    "vi": "I like singing.",
     "words": [
       "我",
       "喜欢",
@@ -1699,7 +1699,7 @@
     "id": "s:l1:145",
     "zh": "对不起。",
     "pinyin": "Duìbuqǐ.",
-    "en": "I'm sorry.",
+    "vi": "I'm sorry.",
     "words": [
       "对不起"
     ]
@@ -1708,7 +1708,7 @@
     "id": "s:l1:146",
     "zh": "对不起，我没看见。",
     "pinyin": "Duìbuqǐ, wǒ méi kànjiàn.",
-    "en": "Sorry, I didn't see it.",
+    "vi": "Sorry, I didn't see it.",
     "words": [
       "对不起",
       "我",
@@ -1720,7 +1720,7 @@
     "id": "s:l1:147",
     "zh": "没什么。",
     "pinyin": "Méi shénme.",
-    "en": "It's nothing.",
+    "vi": "It's nothing.",
     "words": [
       "没",
       "什么"
@@ -1730,7 +1730,7 @@
     "id": "s:l1:148",
     "zh": "对不起，我来晚了。",
     "pinyin": "Duìbuqǐ, wǒ lái wǎn le.",
-    "en": "Sorry, I'm late.",
+    "vi": "Sorry, I'm late.",
     "words": [
       "对不起",
       "我",
@@ -1743,7 +1743,7 @@
     "id": "s:l1:149",
     "zh": "你最好休息。",
     "pinyin": "Nǐ zuìhǎo xiūxi.",
-    "en": "You'd better rest.",
+    "vi": "You'd better rest.",
     "words": [
       "你",
       "最好",
@@ -1754,7 +1754,7 @@
     "id": "s:l1:150",
     "zh": "我们最好去。",
     "pinyin": "Wǒmen zuìhǎo qù.",
-    "en": "We'd better go.",
+    "vi": "We'd better go.",
     "words": [
       "我们",
       "最好",
@@ -1765,7 +1765,7 @@
     "id": "s:l1:151",
     "zh": "你最好告诉他。",
     "pinyin": "Nǐ zuìhǎo gàosu tā.",
-    "en": "You'd better tell him.",
+    "vi": "You'd better tell him.",
     "words": [
       "你",
       "最好",
@@ -1777,7 +1777,7 @@
     "id": "s:l1:152",
     "zh": "最好现在走。",
     "pinyin": "Zuìhǎo xiànzài zǒu.",
-    "en": "It's best to leave now.",
+    "vi": "It's best to leave now.",
     "words": [
       "最好",
       "现在",
@@ -1788,7 +1788,7 @@
     "id": "s:l1:153",
     "zh": "他在我旁边。",
     "pinyin": "Tā zài wǒ pángbiān.",
-    "en": "He is next to me.",
+    "vi": "He is next to me.",
     "words": [
       "他",
       "在",
@@ -1800,7 +1800,7 @@
     "id": "s:l1:154",
     "zh": "我家旁边有学校。",
     "pinyin": "Wǒ jiā pángbiān yǒu xuéxiào.",
-    "en": "There's a school next to my house.",
+    "vi": "There's a school next to my house.",
     "words": [
       "我",
       "家",
@@ -1813,7 +1813,7 @@
     "id": "s:l1:155",
     "zh": "你在中间。",
     "pinyin": "Nǐ zài zhōngjiān.",
-    "en": "You're in the middle.",
+    "vi": "You're in the middle.",
     "words": [
       "你",
       "在",
@@ -1824,7 +1824,7 @@
     "id": "s:l1:156",
     "zh": "我们的车在中间。",
     "pinyin": "Wǒmen de chē zài zhōngjiān.",
-    "en": "Our car is in the middle.",
+    "vi": "Our car is in the middle.",
     "words": [
       "我们",
       "的",
@@ -1837,7 +1837,7 @@
     "id": "s:l1:157",
     "zh": "今天星期几？",
     "pinyin": "Jīntiān xīngqī jǐ?",
-    "en": "What day of the week is it today?",
+    "vi": "What day of the week is it today?",
     "words": [
       "今天",
       "星期",
@@ -1848,7 +1848,7 @@
     "id": "s:l1:158",
     "zh": "我星期一去。",
     "pinyin": "Wǒ xīngqī yī qù.",
-    "en": "I'm going on Monday.",
+    "vi": "I'm going on Monday.",
     "words": [
       "我",
       "星期",
@@ -1860,7 +1860,7 @@
     "id": "s:l1:159",
     "zh": "他星期五回来。",
     "pinyin": "Tā xīngqī wǔ huílai.",
-    "en": "He's coming back on Friday.",
+    "vi": "He's coming back on Friday.",
     "words": [
       "他",
       "星期",
@@ -1872,7 +1872,7 @@
     "id": "s:l1:160",
     "zh": "你们星期几见面？",
     "pinyin": "Nǐmen xīngqī jǐ jiànmiàn?",
-    "en": "What day are you meeting?",
+    "vi": "What day are you meeting?",
     "words": [
       "你们",
       "星期",
@@ -1884,7 +1884,7 @@
     "id": "s:l1:161",
     "zh": "这个一百块。",
     "pinyin": "Zhège yìbǎi kuài.",
-    "en": "This one is a hundred kuai.",
+    "vi": "This one is a hundred kuai.",
     "words": [
       "这",
       "个",
@@ -1897,7 +1897,7 @@
     "id": "s:l1:162",
     "zh": "我有两百。",
     "pinyin": "Wǒ yǒu liǎngbǎi.",
-    "en": "I have two hundred.",
+    "vi": "I have two hundred.",
     "words": [
       "我",
       "有",
@@ -1909,7 +1909,7 @@
     "id": "s:l1:163",
     "zh": "他要三百块。",
     "pinyin": "Tā yào sānbǎi kuài.",
-    "en": "He wants three hundred kuai.",
+    "vi": "He wants three hundred kuai.",
     "words": [
       "他",
       "要",
@@ -1922,7 +1922,7 @@
     "id": "s:l1:164",
     "zh": "那本书一百块。",
     "pinyin": "Nà běn shū yìbǎi kuài.",
-    "en": "That book is a hundred kuai.",
+    "vi": "That book is a hundred kuai.",
     "words": [
       "那",
       "本",
@@ -1936,7 +1936,7 @@
     "id": "s:l1:165",
     "zh": "你在哪儿？",
     "pinyin": "Nǐ zài nǎr?",
-    "en": "Where are you?",
+    "vi": "Where are you?",
     "words": [
       "你",
       "在",
@@ -1947,7 +1947,7 @@
     "id": "s:l1:166",
     "zh": "我在这儿。",
     "pinyin": "Wǒ zài zhèr.",
-    "en": "I'm here.",
+    "vi": "I'm here.",
     "words": [
       "我",
       "在",
@@ -1958,7 +1958,7 @@
     "id": "s:l1:167",
     "zh": "他不在这儿。",
     "pinyin": "Tā bú zài zhèr.",
-    "en": "He's not here.",
+    "vi": "He's not here.",
     "words": [
       "他",
       "不",
@@ -1970,7 +1970,7 @@
     "id": "s:l1:168",
     "zh": "你们去哪儿？",
     "pinyin": "Nǐmen qù nǎr?",
-    "en": "Where are you all going?",
+    "vi": "Where are you all going?",
     "words": [
       "你们",
       "去",
@@ -1981,7 +1981,7 @@
     "id": "s:l1:169",
     "zh": "你在干什么？",
     "pinyin": "Nǐ zài gànshénme?",
-    "en": "What are you doing?",
+    "vi": "What are you doing?",
     "words": [
       "你",
       "在",
@@ -1992,7 +1992,7 @@
     "id": "s:l1:170",
     "zh": "他干什么了？",
     "pinyin": "Tā gànshénme le?",
-    "en": "What did he do?",
+    "vi": "What did he do?",
     "words": [
       "他",
       "干什么",
@@ -2003,7 +2003,7 @@
     "id": "s:l1:171",
     "zh": "你想干什么？",
     "pinyin": "Nǐ xiǎng gànshénme?",
-    "en": "What do you want to do?",
+    "vi": "What do you want to do?",
     "words": [
       "你",
       "想",
@@ -2014,7 +2014,7 @@
     "id": "s:l1:172",
     "zh": "这不对。",
     "pinyin": "Zhè búduì.",
-    "en": "This is wrong.",
+    "vi": "This is wrong.",
     "words": [
       "这",
       "不对"
@@ -2024,7 +2024,7 @@
     "id": "s:l1:173",
     "zh": "你说的不对。",
     "pinyin": "Nǐ shuō de búduì.",
-    "en": "What you said is wrong.",
+    "vi": "What you said is wrong.",
     "words": [
       "你",
       "说",
@@ -2036,7 +2036,7 @@
     "id": "s:l1:174",
     "zh": "不对，不是这个。",
     "pinyin": "Búduì, bú shì zhège.",
-    "en": "No, it's not this one.",
+    "vi": "No, it's not this one.",
     "words": [
       "不对",
       "不",
@@ -2049,7 +2049,7 @@
     "id": "s:l1:175",
     "zh": "下次你来。",
     "pinyin": "Xiàcì nǐ lái.",
-    "en": "Come next time.",
+    "vi": "Come next time.",
     "words": [
       "下次",
       "你",
@@ -2060,7 +2060,7 @@
     "id": "s:l1:176",
     "zh": "商店在右边。",
     "pinyin": "Shāngdiàn zài yòubian.",
-    "en": "The store is on the right.",
+    "vi": "The store is on the right.",
     "words": [
       "商店",
       "在",
@@ -2071,7 +2071,7 @@
     "id": "s:l1:177",
     "zh": "学校在左边。",
     "pinyin": "Xuéxiào zài zuǒbian.",
-    "en": "The school is on the left.",
+    "vi": "The school is on the left.",
     "words": [
       "学校",
       "在",
@@ -2082,7 +2082,7 @@
     "id": "s:l1:178",
     "zh": "车站在外边。",
     "pinyin": "Chēzhàn zài wàibian.",
-    "en": "The station is outside.",
+    "vi": "The station is outside.",
     "words": [
       "车站",
       "在",
@@ -2093,7 +2093,7 @@
     "id": "s:l1:179",
     "zh": "你在里边。",
     "pinyin": "Nǐ zài lǐbian.",
-    "en": "You're inside.",
+    "vi": "You're inside.",
     "words": [
       "你",
       "在",
@@ -2104,7 +2104,7 @@
     "id": "s:l1:180",
     "zh": "商店里边有水果。",
     "pinyin": "Shāngdiàn lǐbian yǒu shuǐguǒ.",
-    "en": "There's fruit inside the store.",
+    "vi": "There's fruit inside the store.",
     "words": [
       "商店",
       "里边",
@@ -2116,7 +2116,7 @@
     "id": "s:l1:181",
     "zh": "没关系。",
     "pinyin": "Méi guānxi.",
-    "en": "It's OK.",
+    "vi": "It's OK.",
     "words": [
       "没关系"
     ]
@@ -2125,7 +2125,7 @@
     "id": "s:l1:182",
     "zh": "没关系，你先说。",
     "pinyin": "Méi guānxi, nǐ xiān shuō.",
-    "en": "It's fine, go ahead and say it.",
+    "vi": "It's fine, go ahead and say it.",
     "words": [
       "没关系",
       "你",
@@ -2137,7 +2137,7 @@
     "id": "s:l1:183",
     "zh": "没关系，我不忙。",
     "pinyin": "Méi guānxi, wǒ bù máng.",
-    "en": "It's OK, I'm not busy.",
+    "vi": "It's OK, I'm not busy.",
     "words": [
       "没关系",
       "我",
@@ -2149,7 +2149,7 @@
     "id": "s:l1:184",
     "zh": "请问，你叫什么名字？",
     "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
-    "en": "Excuse me, what's your name?",
+    "vi": "Excuse me, what's your name?",
     "words": [
       "请问",
       "你",
@@ -2162,7 +2162,7 @@
     "id": "s:l1:185",
     "zh": "请问，这是谁的？",
     "pinyin": "Qǐngwèn, zhè shì shéi de?",
-    "en": "Excuse me, whose is this?",
+    "vi": "Excuse me, whose is this?",
     "words": [
       "请问",
       "这",
@@ -2175,7 +2175,7 @@
     "id": "s:l1:186",
     "zh": "请问，商店在哪里？",
     "pinyin": "Qǐngwèn, shāngdiàn zài nǎlǐ?",
-    "en": "Excuse me, where's the store?",
+    "vi": "Excuse me, where's the store?",
     "words": [
       "请问",
       "商店",
@@ -2187,7 +2187,7 @@
     "id": "s:l1:187",
     "zh": "我是小学生。",
     "pinyin": "Wǒ shì xiǎoxuéshēng.",
-    "en": "I am a primary school student.",
+    "vi": "I am a primary school student.",
     "words": [
       "我",
       "是",
@@ -2198,7 +2198,7 @@
     "id": "s:l1:188",
     "zh": "他是中学生。",
     "pinyin": "Tā shì zhōngxuéshēng.",
-    "en": "He is a middle school student.",
+    "vi": "He is a middle school student.",
     "words": [
       "他",
       "是",
@@ -2209,7 +2209,7 @@
     "id": "s:l1:189",
     "zh": "她是大学生。",
     "pinyin": "Tā shì dàxuéshēng.",
-    "en": "She is a university student.",
+    "vi": "She is a university student.",
     "words": [
       "她",
       "是",
@@ -2220,7 +2220,7 @@
     "id": "s:l1:190",
     "zh": "我们都是学生。",
     "pinyin": "Wǒmen dōu shì xuésheng.",
-    "en": "We are all students.",
+    "vi": "We are all students.",
     "words": [
       "我们",
       "都",
@@ -2232,7 +2232,7 @@
     "id": "s:l1:191",
     "zh": "我要一点儿水。",
     "pinyin": "Wǒ yào yìdiǎnr shuǐ.",
-    "en": "I'd like a little water.",
+    "vi": "I'd like a little water.",
     "words": [
       "我",
       "要",
@@ -2244,7 +2244,7 @@
     "id": "s:l1:192",
     "zh": "我会一点儿。",
     "pinyin": "Wǒ huì yìdiǎnr.",
-    "en": "I know a little of it.",
+    "vi": "I know a little of it.",
     "words": [
       "我",
       "会",
@@ -2255,7 +2255,7 @@
     "id": "s:l1:193",
     "zh": "慢一点儿。",
     "pinyin": "Màn yìdiǎnr.",
-    "en": "A little slower.",
+    "vi": "A little slower.",
     "words": [
       "慢",
       "一点儿"
@@ -2265,7 +2265,7 @@
     "id": "s:l1:194",
     "zh": "这个大一点儿。",
     "pinyin": "Zhège dà yìdiǎnr.",
-    "en": "This one is a bit bigger.",
+    "vi": "This one is a bit bigger.",
     "words": [
       "这",
       "个",
@@ -2277,7 +2277,7 @@
     "id": "s:l1:195",
     "zh": "我们那儿很好。",
     "pinyin": "Wǒmen nàr hěn hǎo.",
-    "en": "Our place is really nice.",
+    "vi": "Our place is really nice.",
     "words": [
       "我们",
       "那儿",
@@ -2289,7 +2289,7 @@
     "id": "s:l1:196",
     "zh": "我们去玩儿吧。",
     "pinyin": "Wǒmen qù wánr ba.",
-    "en": "Let's go have fun.",
+    "vi": "Let's go have fun.",
     "words": [
       "我们",
       "去",
@@ -2301,7 +2301,7 @@
     "id": "s:l1:197",
     "zh": "他也在这儿。",
     "pinyin": "Tā yě zài zhèr.",
-    "en": "He's here too.",
+    "vi": "He's here too.",
     "words": [
       "他",
       "也",
@@ -2313,7 +2313,7 @@
     "id": "s:l1:198",
     "zh": "你等一会儿。",
     "pinyin": "Nǐ děng yíhuìr.",
-    "en": "Wait a moment.",
+    "vi": "Wait a moment.",
     "words": [
       "你",
       "等",
@@ -2324,7 +2324,7 @@
     "id": "s:l1:199",
     "zh": "你去哪儿？",
     "pinyin": "Nǐ qù nǎr?",
-    "en": "Where are you going?",
+    "vi": "Where are you going?",
     "words": [
       "你",
       "去",
@@ -2335,7 +2335,7 @@
     "id": "s:l1:200",
     "zh": "不客气。",
     "pinyin": "Bú kèqi.",
-    "en": "You're welcome.",
+    "vi": "You're welcome.",
     "words": [
       "不客气"
     ]
@@ -2344,7 +2344,7 @@
     "id": "s:l1:201",
     "zh": "谢谢你，不客气。",
     "pinyin": "Xièxie nǐ, bú kèqi.",
-    "en": "Thank you. You're welcome.",
+    "vi": "Thank you. You're welcome.",
     "words": [
       "谢谢",
       "你",
@@ -2355,7 +2355,7 @@
     "id": "s:l1:202",
     "zh": "不客气，朋友。",
     "pinyin": "Bú kèqi, péngyou.",
-    "en": "You're welcome, my friend.",
+    "vi": "You're welcome, my friend.",
     "words": [
       "不客气",
       "朋友"
@@ -2365,7 +2365,7 @@
     "id": "s:l1:203",
     "zh": "前天我没去。",
     "pinyin": "Qiántiān wǒ méi qù.",
-    "en": "I didn't go the day before yesterday.",
+    "vi": "I didn't go the day before yesterday.",
     "words": [
       "前天",
       "我",
@@ -2377,7 +2377,7 @@
     "id": "s:l1:204",
     "zh": "后天你来吗？",
     "pinyin": "Hòutiān nǐ lái ma?",
-    "en": "Are you coming the day after tomorrow?",
+    "vi": "Are you coming the day after tomorrow?",
     "words": [
       "后天",
       "你",
@@ -2389,7 +2389,7 @@
     "id": "s:l1:205",
     "zh": "昨天，今天，明天都很忙。",
     "pinyin": "Zuótiān, jīntiān, míngtiān dōu hěn máng.",
-    "en": "Yesterday, today, tomorrow — all busy.",
+    "vi": "Yesterday, today, tomorrow — all busy.",
     "words": [
       "昨天",
       "今天",
@@ -2403,7 +2403,7 @@
     "id": "s:l1:206",
     "zh": "前天他没来，后天他能来。",
     "pinyin": "Qiántiān tā méi lái, hòutiān tā néng lái.",
-    "en": "He didn't come the day before yesterday, but he can come the day after tomorrow.",
+    "vi": "He didn't come the day before yesterday, but he can come the day after tomorrow.",
     "words": [
       "前天",
       "他",
@@ -2419,7 +2419,7 @@
     "id": "s:l1:207",
     "zh": "今天星期天。",
     "pinyin": "Jīntiān xīngqītiān.",
-    "en": "Today is Sunday.",
+    "vi": "Today is Sunday.",
     "words": [
       "今天",
       "星期天"
@@ -2429,7 +2429,7 @@
     "id": "s:l1:208",
     "zh": "星期天你忙吗？",
     "pinyin": "Xīngqītiān nǐ máng ma?",
-    "en": "Are you busy on Sunday?",
+    "vi": "Are you busy on Sunday?",
     "words": [
       "星期天",
       "你",
@@ -2441,7 +2441,7 @@
     "id": "s:l1:209",
     "zh": "我们星期天见面吧。",
     "pinyin": "Wǒmen xīngqītiān jiànmiàn ba.",
-    "en": "Let's meet on Sunday.",
+    "vi": "Let's meet on Sunday.",
     "words": [
       "我们",
       "星期天",
@@ -2453,7 +2453,7 @@
     "id": "s:l1:210",
     "zh": "你看一下儿。",
     "pinyin": "Nǐ kàn yíxiàr.",
-    "en": "Take a quick look.",
+    "vi": "Take a quick look.",
     "words": [
       "你",
       "看",
@@ -2464,7 +2464,7 @@
     "id": "s:l1:211",
     "zh": "我说一下儿。",
     "pinyin": "Wǒ shuō yíxiàr.",
-    "en": "Let me say a bit.",
+    "vi": "Let me say a bit.",
     "words": [
       "我",
       "说",
@@ -2475,7 +2475,7 @@
     "id": "s:l1:212",
     "zh": "请等一下儿。",
     "pinyin": "Qǐng děng yíxiàr.",
-    "en": "Please wait a moment.",
+    "vi": "Please wait a moment.",
     "words": [
       "请",
       "等",
@@ -2486,7 +2486,7 @@
     "id": "s:l1:213",
     "zh": "请坐下。",
     "pinyin": "Qǐng zuòxia.",
-    "en": "Please sit down.",
+    "vi": "Please sit down.",
     "words": [
       "请",
       "坐下"
@@ -2496,7 +2496,7 @@
     "id": "s:l1:214",
     "zh": "你们都坐下吧。",
     "pinyin": "Nǐmen dōu zuòxia ba.",
-    "en": "Everyone please sit down.",
+    "vi": "Everyone please sit down.",
     "words": [
       "你们",
       "都",
@@ -2508,7 +2508,7 @@
     "id": "s:l1:215",
     "zh": "他坐下了。",
     "pinyin": "Tā zuòxia le.",
-    "en": "He sat down.",
+    "vi": "He sat down.",
     "words": [
       "他",
       "坐下",
@@ -2519,7 +2519,7 @@
     "id": "s:l1:216",
     "zh": "我等了半天。",
     "pinyin": "Wǒ děngle bàntiān.",
-    "en": "I waited a long while.",
+    "vi": "I waited a long while.",
     "words": [
       "我",
       "等",
@@ -2531,7 +2531,7 @@
     "id": "s:l1:217",
     "zh": "他学了半年。",
     "pinyin": "Tā xuéle bànnián.",
-    "en": "He studied for half a year.",
+    "vi": "He studied for half a year.",
     "words": [
       "他",
       "学",
@@ -2543,7 +2543,7 @@
     "id": "s:l1:218",
     "zh": "我们半年见一次。",
     "pinyin": "Wǒmen bànnián jiàn yí cì.",
-    "en": "We meet once every half year.",
+    "vi": "We meet once every half year.",
     "words": [
       "我们",
       "半年",
@@ -2556,7 +2556,7 @@
     "id": "s:l1:219",
     "zh": "这个不大。",
     "pinyin": "Zhège bú dà.",
-    "en": "This isn't very big.",
+    "vi": "This isn't very big.",
     "words": [
       "这",
       "个",
@@ -2568,7 +2568,7 @@
     "id": "s:l1:220",
     "zh": "我不大喜欢。",
     "pinyin": "Wǒ bú dà xǐhuan.",
-    "en": "I don't like it very much.",
+    "vi": "I don't like it very much.",
     "words": [
       "我",
       "不",
@@ -2580,7 +2580,7 @@
     "id": "s:l1:221",
     "zh": "他不大想去。",
     "pinyin": "Tā bú dà xiǎng qù.",
-    "en": "He doesn't really want to go.",
+    "vi": "He doesn't really want to go.",
     "words": [
       "他",
       "不",
@@ -2593,7 +2593,7 @@
     "id": "s:l1:222",
     "zh": "我在学习汉语。",
     "pinyin": "Wǒ zài xuéxí Hànyǔ.",
-    "en": "I'm learning Chinese.",
+    "vi": "I'm learning Chinese.",
     "words": [
       "我",
       "在",
@@ -2605,7 +2605,7 @@
     "id": "s:l1:223",
     "zh": "你会说中文吗？",
     "pinyin": "Nǐ huì shuō Zhōngwén ma?",
-    "en": "Can you speak Chinese?",
+    "vi": "Can you speak Chinese?",
     "words": [
       "你",
       "会",
@@ -2618,7 +2618,7 @@
     "id": "s:l1:224",
     "zh": "汉字很难。",
     "pinyin": "Hànzì hěn nán.",
-    "en": "Chinese characters are difficult.",
+    "vi": "Chinese characters are difficult.",
     "words": [
       "汉字",
       "很",
@@ -2629,7 +2629,7 @@
     "id": "s:l1:225",
     "zh": "他在开会。",
     "pinyin": "Tā zài kāihuì.",
-    "en": "He's in a meeting.",
+    "vi": "He's in a meeting.",
     "words": [
       "他",
       "在",
@@ -2640,7 +2640,7 @@
     "id": "s:l1:226",
     "zh": "我不会开车。",
     "pinyin": "Wǒ bú huì kāichē.",
-    "en": "I can't drive.",
+    "vi": "I can't drive.",
     "words": [
       "我",
       "不",
@@ -2652,7 +2652,7 @@
     "id": "s:l1:227",
     "zh": "别开玩笑了。",
     "pinyin": "Bié kāiwánxiào le.",
-    "en": "Stop joking.",
+    "vi": "Stop joking.",
     "words": [
       "别",
       "开玩笑",
@@ -2663,7 +2663,7 @@
     "id": "s:l1:new:001",
     "zh": "他是我爸爸。",
     "pinyin": "Tā shì wǒ bàba.",
-    "en": "He is my dad.",
+    "vi": "He is my dad.",
     "words": [
       "他",
       "是",
@@ -2675,7 +2675,7 @@
     "id": "s:l1:new:002",
     "zh": "她是我妈妈。",
     "pinyin": "Tā shì wǒ māma.",
-    "en": "She is my mom.",
+    "vi": "She is my mom.",
     "words": [
       "她",
       "是",
@@ -2687,7 +2687,7 @@
     "id": "s:l1:new:003",
     "zh": "他不是我哥哥。",
     "pinyin": "Tā bú shì wǒ gēge.",
-    "en": "He is not my older brother.",
+    "vi": "He is not my older brother.",
     "words": [
       "他",
       "不",
@@ -2700,7 +2700,7 @@
     "id": "s:l1:new:004",
     "zh": "她是姐姐。",
     "pinyin": "Tā shì jiějie.",
-    "en": "She is the older sister.",
+    "vi": "She is the older sister.",
     "words": [
       "她",
       "是",
@@ -2711,7 +2711,7 @@
     "id": "s:l1:new:005",
     "zh": "我家有孩子。",
     "pinyin": "Wǒ jiā yǒu háizi.",
-    "en": "My family has children.",
+    "vi": "My family has children.",
     "words": [
       "我",
       "家",
@@ -2723,7 +2723,7 @@
     "id": "s:l1:new:006",
     "zh": "爷爷好！",
     "pinyin": "Yéye hǎo!",
-    "en": "Hi Grandpa!",
+    "vi": "Hi Grandpa!",
     "words": [
       "爷爷",
       "好"
@@ -2733,7 +2733,7 @@
     "id": "s:l1:new:007",
     "zh": "奶奶好！",
     "pinyin": "Nǎinai hǎo!",
-    "en": "Hi Grandma!",
+    "vi": "Hi Grandma!",
     "words": [
       "奶奶",
       "好"
@@ -2743,7 +2743,7 @@
     "id": "s:l1:new:008",
     "zh": "弟弟小，妹妹小。",
     "pinyin": "Dìdi xiǎo, mèimei xiǎo.",
-    "en": "Little brother is small, little sister is small.",
+    "vi": "Little brother is small, little sister is small.",
     "words": [
       "弟弟",
       "小",
@@ -2755,7 +2755,7 @@
     "id": "s:l1:new:010",
     "zh": "一二三四五。",
     "pinyin": "Yī èr sān sì wǔ.",
-    "en": "One two three four five.",
+    "vi": "One two three four five.",
     "words": [
       "一",
       "二",
@@ -2768,7 +2768,7 @@
     "id": "s:l1:new:011",
     "zh": "六七八九十。",
     "pinyin": "Liù qī bā jiǔ shí.",
-    "en": "Six seven eight nine ten.",
+    "vi": "Six seven eight nine ten.",
     "words": [
       "六",
       "七",
@@ -2781,7 +2781,7 @@
     "id": "s:l1:new:012",
     "zh": "我家有三个孩子。",
     "pinyin": "Wǒ jiā yǒu sān ge háizi.",
-    "en": "My family has three children.",
+    "vi": "My family has three children.",
     "words": [
       "我",
       "家",
@@ -2795,7 +2795,7 @@
     "id": "s:l1:new:013",
     "zh": "我有两个姐姐。",
     "pinyin": "Wǒ yǒu liǎng ge jiějie.",
-    "en": "I have two older sisters.",
+    "vi": "I have two older sisters.",
     "words": [
       "我",
       "有",
@@ -2808,7 +2808,7 @@
     "id": "s:l1:new:014",
     "zh": "他家有五个人。",
     "pinyin": "Tā jiā yǒu wǔ ge rén.",
-    "en": "His family has five people.",
+    "vi": "His family has five people.",
     "words": [
       "他",
       "家",
@@ -2822,7 +2822,7 @@
     "id": "s:l1:new:020",
     "zh": "我要吃饭。",
     "pinyin": "Wǒ yào chī fàn.",
-    "en": "I want to eat.",
+    "vi": "I want to eat.",
     "words": [
       "我",
       "要",
@@ -2834,7 +2834,7 @@
     "id": "s:l1:new:021",
     "zh": "你要喝水。",
     "pinyin": "Nǐ yào hē shuǐ.",
-    "en": "You want to drink water.",
+    "vi": "You want to drink water.",
     "words": [
       "你",
       "要",
@@ -2846,7 +2846,7 @@
     "id": "s:l1:new:022",
     "zh": "我要喝茶。",
     "pinyin": "Wǒ yào hē chá.",
-    "en": "I want to drink tea.",
+    "vi": "I want to drink tea.",
     "words": [
       "我",
       "要",
@@ -2858,7 +2858,7 @@
     "id": "s:l1:new:023",
     "zh": "他要吃肉。",
     "pinyin": "Tā yào chī ròu.",
-    "en": "He wants to eat meat.",
+    "vi": "He wants to eat meat.",
     "words": [
       "他",
       "要",
@@ -2870,7 +2870,7 @@
     "id": "s:l1:new:024",
     "zh": "我不要吃鸡蛋。",
     "pinyin": "Wǒ bú yào chī jīdàn.",
-    "en": "I don't want to eat eggs.",
+    "vi": "I don't want to eat eggs.",
     "words": [
       "我",
       "不",
@@ -2883,7 +2883,7 @@
     "id": "s:l1:new:025",
     "zh": "我想吃米饭。",
     "pinyin": "Wǒ xiǎng chī mǐfàn.",
-    "en": "I'd like to eat rice.",
+    "vi": "I'd like to eat rice.",
     "words": [
       "我",
       "想",
@@ -2895,7 +2895,7 @@
     "id": "s:l1:new:030",
     "zh": "我在家里。",
     "pinyin": "Wǒ zài jiālǐ.",
-    "en": "I'm at home.",
+    "vi": "I'm at home.",
     "words": [
       "我",
       "在",
@@ -2906,7 +2906,7 @@
     "id": "s:l1:new:031",
     "zh": "他在房间。",
     "pinyin": "Tā zài fángjiān.",
-    "en": "He is in the room.",
+    "vi": "He is in the room.",
     "words": [
       "他",
       "在",
@@ -2917,7 +2917,7 @@
     "id": "s:l1:new:032",
     "zh": "门口有人。",
     "pinyin": "Ménkǒu yǒu rén.",
-    "en": "There's someone at the door.",
+    "vi": "There's someone at the door.",
     "words": [
       "门口",
       "有",
@@ -2928,7 +2928,7 @@
     "id": "s:l1:new:033",
     "zh": "楼上有房间。",
     "pinyin": "Lóushàng yǒu fángjiān.",
-    "en": "There are rooms upstairs.",
+    "vi": "There are rooms upstairs.",
     "words": [
       "楼上",
       "有",
@@ -2939,7 +2939,7 @@
     "id": "s:l1:new:034",
     "zh": "房子大。",
     "pinyin": "Fángzi dà.",
-    "en": "The house is big.",
+    "vi": "The house is big.",
     "words": [
       "房子",
       "大"
@@ -2949,7 +2949,7 @@
     "id": "s:l1:new:035",
     "zh": "房间干净。",
     "pinyin": "Fángjiān gānjìng.",
-    "en": "The room is clean.",
+    "vi": "The room is clean.",
     "words": [
       "房间",
       "干净"
@@ -2959,7 +2959,7 @@
     "id": "s:l1:new:040",
     "zh": "他生病。",
     "pinyin": "Tā shēng bìng.",
-    "en": "He is sick.",
+    "vi": "He is sick.",
     "words": [
       "他",
       "生病"
@@ -2969,7 +2969,7 @@
     "id": "s:l1:new:041",
     "zh": "我身体好。",
     "pinyin": "Wǒ shēntǐ hǎo.",
-    "en": "My body is healthy.",
+    "vi": "My body is healthy.",
     "words": [
       "我",
       "身体",
@@ -2980,7 +2980,7 @@
     "id": "s:l1:new:042",
     "zh": "他去医院看病。",
     "pinyin": "Tā qù yīyuàn kàn bìng.",
-    "en": "He goes to the hospital to see a doctor.",
+    "vi": "He goes to the hospital to see a doctor.",
     "words": [
       "他",
       "去",
@@ -2992,7 +2992,7 @@
     "id": "s:l1:new:043",
     "zh": "医生看病人。",
     "pinyin": "Yīshēng kàn bìngrén.",
-    "en": "The doctor sees the patient.",
+    "vi": "The doctor sees the patient.",
     "words": [
       "医生",
       "看",
@@ -3003,7 +3003,7 @@
     "id": "s:l1:new:044",
     "zh": "水冷。",
     "pinyin": "Shuǐ lěng.",
-    "en": "The water is cold.",
+    "vi": "The water is cold.",
     "words": [
       "水",
       "冷"
@@ -3013,7 +3013,7 @@
     "id": "s:l1:new:045",
     "zh": "茶热。",
     "pinyin": "Chá rè.",
-    "en": "The tea is hot.",
+    "vi": "The tea is hot.",
     "words": [
       "茶",
       "热"
@@ -3023,7 +3023,7 @@
     "id": "s:l1:new:050",
     "zh": "早上好！",
     "pinyin": "Zǎoshang hǎo!",
-    "en": "Good morning!",
+    "vi": "Good morning!",
     "words": [
       "早上",
       "好"
@@ -3033,7 +3033,7 @@
     "id": "s:l1:new:051",
     "zh": "晚上好！",
     "pinyin": "Wǎnshang hǎo!",
-    "en": "Good evening!",
+    "vi": "Good evening!",
     "words": [
       "晚上",
       "好"
@@ -3043,7 +3043,7 @@
     "id": "s:l1:new:052",
     "zh": "我早上来。",
     "pinyin": "Wǒ zǎoshang lái.",
-    "en": "I come in the morning.",
+    "vi": "I come in the morning.",
     "words": [
       "我",
       "早上",
@@ -3054,7 +3054,7 @@
     "id": "s:l1:new:053",
     "zh": "他下午去。",
     "pinyin": "Tā xiàwǔ qù.",
-    "en": "He goes in the afternoon.",
+    "vi": "He goes in the afternoon.",
     "words": [
       "他",
       "下午",
@@ -3065,7 +3065,7 @@
     "id": "s:l1:new:054",
     "zh": "中午吃饭。",
     "pinyin": "Zhōngwǔ chī fàn.",
-    "en": "Eat at noon.",
+    "vi": "Eat at noon.",
     "words": [
       "中午",
       "吃",
@@ -3076,7 +3076,7 @@
     "id": "s:l1:new:055",
     "zh": "白天来，晚上去。",
     "pinyin": "Báitiān lái, wǎnshang qù.",
-    "en": "Come during the day, go in the evening.",
+    "vi": "Come during the day, go in the evening.",
     "words": [
       "白天",
       "来",
@@ -3088,7 +3088,7 @@
     "id": "s:l1:new:060",
     "zh": "前后左右。",
     "pinyin": "Qián hòu zuǒ yòu.",
-    "en": "Front, back, left, right.",
+    "vi": "Front, back, left, right.",
     "words": [
       "前",
       "后",
@@ -3100,7 +3100,7 @@
     "id": "s:l1:new:061",
     "zh": "东西南北。",
     "pinyin": "Dōng xī nán běi.",
-    "en": "East, west, south, north.",
+    "vi": "East, west, south, north.",
     "words": [
       "东",
       "西",
@@ -3112,7 +3112,7 @@
     "id": "s:l1:new:062",
     "zh": "上下左右。",
     "pinyin": "Shàng xià zuǒ yòu.",
-    "en": "Up, down, left, right.",
+    "vi": "Up, down, left, right.",
     "words": [
       "上",
       "下",
@@ -3124,7 +3124,7 @@
     "id": "s:l1:new:063",
     "zh": "他在外。",
     "pinyin": "Tā zài wài.",
-    "en": "He is outside.",
+    "vi": "He is outside.",
     "words": [
       "他",
       "在",
@@ -3135,7 +3135,7 @@
     "id": "s:l1:new:064",
     "zh": "我在中。",
     "pinyin": "Wǒ zài zhōng.",
-    "en": "I am in the middle.",
+    "vi": "I am in the middle.",
     "words": [
       "我",
       "在",
@@ -3146,7 +3146,7 @@
     "id": "s:l1:new:070",
     "zh": "她穿新衣服。",
     "pinyin": "Tā chuān xīn yīfu.",
-    "en": "She wears new clothes.",
+    "vi": "She wears new clothes.",
     "words": [
       "她",
       "穿",
@@ -3158,7 +3158,7 @@
     "id": "s:l1:new:071",
     "zh": "他穿白衣服。",
     "pinyin": "Tā chuān bái yīfu.",
-    "en": "He wears white clothes.",
+    "vi": "He wears white clothes.",
     "words": [
       "他",
       "穿",
@@ -3170,7 +3170,7 @@
     "id": "s:l1:new:072",
     "zh": "花好看。",
     "pinyin": "Huā hǎokàn.",
-    "en": "The flower is pretty.",
+    "vi": "The flower is pretty.",
     "words": [
       "花",
       "好看"
@@ -3180,7 +3180,7 @@
     "id": "s:l1:new:073",
     "zh": "她好看。",
     "pinyin": "Tā hǎokàn.",
-    "en": "She is good-looking.",
+    "vi": "She is good-looking.",
     "words": [
       "她",
       "好看"
@@ -3190,7 +3190,7 @@
     "id": "s:l1:new:074",
     "zh": "他高。",
     "pinyin": "Tā gāo.",
-    "en": "He is tall.",
+    "vi": "He is tall.",
     "words": [
       "他",
       "高"
@@ -3200,7 +3200,7 @@
     "id": "s:l1:new:075",
     "zh": "好听。",
     "pinyin": "Hǎotīng.",
-    "en": "Sounds nice.",
+    "vi": "Sounds nice.",
     "words": [
       "好听"
     ]
@@ -3209,7 +3209,7 @@
     "id": "s:l1:new:080",
     "zh": "天气好。",
     "pinyin": "Tiānqì hǎo.",
-    "en": "The weather is good.",
+    "vi": "The weather is good.",
     "words": [
       "天气",
       "好"
@@ -3219,7 +3219,7 @@
     "id": "s:l1:new:081",
     "zh": "天气冷。",
     "pinyin": "Tiānqì lěng.",
-    "en": "The weather is cold.",
+    "vi": "The weather is cold.",
     "words": [
       "天气",
       "冷"
@@ -3229,7 +3229,7 @@
     "id": "s:l1:new:082",
     "zh": "下雨。",
     "pinyin": "Xià yǔ.",
-    "en": "It's raining.",
+    "vi": "It's raining.",
     "words": [
       "下雨"
     ]
@@ -3238,7 +3238,7 @@
     "id": "s:l1:new:083",
     "zh": "山大。",
     "pinyin": "Shān dà.",
-    "en": "The mountain is big.",
+    "vi": "The mountain is big.",
     "words": [
       "山",
       "大"
@@ -3248,7 +3248,7 @@
     "id": "s:l1:new:084",
     "zh": "风大。",
     "pinyin": "Fēng dà.",
-    "en": "The wind is strong.",
+    "vi": "The wind is strong.",
     "words": [
       "风",
       "大"
@@ -3258,7 +3258,7 @@
     "id": "s:l1:new:085",
     "zh": "这个地方有名。",
     "pinyin": "Zhège dìfang yǒumíng.",
-    "en": "This place is famous.",
+    "vi": "This place is famous.",
     "words": [
       "这",
       "个",
@@ -3270,7 +3270,7 @@
     "id": "s:l1:new3:001",
     "zh": "你吃早饭吗？",
     "pinyin": "Nǐ chī zǎofàn ma?",
-    "en": "Do you eat breakfast?",
+    "vi": "Do you eat breakfast?",
     "words": [
       "你",
       "吃",
@@ -3282,7 +3282,7 @@
     "id": "s:l1:new3:002",
     "zh": "我吃午饭。",
     "pinyin": "Wǒ chī wǔfàn.",
-    "en": "I'm eating lunch.",
+    "vi": "I'm eating lunch.",
     "words": [
       "我",
       "吃",
@@ -3293,7 +3293,7 @@
     "id": "s:l1:new3:003",
     "zh": "晚饭吃什么？",
     "pinyin": "Wǎnfàn chī shénme?",
-    "en": "What's for dinner?",
+    "vi": "What's for dinner?",
     "words": [
       "晚饭",
       "吃",
@@ -3304,7 +3304,7 @@
     "id": "s:l1:new3:004",
     "zh": "我喝牛奶。",
     "pinyin": "Wǒ hē niúnǎi.",
-    "en": "I drink milk.",
+    "vi": "I drink milk.",
     "words": [
       "我",
       "喝",
@@ -3315,7 +3315,7 @@
     "id": "s:l1:new3:005",
     "zh": "面条儿好吃。",
     "pinyin": "Miàntiáor hǎochī.",
-    "en": "The noodles are tasty.",
+    "vi": "The noodles are tasty.",
     "words": [
       "面条儿",
       "好吃"
@@ -3325,7 +3325,7 @@
     "id": "s:l1:new3:006",
     "zh": "他在饭店吃饭。",
     "pinyin": "Tā zài fàndiàn chīfàn.",
-    "en": "He eats at a restaurant.",
+    "vi": "He eats at a restaurant.",
     "words": [
       "他",
       "在",
@@ -3337,7 +3337,7 @@
     "id": "s:l1:new3:007",
     "zh": "两个鸡蛋。",
     "pinyin": "Liǎng gè jīdàn.",
-    "en": "Two eggs.",
+    "vi": "Two eggs.",
     "words": [
       "两",
       "个",
@@ -3348,7 +3348,7 @@
     "id": "s:l1:new3:008",
     "zh": "这个水果好吃。",
     "pinyin": "Zhège shuǐguǒ hǎochī.",
-    "en": "This fruit is tasty.",
+    "vi": "This fruit is tasty.",
     "words": [
       "这",
       "个",
@@ -3360,7 +3360,7 @@
     "id": "s:l1:new3:009",
     "zh": "在左边。",
     "pinyin": "Zài zuǒbian.",
-    "en": "It's on the left.",
+    "vi": "It's on the left.",
     "words": [
       "在",
       "左边"
@@ -3370,7 +3370,7 @@
     "id": "s:l1:new3:010",
     "zh": "门在右边。",
     "pinyin": "Mén zài yòubian.",
-    "en": "The door is on the right.",
+    "vi": "The door is on the right.",
     "words": [
       "门",
       "在",
@@ -3381,7 +3381,7 @@
     "id": "s:l1:new3:011",
     "zh": "他在前边。",
     "pinyin": "Tā zài qiánbian.",
-    "en": "He is in front.",
+    "vi": "He is in front.",
     "words": [
       "他",
       "在",
@@ -3392,7 +3392,7 @@
     "id": "s:l1:new3:012",
     "zh": "楼在后边。",
     "pinyin": "Lóu zài hòubian.",
-    "en": "The building is in the back.",
+    "vi": "The building is in the back.",
     "words": [
       "楼",
       "在",
@@ -3403,7 +3403,7 @@
     "id": "s:l1:new3:013",
     "zh": "东边有人。",
     "pinyin": "Dōngbian yǒu rén.",
-    "en": "There's someone to the east.",
+    "vi": "There's someone to the east.",
     "words": [
       "东边",
       "有",
@@ -3414,7 +3414,7 @@
     "id": "s:l1:new3:014",
     "zh": "在地上。",
     "pinyin": "Zài dìshang.",
-    "en": "It's on the ground.",
+    "vi": "It's on the ground.",
     "words": [
       "在",
       "地上"
@@ -3424,7 +3424,7 @@
     "id": "s:l1:new3:015",
     "zh": "他来到中国。",
     "pinyin": "Tā láidào Zhōngguó.",
-    "en": "He came to China.",
+    "vi": "He came to China.",
     "words": [
       "他",
       "来到",
@@ -3435,7 +3435,7 @@
     "id": "s:l1:new3:016",
     "zh": "我回到北京。",
     "pinyin": "Wǒ huídào Běijīng.",
-    "en": "I returned to Beijing.",
+    "vi": "I returned to Beijing.",
     "words": [
       "我",
       "回到",
@@ -3446,7 +3446,7 @@
     "id": "s:l1:new3:017",
     "zh": "我有机票。",
     "pinyin": "Wǒ yǒu jīpiào.",
-    "en": "I have a plane ticket.",
+    "vi": "I have a plane ticket.",
     "words": [
       "我",
       "有",
@@ -3457,7 +3457,7 @@
     "id": "s:l1:new3:018",
     "zh": "机场在哪儿？",
     "pinyin": "Jīchǎng zài nǎr?",
-    "en": "Where is the airport?",
+    "vi": "Where is the airport?",
     "words": [
       "机场",
       "在",
@@ -3468,7 +3468,7 @@
     "id": "s:l1:new3:019",
     "zh": "中国是一个大国家。",
     "pinyin": "Zhōngguó shì yī gè dà guójiā.",
-    "en": "China is a big country.",
+    "vi": "China is a big country.",
     "words": [
       "中国",
       "是",
@@ -3482,7 +3482,7 @@
     "id": "s:l1:new3:020",
     "zh": "他是外国人。",
     "pinyin": "Tā shì wàiguó rén.",
-    "en": "He is a foreigner.",
+    "vi": "He is a foreigner.",
     "words": [
       "他",
       "是",
@@ -3494,7 +3494,7 @@
     "id": "s:l1:new3:021",
     "zh": "门票多少？",
     "pinyin": "Ménpiào duōshao?",
-    "en": "How much is the ticket?",
+    "vi": "How much is the ticket?",
     "words": [
       "门票",
       "多少"
@@ -3504,7 +3504,7 @@
     "id": "s:l1:new3:022",
     "zh": "我在学习。",
     "pinyin": "Wǒ zài xuéxí.",
-    "en": "I'm studying.",
+    "vi": "I'm studying.",
     "words": [
       "我",
       "在",
@@ -3515,7 +3515,7 @@
     "id": "s:l1:new3:023",
     "zh": "他在读书。",
     "pinyin": "Tā zài dúshū.",
-    "en": "He is reading.",
+    "vi": "He is reading.",
     "words": [
       "他",
       "在",
@@ -3526,7 +3526,7 @@
     "id": "s:l1:new3:024",
     "zh": "老师教我们写字。",
     "pinyin": "Lǎoshī jiāo wǒmen xiě zì.",
-    "en": "The teacher teaches us to write characters.",
+    "vi": "The teacher teaches us to write characters.",
     "words": [
       "老师",
       "教",
@@ -3539,7 +3539,7 @@
     "id": "s:l1:new3:025",
     "zh": "这本书很好。",
     "pinyin": "Zhè běn shū hěn hǎo.",
-    "en": "This book is very good.",
+    "vi": "This book is very good.",
     "words": [
       "这",
       "本",
@@ -3552,7 +3552,7 @@
     "id": "s:l1:new3:026",
     "zh": "课本在书包里。",
     "pinyin": "Kèběn zài shūbāo lǐ.",
-    "en": "The textbook is in the schoolbag.",
+    "vi": "The textbook is in the schoolbag.",
     "words": [
       "课本",
       "在",
@@ -3564,7 +3564,7 @@
     "id": "s:l1:new3:027",
     "zh": "我去书店。",
     "pinyin": "Wǒ qù shūdiàn.",
-    "en": "I'm going to the bookstore.",
+    "vi": "I'm going to the bookstore.",
     "words": [
       "我",
       "去",
@@ -3575,7 +3575,7 @@
     "id": "s:l1:new3:028",
     "zh": "一个本子。",
     "pinyin": "Yī gè běnzi.",
-    "en": "One notebook.",
+    "vi": "One notebook.",
     "words": [
       "一",
       "个",
@@ -3586,7 +3586,7 @@
     "id": "s:l1:new3:029",
     "zh": "他是男生。",
     "pinyin": "Tā shì nánshēng.",
-    "en": "He is a boy (student).",
+    "vi": "He is a boy (student).",
     "words": [
       "他",
       "是",
@@ -3597,7 +3597,7 @@
     "id": "s:l1:new3:030",
     "zh": "她是女生。",
     "pinyin": "Tā shì nǚshēng.",
-    "en": "She is a girl (student).",
+    "vi": "She is a girl (student).",
     "words": [
       "她",
       "是",
@@ -3608,7 +3608,7 @@
     "id": "s:l1:new3:031",
     "zh": "小朋友们好！",
     "pinyin": "Xiǎopéngyoumen hǎo!",
-    "en": "Hello, children!",
+    "vi": "Hello, children!",
     "words": [
       "小朋友",
       "们",
@@ -3619,7 +3619,7 @@
     "id": "s:l1:new3:032",
     "zh": "那个男孩儿是我弟。",
     "pinyin": "Nàge nánháir shì wǒ dì.",
-    "en": "That boy is my younger brother.",
+    "vi": "That boy is my younger brother.",
     "words": [
       "那",
       "个",
@@ -3633,7 +3633,7 @@
     "id": "s:l1:new3:033",
     "zh": "她是我女朋友。",
     "pinyin": "Tā shì wǒ nǚpéngyou.",
-    "en": "She is my girlfriend.",
+    "vi": "She is my girlfriend.",
     "words": [
       "她",
       "是",
@@ -3645,7 +3645,7 @@
     "id": "s:l1:new3:034",
     "zh": "姐，你好！",
     "pinyin": "Jiě, nǐ hǎo!",
-    "en": "Hey sis, hello!",
+    "vi": "Hey sis, hello!",
     "words": [
       "姐",
       "你",
@@ -3656,7 +3656,7 @@
     "id": "s:l1:new3:035",
     "zh": "小孩儿在哪儿？",
     "pinyin": "Xiǎoháir zài nǎr?",
-    "en": "Where is the child?",
+    "vi": "Where is the child?",
     "words": [
       "小孩儿",
       "在",

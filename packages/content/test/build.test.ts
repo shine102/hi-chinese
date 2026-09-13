@@ -104,7 +104,7 @@ function bundle(): ContentBundle {
         id: 's1',
         zh: '我是。',
         pinyin: 'Wǒ shì.',
-        en: 'I am.',
+        vi: 'I am.',
         wordIds: ['w:我', 'w:是'],
         unitId: 'l1-u01',
       },
@@ -185,7 +185,7 @@ describe('writeContent', () => {
     expect(second.version).toBe(first.version);
     expect((await readdir(join(dir, 'units'))).sort()).toEqual(['l1-u01.json', 'l2-u01.json']);
     const b = bundle();
-    b.sentences[0]!.en = 'I am!';
+    b.sentences[0]!.vi = 'I am!';
     const third = await writeContent(b, dir);
     expect(third.version).not.toBe(first.version);
   });

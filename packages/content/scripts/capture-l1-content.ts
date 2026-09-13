@@ -51,7 +51,7 @@ for (const name of names) {
         id: s.id,
         zh: s.zh,
         pinyin: s.pinyin,
-        en: s.en,
+        vi: s.vi,
         words: WORD_FIXES[s.id] ?? s.wordIds.map(strip),
       });
     }

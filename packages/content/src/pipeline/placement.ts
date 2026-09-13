@@ -79,7 +79,7 @@ export function placeSentences(
       });
       continue;
     }
-    sentences.push({ id: s.id, zh: s.zh, pinyin: s.pinyin, en: s.en, wordIds, unitId: latest.id });
+    sentences.push({ id: s.id, zh: s.zh, pinyin: s.pinyin, vi: s.vi, wordIds, unitId: latest.id });
   }
   return { sentences, errors };
 }

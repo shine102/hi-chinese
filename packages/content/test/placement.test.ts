@@ -53,21 +53,21 @@ const s1: AuthoredSentence = {
   id: 's1',
   zh: '我是你。',
   pinyin: 'Wǒ shì nǐ.',
-  en: 'I am you.',
+  vi: 'I am you.',
   words: ['我', '是', '你'],
 };
 const s2: AuthoredSentence = {
   id: 's2',
   zh: '我不是学生。',
   pinyin: 'Wǒ bú shì xuéshēng.',
-  en: 'I am not a student.',
+  vi: 'I am not a student.',
   words: ['我', '不', '是', '学生'],
 };
 const s3: AuthoredSentence = {
   id: 's3',
   zh: '你是老师。',
   pinyin: 'Nǐ shì lǎoshī.',
-  en: 'You are a teacher.',
+  vi: 'You are a teacher.',
   words: ['你', '是', '老师'],
 };
 
@@ -84,7 +84,7 @@ describe('placeSentences', () => {
       id: 's2',
       zh: '我不是学生。',
       pinyin: 'Wǒ bú shì xuéshēng.',
-      en: 'I am not a student.',
+      vi: 'I am not a student.',
       wordIds: ['w:我', 'w:不', 'w:是', 'w:学生'],
       unitId: 'l1-u02',
     });
@@ -145,7 +145,7 @@ describe('placeGrammar', () => {
     const soloUnits = [unit('l1-u01', 1, 1, ['w:我', 'w:是'])];
     const soloWords = [word('我', 'l1-u01', 1), word('是', 'l1-u01', 1)];
     const { sentences } = placeSentences(
-      [{ id: 's1', zh: '我是。', pinyin: 'Wǒ shì.', en: 'I am.', words: ['我', '是'] }],
+      [{ id: 's1', zh: '我是。', pinyin: 'Wǒ shì.', vi: 'I am.', words: ['我', '是'] }],
       soloWords,
       soloUnits,
     );

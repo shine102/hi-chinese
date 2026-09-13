@@ -19,11 +19,11 @@ describe('loadAuthored', () => {
     await writeFile(join(dir, 'pinyin-overrides.json'), JSON.stringify({ 了: 'le5' }));
     await writeFile(
       join(dir, 'sentences', 'b.json'),
-      JSON.stringify([{ id: 's2', zh: '你。', pinyin: 'nǐ', en: 'you', words: ['你'] }]),
+      JSON.stringify([{ id: 's2', zh: '你。', pinyin: 'nǐ', vi: 'you', words: ['你'] }]),
     );
     await writeFile(
       join(dir, 'sentences', 'a.json'),
-      JSON.stringify([{ id: 's1', zh: '我。', pinyin: 'wǒ', en: 'I', words: ['我'] }]),
+      JSON.stringify([{ id: 's1', zh: '我。', pinyin: 'wǒ', vi: 'I', words: ['我'] }]),
     );
     await writeFile(
       join(dir, 'grammar', 'a.json'),

@@ -95,6 +95,7 @@ export function validateContent(b: ContentBundle): ValidationError[] {
 
   // sentences
   for (const s of b.sentences) {
+    if (s.vi.trim() === '') err('sentence-vi', s.id, `${s.id} has no Vietnamese translation`);
     const u = unitById.get(s.unitId);
     if (!u) {
       err('sentence-order', s.id, `${s.id} has unknown unit ${s.unitId}`);
