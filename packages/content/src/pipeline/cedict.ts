@@ -11,12 +11,35 @@ const LINE_RE = /^(\S+) (\S+) \[([^\]]*)\] \/(.+)\/$/;
 // of the slash-delimited senses (e.g. English CEDICT uses "CL:...", CVDICT's
 // Vietnamese translation of that convention uses "LT:..." or the spelled-out
 // "Lượng từ: ..." for "loại từ"/"lượng từ"). CVDICT also embeds Kangxi radical
-// index metadata ("Bộ Khang Hy số N") as its own slash-delimited sense. Both
-// are bibliographic/redundant metadata (classifiers are covered separately by
-// the app's own `Word.classifiers` field) and must not leak into `meanings`
-// as if they were real semantic senses.
-const CLASSIFIER_ANNOTATION_RE = /^(LT|CL):|^lượng từ\s*:/i;
-const KANGXI_RADICAL_ANNOTATION_RE = /^Bộ Khang Hy số/i;
+// index metadata ("Bộ Khang Hy số/thứ N") as its own slash-delimited sense, and
+// sometimes inlines the classifier annotation as a parenthetical mid-sentence
+// instead of as its own whole sense. All of these are bibliographic/redundant
+// metadata (classifiers are covered separately by the app's own
+// `Word.classifiers` field) and must not leak into `meanings`.
+//
+// Whole-sense filters: only strip a sense that IS ENTIRELY dictionary metadata.
+// LT:/CL: is CVDICT's own unconditional abbreviation for classifier-list metadata.
+const CLASSIFIER_ABBREV_RE = /^(LT|CL):/i;
+// Spelled-out "lượng từ:" is ambiguous: some words genuinely mean "(as a) classifier: X"
+// with plain Vietnamese senses (keep those) vs metadata listing which classifier(s)
+// accompany this noun, always cited with a bracketed pinyin reading (strip those).
+const CLASSIFIER_SPELLED_RE = /^lượng từ\s*:\s*[\s\S]*\[[a-z]+[1-5]?\]/i;
+const KANGXI_RADICAL_RE = /^bộ\s*(thủ\s*)?khang hy\s*(số|thứ)\s*\d+\s*$/i;
+
+function isMetadataSense(s: string): boolean {
+  const t = s.trim();
+  return CLASSIFIER_ABBREV_RE.test(t) || CLASSIFIER_SPELLED_RE.test(t) || KANGXI_RADICAL_RE.test(t);
+}
+
+// Inline form: the same classifier annotation embedded as a parenthetical mid-sentence,
+// e.g. "núi; đồi (lượng từ: 座[zuo4])" -> "núi; đồi". Only strip a parenthetical that
+// itself contains a bracketed citation (the same metadata signal as above); a parenthetical
+// with no citation is ordinary descriptive text and must be left alone.
+const INLINE_CLASSIFIER_RE = /\s*\((?:lượng từ|LT|CL)\s*:\s*[^()]*\[[a-z]+[1-5]?\][^()]*\)/gi;
+
+function stripInlineMetadata(s: string): string {
+  return s.replace(INLINE_CLASSIFIER_RE, '').trim();
+}
 
 export function parseCedictLine(line: string): CedictEntry | null {
   const trimmed = line.trimEnd();
@@ -27,8 +50,8 @@ export function parseCedictLine(line: string): CedictEntry | null {
   const meanings = sensesRaw!
     .split('/')
     .filter((s) => s.length > 0)
-    .filter((s) => !CLASSIFIER_ANNOTATION_RE.test(s.trimStart()))
-    .filter((s) => !KANGXI_RADICAL_ANNOTATION_RE.test(s.trimStart()));
+    .filter((s) => !isMetadataSense(s))
+    .map((s) => stripInlineMetadata(s));
   return { traditional: traditional!, simplified: simplified!, pinyin: pinyin!, meanings };
 }
 
