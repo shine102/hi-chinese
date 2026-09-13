@@ -44,10 +44,10 @@ export function SetupScreen() {
     <form onSubmit={(e) => void submit(e)} className="mx-auto mt-8 flex max-w-sm flex-col gap-4">
       <h1 className="text-2xl font-semibold">Welcome</h1>
       <p className="text-stone-600">
-        Enter your sync passphrase to load your progress on this device.
+        Enter your passphrase to load your progress on this device.
       </p>
       <label className="flex flex-col gap-1 text-sm font-medium">
-        Passphrase
+        Your passphrase
         <input
           type="password"
           autoComplete="off"

@@ -1,2 +1,0 @@
-# Copy to .dev.vars (git-ignored) for `pnpm -F @hi-chinese/worker dev`.
-SYNC_PASSPHRASE=change-me
