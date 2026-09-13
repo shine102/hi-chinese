@@ -3,7 +3,7 @@
     "id": "s:l1:001",
     "zh": "这是我的。",
     "pinyin": "Zhè shì wǒ de.",
-    "vi": "This is mine.",
+    "vi": "Cái này là của tôi.",
     "words": [
       "这",
       "是",
@@ -15,7 +15,7 @@
     "id": "s:l1:002",
     "zh": "我有这个。",
     "pinyin": "Wǒ yǒu zhège.",
-    "vi": "I have this one.",
+    "vi": "Tôi có cái này.",
     "words": [
       "我",
       "有",
@@ -27,7 +27,7 @@
     "id": "s:l1:003",
     "zh": "他不在。",
     "pinyin": "Tā bú zài.",
-    "vi": "He is not here.",
+    "vi": "Anh ấy không có ở đây.",
     "words": [
       "他",
       "不",
@@ -38,7 +38,7 @@
     "id": "s:l1:004",
     "zh": "我不是你。",
     "pinyin": "Wǒ bú shì nǐ.",
-    "vi": "I am not you.",
+    "vi": "Tôi không phải là bạn.",
     "words": [
       "我",
       "不",
@@ -50,7 +50,7 @@
     "id": "s:l1:005",
     "zh": "他不是我。",
     "pinyin": "Tā bú shì wǒ.",
-    "vi": "He is not me.",
+    "vi": "Anh ấy không phải là tôi.",
     "words": [
       "他",
       "不",
@@ -62,7 +62,7 @@
     "id": "s:l1:006",
     "zh": "你在这。",
     "pinyin": "Nǐ zài zhè.",
-    "vi": "You are here.",
+    "vi": "Bạn ở đây.",
     "words": [
       "你",
       "在",
@@ -73,7 +73,7 @@
     "id": "s:l1:007",
     "zh": "我是他。",
     "pinyin": "Wǒ shì tā.",
-    "vi": "I am him.",
+    "vi": "Tôi là anh ấy.",
     "words": [
       "我",
       "是",
@@ -84,7 +84,7 @@
     "id": "s:l1:008",
     "zh": "这个是你的。",
     "pinyin": "Zhège shì nǐ de.",
-    "vi": "This one is yours.",
+    "vi": "Cái này là của bạn.",
     "words": [
       "这",
       "个",
@@ -97,7 +97,7 @@
     "id": "s:l1:009",
     "zh": "她很好。",
     "pinyin": "Tā hěn hǎo.",
-    "vi": "She is very good.",
+    "vi": "Cô ấy rất tốt.",
     "words": [
       "她",
       "很",
@@ -108,7 +108,7 @@
     "id": "s:l1:010",
     "zh": "我们都很好。",
     "pinyin": "Wǒmen dōu hěn hǎo.",
-    "vi": "We are all fine.",
+    "vi": "Chúng tôi đều khỏe.",
     "words": [
       "我们",
       "都",
@@ -120,7 +120,7 @@
     "id": "s:l1:011",
     "zh": "你也很好。",
     "pinyin": "Nǐ yě hěn hǎo.",
-    "vi": "You are great too.",
+    "vi": "Bạn cũng rất tốt.",
     "words": [
       "你",
       "也",
@@ -132,7 +132,7 @@
     "id": "s:l1:012",
     "zh": "这个很好。",
     "pinyin": "Zhège hěn hǎo.",
-    "vi": "This one is very good.",
+    "vi": "Cái này rất tốt.",
     "words": [
       "这",
       "个",
@@ -144,7 +144,7 @@
     "id": "s:l1:013",
     "zh": "我能去。",
     "pinyin": "Wǒ néng qù.",
-    "vi": "I can go.",
+    "vi": "Tôi có thể đi.",
     "words": [
       "我",
       "能",
@@ -155,7 +155,7 @@
     "id": "s:l1:014",
     "zh": "他不能来。",
     "pinyin": "Tā bù néng lái.",
-    "vi": "He can't come.",
+    "vi": "Anh ấy không thể đến.",
     "words": [
       "他",
       "不",
@@ -167,7 +167,7 @@
     "id": "s:l1:015",
     "zh": "你能来。",
     "pinyin": "Nǐ néng lái.",
-    "vi": "You can come.",
+    "vi": "Bạn có thể đến.",
     "words": [
       "你",
       "能",
@@ -178,7 +178,7 @@
     "id": "s:l1:016",
     "zh": "我们都能去。",
     "pinyin": "Wǒmen dōu néng qù.",
-    "vi": "We can all go.",
+    "vi": "Chúng tôi đều có thể đi.",
     "words": [
       "我们",
       "都",
@@ -190,7 +190,7 @@
     "id": "s:l1:017",
     "zh": "我给你。",
     "pinyin": "Wǒ gěi nǐ.",
-    "vi": "I'll give it to you.",
+    "vi": "Tôi cho bạn.",
     "words": [
       "我",
       "给",
@@ -201,7 +201,7 @@
     "id": "s:l1:018",
     "zh": "他给我们。",
     "pinyin": "Tā gěi wǒmen.",
-    "vi": "He gives it to us.",
+    "vi": "Anh ấy cho chúng tôi.",
     "words": [
       "他",
       "给",
@@ -212,7 +212,7 @@
     "id": "s:l1:019",
     "zh": "你给他。",
     "pinyin": "Nǐ gěi tā.",
-    "vi": "Give it to him.",
+    "vi": "Bạn đưa cho anh ấy.",
     "words": [
       "你",
       "给",
@@ -223,7 +223,7 @@
     "id": "s:l1:020",
     "zh": "我给你一个。",
     "pinyin": "Wǒ gěi nǐ yí gè.",
-    "vi": "I'll give you one.",
+    "vi": "Tôi cho bạn một cái.",
     "words": [
       "我",
       "给",
@@ -236,7 +236,7 @@
     "id": "s:l1:021",
     "zh": "我没去。",
     "pinyin": "Wǒ méi qù.",
-    "vi": "I didn't go.",
+    "vi": "Tôi đã không đi.",
     "words": [
       "我",
       "没",
@@ -247,7 +247,7 @@
     "id": "s:l1:022",
     "zh": "他没看。",
     "pinyin": "Tā méi kàn.",
-    "vi": "He didn't look.",
+    "vi": "Anh ấy đã không nhìn.",
     "words": [
       "他",
       "没",
@@ -258,7 +258,7 @@
     "id": "s:l1:023",
     "zh": "我们没做。",
     "pinyin": "Wǒmen méi zuò.",
-    "vi": "We didn't do it.",
+    "vi": "Chúng tôi đã không làm.",
     "words": [
       "我们",
       "没",
@@ -269,7 +269,7 @@
     "id": "s:l1:024",
     "zh": "你没来。",
     "pinyin": "Nǐ méi lái.",
-    "vi": "You didn't come.",
+    "vi": "Bạn đã không đến.",
     "words": [
       "你",
       "没",
@@ -280,7 +280,7 @@
     "id": "s:l1:025",
     "zh": "你想做什么？",
     "pinyin": "Nǐ xiǎng zuò shénme?",
-    "vi": "What do you want to do?",
+    "vi": "Bạn muốn làm gì?",
     "words": [
       "你",
       "想",
@@ -292,7 +292,7 @@
     "id": "s:l1:026",
     "zh": "他说什么？",
     "pinyin": "Tā shuō shénme?",
-    "vi": "What did he say?",
+    "vi": "Anh ấy nói gì?",
     "words": [
       "他",
       "说",
@@ -303,7 +303,7 @@
     "id": "s:l1:027",
     "zh": "这是什么？",
     "pinyin": "Zhè shì shénme?",
-    "vi": "What is this?",
+    "vi": "Đây là gì?",
     "words": [
       "这",
       "是",
@@ -314,7 +314,7 @@
     "id": "s:l1:028",
     "zh": "你看什么？",
     "pinyin": "Nǐ kàn shénme?",
-    "vi": "What are you looking at?",
+    "vi": "Bạn nhìn gì?",
     "words": [
       "你",
       "看",
@@ -325,7 +325,7 @@
     "id": "s:l1:029",
     "zh": "我们去吧。",
     "pinyin": "Wǒmen qù ba.",
-    "vi": "Let's go.",
+    "vi": "Chúng ta đi thôi.",
     "words": [
       "我们",
       "去",
@@ -336,7 +336,7 @@
     "id": "s:l1:030",
     "zh": "你说吧。",
     "pinyin": "Nǐ shuō ba.",
-    "vi": "Go ahead, say it.",
+    "vi": "Bạn nói đi.",
     "words": [
       "你",
       "说",
@@ -347,7 +347,7 @@
     "id": "s:l1:031",
     "zh": "我们看吧。",
     "pinyin": "Wǒmen kàn ba.",
-    "vi": "Let's take a look.",
+    "vi": "Chúng ta xem đi.",
     "words": [
       "我们",
       "看",
@@ -358,7 +358,7 @@
     "id": "s:l1:032",
     "zh": "你来吧。",
     "pinyin": "Nǐ lái ba.",
-    "vi": "Come on then.",
+    "vi": "Bạn đến đi.",
     "words": [
       "你",
       "来",
@@ -369,7 +369,7 @@
     "id": "s:l1:033",
     "zh": "你好吗？",
     "pinyin": "Nǐ hǎo ma?",
-    "vi": "How are you?",
+    "vi": "Bạn khỏe không?",
     "words": [
       "你",
       "好",
@@ -380,7 +380,7 @@
     "id": "s:l1:034",
     "zh": "他在吗？",
     "pinyin": "Tā zài ma?",
-    "vi": "Is he there?",
+    "vi": "Anh ấy có ở đó không?",
     "words": [
       "他",
       "在",
@@ -391,7 +391,7 @@
     "id": "s:l1:035",
     "zh": "你想去吗？",
     "pinyin": "Nǐ xiǎng qù ma?",
-    "vi": "Do you want to go?",
+    "vi": "Bạn có muốn đi không?",
     "words": [
       "你",
       "想",
@@ -403,7 +403,7 @@
     "id": "s:l1:036",
     "zh": "你是他吗？",
     "pinyin": "Nǐ shì tā ma?",
-    "vi": "Are you him?",
+    "vi": "Bạn là anh ấy phải không?",
     "words": [
       "你",
       "是",
@@ -415,7 +415,7 @@
     "id": "s:l1:037",
     "zh": "太好了！",
     "pinyin": "Tài hǎo le!",
-    "vi": "That's wonderful!",
+    "vi": "Tuyệt quá!",
     "words": [
       "太",
       "好",
@@ -426,7 +426,7 @@
     "id": "s:l1:038",
     "zh": "这个太大了。",
     "pinyin": "Zhège tài dà le.",
-    "vi": "This one is too big.",
+    "vi": "Cái này to quá.",
     "words": [
       "这",
       "个",
@@ -439,7 +439,7 @@
     "id": "s:l1:039",
     "zh": "你太好了。",
     "pinyin": "Nǐ tài hǎo le.",
-    "vi": "You're too kind.",
+    "vi": "Bạn tốt quá.",
     "words": [
       "你",
       "太",
@@ -451,7 +451,7 @@
     "id": "s:l1:040",
     "zh": "我们太多了。",
     "pinyin": "Wǒmen tài duō le.",
-    "vi": "There are too many of us.",
+    "vi": "Chúng ta đông quá.",
     "words": [
       "我们",
       "太",
@@ -463,7 +463,7 @@
     "id": "s:l1:041",
     "zh": "这个最好。",
     "pinyin": "Zhège zuì hǎo.",
-    "vi": "This one is the best.",
+    "vi": "Cái này tốt nhất.",
     "words": [
       "这",
       "个",
@@ -475,7 +475,7 @@
     "id": "s:l1:042",
     "zh": "他最大。",
     "pinyin": "Tā zuì dà.",
-    "vi": "He is the oldest.",
+    "vi": "Anh ấy lớn tuổi nhất.",
     "words": [
       "他",
       "最",
@@ -486,7 +486,7 @@
     "id": "s:l1:043",
     "zh": "那个最小。",
     "pinyin": "Nàge zuì xiǎo.",
-    "vi": "That one is the smallest.",
+    "vi": "Cái đó nhỏ nhất.",
     "words": [
       "那",
       "个",
@@ -498,7 +498,7 @@
     "id": "s:l1:044",
     "zh": "我最想去。",
     "pinyin": "Wǒ zuì xiǎng qù.",
-    "vi": "I want to go the most.",
+    "vi": "Tôi muốn đi nhất.",
     "words": [
       "我",
       "最",
@@ -510,7 +510,7 @@
     "id": "s:l1:045",
     "zh": "我很好，你呢？",
     "pinyin": "Wǒ hěn hǎo, nǐ ne?",
-    "vi": "I'm fine, and you?",
+    "vi": "Tôi khỏe, còn bạn thì sao?",
     "words": [
       "我",
       "很",
@@ -523,7 +523,7 @@
     "id": "s:l1:046",
     "zh": "他在，你呢？",
     "pinyin": "Tā zài, nǐ ne?",
-    "vi": "He's here, what about you?",
+    "vi": "Anh ấy có ở đây, còn bạn thì sao?",
     "words": [
       "他",
       "在",
@@ -535,7 +535,7 @@
     "id": "s:l1:047",
     "zh": "我们都想去，他呢？",
     "pinyin": "Wǒmen dōu xiǎng qù, tā ne?",
-    "vi": "We all want to go, what about him?",
+    "vi": "Chúng tôi đều muốn đi, còn anh ấy thì sao?",
     "words": [
       "我们",
       "都",
@@ -549,7 +549,7 @@
     "id": "s:l1:048",
     "zh": "这个是我的，那个呢？",
     "pinyin": "Zhège shì wǒ de, nàge ne?",
-    "vi": "This one is mine, what about that one?",
+    "vi": "Cái này là của tôi, còn cái kia thì sao?",
     "words": [
       "这",
       "个",
@@ -565,7 +565,7 @@
     "id": "s:l1:049",
     "zh": "你怎么知道？",
     "pinyin": "Nǐ zěnme zhīdào?",
-    "vi": "How do you know?",
+    "vi": "Làm sao bạn biết được?",
     "words": [
       "你",
       "怎么",
@@ -576,7 +576,7 @@
     "id": "s:l1:050",
     "zh": "这个怎么用？",
     "pinyin": "Zhège zěnme yòng?",
-    "vi": "How do you use this?",
+    "vi": "Cái này dùng thế nào?",
     "words": [
       "这",
       "个",
@@ -588,7 +588,7 @@
     "id": "s:l1:051",
     "zh": "他怎么走？",
     "pinyin": "Tā zěnme zǒu?",
-    "vi": "How does he go?",
+    "vi": "Anh ấy đi như thế nào?",
     "words": [
       "他",
       "怎么",
@@ -599,7 +599,7 @@
     "id": "s:l1:052",
     "zh": "你怎么了？",
     "pinyin": "Nǐ zěnme le?",
-    "vi": "What's wrong with you?",
+    "vi": "Bạn sao vậy?",
     "words": [
       "你",
       "怎么",
@@ -610,7 +610,7 @@
     "id": "s:l1:053",
     "zh": "我跟你去。",
     "pinyin": "Wǒ gēn nǐ qù.",
-    "vi": "I'll go with you.",
+    "vi": "Tôi đi cùng bạn.",
     "words": [
       "我",
       "跟",
@@ -622,7 +622,7 @@
     "id": "s:l1:054",
     "zh": "他跟谁去？",
     "pinyin": "Tā gēn shéi qù?",
-    "vi": "Who is he going with?",
+    "vi": "Anh ấy đi cùng ai?",
     "words": [
       "他",
       "跟",
@@ -634,7 +634,7 @@
     "id": "s:l1:055",
     "zh": "你跟他说。",
     "pinyin": "Nǐ gēn tā shuō.",
-    "vi": "Talk to him.",
+    "vi": "Bạn nói với anh ấy đi.",
     "words": [
       "你",
       "跟",
@@ -646,7 +646,7 @@
     "id": "s:l1:056",
     "zh": "我喜欢跟你说。",
     "pinyin": "Wǒ xǐhuan gēn nǐ shuō.",
-    "vi": "I like talking with you.",
+    "vi": "Tôi thích nói chuyện với bạn.",
     "words": [
       "我",
       "喜欢",
@@ -659,7 +659,7 @@
     "id": "s:l1:057",
     "zh": "他比我快。",
     "pinyin": "Tā bǐ wǒ kuài.",
-    "vi": "He is faster than me.",
+    "vi": "Anh ấy nhanh hơn tôi.",
     "words": [
       "他",
       "比",
@@ -671,7 +671,7 @@
     "id": "s:l1:058",
     "zh": "这个比那个好。",
     "pinyin": "Zhège bǐ nàge hǎo.",
-    "vi": "This one is better than that one.",
+    "vi": "Cái này tốt hơn cái kia.",
     "words": [
       "这",
       "个",
@@ -685,7 +685,7 @@
     "id": "s:l1:059",
     "zh": "我比他大。",
     "pinyin": "Wǒ bǐ tā dà.",
-    "vi": "I am older than him.",
+    "vi": "Tôi lớn tuổi hơn anh ấy.",
     "words": [
       "我",
       "比",
@@ -697,7 +697,7 @@
     "id": "s:l1:060",
     "zh": "那个比这个小。",
     "pinyin": "Nàge bǐ zhège xiǎo.",
-    "vi": "That one is smaller than this one.",
+    "vi": "Cái đó nhỏ hơn cái này.",
     "words": [
       "那",
       "个",
@@ -711,7 +711,7 @@
     "id": "s:l1:061",
     "zh": "他叫什么？",
     "pinyin": "Tā jiào shénme?",
-    "vi": "What's he called?",
+    "vi": "Anh ấy tên gì?",
     "words": [
       "他",
       "叫",
@@ -722,7 +722,7 @@
     "id": "s:l1:062",
     "zh": "我叫他。",
     "pinyin": "Wǒ jiào tā.",
-    "vi": "I called him.",
+    "vi": "Tôi gọi anh ấy.",
     "words": [
       "我",
       "叫",
@@ -733,7 +733,7 @@
     "id": "s:l1:063",
     "zh": "你叫谁？",
     "pinyin": "Nǐ jiào shéi?",
-    "vi": "Who are you calling?",
+    "vi": "Bạn gọi ai?",
     "words": [
       "你",
       "叫",
@@ -744,7 +744,7 @@
     "id": "s:l1:064",
     "zh": "这个叫什么？",
     "pinyin": "Zhège jiào shénme?",
-    "vi": "What is this called?",
+    "vi": "Cái này gọi là gì?",
     "words": [
       "这",
       "个",
@@ -756,7 +756,7 @@
     "id": "s:l1:065",
     "zh": "别说了。",
     "pinyin": "Bié shuō le.",
-    "vi": "Stop talking.",
+    "vi": "Đừng nói nữa.",
     "words": [
       "别",
       "说",
@@ -767,7 +767,7 @@
     "id": "s:l1:066",
     "zh": "别去。",
     "pinyin": "Bié qù.",
-    "vi": "Don't go.",
+    "vi": "Đừng đi.",
     "words": [
       "别",
       "去"
@@ -777,7 +777,7 @@
     "id": "s:l1:067",
     "zh": "别买这个。",
     "pinyin": "Bié mǎi zhège.",
-    "vi": "Don't buy this one.",
+    "vi": "Đừng mua cái này.",
     "words": [
       "别",
       "买",
@@ -789,7 +789,7 @@
     "id": "s:l1:068",
     "zh": "你别想了。",
     "pinyin": "Nǐ bié xiǎng le.",
-    "vi": "Stop thinking about it.",
+    "vi": "Bạn đừng nghĩ nữa.",
     "words": [
       "你",
       "别",
@@ -801,7 +801,7 @@
     "id": "s:l1:069",
     "zh": "请说。",
     "pinyin": "Qǐng shuō.",
-    "vi": "Please speak.",
+    "vi": "Mời bạn nói.",
     "words": [
       "请",
       "说"
@@ -811,7 +811,7 @@
     "id": "s:l1:070",
     "zh": "请你来。",
     "pinyin": "Qǐng nǐ lái.",
-    "vi": "Please come.",
+    "vi": "Mời bạn đến.",
     "words": [
       "请",
       "你",
@@ -822,7 +822,7 @@
     "id": "s:l1:071",
     "zh": "请给我。",
     "pinyin": "Qǐng gěi wǒ.",
-    "vi": "Please give it to me.",
+    "vi": "Làm ơn cho tôi.",
     "words": [
       "请",
       "给",
@@ -833,7 +833,7 @@
     "id": "s:l1:072",
     "zh": "请看这个。",
     "pinyin": "Qǐng kàn zhège.",
-    "vi": "Please look at this.",
+    "vi": "Mời bạn xem cái này.",
     "words": [
       "请",
       "看",
@@ -845,7 +845,7 @@
     "id": "s:l1:073",
     "zh": "我三岁。",
     "pinyin": "Wǒ sān suì.",
-    "vi": "I am three years old.",
+    "vi": "Tôi ba tuổi.",
     "words": [
       "我",
       "三",
@@ -856,7 +856,7 @@
     "id": "s:l1:074",
     "zh": "他两岁。",
     "pinyin": "Tā liǎng suì.",
-    "vi": "He is two years old.",
+    "vi": "Anh ấy hai tuổi.",
     "words": [
       "他",
       "两",
@@ -867,7 +867,7 @@
     "id": "s:l1:075",
     "zh": "你几岁？",
     "pinyin": "Nǐ jǐ suì?",
-    "vi": "How old are you?",
+    "vi": "Bạn mấy tuổi?",
     "words": [
       "你",
       "几",
@@ -878,7 +878,7 @@
     "id": "s:l1:076",
     "zh": "她三岁了。",
     "pinyin": "Tā sān suì le.",
-    "vi": "She just turned three.",
+    "vi": "Cô bé ba tuổi rồi.",
     "words": [
       "她",
       "三",
@@ -890,7 +890,7 @@
     "id": "s:l1:077",
     "zh": "我先看。",
     "pinyin": "Wǒ xiān kàn.",
-    "vi": "I'll look first.",
+    "vi": "Tôi xem trước.",
     "words": [
       "我",
       "先",
@@ -901,7 +901,7 @@
     "id": "s:l1:078",
     "zh": "你先说。",
     "pinyin": "Nǐ xiān shuō.",
-    "vi": "You go first.",
+    "vi": "Bạn nói trước đi.",
     "words": [
       "你",
       "先",
@@ -912,7 +912,7 @@
     "id": "s:l1:079",
     "zh": "他先走了。",
     "pinyin": "Tā xiān zǒu le.",
-    "vi": "He left first.",
+    "vi": "Anh ấy đã đi trước rồi.",
     "words": [
       "他",
       "先",
@@ -924,7 +924,7 @@
     "id": "s:l1:080",
     "zh": "我们先去这里。",
     "pinyin": "Wǒmen xiān qù zhèlǐ.",
-    "vi": "Let's go here first.",
+    "vi": "Chúng ta đến đây trước.",
     "words": [
       "我们",
       "先",
@@ -936,7 +936,7 @@
     "id": "s:l1:081",
     "zh": "我帮你。",
     "pinyin": "Wǒ bāng nǐ.",
-    "vi": "I'll help you.",
+    "vi": "Tôi giúp bạn.",
     "words": [
       "我",
       "帮",
@@ -947,7 +947,7 @@
     "id": "s:l1:082",
     "zh": "他帮我们找。",
     "pinyin": "Tā bāng wǒmen zhǎo.",
-    "vi": "He's helping us look for it.",
+    "vi": "Anh ấy giúp chúng tôi tìm.",
     "words": [
       "他",
       "帮",
@@ -959,7 +959,7 @@
     "id": "s:l1:083",
     "zh": "你能帮我吗？",
     "pinyin": "Nǐ néng bāng wǒ ma?",
-    "vi": "Can you help me?",
+    "vi": "Bạn có thể giúp tôi không?",
     "words": [
       "你",
       "能",
@@ -972,7 +972,7 @@
     "id": "s:l1:084",
     "zh": "请你帮他。",
     "pinyin": "Qǐng nǐ bāng tā.",
-    "vi": "Please help him.",
+    "vi": "Làm ơn giúp anh ấy.",
     "words": [
       "请",
       "你",
@@ -984,7 +984,7 @@
     "id": "s:l1:085",
     "zh": "我正在看。",
     "pinyin": "Wǒ zhèngzài kàn.",
-    "vi": "I'm looking right now.",
+    "vi": "Tôi đang xem.",
     "words": [
       "我",
       "正在",
@@ -995,7 +995,7 @@
     "id": "s:l1:086",
     "zh": "他正在喝水。",
     "pinyin": "Tā zhèngzài hē shuǐ.",
-    "vi": "He's drinking water.",
+    "vi": "Anh ấy đang uống nước.",
     "words": [
       "他",
       "正在",
@@ -1007,7 +1007,7 @@
     "id": "s:l1:087",
     "zh": "你正在做什么？",
     "pinyin": "Nǐ zhèngzài zuò shénme?",
-    "vi": "What are you doing right now?",
+    "vi": "Bạn đang làm gì vậy?",
     "words": [
       "你",
       "正在",
@@ -1019,7 +1019,7 @@
     "id": "s:l1:088",
     "zh": "她正在说。",
     "pinyin": "Tā zhèngzài shuō.",
-    "vi": "She's speaking right now.",
+    "vi": "Cô ấy đang nói.",
     "words": [
       "她",
       "正在",
@@ -1030,7 +1030,7 @@
     "id": "s:l1:089",
     "zh": "孩子们很好。",
     "pinyin": "Háizimen hěn hǎo.",
-    "vi": "The children are doing well.",
+    "vi": "Bọn trẻ đều khỏe.",
     "words": [
       "孩子",
       "们",
@@ -1042,7 +1042,7 @@
     "id": "s:l1:090",
     "zh": "朋友们都来了。",
     "pinyin": "Péngyoumen dōu lái le.",
-    "vi": "The friends all came.",
+    "vi": "Các bạn đều đã đến.",
     "words": [
       "朋友",
       "们",
@@ -1055,7 +1055,7 @@
     "id": "s:l1:091",
     "zh": "我们帮孩子们。",
     "pinyin": "Wǒmen bāng háizimen.",
-    "vi": "We help the children.",
+    "vi": "Chúng tôi giúp bọn trẻ.",
     "words": [
       "我们",
       "帮",
@@ -1067,7 +1067,7 @@
     "id": "s:l1:092",
     "zh": "明天我去。",
     "pinyin": "Míngtiān wǒ qù.",
-    "vi": "Tomorrow I'll go.",
+    "vi": "Ngày mai tôi đi.",
     "words": [
       "明天",
       "我",
@@ -1078,7 +1078,7 @@
     "id": "s:l1:093",
     "zh": "今天我很好。",
     "pinyin": "Jīntiān wǒ hěn hǎo.",
-    "vi": "Today I'm doing well.",
+    "vi": "Hôm nay tôi khỏe.",
     "words": [
       "今天",
       "我",
@@ -1090,7 +1090,7 @@
     "id": "s:l1:094",
     "zh": "我明天回来。",
     "pinyin": "Wǒ míngtiān huílai.",
-    "vi": "I'll come back tomorrow.",
+    "vi": "Ngày mai tôi sẽ quay lại.",
     "words": [
       "我",
       "明天",
@@ -1101,7 +1101,7 @@
     "id": "s:l1:095",
     "zh": "晚上你在家吗？",
     "pinyin": "Wǎnshang nǐ zài jiā ma?",
-    "vi": "Are you home in the evening?",
+    "vi": "Buổi tối bạn có ở nhà không?",
     "words": [
       "晚上",
       "你",
@@ -1114,7 +1114,7 @@
     "id": "s:l1:096",
     "zh": "这个多少钱？",
     "pinyin": "Zhège duōshao qián?",
-    "vi": "How much is this?",
+    "vi": "Cái này bao nhiêu tiền?",
     "words": [
       "这",
       "个",
@@ -1126,7 +1126,7 @@
     "id": "s:l1:097",
     "zh": "你们有多少人？",
     "pinyin": "Nǐmen yǒu duōshao rén?",
-    "vi": "How many people do you have?",
+    "vi": "Các bạn có bao nhiêu người?",
     "words": [
       "你们",
       "有",
@@ -1138,7 +1138,7 @@
     "id": "s:l1:098",
     "zh": "你要多少？",
     "pinyin": "Nǐ yào duōshao?",
-    "vi": "How much do you want?",
+    "vi": "Bạn muốn bao nhiêu?",
     "words": [
       "你",
       "要",
@@ -1149,7 +1149,7 @@
     "id": "s:l1:099",
     "zh": "你想要多少个？",
     "pinyin": "Nǐ xiǎng yào duōshao gè?",
-    "vi": "How many would you like?",
+    "vi": "Bạn muốn mấy cái?",
     "words": [
       "你",
       "想",
@@ -1162,7 +1162,7 @@
     "id": "s:l1:100",
     "zh": "这是第二个。",
     "pinyin": "Zhè shì dì èr gè.",
-    "vi": "This is the second one.",
+    "vi": "Đây là cái thứ hai.",
     "words": [
       "这",
       "是",
@@ -1174,7 +1174,7 @@
     "id": "s:l1:101",
     "zh": "他是第二。",
     "pinyin": "Tā shì dì èr.",
-    "vi": "He is second.",
+    "vi": "Anh ấy đứng thứ hai.",
     "words": [
       "他",
       "是",
@@ -1185,7 +1185,7 @@
     "id": "s:l1:102",
     "zh": "我先看第二个。",
     "pinyin": "Wǒ xiān kàn dì èr gè.",
-    "vi": "I'll look at the second one first.",
+    "vi": "Tôi xem cái thứ hai trước.",
     "words": [
       "我",
       "先",
@@ -1198,7 +1198,7 @@
     "id": "s:l1:103",
     "zh": "那个是第二。",
     "pinyin": "Nàge shì dì èr.",
-    "vi": "That one is second.",
+    "vi": "Cái đó là thứ hai.",
     "words": [
       "那",
       "个",
@@ -1210,7 +1210,7 @@
     "id": "s:l1:104",
     "zh": "这是真的。",
     "pinyin": "Zhè shì zhēnde.",
-    "vi": "This is real.",
+    "vi": "Đây là thật.",
     "words": [
       "这",
       "是",
@@ -1221,7 +1221,7 @@
     "id": "s:l1:105",
     "zh": "你真的想去吗？",
     "pinyin": "Nǐ zhēnde xiǎng qù ma?",
-    "vi": "Do you really want to go?",
+    "vi": "Bạn thật sự muốn đi à?",
     "words": [
       "你",
       "真的",
@@ -1234,7 +1234,7 @@
     "id": "s:l1:106",
     "zh": "他真的来了。",
     "pinyin": "Tā zhēnde lái le.",
-    "vi": "He really came.",
+    "vi": "Anh ấy thật sự đã đến.",
     "words": [
       "他",
       "真的",
@@ -1246,7 +1246,7 @@
     "id": "s:l1:107",
     "zh": "我真的没去。",
     "pinyin": "Wǒ zhēnde méi qù.",
-    "vi": "I really didn't go.",
+    "vi": "Tôi thật sự đã không đi.",
     "words": [
       "我",
       "真的",
@@ -1258,7 +1258,7 @@
     "id": "s:l1:108",
     "zh": "我有两个儿子。",
     "pinyin": "Wǒ yǒu liǎng gè érzi.",
-    "vi": "I have two sons.",
+    "vi": "Tôi có hai người con trai.",
     "words": [
       "我",
       "有",
@@ -1271,7 +1271,7 @@
     "id": "s:l1:109",
     "zh": "现在是二月。",
     "pinyin": "Xiànzài shì èr yuè.",
-    "vi": "It's February now.",
+    "vi": "Bây giờ là tháng Hai.",
     "words": [
       "现在",
       "是",
@@ -1283,7 +1283,7 @@
     "id": "s:l1:110",
     "zh": "他有两个。",
     "pinyin": "Tā yǒu liǎng gè.",
-    "vi": "He has two.",
+    "vi": "Anh ấy có hai cái.",
     "words": [
       "他",
       "有",
@@ -1295,7 +1295,7 @@
     "id": "s:l1:111",
     "zh": "这是第二个，不是两个。",
     "pinyin": "Zhè shì dì èr gè, bú shì liǎng gè.",
-    "vi": "This is the second one, not two of them.",
+    "vi": "Đây là cái thứ hai, không phải hai cái.",
     "words": [
       "这",
       "是",
@@ -1311,7 +1311,7 @@
     "id": "s:l1:112",
     "zh": "我要一杯水。",
     "pinyin": "Wǒ yào yì bēi shuǐ.",
-    "vi": "I'd like a cup of water.",
+    "vi": "Tôi muốn một cốc nước.",
     "words": [
       "我",
       "要",
@@ -1324,7 +1324,7 @@
     "id": "s:l1:113",
     "zh": "他有一杯。",
     "pinyin": "Tā yǒu yì bēi.",
-    "vi": "He has one cup.",
+    "vi": "Anh ấy có một cốc.",
     "words": [
       "他",
       "有",
@@ -1336,7 +1336,7 @@
     "id": "s:l1:114",
     "zh": "给我一杯。",
     "pinyin": "Gěi wǒ yì bēi.",
-    "vi": "Give me a cup.",
+    "vi": "Cho tôi một cốc.",
     "words": [
       "给",
       "我",
@@ -1348,7 +1348,7 @@
     "id": "s:l1:115",
     "zh": "你要几杯？",
     "pinyin": "Nǐ yào jǐ bēi?",
-    "vi": "How many cups do you want?",
+    "vi": "Bạn muốn mấy cốc?",
     "words": [
       "你",
       "要",
@@ -1360,7 +1360,7 @@
     "id": "s:l1:116",
     "zh": "你在哪里？",
     "pinyin": "Nǐ zài nǎlǐ?",
-    "vi": "Where are you?",
+    "vi": "Bạn đang ở đâu?",
     "words": [
       "你",
       "在",
@@ -1371,7 +1371,7 @@
     "id": "s:l1:117",
     "zh": "他在那里。",
     "pinyin": "Tā zài nàlǐ.",
-    "vi": "He's over there.",
+    "vi": "Anh ấy ở đó.",
     "words": [
       "他",
       "在",
@@ -1382,7 +1382,7 @@
     "id": "s:l1:118",
     "zh": "老师在哪里？",
     "pinyin": "Lǎoshī zài nǎlǐ?",
-    "vi": "Where is the teacher?",
+    "vi": "Giáo viên ở đâu?",
     "words": [
       "老师",
       "在",
@@ -1393,7 +1393,7 @@
     "id": "s:l1:119",
     "zh": "我们去那里吧。",
     "pinyin": "Wǒmen qù nàlǐ ba.",
-    "vi": "Let's go there.",
+    "vi": "Chúng ta đến đó đi.",
     "words": [
       "我们",
       "去",
@@ -1405,7 +1405,7 @@
     "id": "s:l1:120",
     "zh": "你叫什么名字？",
     "pinyin": "Nǐ jiào shénme míngzi?",
-    "vi": "What's your name?",
+    "vi": "Bạn tên là gì?",
     "words": [
       "你",
       "叫",
@@ -1417,7 +1417,7 @@
     "id": "s:l1:121",
     "zh": "他叫什么名字？",
     "pinyin": "Tā jiào shénme míngzi?",
-    "vi": "What's his name?",
+    "vi": "Anh ấy tên là gì?",
     "words": [
       "他",
       "叫",
@@ -1429,7 +1429,7 @@
     "id": "s:l1:122",
     "zh": "我不知道他的名字。",
     "pinyin": "Wǒ bù zhīdào tā de míngzi.",
-    "vi": "I don't know his name.",
+    "vi": "Tôi không biết tên anh ấy.",
     "words": [
       "我",
       "不",
@@ -1443,7 +1443,7 @@
     "id": "s:l1:123",
     "zh": "她们的名字很好。",
     "pinyin": "Tāmen de míngzi hěn hǎo.",
-    "vi": "Their names are lovely.",
+    "vi": "Tên của họ rất đẹp.",
     "words": [
       "她们",
       "的",
@@ -1456,7 +1456,7 @@
     "id": "s:l1:124",
     "zh": "我看见他了。",
     "pinyin": "Wǒ kànjiàn tā le.",
-    "vi": "I saw him.",
+    "vi": "Tôi đã nhìn thấy anh ấy.",
     "words": [
       "我",
       "看见",
@@ -1468,7 +1468,7 @@
     "id": "s:l1:125",
     "zh": "你听到了吗？",
     "pinyin": "Nǐ tīngdào le ma?",
-    "vi": "Did you hear it?",
+    "vi": "Bạn đã nghe thấy chưa?",
     "words": [
       "你",
       "听到",
@@ -1480,7 +1480,7 @@
     "id": "s:l1:126",
     "zh": "他回到家里了。",
     "pinyin": "Tā huídào jiālǐ le.",
-    "vi": "He got back home.",
+    "vi": "Anh ấy đã về đến nhà.",
     "words": [
       "他",
       "回到",
@@ -1492,7 +1492,7 @@
     "id": "s:l1:127",
     "zh": "我找到了。",
     "pinyin": "Wǒ zhǎodào le.",
-    "vi": "I found it.",
+    "vi": "Tôi đã tìm thấy rồi.",
     "words": [
       "我",
       "找到",
@@ -1503,7 +1503,7 @@
     "id": "s:l1:128",
     "zh": "你不用来。",
     "pinyin": "Nǐ búyòng lái.",
-    "vi": "You don't need to come.",
+    "vi": "Bạn không cần đến.",
     "words": [
       "你",
       "不用",
@@ -1514,7 +1514,7 @@
     "id": "s:l1:129",
     "zh": "你不用做。",
     "pinyin": "Nǐ búyòng zuò.",
-    "vi": "You don't need to do it.",
+    "vi": "Bạn không cần làm.",
     "words": [
       "你",
       "不用",
@@ -1525,7 +1525,7 @@
     "id": "s:l1:130",
     "zh": "我们不用去。",
     "pinyin": "Wǒmen búyòng qù.",
-    "vi": "We don't need to go.",
+    "vi": "Chúng tôi không cần đi.",
     "words": [
       "我们",
       "不用",
@@ -1536,7 +1536,7 @@
     "id": "s:l1:131",
     "zh": "不用了，谢谢。",
     "pinyin": "Búyòng le, xièxie.",
-    "vi": "No need, thanks.",
+    "vi": "Không cần đâu, cảm ơn.",
     "words": [
       "不用",
       "了",
@@ -1547,7 +1547,7 @@
     "id": "s:l1:132",
     "zh": "我常去。",
     "pinyin": "Wǒ cháng qù.",
-    "vi": "I often go.",
+    "vi": "Tôi thường đi.",
     "words": [
       "我",
       "常",
@@ -1558,7 +1558,7 @@
     "id": "s:l1:133",
     "zh": "他常说。",
     "pinyin": "Tā cháng shuō.",
-    "vi": "He often says that.",
+    "vi": "Anh ấy thường nói vậy.",
     "words": [
       "他",
       "常",
@@ -1569,7 +1569,7 @@
     "id": "s:l1:134",
     "zh": "你常常来吗？",
     "pinyin": "Nǐ chángcháng lái ma?",
-    "vi": "Do you often come?",
+    "vi": "Bạn có thường đến không?",
     "words": [
       "你",
       "常常",
@@ -1581,7 +1581,7 @@
     "id": "s:l1:135",
     "zh": "我们常常在一起。",
     "pinyin": "Wǒmen chángcháng zài yìqǐ.",
-    "vi": "We're often together.",
+    "vi": "Chúng tôi thường ở bên nhau.",
     "words": [
       "我们",
       "常常",
@@ -1593,7 +1593,7 @@
     "id": "s:l1:136",
     "zh": "我给你打电话。",
     "pinyin": "Wǒ gěi nǐ dǎ diànhuà.",
-    "vi": "I'll call you.",
+    "vi": "Tôi sẽ gọi điện cho bạn.",
     "words": [
       "我",
       "给",
@@ -1605,7 +1605,7 @@
     "id": "s:l1:137",
     "zh": "他给我打电话了。",
     "pinyin": "Tā gěi wǒ dǎ diànhuà le.",
-    "vi": "He called me.",
+    "vi": "Anh ấy đã gọi điện cho tôi.",
     "words": [
       "他",
       "给",
@@ -1618,7 +1618,7 @@
     "id": "s:l1:138",
     "zh": "请给我打电话。",
     "pinyin": "Qǐng gěi wǒ dǎ diànhuà.",
-    "vi": "Please call me.",
+    "vi": "Làm ơn gọi điện cho tôi.",
     "words": [
       "请",
       "给",
@@ -1630,7 +1630,7 @@
     "id": "s:l1:139",
     "zh": "你给谁打电话？",
     "pinyin": "Nǐ gěi shéi dǎ diànhuà?",
-    "vi": "Who are you calling?",
+    "vi": "Bạn gọi điện cho ai?",
     "words": [
       "你",
       "给",
@@ -1642,7 +1642,7 @@
     "id": "s:l1:140",
     "zh": "我们去吃饭吧。",
     "pinyin": "Wǒmen qù chīfàn ba.",
-    "vi": "Let's go eat.",
+    "vi": "Chúng ta đi ăn cơm đi.",
     "words": [
       "我们",
       "去",
@@ -1654,7 +1654,7 @@
     "id": "s:l1:141",
     "zh": "他明天上班。",
     "pinyin": "Tā míngtiān shàngbān.",
-    "vi": "He goes to work tomorrow.",
+    "vi": "Ngày mai anh ấy đi làm.",
     "words": [
       "他",
       "明天",
@@ -1665,7 +1665,7 @@
     "id": "s:l1:142",
     "zh": "我们明天见面。",
     "pinyin": "Wǒmen míngtiān jiànmiàn.",
-    "vi": "Let's meet tomorrow.",
+    "vi": "Ngày mai chúng ta gặp nhau.",
     "words": [
       "我们",
       "明天",
@@ -1676,7 +1676,7 @@
     "id": "s:l1:143",
     "zh": "你几点起床？",
     "pinyin": "Nǐ jǐ diǎn qǐchuáng?",
-    "vi": "What time do you get up?",
+    "vi": "Mấy giờ bạn dậy?",
     "words": [
       "你",
       "几",
@@ -1688,7 +1688,7 @@
     "id": "s:l1:144",
     "zh": "我喜欢唱歌。",
     "pinyin": "Wǒ xǐhuan chànggē.",
-    "vi": "I like singing.",
+    "vi": "Tôi thích hát.",
     "words": [
       "我",
       "喜欢",
@@ -1699,7 +1699,7 @@
     "id": "s:l1:145",
     "zh": "对不起。",
     "pinyin": "Duìbuqǐ.",
-    "vi": "I'm sorry.",
+    "vi": "Xin lỗi.",
     "words": [
       "对不起"
     ]
@@ -1708,7 +1708,7 @@
     "id": "s:l1:146",
     "zh": "对不起，我没看见。",
     "pinyin": "Duìbuqǐ, wǒ méi kànjiàn.",
-    "vi": "Sorry, I didn't see it.",
+    "vi": "Xin lỗi, tôi không nhìn thấy.",
     "words": [
       "对不起",
       "我",
@@ -1720,7 +1720,7 @@
     "id": "s:l1:147",
     "zh": "没什么。",
     "pinyin": "Méi shénme.",
-    "vi": "It's nothing.",
+    "vi": "Không có gì đâu.",
     "words": [
       "没",
       "什么"
@@ -1730,7 +1730,7 @@
     "id": "s:l1:148",
     "zh": "对不起，我来晚了。",
     "pinyin": "Duìbuqǐ, wǒ lái wǎn le.",
-    "vi": "Sorry, I'm late.",
+    "vi": "Xin lỗi, tôi đến muộn.",
     "words": [
       "对不起",
       "我",
@@ -1743,7 +1743,7 @@
     "id": "s:l1:149",
     "zh": "你最好休息。",
     "pinyin": "Nǐ zuìhǎo xiūxi.",
-    "vi": "You'd better rest.",
+    "vi": "Bạn nên nghỉ ngơi thì hơn.",
     "words": [
       "你",
       "最好",
@@ -1754,7 +1754,7 @@
     "id": "s:l1:150",
     "zh": "我们最好去。",
     "pinyin": "Wǒmen zuìhǎo qù.",
-    "vi": "We'd better go.",
+    "vi": "Tốt nhất là chúng ta nên đi.",
     "words": [
       "我们",
       "最好",
@@ -1765,7 +1765,7 @@
     "id": "s:l1:151",
     "zh": "你最好告诉他。",
     "pinyin": "Nǐ zuìhǎo gàosu tā.",
-    "vi": "You'd better tell him.",
+    "vi": "Tốt nhất bạn nên nói cho anh ấy biết.",
     "words": [
       "你",
       "最好",
@@ -1777,7 +1777,7 @@
     "id": "s:l1:152",
     "zh": "最好现在走。",
     "pinyin": "Zuìhǎo xiànzài zǒu.",
-    "vi": "It's best to leave now.",
+    "vi": "Tốt nhất là đi ngay bây giờ.",
     "words": [
       "最好",
       "现在",
@@ -1788,7 +1788,7 @@
     "id": "s:l1:153",
     "zh": "他在我旁边。",
     "pinyin": "Tā zài wǒ pángbiān.",
-    "vi": "He is next to me.",
+    "vi": "Anh ấy ở bên cạnh tôi.",
     "words": [
       "他",
       "在",
@@ -1800,7 +1800,7 @@
     "id": "s:l1:154",
     "zh": "我家旁边有学校。",
     "pinyin": "Wǒ jiā pángbiān yǒu xuéxiào.",
-    "vi": "There's a school next to my house.",
+    "vi": "Bên cạnh nhà tôi có một trường học.",
     "words": [
       "我",
       "家",
@@ -1813,7 +1813,7 @@
     "id": "s:l1:155",
     "zh": "你在中间。",
     "pinyin": "Nǐ zài zhōngjiān.",
-    "vi": "You're in the middle.",
+    "vi": "Bạn ở giữa.",
     "words": [
       "你",
       "在",
@@ -1824,7 +1824,7 @@
     "id": "s:l1:156",
     "zh": "我们的车在中间。",
     "pinyin": "Wǒmen de chē zài zhōngjiān.",
-    "vi": "Our car is in the middle.",
+    "vi": "Xe của chúng tôi ở giữa.",
     "words": [
       "我们",
       "的",
@@ -1837,7 +1837,7 @@
     "id": "s:l1:157",
     "zh": "今天星期几？",
     "pinyin": "Jīntiān xīngqī jǐ?",
-    "vi": "What day of the week is it today?",
+    "vi": "Hôm nay thứ mấy?",
     "words": [
       "今天",
       "星期",
@@ -1848,7 +1848,7 @@
     "id": "s:l1:158",
     "zh": "我星期一去。",
     "pinyin": "Wǒ xīngqī yī qù.",
-    "vi": "I'm going on Monday.",
+    "vi": "Tôi đi vào thứ Hai.",
     "words": [
       "我",
       "星期",
@@ -1860,7 +1860,7 @@
     "id": "s:l1:159",
     "zh": "他星期五回来。",
     "pinyin": "Tā xīngqī wǔ huílai.",
-    "vi": "He's coming back on Friday.",
+    "vi": "Anh ấy về vào thứ Sáu.",
     "words": [
       "他",
       "星期",
@@ -1872,7 +1872,7 @@
     "id": "s:l1:160",
     "zh": "你们星期几见面？",
     "pinyin": "Nǐmen xīngqī jǐ jiànmiàn?",
-    "vi": "What day are you meeting?",
+    "vi": "Các bạn gặp nhau vào thứ mấy?",
     "words": [
       "你们",
       "星期",
@@ -1884,7 +1884,7 @@
     "id": "s:l1:161",
     "zh": "这个一百块。",
     "pinyin": "Zhège yìbǎi kuài.",
-    "vi": "This one is a hundred kuai.",
+    "vi": "Cái này một trăm tệ.",
     "words": [
       "这",
       "个",
@@ -1897,7 +1897,7 @@
     "id": "s:l1:162",
     "zh": "我有两百。",
     "pinyin": "Wǒ yǒu liǎngbǎi.",
-    "vi": "I have two hundred.",
+    "vi": "Tôi có hai trăm.",
     "words": [
       "我",
       "有",
@@ -1909,7 +1909,7 @@
     "id": "s:l1:163",
     "zh": "他要三百块。",
     "pinyin": "Tā yào sānbǎi kuài.",
-    "vi": "He wants three hundred kuai.",
+    "vi": "Anh ấy muốn ba trăm tệ.",
     "words": [
       "他",
       "要",
@@ -1922,7 +1922,7 @@
     "id": "s:l1:164",
     "zh": "那本书一百块。",
     "pinyin": "Nà běn shū yìbǎi kuài.",
-    "vi": "That book is a hundred kuai.",
+    "vi": "Cuốn sách đó một trăm tệ.",
     "words": [
       "那",
       "本",
@@ -1936,7 +1936,7 @@
     "id": "s:l1:165",
     "zh": "你在哪儿？",
     "pinyin": "Nǐ zài nǎr?",
-    "vi": "Where are you?",
+    "vi": "Bạn ở đâu?",
     "words": [
       "你",
       "在",
@@ -1947,7 +1947,7 @@
     "id": "s:l1:166",
     "zh": "我在这儿。",
     "pinyin": "Wǒ zài zhèr.",
-    "vi": "I'm here.",
+    "vi": "Tôi ở đây.",
     "words": [
       "我",
       "在",
@@ -1958,7 +1958,7 @@
     "id": "s:l1:167",
     "zh": "他不在这儿。",
     "pinyin": "Tā bú zài zhèr.",
-    "vi": "He's not here.",
+    "vi": "Anh ấy không có ở đây.",
     "words": [
       "他",
       "不",
@@ -1970,7 +1970,7 @@
     "id": "s:l1:168",
     "zh": "你们去哪儿？",
     "pinyin": "Nǐmen qù nǎr?",
-    "vi": "Where are you all going?",
+    "vi": "Các bạn đi đâu?",
     "words": [
       "你们",
       "去",
@@ -1981,7 +1981,7 @@
     "id": "s:l1:169",
     "zh": "你在干什么？",
     "pinyin": "Nǐ zài gànshénme?",
-    "vi": "What are you doing?",
+    "vi": "Bạn đang làm gì?",
     "words": [
       "你",
       "在",
@@ -1992,7 +1992,7 @@
     "id": "s:l1:170",
     "zh": "他干什么了？",
     "pinyin": "Tā gànshénme le?",
-    "vi": "What did he do?",
+    "vi": "Anh ấy đã làm gì vậy?",
     "words": [
       "他",
       "干什么",
@@ -2003,7 +2003,7 @@
     "id": "s:l1:171",
     "zh": "你想干什么？",
     "pinyin": "Nǐ xiǎng gànshénme?",
-    "vi": "What do you want to do?",
+    "vi": "Bạn muốn làm gì?",
     "words": [
       "你",
       "想",
@@ -2014,7 +2014,7 @@
     "id": "s:l1:172",
     "zh": "这不对。",
     "pinyin": "Zhè búduì.",
-    "vi": "This is wrong.",
+    "vi": "Cái này không đúng.",
     "words": [
       "这",
       "不对"
@@ -2024,7 +2024,7 @@
     "id": "s:l1:173",
     "zh": "你说的不对。",
     "pinyin": "Nǐ shuō de búduì.",
-    "vi": "What you said is wrong.",
+    "vi": "Điều bạn nói không đúng.",
     "words": [
       "你",
       "说",
@@ -2036,7 +2036,7 @@
     "id": "s:l1:174",
     "zh": "不对，不是这个。",
     "pinyin": "Búduì, bú shì zhège.",
-    "vi": "No, it's not this one.",
+    "vi": "Không đúng, không phải cái này.",
     "words": [
       "不对",
       "不",
@@ -2049,7 +2049,7 @@
     "id": "s:l1:175",
     "zh": "下次你来。",
     "pinyin": "Xiàcì nǐ lái.",
-    "vi": "Come next time.",
+    "vi": "Lần sau bạn đến nhé.",
     "words": [
       "下次",
       "你",
@@ -2060,7 +2060,7 @@
     "id": "s:l1:176",
     "zh": "商店在右边。",
     "pinyin": "Shāngdiàn zài yòubian.",
-    "vi": "The store is on the right.",
+    "vi": "Cửa hàng ở bên phải.",
     "words": [
       "商店",
       "在",
@@ -2071,7 +2071,7 @@
     "id": "s:l1:177",
     "zh": "学校在左边。",
     "pinyin": "Xuéxiào zài zuǒbian.",
-    "vi": "The school is on the left.",
+    "vi": "Trường học ở bên trái.",
     "words": [
       "学校",
       "在",
@@ -2082,7 +2082,7 @@
     "id": "s:l1:178",
     "zh": "车站在外边。",
     "pinyin": "Chēzhàn zài wàibian.",
-    "vi": "The station is outside.",
+    "vi": "Bến xe ở bên ngoài.",
     "words": [
       "车站",
       "在",
@@ -2093,7 +2093,7 @@
     "id": "s:l1:179",
     "zh": "你在里边。",
     "pinyin": "Nǐ zài lǐbian.",
-    "vi": "You're inside.",
+    "vi": "Bạn ở bên trong.",
     "words": [
       "你",
       "在",
@@ -2104,7 +2104,7 @@
     "id": "s:l1:180",
     "zh": "商店里边有水果。",
     "pinyin": "Shāngdiàn lǐbian yǒu shuǐguǒ.",
-    "vi": "There's fruit inside the store.",
+    "vi": "Trong cửa hàng có trái cây.",
     "words": [
       "商店",
       "里边",
@@ -2116,7 +2116,7 @@
     "id": "s:l1:181",
     "zh": "没关系。",
     "pinyin": "Méi guānxi.",
-    "vi": "It's OK.",
+    "vi": "Không sao đâu.",
     "words": [
       "没关系"
     ]
@@ -2125,7 +2125,7 @@
     "id": "s:l1:182",
     "zh": "没关系，你先说。",
     "pinyin": "Méi guānxi, nǐ xiān shuō.",
-    "vi": "It's fine, go ahead and say it.",
+    "vi": "Không sao, bạn nói trước đi.",
     "words": [
       "没关系",
       "你",
@@ -2137,7 +2137,7 @@
     "id": "s:l1:183",
     "zh": "没关系，我不忙。",
     "pinyin": "Méi guānxi, wǒ bù máng.",
-    "vi": "It's OK, I'm not busy.",
+    "vi": "Không sao, tôi không bận.",
     "words": [
       "没关系",
       "我",
@@ -2149,7 +2149,7 @@
     "id": "s:l1:184",
     "zh": "请问，你叫什么名字？",
     "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
-    "vi": "Excuse me, what's your name?",
+    "vi": "Xin hỏi, bạn tên là gì?",
     "words": [
       "请问",
       "你",
@@ -2162,7 +2162,7 @@
     "id": "s:l1:185",
     "zh": "请问，这是谁的？",
     "pinyin": "Qǐngwèn, zhè shì shéi de?",
-    "vi": "Excuse me, whose is this?",
+    "vi": "Xin hỏi, cái này của ai?",
     "words": [
       "请问",
       "这",
@@ -2175,7 +2175,7 @@
     "id": "s:l1:186",
     "zh": "请问，商店在哪里？",
     "pinyin": "Qǐngwèn, shāngdiàn zài nǎlǐ?",
-    "vi": "Excuse me, where's the store?",
+    "vi": "Xin hỏi, cửa hàng ở đâu?",
     "words": [
       "请问",
       "商店",
@@ -2187,7 +2187,7 @@
     "id": "s:l1:187",
     "zh": "我是小学生。",
     "pinyin": "Wǒ shì xiǎoxuéshēng.",
-    "vi": "I am a primary school student.",
+    "vi": "Tôi là học sinh tiểu học.",
     "words": [
       "我",
       "是",
@@ -2198,7 +2198,7 @@
     "id": "s:l1:188",
     "zh": "他是中学生。",
     "pinyin": "Tā shì zhōngxuéshēng.",
-    "vi": "He is a middle school student.",
+    "vi": "Anh ấy là học sinh trung học.",
     "words": [
       "他",
       "是",
@@ -2209,7 +2209,7 @@
     "id": "s:l1:189",
     "zh": "她是大学生。",
     "pinyin": "Tā shì dàxuéshēng.",
-    "vi": "She is a university student.",
+    "vi": "Cô ấy là sinh viên đại học.",
     "words": [
       "她",
       "是",
@@ -2220,7 +2220,7 @@
     "id": "s:l1:190",
     "zh": "我们都是学生。",
     "pinyin": "Wǒmen dōu shì xuésheng.",
-    "vi": "We are all students.",
+    "vi": "Chúng tôi đều là học sinh.",
     "words": [
       "我们",
       "都",
@@ -2232,7 +2232,7 @@
     "id": "s:l1:191",
     "zh": "我要一点儿水。",
     "pinyin": "Wǒ yào yìdiǎnr shuǐ.",
-    "vi": "I'd like a little water.",
+    "vi": "Tôi muốn một chút nước.",
     "words": [
       "我",
       "要",
@@ -2244,7 +2244,7 @@
     "id": "s:l1:192",
     "zh": "我会一点儿。",
     "pinyin": "Wǒ huì yìdiǎnr.",
-    "vi": "I know a little of it.",
+    "vi": "Tôi biết một chút.",
     "words": [
       "我",
       "会",
@@ -2255,7 +2255,7 @@
     "id": "s:l1:193",
     "zh": "慢一点儿。",
     "pinyin": "Màn yìdiǎnr.",
-    "vi": "A little slower.",
+    "vi": "Chậm một chút.",
     "words": [
       "慢",
       "一点儿"
@@ -2265,7 +2265,7 @@
     "id": "s:l1:194",
     "zh": "这个大一点儿。",
     "pinyin": "Zhège dà yìdiǎnr.",
-    "vi": "This one is a bit bigger.",
+    "vi": "Cái này to hơn một chút.",
     "words": [
       "这",
       "个",
@@ -2277,7 +2277,7 @@
     "id": "s:l1:195",
     "zh": "我们那儿很好。",
     "pinyin": "Wǒmen nàr hěn hǎo.",
-    "vi": "Our place is really nice.",
+    "vi": "Chỗ chúng tôi rất tốt.",
     "words": [
       "我们",
       "那儿",
@@ -2289,7 +2289,7 @@
     "id": "s:l1:196",
     "zh": "我们去玩儿吧。",
     "pinyin": "Wǒmen qù wánr ba.",
-    "vi": "Let's go have fun.",
+    "vi": "Chúng ta đi chơi đi.",
     "words": [
       "我们",
       "去",
@@ -2301,7 +2301,7 @@
     "id": "s:l1:197",
     "zh": "他也在这儿。",
     "pinyin": "Tā yě zài zhèr.",
-    "vi": "He's here too.",
+    "vi": "Anh ấy cũng ở đây.",
     "words": [
       "他",
       "也",
@@ -2313,7 +2313,7 @@
     "id": "s:l1:198",
     "zh": "你等一会儿。",
     "pinyin": "Nǐ děng yíhuìr.",
-    "vi": "Wait a moment.",
+    "vi": "Bạn đợi một lát.",
     "words": [
       "你",
       "等",
@@ -2324,7 +2324,7 @@
     "id": "s:l1:199",
     "zh": "你去哪儿？",
     "pinyin": "Nǐ qù nǎr?",
-    "vi": "Where are you going?",
+    "vi": "Bạn đi đâu?",
     "words": [
       "你",
       "去",
@@ -2335,7 +2335,7 @@
     "id": "s:l1:200",
     "zh": "不客气。",
     "pinyin": "Bú kèqi.",
-    "vi": "You're welcome.",
+    "vi": "Đừng khách sáo.",
     "words": [
       "不客气"
     ]
@@ -2344,7 +2344,7 @@
     "id": "s:l1:201",
     "zh": "谢谢你，不客气。",
     "pinyin": "Xièxie nǐ, bú kèqi.",
-    "vi": "Thank you. You're welcome.",
+    "vi": "Cảm ơn bạn, đừng khách sáo.",
     "words": [
       "谢谢",
       "你",
@@ -2355,7 +2355,7 @@
     "id": "s:l1:202",
     "zh": "不客气，朋友。",
     "pinyin": "Bú kèqi, péngyou.",
-    "vi": "You're welcome, my friend.",
+    "vi": "Đừng khách sáo, bạn ơi.",
     "words": [
       "不客气",
       "朋友"
@@ -2365,7 +2365,7 @@
     "id": "s:l1:203",
     "zh": "前天我没去。",
     "pinyin": "Qiántiān wǒ méi qù.",
-    "vi": "I didn't go the day before yesterday.",
+    "vi": "Hôm kia tôi đã không đi.",
     "words": [
       "前天",
       "我",
@@ -2377,7 +2377,7 @@
     "id": "s:l1:204",
     "zh": "后天你来吗？",
     "pinyin": "Hòutiān nǐ lái ma?",
-    "vi": "Are you coming the day after tomorrow?",
+    "vi": "Ngày kia bạn có đến không?",
     "words": [
       "后天",
       "你",
@@ -2389,7 +2389,7 @@
     "id": "s:l1:205",
     "zh": "昨天，今天，明天都很忙。",
     "pinyin": "Zuótiān, jīntiān, míngtiān dōu hěn máng.",
-    "vi": "Yesterday, today, tomorrow — all busy.",
+    "vi": "Hôm qua, hôm nay, ngày mai đều rất bận.",
     "words": [
       "昨天",
       "今天",
@@ -2403,7 +2403,7 @@
     "id": "s:l1:206",
     "zh": "前天他没来，后天他能来。",
     "pinyin": "Qiántiān tā méi lái, hòutiān tā néng lái.",
-    "vi": "He didn't come the day before yesterday, but he can come the day after tomorrow.",
+    "vi": "Hôm kia anh ấy đã không đến, nhưng ngày kia anh ấy có thể đến.",
     "words": [
       "前天",
       "他",
@@ -2419,7 +2419,7 @@
     "id": "s:l1:207",
     "zh": "今天星期天。",
     "pinyin": "Jīntiān xīngqītiān.",
-    "vi": "Today is Sunday.",
+    "vi": "Hôm nay là Chủ nhật.",
     "words": [
       "今天",
       "星期天"
@@ -2429,7 +2429,7 @@
     "id": "s:l1:208",
     "zh": "星期天你忙吗？",
     "pinyin": "Xīngqītiān nǐ máng ma?",
-    "vi": "Are you busy on Sunday?",
+    "vi": "Chủ nhật bạn có bận không?",
     "words": [
       "星期天",
       "你",
@@ -2441,7 +2441,7 @@
     "id": "s:l1:209",
     "zh": "我们星期天见面吧。",
     "pinyin": "Wǒmen xīngqītiān jiànmiàn ba.",
-    "vi": "Let's meet on Sunday.",
+    "vi": "Chúng ta gặp nhau vào Chủ nhật đi.",
     "words": [
       "我们",
       "星期天",
@@ -2453,7 +2453,7 @@
     "id": "s:l1:210",
     "zh": "你看一下儿。",
     "pinyin": "Nǐ kàn yíxiàr.",
-    "vi": "Take a quick look.",
+    "vi": "Bạn xem qua một chút đi.",
     "words": [
       "你",
       "看",
@@ -2464,7 +2464,7 @@
     "id": "s:l1:211",
     "zh": "我说一下儿。",
     "pinyin": "Wǒ shuō yíxiàr.",
-    "vi": "Let me say a bit.",
+    "vi": "Để tôi nói một chút.",
     "words": [
       "我",
       "说",
@@ -2475,7 +2475,7 @@
     "id": "s:l1:212",
     "zh": "请等一下儿。",
     "pinyin": "Qǐng děng yíxiàr.",
-    "vi": "Please wait a moment.",
+    "vi": "Làm ơn đợi một chút.",
     "words": [
       "请",
       "等",
@@ -2486,7 +2486,7 @@
     "id": "s:l1:213",
     "zh": "请坐下。",
     "pinyin": "Qǐng zuòxia.",
-    "vi": "Please sit down.",
+    "vi": "Mời ngồi xuống.",
     "words": [
       "请",
       "坐下"
@@ -2496,7 +2496,7 @@
     "id": "s:l1:214",
     "zh": "你们都坐下吧。",
     "pinyin": "Nǐmen dōu zuòxia ba.",
-    "vi": "Everyone please sit down.",
+    "vi": "Mọi người ngồi xuống đi.",
     "words": [
       "你们",
       "都",
@@ -2508,7 +2508,7 @@
     "id": "s:l1:215",
     "zh": "他坐下了。",
     "pinyin": "Tā zuòxia le.",
-    "vi": "He sat down.",
+    "vi": "Anh ấy đã ngồi xuống.",
     "words": [
       "他",
       "坐下",
@@ -2519,7 +2519,7 @@
     "id": "s:l1:216",
     "zh": "我等了半天。",
     "pinyin": "Wǒ děngle bàntiān.",
-    "vi": "I waited a long while.",
+    "vi": "Tôi đã đợi rất lâu.",
     "words": [
       "我",
       "等",
@@ -2531,7 +2531,7 @@
     "id": "s:l1:217",
     "zh": "他学了半年。",
     "pinyin": "Tā xuéle bànnián.",
-    "vi": "He studied for half a year.",
+    "vi": "Anh ấy đã học nửa năm.",
     "words": [
       "他",
       "学",
@@ -2543,7 +2543,7 @@
     "id": "s:l1:218",
     "zh": "我们半年见一次。",
     "pinyin": "Wǒmen bànnián jiàn yí cì.",
-    "vi": "We meet once every half year.",
+    "vi": "Chúng tôi nửa năm gặp nhau một lần.",
     "words": [
       "我们",
       "半年",
@@ -2556,7 +2556,7 @@
     "id": "s:l1:219",
     "zh": "这个不大。",
     "pinyin": "Zhège bú dà.",
-    "vi": "This isn't very big.",
+    "vi": "Cái này không to lắm.",
     "words": [
       "这",
       "个",
@@ -2568,7 +2568,7 @@
     "id": "s:l1:220",
     "zh": "我不大喜欢。",
     "pinyin": "Wǒ bú dà xǐhuan.",
-    "vi": "I don't like it very much.",
+    "vi": "Tôi không thích lắm.",
     "words": [
       "我",
       "不",
@@ -2580,7 +2580,7 @@
     "id": "s:l1:221",
     "zh": "他不大想去。",
     "pinyin": "Tā bú dà xiǎng qù.",
-    "vi": "He doesn't really want to go.",
+    "vi": "Anh ấy không muốn đi lắm.",
     "words": [
       "他",
       "不",
@@ -2593,7 +2593,7 @@
     "id": "s:l1:222",
     "zh": "我在学习汉语。",
     "pinyin": "Wǒ zài xuéxí Hànyǔ.",
-    "vi": "I'm learning Chinese.",
+    "vi": "Tôi đang học tiếng Trung.",
     "words": [
       "我",
       "在",
@@ -2605,7 +2605,7 @@
     "id": "s:l1:223",
     "zh": "你会说中文吗？",
     "pinyin": "Nǐ huì shuō Zhōngwén ma?",
-    "vi": "Can you speak Chinese?",
+    "vi": "Bạn có biết nói tiếng Trung không?",
     "words": [
       "你",
       "会",
@@ -2618,7 +2618,7 @@
     "id": "s:l1:224",
     "zh": "汉字很难。",
     "pinyin": "Hànzì hěn nán.",
-    "vi": "Chinese characters are difficult.",
+    "vi": "Chữ Hán rất khó.",
     "words": [
       "汉字",
       "很",
@@ -2629,7 +2629,7 @@
     "id": "s:l1:225",
     "zh": "他在开会。",
     "pinyin": "Tā zài kāihuì.",
-    "vi": "He's in a meeting.",
+    "vi": "Anh ấy đang họp.",
     "words": [
       "他",
       "在",
@@ -2640,7 +2640,7 @@
     "id": "s:l1:226",
     "zh": "我不会开车。",
     "pinyin": "Wǒ bú huì kāichē.",
-    "vi": "I can't drive.",
+    "vi": "Tôi không biết lái xe.",
     "words": [
       "我",
       "不",
@@ -2652,7 +2652,7 @@
     "id": "s:l1:227",
     "zh": "别开玩笑了。",
     "pinyin": "Bié kāiwánxiào le.",
-    "vi": "Stop joking.",
+    "vi": "Đừng đùa nữa.",
     "words": [
       "别",
       "开玩笑",
@@ -2663,7 +2663,7 @@
     "id": "s:l1:new:001",
     "zh": "他是我爸爸。",
     "pinyin": "Tā shì wǒ bàba.",
-    "vi": "He is my dad.",
+    "vi": "Anh ấy là bố tôi.",
     "words": [
       "他",
       "是",
@@ -2675,7 +2675,7 @@
     "id": "s:l1:new:002",
     "zh": "她是我妈妈。",
     "pinyin": "Tā shì wǒ māma.",
-    "vi": "She is my mom.",
+    "vi": "Cô ấy là mẹ tôi.",
     "words": [
       "她",
       "是",
@@ -2687,7 +2687,7 @@
     "id": "s:l1:new:003",
     "zh": "他不是我哥哥。",
     "pinyin": "Tā bú shì wǒ gēge.",
-    "vi": "He is not my older brother.",
+    "vi": "Anh ấy không phải là anh trai tôi.",
     "words": [
       "他",
       "不",
@@ -2700,7 +2700,7 @@
     "id": "s:l1:new:004",
     "zh": "她是姐姐。",
     "pinyin": "Tā shì jiějie.",
-    "vi": "She is the older sister.",
+    "vi": "Cô ấy là chị gái.",
     "words": [
       "她",
       "是",
@@ -2711,7 +2711,7 @@
     "id": "s:l1:new:005",
     "zh": "我家有孩子。",
     "pinyin": "Wǒ jiā yǒu háizi.",
-    "vi": "My family has children.",
+    "vi": "Nhà tôi có con.",
     "words": [
       "我",
       "家",
@@ -2723,7 +2723,7 @@
     "id": "s:l1:new:006",
     "zh": "爷爷好！",
     "pinyin": "Yéye hǎo!",
-    "vi": "Hi Grandpa!",
+    "vi": "Chào ông!",
     "words": [
       "爷爷",
       "好"
@@ -2733,7 +2733,7 @@
     "id": "s:l1:new:007",
     "zh": "奶奶好！",
     "pinyin": "Nǎinai hǎo!",
-    "vi": "Hi Grandma!",
+    "vi": "Chào bà!",
     "words": [
       "奶奶",
       "好"
@@ -2743,7 +2743,7 @@
     "id": "s:l1:new:008",
     "zh": "弟弟小，妹妹小。",
     "pinyin": "Dìdi xiǎo, mèimei xiǎo.",
-    "vi": "Little brother is small, little sister is small.",
+    "vi": "Em trai còn nhỏ, em gái còn nhỏ.",
     "words": [
       "弟弟",
       "小",
@@ -2755,7 +2755,7 @@
     "id": "s:l1:new:010",
     "zh": "一二三四五。",
     "pinyin": "Yī èr sān sì wǔ.",
-    "vi": "One two three four five.",
+    "vi": "Một hai ba bốn năm.",
     "words": [
       "一",
       "二",
@@ -2768,7 +2768,7 @@
     "id": "s:l1:new:011",
     "zh": "六七八九十。",
     "pinyin": "Liù qī bā jiǔ shí.",
-    "vi": "Six seven eight nine ten.",
+    "vi": "Sáu bảy tám chín mười.",
     "words": [
       "六",
       "七",
@@ -2781,7 +2781,7 @@
     "id": "s:l1:new:012",
     "zh": "我家有三个孩子。",
     "pinyin": "Wǒ jiā yǒu sān ge háizi.",
-    "vi": "My family has three children.",
+    "vi": "Nhà tôi có ba đứa con.",
     "words": [
       "我",
       "家",
@@ -2795,7 +2795,7 @@
     "id": "s:l1:new:013",
     "zh": "我有两个姐姐。",
     "pinyin": "Wǒ yǒu liǎng ge jiějie.",
-    "vi": "I have two older sisters.",
+    "vi": "Tôi có hai chị gái.",
     "words": [
       "我",
       "有",
@@ -2808,7 +2808,7 @@
     "id": "s:l1:new:014",
     "zh": "他家有五个人。",
     "pinyin": "Tā jiā yǒu wǔ ge rén.",
-    "vi": "His family has five people.",
+    "vi": "Nhà anh ấy có năm người.",
     "words": [
       "他",
       "家",
@@ -2822,7 +2822,7 @@
     "id": "s:l1:new:020",
     "zh": "我要吃饭。",
     "pinyin": "Wǒ yào chī fàn.",
-    "vi": "I want to eat.",
+    "vi": "Tôi muốn ăn cơm.",
     "words": [
       "我",
       "要",
@@ -2834,7 +2834,7 @@
     "id": "s:l1:new:021",
     "zh": "你要喝水。",
     "pinyin": "Nǐ yào hē shuǐ.",
-    "vi": "You want to drink water.",
+    "vi": "Bạn muốn uống nước.",
     "words": [
       "你",
       "要",
@@ -2846,7 +2846,7 @@
     "id": "s:l1:new:022",
     "zh": "我要喝茶。",
     "pinyin": "Wǒ yào hē chá.",
-    "vi": "I want to drink tea.",
+    "vi": "Tôi muốn uống trà.",
     "words": [
       "我",
       "要",
@@ -2858,7 +2858,7 @@
     "id": "s:l1:new:023",
     "zh": "他要吃肉。",
     "pinyin": "Tā yào chī ròu.",
-    "vi": "He wants to eat meat.",
+    "vi": "Anh ấy muốn ăn thịt.",
     "words": [
       "他",
       "要",
@@ -2870,7 +2870,7 @@
     "id": "s:l1:new:024",
     "zh": "我不要吃鸡蛋。",
     "pinyin": "Wǒ bú yào chī jīdàn.",
-    "vi": "I don't want to eat eggs.",
+    "vi": "Tôi không muốn ăn trứng.",
     "words": [
       "我",
       "不",
@@ -2883,7 +2883,7 @@
     "id": "s:l1:new:025",
     "zh": "我想吃米饭。",
     "pinyin": "Wǒ xiǎng chī mǐfàn.",
-    "vi": "I'd like to eat rice.",
+    "vi": "Tôi muốn ăn cơm.",
     "words": [
       "我",
       "想",
@@ -2895,7 +2895,7 @@
     "id": "s:l1:new:030",
     "zh": "我在家里。",
     "pinyin": "Wǒ zài jiālǐ.",
-    "vi": "I'm at home.",
+    "vi": "Tôi đang ở nhà.",
     "words": [
       "我",
       "在",
@@ -2906,7 +2906,7 @@
     "id": "s:l1:new:031",
     "zh": "他在房间。",
     "pinyin": "Tā zài fángjiān.",
-    "vi": "He is in the room.",
+    "vi": "Anh ấy đang ở trong phòng.",
     "words": [
       "他",
       "在",
@@ -2917,7 +2917,7 @@
     "id": "s:l1:new:032",
     "zh": "门口有人。",
     "pinyin": "Ménkǒu yǒu rén.",
-    "vi": "There's someone at the door.",
+    "vi": "Trước cửa có người.",
     "words": [
       "门口",
       "有",
@@ -2928,7 +2928,7 @@
     "id": "s:l1:new:033",
     "zh": "楼上有房间。",
     "pinyin": "Lóushàng yǒu fángjiān.",
-    "vi": "There are rooms upstairs.",
+    "vi": "Trên lầu có phòng.",
     "words": [
       "楼上",
       "有",
@@ -2939,7 +2939,7 @@
     "id": "s:l1:new:034",
     "zh": "房子大。",
     "pinyin": "Fángzi dà.",
-    "vi": "The house is big.",
+    "vi": "Ngôi nhà to.",
     "words": [
       "房子",
       "大"
@@ -2949,7 +2949,7 @@
     "id": "s:l1:new:035",
     "zh": "房间干净。",
     "pinyin": "Fángjiān gānjìng.",
-    "vi": "The room is clean.",
+    "vi": "Căn phòng sạch sẽ.",
     "words": [
       "房间",
       "干净"
@@ -2959,7 +2959,7 @@
     "id": "s:l1:new:040",
     "zh": "他生病。",
     "pinyin": "Tā shēng bìng.",
-    "vi": "He is sick.",
+    "vi": "Anh ấy bị ốm.",
     "words": [
       "他",
       "生病"
@@ -2969,7 +2969,7 @@
     "id": "s:l1:new:041",
     "zh": "我身体好。",
     "pinyin": "Wǒ shēntǐ hǎo.",
-    "vi": "My body is healthy.",
+    "vi": "Tôi khỏe mạnh.",
     "words": [
       "我",
       "身体",
@@ -2980,7 +2980,7 @@
     "id": "s:l1:new:042",
     "zh": "他去医院看病。",
     "pinyin": "Tā qù yīyuàn kàn bìng.",
-    "vi": "He goes to the hospital to see a doctor.",
+    "vi": "Anh ấy đến bệnh viện khám bệnh.",
     "words": [
       "他",
       "去",
@@ -2992,7 +2992,7 @@
     "id": "s:l1:new:043",
     "zh": "医生看病人。",
     "pinyin": "Yīshēng kàn bìngrén.",
-    "vi": "The doctor sees the patient.",
+    "vi": "Bác sĩ khám cho bệnh nhân.",
     "words": [
       "医生",
       "看",
@@ -3003,7 +3003,7 @@
     "id": "s:l1:new:044",
     "zh": "水冷。",
     "pinyin": "Shuǐ lěng.",
-    "vi": "The water is cold.",
+    "vi": "Nước lạnh.",
     "words": [
       "水",
       "冷"
@@ -3013,7 +3013,7 @@
     "id": "s:l1:new:045",
     "zh": "茶热。",
     "pinyin": "Chá rè.",
-    "vi": "The tea is hot.",
+    "vi": "Trà nóng.",
     "words": [
       "茶",
       "热"
@@ -3023,7 +3023,7 @@
     "id": "s:l1:new:050",
     "zh": "早上好！",
     "pinyin": "Zǎoshang hǎo!",
-    "vi": "Good morning!",
+    "vi": "Chào buổi sáng!",
     "words": [
       "早上",
       "好"
@@ -3033,7 +3033,7 @@
     "id": "s:l1:new:051",
     "zh": "晚上好！",
     "pinyin": "Wǎnshang hǎo!",
-    "vi": "Good evening!",
+    "vi": "Chào buổi tối!",
     "words": [
       "晚上",
       "好"
@@ -3043,7 +3043,7 @@
     "id": "s:l1:new:052",
     "zh": "我早上来。",
     "pinyin": "Wǒ zǎoshang lái.",
-    "vi": "I come in the morning.",
+    "vi": "Tôi đến vào buổi sáng.",
     "words": [
       "我",
       "早上",
@@ -3054,7 +3054,7 @@
     "id": "s:l1:new:053",
     "zh": "他下午去。",
     "pinyin": "Tā xiàwǔ qù.",
-    "vi": "He goes in the afternoon.",
+    "vi": "Anh ấy đi vào buổi chiều.",
     "words": [
       "他",
       "下午",
@@ -3065,7 +3065,7 @@
     "id": "s:l1:new:054",
     "zh": "中午吃饭。",
     "pinyin": "Zhōngwǔ chī fàn.",
-    "vi": "Eat at noon.",
+    "vi": "Buổi trưa ăn cơm.",
     "words": [
       "中午",
       "吃",
@@ -3076,7 +3076,7 @@
     "id": "s:l1:new:055",
     "zh": "白天来，晚上去。",
     "pinyin": "Báitiān lái, wǎnshang qù.",
-    "vi": "Come during the day, go in the evening.",
+    "vi": "Ban ngày đến, buổi tối đi.",
     "words": [
       "白天",
       "来",
@@ -3088,7 +3088,7 @@
     "id": "s:l1:new:060",
     "zh": "前后左右。",
     "pinyin": "Qián hòu zuǒ yòu.",
-    "vi": "Front, back, left, right.",
+    "vi": "Trước, sau, trái, phải.",
     "words": [
       "前",
       "后",
@@ -3100,7 +3100,7 @@
     "id": "s:l1:new:061",
     "zh": "东西南北。",
     "pinyin": "Dōng xī nán běi.",
-    "vi": "East, west, south, north.",
+    "vi": "Đông, tây, nam, bắc.",
     "words": [
       "东",
       "西",
@@ -3112,7 +3112,7 @@
     "id": "s:l1:new:062",
     "zh": "上下左右。",
     "pinyin": "Shàng xià zuǒ yòu.",
-    "vi": "Up, down, left, right.",
+    "vi": "Trên, dưới, trái, phải.",
     "words": [
       "上",
       "下",
@@ -3124,7 +3124,7 @@
     "id": "s:l1:new:063",
     "zh": "他在外。",
     "pinyin": "Tā zài wài.",
-    "vi": "He is outside.",
+    "vi": "Anh ấy ở bên ngoài.",
     "words": [
       "他",
       "在",
@@ -3135,7 +3135,7 @@
     "id": "s:l1:new:064",
     "zh": "我在中。",
     "pinyin": "Wǒ zài zhōng.",
-    "vi": "I am in the middle.",
+    "vi": "Tôi ở giữa.",
     "words": [
       "我",
       "在",
@@ -3146,7 +3146,7 @@
     "id": "s:l1:new:070",
     "zh": "她穿新衣服。",
     "pinyin": "Tā chuān xīn yīfu.",
-    "vi": "She wears new clothes.",
+    "vi": "Cô ấy mặc quần áo mới.",
     "words": [
       "她",
       "穿",
@@ -3158,7 +3158,7 @@
     "id": "s:l1:new:071",
     "zh": "他穿白衣服。",
     "pinyin": "Tā chuān bái yīfu.",
-    "vi": "He wears white clothes.",
+    "vi": "Anh ấy mặc quần áo trắng.",
     "words": [
       "他",
       "穿",
@@ -3170,7 +3170,7 @@
     "id": "s:l1:new:072",
     "zh": "花好看。",
     "pinyin": "Huā hǎokàn.",
-    "vi": "The flower is pretty.",
+    "vi": "Hoa đẹp.",
     "words": [
       "花",
       "好看"
@@ -3180,7 +3180,7 @@
     "id": "s:l1:new:073",
     "zh": "她好看。",
     "pinyin": "Tā hǎokàn.",
-    "vi": "She is good-looking.",
+    "vi": "Cô ấy xinh.",
     "words": [
       "她",
       "好看"
@@ -3190,7 +3190,7 @@
     "id": "s:l1:new:074",
     "zh": "他高。",
     "pinyin": "Tā gāo.",
-    "vi": "He is tall.",
+    "vi": "Anh ấy cao.",
     "words": [
       "他",
       "高"
@@ -3200,7 +3200,7 @@
     "id": "s:l1:new:075",
     "zh": "好听。",
     "pinyin": "Hǎotīng.",
-    "vi": "Sounds nice.",
+    "vi": "Nghe hay.",
     "words": [
       "好听"
     ]
@@ -3209,7 +3209,7 @@
     "id": "s:l1:new:080",
     "zh": "天气好。",
     "pinyin": "Tiānqì hǎo.",
-    "vi": "The weather is good.",
+    "vi": "Thời tiết đẹp.",
     "words": [
       "天气",
       "好"
@@ -3219,7 +3219,7 @@
     "id": "s:l1:new:081",
     "zh": "天气冷。",
     "pinyin": "Tiānqì lěng.",
-    "vi": "The weather is cold.",
+    "vi": "Thời tiết lạnh.",
     "words": [
       "天气",
       "冷"
@@ -3229,7 +3229,7 @@
     "id": "s:l1:new:082",
     "zh": "下雨。",
     "pinyin": "Xià yǔ.",
-    "vi": "It's raining.",
+    "vi": "Trời mưa.",
     "words": [
       "下雨"
     ]
@@ -3238,7 +3238,7 @@
     "id": "s:l1:new:083",
     "zh": "山大。",
     "pinyin": "Shān dà.",
-    "vi": "The mountain is big.",
+    "vi": "Ngọn núi to.",
     "words": [
       "山",
       "大"
@@ -3248,7 +3248,7 @@
     "id": "s:l1:new:084",
     "zh": "风大。",
     "pinyin": "Fēng dà.",
-    "vi": "The wind is strong.",
+    "vi": "Gió to.",
     "words": [
       "风",
       "大"
@@ -3258,7 +3258,7 @@
     "id": "s:l1:new:085",
     "zh": "这个地方有名。",
     "pinyin": "Zhège dìfang yǒumíng.",
-    "vi": "This place is famous.",
+    "vi": "Nơi này nổi tiếng.",
     "words": [
       "这",
       "个",
@@ -3270,7 +3270,7 @@
     "id": "s:l1:new3:001",
     "zh": "你吃早饭吗？",
     "pinyin": "Nǐ chī zǎofàn ma?",
-    "vi": "Do you eat breakfast?",
+    "vi": "Bạn có ăn sáng không?",
     "words": [
       "你",
       "吃",
@@ -3282,7 +3282,7 @@
     "id": "s:l1:new3:002",
     "zh": "我吃午饭。",
     "pinyin": "Wǒ chī wǔfàn.",
-    "vi": "I'm eating lunch.",
+    "vi": "Tôi ăn trưa.",
     "words": [
       "我",
       "吃",
@@ -3293,7 +3293,7 @@
     "id": "s:l1:new3:003",
     "zh": "晚饭吃什么？",
     "pinyin": "Wǎnfàn chī shénme?",
-    "vi": "What's for dinner?",
+    "vi": "Bữa tối ăn gì?",
     "words": [
       "晚饭",
       "吃",
@@ -3304,7 +3304,7 @@
     "id": "s:l1:new3:004",
     "zh": "我喝牛奶。",
     "pinyin": "Wǒ hē niúnǎi.",
-    "vi": "I drink milk.",
+    "vi": "Tôi uống sữa.",
     "words": [
       "我",
       "喝",
@@ -3315,7 +3315,7 @@
     "id": "s:l1:new3:005",
     "zh": "面条儿好吃。",
     "pinyin": "Miàntiáor hǎochī.",
-    "vi": "The noodles are tasty.",
+    "vi": "Mì ngon.",
     "words": [
       "面条儿",
       "好吃"
@@ -3325,7 +3325,7 @@
     "id": "s:l1:new3:006",
     "zh": "他在饭店吃饭。",
     "pinyin": "Tā zài fàndiàn chīfàn.",
-    "vi": "He eats at a restaurant.",
+    "vi": "Anh ấy ăn cơm ở nhà hàng.",
     "words": [
       "他",
       "在",
@@ -3337,7 +3337,7 @@
     "id": "s:l1:new3:007",
     "zh": "两个鸡蛋。",
     "pinyin": "Liǎng gè jīdàn.",
-    "vi": "Two eggs.",
+    "vi": "Hai quả trứng.",
     "words": [
       "两",
       "个",
@@ -3348,7 +3348,7 @@
     "id": "s:l1:new3:008",
     "zh": "这个水果好吃。",
     "pinyin": "Zhège shuǐguǒ hǎochī.",
-    "vi": "This fruit is tasty.",
+    "vi": "Trái cây này ngon.",
     "words": [
       "这",
       "个",
@@ -3360,7 +3360,7 @@
     "id": "s:l1:new3:009",
     "zh": "在左边。",
     "pinyin": "Zài zuǒbian.",
-    "vi": "It's on the left.",
+    "vi": "Ở bên trái.",
     "words": [
       "在",
       "左边"
@@ -3370,7 +3370,7 @@
     "id": "s:l1:new3:010",
     "zh": "门在右边。",
     "pinyin": "Mén zài yòubian.",
-    "vi": "The door is on the right.",
+    "vi": "Cửa ở bên phải.",
     "words": [
       "门",
       "在",
@@ -3381,7 +3381,7 @@
     "id": "s:l1:new3:011",
     "zh": "他在前边。",
     "pinyin": "Tā zài qiánbian.",
-    "vi": "He is in front.",
+    "vi": "Anh ấy ở phía trước.",
     "words": [
       "他",
       "在",
@@ -3392,7 +3392,7 @@
     "id": "s:l1:new3:012",
     "zh": "楼在后边。",
     "pinyin": "Lóu zài hòubian.",
-    "vi": "The building is in the back.",
+    "vi": "Tòa nhà ở phía sau.",
     "words": [
       "楼",
       "在",
@@ -3403,7 +3403,7 @@
     "id": "s:l1:new3:013",
     "zh": "东边有人。",
     "pinyin": "Dōngbian yǒu rén.",
-    "vi": "There's someone to the east.",
+    "vi": "Phía đông có người.",
     "words": [
       "东边",
       "有",
@@ -3414,7 +3414,7 @@
     "id": "s:l1:new3:014",
     "zh": "在地上。",
     "pinyin": "Zài dìshang.",
-    "vi": "It's on the ground.",
+    "vi": "Ở trên mặt đất.",
     "words": [
       "在",
       "地上"
@@ -3424,7 +3424,7 @@
     "id": "s:l1:new3:015",
     "zh": "他来到中国。",
     "pinyin": "Tā láidào Zhōngguó.",
-    "vi": "He came to China.",
+    "vi": "Anh ấy đã đến Trung Quốc.",
     "words": [
       "他",
       "来到",
@@ -3435,7 +3435,7 @@
     "id": "s:l1:new3:016",
     "zh": "我回到北京。",
     "pinyin": "Wǒ huídào Běijīng.",
-    "vi": "I returned to Beijing.",
+    "vi": "Tôi đã trở về Bắc Kinh.",
     "words": [
       "我",
       "回到",
@@ -3446,7 +3446,7 @@
     "id": "s:l1:new3:017",
     "zh": "我有机票。",
     "pinyin": "Wǒ yǒu jīpiào.",
-    "vi": "I have a plane ticket.",
+    "vi": "Tôi có vé máy bay.",
     "words": [
       "我",
       "有",
@@ -3457,7 +3457,7 @@
     "id": "s:l1:new3:018",
     "zh": "机场在哪儿？",
     "pinyin": "Jīchǎng zài nǎr?",
-    "vi": "Where is the airport?",
+    "vi": "Sân bay ở đâu?",
     "words": [
       "机场",
       "在",
@@ -3468,7 +3468,7 @@
     "id": "s:l1:new3:019",
     "zh": "中国是一个大国家。",
     "pinyin": "Zhōngguó shì yī gè dà guójiā.",
-    "vi": "China is a big country.",
+    "vi": "Trung Quốc là một quốc gia lớn.",
     "words": [
       "中国",
       "是",
@@ -3482,7 +3482,7 @@
     "id": "s:l1:new3:020",
     "zh": "他是外国人。",
     "pinyin": "Tā shì wàiguó rén.",
-    "vi": "He is a foreigner.",
+    "vi": "Anh ấy là người nước ngoài.",
     "words": [
       "他",
       "是",
@@ -3494,7 +3494,7 @@
     "id": "s:l1:new3:021",
     "zh": "门票多少？",
     "pinyin": "Ménpiào duōshao?",
-    "vi": "How much is the ticket?",
+    "vi": "Vé vào cửa bao nhiêu tiền?",
     "words": [
       "门票",
       "多少"
@@ -3504,7 +3504,7 @@
     "id": "s:l1:new3:022",
     "zh": "我在学习。",
     "pinyin": "Wǒ zài xuéxí.",
-    "vi": "I'm studying.",
+    "vi": "Tôi đang học.",
     "words": [
       "我",
       "在",
@@ -3515,7 +3515,7 @@
     "id": "s:l1:new3:023",
     "zh": "他在读书。",
     "pinyin": "Tā zài dúshū.",
-    "vi": "He is reading.",
+    "vi": "Anh ấy đang đọc sách.",
     "words": [
       "他",
       "在",
@@ -3526,7 +3526,7 @@
     "id": "s:l1:new3:024",
     "zh": "老师教我们写字。",
     "pinyin": "Lǎoshī jiāo wǒmen xiě zì.",
-    "vi": "The teacher teaches us to write characters.",
+    "vi": "Giáo viên dạy chúng tôi viết chữ.",
     "words": [
       "老师",
       "教",
@@ -3539,7 +3539,7 @@
     "id": "s:l1:new3:025",
     "zh": "这本书很好。",
     "pinyin": "Zhè běn shū hěn hǎo.",
-    "vi": "This book is very good.",
+    "vi": "Cuốn sách này rất hay.",
     "words": [
       "这",
       "本",
@@ -3552,7 +3552,7 @@
     "id": "s:l1:new3:026",
     "zh": "课本在书包里。",
     "pinyin": "Kèběn zài shūbāo lǐ.",
-    "vi": "The textbook is in the schoolbag.",
+    "vi": "Sách giáo khoa ở trong cặp.",
     "words": [
       "课本",
       "在",
@@ -3564,7 +3564,7 @@
     "id": "s:l1:new3:027",
     "zh": "我去书店。",
     "pinyin": "Wǒ qù shūdiàn.",
-    "vi": "I'm going to the bookstore.",
+    "vi": "Tôi đi đến hiệu sách.",
     "words": [
       "我",
       "去",
@@ -3575,7 +3575,7 @@
     "id": "s:l1:new3:028",
     "zh": "一个本子。",
     "pinyin": "Yī gè běnzi.",
-    "vi": "One notebook.",
+    "vi": "Một quyển vở.",
     "words": [
       "一",
       "个",
@@ -3586,7 +3586,7 @@
     "id": "s:l1:new3:029",
     "zh": "他是男生。",
     "pinyin": "Tā shì nánshēng.",
-    "vi": "He is a boy (student).",
+    "vi": "Anh ấy là học sinh nam.",
     "words": [
       "他",
       "是",
@@ -3597,7 +3597,7 @@
     "id": "s:l1:new3:030",
     "zh": "她是女生。",
     "pinyin": "Tā shì nǚshēng.",
-    "vi": "She is a girl (student).",
+    "vi": "Cô ấy là học sinh nữ.",
     "words": [
       "她",
       "是",
@@ -3608,7 +3608,7 @@
     "id": "s:l1:new3:031",
     "zh": "小朋友们好！",
     "pinyin": "Xiǎopéngyoumen hǎo!",
-    "vi": "Hello, children!",
+    "vi": "Chào các bạn nhỏ!",
     "words": [
       "小朋友",
       "们",
@@ -3619,7 +3619,7 @@
     "id": "s:l1:new3:032",
     "zh": "那个男孩儿是我弟。",
     "pinyin": "Nàge nánháir shì wǒ dì.",
-    "vi": "That boy is my younger brother.",
+    "vi": "Cậu bé đó là em trai tôi.",
     "words": [
       "那",
       "个",
@@ -3633,7 +3633,7 @@
     "id": "s:l1:new3:033",
     "zh": "她是我女朋友。",
     "pinyin": "Tā shì wǒ nǚpéngyou.",
-    "vi": "She is my girlfriend.",
+    "vi": "Cô ấy là bạn gái tôi.",
     "words": [
       "她",
       "是",
@@ -3645,7 +3645,7 @@
     "id": "s:l1:new3:034",
     "zh": "姐，你好！",
     "pinyin": "Jiě, nǐ hǎo!",
-    "vi": "Hey sis, hello!",
+    "vi": "Chị ơi, chào chị!",
     "words": [
       "姐",
       "你",
@@ -3656,7 +3656,7 @@
     "id": "s:l1:new3:035",
     "zh": "小孩儿在哪儿？",
     "pinyin": "Xiǎoháir zài nǎr?",
-    "vi": "Where is the child?",
+    "vi": "Đứa trẻ ở đâu?",
     "words": [
       "小孩儿",
       "在",

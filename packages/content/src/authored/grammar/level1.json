@@ -1,9 +1,9 @@
 [
   {
     "id": "g:ba-suggestion",
-    "title": "吧 for suggestions and requests",
+    "title": "吧 dùng để gợi ý và đề nghị",
     "pattern": "Sentence + 吧",
-    "explanation": "吧 (ba) softens a sentence into a suggestion, request, or guess. 我们去吧 sounds like \"Let's go\", friendlier than a plain statement. It always comes at the very end of the sentence.",
+    "explanation": "吧 (ba) làm câu nói trở nên nhẹ nhàng hơn, mang tính gợi ý, đề nghị hoặc phỏng đoán. 我们去吧 nghe giống như \"Đi thôi nào\", thân thiện hơn một câu khẳng định bình thường. 吧 luôn đứng ở cuối câu.",
     "level": 1,
     "examples": [
       "s:l1:029",
@@ -14,9 +14,9 @@
   },
   {
     "id": "g:bai-hundred",
-    "title": "百 for hundred",
+    "title": "百 chỉ số hàng trăm",
     "pattern": "Number + 百 (+ measure word)",
-    "explanation": "百 (bǎi) means \"hundred\". Build numbers the same way as with 十: 一百 (100), 两百 (200) — use 两, not 二, before 百 just as with other measure words.",
+    "explanation": "百 (bǎi) nghĩa là \"trăm\". Ghép số theo cách tương tự như với 十: 一百 (100), 两百 (200) — dùng 两 chứ không dùng 二 trước 百, giống như trước các lượng từ khác.",
     "level": 1,
     "examples": [
       "s:l1:161",
@@ -27,9 +27,9 @@
   },
   {
     "id": "g:bang-help",
-    "title": "帮 for helping someone",
+    "title": "帮 dùng để giúp đỡ ai đó",
     "pattern": "Subject + 帮 + person (+ verb)",
-    "explanation": "帮 (bāng) means \"to help\". Put it before the person being helped, and optionally follow with a verb to say what the help is for: 他帮我们找 (\"He's helping us look\").",
+    "explanation": "帮 (bāng) nghĩa là \"giúp\". Đặt 帮 trước người được giúp, và có thể thêm động từ phía sau để nói rõ giúp làm việc gì: 他帮我们找 (\"Anh ấy đang giúp chúng tôi tìm\").",
     "level": 1,
     "examples": [
       "s:l1:081",
@@ -40,9 +40,9 @@
   },
   {
     "id": "g:banian-halfunit",
-    "title": "半天 and 半年 for stretches of time",
+    "title": "半天 và 半年 chỉ khoảng thời gian",
     "pattern": "半 + time word (天/年)",
-    "explanation": "半 (\"half\") combines with time words to describe a duration: 半天 (\"half a day\", often used loosely to mean \"a long while\"), 半年 (\"half a year\"). Place the resulting phrase where any duration or time word would go.",
+    "explanation": "半 (\"nửa\") kết hợp với từ chỉ thời gian để diễn tả một khoảng thời gian: 半天 (\"nửa ngày\", thường được dùng với nghĩa rộng là \"một khoảng thời gian khá lâu\"), 半年 (\"nửa năm\"). Đặt cụm từ này ở vị trí mà một từ chỉ thời lượng hay thời gian thường đứng.",
     "level": 1,
     "examples": [
       "s:l1:216",
@@ -52,9 +52,9 @@
   },
   {
     "id": "g:bi-comparison",
-    "title": "比 for comparisons",
+    "title": "比 dùng để so sánh",
     "pattern": "A + 比 + B + adjective",
-    "explanation": "比 (bǐ) compares two things directly: A 比 B + adjective means \"A is more [adjective] than B\". Don't add 很 before the adjective in this pattern — 比 already carries the comparison.",
+    "explanation": "比 (bǐ) dùng để so sánh trực tiếp hai đối tượng: A 比 B + tính từ nghĩa là \"A [tính từ] hơn B\". Không thêm 很 trước tính từ trong mẫu câu này — vì bản thân 比 đã mang nghĩa so sánh rồi.",
     "level": 1,
     "examples": [
       "s:l1:057",
@@ -65,9 +65,9 @@
   },
   {
     "id": "g:bie-prohibition",
-    "title": "别 for telling someone not to",
+    "title": "别 dùng để bảo ai đó đừng làm gì",
     "pattern": "别 + verb (+ object)",
-    "explanation": "别 (bié) means \"don't\" and goes right before the verb, giving a direct instruction. Adding 了 at the end, as in 别说了, softens it to \"stop doing that\" rather than a flat prohibition.",
+    "explanation": "别 (bié) nghĩa là \"đừng\" và đứng ngay trước động từ, tạo thành một mệnh lệnh trực tiếp. Thêm 了 vào cuối câu, như trong 别说了, sẽ làm câu nhẹ đi thành \"thôi đừng làm nữa\" thay vì một lệnh cấm cứng nhắc.",
     "level": 1,
     "examples": [
       "s:l1:065",
@@ -78,9 +78,9 @@
   },
   {
     "id": "g:bu-negation",
-    "title": "Negating with 不",
+    "title": "Phủ định với 不",
     "pattern": "不 + verb / adjective",
-    "explanation": "不 (bù) goes directly before a verb or adjective to negate it: 不是 (is not), 不在 (is not at/there). Before a 4th-tone syllable such as 是 or 在, 不 is pronounced bú.",
+    "explanation": "不 (bù) đứng ngay trước động từ hoặc tính từ để phủ định: 不是 (không phải là), 不在 (không có ở đó). Trước một âm tiết thanh 4 như 是 hay 在, 不 được đọc là bú.",
     "level": 1,
     "examples": [
       "s:l1:003",
@@ -90,9 +90,9 @@
   },
   {
     "id": "g:buda-notvery",
-    "title": "不大 for \"not very\"",
+    "title": "不大 nghĩa là \"không lắm\"",
     "pattern": "不大 + verb/adjective",
-    "explanation": "不大 (bú dà) means \"not very\" or \"not really\", softening a negative statement: 不大喜欢 (\"doesn't like very much\"), 不大想去 (\"doesn't really want to go\"). It's a gentler alternative to a flat 不喜欢 or 不想去.",
+    "explanation": "不大 (bú dà) nghĩa là \"không lắm\" hay \"không hẳn là\", làm câu phủ định trở nên nhẹ nhàng hơn: 不大喜欢 (\"không thích lắm\"), 不大想去 (\"không muốn đi lắm\"). Đây là cách nói nhẹ nhàng hơn so với 不喜欢 hay 不想去 thẳng thừng.",
     "level": 1,
     "examples": [
       "s:l1:219",
@@ -102,9 +102,9 @@
   },
   {
     "id": "g:budui-wrong",
-    "title": "不对 for \"wrong/incorrect\"",
+    "title": "不对 nghĩa là \"sai/không đúng\"",
     "pattern": "Subject + 不对",
-    "explanation": "不对 (búduì) is a fixed phrase meaning \"wrong\" or \"incorrect\", used as a complete predicate on its own: 这不对 (\"This is wrong\"). It's a quick way to correct someone or point out a mistake.",
+    "explanation": "不对 (búduì) là một cụm cố định nghĩa là \"sai\" hay \"không đúng\", có thể tự nó đứng làm vị ngữ trọn vẹn: 这不对 (\"Cái này sai rồi\"). Đây là cách nhanh gọn để sửa lỗi hoặc chỉ ra điều gì đó không đúng.",
     "level": 1,
     "examples": [
       "s:l1:172",
@@ -114,9 +114,9 @@
   },
   {
     "id": "g:buke-qi",
-    "title": "不客气 for \"you're welcome\"",
+    "title": "不客气 nghĩa là \"không có gì\"",
     "pattern": "不客气",
-    "explanation": "不客气 (bú kèqi) is the standard reply to 谢谢 (\"thank you\"), similar to \"you're welcome\" or \"don't mention it\". Literally it means \"don't be (so) polite\".",
+    "explanation": "不客气 (bú kèqi) là câu đáp lại chuẩn cho 谢谢 (\"cảm ơn\"), tương đương với \"không có gì\" hay \"đừng khách sáo\". Nghĩa đen của nó là \"đừng (quá) khách sáo\".",
     "level": 1,
     "examples": [
       "s:l1:200",
@@ -126,9 +126,9 @@
   },
   {
     "id": "g:buyong-neednt",
-    "title": "不用 for \"no need to\"",
+    "title": "不用 nghĩa là \"không cần\"",
     "pattern": "不用 + verb",
-    "explanation": "不用 (búyòng) means there's no need to do something — softer than telling someone not to with 别. 不用了，谢谢 (\"No need, thanks\") is a common way to politely decline an offer.",
+    "explanation": "不用 (búyòng) nghĩa là không cần làm việc gì đó — nhẹ nhàng hơn so với việc bảo ai đó đừng làm bằng 别. 不用了，谢谢 (\"Không cần đâu, cảm ơn\") là cách phổ biến để từ chối một lời đề nghị một cách lịch sự.",
     "level": 1,
     "examples": [
       "s:l1:128",
@@ -139,9 +139,9 @@
   },
   {
     "id": "g:changchang-frequency",
-    "title": "常/常常 for \"often\"",
+    "title": "常/常常 nghĩa là \"thường\"",
     "pattern": "常 / 常常 + verb",
-    "explanation": "常 (cháng) means \"often\", and doubling it to 常常 (chángcháng) makes the same meaning a little more emphatic and conversational. Both go directly before the verb, just like other frequency adverbs such as 也 and 都.",
+    "explanation": "常 (cháng) nghĩa là \"thường\", và khi lặp thành 常常 (chángcháng) thì nghĩa vẫn vậy nhưng nhấn mạnh hơn và mang tính khẩu ngữ hơn một chút. Cả hai đều đứng ngay trước động từ, giống như các phó từ tần suất khác như 也 và 都.",
     "level": 1,
     "examples": [
       "s:l1:132",
@@ -152,9 +152,9 @@
   },
   {
     "id": "g:chuan-clothes",
-    "title": "Wearing clothes with 穿",
+    "title": "Mặc quần áo với 穿",
     "pattern": "subject + 穿 + clothing",
-    "explanation": "穿 (chuān) means 'to wear' for clothing: 他穿新衣服 (He wears new clothes). 好看 (hǎokàn, good-looking) can describe people or things.",
+    "explanation": "穿 (chuān) nghĩa là \"mặc\" quần áo: 他穿新衣服 (Anh ấy mặc quần áo mới). 好看 (hǎokàn, đẹp/ưa nhìn) có thể dùng để miêu tả người hoặc đồ vật.",
     "level": 1,
     "examples": [
       "s:l1:new:070",
@@ -163,9 +163,9 @@
   },
   {
     "id": "g:dao-destination",
-    "title": "到 for reaching a destination",
+    "title": "到 dùng để chỉ việc đến được một nơi nào đó",
     "pattern": "来到 / 回到 + place",
-    "explanation": "到 (dào) means 'to arrive at'. Combined with 来 or 回 it shows completed movement toward a destination: 来到北京 (came to Beijing), 回到中国 (returned to China).",
+    "explanation": "到 (dào) nghĩa là \"đến được, tới nơi\". Kết hợp với 来 hoặc 回, nó thể hiện sự di chuyển đã hoàn tất đến một điểm đến: 来到北京 (đã đến Bắc Kinh), 回到中国 (đã trở về Trung Quốc).",
     "level": 1,
     "examples": [
       "s:l1:new3:015",
@@ -174,9 +174,9 @@
   },
   {
     "id": "g:di-ordinal",
-    "title": "第 for ordinal numbers",
+    "title": "第 dùng để tạo số thứ tự",
     "pattern": "第 + number",
-    "explanation": "第 (dì) turns a plain number into an ordinal: 第二 (\"second\"), 第一 (\"first\"). Compare 两个 (\"two [things]\") with 第二个 (\"the second [thing]\") — the meaning changes completely once 第 is added.",
+    "explanation": "第 (dì) biến một số đếm bình thường thành số thứ tự: 第二 (\"thứ hai\"), 第一 (\"thứ nhất\"). So sánh 两个 (\"hai [cái]\") với 第二个 (\"cái thứ hai\") — nghĩa thay đổi hoàn toàn khi thêm 第 vào.",
     "level": 1,
     "examples": [
       "s:l1:100",
@@ -187,9 +187,9 @@
   },
   {
     "id": "g:direction-bian",
-    "title": "Direction + 边",
+    "title": "Phương hướng + 边",
     "pattern": "方位词 + 边",
-    "explanation": "Add 边 (biān, side) to a direction word to say 'on the left/right/east/etc. side': 左边 (left side), 右边 (right side), 前边 (front), 后边 (back). These follow 在 to say where something is: 在左边 (on the left).",
+    "explanation": "Thêm 边 (biān, bên/phía) vào một từ chỉ phương hướng để nói \"ở bên trái/phải/đông/v.v.\": 左边 (bên trái), 右边 (bên phải), 前边 (phía trước), 后边 (phía sau). Các từ này thường đi sau 在 để nói vị trí của sự vật: 在左边 (ở bên trái).",
     "level": 1,
     "examples": [
       "s:l1:new3:009",
@@ -199,9 +199,9 @@
   },
   {
     "id": "g:directions-basic",
-    "title": "Basic direction words",
+    "title": "Các từ chỉ phương hướng cơ bản",
     "pattern": "东/西/南/北 + noun",
-    "explanation": "Direction words come before what they describe: 东 (dōng, east), 西 (xī, west), 南 (nán, south), 北 (běi, north). 上 (up) and 下 (down) also indicate direction.",
+    "explanation": "Các từ chỉ phương hướng đứng trước từ mà chúng miêu tả: 东 (dōng, đông), 西 (xī, tây), 南 (nán, nam), 北 (běi, bắc). 上 (trên) và 下 (dưới) cũng dùng để chỉ phương hướng.",
     "level": 1,
     "examples": [
       "s:l1:new:060",
@@ -210,9 +210,9 @@
   },
   {
     "id": "g:duibuqi-apology",
-    "title": "对不起 and 没什么",
+    "title": "对不起 và 没什么",
     "pattern": "对不起 (apology) / 没什么 (it's nothing)",
-    "explanation": "对不起 (duìbuqǐ) means \"I'm sorry\" or \"excuse me\", used to apologize or get someone's attention. 没什么 (méi shénme) is a common reply meaning \"it's nothing\" or \"no big deal\".",
+    "explanation": "对不起 (duìbuqǐ) nghĩa là \"xin lỗi\", dùng để xin lỗi hoặc để gây sự chú ý của ai đó. 没什么 (méi shénme) là câu đáp lại thông dụng, nghĩa là \"không có gì\" hay \"không vấn đề gì\".",
     "level": 1,
     "examples": [
       "s:l1:145",
@@ -223,9 +223,9 @@
   },
   {
     "id": "g:duoshao-question",
-    "title": "多少 for \"how many/how much\"",
+    "title": "多少 nghĩa là \"bao nhiêu\"",
     "pattern": "多少 + (measure word) + noun?",
-    "explanation": "多少 (duōshao) asks about quantity, especially larger numbers, prices, or amounts: 多少钱? (\"How much money?\"). Unlike 几, 多少 doesn't require a measure word before the noun, though one can still be added.",
+    "explanation": "多少 (duōshao) dùng để hỏi về số lượng, đặc biệt là những con số lớn, giá cả, hay khối lượng: 多少钱? (\"Bao nhiêu tiền?\"). Khác với 几, 多少 không bắt buộc phải có lượng từ trước danh từ, dù vẫn có thể thêm vào.",
     "level": 1,
     "examples": [
       "s:l1:096",
@@ -236,9 +236,9 @@
   },
   {
     "id": "g:er-vs-liang",
-    "title": "二 vs 两 for the number two",
+    "title": "二 và 两 khi nói về số hai",
     "pattern": "两 + measure word / 二 in counting and labels",
-    "explanation": "Both 二 (èr) and 两 (liǎng) mean \"two\", but they aren't interchangeable. Use 两 before a measure word like 个 when counting things (两个), and use 二 for counting in sequence, dates, and labels like 二月 (February) or 第二 (second).",
+    "explanation": "Cả 二 (èr) và 两 (liǎng) đều nghĩa là \"hai\", nhưng không thể dùng thay thế cho nhau tùy tiện. Dùng 两 trước lượng từ như 个 khi đếm đồ vật (两个), và dùng 二 khi đếm theo thứ tự, trong ngày tháng, hay các nhãn như 二月 (tháng Hai) hoặc 第二 (thứ hai).",
     "level": 1,
     "examples": [
       "s:l1:108",
@@ -249,9 +249,9 @@
   },
   {
     "id": "g:erhua-suffix",
-    "title": "儿 as a colloquial suffix (erhua)",
+    "title": "儿 như một hậu tố khẩu ngữ (erhua)",
     "pattern": "word + 儿",
-    "explanation": "Adding 儿 (r) to certain words gives them a casual, spoken flavor typical of northern Mandarin: 那 → 那儿 (\"there\"), 玩 → 玩儿 (\"to play\"), 女孩 → 女孩儿 (\"girl\"). It's written as its own character but pronounced fused onto the syllable before it, and doesn't change the core meaning.",
+    "explanation": "Thêm 儿 (r) vào một số từ tạo cho chúng sắc thái khẩu ngữ, thân mật, đặc trưng của tiếng Quan thoại miền Bắc: 那 → 那儿 (\"ở đó/kia\"), 玩 → 玩儿 (\"chơi\"), 女孩 → 女孩儿 (\"con gái\"). 儿 được viết như một chữ riêng nhưng khi đọc thì hòa vào âm tiết đứng trước nó, và không làm thay đổi nghĩa gốc của từ.",
     "level": 1,
     "examples": [
       "s:l1:195",
@@ -263,9 +263,9 @@
   },
   {
     "id": "g:fangwei-bian",
-    "title": "方位词 + 边 for location words",
+    "title": "方位词 + 边 tạo từ chỉ vị trí",
     "pattern": "direction + 边 (东边/西边/南边/北边/上边/下边/前边/后边/左边/右边/里边/外边)",
-    "explanation": "Adding 边 (biān) to a direction or position word makes a full location noun: 左边 (\"the left side\"), 里边 (\"the inside\"), 前边 (\"the front\"). These combine naturally with 在: 商店在右边 (\"The store is on the right\").",
+    "explanation": "Thêm 边 (biān) vào một từ chỉ phương hướng hay vị trí sẽ tạo thành một danh từ chỉ nơi chốn hoàn chỉnh: 左边 (\"bên trái\"), 里边 (\"bên trong\"), 前边 (\"phía trước\"). Các từ này kết hợp tự nhiên với 在: 商店在右边 (\"Cửa hàng ở bên phải\").",
     "level": 1,
     "examples": [
       "s:l1:176",
@@ -277,9 +277,9 @@
   },
   {
     "id": "g:ganshenme-colloquial",
-    "title": "干什么 as a casual \"what are you doing\"",
+    "title": "干什么 - cách nói thân mật của \"đang làm gì\"",
     "pattern": "(在) + 干什么?",
-    "explanation": "干什么 (gànshénme) is a casual way to ask what someone is doing or up to, similar to 做什么 but more conversational. It's often paired with 在 to ask about an action in progress: 你在干什么? (\"What are you doing?\")",
+    "explanation": "干什么 (gànshénme) là cách hỏi thân mật về việc ai đó đang làm gì, giống 做什么 nhưng mang tính khẩu ngữ hơn. 干什么 thường đi cùng 在 để hỏi về một hành động đang diễn ra: 你在干什么? (\"Bạn đang làm gì vậy?\")",
     "level": 1,
     "examples": [
       "s:l1:169",
@@ -289,9 +289,9 @@
   },
   {
     "id": "g:gei-dianhua",
-    "title": "给...打电话 for calling someone",
+    "title": "给...打电话 dùng để gọi điện cho ai đó",
     "pattern": "给 + person + 打电话",
-    "explanation": "打电话 (dǎ diànhuà) means \"to make a phone call\". To say who you're calling, insert 给 + person right before it: 我给你打电话 (\"I'll call you\"). Don't put the person directly before 打电话 without 给.",
+    "explanation": "打电话 (dǎ diànhuà) nghĩa là \"gọi điện thoại\". Để nói gọi cho ai, chèn 给 + người đó ngay trước cụm này: 我给你打电话 (\"Tôi sẽ gọi điện cho bạn\"). Không đặt tên người trực tiếp trước 打电话 mà thiếu 给.",
     "level": 1,
     "examples": [
       "s:l1:136",
@@ -302,9 +302,9 @@
   },
   {
     "id": "g:gei-recipient",
-    "title": "给 for giving to someone",
+    "title": "给 dùng để đưa/cho ai đó",
     "pattern": "Subject + 给 + person (+ object)",
-    "explanation": "给 (gěi) means \"to give\" or introduces the person something is done \"for/to\". It comes before the recipient: 我给你 means \"I give it to you\". Like other simple verbs, it can stand alone in a short sentence.",
+    "explanation": "给 (gěi) nghĩa là \"cho, đưa\", hoặc dùng để giới thiệu người mà một việc được làm \"cho/vì\". 给 đứng trước người nhận: 我给你 nghĩa là \"Tôi cho bạn [cái đó]\". Giống như các động từ đơn giản khác, 给 có thể đứng một mình trong một câu ngắn.",
     "level": 1,
     "examples": [
       "s:l1:017",
@@ -315,9 +315,9 @@
   },
   {
     "id": "g:gen-with",
-    "title": "跟 for \"with someone\"",
+    "title": "跟 nghĩa là \"cùng với ai đó\"",
     "pattern": "Subject + 跟 + person + verb",
-    "explanation": "跟 (gēn) introduces a companion — \"with\" someone. It comes before the verb, not after: 我跟你去 (\"I'll go with you\"), not 我去跟你.",
+    "explanation": "跟 (gēn) giới thiệu người đi cùng — nghĩa \"cùng với\". 跟 đứng trước động từ, không đứng sau: 我跟你去 (\"Tôi đi cùng bạn\"), chứ không phải 我去跟你.",
     "level": 1,
     "examples": [
       "s:l1:053",
@@ -328,9 +328,9 @@
   },
   {
     "id": "g:hanzi-hanyu",
-    "title": "汉语, 中文, and 汉字",
+    "title": "汉语, 中文, và 汉字",
     "pattern": "汉语/中文 (the language) vs 汉字 (the characters)",
-    "explanation": "汉语 (Hànyǔ) and 中文 (Zhōngwén) both mean \"the Chinese language\" and are largely interchangeable in speech. 汉字 (Hànzì) refers specifically to Chinese written characters, not the spoken language.",
+    "explanation": "汉语 (Hànyǔ) và 中文 (Zhōngwén) đều có nghĩa là \"tiếng Trung\", và trong lời nói hai từ này gần như có thể dùng thay cho nhau. 汉字 (Hànzì) chỉ riêng chữ viết Trung Quốc, không phải ngôn ngữ nói.",
     "level": 1,
     "examples": [
       "s:l1:222",
@@ -340,9 +340,9 @@
   },
   {
     "id": "g:hen-adjective",
-    "title": "很 + adjective for descriptions",
+    "title": "很 + tính từ để miêu tả",
     "pattern": "Subject + 很 + adjective",
-    "explanation": "很 (hěn) goes right before an adjective used as the predicate, since Chinese adjectives don't need a separate \"to be\" verb. Even when it isn't emphasizing \"very\", 很 is often still included just to sound natural — an adjective alone can sound like an unfinished comparison. Never add 是 before the adjective.",
+    "explanation": "很 (hěn) đứng ngay trước tính từ làm vị ngữ, vì tính từ trong tiếng Trung không cần động từ \"là\" riêng. Ngay cả khi không nhấn mạnh nghĩa \"rất\", 很 vẫn thường được thêm vào chỉ để câu nghe tự nhiên hơn — một tính từ đứng một mình có thể nghe như một câu so sánh còn dang dở. Không bao giờ thêm 是 trước tính từ.",
     "level": 1,
     "examples": [
       "s:l1:009",
@@ -353,9 +353,9 @@
   },
   {
     "id": "g:jiao-naming",
-    "title": "叫 for names and calling out",
+    "title": "叫 dùng để nói tên và gọi ai đó",
     "pattern": "Subject + 叫 + name/word",
-    "explanation": "叫 (jiào) means \"to be called\" when introducing a name, and \"to call out to\" when the object is a person. 他叫什么? asks what someone or something is called.",
+    "explanation": "叫 (jiào) nghĩa là \"được gọi là\" khi giới thiệu tên, và nghĩa là \"gọi\" khi tân ngữ là một người. 他叫什么? dùng để hỏi ai đó hay cái gì đó được gọi là gì.",
     "level": 1,
     "examples": [
       "s:l1:061",
@@ -366,9 +366,9 @@
   },
   {
     "id": "g:jieguo-complement",
-    "title": "Resultative complements with 到 and 见",
+    "title": "Bổ ngữ kết quả với 到 và 见",
     "pattern": "verb + 到 / 见",
-    "explanation": "Adding 到 (dào) or 见 (jiàn) right after a verb shows the action succeeded, not just that it was attempted: 找到 (\"found\", not just \"looked for\"), 看见 (\"saw\", not just \"looked at\"), 听到 (\"heard\"), 回到 (\"made it back to\"). Without the complement, 看 and 听 only describe the effort, not the outcome.",
+    "explanation": "Thêm 到 (dào) hoặc 见 (jiàn) ngay sau động từ để thể hiện hành động đã thành công, chứ không chỉ là đã cố gắng thực hiện: 找到 (\"tìm thấy\", chứ không chỉ là \"tìm\"), 看见 (\"nhìn thấy\", chứ không chỉ là \"nhìn\"), 听到 (\"nghe thấy\"), 回到 (\"đã quay về tới\"). Nếu không có bổ ngữ này, 看 và 听 chỉ miêu tả hành động, không nói lên kết quả.",
     "level": 1,
     "examples": [
       "s:l1:124",
@@ -379,9 +379,9 @@
   },
   {
     "id": "g:kaihui-vo",
-    "title": "开 with different objects",
+    "title": "开 kết hợp với các tân ngữ khác nhau",
     "pattern": "开 + object (会/车/玩笑)",
-    "explanation": "开 (kāi) changes meaning depending on what follows it: 开会 (\"to hold/attend a meeting\"), 开车 (\"to drive\"), 开玩笑 (\"to joke around\"). Each combination is learned as its own fixed expression rather than built freshly each time.",
+    "explanation": "开 (kāi) thay đổi nghĩa tùy vào từ đứng sau nó: 开会 (\"họp\"), 开车 (\"lái xe\"), 开玩笑 (\"đùa giỡn\"). Mỗi cách kết hợp nên được học như một cụm từ cố định riêng, chứ không phải ghép tự do mỗi lần.",
     "level": 1,
     "examples": [
       "s:l1:225",
@@ -391,9 +391,9 @@
   },
   {
     "id": "g:kan-bing",
-    "title": "Going to the doctor with 看病",
+    "title": "Đi khám bệnh với 看病",
     "pattern": "去 + 医院 + 看病",
-    "explanation": "看病 (kàn bìng) means 'to see a doctor'. Use 去医院看病 to say 'go to the hospital to see a doctor'.",
+    "explanation": "看病 (kàn bìng) nghĩa là \"khám bệnh\". Dùng 去医院看病 để nói \"đến bệnh viện khám bệnh\".",
     "level": 1,
     "examples": [
       "s:l1:new:042",
@@ -402,9 +402,9 @@
   },
   {
     "id": "g:ma-question",
-    "title": "吗 for yes/no questions",
+    "title": "吗 dùng cho câu hỏi có/không",
     "pattern": "Statement + 吗?",
-    "explanation": "Adding 吗 (ma) to the end of any statement turns it into a yes/no question, with no change in word order. 你好吗? means \"Are you well?\" This is a simpler alternative to verb-不-verb questions — don't combine the two in one sentence.",
+    "explanation": "Thêm 吗 (ma) vào cuối bất kỳ câu khẳng định nào sẽ biến nó thành câu hỏi có/không, mà không cần thay đổi trật tự từ. 你好吗? nghĩa là \"Bạn khỏe không?\" Đây là cách hỏi đơn giản hơn so với dạng câu hỏi động từ-不-động từ — không dùng cả hai cách trong cùng một câu.",
     "level": 1,
     "examples": [
       "s:l1:033",
@@ -415,9 +415,9 @@
   },
   {
     "id": "g:meal-times",
-    "title": "Meal words: 早饭, 午饭, 晚饭",
+    "title": "Từ chỉ bữa ăn: 早饭, 午饭, 晚饭",
     "pattern": "吃 + 早饭 / 午饭 / 晚饭",
-    "explanation": "Chinese names meals by time of day: 早饭 (morning rice = breakfast), 午饭 (noon rice = lunch), 晚饭 (evening rice = dinner). Use 吃 before them: 吃早饭 (eat breakfast).",
+    "explanation": "Tiếng Trung gọi tên các bữa ăn theo thời điểm trong ngày: 早饭 (cơm sáng = bữa sáng), 午饭 (cơm trưa = bữa trưa), 晚饭 (cơm tối = bữa tối). Dùng 吃 trước các từ này: 吃早饭 (ăn sáng).",
     "level": 1,
     "examples": [
       "s:l1:new3:001",
@@ -427,9 +427,9 @@
   },
   {
     "id": "g:measure-bei",
-    "title": "杯 as a measure word for drinks",
+    "title": "杯 làm lượng từ cho đồ uống",
     "pattern": "Number + 杯 + noun",
-    "explanation": "杯 (bēi) is the measure word for cups or glasses of a drink: 一杯水 (\"a cup of water\"). Like 个, it goes between the number and the noun and is required — you can't say 一水.",
+    "explanation": "杯 (bēi) là lượng từ dùng cho cốc/ly đồ uống: 一杯水 (\"một cốc nước\"). Giống như 个, nó đứng giữa số đếm và danh từ, và bắt buộc phải có — không thể nói 一水.",
     "level": 1,
     "examples": [
       "s:l1:112",
@@ -440,9 +440,9 @@
   },
   {
     "id": "g:meiguanxi-itsok",
-    "title": "没关系 for \"it's OK\"",
+    "title": "没关系 nghĩa là \"không sao\"",
     "pattern": "没关系",
-    "explanation": "没关系 (méi guānxi) means \"it doesn't matter\" or \"no worries\" — a common reply when someone apologizes or worries about causing trouble. It pairs naturally with 对不起.",
+    "explanation": "没关系 (méi guānxi) nghĩa là \"không sao đâu\" hay \"không có gì phải lo\" — một câu đáp phổ biến khi ai đó xin lỗi hoặc lo lắng vì đã gây phiền phức. 没关系 thường đi kèm tự nhiên với 对不起.",
     "level": 1,
     "examples": [
       "s:l1:181",
@@ -452,9 +452,9 @@
   },
   {
     "id": "g:meiyou-negation",
-    "title": "没 for negating past actions",
+    "title": "没 dùng để phủ định hành động trong quá khứ",
     "pattern": "没 + verb",
-    "explanation": "没 (méi) says an action didn't happen, which is different from 不, which negates general facts or habits. 我没去 means \"I didn't go\", not \"I don't go\". 没 is a short form of 没有 in this use.",
+    "explanation": "没 (méi) diễn tả một hành động đã không xảy ra, khác với 不 vốn dùng để phủ định sự việc chung chung hay thói quen. 我没去 nghĩa là \"Tôi đã không đi\", chứ không phải \"Tôi không đi [thường ngày]\". Trong cách dùng này, 没 là dạng rút gọn của 没有.",
     "level": 1,
     "examples": [
       "s:l1:021",
@@ -465,9 +465,9 @@
   },
   {
     "id": "g:men-plural-suffix",
-    "title": "们 as a plural suffix",
+    "title": "们 làm hậu tố số nhiều",
     "pattern": "person noun + 们",
-    "explanation": "们 (men) attaches to a noun referring to people to make it plural: 孩子们 (\"children\"), 朋友们 (\"friends\"). It's already built into 我们, 你们, and 他们, but can attach to other people-nouns the same way.",
+    "explanation": "们 (men) gắn vào một danh từ chỉ người để tạo số nhiều: 孩子们 (\"những đứa trẻ\"), 朋友们 (\"những người bạn\"). 们 đã có sẵn trong 我们, 你们, và 他们, nhưng cũng có thể gắn vào các danh từ chỉ người khác theo cách tương tự.",
     "level": 1,
     "examples": [
       "s:l1:089",
@@ -477,9 +477,9 @@
   },
   {
     "id": "g:mingzi-name",
-    "title": "Asking someone's name with 名字",
+    "title": "Hỏi tên ai đó với 名字",
     "pattern": "叫 + 什么 + 名字?",
-    "explanation": "你叫什么名字? (\"What's your name?\") is the standard way to ask a name, combining 叫 (\"to be called\") with 名字 (\"name\"). 名字 can also stand on its own as a noun, as in 他的名字 (\"his name\").",
+    "explanation": "你叫什么名字? (\"Bạn tên là gì?\") là cách hỏi tên chuẩn, kết hợp 叫 (\"được gọi là\") với 名字 (\"tên\"). 名字 cũng có thể đứng một mình như một danh từ, ví dụ 他的名字 (\"tên của anh ấy\").",
     "level": 1,
     "examples": [
       "s:l1:120",
@@ -490,9 +490,9 @@
   },
   {
     "id": "g:nali-where",
-    "title": "哪里/那里 for location",
+    "title": "哪里/那里 dùng để chỉ vị trí",
     "pattern": "在 + 哪里/那里",
-    "explanation": "哪里 (nǎlǐ) asks \"where\", and 那里 (nàlǐ) answers \"there\". Both pair naturally with 在: 你在哪里? (\"Where are you?\") and 他在那里 (\"He's over there\").",
+    "explanation": "哪里 (nǎlǐ) dùng để hỏi \"ở đâu\", còn 那里 (nàlǐ) dùng để trả lời \"ở đó\". Cả hai đều kết hợp tự nhiên với 在: 你在哪里? (\"Bạn đang ở đâu?\") và 他在那里 (\"Anh ấy ở đằng kia\").",
     "level": 1,
     "examples": [
       "s:l1:116",
@@ -503,9 +503,9 @@
   },
   {
     "id": "g:ne-followup",
-    "title": "呢 for follow-up questions",
+    "title": "呢 dùng cho câu hỏi tiếp nối",
     "pattern": "..., + noun + 呢?",
-    "explanation": "After stating something, 你呢? asks \"and you?\" without repeating the whole sentence. 呢 (ne) attaches to the topic being asked about and relies on context from what was just said.",
+    "explanation": "Sau khi nói điều gì đó, 你呢? dùng để hỏi \"còn bạn thì sao?\" mà không cần lặp lại cả câu. 呢 (ne) gắn vào chủ đề đang được hỏi và dựa vào ngữ cảnh vừa được nói trước đó.",
     "level": 1,
     "examples": [
       "s:l1:045",
@@ -516,9 +516,9 @@
   },
   {
     "id": "g:neng-ability",
-    "title": "能 for ability or permission",
+    "title": "能 nghĩa là \"có thể\" (khả năng hoặc sự cho phép)",
     "pattern": "Subject + 能 + verb",
-    "explanation": "能 (néng) means \"can\" — able to do something because of ability, permission, or circumstance. It goes directly before the verb. Negate it with 不能 (bù néng), \"cannot\".",
+    "explanation": "能 (néng) nghĩa là \"có thể\" — làm được việc gì đó nhờ khả năng, được cho phép, hoặc do hoàn cảnh cho phép. 能 đứng ngay trước động từ. Phủ định bằng 不能 (bù néng), nghĩa là \"không thể\".",
     "level": 1,
     "examples": [
       "s:l1:013",
@@ -529,9 +529,9 @@
   },
   {
     "id": "g:pangbian-location",
-    "title": "旁边 and 中间 for relative position",
+    "title": "旁边 và 中间 chỉ vị trí tương đối",
     "pattern": "Noun + 旁边 / 中间",
-    "explanation": "旁边 (pángbiān, \"next to/beside\") and 中间 (zhōngjiān, \"in the middle\") describe where something is relative to something else. Combine them with 在: 他在我旁边 (\"He's next to me\").",
+    "explanation": "旁边 (pángbiān, \"bên cạnh\") và 中间 (zhōngjiān, \"ở giữa\") miêu tả vị trí của một vật so với vật khác. Kết hợp chúng với 在: 他在我旁边 (\"Anh ấy ở bên cạnh tôi\").",
     "level": 1,
     "examples": [
       "s:l1:153",
@@ -542,9 +542,9 @@
   },
   {
     "id": "g:qing-please",
-    "title": "请 for polite requests",
+    "title": "请 dùng cho lời đề nghị lịch sự",
     "pattern": "请 + (person) + verb",
-    "explanation": "请 (qǐng) makes a request polite, like English \"please\". It comes at the very front of the sentence, before the person being addressed if one is named: 请你来 (\"Please come\").",
+    "explanation": "请 (qǐng) làm cho một lời đề nghị trở nên lịch sự, giống như \"làm ơn\" trong tiếng Việt. 请 đứng ở đầu câu, trước cả người được nhắc đến nếu có: 请你来 (\"Mời bạn đến\").",
     "level": 1,
     "examples": [
       "s:l1:069",
@@ -555,9 +555,9 @@
   },
   {
     "id": "g:qingwen-excuseme",
-    "title": "请问 for \"excuse me, may I ask\"",
+    "title": "请问 nghĩa là \"xin hỏi\"",
     "pattern": "请问, + question",
-    "explanation": "请问 (qǐngwèn) politely opens a question, similar to \"Excuse me, ...\" or \"May I ask...\". It always comes first, before the actual question.",
+    "explanation": "请问 (qǐngwèn) mở đầu một câu hỏi một cách lịch sự, tương tự \"Xin hỏi...\" hay \"Cho tôi hỏi...\". 请问 luôn đứng đầu, trước câu hỏi thực sự.",
     "level": 1,
     "examples": [
       "s:l1:184",
@@ -567,9 +567,9 @@
   },
   {
     "id": "g:shenme-question",
-    "title": "Asking with 什么 (\"what\")",
+    "title": "Hỏi với 什么 (\"gì\")",
     "pattern": "... + 什么 (+ object)?",
-    "explanation": "什么 (shénme) means \"what\". It stays in the position where the answer would go, rather than moving to the front of the sentence the way English \"what\" does. 你看什么? literally means \"you look-at what?\"",
+    "explanation": "什么 (shénme) nghĩa là \"gì\". Nó đứng ở đúng vị trí mà câu trả lời sẽ đứng, chứ không di chuyển lên đầu câu như từ \"what\" trong tiếng Anh. 你看什么? nghĩa đen là \"bạn nhìn gì?\"",
     "level": 1,
     "examples": [
       "s:l1:025",
@@ -580,9 +580,9 @@
   },
   {
     "id": "g:shi-family",
-    "title": "Introducing family with 是",
+    "title": "Giới thiệu người thân với 是",
     "pattern": "person + 是 + 我 + family member",
-    "explanation": "Use 是 (shì) to identify a family member: 他是我爸爸 (He is my dad). The pattern works for any family role.",
+    "explanation": "Dùng 是 (shì) để giới thiệu một thành viên trong gia đình: 他是我爸爸 (Anh ấy là bố tôi). Mẫu câu này áp dụng được cho bất kỳ vai trò nào trong gia đình.",
     "level": 1,
     "examples": [
       "s:l1:new:001",
@@ -592,9 +592,9 @@
   },
   {
     "id": "g:shi-sentences",
-    "title": "Linking with 是",
+    "title": "Liên kết với 是",
     "pattern": "A + 是 + B",
-    "explanation": "是 (shì) links a subject to what it is, like English \"to be\". It never changes form: 我是, 你是, 他是 all use the same 是. Negate it with 不是 (bú shì), never with 没.",
+    "explanation": "是 (shì) liên kết chủ ngữ với những gì nó là, giống động từ \"to be\" trong tiếng Anh. 是 không bao giờ thay đổi hình thức: 我是, 你是, 他是 đều dùng chung một chữ 是. Phủ định bằng 不是 (bú shì), không bao giờ dùng 没.",
     "level": 1,
     "examples": [
       "s:l1:001",
@@ -606,9 +606,9 @@
   },
   {
     "id": "g:short-family",
-    "title": "Short family forms: 哥, 姐, 弟, 妹",
+    "title": "Cách gọi rút gọn trong gia đình: 哥, 姐, 弟, 妹",
     "pattern": "哥 / 姐 / 弟 / 妹",
-    "explanation": "In casual speech, family titles can be shortened: 哥 (gē, older brother) instead of 哥哥, 姐 (jiě, older sister) instead of 姐姐, etc. These short forms also combine with other words: 男生 (boy student), 女生 (girl student).",
+    "explanation": "Trong lời nói thân mật, các danh xưng gia đình có thể được rút gọn: 哥 (gē, anh trai) thay cho 哥哥, 姐 (jiě, chị gái) thay cho 姐姐, v.v. Các dạng rút gọn này cũng có thể kết hợp với từ khác: 男生 (học sinh nam), 女生 (học sinh nữ).",
     "level": 1,
     "examples": [
       "s:l1:new3:029",
@@ -617,9 +617,9 @@
   },
   {
     "id": "g:sui-age",
-    "title": "岁 for stating age",
+    "title": "岁 dùng để nói tuổi",
     "pattern": "Subject + number + 岁",
-    "explanation": "To state age, put the number directly before 岁 (suì, \"years old\") with no verb needed — 是 is not used. 我三岁 means \"I am three years old\". 几岁 asks a child's age.",
+    "explanation": "Để nói tuổi, đặt số ngay trước 岁 (suì, \"tuổi\") mà không cần động từ — không dùng 是. 我三岁 nghĩa là \"Tôi ba tuổi\". 几岁 dùng để hỏi tuổi trẻ em.",
     "level": 1,
     "examples": [
       "s:l1:073",
@@ -630,9 +630,9 @@
   },
   {
     "id": "g:tai-le",
-    "title": "太...了 for \"too much\"",
+    "title": "太...了 nghĩa là \"quá\"",
     "pattern": "太 + adjective + 了",
-    "explanation": "太 (tài) means \"too\" or \"extremely\", and adding a sentence-final 了 emphasizes the degree. 太好了! is a common exclamation meaning \"Great!\" or \"That's wonderful!\", not a literal complaint.",
+    "explanation": "太 (tài) nghĩa là \"quá\" hay \"cực kỳ\", và thêm 了 ở cuối câu để nhấn mạnh mức độ. 太好了! là một câu cảm thán thông dụng nghĩa là \"Tuyệt quá!\", chứ không phải một lời phàn nàn theo nghĩa đen.",
     "level": 1,
     "examples": [
       "s:l1:037",
@@ -643,9 +643,9 @@
   },
   {
     "id": "g:time-of-day",
-    "title": "Telling time with 点 and 分",
+    "title": "Nói giờ với 点 và 分",
     "pattern": "number + 点 (+ number + 分)",
-    "explanation": "点 (diǎn) marks the hour and 分 (fēn) marks minutes: 三点 (3 o'clock), 三点十分 (3:10). Time goes before the verb: 我早上来 (I come in the morning).",
+    "explanation": "点 (diǎn) đánh dấu giờ và 分 (fēn) đánh dấu phút: 三点 (3 giờ), 三点十分 (3 giờ 10 phút). Từ chỉ thời gian đứng trước động từ: 我早上来 (Tôi đến vào buổi sáng).",
     "level": 1,
     "examples": [
       "s:l1:new:052",
@@ -654,9 +654,9 @@
   },
   {
     "id": "g:time-word-position",
-    "title": "Time words at the start of a sentence",
+    "title": "Từ chỉ thời gian đứng ở đầu câu",
     "pattern": "Time word + subject + verb",
-    "explanation": "Words like 明天 (\"tomorrow\") and 今天 (\"today\") usually come at the very start of a sentence or right after the subject — never at the end the way English often puts them. 明天我去 means \"Tomorrow I'll go\", with the time word up front.",
+    "explanation": "Các từ như 明天 (\"ngày mai\") và 今天 (\"hôm nay\") thường đứng ở đầu câu hoặc ngay sau chủ ngữ — không bao giờ đứng ở cuối câu như tiếng Anh hay đặt. 明天我去 nghĩa là \"Ngày mai tôi đi\", với từ chỉ thời gian đứng ở đầu.",
     "level": 1,
     "examples": [
       "s:l1:092",
@@ -668,9 +668,9 @@
   },
   {
     "id": "g:vo-compounds",
-    "title": "Verb-object compound words",
+    "title": "Từ ghép động từ-tân ngữ",
     "pattern": "verb + built-in object (吃饭, 上班, 见面, 起床, 唱歌...)",
-    "explanation": "Many common actions are written as a fixed verb + object pair that work together like a single verb: 吃饭 (\"to eat/have a meal\"), 上班 (\"to go to work\"), 见面 (\"to meet\"), 起床 (\"to get up\"), 唱歌 (\"to sing\"). Treat the whole pair as one unit — don't insert another object after it the way you would with an ordinary verb.",
+    "explanation": "Nhiều hành động thông dụng được viết thành một cặp động từ + tân ngữ cố định, hoạt động như một động từ duy nhất: 吃饭 (\"ăn cơm\"), 上班 (\"đi làm\"), 见面 (\"gặp mặt\"), 起床 (\"dậy, thức dậy\"), 唱歌 (\"hát\"). Hãy coi cả cặp từ này như một khối duy nhất — không chèn thêm tân ngữ khác phía sau như với một động từ thông thường.",
     "level": 1,
     "examples": [
       "s:l1:140",
@@ -682,9 +682,9 @@
   },
   {
     "id": "g:want-verb",
-    "title": "Saying what you want with 要",
+    "title": "Nói điều mình muốn với 要",
     "pattern": "subject + 要 + verb + object",
-    "explanation": "要 (yào) before a verb means 'want to': 我要吃饭 (I want to eat). 要 can also mean 'need' or 'will'.",
+    "explanation": "要 (yào) đứng trước động từ nghĩa là \"muốn\": 我要吃饭 (Tôi muốn ăn cơm). 要 cũng có thể mang nghĩa \"cần\" hoặc \"sẽ\".",
     "level": 1,
     "examples": [
       "s:l1:new:020",
@@ -693,9 +693,9 @@
   },
   {
     "id": "g:weather-desc",
-    "title": "Describing weather with 天气",
+    "title": "Miêu tả thời tiết với 天气",
     "pattern": "天气 + adjective",
-    "explanation": "天气 (tiānqì) means 'weather'. Describe it directly: 天气好 (The weather is good), 天气冷 (The weather is cold).",
+    "explanation": "天气 (tiānqì) nghĩa là \"thời tiết\". Miêu tả trực tiếp: 天气好 (Thời tiết đẹp), 天气冷 (Thời tiết lạnh).",
     "level": 1,
     "examples": [
       "s:l1:new:080",
@@ -704,9 +704,9 @@
   },
   {
     "id": "g:xian-first",
-    "title": "先 for \"first\" in a sequence",
+    "title": "先 nghĩa là \"trước\" trong một chuỗi hành động",
     "pattern": "先 + verb",
-    "explanation": "先 (xiān) means to do something first, before something else happens. It goes before the verb: 我先看 (\"I'll look first\"). It's often paired later with 再 (\"then\"), though each word can also stand alone.",
+    "explanation": "先 (xiān) nghĩa là làm việc gì đó trước, trước khi việc khác xảy ra. 先 đứng trước động từ: 我先看 (\"Tôi xem trước\"). 先 thường được dùng kèm với 再 (\"rồi sau đó\") ở các bài sau, nhưng mỗi từ cũng có thể đứng riêng.",
     "level": 1,
     "examples": [
       "s:l1:077",
@@ -717,9 +717,9 @@
   },
   {
     "id": "g:xiangdui-shijian",
-    "title": "The five relative day words",
+    "title": "Năm từ chỉ ngày tương đối",
     "pattern": "前天 / 昨天 / 今天 / 明天 / 后天",
-    "explanation": "Chinese has a tidy set of words for days relative to today: 前天 (\"the day before yesterday\"), 昨天 (\"yesterday\"), 今天 (\"today\"), 明天 (\"tomorrow\"), 后天 (\"the day after tomorrow\"). Like other time words, they go at the start of the sentence or right after the subject.",
+    "explanation": "Tiếng Trung có một bộ từ gọn gàng để chỉ các ngày so với hôm nay: 前天 (\"hôm kia\"), 昨天 (\"hôm qua\"), 今天 (\"hôm nay\"), 明天 (\"ngày mai\"), 后天 (\"ngày kia\"). Giống như các từ chỉ thời gian khác, chúng đứng ở đầu câu hoặc ngay sau chủ ngữ.",
     "level": 1,
     "examples": [
       "s:l1:203",
@@ -730,9 +730,9 @@
   },
   {
     "id": "g:xingqi-week",
-    "title": "星期 + number for days of the week",
+    "title": "星期 + số để chỉ các ngày trong tuần",
     "pattern": "星期 + number (一-六) / 星期 + 几?",
-    "explanation": "星期 (xīngqī) means \"week\", and adding a number one through six names that day of the week (星期一 = Monday). Ask which day it is with 星期几?. Sunday uses a different word, covered later.",
+    "explanation": "星期 (xīngqī) nghĩa là \"tuần\", và thêm một số từ một đến sáu sẽ gọi tên ngày đó trong tuần (星期一 = thứ Hai). Hỏi hôm nay thứ mấy bằng 星期几?. Riêng Chủ nhật dùng một từ khác, sẽ học ở phần sau.",
     "level": 1,
     "examples": [
       "s:l1:157",
@@ -743,9 +743,9 @@
   },
   {
     "id": "g:xingqitian-sunday",
-    "title": "星期天 and 星期日 for Sunday",
+    "title": "星期天 và 星期日 chỉ Chủ nhật",
     "pattern": "星期天 / 星期日",
-    "explanation": "Unlike the numbered weekdays (星期一 through 星期六), Sunday breaks the pattern: it's 星期天 or, more formally, 星期日 — both mean the same thing and are used interchangeably.",
+    "explanation": "Khác với các ngày trong tuần được đánh số (từ 星期一 đến 星期六), Chủ nhật phá vỡ quy luật này: gọi là 星期天, hoặc trang trọng hơn là 星期日 — cả hai đều mang nghĩa giống nhau và có thể dùng thay thế cho nhau.",
     "level": 1,
     "examples": [
       "s:l1:207",
@@ -755,9 +755,9 @@
   },
   {
     "id": "g:xuexi-study",
-    "title": "学习 for studying",
+    "title": "学习 nghĩa là \"học tập\"",
     "pattern": "学习 + subject / skill",
-    "explanation": "学习 (xuéxí) means 'to study' and is more formal than 学 alone. 读书 (dúshū, read books) is a general term for studying or reading.",
+    "explanation": "学习 (xuéxí) nghĩa là \"học\", và trang trọng hơn so với chỉ dùng 学. 读书 (dúshū, đọc sách) là từ chung để chỉ việc học hoặc đọc sách.",
     "level": 1,
     "examples": [
       "s:l1:new3:022",
@@ -767,9 +767,9 @@
   },
   {
     "id": "g:xuexiao-sheng",
-    "title": "School levels and their students",
+    "title": "Các cấp học và học sinh tương ứng",
     "pattern": "小学/中学/大学 (+ 生)",
-    "explanation": "小学 (\"elementary school\"), 中学 (\"middle school\"), and 大学 (\"university\") each combine with 生 to name a student at that level: 小学生, 中学生, 大学生. 学生 alone is the general word for \"student\".",
+    "explanation": "小学 (\"trường tiểu học\"), 中学 (\"trường trung học\"), và 大学 (\"trường đại học\") mỗi từ đều kết hợp với 生 để gọi tên học sinh/sinh viên ở cấp đó: 小学生, 中学生, 大学生. Riêng 学生 là từ chung để chỉ \"học sinh/sinh viên\".",
     "level": 1,
     "examples": [
       "s:l1:187",
@@ -780,9 +780,9 @@
   },
   {
     "id": "g:yidianr-quantity",
-    "title": "一点儿 for \"a little\"",
+    "title": "一点儿 nghĩa là \"một chút\"",
     "pattern": "verb/adjective + 一点儿",
-    "explanation": "一点儿 (yìdiǎnr) means \"a little\" or \"a bit\". After an adjective, it softens a comparison or request: 慢一点儿 (\"a little slower\"), 大一点儿 (\"a bit bigger\"). After a verb like 要 or 会, it just means a small amount.",
+    "explanation": "一点儿 (yìdiǎnr) nghĩa là \"một chút\" hay \"một ít\". Đứng sau tính từ, nó làm nhẹ đi một sự so sánh hay lời đề nghị: 慢一点儿 (\"chậm một chút\"), 大一点儿 (\"to hơn một chút\"). Đứng sau động từ như 要 hay 会, nó chỉ đơn giản mang nghĩa một lượng nhỏ.",
     "level": 1,
     "examples": [
       "s:l1:191",
@@ -793,9 +793,9 @@
   },
   {
     "id": "g:yixiar-brief-verb",
-    "title": "verb + 一下儿 for a quick action",
+    "title": "động từ + 一下儿 để diễn tả một hành động ngắn, nhanh",
     "pattern": "verb + 一下(儿)",
-    "explanation": "Adding 一下儿 (yíxiàr) right after a verb makes the action sound brief, casual, or low-pressure — similar to \"just a second\" in English: 看一下儿 (\"take a quick look\"), 等一下儿 (\"wait a moment\"). It softens requests, making them sound more polite.",
+    "explanation": "Thêm 一下儿 (yíxiàr) ngay sau động từ làm cho hành động nghe có vẻ ngắn gọn, thoải mái, nhẹ nhàng — giống như \"một chút\" hay \"một lát\" trong tiếng Việt: 看一下儿 (\"xem một chút\"), 等一下儿 (\"đợi một lát\"). Nó làm cho lời đề nghị nghe lịch sự hơn.",
     "level": 1,
     "examples": [
       "s:l1:210",
@@ -805,9 +805,9 @@
   },
   {
     "id": "g:you-possession",
-    "title": "有 for possession",
+    "title": "有 dùng để diễn tả sự sở hữu",
     "pattern": "Subject + 有 + object",
-    "explanation": "有 (yǒu) means \"to have\". Sentence-final 了 after 有 signals a change: the subject did not have it before but has it now.",
+    "explanation": "有 (yǒu) nghĩa là \"có\". 了 ở cuối câu sau 有 báo hiệu một sự thay đổi: trước đó chủ ngữ chưa có, nhưng bây giờ đã có.",
     "level": 1,
     "examples": [
       "s:l1:113",
@@ -817,9 +817,9 @@
   },
   {
     "id": "g:zai-location",
-    "title": "Location with 在",
+    "title": "Vị trí với 在",
     "pattern": "person/thing + 在 + place",
-    "explanation": "在 (zài) marks where someone or something is: 我在家里 (I'm at home). Put the location after 在.",
+    "explanation": "在 (zài) đánh dấu vị trí của người hay vật: 我在家里 (Tôi đang ở nhà). Đặt địa điểm ngay sau 在.",
     "level": 1,
     "examples": [
       "s:l1:new:030",
@@ -828,9 +828,9 @@
   },
   {
     "id": "g:zenme-how",
-    "title": "怎么 for asking \"how\"",
+    "title": "怎么 dùng để hỏi \"như thế nào\"",
     "pattern": "怎么 + verb",
-    "explanation": "怎么 (zěnme) asks about manner or method — \"how\". It goes right before the verb: 这个怎么用? (\"How do you use this?\"). 你怎么了? is a fixed way of asking \"What's wrong (with you)?\"",
+    "explanation": "怎么 (zěnme) dùng để hỏi về cách thức hay phương pháp — \"như thế nào\". Nó đứng ngay trước động từ: 这个怎么用? (\"Cái này dùng thế nào?\"). 你怎么了? là cách hỏi cố định nghĩa là \"Bạn làm sao vậy?\"",
     "level": 1,
     "examples": [
       "s:l1:049",
@@ -841,9 +841,9 @@
   },
   {
     "id": "g:zhende-confirm",
-    "title": "真的 for \"really\" and \"true\"",
+    "title": "真的 nghĩa là \"thật sự\" và \"thật\"",
     "pattern": "真的 + verb/adjective, or 是真的",
-    "explanation": "真的 (zhēnde) emphasizes that something is genuinely true, either as \"really\" before a verb (你真的想去吗?) or as \"true\" after 是 (这是真的). It's a common way to react to surprising news.",
+    "explanation": "真的 (zhēnde) nhấn mạnh điều gì đó thực sự đúng, dùng như \"thật sự\" trước động từ (你真的想去吗?) hoặc như \"thật\" sau 是 (这是真的). Đây là cách phổ biến để phản ứng trước một tin bất ngờ.",
     "level": 1,
     "examples": [
       "s:l1:104",
@@ -854,9 +854,9 @@
   },
   {
     "id": "g:zhengzai-progressive",
-    "title": "正在 for actions in progress",
+    "title": "正在 dùng cho hành động đang diễn ra",
     "pattern": "正在 + verb",
-    "explanation": "正在 (zhèngzài) marks an action happening right now, like English \"-ing\". Put it directly before the verb: 我正在看 (\"I'm looking right now\"). It's often shortened to just 正 or just 在 in casual speech, but 正在 is the clearest form for beginners.",
+    "explanation": "正在 (zhèngzài) đánh dấu một hành động đang xảy ra ngay lúc này, giống như hậu tố \"-ing\" trong tiếng Anh. Đặt nó ngay trước động từ: 我正在看 (\"Tôi đang xem\"). Trong khẩu ngữ, nó thường được rút gọn thành chỉ 正 hoặc chỉ 在, nhưng 正在 là dạng rõ ràng nhất cho người mới học.",
     "level": 1,
     "examples": [
       "s:l1:085",
@@ -867,9 +867,9 @@
   },
   {
     "id": "g:zher-nar-colloquial",
-    "title": "这儿/哪儿 as spoken alternatives",
+    "title": "这儿/哪儿 như những cách nói khẩu ngữ",
     "pattern": "这儿 / 哪儿",
-    "explanation": "这儿 (zhèr) and 哪儿 (nǎr) are casual, conversational equivalents of 这里 (\"here\") and 哪里 (\"where\"). They're used exactly the same way, most often right after 在.",
+    "explanation": "这儿 (zhèr) và 哪儿 (nǎr) là những cách nói thân mật, khẩu ngữ tương đương với 这里 (\"ở đây\") và 哪里 (\"ở đâu\"). Chúng được dùng hoàn toàn giống nhau, thường đứng ngay sau 在.",
     "level": 1,
     "examples": [
       "s:l1:165",
@@ -880,9 +880,9 @@
   },
   {
     "id": "g:zui-superlative",
-    "title": "最 for superlatives",
+    "title": "最 dùng cho tính từ so sánh nhất",
     "pattern": "最 + adjective",
-    "explanation": "最 (zuì) makes an adjective superlative, like English \"-est\" or \"most\". Place it directly before the adjective: 最好 (best), 最大 (biggest). No extra word for \"the\" is needed.",
+    "explanation": "最 (zuì) biến một tính từ thành dạng so sánh nhất, giống hậu tố \"-est\" hay \"most\" trong tiếng Anh. Đặt nó ngay trước tính từ: 最好 (tốt nhất), 最大 (to nhất). Không cần thêm từ nào khác cho nghĩa \"the\".",
     "level": 1,
     "examples": [
       "s:l1:041",
@@ -893,9 +893,9 @@
   },
   {
     "id": "g:zuihao-suggestion",
-    "title": "最好 for \"had better\"",
+    "title": "最好 nghĩa là \"tốt nhất nên\"",
     "pattern": "(Subject +) 最好 + verb",
-    "explanation": "最好 (zuìhǎo) softens advice into \"had better\" or \"(it's) best to\": 你最好休息 (\"You'd better rest\"). It can also open a sentence with no subject, as general advice: 最好现在走 (\"Best to leave now\").",
+    "explanation": "最好 (zuìhǎo) làm cho lời khuyên trở nên nhẹ nhàng hơn, mang nghĩa \"tốt nhất nên\" hay \"tốt hơn hết là\": 你最好休息 (\"Bạn nên nghỉ ngơi thì hơn\"). Nó cũng có thể mở đầu câu mà không cần chủ ngữ, như một lời khuyên chung: 最好现在走 (\"Tốt nhất là đi ngay bây giờ\").",
     "level": 1,
     "examples": [
       "s:l1:149",
@@ -906,9 +906,9 @@
   },
   {
     "id": "g:zuoxia-settle",
-    "title": "坐下 for \"sit down\"",
+    "title": "坐下 nghĩa là \"ngồi xuống\"",
     "pattern": "坐下",
-    "explanation": "坐下 (zuòxia) combines 坐 (\"to sit\") with 下 to describe settling into a seated position — \"to sit down\". Use it for the action of sitting down, as opposed to 坐 alone, which can also mean simply \"to be sitting\".",
+    "explanation": "坐下 (zuòxia) kết hợp 坐 (\"ngồi\") với 下 để diễn tả hành động ngồi xuống một tư thế — \"ngồi xuống\". Dùng nó cho hành động ngồi xuống, khác với 坐 đứng một mình, vốn cũng có thể chỉ đơn giản là \"đang ngồi\".",
     "level": 1,
     "examples": [
       "s:l1:213",
