@@ -7,13 +7,23 @@ export interface CedictEntry {
 
 const LINE_RE = /^(\S+) (\S+) \[([^\]]*)\] \/(.+)\/$/;
 
+// CEDICT-family dictionaries embed classifier/measure-word annotations as one
+// of the slash-delimited senses (e.g. English CEDICT uses "CL:...", CVDICT's
+// Vietnamese translation of that convention uses "LT:..." for "loại từ").
+// This is redundant with the app's own `Word.classifiers` field and must not
+// leak into `meanings` as if it were a real semantic sense.
+const CLASSIFIER_ANNOTATION_RE = /^(LT|CL):/i;
+
 export function parseCedictLine(line: string): CedictEntry | null {
   const trimmed = line.trimEnd();
   if (trimmed.length === 0 || trimmed.startsWith('#')) return null;
   const m = LINE_RE.exec(trimmed);
   if (!m) return null;
   const [, traditional, simplified, pinyin, sensesRaw] = m;
-  const meanings = sensesRaw!.split('/').filter((s) => s.length > 0);
+  const meanings = sensesRaw!
+    .split('/')
+    .filter((s) => s.length > 0)
+    .filter((s) => !CLASSIFIER_ANNOTATION_RE.test(s.trimStart()));
   return { traditional: traditional!, simplified: simplified!, pinyin: pinyin!, meanings };
 }
 

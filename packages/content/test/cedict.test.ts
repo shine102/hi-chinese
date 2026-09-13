@@ -27,6 +27,39 @@ describe('parseCedictLine', () => {
   it('returns null for a line that does not match the CEDICT shape', () => {
     expect(parseCedictLine('not a cedict line')).toBeNull();
   });
+
+  it('filters out CVDICT classifier ("LT:") annotations from meanings', () => {
+    // Real CVDICT.u8 line for 朋友.
+    const line = '朋友 朋友 [peng2 you5] /bạn/LT:個|个[ge4],位[wei4]/';
+    expect(parseCedictLine(line)).toEqual({
+      traditional: '朋友',
+      simplified: '朋友',
+      pinyin: 'peng2 you5',
+      meanings: ['bạn'],
+    });
+  });
+
+  it('filters a classifier annotation even when another sense follows it', () => {
+    // Real CVDICT.u8 line for 下午: "p.m." appears as a genuine sense after LT:.
+    const line = '下午 下午 [xia4 wu3] /buổi chiều/LT:個|个[ge4]/p.m./';
+    expect(parseCedictLine(line)).toEqual({
+      traditional: '下午',
+      simplified: '下午',
+      pinyin: 'xia4 wu3',
+      meanings: ['buổi chiều', 'p.m.'],
+    });
+  });
+
+  it('filters a classifier annotation with a space after the colon', () => {
+    // Real CVDICT.u8 line for 丈夫: "LT: 個|个[ge4]" has a space after "LT:".
+    const line = '丈夫 丈夫 [zhang4 fu5] /chồng/LT: 個|个[ge4]/';
+    expect(parseCedictLine(line)).toEqual({
+      traditional: '丈夫',
+      simplified: '丈夫',
+      pinyin: 'zhang4 fu5',
+      meanings: ['chồng'],
+    });
+  });
 });
 
 describe('parseCedict', () => {
