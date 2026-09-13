@@ -67,7 +67,7 @@ describe('app shell', () => {
     const fetchMock = vi.mocked(fetch);
     renderApp('/');
 
-    const input = await screen.findByLabelText('Passphrase');
+    const input = await screen.findByLabelText('Your passphrase');
     fireEvent.change(input, { target: { value: 'test-passphrase' } });
     fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
 
@@ -85,7 +85,7 @@ describe('app shell', () => {
   it('rejects a wrong passphrase without offering to continue offline', async () => {
     stubFetch(() => json({ error: 'unauthorized' }, 401));
     renderApp('/');
-    fireEvent.change(await screen.findByLabelText('Passphrase'), { target: { value: 'nope' } });
+    fireEvent.change(await screen.findByLabelText('Your passphrase'), { target: { value: 'nope' } });
     fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
     const alert = await screen.findByRole('alert');
     expect(alert.textContent).toMatch(/rejected/i);
@@ -96,7 +96,7 @@ describe('app shell', () => {
   it('offers to continue offline when the server is unreachable', async () => {
     stubFetch(() => json({ error: 'internal error' }, 500));
     renderApp('/');
-    fireEvent.change(await screen.findByLabelText('Passphrase'), {
+    fireEvent.change(await screen.findByLabelText('Your passphrase'), {
       target: { value: 'test-passphrase' },
     });
     fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
