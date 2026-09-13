@@ -3,3 +3,7 @@ Hi Chinese content attribution
 Vocabulary: complete-hsk-vocabulary (https://github.com/drkameleon/complete-hsk-vocabulary), MIT License.
 Character stroke data and dictionary: Make Me a Hanzi (https://github.com/skishore/makemeahanzi).
   graphics data: Arphic Public License (derived from Arphic PL KaitiM GB / UKai fonts); dictionary data: LGPL (Unihan / CJKlib). See the project's COPYING file.
+Vietnamese word meanings and character definitions: seeded from CVDICT (https://github.com/ph0ngp/CVDICT) by Phong Phan,
+  itself a Vietnamese translation of CC-CEDICT (https://www.mdbg.net/chinese/dictionary?page=cc-cedict, CEDICT © 1997, 1998 Paul Andrew Denisowski).
+  CVDICT is licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/); this derived Vietnamese content
+  is likewise available under CC BY-SA 4.0.
