@@ -6,6 +6,7 @@ import { useLiveQuery } from '../db/use-live-query.js';
 import { InlineError } from '../ui/InlineError.js';
 import { Loading } from '../ui/Loading.js';
 import { computeUnitStates } from './unlock.js';
+import { isUnlockAllEnabled } from './unlockAll.js';
 
 export function UnitScreen() {
   const { unitId } = useParams({ from: '/unit/$unitId' });
@@ -20,7 +21,7 @@ export function UnitScreen() {
     return <InlineError message={chunk.error.message} onRetry={chunk.retry} />;
 
   const state = computeUnitStates(content.unitOrder, rows).get(unitId) ?? 'locked';
-  if (state === 'locked')
+  if (state === 'locked' && !isUnlockAllEnabled())
     return (
       <div className="flex flex-col gap-6">
         <h1 className="text-2xl font-semibold">{unit.title}</h1>

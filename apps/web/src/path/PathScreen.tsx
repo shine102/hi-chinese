@@ -11,6 +11,7 @@ import { computeStreak } from '../streak/streak.js';
 import { DueCountBadge, StreakBadge } from '../streak/StreakBadge.js';
 import { Loading } from '../ui/Loading.js';
 import { computeUnitStates, type UnitState } from './unlock.js';
+import { useUnlockAll, withUnlockAll } from './unlockAll.js';
 
 const BADGE: Record<UnitState, string> = {
   locked: 'bg-stone-200 text-stone-500',
@@ -66,8 +67,9 @@ export function PathScreen() {
   const rows = useLiveQuery(() => db.unitProgress.toArray(), []);
   const activities = useLiveQuery(() => db.activity.toArray(), []);
   const dueCount = useLiveQuery(() => getDueCount(db, Date.now()), []);
+  const [unlockAll, setUnlockAll] = useUnlockAll();
   if (rows === undefined) return <Loading />;
-  const states = computeUnitStates(content.unitOrder, rows);
+  const states = withUnlockAll(computeUnitStates(content.unitOrder, rows), unlockAll);
   const streak = activities ? computeStreak(activities, localDate(Date.now())) : 0;
   const progressByUnit = new Map(rows.map(r => [r.unitId, r]));
   return (
@@ -101,7 +103,23 @@ export function PathScreen() {
           </ol>
         </section>
       ))}
+      <UnlockAllToggle enabled={unlockAll} onChange={setUnlockAll} />
       <ResetProgress />
+    </div>
+  );
+}
+
+function UnlockAllToggle({ enabled, onChange }: { enabled: boolean; onChange: (v: boolean) => void }) {
+  return (
+    <div className="flex justify-center pt-4">
+      <button
+        type="button"
+        onClick={() => onChange(!enabled)}
+        data-testid="unlock-all-toggle"
+        className="text-sm text-stone-400 underline"
+      >
+        {enabled ? 'Lock lessons again' : 'Unlock all lessons'}
+      </button>
     </div>
   );
 }

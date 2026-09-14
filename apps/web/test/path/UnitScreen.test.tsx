@@ -42,6 +42,7 @@ beforeEach(async () => {
   await db.delete();
   resetSyncStateForTests();
   await db.meta.put({ key: 'setupDone', value: true });
+  localStorage.clear();
 });
 afterEach(() => {
   vi.unstubAllGlobals();
@@ -112,5 +113,14 @@ describe('UnitScreen', () => {
 
     expect(await screen.findByText(/locked/i)).toBeTruthy();
     expect(screen.queryByTestId('lesson-0')).toBeNull();
+  });
+
+  it('lists lessons for a locked unit when the unlock-all flag is set', async () => {
+    localStorage.setItem('hi-chinese:unlock-all', '1');
+    stubFetch(noSync);
+    renderApp('/unit/l1-u02');
+
+    expect(await screen.findByTestId('lesson-0')).toBeTruthy();
+    expect(screen.queryByText(/locked/i)).toBeNull();
   });
 });
