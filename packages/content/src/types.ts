@@ -125,6 +125,8 @@ export interface AuthoredGrammar {
   explanation: string;
   level: HskLevel;
   examples: string[];
+  /** Simplified form of a course word; the point is placed in that word's unit. */
+  anchor?: string;
 }
 
 export type PinyinOverrides = Record<string, string>;

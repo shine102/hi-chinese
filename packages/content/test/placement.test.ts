@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { attachToUnits, placeAuthoredGrammar, placeGrammar, placeSentences } from '../src/pipeline/placement.js';
+import { attachToUnits, placeAnchoredGrammar, placeAuthoredGrammar, placeGrammar, placeSentences } from '../src/pipeline/placement.js';
 import type {
   AuthoredGrammar,
   AuthoredSentence,
@@ -218,5 +218,68 @@ describe('attachToUnits', () => {
     expect(out[1]!.grammarIds).toEqual(['g1']);
     expect(out[2]!.sentenceIds).toEqual(['s3']);
     expect(units[1]!.grammarIds).toEqual([]);
+  });
+});
+
+describe('placeAnchoredGrammar', () => {
+  const g = (id: string, level: HskLevel, examples: string[], anchor: string): AuthoredGrammar => ({
+    id,
+    title: id,
+    pattern: 'A 是 B',
+    explanation: 'x',
+    level,
+    examples,
+    anchor,
+  });
+  // extra sentence so l1-u02 holds two examples
+  const s4: AuthoredSentence = {
+    id: 's4',
+    zh: '你不是学生。',
+    pinyin: 'Nǐ bú shì xuéshēng.',
+    vi: 'x',
+    words: ['你', '不', '是', '学生'],
+  };
+  const placed4 = (): Sentence[] => placeSentences([s1, s2, s3, s4], words, units).sentences;
+
+  it('places the point in the unit of its anchor word', () => {
+    const { grammar, errors } = placeAnchoredGrammar([g('g1', 1, ['s1', 's2', 's4'], '学生')], placed4(), units, words);
+    expect(errors).toEqual([]);
+    expect(grammar).toEqual([
+      {
+        id: 'g1',
+        title: 'g1',
+        pattern: 'A 是 B',
+        explanation: 'x',
+        level: 1,
+        sentenceIds: ['s1', 's2', 's4'],
+        unitId: 'l1-u02',
+      },
+    ]);
+  });
+  it('errors when the anchor is not a course word', () => {
+    const { grammar, errors } = placeAnchoredGrammar([g('g1', 1, ['s2', 's4'], '猫')], placed4(), units, words);
+    expect(grammar).toEqual([]);
+    expect(errors.map((e) => [e.kind, e.ref])).toEqual([['anchor-unknown', 'g1']]);
+  });
+  it('errors when the anchor unit is in a different level', () => {
+    const { errors } = placeAnchoredGrammar([g('g1', 2, ['s2', 's4'], '学生')], placed4(), units, words);
+    expect(errors.map((e) => [e.kind, e.ref])).toEqual([['level-mismatch', 'g1']]);
+  });
+  it('errors when fewer than two examples sit in the anchor unit', () => {
+    const { grammar, errors } = placeAnchoredGrammar([g('g1', 1, ['s1', 's2'], '学生')], placed4(), units, words);
+    expect(grammar).toEqual([]);
+    expect(errors.map((e) => [e.kind, e.ref])).toEqual([['anchor-examples', 'g1']]);
+  });
+  it('errors on missing example sentences and duplicate ids', () => {
+    const { errors } = placeAnchoredGrammar(
+      [g('g1', 1, ['nope'], '学生'), g('g2', 1, ['s2', 's4'], '学生'), g('g2', 1, ['s2', 's4'], '学生')],
+      placed4(),
+      units,
+      words,
+    );
+    expect(errors.map((e) => [e.kind, e.ref])).toEqual([
+      ['missing-sentence', 'g1'],
+      ['duplicate-id', 'g2'],
+    ]);
   });
 });

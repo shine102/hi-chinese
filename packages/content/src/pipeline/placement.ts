@@ -14,7 +14,9 @@ export interface PlacementError {
     | 'duplicate-id'
     | 'missing-sentence'
     | 'level-mismatch'
-    | 'overflow';
+    | 'overflow'
+    | 'anchor-unknown'
+    | 'anchor-examples';
   ref: string;
   message: string;
 }
@@ -252,6 +254,71 @@ export function placeAuthoredGrammar(
       level: g.level,
       sentenceIds: [...g.examples],
       unitId: earliest.id,
+    });
+  }
+  return { grammar, errors };
+}
+
+export function placeAnchoredGrammar(
+  authored: AuthoredGrammar[],
+  sentences: Sentence[],
+  units: Unit[],
+  words: Word[],
+  minInUnit = 2,
+): { grammar: GrammarPoint[]; errors: PlacementError[] } {
+  const sentenceById = new Map(sentences.map((s) => [s.id, s]));
+  const unitById = new Map(units.map((u) => [u.id, u]));
+  const wordBySimplified = new Map(words.map((w) => [w.simplified, w]));
+  const errors: PlacementError[] = [];
+  const seen = new Set<string>();
+  const grammar: GrammarPoint[] = [];
+
+  for (const g of authored) {
+    if (seen.has(g.id)) {
+      errors.push({ kind: 'duplicate-id', ref: g.id, message: `grammar id ${g.id} appears more than once` });
+      continue;
+    }
+    seen.add(g.id);
+    const missing = g.examples.filter((id) => !sentenceById.has(id));
+    if (missing.length > 0) {
+      errors.push({
+        kind: 'missing-sentence',
+        ref: g.id,
+        message: `${g.id}: unknown example sentences: ${missing.join(', ')}`,
+      });
+      continue;
+    }
+    const anchorWord = g.anchor === undefined ? undefined : wordBySimplified.get(g.anchor);
+    const unit = anchorWord && unitById.get(anchorWord.unitId);
+    if (!unit) {
+      errors.push({ kind: 'anchor-unknown', ref: g.id, message: `${g.id}: anchor "${g.anchor}" is not a course word` });
+      continue;
+    }
+    if (unit.level !== g.level) {
+      errors.push({
+        kind: 'level-mismatch',
+        ref: g.id,
+        message: `${g.id}: declared level ${g.level} but anchor "${g.anchor}" sits in level ${unit.level} unit ${unit.id}`,
+      });
+      continue;
+    }
+    const inUnit = g.examples.filter((id) => sentenceById.get(id)!.unitId === unit.id).length;
+    if (inUnit < minInUnit) {
+      errors.push({
+        kind: 'anchor-examples',
+        ref: g.id,
+        message: `${g.id}: only ${inUnit} example(s) placed in anchor unit ${unit.id}, need ${minInUnit}`,
+      });
+      continue;
+    }
+    grammar.push({
+      id: g.id,
+      title: g.title,
+      pattern: g.pattern,
+      explanation: g.explanation,
+      level: g.level,
+      sentenceIds: [...g.examples],
+      unitId: unit.id,
     });
   }
   return { grammar, errors };
