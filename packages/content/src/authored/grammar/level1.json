@@ -850,7 +850,7 @@
     "id": "g:ye-dou",
     "title": "Vị trí của 也 và 都",
     "pattern": "Subject + 也/都 + verb",
-    "explanation": "也 (yě, \"cũng\") và 都 (dōu, \"đều\") luôn đứng sau chủ ngữ và ngay trước động từ hoặc tính từ: 我也认识他, 我们都是朋友. Không bao giờ đặt chúng trước chủ ngữ — không nói 也我认识他 hay 都我们是朋友. Khi dùng cả hai, thứ tự luôn là 也都 (\"cũng đều\"), không phải 都也: 他们也都是我的朋友.",
+    "explanation": "也 (yě, \"cũng\") và 都 (dōu, \"đều\") luôn đứng sau chủ ngữ và trước động từ hoặc tính từ; nếu có 不, 很 thì 也/都 đứng trước cả những từ này: 我也认识他, 我们都是朋友, 他们也很好. Không bao giờ đặt chúng trước chủ ngữ — không nói 也我认识他 hay 都我们是朋友. Khi dùng cả hai, thứ tự luôn là 也都 (\"cũng đều\"), không phải 都也: 他们也都是我的朋友.",
     "level": 1,
     "examples": [
       "s:l1:core:005",
