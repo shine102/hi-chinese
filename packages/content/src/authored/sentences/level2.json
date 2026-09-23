@@ -5101,5 +5101,355 @@
       "商量",
       "吧"
     ]
+  },
+  {
+    "id": "s:l2:core:001",
+    "zh": "我可以进来吗？",
+    "pinyin": "Wǒ kěyǐ jìnlai ma?",
+    "vi": "Tôi vào được không?",
+    "words": [
+      "我",
+      "可以",
+      "进来",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l2:core:002",
+    "zh": "明天我可以去你家。",
+    "pinyin": "Míngtiān wǒ kěyǐ qù nǐ jiā.",
+    "vi": "Ngày mai tôi có thể đến nhà bạn.",
+    "words": [
+      "明天",
+      "我",
+      "可以",
+      "去",
+      "你",
+      "家"
+    ]
+  },
+  {
+    "id": "s:l2:core:003",
+    "zh": "你可以用我的电脑，但是不能上网。",
+    "pinyin": "Nǐ kěyǐ yòng wǒ de diànnǎo, dànshì bù néng shàngwǎng.",
+    "vi": "Bạn có thể dùng máy tính của tôi, nhưng không được lên mạng.",
+    "words": [
+      "你",
+      "可以",
+      "用",
+      "我",
+      "的",
+      "电脑",
+      "但是",
+      "不",
+      "能",
+      "上网"
+    ]
+  },
+  {
+    "id": "s:l2:core:004",
+    "zh": "我会开车，可以送你去机场。",
+    "pinyin": "Wǒ huì kāichē, kěyǐ sòng nǐ qù jīchǎng.",
+    "vi": "Tôi biết lái xe, có thể đưa bạn ra sân bay.",
+    "words": [
+      "我",
+      "会",
+      "开车",
+      "可以",
+      "送",
+      "你",
+      "去",
+      "机场"
+    ]
+  },
+  {
+    "id": "s:l2:core:005",
+    "zh": "他说汉语说得很好。",
+    "pinyin": "Tā shuō Hànyǔ shuō de hěn hǎo.",
+    "vi": "Anh ấy nói tiếng Trung rất giỏi.",
+    "words": [
+      "他",
+      "说",
+      "汉语",
+      "说",
+      "得",
+      "很",
+      "好"
+    ]
+  },
+  {
+    "id": "s:l2:core:006",
+    "zh": "你跑得很快。",
+    "pinyin": "Nǐ pǎo de hěn kuài.",
+    "vi": "Bạn chạy nhanh quá.",
+    "words": [
+      "你",
+      "跑",
+      "得",
+      "很",
+      "快"
+    ]
+  },
+  {
+    "id": "s:l2:core:007",
+    "zh": "她唱歌唱得很好听。",
+    "pinyin": "Tā chànggē chàng de hěn hǎotīng.",
+    "vi": "Cô ấy hát rất hay.",
+    "words": [
+      "她",
+      "唱歌",
+      "唱",
+      "得",
+      "很",
+      "好听"
+    ]
+  },
+  {
+    "id": "s:l2:core:008",
+    "zh": "我昨天睡得不好。",
+    "pinyin": "Wǒ zuótiān shuì de bù hǎo.",
+    "vi": "Hôm qua tôi ngủ không ngon.",
+    "words": [
+      "我",
+      "昨天",
+      "睡",
+      "得",
+      "不",
+      "好"
+    ]
+  },
+  {
+    "id": "s:l2:core:009",
+    "zh": "孩子一看见妈妈就不哭了。",
+    "pinyin": "Háizi yí kànjiàn māma jiù bù kū le.",
+    "vi": "Đứa bé vừa thấy mẹ là nín khóc ngay.",
+    "words": [
+      "孩子",
+      "一",
+      "看见",
+      "妈妈",
+      "就",
+      "不",
+      "哭",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:core:010",
+    "zh": "她一生气就哭。",
+    "pinyin": "Tā yì shēngqì jiù kū.",
+    "vi": "Cô ấy hễ giận là khóc.",
+    "words": [
+      "她",
+      "一",
+      "生气",
+      "就",
+      "哭"
+    ]
+  },
+  {
+    "id": "s:l2:core:011",
+    "zh": "我一到家就给你打电话。",
+    "pinyin": "Wǒ yí dào jiā jiù gěi nǐ dǎ diànhuà.",
+    "vi": "Tôi vừa về đến nhà là gọi điện cho bạn ngay.",
+    "words": [
+      "我",
+      "一",
+      "到",
+      "家",
+      "就",
+      "给",
+      "你",
+      "打电话"
+    ]
+  },
+  {
+    "id": "s:l2:core:012",
+    "zh": "他一说，我就明白了。",
+    "pinyin": "Tā yì shuō, wǒ jiù míngbai le.",
+    "vi": "Anh ấy vừa nói là tôi hiểu ngay.",
+    "words": [
+      "他",
+      "一",
+      "说",
+      "我",
+      "就",
+      "明白",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:core:013",
+    "zh": "这些水果是谁带来的？",
+    "pinyin": "Zhèxiē shuǐguǒ shì shéi dàilai de?",
+    "vi": "Chỗ trái cây này là ai mang đến vậy?",
+    "words": [
+      "这些",
+      "水果",
+      "是",
+      "谁",
+      "带来",
+      "的"
+    ]
+  },
+  {
+    "id": "s:l2:core:014",
+    "zh": "这个杯子我是从中国带来的。",
+    "pinyin": "Zhège bēizi wǒ shì cóng Zhōngguó dàilai de.",
+    "vi": "Cái cốc này là tôi mang từ Trung Quốc sang.",
+    "words": [
+      "这",
+      "个",
+      "杯子",
+      "我",
+      "是",
+      "从",
+      "中国",
+      "带来",
+      "的"
+    ]
+  },
+  {
+    "id": "s:l2:core:015",
+    "zh": "你是什么时候来的？",
+    "pinyin": "Nǐ shì shénme shíhou lái de?",
+    "vi": "Bạn đến lúc nào vậy?",
+    "words": [
+      "你",
+      "是",
+      "什么",
+      "时候",
+      "来",
+      "的"
+    ]
+  },
+  {
+    "id": "s:l2:core:016",
+    "zh": "我是坐飞机来的。",
+    "pinyin": "Wǒ shì zuò fēijī lái de.",
+    "vi": "Tôi đến bằng máy bay.",
+    "words": [
+      "我",
+      "是",
+      "坐",
+      "飞机",
+      "来",
+      "的"
+    ]
+  },
+  {
+    "id": "s:l2:core:017",
+    "zh": "今天比昨天更冷。",
+    "pinyin": "Jīntiān bǐ zuótiān gèng lěng.",
+    "vi": "Hôm nay còn lạnh hơn hôm qua.",
+    "words": [
+      "今天",
+      "比",
+      "昨天",
+      "更",
+      "冷"
+    ]
+  },
+  {
+    "id": "s:l2:core:018",
+    "zh": "坐飞机比开车更安全。",
+    "pinyin": "Zuò fēijī bǐ kāichē gèng ānquán.",
+    "vi": "Đi máy bay còn an toàn hơn lái xe.",
+    "words": [
+      "坐",
+      "飞机",
+      "比",
+      "开车",
+      "更",
+      "安全"
+    ]
+  },
+  {
+    "id": "s:l2:core:019",
+    "zh": "我哥哥比我还高。",
+    "pinyin": "Wǒ gēge bǐ wǒ hái gāo.",
+    "vi": "Anh trai tôi còn cao hơn cả tôi.",
+    "words": [
+      "我",
+      "哥哥",
+      "比",
+      "我",
+      "还",
+      "高"
+    ]
+  },
+  {
+    "id": "s:l2:core:020",
+    "zh": "这个菜没有那个菜那么好吃。",
+    "pinyin": "Zhège cài méiyǒu nàge cài nàme hǎochī.",
+    "vi": "Món này không ngon bằng món kia.",
+    "words": [
+      "这",
+      "个",
+      "菜",
+      "没有",
+      "那",
+      "个",
+      "菜",
+      "那么",
+      "好吃"
+    ]
+  },
+  {
+    "id": "s:l2:core:021",
+    "zh": "他八点就来了。",
+    "pinyin": "Tā bā diǎn jiù lái le.",
+    "vi": "Anh ấy tám giờ đã đến rồi.",
+    "words": [
+      "他",
+      "八",
+      "点",
+      "就",
+      "来",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:core:022",
+    "zh": "他十点才来。",
+    "pinyin": "Tā shí diǎn cái lái.",
+    "vi": "Mười giờ anh ấy mới đến.",
+    "words": [
+      "他",
+      "十",
+      "点",
+      "才",
+      "来"
+    ]
+  },
+  {
+    "id": "s:l2:core:023",
+    "zh": "我早上六点就起床了。",
+    "pinyin": "Wǒ zǎoshang liù diǎn jiù qǐchuáng le.",
+    "vi": "Tôi sáu giờ sáng đã dậy rồi.",
+    "words": [
+      "我",
+      "早上",
+      "六",
+      "点",
+      "就",
+      "起床",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:core:024",
+    "zh": "他晚上十二点才睡觉。",
+    "pinyin": "Tā wǎnshang shí'èr diǎn cái shuìjiào.",
+    "vi": "Mười hai giờ đêm anh ấy mới đi ngủ.",
+    "words": [
+      "他",
+      "晚上",
+      "十",
+      "二",
+      "点",
+      "才",
+      "睡觉"
+    ]
   }
 ]
