@@ -2,7 +2,7 @@ import type { Authored } from './authored.js';
 import { buildCharacters } from './characters.js';
 import { makeHanViet } from './hanviet.js';
 import { parseHskWords, type RawHskEntry } from './hsk.js';
-import { attachToUnits, placeAuthoredGrammar, placeGrammar, placeSentences } from './placement.js';
+import { attachToUnits, placeAnchoredGrammar, placeAuthoredGrammar, placeGrammar, placeSentences } from './placement.js';
 import { assignUnits } from './units.js';
 import { validateContent } from './validate.js';
 import type { ContentBundle } from '../types.js';
@@ -27,6 +27,17 @@ export function assembleContent(inputs: RunInputs): RunResult {
     words,
     bareUnits,
   );
+  const anchored = inputs.authored.grammar.filter((g) => g.anchor !== undefined);
+  const unanchored = inputs.authored.grammar.filter((g) => g.anchor === undefined);
+  // Anchored points (any level) are pinned to their anchor word's unit and must have >= 2
+  // examples placed there, so the unit's grammar slide always has examples to show. They
+  // bypass placeGrammar entirely and so do not consume its per-unit cap.
+  const { grammar: anchoredGrammar, errors: anchoredErrors } = placeAnchoredGrammar(
+    anchored,
+    sentences,
+    bareUnits,
+    words,
+  );
   // Level 1 is the introduction level: its example sentences use only level-1 vocabulary, so
   // placing a grammar point at the EARLIEST unit among its examples is unambiguous and pedagogically
   // right (explain the pattern as soon as it's first demonstrable). Levels 2/3 don't get this
@@ -37,7 +48,7 @@ export function assembleContent(inputs: RunInputs): RunResult {
   // isn't really a mismatch). `placeGrammar`'s LATEST + cap/spill + graceful under-level fallback is
   // robust to that and is used for every level except 1, unconditionally.
   const { grammar: authoredGrammar, errors: authoredGrammarErrors } = placeAuthoredGrammar(
-    inputs.authored.grammar.filter((g) => g.level === 1),
+    unanchored.filter((g) => g.level === 1),
     sentences,
     bareUnits,
   );
@@ -49,13 +60,13 @@ export function assembleContent(inputs: RunInputs): RunResult {
   // conflicts for the current L2/L3 grammar set, still forward-only/same-level, never displacing a
   // point before its own example vocabulary is taught) is the correct fix, not a bigger cap value.
   const { grammar: pipelineGrammar, errors: pipelineGrammarErrors } = placeGrammar(
-    inputs.authored.grammar.filter((g) => g.level !== 1),
+    unanchored.filter((g) => g.level !== 1),
     sentences,
     bareUnits,
     4,
   );
-  const grammar = [...authoredGrammar, ...pipelineGrammar];
-  const grammarErrors = [...authoredGrammarErrors, ...pipelineGrammarErrors];
+  const grammar = [...anchoredGrammar, ...authoredGrammar, ...pipelineGrammar];
+  const grammarErrors = [...anchoredErrors, ...authoredGrammarErrors, ...pipelineGrammarErrors];
   const units = attachToUnits(bareUnits, sentences, grammar);
 
   const { characters, missing } = buildCharacters(

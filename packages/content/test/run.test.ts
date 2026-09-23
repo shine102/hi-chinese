@@ -159,4 +159,48 @@ describe('assembleContent', () => {
     if (result.ok) return;
     expect(result.problems.some((p) => p.startsWith('[placement:level-mismatch]'))).toBe(true);
   });
+
+  const tinyInputs = (grammar: Authored['grammar']): RunInputs => ({
+    hskJson: JSON.stringify([
+      hskEntry('我', 'new-1', 'wǒ', 'wo3', 'I', 1),
+      hskEntry('是', 'new-1', 'shì', 'shi4', 'to be', 2),
+      hskEntry('你', 'new-2', 'nǐ', 'ni3', 'you', 3),
+    ]),
+    dictionaryText: ['我', '是', '你'].map(dictionaryLine).join('\n'),
+    graphicsText: ['我', '是', '你'].map(graphicsLine).join('\n'),
+    authored: authored({
+      sentences: [
+        { id: 's1', zh: '我是你。', pinyin: 'Wǒ shì nǐ.', vi: 'x', words: ['我', '是', '你'] },
+        { id: 's2', zh: '你是我。', pinyin: 'Nǐ shì wǒ.', vi: 'x', words: ['你', '是', '我'] },
+      ],
+      grammar,
+    }),
+  });
+
+  it('routes an anchored L2 point to its anchor unit', () => {
+    const result = assembleContent(
+      tinyInputs([
+        { id: 'g1', title: 't', pattern: 'p', explanation: 'e', level: 2, examples: ['s1', 's2'], anchor: '你' },
+      ]),
+    );
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    const l2 = result.bundle.units.find((u) => u.level === 2)!;
+    expect(result.bundle.grammar[0]!.unitId).toBe(l2.id);
+  });
+
+  it('does not count anchored points against the placeGrammar cap', () => {
+    const plain = ['a', 'b', 'c', 'd'].map((id) => ({
+      id, title: 't', pattern: 'p', explanation: 'e', level: 2 as const, examples: ['s1'],
+    }));
+    const result = assembleContent(
+      tinyInputs([
+        ...plain,
+        { id: 'g1', title: 't', pattern: 'p', explanation: 'e', level: 2, examples: ['s1', 's2'], anchor: '你' },
+      ]),
+    );
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.bundle.grammar).toHaveLength(5);
+  });
 });
