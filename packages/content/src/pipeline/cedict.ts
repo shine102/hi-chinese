@@ -95,3 +95,56 @@ export function pinyinToNumeric(pinyin: string): string {
     .map(pinyinSyllableToNumeric)
     .join(' ');
 }
+
+const TONE_COMBINING = ['', '̄', '́', '̌', '̀', ''];
+
+// Tone-marks one numbered syllable ("gou3" -> "gǒu"): the mark goes on a/e if present,
+// on the o of "ou", otherwise on the last vowel.
+function markSyllable(letters: string, tone: number): string {
+  const base = letters.replace(/u:|v/g, 'ü').replace(/U:|V/g, 'Ü');
+  if (tone === 5) return base;
+  const lower = base.toLowerCase();
+  let i = lower.search(/[ae]/);
+  if (i < 0) i = lower.indexOf('ou');
+  if (i < 0) {
+    for (let j = lower.length - 1; j >= 0; j--) {
+      if ('iouü'.includes(lower[j]!)) {
+        i = j;
+        break;
+      }
+    }
+  }
+  if (i < 0) return base;
+  return (base.slice(0, i + 1) + TONE_COMBINING[tone] + base.slice(i + 1)).normalize('NFC');
+}
+
+const NUMBERED_SYLLABLE_RE = /([A-Za-z:]+?)([1-5])/g;
+
+// "dong4 ci2" -> "dòng cí"; run-together syllables are split, erhua "r5" joins the previous
+// syllable. Returns null when the text is not entirely numbered pinyin.
+function numberedToMarked(pinyin: string): string | null {
+  const compact = pinyin.replace(/\s+/g, '');
+  const out: string[] = [];
+  let consumed = 0;
+  for (const m of compact.matchAll(NUMBERED_SYLLABLE_RE)) {
+    if (m.index !== consumed) return null;
+    consumed += m[0].length;
+    const [, letters, tone] = m;
+    if (letters!.toLowerCase() === 'r' && tone === '5' && out.length > 0) out[out.length - 1] += 'r';
+    else out.push(markSyllable(letters!, Number(tone)));
+  }
+  if (consumed !== compact.length || out.length === 0) return null;
+  return out.join(' ');
+}
+
+const CEDICT_REF_RE = /(?:[\p{Script=Han}〇]+\|)?([\p{Script=Han}〇]+)?\[([^\]]*)\]/gu;
+
+// CEDICT-style cross-references ("動詞|动词[dong4 ci2]") -> "动词 (dòng cí"); a bare
+// citation ("[zhi1 dao5]") becomes just the tone-marked pinyin.
+export function formatCedictRefs(text: string): string {
+  return text.replace(CEDICT_REF_RE, (whole, simplified: string | undefined, pinyin: string) => {
+    const marked = numberedToMarked(pinyin);
+    if (marked === null) return whole;
+    return simplified ? `${simplified} (${marked})` : marked;
+  });
+}

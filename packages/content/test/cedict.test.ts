@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+  formatCedictRefs,
   normalizeCedictPinyin,
   parseCedict,
   parseCedictLine,
@@ -288,5 +289,43 @@ describe('pinyinToNumeric', () => {
   it('converts a full multi-syllable pinyin string', () => {
     expect(pinyinToNumeric('nǐ hǎo')).toBe('ni3 hao3');
     expect(pinyinToNumeric('lǜ')).toBe('lü4');
+  });
+});
+
+describe('formatCedictRefs', () => {
+  it('replaces a traditional|simplified[pinyin] ref with simplified plus tone-marked pinyin', () => {
+    expect(formatCedictRefs('xem 動詞|动词[dong4 ci2]')).toBe('xem 动词 (dòng cí)');
+  });
+
+  it('handles a ref whose two forms are the same', () => {
+    expect(formatCedictRefs('như 就[jiu4]')).toBe('như 就 (jiù)');
+  });
+
+  it('converts a bare pinyin citation without adding parentheses', () => {
+    expect(formatCedictRefs('cũng đọc là [zhi1 dao5]')).toBe('cũng đọc là zhī dao');
+  });
+
+  it('places the tone mark per standard rules (a/e first, then o in ou, else last vowel)', () => {
+    expect(formatCedictRefs('[hao3 xue2 gou3 gui4 liu2]')).toBe('hǎo xué gǒu guì liú');
+  });
+
+  it('turns u: and v into ü', () => {
+    expect(formatCedictRefs('綠帽子|绿帽子[lu:4 mao4 zi5]')).toBe('绿帽子 (lǜ mào zi)');
+    expect(formatCedictRefs('[nv3]')).toBe('nǚ');
+  });
+
+  it('splits run-together syllables and attaches erhua r', () => {
+    expect(formatCedictRefs('[shi4de5]')).toBe('shì de');
+    expect(formatCedictRefs('[yi1 hui3 r5]')).toBe('yī huǐr');
+  });
+
+  it('keeps capitalisation of proper-noun pinyin', () => {
+    expect(formatCedictRefs('中國|中国[Zhong1 guo2]')).toBe('中国 (Zhōng guó)');
+    expect(formatCedictRefs('[E2]')).toBe('É');
+  });
+
+  it('leaves brackets that are not numbered pinyin untouched', () => {
+    expect(formatCedictRefs('cũng đọc [huí]')).toBe('cũng đọc [huí]');
+    expect(formatCedictRefs('chú thích [xem trên]')).toBe('chú thích [xem trên]');
   });
 });

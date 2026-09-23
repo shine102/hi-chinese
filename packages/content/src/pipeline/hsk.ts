@@ -1,4 +1,5 @@
 import { compareWords, uniqueHanChars, wordId } from '../ids.js';
+import { formatCedictRefs } from './cedict.js';
 import type { HanVietResolver, HskLevel, PinyinOverrides, Word, WordReading } from '../types.js';
 
 export interface RawHskForm {
@@ -90,7 +91,7 @@ export function normalizeWord(
   const alternates: WordReading[] = others.map((f) => ({
     pinyin: f.transcriptions.pinyin,
     pinyinNumeric: f.transcriptions.numeric,
-    meanings: f.meanings,
+    meanings: f.meanings.map(formatCedictRefs),
   }));
   return {
     id: wordId(entry.simplified),
@@ -99,7 +100,7 @@ export function normalizeWord(
     pinyin: chosen.transcriptions.pinyin,
     pinyinNumeric: chosen.transcriptions.numeric,
     hanViet: hanViet.word(entry.simplified),
-    meanings: viMeanings[entry.simplified] ?? chosen.meanings,
+    meanings: (viMeanings[entry.simplified] ?? chosen.meanings).map(formatCedictRefs),
     alternates,
     pos: entry.pos ?? [],
     classifiers: chosen.classifiers ?? [],

@@ -1,4 +1,5 @@
 import type { CharacterData, Word } from '../types.js';
+import { formatCedictRefs } from './cedict.js';
 
 export interface RawDictionaryEntry {
   character: string;
@@ -64,7 +65,7 @@ export function buildCharacters(
       medians: g.medians,
       pinyin: d?.pinyin ?? [],
       hanViet: charHanViet(ch),
-      definition: viCharDefinitions[ch] ?? d?.definition ?? null,
+      definition: formatDefinition(viCharDefinitions[ch] ?? d?.definition ?? null),
       radical: d?.radical ?? '',
       decomposition: d?.decomposition ?? '',
       wordIds,
@@ -73,4 +74,8 @@ export function buildCharacters(
   characters.sort((a, b) => a.character.localeCompare(b.character, 'zh'));
   missing.sort();
   return { characters, missing };
+}
+
+function formatDefinition(definition: string | null): string | null {
+  return definition === null ? null : formatCedictRefs(definition);
 }
