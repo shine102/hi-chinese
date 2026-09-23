@@ -1,5 +1,18 @@
 [
   {
+    "id": "g:a-not-a",
+    "title": "Câu hỏi chính phản",
+    "pattern": "V不V? / 有没有? / 是不是?",
+    "explanation": "Ghép dạng khẳng định và dạng phủ định của động từ hoặc tính từ sẽ tạo thành câu hỏi có/không: 是不是 (có phải… không), 在不在 (có ở… không). Câu hỏi kiểu này đã tự mang nghĩa hỏi nên không thêm 吗 ở cuối. Riêng 有 thì ghép với 没有 thành 有没有, không nói 有不有. Chữ 不 ở giữa thường đọc nhẹ: shì bu shì.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:016",
+      "s:l1:core:017",
+      "s:l1:core:018"
+    ],
+    "anchor": "时间"
+  },
+  {
     "id": "g:ba-suggestion",
     "title": "吧 dùng để gợi ý và đề nghị",
     "pattern": "Sentence + 吧",
@@ -173,6 +186,20 @@
     ]
   },
   {
+    "id": "g:de-possessive",
+    "title": "Sở hữu với 的",
+    "pattern": "我/你/他 + 的 + N; 我妈妈 (bỏ 的 với người thân)",
+    "explanation": "的 (de) đứng sau đại từ hoặc danh từ để chỉ sở hữu, giống \"của\" nhưng trật tự ngược với tiếng Việt: người sở hữu đứng trước, vật được sở hữu đứng sau — 我的朋友 là \"bạn của tôi\". Với người thân hoặc những gì gần gũi như gia đình, thường bỏ 的: nói 我妈妈 (mẹ tôi), 我家 (nhà tôi) thay vì 我的妈妈, 我的家.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:001",
+      "s:l1:core:002",
+      "s:l1:core:003",
+      "s:l1:core:004"
+    ],
+    "anchor": "的"
+  },
+  {
     "id": "g:di-ordinal",
     "title": "第 dùng để tạo số thứ tự",
     "pattern": "第 + number",
@@ -288,6 +315,20 @@
     ]
   },
   {
+    "id": "g:ge-measure",
+    "title": "Lượng từ 个",
+    "pattern": "số / 这 / 那 / 哪 + 个 + noun",
+    "explanation": "Trong tiếng Trung, giữa số đếm (hoặc 这, 那, 哪) và danh từ bắt buộc phải có lượng từ, tương tự \"cái\", \"con\", \"người\" trong tiếng Việt nhưng không được lược bỏ: 这个人 (người này), 三个孩子 (ba đứa trẻ). 个 (ge) là lượng từ chung, dùng được với rất nhiều danh từ, nhất là danh từ chỉ người. 一个 đọc là yí ge vì 个 vốn mang thanh 4, và khi đếm \"hai\" thì nói 两个, không nói 二个.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:009",
+      "s:l1:core:010",
+      "s:l1:core:011",
+      "s:l1:core:012"
+    ],
+    "anchor": "这"
+  },
+  {
     "id": "g:gei-dianhua",
     "title": "给...打电话 dùng để gọi điện cho ai đó",
     "pattern": "给 + person + 打电话",
@@ -337,6 +378,19 @@
       "s:l1:223",
       "s:l1:224"
     ]
+  },
+  {
+    "id": "g:he-noun",
+    "title": "和 nối hai danh từ",
+    "pattern": "N + 和 + N",
+    "explanation": "和 (hé) nghĩa là \"và\", dùng để nối hai danh từ hoặc đại từ: 我和他 (tôi và anh ấy), 今天和明天 (hôm nay và ngày mai). 和 chỉ nối danh từ, không dùng như \"và\" trong tiếng Việt để nối hai động từ hay hai câu. Muốn nói \"Tôi ở nhà và anh ấy đi làm\" thì chỉ cần nói hai vế liền nhau, không chèn 和 vào giữa.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:013",
+      "s:l1:core:014",
+      "s:l1:core:015"
+    ],
+    "anchor": "今天"
   },
   {
     "id": "g:hen-adjective",
@@ -399,6 +453,20 @@
       "s:l1:new:042",
       "s:l1:new:043"
     ]
+  },
+  {
+    "id": "g:le-change",
+    "title": "了 cuối câu: thay đổi trạng thái",
+    "pattern": "Sentence + 了",
+    "explanation": "了 (le) đặt ở cuối câu cho biết một tình huống mới vừa xuất hiện hoặc trạng thái đã thay đổi, gần giống \"rồi\" trong tiếng Việt: 我饿了 (tôi đói rồi — lúc nãy chưa đói), 他十岁了 (cậu bé mười tuổi rồi). Không có 了 thì câu chỉ mô tả trạng thái như vốn có, không có ý thay đổi: 我很饿 chỉ là \"tôi rất đói\". Sau này bạn sẽ gặp nhiều câu cùng cách dùng, như 下雨了 (trời mưa rồi).",
+    "level": 1,
+    "examples": [
+      "s:l1:core:019",
+      "s:l1:core:020",
+      "s:l1:core:021",
+      "s:l1:core:022"
+    ],
+    "anchor": "了"
   },
   {
     "id": "g:ma-question",
@@ -777,6 +845,20 @@
       "s:l1:189",
       "s:l1:190"
     ]
+  },
+  {
+    "id": "g:ye-dou",
+    "title": "Vị trí của 也 và 都",
+    "pattern": "Subject + 也/都 + verb",
+    "explanation": "也 (yě, \"cũng\") và 都 (dōu, \"đều\") luôn đứng sau chủ ngữ và ngay trước động từ hoặc tính từ: 我也认识他, 我们都是朋友. Không bao giờ đặt chúng trước chủ ngữ — không nói 也我认识他 hay 都我们是朋友. Khi dùng cả hai, thứ tự luôn là 也都 (\"cũng đều\"), không phải 都也: 他们也都是我的朋友.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:005",
+      "s:l1:core:006",
+      "s:l1:core:007",
+      "s:l1:core:008"
+    ],
+    "anchor": "们"
   },
   {
     "id": "g:yidianr-quantity",

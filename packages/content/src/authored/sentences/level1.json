@@ -3662,5 +3662,305 @@
       "在",
       "哪儿"
     ]
+  },
+  {
+    "id": "s:l1:core:001",
+    "zh": "他是我的朋友。",
+    "pinyin": "Tā shì wǒ de péngyou.",
+    "vi": "Anh ấy là bạn của tôi.",
+    "words": [
+      "他",
+      "是",
+      "我",
+      "的",
+      "朋友"
+    ]
+  },
+  {
+    "id": "s:l1:core:002",
+    "zh": "他是我哥哥的朋友。",
+    "pinyin": "Tā shì wǒ gēge de péngyou.",
+    "vi": "Anh ấy là bạn của anh trai tôi.",
+    "words": [
+      "他",
+      "是",
+      "我",
+      "哥哥",
+      "的",
+      "朋友"
+    ]
+  },
+  {
+    "id": "s:l1:core:003",
+    "zh": "她是我妈妈，不是我姐姐。",
+    "pinyin": "Tā shì wǒ māma, bú shì wǒ jiějie.",
+    "vi": "Đó là mẹ tôi, không phải chị tôi.",
+    "words": [
+      "她",
+      "是",
+      "我",
+      "妈妈",
+      "不",
+      "是",
+      "我",
+      "姐姐"
+    ]
+  },
+  {
+    "id": "s:l1:core:004",
+    "zh": "你的朋友叫什么名字？",
+    "pinyin": "Nǐ de péngyou jiào shénme míngzi?",
+    "vi": "Bạn của bạn tên là gì?",
+    "words": [
+      "你",
+      "的",
+      "朋友",
+      "叫",
+      "什么",
+      "名字"
+    ]
+  },
+  {
+    "id": "s:l1:core:005",
+    "zh": "我们都是朋友。",
+    "pinyin": "Wǒmen dōu shì péngyou.",
+    "vi": "Chúng ta đều là bạn bè.",
+    "words": [
+      "我们",
+      "都",
+      "是",
+      "朋友"
+    ]
+  },
+  {
+    "id": "s:l1:core:006",
+    "zh": "他们也很好。",
+    "pinyin": "Tāmen yě hěn hǎo.",
+    "vi": "Họ cũng khỏe.",
+    "words": [
+      "他们",
+      "也",
+      "很",
+      "好"
+    ]
+  },
+  {
+    "id": "s:l1:core:007",
+    "zh": "他们也都是我的朋友。",
+    "pinyin": "Tāmen yě dōu shì wǒ de péngyou.",
+    "vi": "Họ cũng đều là bạn của tôi.",
+    "words": [
+      "他们",
+      "也",
+      "都",
+      "是",
+      "我",
+      "的",
+      "朋友"
+    ]
+  },
+  {
+    "id": "s:l1:core:008",
+    "zh": "我也认识他。",
+    "pinyin": "Wǒ yě rènshi tā.",
+    "vi": "Tôi cũng quen anh ấy.",
+    "words": [
+      "我",
+      "也",
+      "认识",
+      "他"
+    ]
+  },
+  {
+    "id": "s:l1:core:009",
+    "zh": "这个人是谁？",
+    "pinyin": "Zhège rén shì shéi?",
+    "vi": "Người này là ai?",
+    "words": [
+      "这",
+      "个",
+      "人",
+      "是",
+      "谁"
+    ]
+  },
+  {
+    "id": "s:l1:core:010",
+    "zh": "那个孩子是我儿子。",
+    "pinyin": "Nàge háizi shì wǒ érzi.",
+    "vi": "Đứa bé đó là con trai tôi.",
+    "words": [
+      "那",
+      "个",
+      "孩子",
+      "是",
+      "我",
+      "儿子"
+    ]
+  },
+  {
+    "id": "s:l1:core:011",
+    "zh": "哪个是你的？",
+    "pinyin": "Nǎge shì nǐ de?",
+    "vi": "Cái nào là của bạn?",
+    "words": [
+      "哪",
+      "个",
+      "是",
+      "你",
+      "的"
+    ]
+  },
+  {
+    "id": "s:l1:core:012",
+    "zh": "我有一个哥哥和两个妹妹。",
+    "pinyin": "Wǒ yǒu yí ge gēge hé liǎng ge mèimei.",
+    "vi": "Tôi có một anh trai và hai em gái.",
+    "words": [
+      "我",
+      "有",
+      "一",
+      "个",
+      "哥哥",
+      "和",
+      "两",
+      "个",
+      "妹妹"
+    ]
+  },
+  {
+    "id": "s:l1:core:013",
+    "zh": "今天和明天我都在家。",
+    "pinyin": "Jīntiān hé míngtiān wǒ dōu zài jiā.",
+    "vi": "Hôm nay và ngày mai tôi đều ở nhà.",
+    "words": [
+      "今天",
+      "和",
+      "明天",
+      "我",
+      "都",
+      "在",
+      "家"
+    ]
+  },
+  {
+    "id": "s:l1:core:014",
+    "zh": "我和我妹妹的生日都在八月。",
+    "pinyin": "Wǒ hé wǒ mèimei de shēngrì dōu zài bā yuè.",
+    "vi": "Sinh nhật của tôi và em gái tôi đều vào tháng Tám.",
+    "words": [
+      "我",
+      "和",
+      "我",
+      "妹妹",
+      "的",
+      "生日",
+      "都",
+      "在",
+      "八",
+      "月"
+    ]
+  },
+  {
+    "id": "s:l1:core:015",
+    "zh": "我和他是朋友。",
+    "pinyin": "Wǒ hé tā shì péngyou.",
+    "vi": "Tôi và anh ấy là bạn.",
+    "words": [
+      "我",
+      "和",
+      "他",
+      "是",
+      "朋友"
+    ]
+  },
+  {
+    "id": "s:l1:core:016",
+    "zh": "你今天有没有时间？",
+    "pinyin": "Nǐ jīntiān yǒu méiyǒu shíjiān?",
+    "vi": "Hôm nay bạn có thời gian không?",
+    "words": [
+      "你",
+      "今天",
+      "有",
+      "没有",
+      "时间"
+    ]
+  },
+  {
+    "id": "s:l1:core:017",
+    "zh": "你明天晚上在不在家？",
+    "pinyin": "Nǐ míngtiān wǎnshang zài bu zài jiā?",
+    "vi": "Tối mai bạn có ở nhà không?",
+    "words": [
+      "你",
+      "明天",
+      "晚上",
+      "在",
+      "不",
+      "在",
+      "家"
+    ]
+  },
+  {
+    "id": "s:l1:core:018",
+    "zh": "你是不是他的朋友？",
+    "pinyin": "Nǐ shì bu shì tā de péngyou?",
+    "vi": "Bạn có phải là bạn của anh ấy không?",
+    "words": [
+      "你",
+      "是",
+      "不",
+      "是",
+      "他",
+      "的",
+      "朋友"
+    ]
+  },
+  {
+    "id": "s:l1:core:019",
+    "zh": "我饿了。",
+    "pinyin": "Wǒ è le.",
+    "vi": "Tôi đói rồi.",
+    "words": [
+      "我",
+      "饿",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l1:core:020",
+    "zh": "他十岁了。",
+    "pinyin": "Tā shí suì le.",
+    "vi": "Cậu bé mười tuổi rồi.",
+    "words": [
+      "他",
+      "十",
+      "岁",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l1:core:021",
+    "zh": "我不渴了。",
+    "pinyin": "Wǒ bù kě le.",
+    "vi": "Tôi hết khát rồi.",
+    "words": [
+      "我",
+      "不",
+      "渴",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l1:core:022",
+    "zh": "水没有了。",
+    "pinyin": "Shuǐ méiyǒu le.",
+    "vi": "Hết nước rồi.",
+    "words": [
+      "水",
+      "没有",
+      "了"
+    ]
   }
 ]
