@@ -175,6 +175,20 @@
     ]
   },
   {
+    "id": "g:cong-dao",
+    "title": "Từ… đến… với 从…到",
+    "pattern": "从 + A + 到 + B",
+    "explanation": "从 (cóng) đánh dấu điểm bắt đầu, 到 (dào) đánh dấu điểm kết thúc, giống \"từ… đến…\" trong tiếng Việt. Cặp này dùng được cho cả nơi chốn (从我家到医院) lẫn thời gian (从早上到晚上). Cụm 从…到… đứng trước động từ hoặc tính từ, có thể ở đầu câu hoặc sau chủ ngữ: 从我家到路口不远, 我从早上到晚上都在家.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:035",
+      "s:l1:core:036",
+      "s:l1:core:037",
+      "s:l1:core:038"
+    ],
+    "anchor": "从"
+  },
+  {
     "id": "g:dao-destination",
     "title": "到 dùng để chỉ việc đến được một nơi nào đó",
     "pattern": "来到 / 回到 + place",
@@ -368,6 +382,20 @@
     ]
   },
   {
+    "id": "g:haishi-choice",
+    "title": "Câu hỏi lựa chọn với 还是",
+    "pattern": "A + 还是 + B?",
+    "explanation": "还是 (háishi) nối hai lựa chọn trong câu hỏi, nghĩa là \"hay (là)\": 你喝茶还是喝水？ Câu hỏi đã có 还是 thì không thêm 吗 ở cuối. Trong câu trần thuật, muốn nói \"hoặc\" thì dùng 或者 (huòzhě), không dùng 还是: 今天或者明天都行 (hôm nay hoặc ngày mai đều được).",
+    "level": 1,
+    "examples": [
+      "s:l1:core:051",
+      "s:l1:core:052",
+      "s:l1:core:053",
+      "s:l1:core:054"
+    ],
+    "anchor": "还是"
+  },
+  {
     "id": "g:hanzi-hanyu",
     "title": "汉语, 中文, và 汉字",
     "pattern": "汉语/中文 (the language) vs 汉字 (the characters)",
@@ -404,6 +432,34 @@
       "s:l1:011",
       "s:l1:012"
     ]
+  },
+  {
+    "id": "g:hui-can",
+    "title": "会: biết làm / sẽ",
+    "pattern": "Subject + 会 + verb",
+    "explanation": "会 (huì) đứng trước động từ, nghĩa là \"biết\" làm một việc nhờ đã học: 我会说汉语, 他不会开车 (không biết lái xe). 能 thì nói về khả năng hoặc hoàn cảnh cho phép: người biết lái xe nhưng hôm nay mệt thì nói 我今天不能开车, không nói 不会. 会 còn có nghĩa \"sẽ\", \"chắc sẽ\" khi đoán việc sắp xảy ra: 他明天会来吗？ Phủ định là 不会, đọc bú huì.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:047",
+      "s:l1:core:048",
+      "s:l1:core:049",
+      "s:l1:core:050"
+    ],
+    "anchor": "汉语"
+  },
+  {
+    "id": "g:jianguo-experience-marker",
+    "title": "Đánh dấu kinh nghiệm với V + 过",
+    "pattern": "verb + 过",
+    "explanation": "过 (guo) đứng ngay sau động từ cho biết ai đó đã từng trải qua việc gì, thường không nói rõ lúc nào: 我去过北京 (tôi đã từng đến Bắc Kinh). Hỏi bằng …过…吗？: 你坐过飞机吗？ (bạn đã từng đi máy bay chưa?). Phủ định bằng 没 + động từ + 过, vẫn giữ 过 (khác với 了, bị bỏ đi khi phủ định): 我没去过中国.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:039",
+      "s:l1:core:040",
+      "s:l1:core:041",
+      "s:l1:core:042"
+    ],
+    "anchor": "过"
   },
   {
     "id": "g:jiao-naming",
@@ -455,6 +511,20 @@
     ]
   },
   {
+    "id": "g:lai-qu-direction",
+    "title": "Bổ ngữ xu hướng 来/去",
+    "pattern": "verb + 来/去 (回来, 出去, 进来)",
+    "explanation": "来 và 去 đặt sau các động từ chỉ hướng như 回, 出, 进 để cho biết hướng di chuyển so với người nói: 来 là về phía người nói, 去 là rời xa người nói. Người đang ở trong nhà nói 进来 (vào đây) và 出去 (ra ngoài), còn người ở bên ngoài thì nói 进去 và 出来. Tương tự, 回来 là về lại chỗ người nói đang ở, 回去 là về một nơi khác. Trong các cụm này 来/去 thường đọc nhẹ: huílai, chūqu, jìnlai.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:043",
+      "s:l1:core:044",
+      "s:l1:core:045",
+      "s:l1:core:046"
+    ],
+    "anchor": "回来"
+  },
+  {
     "id": "g:le-change",
     "title": "了 cuối câu: thay đổi trạng thái",
     "pattern": "Sentence + 了",
@@ -467,6 +537,20 @@
       "s:l1:core:022"
     ],
     "anchor": "了"
+  },
+  {
+    "id": "g:le-completed",
+    "title": "了 sau động từ: hành động đã xong",
+    "pattern": "Verb + 了 (+ object); …了吗? / 没 + verb",
+    "explanation": "了 (le) đặt ngay sau động từ cho biết hành động đã hoàn thành: 妈妈做了三个菜 (mẹ đã nấu ba món). Khi có tân ngữ, tân ngữ thường kèm số lượng hoặc từ bổ nghĩa, như 三个菜, 一杯水, 我的杯子. Muốn hỏi việc đã làm chưa thì giữ 了 và thêm 吗 hoặc 没有 vào cuối câu: 你拿了我的杯子吗？, 你吃了没有？ Phủ định dùng 没 + động từ và bỏ 了: nói 我没吃早饭, không nói 我没吃了早饭.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:023",
+      "s:l1:core:024",
+      "s:l1:core:025",
+      "s:l1:core:026"
+    ],
+    "anchor": "看"
   },
   {
     "id": "g:ma-question",
@@ -784,6 +868,20 @@
     ]
   },
   {
+    "id": "g:xiang-want",
+    "title": "想 + động từ: muốn làm gì",
+    "pattern": "Subject + 想 + verb",
+    "explanation": "想 (xiǎng) đứng trước động từ, nghĩa là \"muốn\" làm gì: 我想喝茶 (tôi muốn uống trà). So với 要, 想 nhẹ nhàng và lịch sự hơn, giống như nói ra mong muốn của mình; 要 thì dứt khoát hơn, gần với \"cần\", \"đòi\". Phủ định là 不想 (bù xiǎng): 我不想吃饭. Còn 不要 nghe như từ chối thẳng, hoặc mang nghĩa \"đừng\".",
+    "level": 1,
+    "examples": [
+      "s:l1:core:027",
+      "s:l1:core:028",
+      "s:l1:core:029",
+      "s:l1:core:030"
+    ],
+    "anchor": "想"
+  },
+  {
     "id": "g:xiangdui-shijian",
     "title": "Năm từ chỉ ngày tương đối",
     "pattern": "前天 / 昨天 / 今天 / 明天 / 后天",
@@ -920,6 +1018,20 @@
       "s:l1:051",
       "s:l1:052"
     ]
+  },
+  {
+    "id": "g:zhe-durative",
+    "title": "着: trạng thái đang kéo dài",
+    "pattern": "Verb + 着",
+    "explanation": "着 (zhe) đặt sau động từ để miêu tả một trạng thái đang kéo dài, kết quả của hành động vẫn còn đó: 穿着 (đang mặc), 站着 (đang đứng), 放着 (đang để sẵn). Nó không dùng để nói một hành động đang diễn ra — việc đó dùng 正在: 他正在吃饭 (anh ấy đang ăn cơm). V着 có thể đứng trước một động từ khác để chỉ tư thế khi làm việc đó: 他站着吃饭 (anh ấy đứng ăn cơm); còn nơi chốn + V着 + vật nghĩa là ở đó có vật gì: 那儿放着一杯水.",
+    "level": 1,
+    "examples": [
+      "s:l1:core:031",
+      "s:l1:core:032",
+      "s:l1:core:033",
+      "s:l1:core:034"
+    ],
+    "anchor": "着"
   },
   {
     "id": "g:zhende-confirm",

@@ -3962,5 +3962,433 @@
       "没有",
       "了"
     ]
+  },
+  {
+    "id": "s:l1:core:023",
+    "zh": "妈妈做了三个菜。",
+    "pinyin": "Māma zuòle sān ge cài.",
+    "vi": "Mẹ đã nấu ba món.",
+    "words": [
+      "妈妈",
+      "做",
+      "了",
+      "三",
+      "个",
+      "菜"
+    ]
+  },
+  {
+    "id": "s:l1:core:024",
+    "zh": "我给了他一杯水。",
+    "pinyin": "Wǒ gěile tā yì bēi shuǐ.",
+    "vi": "Tôi đã đưa cho anh ấy một cốc nước.",
+    "words": [
+      "我",
+      "给",
+      "了",
+      "他",
+      "一",
+      "杯",
+      "水"
+    ]
+  },
+  {
+    "id": "s:l1:core:025",
+    "zh": "你拿了我的杯子吗？",
+    "pinyin": "Nǐ nále wǒ de bēizi ma?",
+    "vi": "Bạn đã lấy cốc của tôi à?",
+    "words": [
+      "你",
+      "拿",
+      "了",
+      "我",
+      "的",
+      "杯子",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l1:core:026",
+    "zh": "我今天没吃早饭。",
+    "pinyin": "Wǒ jīntiān méi chī zǎofàn.",
+    "vi": "Hôm nay tôi chưa ăn sáng.",
+    "words": [
+      "我",
+      "今天",
+      "没",
+      "吃",
+      "早饭"
+    ]
+  },
+  {
+    "id": "s:l1:core:027",
+    "zh": "我想喝茶。",
+    "pinyin": "Wǒ xiǎng hē chá.",
+    "vi": "Tôi muốn uống trà.",
+    "words": [
+      "我",
+      "想",
+      "喝",
+      "茶"
+    ]
+  },
+  {
+    "id": "s:l1:core:028",
+    "zh": "你想吃什么？",
+    "pinyin": "Nǐ xiǎng chī shénme?",
+    "vi": "Bạn muốn ăn gì?",
+    "words": [
+      "你",
+      "想",
+      "吃",
+      "什么"
+    ]
+  },
+  {
+    "id": "s:l1:core:029",
+    "zh": "我不想吃饭。",
+    "pinyin": "Wǒ bù xiǎng chī fàn.",
+    "vi": "Tôi không muốn ăn cơm.",
+    "words": [
+      "我",
+      "不",
+      "想",
+      "吃饭"
+    ]
+  },
+  {
+    "id": "s:l1:core:030",
+    "zh": "晚上我想吃面条儿。",
+    "pinyin": "Wǎnshang wǒ xiǎng chī miàntiáor.",
+    "vi": "Tối nay tôi muốn ăn mì.",
+    "words": [
+      "晚上",
+      "我",
+      "想",
+      "吃",
+      "面条儿"
+    ]
+  },
+  {
+    "id": "s:l1:core:031",
+    "zh": "他站着吃饭。",
+    "pinyin": "Tā zhànzhe chī fàn.",
+    "vi": "Anh ấy đứng ăn cơm.",
+    "words": [
+      "他",
+      "站",
+      "着",
+      "吃饭"
+    ]
+  },
+  {
+    "id": "s:l1:core:032",
+    "zh": "那儿放着一杯水。",
+    "pinyin": "Nàr fàngzhe yì bēi shuǐ.",
+    "vi": "Ở đó có để sẵn một cốc nước.",
+    "words": [
+      "那儿",
+      "放",
+      "着",
+      "一",
+      "杯",
+      "水"
+    ]
+  },
+  {
+    "id": "s:l1:core:033",
+    "zh": "你坐着，我给你拿水。",
+    "pinyin": "Nǐ zuòzhe, wǒ gěi nǐ ná shuǐ.",
+    "vi": "Bạn cứ ngồi đi, tôi lấy nước cho bạn.",
+    "words": [
+      "你",
+      "坐",
+      "着",
+      "我",
+      "给",
+      "你",
+      "拿",
+      "水"
+    ]
+  },
+  {
+    "id": "s:l1:core:034",
+    "zh": "他在那儿站着。",
+    "pinyin": "Tā zài nàr zhànzhe.",
+    "vi": "Anh ấy đang đứng ở đó.",
+    "words": [
+      "他",
+      "在",
+      "那儿",
+      "站",
+      "着"
+    ]
+  },
+  {
+    "id": "s:l1:core:035",
+    "zh": "从我家到医院很远。",
+    "pinyin": "Cóng wǒ jiā dào yīyuàn hěn yuǎn.",
+    "vi": "Từ nhà tôi đến bệnh viện rất xa.",
+    "words": [
+      "从",
+      "我",
+      "家",
+      "到",
+      "医院",
+      "很",
+      "远"
+    ]
+  },
+  {
+    "id": "s:l1:core:036",
+    "zh": "我从早上到晚上都在家。",
+    "pinyin": "Wǒ cóng zǎoshang dào wǎnshang dōu zài jiā.",
+    "vi": "Tôi ở nhà từ sáng đến tối.",
+    "words": [
+      "我",
+      "从",
+      "早上",
+      "到",
+      "晚上",
+      "都",
+      "在",
+      "家"
+    ]
+  },
+  {
+    "id": "s:l1:core:037",
+    "zh": "从我家到路口不远。",
+    "pinyin": "Cóng wǒ jiā dào lùkǒu bù yuǎn.",
+    "vi": "Từ nhà tôi đến ngã tư không xa.",
+    "words": [
+      "从",
+      "我",
+      "家",
+      "到",
+      "路口",
+      "不",
+      "远"
+    ]
+  },
+  {
+    "id": "s:l1:core:038",
+    "zh": "他从早上到现在都没吃饭。",
+    "pinyin": "Tā cóng zǎoshang dào xiànzài dōu méi chī fàn.",
+    "vi": "Từ sáng đến giờ anh ấy chưa ăn gì.",
+    "words": [
+      "他",
+      "从",
+      "早上",
+      "到",
+      "现在",
+      "都",
+      "没",
+      "吃饭"
+    ]
+  },
+  {
+    "id": "s:l1:core:039",
+    "zh": "我去过北京。",
+    "pinyin": "Wǒ qùguo Běijīng.",
+    "vi": "Tôi đã từng đến Bắc Kinh.",
+    "words": [
+      "我",
+      "去",
+      "过",
+      "北京"
+    ]
+  },
+  {
+    "id": "s:l1:core:040",
+    "zh": "你坐过飞机吗？",
+    "pinyin": "Nǐ zuòguo fēijī ma?",
+    "vi": "Bạn đã từng đi máy bay chưa?",
+    "words": [
+      "你",
+      "坐",
+      "过",
+      "飞机",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l1:core:041",
+    "zh": "我没去过中国。",
+    "pinyin": "Wǒ méi qùguo Zhōngguó.",
+    "vi": "Tôi chưa từng đến Trung Quốc.",
+    "words": [
+      "我",
+      "没",
+      "去",
+      "过",
+      "中国"
+    ]
+  },
+  {
+    "id": "s:l1:core:042",
+    "zh": "他来过我家两次。",
+    "pinyin": "Tā láiguo wǒ jiā liǎng cì.",
+    "vi": "Anh ấy đã từng đến nhà tôi hai lần.",
+    "words": [
+      "他",
+      "来",
+      "过",
+      "我",
+      "家",
+      "两",
+      "次"
+    ]
+  },
+  {
+    "id": "s:l1:core:043",
+    "zh": "你什么时候回来？",
+    "pinyin": "Nǐ shénme shíhou huílai?",
+    "vi": "Khi nào bạn về?",
+    "words": [
+      "你",
+      "什么",
+      "时候",
+      "回来"
+    ]
+  },
+  {
+    "id": "s:l1:core:044",
+    "zh": "妈妈，我回来了！",
+    "pinyin": "Māma, wǒ huílai le!",
+    "vi": "Mẹ ơi, con về rồi!",
+    "words": [
+      "妈妈",
+      "我",
+      "回来",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l1:core:045",
+    "zh": "他出去了。",
+    "pinyin": "Tā chūqu le.",
+    "vi": "Anh ấy ra ngoài rồi.",
+    "words": [
+      "他",
+      "出去",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l1:core:046",
+    "zh": "请进来坐。",
+    "pinyin": "Qǐng jìnlai zuò.",
+    "vi": "Mời vào ngồi.",
+    "words": [
+      "请",
+      "进来",
+      "坐"
+    ]
+  },
+  {
+    "id": "s:l1:core:047",
+    "zh": "我会说汉语。",
+    "pinyin": "Wǒ huì shuō Hànyǔ.",
+    "vi": "Tôi biết nói tiếng Trung.",
+    "words": [
+      "我",
+      "会",
+      "说",
+      "汉语"
+    ]
+  },
+  {
+    "id": "s:l1:core:048",
+    "zh": "你会写汉字吗？",
+    "pinyin": "Nǐ huì xiě Hànzì ma?",
+    "vi": "Bạn có biết viết chữ Hán không?",
+    "words": [
+      "你",
+      "会",
+      "写",
+      "汉字",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l1:core:049",
+    "zh": "他不会开车。",
+    "pinyin": "Tā bú huì kāichē.",
+    "vi": "Anh ấy không biết lái xe.",
+    "words": [
+      "他",
+      "不",
+      "会",
+      "开车"
+    ]
+  },
+  {
+    "id": "s:l1:core:050",
+    "zh": "他明天会来吗？",
+    "pinyin": "Tā míngtiān huì lái ma?",
+    "vi": "Ngày mai anh ấy có đến không?",
+    "words": [
+      "他",
+      "明天",
+      "会",
+      "来",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l1:core:051",
+    "zh": "你喝茶还是喝水？",
+    "pinyin": "Nǐ hē chá háishi hē shuǐ?",
+    "vi": "Bạn uống trà hay uống nước?",
+    "words": [
+      "你",
+      "喝",
+      "茶",
+      "还是",
+      "喝",
+      "水"
+    ]
+  },
+  {
+    "id": "s:l1:core:052",
+    "zh": "你是老师还是学生？",
+    "pinyin": "Nǐ shì lǎoshī háishi xuésheng?",
+    "vi": "Bạn là giáo viên hay học sinh?",
+    "words": [
+      "你",
+      "是",
+      "老师",
+      "还是",
+      "学生"
+    ]
+  },
+  {
+    "id": "s:l1:core:053",
+    "zh": "你想今天去还是明天去？",
+    "pinyin": "Nǐ xiǎng jīntiān qù háishi míngtiān qù?",
+    "vi": "Bạn muốn đi hôm nay hay ngày mai?",
+    "words": [
+      "你",
+      "想",
+      "今天",
+      "去",
+      "还是",
+      "明天",
+      "去"
+    ]
+  },
+  {
+    "id": "s:l1:core:054",
+    "zh": "你坐火车还是坐飞机？",
+    "pinyin": "Nǐ zuò huǒchē háishi zuò fēijī?",
+    "vi": "Bạn đi tàu hỏa hay đi máy bay?",
+    "words": [
+      "你",
+      "坐",
+      "火车",
+      "还是",
+      "坐",
+      "飞机"
+    ]
   }
 ]

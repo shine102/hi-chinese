@@ -1092,19 +1092,6 @@
     ]
   },
   {
-    "id": "g:jianguo-experience-marker",
-    "title": "Đánh dấu kinh nghiệm với V + 过",
-    "pattern": "verb + 过",
-    "explanation": "过 (guo) ngay sau động từ cho biết bạn đã từng có trải nghiệm làm việc gì đó vào một thời điểm nào đó: 见过 (đã từng gặp), 去过 (đã từng đến). Phủ định bằng 没 + động từ + 过.",
-    "level": 2,
-    "examples": [
-      "s:l2:337",
-      "s:l2:338",
-      "s:l2:339",
-      "s:l2:340"
-    ]
-  },
-  {
     "id": "g:tinghao-pretty-good",
     "title": "Khen ngợi thân mật với 挺...的",
     "pattern": "挺 + adjective (+ 的)",
