@@ -1225,7 +1225,7 @@
     "id": "g:keyi-permission",
     "title": "可以: được phép / có thể",
     "pattern": "Subject + 可以 + verb; 可以…吗?",
-    "explanation": "可以 (kěyǐ) đứng trước động từ, trước hết nghĩa là \"được phép\": 我可以进来吗？ (Tôi vào được không?). Nó cũng chỉ việc hoàn cảnh cho phép làm, tức \"có thể\": 明天我可以去你家. Khác với 会 là \"biết\" làm nhờ đã học (我会开车), còn 能 thiên về năng lực hay điều kiện; khi xin phép thì 可以 là cách nói thông dụng nhất. Phủ định của \"được phép\" thường dùng 不能 (bù néng) hơn là 不可以: 你可以用我的电脑，但是不能上网.",
+    "explanation": "可以 (kěyǐ) đứng trước động từ, trước hết nghĩa là \"được phép\": 我可以进来吗？ (Tôi vào được không?). Nó cũng chỉ việc hoàn cảnh cho phép làm, tức \"có thể\": 明天我可以去你家. 可以 khác với 会 (biết làm nhờ đã học: 我会开车) và 能 (thiên về năng lực hay điều kiện); khi xin phép thì 可以 là cách nói thông dụng nhất. Phủ định của \"được phép\" thường dùng 不能 (bù néng) hơn là 不可以: 你可以用我的电脑，但是不能上网.",
     "level": 2,
     "examples": [
       "s:l2:core:001",
@@ -1295,7 +1295,7 @@
     "id": "g:jiu-cai",
     "title": "就 và 才: sớm hay muộn",
     "pattern": "time + 就 + verb (了) / time + 才 + verb",
-    "explanation": "就 (jiù) và 才 (cái) đứng sau từ chỉ thời gian, trước động từ, cho thấy người nói thấy việc đó sớm hay muộn so với dự kiến. 就 nghĩa là sớm hơn hoặc dễ hơn dự kiến, giống \"đã… rồi\", và câu thường có 了: 他八点就来了. 才 nghĩa là muộn hơn hoặc khó hơn dự kiến, giống \"mới\", và không bao giờ đi với 了: 他十点才来, không nói 他十点才来了.",
+    "explanation": "就 (jiù) và 才 (cái) đứng sau từ chỉ thời gian, trước động từ, cho thấy người nói thấy việc đó sớm hay muộn so với dự kiến. 就 nghĩa là sớm hơn hoặc dễ hơn dự kiến, giống \"đã… rồi\", và câu thường có 了: 他八点就来了. 才 nghĩa là muộn hơn hoặc khó hơn dự kiến, giống \"mới\", và với nghĩa này không đi với 了: 他十点才来, không nói 他十点才来了.",
     "level": 2,
     "examples": [
       "s:l2:core:021",

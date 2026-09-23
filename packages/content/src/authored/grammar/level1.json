@@ -514,7 +514,7 @@
     "id": "g:lai-qu-direction",
     "title": "Bổ ngữ xu hướng 来/去",
     "pattern": "verb + 来/去 (回来, 出去, 进来)",
-    "explanation": "来 và 去 đặt sau các động từ chỉ hướng như 回, 出, 进 để cho biết hướng di chuyển so với người nói: 来 là về phía người nói, 去 là rời xa người nói. Người đang ở trong nhà nói 进来 (vào đây) và 出去 (ra ngoài), còn người ở bên ngoài thì nói 进去 và 出来. Tương tự, 回来 là về lại chỗ người nói đang ở, 回去 là về một nơi khác. Trong các cụm này 来/去 thường đọc nhẹ: huílai, chūqu, jìnlai.",
+    "explanation": "来 và 去 đặt sau các động từ chỉ hướng như 回, 出, 进 để cho biết hướng di chuyển so với người nói: 来 là về phía người nói, 去 là rời xa người nói. Người đang ở trong nhà nói 进来 (vào đây) và 出去 (ra ngoài), còn người ở bên ngoài thì nói 进去 và 出来. Tương tự, 回来 là về lại chỗ người nói đang ở, còn 回去 là quay về chỗ của mình (nhà, quê…), rời xa chỗ người nói. Trong các cụm này 来/去 thường đọc nhẹ: huílai, chūqu, jìnlai.",
     "level": 1,
     "examples": [
       "s:l1:core:043",
@@ -1023,7 +1023,7 @@
     "id": "g:zhe-durative",
     "title": "着: trạng thái đang kéo dài",
     "pattern": "Verb + 着",
-    "explanation": "着 (zhe) đặt sau động từ để miêu tả một trạng thái đang kéo dài, kết quả của hành động vẫn còn đó: 穿着 (đang mặc), 站着 (đang đứng), 放着 (đang để sẵn). Nó không dùng để nói một hành động đang diễn ra — việc đó dùng 正在: 他正在吃饭 (anh ấy đang ăn cơm). V着 có thể đứng trước một động từ khác để chỉ tư thế khi làm việc đó: 他站着吃饭 (anh ấy đứng ăn cơm); còn nơi chốn + V着 + vật nghĩa là ở đó có vật gì: 那儿放着一杯水.",
+    "explanation": "着 (zhe) đặt sau động từ để miêu tả một trạng thái đang kéo dài, kết quả của hành động vẫn còn đó: 穿着 (đang mặc), 站着 (đang đứng), 放着 (đang để sẵn). Nó không dùng để nói một hành động đang diễn ra — việc đó dùng 正在 (zhèngzài): 他正在吃饭 (anh ấy đang ăn cơm). V着 có thể đứng trước một động từ khác để chỉ tư thế khi làm việc đó: 他站着吃饭 (anh ấy đứng ăn cơm); còn nơi chốn + V着 + vật nghĩa là ở đó có vật gì: 那儿放着一杯水.",
     "level": 1,
     "examples": [
       "s:l1:core:031",
