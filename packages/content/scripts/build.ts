@@ -5,6 +5,7 @@ import { loadAuthored } from '../src/pipeline/authored.js';
 import { writeContent } from '../src/pipeline/build.js';
 import { fetchRaw } from '../src/pipeline/fetch.js';
 import { findOrderViolations } from '../src/pipeline/curriculum-order.js';
+import { findCrowdedUnits, MAX_GRAMMAR_PER_UNIT } from '../src/pipeline/grammar-crowding.js';
 import { assembleContent } from '../src/pipeline/run.js';
 import { findEnglishFallbacks } from '../src/pipeline/vietnamese-coverage.js';
 
@@ -56,4 +57,12 @@ if (orderViolations.length > 0) {
   for (const v of orderViolations) {
     console.warn(`  ${v.word} (${v.unitId}) uses ${v.char} (${v.charUnitId})`);
   }
+}
+
+const crowded = findCrowdedUnits(result.bundle.units);
+if (crowded.length > 0) {
+  console.warn(
+    `warning: ${crowded.length} unit(s) with more than ${MAX_GRAMMAR_PER_UNIT} grammar points:`,
+  );
+  for (const c of crowded) console.warn(`  ${c.unitId}: ${c.count}`);
 }
