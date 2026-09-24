@@ -60,7 +60,7 @@ bước 3.
   "Xã Hội", "Ăn Uống", "Miêu Tả"); viết giống hệt nhau cho mọi chủ đề con cùng
   chủ đề lớn trong một level. Không được chứa dấu `:`.
 - `title`: `"<broad>: <chủ đề con>"`, tiếng Việt, không trùng trong level.
-- Mỗi level ~30-45 chủ đề con; mỗi chủ đề con 8-16 từ nội dung (dưới 8 thì gộp
+- Mỗi chủ đề con 8-16 từ nội dung (≈45-70 chủ đề con mỗi level) (dưới 8 thì gộp
   vào chủ đề con gần nghĩa; trên 16 thì tách).
 - `words` phủ đúng toàn bộ từ nội dung của level, mỗi từ một chủ đề con.
 - Không có chủ đề con kiểu vơ vét ("Khác", "Tổng hợp", "Miêu Tả & Tính Chất"):
