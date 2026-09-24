@@ -13,7 +13,7 @@ const themesDir = resolve(here, '../src/authored/themes');
 const readJson = async <T>(p: string): Promise<T> => JSON.parse(await readFile(p, 'utf8')) as T;
 
 const LEVELS = [2] as const;
-const CATCH_ALL = /khác|tổng hợp|linh tinh|miêu tả & tính chất/i;
+const CATCH_ALL = /(^|[\s:&])(khác|tổng hợp|linh tinh)(?=$|[\s&])|miêu tả & tính chất/i;
 
 describe.each(LEVELS)('themes/level%i.json', (level) => {
   const load = async () => {
