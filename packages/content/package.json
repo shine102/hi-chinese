@@ -12,7 +12,8 @@
     "fetch": "tsx scripts/fetch.ts",
     "build": "tsx scripts/build.ts",
     "report:readings": "tsx scripts/report-readings.ts",
-    "vocab-context": "tsx scripts/vocab-context.ts"
+    "vocab-context": "tsx scripts/vocab-context.ts",
+    "lesson-gaps": "tsx scripts/lesson-gaps.ts"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",
