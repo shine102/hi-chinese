@@ -89,23 +89,26 @@ export function generateSlides(input: SlideInput, seed: number): Slide[] {
   const sentenceById = new Map(allSentences.map((s) => [s.id, s] as const));
   const usedSentences = new Set<string>();
 
+  // Words of this unit that are taught in a later lesson; words from earlier
+  // units count as known.
+  const unitId = newWords[0]?.unitId ?? reviewWords[0]?.unitId;
+  const knownInUnit = new Set([...lesson.wordIds, ...lesson.reviewWordIds]);
+  const isLaterLessonWord = (wid: string) =>
+    words.get(wid)?.unitId === unitId && !knownInUnit.has(wid);
+
   for (const g of grammar) {
+    // Only sentences shipped with this unit can be shown.
+    const unitSentenceIds = g.sentenceIds.filter((sid) => sentenceById.has(sid));
     // Show only sentences available at this lesson or earlier
-    const availableSentenceIds = g.sentenceIds.filter((sid) => {
-      const s = sentenceById.get(sid);
-      if (!s) return false;
-      return s.wordIds.every((wid) => {
-        const idx = lesson.wordIds.indexOf(wid);
-        const reviewIdx = lesson.reviewWordIds.indexOf(wid);
-        return idx >= 0 || reviewIdx >= 0;
-      });
-    });
+    const availableSentenceIds = unitSentenceIds.filter(
+      (sid) => !sentenceById.get(sid)!.wordIds.some(isLaterLessonWord),
+    );
 
     if (availableSentenceIds.length > 0 || g.explanation.length > 0) {
       slides.push({
         type: 'grammar-intro',
         grammarId: g.id,
-        sentenceIds: availableSentenceIds.length > 0 ? availableSentenceIds : g.sentenceIds.slice(0, 2),
+        sentenceIds: availableSentenceIds.length > 0 ? availableSentenceIds : unitSentenceIds.slice(0, 2),
       });
     }
 
