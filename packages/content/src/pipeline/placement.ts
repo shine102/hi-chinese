@@ -16,7 +16,8 @@ export interface PlacementError {
     | 'level-mismatch'
     | 'overflow'
     | 'anchor-unknown'
-    | 'anchor-examples';
+    | 'anchor-examples'
+    | 'density-examples';
   ref: string;
   message: string;
 }
@@ -275,7 +276,11 @@ export function placeAnchoredGrammar(
 
   for (const g of authored) {
     if (seen.has(g.id)) {
-      errors.push({ kind: 'duplicate-id', ref: g.id, message: `grammar id ${g.id} appears more than once` });
+      errors.push({
+        kind: 'duplicate-id',
+        ref: g.id,
+        message: `grammar id ${g.id} appears more than once`,
+      });
       continue;
     }
     seen.add(g.id);
@@ -291,7 +296,11 @@ export function placeAnchoredGrammar(
     const anchorWord = g.anchor === undefined ? undefined : wordBySimplified.get(g.anchor);
     const unit = anchorWord && unitById.get(anchorWord.unitId);
     if (!unit) {
-      errors.push({ kind: 'anchor-unknown', ref: g.id, message: `${g.id}: anchor "${g.anchor}" is not a course word` });
+      errors.push({
+        kind: 'anchor-unknown',
+        ref: g.id,
+        message: `${g.id}: anchor "${g.anchor}" is not a course word`,
+      });
       continue;
     }
     if (unit.level !== g.level) {
@@ -319,6 +328,72 @@ export function placeAnchoredGrammar(
       level: g.level,
       sentenceIds: [...g.examples],
       unitId: unit.id,
+    });
+  }
+  return { grammar, errors };
+}
+
+export function placeGrammarByDensity(
+  authored: AuthoredGrammar[],
+  sentences: Sentence[],
+  units: Unit[],
+  minInUnit = 2,
+): { grammar: GrammarPoint[]; errors: PlacementError[] } {
+  const sentenceById = new Map(sentences.map((s) => [s.id, s]));
+  const unitById = new Map(units.map((u) => [u.id, u]));
+  const errors: PlacementError[] = [];
+  const seen = new Set<string>();
+  const grammar: GrammarPoint[] = [];
+
+  for (const g of authored) {
+    if (seen.has(g.id)) {
+      errors.push({
+        kind: 'duplicate-id',
+        ref: g.id,
+        message: `grammar id ${g.id} appears more than once`,
+      });
+      continue;
+    }
+    seen.add(g.id);
+    const missing = g.examples.filter((id) => !sentenceById.has(id));
+    if (missing.length > 0) {
+      errors.push({
+        kind: 'missing-sentence',
+        ref: g.id,
+        message: `${g.id}: unknown example sentences: ${missing.join(', ')}`,
+      });
+      continue;
+    }
+    const counts = new Map<string, number>();
+    for (const id of g.examples) {
+      const u = unitById.get(sentenceById.get(id)!.unitId);
+      if (u && u.level === g.level) counts.set(u.id, (counts.get(u.id) ?? 0) + 1);
+    }
+    let best: Unit | undefined;
+    let bestCount = 0;
+    for (const [unitId, count] of counts) {
+      const u = unitById.get(unitId)!;
+      if (count > bestCount || (count === bestCount && best && u.order < best.order)) {
+        best = u;
+        bestCount = count;
+      }
+    }
+    if (!best || bestCount < minInUnit) {
+      errors.push({
+        kind: 'density-examples',
+        ref: g.id,
+        message: `${g.id}: no level-${g.level} unit holds ${minInUnit} of its examples (best: ${best ? `${best.id} with ${bestCount}` : 'none'})`,
+      });
+      continue;
+    }
+    grammar.push({
+      id: g.id,
+      title: g.title,
+      pattern: g.pattern,
+      explanation: g.explanation,
+      level: g.level,
+      sentenceIds: [...g.examples],
+      unitId: best.id,
     });
   }
   return { grammar, errors };

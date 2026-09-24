@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { attachToUnits, placeAnchoredGrammar, placeAuthoredGrammar, placeGrammar, placeSentences } from '../src/pipeline/placement.js';
+import {
+  attachToUnits,
+  placeAnchoredGrammar,
+  placeAuthoredGrammar,
+  placeGrammar,
+  placeGrammarByDensity,
+  placeSentences,
+} from '../src/pipeline/placement.js';
 import type {
   AuthoredGrammar,
   AuthoredSentence,
@@ -242,7 +249,12 @@ describe('placeAnchoredGrammar', () => {
   const placed4 = (): Sentence[] => placeSentences([s1, s2, s3, s4], words, units).sentences;
 
   it('places the point in the unit of its anchor word', () => {
-    const { grammar, errors } = placeAnchoredGrammar([g('g1', 1, ['s1', 's2', 's4'], '学生')], placed4(), units, words);
+    const { grammar, errors } = placeAnchoredGrammar(
+      [g('g1', 1, ['s1', 's2', 's4'], '学生')],
+      placed4(),
+      units,
+      words,
+    );
     expect(errors).toEqual([]);
     expect(grammar).toEqual([
       {
@@ -257,25 +269,122 @@ describe('placeAnchoredGrammar', () => {
     ]);
   });
   it('errors when the anchor is not a course word', () => {
-    const { grammar, errors } = placeAnchoredGrammar([g('g1', 1, ['s2', 's4'], '猫')], placed4(), units, words);
+    const { grammar, errors } = placeAnchoredGrammar(
+      [g('g1', 1, ['s2', 's4'], '猫')],
+      placed4(),
+      units,
+      words,
+    );
     expect(grammar).toEqual([]);
     expect(errors.map((e) => [e.kind, e.ref])).toEqual([['anchor-unknown', 'g1']]);
   });
   it('errors when the anchor unit is in a different level', () => {
-    const { errors } = placeAnchoredGrammar([g('g1', 2, ['s2', 's4'], '学生')], placed4(), units, words);
+    const { errors } = placeAnchoredGrammar(
+      [g('g1', 2, ['s2', 's4'], '学生')],
+      placed4(),
+      units,
+      words,
+    );
     expect(errors.map((e) => [e.kind, e.ref])).toEqual([['level-mismatch', 'g1']]);
   });
   it('errors when fewer than two examples sit in the anchor unit', () => {
-    const { grammar, errors } = placeAnchoredGrammar([g('g1', 1, ['s1', 's2'], '学生')], placed4(), units, words);
+    const { grammar, errors } = placeAnchoredGrammar(
+      [g('g1', 1, ['s1', 's2'], '学生')],
+      placed4(),
+      units,
+      words,
+    );
     expect(grammar).toEqual([]);
     expect(errors.map((e) => [e.kind, e.ref])).toEqual([['anchor-examples', 'g1']]);
   });
   it('errors on missing example sentences and duplicate ids', () => {
     const { errors } = placeAnchoredGrammar(
-      [g('g1', 1, ['nope'], '学生'), g('g2', 1, ['s2', 's4'], '学生'), g('g2', 1, ['s2', 's4'], '学生')],
+      [
+        g('g1', 1, ['nope'], '学生'),
+        g('g2', 1, ['s2', 's4'], '学生'),
+        g('g2', 1, ['s2', 's4'], '学生'),
+      ],
       placed4(),
       units,
       words,
+    );
+    expect(errors.map((e) => [e.kind, e.ref])).toEqual([
+      ['missing-sentence', 'g1'],
+      ['duplicate-id', 'g2'],
+    ]);
+  });
+});
+
+describe('placeGrammarByDensity', () => {
+  const g = (id: string, level: HskLevel, examples: string[]): AuthoredGrammar => ({
+    id,
+    title: id,
+    pattern: 'A 是 B',
+    explanation: 'x',
+    level,
+    examples,
+  });
+  const extra: AuthoredSentence[] = [
+    { id: 's5', zh: '我是学生。', pinyin: 'x', vi: 'x', words: ['我', '是', '学生'] }, // l1-u02
+    { id: 's7', zh: '你是我。', pinyin: 'x', vi: 'x', words: ['你', '是', '我'] }, // l1-u01
+    { id: 's8', zh: '老师是你。', pinyin: 'x', vi: 'x', words: ['老师', '是', '你'] }, // l2-u01
+  ];
+  const placedAll = (): Sentence[] =>
+    placeSentences([s1, s2, s3, ...extra], words, units).sentences;
+
+  it('places a point in the unit holding most of its examples', () => {
+    const { grammar, errors } = placeGrammarByDensity(
+      [g('g1', 1, ['s1', 's2', 's5'])],
+      placedAll(),
+      units,
+    );
+    expect(errors).toEqual([]);
+    expect(grammar).toEqual([
+      {
+        id: 'g1',
+        title: 'g1',
+        pattern: 'A 是 B',
+        explanation: 'x',
+        level: 1,
+        sentenceIds: ['s1', 's2', 's5'],
+        unitId: 'l1-u02',
+      },
+    ]);
+  });
+  it('breaks ties toward the earlier unit, whatever the example order', () => {
+    const { grammar } = placeGrammarByDensity(
+      [g('g1', 1, ['s2', 's5', 's1', 's7'])],
+      placedAll(),
+      units,
+    );
+    expect(grammar[0]!.unitId).toBe('l1-u01');
+  });
+  it('ignores examples placed in other levels', () => {
+    const { grammar, errors } = placeGrammarByDensity(
+      [g('g1', 2, ['s1', 's7', 's3', 's8'])],
+      placedAll(),
+      units,
+    );
+    expect(errors).toEqual([]);
+    expect(grammar[0]!.unitId).toBe('l2-u01');
+  });
+  it('errors when no same-level unit has two examples', () => {
+    const { grammar, errors } = placeGrammarByDensity(
+      [g('g1', 2, ['s1', 's7']), g('g2', 1, ['s1', 's2'])],
+      placedAll(),
+      units,
+    );
+    expect(grammar).toEqual([]);
+    expect(errors.map((e) => [e.kind, e.ref])).toEqual([
+      ['density-examples', 'g1'],
+      ['density-examples', 'g2'],
+    ]);
+  });
+  it('errors on missing example sentences and duplicate ids', () => {
+    const { errors } = placeGrammarByDensity(
+      [g('g1', 1, ['nope']), g('g2', 1, ['s2', 's5']), g('g2', 1, ['s2', 's5'])],
+      placedAll(),
+      units,
     );
     expect(errors.map((e) => [e.kind, e.ref])).toEqual([
       ['missing-sentence', 'g1'],
