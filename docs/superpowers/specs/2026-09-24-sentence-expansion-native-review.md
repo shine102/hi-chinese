@@ -306,6 +306,113 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:324 | 我没有纸了，你有吗？ | Wǒ méiyǒu zhǐ le, nǐ yǒu ma? | Tôi hết giấy rồi, bạn có không? |  |
 | s:l2:fill:325 | 你看今天的日报了吗？ | Nǐ kàn jīntiān de rìbào le ma? | Bạn đọc báo ngày hôm nay chưa? |  |
 | s:l2:fill:326 | 我爸爸喜欢看晚报。 | Wǒ bàba xǐhuan kàn wǎnbào. | Bố tôi thích đọc báo chiều. |  |
+| s:l2:fill:327 | 其他的人都走了。 | Qítā de rén dōu zǒu le. | Những người khác đều đi rồi. |  |
+| s:l2:fill:328 | 这些书，其中一本是我的。 | Zhèxiē shū, qízhōng yì běn shì wǒ de. | Trong số mấy cuốn sách này, có một cuốn là của tôi. |  |
+| s:l2:fill:329 | 这部分很难。 | Zhè bùfen hěn nán. | Phần này rất khó. |  |
+| s:l2:fill:330 | 许多人喜欢喝茶。 | Xǔduō rén xǐhuan hē chá. | Rất nhiều người thích uống trà. |  |
+| s:l2:fill:331 | 他们买了大量水果。 | Tāmen mǎi le dàliàng shuǐguǒ. | Họ đã mua một lượng lớn trái cây. |  |
+| s:l2:fill:332 | 路上有好多车。 | Lùshang yǒu hǎoduō chē. | Trên đường có rất nhiều xe. |  |
+| s:l2:fill:333 | 大多数人都有手机。 | Dàduōshù rén dōu yǒu shǒujī. | Đại đa số mọi người đều có điện thoại. |  |
+| s:l2:fill:334 | 我只看了一部分。 | Wǒ zhǐ kàn le yíbùfen. | Tôi chỉ xem một phần. |  |
+| s:l2:fill:335 | 这里会说汉语的人是少数。 | Zhèlǐ huì shuō Hànyǔ de rén shì shǎoshù. | Ở đây người biết nói tiếng Trung là số ít. |  |
+| s:l2:fill:336 | 我们从这个门进入商场。 | Wǒmen cóng zhège mén jìnrù shāngchǎng. | Chúng tôi vào trung tâm thương mại từ cửa này. | 进入 slightly formal; check register |
+| s:l2:fill:337 | 他离开家已经三年了。 | Tā líkāi jiā yǐjīng sān nián le. | Anh ấy rời nhà đã ba năm rồi. |  |
+| s:l2:fill:338 | 我下班后直接回家。 | Wǒ xiàbān hòu zhíjiē huíjiā. | Tan làm xong tôi về thẳng nhà. |  |
+| s:l2:fill:339 | 他从我身边走过。 | Tā cóng wǒ shēnbiān zǒuguò. | Anh ấy đi ngang qua bên cạnh tôi. |  |
+| s:l2:fill:340 | 站住！别跑！ | Zhànzhù! Bié pǎo! | Đứng lại! Đừng chạy! |  |
+| s:l2:fill:341 | 这正是我想要的。 | Zhè zhèngshì wǒ xiǎng yào de. | Đây chính là cái tôi muốn. |  |
+| s:l2:fill:342 | 上课的时候不要讲话。 | Shàngkè de shíhou búyào jiǎnghuà. | Trong giờ học đừng nói chuyện. |  |
+| s:l2:fill:343 | 我们来读这段对话。 | Wǒmen lái dú zhè duàn duìhuà. | Chúng ta cùng đọc đoạn hội thoại này. |  |
+| s:l2:fill:344 | 这样做不行。 | Zhèyàng zuò bùxíng. | Làm như vậy không được. |  |
+| s:l2:fill:345 | 这个包很轻。 | Zhège bāo hěn qīng. | Cái túi này rất nhẹ. |  |
+| s:l2:fill:346 | 她一生都住在这里。 | Tā yìshēng dōu zhù zài zhèlǐ. | Cả đời bà ấy đều sống ở đây. |  |
+| s:l2:fill:347 | 我儿子出生在二月。 | Wǒ érzi chūshēng zài èr yuè. | Con trai tôi sinh vào tháng hai. |  |
+| s:l2:fill:348 | 这是大人的事，孩子别问。 | Zhè shì dàren de shì, háizi bié wèn. | Đây là chuyện của người lớn, trẻ con đừng hỏi. |  |
+| s:l2:fill:349 | 这些青年工作很认真。 | Zhèxiē qīngnián gōngzuò hěn rènzhēn. | Những thanh niên này làm việc rất chăm chỉ. |  |
+| s:l2:fill:350 | 他少年的时候很爱运动。 | Tā shàonián de shíhou hěn ài yùndòng. | Thời niên thiếu anh ấy rất thích vận động. | 少年时 more literary; 的时候 kept for learners |
+| s:l2:fill:351 | 这本书是给青少年看的。 | Zhè běn shū shì gěi qīngshàonián kàn de. | Cuốn sách này dành cho thanh thiếu niên đọc. |  |
+| s:l2:fill:352 | 老年人要多休息。 | Lǎonián rén yào duō xiūxi. | Người già nên nghỉ ngơi nhiều. |  |
+| s:l2:fill:353 | 人们都喜欢过新年。 | Rénmen dōu xǐhuan guò xīnnián. | Mọi người đều thích đón năm mới. |  |
+| s:l2:fill:354 | 现在我放假了，时间很自由。 | Xiànzài wǒ fàngjià le, shíjiān hěn zìyóu. | Giờ tôi được nghỉ, thời gian rất tự do. |  |
+| s:l2:fill:355 | 他在一个国际学校上学。 | Tā zài yí ge guójì xuéxiào shàngxué. | Cậu ấy học ở một trường quốc tế. |  |
+| s:l2:fill:356 | 这是一件好事。 | Zhè shì yí jiàn hǎoshì. | Đây là một chuyện tốt. |  |
+| s:l2:fill:357 | 今天来的人数不多。 | Jīntiān lái de rénshù bù duō. | Số người đến hôm nay không nhiều. |  |
+| s:l2:fill:358 | 男人和女人应该平等。 | Nánrén hé nǚrén yīnggāi píngděng. | Đàn ông và phụ nữ nên bình đẳng. |  |
+| s:l2:fill:359 | 这座楼有十层。 | Zhè zuò lóu yǒu shí céng. | Tòa nhà này có mười tầng. |  |
+| s:l2:fill:360 | 学校的大门在北边。 | Xuéxiào de dàmén zài běibiān. | Cổng chính của trường ở phía bắc. |  |
+| s:l2:fill:361 | 他坐在椅子上看书。 | Tā zuò zài yǐzi shàng kàn shū. | Anh ấy ngồi trên ghế đọc sách. |  |
+| s:l2:fill:362 | 车上没有座位了。 | Chēshàng méiyǒu zuòwèi le. | Trên xe hết chỗ ngồi rồi. |  |
+| s:l2:fill:363 | 这里的住房很贵。 | Zhèlǐ de zhùfáng hěn guì. | Nhà ở ở đây rất đắt. |  |
+| s:l2:fill:364 | 请你算一下儿多少钱。 | Qǐng nǐ suàn yíxiàr duōshao qián. | Bạn tính giúp xem bao nhiêu tiền. |  |
+| s:l2:fill:365 | 山上的空气很好。 | Shān shàng de kōngqì hěn hǎo. | Không khí trên núi rất trong lành. |  |
+| s:l2:fill:366 | 你别气我了。 | Nǐ bié qì wǒ le. | Bạn đừng chọc tức tôi nữa. | 气 in its "làm tức giận" sense (in course gloss) |
+| s:l2:fill:367 | 春天来了，花都开了。 | Chūntiān lái le, huā dōu kāi le. | Mùa xuân đến rồi, hoa nở cả rồi. |  |
+| s:l2:fill:368 | 我最喜欢北京的秋天。 | Wǒ zuì xǐhuan Běijīng de qiūtiān. | Tôi thích nhất mùa thu ở Bắc Kinh. |  |
+| s:l2:fill:369 | 我平时七点起床。 | Wǒ píngshí qī diǎn qǐchuáng. | Bình thường tôi dậy lúc bảy giờ. |  |
+| s:l2:fill:370 | 今后我要认真学习。 | Jīnhòu wǒ yào rènzhēn xuéxí. | Từ nay về sau tôi sẽ học hành chăm chỉ. |  |
+| s:l2:fill:371 | 我等到十点，他还是没来。 | Wǒ děngdào shí diǎn, tā háishi méi lái. | Tôi đợi đến mười giờ, anh ấy vẫn không đến. |  |
+| s:l2:fill:372 | 不一会儿，他就回来了。 | Bù yíhuìr, tā jiù huílai le. | Chẳng mấy chốc anh ấy đã quay lại. |  |
+| s:l2:fill:373 | 家庭教育很重要。 | Jiātíng jiàoyù hěn zhòngyào. | Giáo dục gia đình rất quan trọng. |  |
+| s:l2:fill:374 | 你最喜欢哪一科？ | Nǐ zuì xǐhuan nǎ yì kē? | Bạn thích môn nào nhất? |  |
+| s:l2:fill:375 | 我弟弟很喜欢科学。 | Wǒ dìdi hěn xǐhuan kēxué. | Em trai tôi rất thích khoa học. |  |
+| s:l2:fill:376 | 校长明天要来我们班。 | Xiàozhǎng míngtiān yào lái wǒmen bān. | Ngày mai thầy hiệu trưởng sẽ đến lớp chúng tôi. |  |
+| s:l2:fill:377 | 这个学校的教学水平很高。 | Zhège xuéxiào de jiàoxué shuǐpíng hěn gāo. | Chất lượng giảng dạy của trường này rất cao. |  |
+| s:l2:fill:378 | 下个学期我要去中国。 | Xià ge xuéqī wǒ yào qù Zhōngguó. | Học kỳ sau tôi sẽ sang Trung Quốc. |  |
+| s:l2:fill:379 | 他当了三年班长。 | Tā dāng le sān nián bānzhǎng. | Cậu ấy làm lớp trưởng ba năm rồi. |  |
+| s:l2:fill:380 | 中小学的学生下午四点放学。 | Zhōngxiǎoxué de xuésheng xiàwǔ sì diǎn fàngxué. | Học sinh tiểu học và trung học tan học lúc bốn giờ chiều. |  |
+| s:l2:fill:381 | 风太大，树倒了。 | Fēng tài dà, shù dǎo le. | Gió to quá, cây đổ rồi. |  |
+| s:l2:fill:382 | 你是怎样学汉语的？ | Nǐ shì zěnyàng xué Hànyǔ de? | Bạn đã học tiếng Trung như thế nào? |  |
+| s:l2:fill:383 | 他提出了一个新计划。 | Tā tíchū le yí ge xīn jìhuà. | Anh ấy đã đưa ra một kế hoạch mới. |  |
+| s:l2:fill:384 | 你喜欢什么样的衣服？ | Nǐ xǐhuan shénmeyàng de yīfu? | Bạn thích quần áo kiểu gì? |  |
+| s:l2:fill:385 | 妈妈在楼下喊我。 | Māma zài lóuxià hǎn wǒ. | Mẹ đang gọi tôi ở dưới nhà. |  |
+| s:l2:fill:386 | 今天我感觉好多了。 | Jīntiān wǒ gǎnjué hǎo duō le. | Hôm nay tôi thấy đỡ nhiều rồi. |  |
+| s:l2:fill:387 | 下班以后，我感到很累。 | Xiàbān yǐhòu, wǒ gǎndào hěn lèi. | Tan làm xong, tôi thấy rất mệt. |  |
+| s:l2:fill:388 | 别急，我马上来。 | Bié jí, wǒ mǎshàng lái. | Đừng vội, tôi đến ngay. |  |
+| s:l2:fill:389 | 这个电影很可怕。 | Zhège diànyǐng hěn kěpà. | Bộ phim này rất đáng sợ. |  |
+| s:l2:fill:390 | 我没想到他会来。 | Wǒ méi xiǎngdào tā huì lái. | Tôi không ngờ anh ấy lại đến. |  |
+| s:l2:fill:391 | 在我心中，你最重要。 | Zài wǒ xīnzhōng, nǐ zuì zhòngyào. | Trong lòng tôi, em là quan trọng nhất. |  |
+| s:l2:fill:392 | 孩子长大了，懂得了很多事。 | Háizi zhǎngdà le, dǒngde le hěn duō shì. | Con đã lớn, hiểu được nhiều chuyện. | 懂得很多道理 more idiomatic; 道理 not in course |
+| s:l2:fill:393 | 去学校要经过一个商场。 | Qù xuéxiào yào jīngguò yí ge shāngchǎng. | Đi đến trường phải đi qua một trung tâm thương mại. |  |
+| s:l2:fill:394 | 我的表坏了。 | Wǒ de biǎo huài le. | Đồng hồ của tôi hỏng rồi. |  |
+| s:l2:fill:395 | 这件衣服你穿很合适。 | Zhè jiàn yīfu nǐ chuān hěn héshì. | Chiếc áo này bạn mặc rất vừa. |  |
+| s:l2:fill:396 | 这家店的顾客都是学生。 | Zhè jiā diàn de gùkè dōu shì xuésheng. | Khách của cửa hàng này đều là học sinh. |  |
+| s:l2:fill:397 | 外边很冷，你穿大衣吧。 | Wàibian hěn lěng, nǐ chuān dàyī ba. | Bên ngoài lạnh lắm, bạn mặc áo khoác đi. |  |
+| s:l2:fill:398 | 超市里的东西很便宜。 | Chāoshì lǐ de dōngxi hěn piányi. | Đồ trong siêu thị rất rẻ. |  |
+| s:l2:fill:399 | 司机开车开得很快。 | Sījī kāichē kāi de hěn kuài. | Bác tài lái xe rất nhanh. |  |
+| s:l2:fill:400 | 我妈妈是一名中学教师。 | Wǒ māma shì yì míng zhōngxué jiàoshī. | Mẹ tôi là giáo viên trung học. |  |
+| s:l2:fill:401 | 市长今天来我们学校了。 | Shìzhǎng jīntiān lái wǒmen xuéxiào le. | Hôm nay thị trưởng đã đến trường chúng tôi. |  |
+| s:l2:fill:402 | 我儿子想当科学家。 | Wǒ érzi xiǎng dāng kēxuéjiā. | Con trai tôi muốn làm nhà khoa học. |  |
+| s:l2:fill:403 | 这个商人很会卖东西。 | Zhège shāngrén hěn huì mài dōngxi. | Người thương nhân này rất giỏi bán hàng. |  |
+| s:l2:fill:404 | 医院的院长很忙。 | Yīyuàn de yuànzhǎng hěn máng. | Giám đốc bệnh viện rất bận. |  |
+| s:l2:fill:405 | 他是很有名的画家。 | Tā shì hěn yǒumíng de huàjiā. | Ông ấy là họa sĩ rất nổi tiếng. |  |
+| s:l2:fill:406 | 我们组有五个人。 | Wǒmen zǔ yǒu wǔ ge rén. | Tổ chúng tôi có năm người. |  |
+| s:l2:fill:407 | 咱们一起走吧。 | Zánmen yìqǐ zǒu ba. | Chúng mình cùng đi nhé. |  |
+| s:l2:fill:408 | 咱去吃饭吧。 | Zán qù chīfàn ba. | Mình đi ăn cơm thôi. | 咱 alone = "we" (northern colloquial) |
+| s:l2:fill:409 | 家里来客人了。 | Jiālǐ lái kèrén le. | Nhà có khách đến. |  |
+| s:l2:fill:410 | 这个房子的主人是谁？ | Zhège fángzi de zhǔrén shì shéi? | Chủ của ngôi nhà này là ai? |  |
+| s:l2:fill:411 | 他很喜欢交朋友。 | Tā hěn xǐhuan jiāo péngyou. | Anh ấy rất thích kết bạn. |  |
+| s:l2:fill:412 | 这个鸡蛋有五十克。 | Zhège jīdàn yǒu wǔshí kè. | Quả trứng này nặng năm mươi gram. |  |
+| s:l2:fill:413 | 这个手机要一万块钱。 | Zhège shǒujī yào yí wàn kuài qián. | Chiếc điện thoại này giá mười nghìn tệ. |  |
+| s:l2:fill:414 | 我家离学校有三公里。 | Wǒ jiā lí xuéxiào yǒu sān gōnglǐ. | Nhà tôi cách trường ba cây số. |  |
+| s:l2:fill:415 | 中国有十四亿人。 | Zhōngguó yǒu shísì yì rén. | Trung Quốc có một tỷ bốn trăm triệu người. |  |
+| s:l2:fill:416 | 这个包有十公斤重。 | Zhège bāo yǒu shí gōngjīn zhòng. | Cái túi này nặng mười ký. |  |
+| s:l2:fill:417 | 一千克等于两斤。 | Yì qiānkè děngyú liǎng jīn. | Một kilôgam bằng hai cân. |  |
+| s:l2:fill:418 | 这条街晚上很安静。 | Zhè tiáo jiē wǎnshang hěn ānjìng. | Con phố này buổi tối rất yên tĩnh. |  |
+| s:l2:fill:419 | 车停在门口了。 | Chē tíng zài ménkǒu le. | Xe đỗ ở cửa rồi. |  |
+| s:l2:fill:420 | 出口在哪儿？ | Chūkǒu zài nǎr? | Lối ra ở đâu? |  |
+| s:l2:fill:421 | 这里的道路很干净。 | Zhèlǐ de dàolù hěn gānjìng. | Đường sá ở đây rất sạch. |  |
+| s:l2:fill:422 | 去北京有一条新公路。 | Qù Běijīng yǒu yì tiáo xīn gōnglù. | Đi Bắc Kinh có một con đường quốc lộ mới. |  |
+| s:l2:fill:423 | 停车场已经满了。 | Tíngchēchǎng yǐjīng mǎn le. | Bãi đỗ xe đã đầy rồi. |  |
+| s:l2:fill:424 | 我在学校入口等你。 | Wǒ zài xuéxiào rùkǒu děng nǐ. | Tôi đợi bạn ở lối vào trường. |  |
+| s:l2:fill:425 | 路上的行人很多。 | Lùshang de xíngrén hěn duō. | Người đi bộ trên đường rất đông. |  |
+| s:l2:fill:426 | 我来北京主要是学汉语。 | Wǒ lái Běijīng zhǔyào shì xué Hànyǔ. | Tôi đến Bắc Kinh chủ yếu là để học tiếng Trung. |  |
+| s:l2:fill:427 | 我们打算去南方旅行。 | Wǒmen dǎsuàn qù nánfāng lǚxíng. | Chúng tôi định đi du lịch miền Nam. |  |
+| s:l2:fill:428 | 请旅客们上车。 | Qǐng lǚkèmen shàngchē. | Mời các hành khách lên xe. |  |
+| s:l2:fill:429 | 他是从外地来的。 | Tā shì cóng wàidì lái de. | Anh ấy từ nơi khác đến. |  |
+| s:l2:fill:430 | 我们学校的球队很有名。 | Wǒmen xuéxiào de qiúduì hěn yǒumíng. | Đội bóng của trường chúng tôi rất nổi tiếng. |  |
+| s:l2:fill:431 | 队长让我们八点出发。 | Duìzhǎng ràng wǒmen bā diǎn chūfā. | Đội trưởng bảo chúng tôi tám giờ xuất phát. |  |
+| s:l2:fill:432 | 球碰到网了。 | Qiú pèngdào wǎng le. | Bóng chạm lưới rồi. | 球触网/下网 is the sports phrasing; 碰到 is plain but clear |
+| s:l2:fill:433 | 他的球鞋是白色的。 | Tā de qiúxié shì báisè de. | Giày thể thao của anh ấy màu trắng. |  |
 
 ## L3
 
