@@ -6,7 +6,7 @@ const dict: [string, string, string[]?][] = [
   ['我', 'wo3'], ['不', 'bu4'], ['是', 'shi4'], ['你', 'ni3'], ['一', 'yi1'], ['个', 'ge4'],
   ['这', 'zhe4'], ['星期', 'xing1 qi1'], ['起来', 'qi3 lai5'], ['只', 'zhi3', ['zhi1']],
   ['狗', 'gou3'], ['在家', 'zai4 jia1'], ['去', 'qu4'], ['过', 'guo4', ['guo5']],
-  ['孩子', 'hai2 zi5'], ['们', 'men5'], ['站', 'zhan4'], ['统一', 'tong3 yi1'], ['了', 'le5'],
+  ['孩子', 'hai2 zi5'], ['们', 'men5'], ['站', 'zhan4'], ['统一', 'tong3 yi1'], ['了', 'le5', ['liao3']], ['吃', 'chi1'], ['都', 'dou1', ['Du1']],
 ];
 const by = new Map<string, ReadingWord>(
   dict.map(([simplified, pinyinNumeric, alt]) => [
@@ -61,5 +61,13 @@ describe('checkSentencePinyin', () => {
   it('reports syllable mismatches and unknown tokens', () => {
     expect(check('nǐ', ['我'])).toEqual(['syllables 我 token readings/ni']);
     expect(check('wǒ', ['他'])).toEqual(['unknown-token 他 course word/他']);
+  });
+  it('does not let a verb reading of 了 go neutral', () => {
+    expect(check('chī bu liǎo', ['吃', '不', '了'])).toEqual([]);
+    expect(check('chī bu liao', ['吃', '不', '了'])).not.toEqual([]);
+  });
+  it('ignores capitalised (surname) readings', () => {
+    expect(check('dōu', ['都'])).toEqual([]);
+    expect(check('dū', ['都'])).not.toEqual([]);
   });
 });

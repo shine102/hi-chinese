@@ -4833,15 +4833,14 @@
   },
   {
     "id": "s:l1:fill:038",
-    "zh": "你先介绍你的妈妈。",
-    "pinyin": "Nǐ xiān jièshào nǐ de māma.",
+    "zh": "你先介绍你妈妈。",
+    "pinyin": "Nǐ xiān jièshào nǐ māma.",
     "vi": "Bạn giới thiệu mẹ bạn trước đi.",
     "words": [
       "你",
       "先",
       "介绍",
       "你",
-      "的",
       "妈妈"
     ]
   },

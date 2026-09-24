@@ -18,13 +18,20 @@ Câu mới, pinyin đã sửa và cách đọc từ đã sửa đều do AI quy�
 - Token 2 âm tiết viết liền (吃饭 chīfàn, 在家 zàijiā); 了/着/过 viết tách (qù guo).
 - Ngoại lệ: s:l2:362 (高一年级 yì), s:l2:fill:096 (一加一 yī).
 
+## Câu cụ thể nên xem (từ final review)
+- s:l1:fill:041 你们家多少人？ — khẩu ngữ, bỏ 有; thêm 有 thì câu dời sang l1-u08 (đang đủ 5 điểm).
+- s:l2:316 请走进来 → `Qǐng zǒujìn lái` do tách token 走进 + 来; người học quen `zǒu jìnlai`.
+- 这里 `zhèlǐ` nhưng 那里 `nàli` (theo từ điển); 不够/不用 liền khi là 1 token, tách khi 2 token.
+- Quy ước viết tách 了/着/过 (`qù guo`) khác GB/T 16159 (viết liền `qùguo`) — spec chọn tách; xác nhận.
+- g:yi-jiu (anchor 哭) giờ ở l2-u32 (54% L2); pin 哭 nếu muốn sớm hơn.
+
 ## Câu mới (60)
 
 | id | zh | pinyin | vi |
 |---|---|---|---|
 | s:l1:fill:036 | 别问他们。 | Bié wèn tāmen. | Đừng hỏi họ. |
 | s:l1:fill:037 | 我没问他们。 | Wǒ méi wèn tāmen. | Tôi chưa hỏi họ. |
-| s:l1:fill:038 | 你先介绍你的妈妈。 | Nǐ xiān jièshào nǐ de māma. | Bạn giới thiệu mẹ bạn trước đi. |
+| s:l1:fill:038 | 你先介绍你妈妈。 | Nǐ xiān jièshào nǐ māma. | Bạn giới thiệu mẹ bạn trước đi. |
 | s:l1:fill:039 | 我们常在这里。 | Wǒmen cháng zài zhèlǐ. | Chúng tôi hay ở đây. |
 | s:l1:fill:040 | 我是他朋友，你呢？ | Wǒ shì tā péngyou, nǐ ne? | Tôi là bạn của anh ấy, còn bạn? |
 | s:l1:fill:041 | 你们家多少人？ | Nǐmen jiā duōshao rén? | Nhà các bạn có bao nhiêu người? |
@@ -39,7 +46,7 @@ Câu mới, pinyin đã sửa và cách đọc từ đã sửa đều do AI quy�
 | s:l2:fill:190 | 我常常运动。 | Wǒ chángcháng yùndòng. | Tôi thường xuyên tập thể dục. |
 | s:l2:fill:191 | 他的汉语水平很高。 | Tā de Hànyǔ shuǐpíng hěn gāo. | Trình độ tiếng Trung của anh ấy rất cao. |
 | s:l2:fill:192 | 这次考试的分数很高。 | Zhè cì kǎoshì de fēnshù hěn gāo. | Điểm bài thi lần này rất cao. |
-| s:l2:fill:193 | 我们晚上去听音乐会吧。 | Wǒmen wǎnshang qù tīng yīnyuèhuì ba. | Tối nay chúng ta đi nghe hòa nhạc nhé. |
+| s:l2:fill:193 | 我们晚上去听音乐会吧。 | Wǒmen wǎnshang qù tīng yīnyuèhuì ba. | Buổi tối chúng ta đi nghe hòa nhạc nhé. |
 | s:l2:fill:194 | 你不要笑话我。 | Nǐ búyào xiàohua wǒ. | Bạn đừng cười nhạo tôi. |
 | s:l2:fill:195 | 他明天出院。 | Tā míngtiān chūyuàn. | Ngày mai anh ấy xuất viện. |
 | s:l2:fill:196 | 你可以穿黑色或者白色的衣服。 | Nǐ kěyǐ chuān hēisè huòzhě báisè de yīfu. | Bạn có thể mặc quần áo màu đen hoặc màu trắng. |

@@ -185,7 +185,6 @@ export function allowedTones(
     if (token === '一' && prev !== undefined && prev === next) allowed.add(5); // V一V
   }
   if (token === '个') allowed.add(5);
-  if ((token === '过' || token === '了' || token === '着') && s.token > 0) allowed.add(5);
   // Reduplicated verb: 问问, 看看 (two tokens or one), V一V's second V.
   if (
     s.pos === 0 &&
@@ -263,9 +262,12 @@ export function checkSentencePinyin(
   for (const t of words) {
     const w = bySimplified.get(t);
     if (!w) return [{ id, kind: 'unknown-token', token: t, expected: 'course word', got: t }];
-    tokens.push(
-      [w.pinyinNumeric, ...(w.alternates ?? []).map((a) => a.pinyinNumeric)].map(syllables),
-    );
+    // Capitalised alternates are surname/place readings (都 Dū), never the course reading.
+    const readings = [
+      w.pinyinNumeric,
+      ...(w.alternates ?? []).map((a) => a.pinyinNumeric).filter((p) => !/^[A-Z]/.test(p)),
+    ];
+    tokens.push(readings.map(syllables));
   }
   const ls = letters(sentence.pinyin);
   const flat = ls.map((l) => l.ch).join('');
