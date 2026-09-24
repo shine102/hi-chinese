@@ -14,6 +14,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 |---|---|---|
 | s:l1:fill:046 | vi: Tôi khỏe, anh ấy cũng khỏe. → Tôi khỏe, anh ấy khỏe. | "cũng" has no 也 in the Chinese (Task 2 review) |
 | s:l1:fill:054 | vi: Xin lỗi, tôi chưa đóng. → Xin lỗi, tôi không đóng. | 没 here is a past negation, not "chưa" (Task 2 review) |
+| s:l2:fill:262 | pinyin: Xī'nán hé xīběi… → Xīnán hé Xīběi… | region names capitalised like 东北 Dōngběi (s:l2:fill:259); no apostrophe needed before n (Task 4 deferred item) |
 
 ## L1
 
@@ -241,7 +242,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:259 | 今年我想去东北看看。 | Jīnnián wǒ xiǎng qù Dōngběi kànkan. | Năm nay tôi muốn đi vùng Đông Bắc xem sao. | 东北 capitalised as region name |
 | s:l2:fill:260 | 他去过很多西方国家。 | Tā qù guo hěn duō xīfāng guójiā. | Anh ấy đã đi nhiều nước phương Tây. |  |
 | s:l2:fill:261 | 中国是一个东方国家。 | Zhōngguó shì yí ge dōngfāng guójiā. | Trung Quốc là một quốc gia phương Đông. |  |
-| s:l2:fill:262 | 西南和西北我都去过。 | Xī'nán hé xīběi wǒ dōu qù guo. | Tây Nam và Tây Bắc tôi đều đã đến. |  |
+| s:l2:fill:262 | 西南和西北我都去过。 | Xīnán hé Xīběi wǒ dōu qù guo. | Tây Nam và Tây Bắc tôi đều đã đến. |  |
 | s:l2:fill:263 | 我们要向东南走。 | Wǒmen yào xiàng dōngnán zǒu. | Chúng ta phải đi về hướng đông nam. |  |
 | s:l2:fill:264 | 我爬不动了。 | Wǒ pá bu dòng le. | Tôi leo không nổi nữa rồi. |  |
 | s:l2:fill:265 | 我最喜欢体育课。 | Wǒ zuì xǐhuan tǐyù kè. | Tôi thích nhất giờ thể dục. |  |
@@ -413,6 +414,108 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:431 | 队长让我们八点出发。 | Duìzhǎng ràng wǒmen bā diǎn chūfā. | Đội trưởng bảo chúng tôi tám giờ xuất phát. |  |
 | s:l2:fill:432 | 球没过网。 | Qiú méi guò wǎng. | Bóng không qua lưới. |  |
 | s:l2:fill:433 | 他的球鞋是白色的。 | Tā de qiúxié shì báisè de. | Giày thể thao của anh ấy màu trắng. |  |
+| s:l2:fill:434 | 妈妈去超市买米。 | Māma qù chāoshì mǎi mǐ. | Mẹ đi siêu thị mua gạo. |  |
+| s:l2:fill:435 | 这个蛋坏了，别吃。 | Zhège dàn huài le, bié chī. | Quả trứng này hỏng rồi, đừng ăn. |  |
+| s:l2:fill:436 | 冬天要多吃热的食物。 | Dōngtiān yào duō chī rè de shíwù. | Mùa đông nên ăn nhiều đồ ăn nóng. |  |
+| s:l2:fill:437 | 我们一起吃晚餐吧。 | Wǒmen yìqǐ chī wǎncān ba. | Chúng ta cùng ăn tối nhé. |  |
+| s:l2:fill:438 | 午餐我一般在学校吃。 | Wǔcān wǒ yìbān zài xuéxiào chī. | Bữa trưa tôi thường ăn ở trường. |  |
+| s:l2:fill:439 | 快餐吃多了对身体不好。 | Kuàicān chī duō le duì shēntǐ bù hǎo. | Ăn nhiều đồ ăn nhanh không tốt cho sức khỏe. |  |
+| s:l2:fill:440 | 你喜欢吃中餐吗？ | Nǐ xǐhuan chī zhōngcān ma? | Bạn có thích ăn món Trung Quốc không? |  |
+| s:l2:fill:441 | 今天太累了，我们叫外卖吧。 | Jīntiān tài lèi le, wǒmen jiào wàimài ba. | Hôm nay mệt quá, mình gọi đồ ăn ngoài nhé. |  |
+| s:l2:fill:442 | 我不常吃西餐。 | Wǒ bù cháng chī xīcān. | Tôi không hay ăn món Tây. |  |
+| s:l2:fill:443 | 我认为他说得对。 | Wǒ rènwéi tā shuō de duì. | Tôi cho rằng anh ấy nói đúng. |  |
+| s:l2:fill:444 | 你别那样跟妈妈说话。 | Nǐ bié nàyàng gēn māma shuōhuà. | Con đừng nói chuyện với mẹ kiểu đó. |  |
+| s:l2:fill:445 | 从这个角度看，这是好事。 | Cóng zhège jiǎodù kàn, zhè shì hǎoshì. | Nhìn từ góc độ này thì đây là chuyện tốt. |  |
+| s:l2:fill:446 | 我喜欢运动，比如说打球、爬山。 | Wǒ xǐhuan yùndòng, bǐrú shuō dǎqiú, páshān. | Tôi thích thể thao, ví dụ như chơi bóng, leo núi. |  |
+| s:l2:fill:447 | 你能举一个例子吗？ | Nǐ néng jǔ yí gè lìzi ma? | Bạn có thể nêu một ví dụ không? |  |
+| s:l2:fill:448 | 这个菜实在太好吃了。 | Zhège cài shízài tài hǎochī le. | Món này thật sự ngon quá. |  |
+| s:l2:fill:449 | 看他的样子，好像很累。 | Kàn tā de yàngzi, hǎoxiàng hěn lèi. | Nhìn dáng vẻ anh ấy, hình như rất mệt. |  |
+| s:l2:fill:450 | 这个故事我听了三遍。 | Zhège gùshi wǒ tīng le sān biàn. | Câu chuyện này tôi đã nghe ba lần. |  |
+| s:l2:fill:451 | 网上的信息不一定都对。 | Wǎngshàng de xìnxī bù yídìng dōu duì. | Thông tin trên mạng không phải lúc nào cũng đúng. |  |
+| s:l2:fill:452 | 这个网站很有用。 | Zhège wǎngzhàn hěn yǒuyòng. | Trang web này rất hữu ích. |  |
+| s:l2:fill:453 | 他在大学学计算机。 | Tā zài dàxué xué jìsuànjī. | Anh ấy học ngành máy tính ở đại học. |  |
+| s:l2:fill:454 | 我的笔记本在书包里。 | Wǒ de bǐjìběn zài shūbāo lǐ. | Sổ tay của tôi ở trong cặp sách. |  |
+| s:l2:fill:455 | 我要打印这些照片。 | Wǒ yào dǎyìn zhèxiē zhàopiàn. | Tôi muốn in những bức ảnh này. |  |
+| s:l2:fill:456 | 我的电脑开机很慢。 | Wǒ de diànnǎo kāijī hěn màn. | Máy tính của tôi khởi động rất chậm. |  |
+| s:l2:fill:457 | 我们的老师来自北京。 | Wǒmen de lǎoshī láizì Běijīng. | Thầy giáo của chúng tôi đến từ Bắc Kinh. |  |
+| s:l2:fill:458 | 请帮我称一下儿这些水果。 | Qǐng bāng wǒ chēng yíxiàr zhèxiē shuǐguǒ. | Làm ơn cân giúp tôi chỗ trái cây này. |  |
+| s:l2:fill:459 | 名单上没有我的名字。 | Míngdān shàng méiyǒu wǒ de míngzi. | Trong danh sách không có tên tôi. |  |
+| s:l2:fill:460 | 这个节目的名称很有意思。 | Zhège jiémù de míngchēng hěn yǒu yìsi. | Tên của chương trình này rất thú vị. |  |
+| s:l2:fill:461 | 今天晚上的月亮多么亮！ | Jīntiān wǎnshang de yuèliang duōme liàng! | Trăng tối nay sáng biết bao! |  |
+| s:l2:fill:462 | 瓶子里没有水了。 | Píngzi lǐ méiyǒu shuǐ le. | Trong chai hết nước rồi. |  |
+| s:l2:fill:463 | 脏衣服放在洗衣机里。 | Zāng yīfu fàng zài xǐyījī lǐ. | Quần áo bẩn bỏ vào máy giặt. |  |
+| s:l2:fill:464 | 爷爷吃完午饭习惯午睡。 | Yéye chī wán wǔfàn xíguàn wǔshuì. | Ông ăn trưa xong có thói quen ngủ trưa. |  |
+| s:l2:fill:465 | 有事你随时给我打电话。 | Yǒu shì nǐ suíshí gěi wǒ dǎ diànhuà. | Có việc gì bạn cứ gọi cho tôi bất cứ lúc nào. |  |
+| s:l2:fill:466 | 我们一周上五天课。 | Wǒmen yì zhōu shàng wǔ tiān kè. | Chúng tôi học năm ngày một tuần. |  |
+| s:l2:fill:467 | 他一夜没睡。 | Tā yí yè méi shuì. | Anh ấy cả đêm không ngủ. |  |
+| s:l2:fill:468 | 今天是个好日子。 | Jīntiān shì ge hǎo rìzi. | Hôm nay là một ngày tốt lành. |  |
+| s:l2:fill:469 | 上周他生病了，没来上课。 | Shàngzhōu tā shēngbìng le, méi lái shàngkè. | Tuần trước anh ấy bị ốm, không đến lớp. |  |
+| s:l2:fill:470 | 早晨的空气很好。 | Zǎochén de kōngqì hěn hǎo. | Không khí buổi sáng sớm rất trong lành. |  |
+| s:l2:fill:471 | 这个手表是假的。 | Zhège shǒubiǎo shì jiǎ de. | Chiếc đồng hồ này là đồ giả. |  |
+| s:l2:fill:472 | 七月份天气最热。 | Qī yuèfèn tiānqì zuì rè. | Tháng bảy trời nóng nhất. |  |
+| s:l2:fill:473 | 夜里下了很大的雨。 | Yèli xià le hěn dà de yǔ. | Trong đêm trời mưa rất to. |  |
+| s:l2:fill:474 | 这里全年都很热。 | Zhèlǐ quánnián dōu hěn rè. | Ở đây quanh năm đều nóng. |  |
+| s:l2:fill:475 | 春天公园里到处都是花。 | Chūntiān gōngyuán lǐ dàochù dōu shì huā. | Mùa xuân trong công viên đâu đâu cũng là hoa. |  |
+| s:l2:fill:476 | 今天一点儿云也没有。 | Jīntiān yìdiǎnr yún yě méiyǒu. | Hôm nay không có một chút mây nào. |  |
+| s:l2:fill:477 | 天阴了，好像要下雨。 | Tiān yīn le, hǎoxiàng yào xiàyǔ. | Trời âm u rồi, hình như sắp mưa. |  |
+| s:l2:fill:478 | 晚上的风很凉。 | Wǎnshang de fēng hěn liáng. | Gió buổi tối rất mát. |  |
+| s:l2:fill:479 | 明天多云，不会下雨。 | Míngtiān duōyún, bú huì xiàyǔ. | Ngày mai nhiều mây, sẽ không mưa. |  |
+| s:l2:fill:480 | 雨停了，天晴了。 | Yǔ tíng le, tiān qíng le. | Mưa tạnh rồi, trời quang rồi. |  |
+| s:l2:fill:481 | 明天是晴天，我们去爬山吧。 | Míngtiān shì qíngtiān, wǒmen qù páshān ba. | Ngày mai trời nắng, chúng ta đi leo núi nhé. |  |
+| s:l2:fill:482 | 阴天的时候我不想出门。 | Yīntiān de shíhou wǒ bù xiǎng chūmén. | Những hôm trời âm u tôi không muốn ra ngoài. |  |
+| s:l2:fill:483 | 我们小组有五个人。 | Wǒmen xiǎozǔ yǒu wǔ gè rén. | Nhóm chúng tôi có năm người. |  |
+| s:l2:fill:484 | 我们一起去练球吧。 | Wǒmen yìqǐ qù liàn qiú ba. | Chúng ta cùng đi tập bóng nhé. |  |
+| s:l2:fill:485 | 请再重复一次。 | Qǐng zài chóngfù yí cì. | Xin hãy nhắc lại một lần nữa. |  |
+| s:l2:fill:486 | 想回答的同学请举手。 | Xiǎng huídá de tóngxué qǐng jǔshǒu. | Bạn nào muốn trả lời thì giơ tay. |  |
+| s:l2:fill:487 | 课堂上不要玩儿手机。 | Kètáng shàng búyào wánr shǒujī. | Trong lớp học không được chơi điện thoại. |  |
+| s:l2:fill:488 | 你的笔记写得很清楚。 | Nǐ de bǐjì xiě de hěn qīngchu. | Bài ghi chép của bạn viết rất rõ ràng. |  |
+| s:l2:fill:489 | 今天的作业是写一篇作文。 | Jīntiān de zuòyè shì xiě yì piān zuòwén. | Bài tập hôm nay là viết một bài văn. |  |
+| s:l2:fill:490 | 上课的时候要认真听讲。 | Shàngkè de shíhou yào rènzhēn tīngjiǎng. | Trong giờ học phải chăm chú nghe giảng. |  |
+| s:l2:fill:491 | 这个词是什么意思？ | Zhège cí shì shénme yìsi? | Từ này nghĩa là gì? |  |
+| s:l2:fill:492 | 我们坐船过河吧。 | Wǒmen zuò chuán guò hé ba. | Chúng ta đi thuyền qua sông nhé. |  |
+| s:l2:fill:493 | 我骑自行车去学校。 | Wǒ qí zìxíngchē qù xuéxiào. | Tôi đạp xe đạp đến trường. |  |
+| s:l2:fill:494 | 路上的车辆越来越多。 | Lùshang de chēliàng yuè lái yuè duō. | Xe cộ trên đường ngày càng nhiều. |  |
+| s:l2:fill:495 | 我们骑车去吧，不远。 | Wǒmen qíchē qù ba, bù yuǎn. | Mình đạp xe đi nhé, không xa. |  |
+| s:l2:fill:496 | 地铁站就在前边。 | Dìtiězhàn jiù zài qiánbian. | Ga tàu điện ngầm ở ngay phía trước. |  |
+| s:l2:fill:497 | 公共汽车上人太多了。 | Gōnggòng qìchē shàng rén tài duō le. | Trên xe buýt đông người quá. |  |
+| s:l2:fill:498 | 他走了不久，你就来了。 | Tā zǒu le bùjiǔ, nǐ jiù lái le. | Anh ấy đi chưa lâu thì bạn đến. |  |
+| s:l2:fill:499 | 你说的我完全明白。 | Nǐ shuō de wǒ wánquán míngbai. | Những gì bạn nói tôi hoàn toàn hiểu. |  |
+| s:l2:fill:500 | 今天的气温超过了三十度。 | Jīntiān de qìwēn chāoguò le sānshí dù. | Nhiệt độ hôm nay đã vượt quá ba mươi độ. |  |
+| s:l2:fill:501 | 我们班女生占一半。 | Wǒmen bān nǚshēng zhàn yíbàn. | Lớp chúng tôi nữ sinh chiếm một nửa. |  |
+| s:l2:fill:502 | 这件衣服大小正好。 | Zhè jiàn yīfu dàxiǎo zhènghǎo. | Chiếc áo này vừa cỡ. |  |
+| s:l2:fill:503 | 我对他有一点儿不满。 | Wǒ duì tā yǒu yìdiǎnr bùmǎn. | Tôi hơi bất mãn với anh ấy. |  |
+| s:l2:fill:504 | 他的行为让大家很生气。 | Tā de xíngwéi ràng dàjiā hěn shēngqì. | Hành vi của anh ấy khiến mọi người rất tức giận. |  |
+| s:l2:fill:505 | 学习态度很重要。 | Xuéxí tàidu hěn zhòngyào. | Thái độ học tập rất quan trọng. |  |
+| s:l2:fill:506 | 这里的人都很友好。 | Zhèlǐ de rén dōu hěn yǒuhǎo. | Người ở đây đều rất thân thiện. |  |
+| s:l2:fill:507 | 我相信他是个好人。 | Wǒ xiāngxìn tā shì ge hǎorén. | Tôi tin anh ấy là người tốt. |  |
+| s:l2:fill:508 | 电影里的坏人最后怎么样了？ | Diànyǐng lǐ de huàirén zuìhòu zěnmeyàng le? | Kẻ xấu trong phim cuối cùng ra sao? |  |
+| s:l2:fill:509 | 这两个你选哪个？ | Zhè liǎng gè nǐ xuǎn nǎge? | Hai cái này bạn chọn cái nào? |  |
+| s:l2:fill:510 | 你来这儿的目的是什么？ | Nǐ lái zhèr de mùdì shì shénme? | Mục đích bạn đến đây là gì? |  |
+| s:l2:fill:511 | 这样的做法不太好。 | Zhèyàng de zuòfǎ bú tài hǎo. | Cách làm như vậy không hay lắm. |  |
+| s:l2:fill:512 | 大家讨论以后，得出了一个结果。 | Dàjiā tǎolùn yǐhòu, déchū le yí gè jiéguǒ. | Mọi người thảo luận xong đã đi đến một kết quả. |  |
+| s:l2:fill:513 | 这个难题我们一起想办法。 | Zhège nántí wǒmen yìqǐ xiǎng bànfǎ. | Vấn đề khó này chúng ta cùng nghĩ cách. |  |
+| s:l2:fill:514 | 新方法大大提高了成绩。 | Xīn fāngfǎ dàdà tígāo le chéngjì. | Phương pháp mới đã nâng cao thành tích rất nhiều. |  |
+| s:l2:fill:515 | 他平常很少说话。 | Tā píngcháng hěn shǎo shuōhuà. | Bình thường anh ấy rất ít nói. |  |
+| s:l2:fill:516 | 你在哪个单位工作？ | Nǐ zài nǎge dānwèi gōngzuò? | Bạn làm việc ở đơn vị nào? |  |
+| s:l2:fill:517 | 他在一家公司实习。 | Tā zài yì jiā gōngsī shíxí. | Anh ấy đang thực tập ở một công ty. |  |
+| s:l2:fill:518 | 你明天回国吧？一路顺风！ | Nǐ míngtiān huíguó ba? Yílù shùnfēng! | Mai bạn về nước phải không? Chúc thuận buồm xuôi gió! |  |
+| s:l2:fill:519 | 路上小心，一路平安！ | Lùshang xiǎoxīn, yílù píng'ān! | Đi đường cẩn thận, thượng lộ bình an! |  |
+| s:l2:fill:520 | 只要大家平安就好。 | Zhǐyào dàjiā píng'ān jiù hǎo. | Chỉ cần mọi người bình an là tốt rồi. |  |
+| s:l2:fill:521 | 这本书送给你。 | Zhè běn shū sònggěi nǐ. | Cuốn sách này tặng bạn. |  |
+| s:l2:fill:522 | 今天是公司十周年，晚上有晚会。 | Jīntiān shì gōngsī shí zhōunián, wǎnshang yǒu wǎnhuì. | Hôm nay là kỷ niệm mười năm của công ty, buổi tối có dạ tiệc. |  |
+| s:l2:fill:523 | 这很正常，你别急。 | Zhè hěn zhèngcháng, nǐ bié jí. | Chuyện này rất bình thường, bạn đừng sốt ruột. |  |
+| s:l2:fill:524 | 这个计划不太实际。 | Zhège jìhuà bú tài shíjì. | Kế hoạch này không thực tế lắm. |  |
+| s:l2:fill:525 | 学语言要多说多听。 | Xué yǔyán yào duō shuō duō tīng. | Học ngôn ngữ phải nói nhiều, nghe nhiều. |  |
+| s:l2:fill:526 | 这本书是英文的。 | Zhè běn shū shì Yīngwén de. | Cuốn sách này bằng tiếng Anh. |  |
+| s:l2:fill:527 | 这些词语都很常用。 | Zhèxiē cíyǔ dōu hěn chángyòng. | Những từ ngữ này đều rất thông dụng. |  |
+| s:l2:fill:528 | 不认识的字可以查字典。 | Bú rènshi de zì kěyǐ chá zìdiǎn. | Chữ không biết thì có thể tra từ điển. |  |
+| s:l2:fill:529 | 别说这么难听的话。 | Bié shuō zhème nántīng de huà. | Đừng nói những lời khó nghe như vậy. |  |
+| s:l2:fill:530 | 我借了老师的词典。 | Wǒ jiè le lǎoshī de cídiǎn. | Tôi đã mượn từ điển của thầy giáo. |  |
+| s:l2:fill:531 | 一个汉字就是一个音节。 | Yí gè Hànzì jiù shì yí gè yīnjié. | Một chữ Hán là một âm tiết. |  |
+| s:l2:fill:532 | 这个问题又出现了。 | Zhège wèntí yòu chūxiàn le. | Vấn đề này lại xuất hiện rồi. |  |
+| s:l2:fill:533 | 这个药没有什么作用。 | Zhège yào méiyǒu shénme zuòyòng. | Thuốc này chẳng có tác dụng gì. |  |
+| s:l2:fill:534 | 五个人组成了一个小组。 | Wǔ gè rén zǔchéng le yí gè xiǎozǔ. | Năm người lập thành một nhóm. |  |
+| s:l2:fill:535 | 在图书馆要小声说话。 | Zài túshūguǎn yào xiǎoshēng shuōhuà. | Trong thư viện phải nói nhỏ. |  |
 
 ## L3
 
