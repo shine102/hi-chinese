@@ -86,7 +86,7 @@ nằm trong build) dùng các hàm thuần trong `packages/content/src/pipeline/
    thức: `可以`, `得` → unit 1 của L2 (để `g:keyi-permission`, `g:de-degree` vẫn ở
    đầu L2). Pin còn là núm chỉnh khi một unit bị dồn ngữ pháp (mục 4).
 5. **Sửa thứ tự chữ đơn**: với mọi vi phạm `findOrderViolations` (chữ đơn là từ
-   trong khóa dạy ở unit bằng hoặc sau unit của từ ghép chứa nó, cùng level hoặc level sau),
+   trong khóa, cùng level hoặc thấp hơn, dạy ở unit bằng hoặc sau unit của từ ghép chứa nó),
    dời chữ đơn về unit của từ ghép sớm nhất cần nó, chèn ngay trước từ ghép đó;
    lặp đến 0 vi phạm.
 6. **Ghi** `authored/units/level<L>.json`: id `l<L>-uNN` đánh lại từ 01, `order`
