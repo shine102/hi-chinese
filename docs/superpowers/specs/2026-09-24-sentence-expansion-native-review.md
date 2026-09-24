@@ -15,6 +15,10 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l1:fill:046 | vi: Tôi khỏe, anh ấy cũng khỏe. → Tôi khỏe, anh ấy khỏe. | "cũng" has no 也 in the Chinese (Task 2 review) |
 | s:l1:fill:054 | vi: Xin lỗi, tôi chưa đóng. → Xin lỗi, tôi không đóng. | 没 here is a past negation, not "chưa" (Task 2 review) |
 | s:l2:fill:262 | pinyin: Xī'nán hé xīběi… → Xīnán hé Xīběi… | region names capitalised like 东北 Dōngběi (s:l2:fill:259); no apostrophe needed before n (Task 4 deferred item) |
+| s:l3:fill:319 | zh: 一位男子在门口等你。 → 门口有一位男子在等你。 (pinyin Ménkǒu yǒu yí wèi nánzǐ zài děng nǐ.) | indefinite subject takes 有 + N (Task 7 review) |
+| s:l3:fill:379 | vi: Nhớ mang theo chứng minh thư. → Nhớ mang theo thẻ căn cước. | current name of the ID card (Task 7 review) |
+| s:l3:fill:332 | vi: Cả khán đài đều bật cười. → Mọi người có mặt đều bật cười. | 全场的人 is everyone present, not only the stands (Task 7 review) |
+| s:l3:fill:295 | zh: 医生很快赶到了。 → 医生很快就赶到了。 (pinyin Yīshēng hěn kuài jiù gǎndào le.) | 很快就 is the natural "soon/quickly" frame (Task 7 review) |
 
 ## L1
 
@@ -536,7 +540,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:292 | 这件衣服可以退吗？ | Zhè jiàn yīfu kěyǐ tuì ma? | Cái áo này trả lại được không? |  |
 | s:l3:fill:293 | 山不高，我们走上去吧。 | Shān bù gāo, wǒmen zǒu shàngqù ba. | Núi không cao, mình đi bộ lên đi. |  |
 | s:l3:fill:294 | 车在雪里前进得很慢。 | Chē zài xuě lǐ qiánjìn de hěn màn. | Xe tiến lên rất chậm trong tuyết. |  |
-| s:l3:fill:295 | 医生很快赶到了。 | Yīshēng hěn kuài gǎndào le. | Bác sĩ đã nhanh chóng đến nơi. |  |
+| s:l3:fill:295 | 医生很快就赶到了。 | Yīshēng hěn kuài jiù gǎndào le. | Bác sĩ đã nhanh chóng đến nơi. |  |
 | s:l3:fill:296 | 我在楼上，你上来吧。 | Wǒ zài lóu shàng, nǐ shànglái ba. | Tôi ở trên lầu, bạn lên đây đi. |  |
 | s:l3:fill:297 | 考试几点结束？ | Kǎoshì jǐ diǎn jiéshù? | Kỳ thi mấy giờ kết thúc? |  |
 | s:l3:fill:298 | 他送给我一束花。 | Tā sòng gěi wǒ yí shù huā. | Anh ấy tặng tôi một bó hoa. |  |
@@ -560,7 +564,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:316 | 孩子成长得很快。 | Háizi chéngzhǎng de hěn kuài. | Trẻ con lớn nhanh lắm. |  |
 | s:l3:fill:317 | 他不相信命运。 | Tā bù xiāngxìn mìngyùn. | Anh ấy không tin vào số phận. |  |
 | s:l3:fill:318 | 那位女子是谁？ | Nà wèi nǚzǐ shì shéi? | Người phụ nữ kia là ai? |  |
-| s:l3:fill:319 | 一位男子在门口等你。 | Yí wèi nánzǐ zài ménkǒu děng nǐ. | Có một người đàn ông đang đợi bạn ở cửa. |  |
+| s:l3:fill:319 | 门口有一位男子在等你。 | Ménkǒu yǒu yí wèi nánzǐ zài děng nǐ. | Có một người đàn ông đang đợi bạn ở cửa. |  |
 | s:l3:fill:320 | 我把钱存在银行里。 | Wǒ bǎ qián cún zài yínháng lǐ. | Tôi gửi tiền vào ngân hàng. |  |
 | s:l3:fill:321 | 请写上名字和性别。 | Qǐng xiě shàng míngzi hé xìngbié. | Hãy ghi tên và giới tính. |  |
 | s:l3:fill:322 | 他不知道学习的重要性。 | Tā bù zhīdào xuéxí de zhòngyào xìng. | Anh ấy không biết tầm quan trọng của việc học. | 重要性 tokenised 重要+性 (pinyin split by token rule) |
@@ -573,7 +577,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:329 | 教练让我们多练习。 | Jiàoliàn ràng wǒmen duō liànxí. | Huấn luyện viên bảo chúng tôi luyện tập nhiều hơn. |  |
 | s:l3:fill:330 | 我爸爸是个足球迷。 | Wǒ bàba shì ge zúqiú mí. | Bố tôi là một người mê bóng đá. | 足球迷 tokenised 足球+迷 |
 | s:l3:fill:331 | 很多球迷来看比赛。 | Hěn duō qiúmí lái kàn bǐsài. | Rất nhiều cổ động viên đến xem trận đấu. |  |
-| s:l3:fill:332 | 全场的人都笑了。 | Quánchǎng de rén dōu xiào le. | Cả khán đài đều bật cười. |  |
+| s:l3:fill:332 | 全场的人都笑了。 | Quánchǎng de rén dōu xiào le. | Mọi người có mặt đều bật cười. |  |
 | s:l3:fill:333 | 他腿上的伤好了。 | Tā tuǐ shàng de shāng hǎo le. | Vết thương ở chân anh ấy đã lành rồi. |  |
 | s:l3:fill:334 | 他的手流血了。 | Tā de shǒu liú xuè le. | Tay anh ấy chảy máu rồi. | 血: course reading xuè; colloquial liú xiě |
 | s:l3:fill:335 | 牛奶很有营养。 | Niúnǎi hěn yǒu yíngyǎng. | Sữa bò rất bổ dưỡng. |  |
@@ -620,7 +624,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:376 | 这本书有很多读者。 | Zhè běn shū yǒu hěn duō dúzhě. | Cuốn sách này có rất nhiều độc giả. |  |
 | s:l3:fill:377 | 我最喜欢上美术课。 | Wǒ zuì xǐhuan shàng měishù kè. | Tôi thích nhất là giờ mỹ thuật. |  |
 | s:l3:fill:378 | 墙上挂着很多图画。 | Qiáng shàng guà zhe hěn duō túhuà. | Trên tường treo rất nhiều tranh. |  |
-| s:l3:fill:379 | 请带好身份证。 | Qǐng dài hǎo shēnfènzhèng. | Nhớ mang theo chứng minh thư. |  |
+| s:l3:fill:379 | 请带好身份证。 | Qǐng dài hǎo shēnfènzhèng. | Nhớ mang theo thẻ căn cước. |  |
 | s:l3:fill:380 | 我已经订了酒店。 | Wǒ yǐjīng dìng le jiǔdiàn. | Tôi đã đặt khách sạn rồi. |  |
 | s:l3:fill:381 | 你带学生证了吗？ | Nǐ dài xuésheng zhèng le ma? | Bạn có mang thẻ sinh viên không? | 学生证 tokenised 学生+证; 学生 course reading xuésheng |
 | s:l3:fill:382 | 你可以在网上办理。 | Nǐ kěyǐ zài wǎngshàng bànlǐ. | Bạn có thể làm thủ tục trên mạng. |  |
@@ -678,3 +682,135 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:434 | 公司把他调到北京了。 | Gōngsī bǎ tā diào dào Běijīng le. | Công ty đã điều anh ấy đến Bắc Kinh. |  |
 | s:l3:fill:435 | 老师强调，考试不能用手机。 | Lǎoshī qiángdiào, kǎoshì bù néng yòng shǒujī. | Giáo viên nhấn mạnh rằng khi thi không được dùng điện thoại. |  |
 | s:l3:fill:436 | 你帮我打听一下儿这件事。 | Nǐ bāng wǒ dǎting yíxiàr zhè jiàn shì. | Bạn giúp tôi hỏi thăm chuyện này nhé. |  |
+| s:l3:fill:437 | 他是一位有名的导演。 | Tā shì yí wèi yǒumíng de dǎoyǎn. | Ông ấy là một đạo diễn nổi tiếng. |  |
+| s:l3:fill:438 | 她在电影里演医生。 | Tā zài diànyǐng lǐ yǎn yīshēng. | Cô ấy đóng vai bác sĩ trong phim. |  |
+| s:l3:fill:439 | 我家有两台电脑。 | Wǒ jiā yǒu liǎng tái diànnǎo. | Nhà tôi có hai chiếc máy tính. |  |
+| s:l3:fill:440 | 这场比赛电视台会直播。 | Zhè chǎng bǐsài diànshìtái huì zhíbō. | Trận đấu này sẽ được đài truyền hình phát trực tiếp. |  |
+| s:l3:fill:441 | 很多人来观看比赛。 | Hěn duō rén lái guānkàn bǐsài. | Rất nhiều người đến xem trận đấu. |  |
+| s:l3:fill:442 | 这个连续剧我看了三遍。 | Zhège liánxùjù wǒ kàn le sān biàn. | Bộ phim này tôi đã xem ba lần. |  |
+| s:l3:fill:443 | 欢迎收看今天的新闻。 | Huānyíng shōukàn jīntiān de xīnwén. | Chào mừng quý vị theo dõi bản tin hôm nay. |  |
+| s:l3:fill:444 | 他在一家影视公司工作。 | Tā zài yì jiā yǐngshì gōngsī gōngzuò. | Anh ấy làm việc ở một công ty phim ảnh và truyền hình. |  |
+| s:l3:fill:445 | 我们要重视学习的过程。 | Wǒmen yào zhòngshì xuéxí de guòchéng. | Chúng ta cần coi trọng quá trình học tập. |  |
+| s:l3:fill:446 | 他的汉语已经达到了中级水平。 | Tā de Hànyǔ yǐjīng dádào le zhōngjí shuǐpíng. | Tiếng Trung của anh ấy đã đạt trình độ trung cấp. |  |
+| s:l3:fill:447 | 这个办法很有效。 | Zhège bànfǎ hěn yǒuxiào. | Cách này rất hiệu quả. |  |
+| s:l3:fill:448 | 两个孩子在争一个球。 | Liǎng ge háizi zài zhēng yí ge qiú. | Hai đứa trẻ đang tranh nhau một quả bóng. |  |
+| s:l3:fill:449 | 孩子是我工作的动力。 | Háizi shì wǒ gōngzuò de dònglì. | Con cái là động lực làm việc của tôi. |  |
+| s:l3:fill:450 | 这是我们一年的成果。 | Zhè shì wǒmen yì nián de chéngguǒ. | Đây là thành quả một năm của chúng tôi. |  |
+| s:l3:fill:451 | 哭也没用。 | Kū yě méiyòng. | Khóc cũng vô ích. |  |
+| s:l3:fill:452 | 这个问题确实很难。 | Zhège wèntí quèshí hěn nán. | Vấn đề này thật sự rất khó. |  |
+| s:l3:fill:453 | 他当时就在现场。 | Tā dāngshí jiù zài xiànchǎng. | Lúc đó anh ấy có mặt ngay tại hiện trường. |  |
+| s:l3:fill:454 | 这个事件影响很大。 | Zhège shìjiàn yǐngxiǎng hěn dà. | Sự kiện này có ảnh hưởng rất lớn. |  |
+| s:l3:fill:455 | 他今天的状态很好。 | Tā jīntiān de zhuàngtài hěn hǎo. | Hôm nay anh ấy đang ở trạng thái rất tốt. |  |
+| s:l3:fill:456 | 今天公司要讨论一个重大问题。 | Jīntiān gōngsī yào tǎolùn yí ge zhòngdà wèntí. | Hôm nay công ty sẽ thảo luận một vấn đề hệ trọng. |  |
+| s:l3:fill:457 | 这种现象很常见。 | Zhè zhǒng xiànxiàng hěn chángjiàn. | Hiện tượng này rất thường gặp. |  |
+| s:l3:fill:458 | 我们要保护环境。 | Wǒmen yào bǎohù huánjìng. | Chúng ta phải bảo vệ môi trường. |  |
+| s:l3:fill:459 | 他给全家买了保险。 | Tā gěi quánjiā mǎi le bǎoxiǎn. | Anh ấy đã mua bảo hiểm cho cả nhà. |  |
+| s:l3:fill:460 | 我们必须确保大家的安全。 | Wǒmen bìxū quèbǎo dàjiā de ānquán. | Chúng ta phải đảm bảo an toàn cho mọi người. |  |
+| s:l3:fill:461 | 多穿衣服，防止感冒。 | Duō chuān yīfu, fángzhǐ gǎnmào. | Mặc thêm áo để phòng cảm lạnh. |  |
+| s:l3:fill:462 | 我不知道如何回答。 | Wǒ bù zhīdào rúhé huídá. | Tôi không biết phải trả lời thế nào. |  |
+| s:l3:fill:463 | 我们必须马上采取行动。 | Wǒmen bìxū mǎshàng cǎiqǔ xíngdòng. | Chúng ta phải hành động ngay lập tức. |  |
+| s:l3:fill:464 | 这是对他的一次考验。 | Zhè shì duì tā de yí cì kǎoyàn. | Đây là một lần thử thách đối với anh ấy. |  |
+| s:l3:fill:465 | 他克服了很多困难。 | Tā kèfú le hěn duō kùnnan. | Anh ấy đã vượt qua rất nhiều khó khăn. |  |
+| s:l3:fill:466 | 她笑得很自然。 | Tā xiào de hěn zìrán. | Cô ấy cười rất tự nhiên. |  |
+| s:l3:fill:467 | 他来北京以来，交了不少朋友。 | Tā lái Běijīng yǐlái, jiāo le bùshǎo péngyou. | Từ khi đến Bắc Kinh, anh ấy đã kết được không ít bạn. |  |
+| s:l3:fill:468 | 我代他去开会。 | Wǒ dài tā qù kāihuì. | Tôi đi họp thay anh ấy. |  |
+| s:l3:fill:469 | 这是八十年代的歌。 | Zhè shì bāshí niándài de gē. | Đây là bài hát của thập niên tám mươi. |  |
+| s:l3:fill:470 | 这件衣服太旧了。 | Zhè jiàn yīfu tài jiù le. | Cái áo này cũ quá rồi. |  |
+| s:l3:fill:471 | 现代的生活很方便。 | Xiàndài de shēnghuó hěn fāngbiàn. | Cuộc sống hiện đại rất tiện lợi. |  |
+| s:l3:fill:472 | 古时候，人们用什么写字？ | Gǔ shíhou, rénmen yòng shénme xiě zì? | Thời xưa người ta dùng gì để viết chữ? |  |
+| s:l3:fill:473 | 从前这里是一条河。 | Cóngqián zhèlǐ shì yì tiáo hé. | Trước đây chỗ này là một con sông. |  |
+| s:l3:fill:474 | 他很喜欢中国古代的故事。 | Tā hěn xǐhuan Zhōngguó gǔdài de gùshi. | Anh ấy rất thích những câu chuyện thời cổ đại của Trung Quốc. |  |
+| s:l3:fill:475 | 他一生都为人民服务。 | Tā yìshēng dōu wèi rénmín fúwù. | Cả đời ông ấy đều phục vụ nhân dân. |  |
+| s:l3:fill:476 | 我不喜欢看这类电影。 | Wǒ bù xǐhuan kàn zhè lèi diànyǐng. | Tôi không thích xem loại phim này. |  |
+| s:l3:fill:477 | 地球是人类的家。 | Dìqiú shì rénlèi de jiā. | Trái Đất là ngôi nhà của loài người. |  |
+| s:l3:fill:478 | 在公共地方要小声说话。 | Zài gōnggòng dìfang yào xiǎoshēng shuōhuà. | Ở nơi công cộng cần nói nhỏ. |  |
+| s:l3:fill:479 | 他是中国公民。 | Tā shì Zhōngguó gōngmín. | Anh ấy là công dân Trung Quốc. |  |
+| s:l3:fill:480 | 他要先解决自身的问题。 | Tā yào xiān jiějué zìshēn de wèntí. | Anh ấy phải giải quyết vấn đề của bản thân trước đã. |  |
+| s:l3:fill:481 | 他仍在医院。 | Tā réng zài yīyuàn. | Anh ấy vẫn đang ở bệnh viện. |  |
+| s:l3:fill:482 | 这个国家制造飞机。 | Zhège guójiā zhìzào fēijī. | Nước này chế tạo máy bay. |  |
+| s:l3:fill:483 | 这个节目是他们制作的。 | Zhège jiémù shì tāmen zhìzuò de. | Chương trình này do họ sản xuất. |  |
+| s:l3:fill:484 | 这张桌子是铁做的。 | Zhè zhāng zhuōzi shì tiě zuò de. | Cái bàn này làm bằng sắt. |  |
+| s:l3:fill:485 | 石油对工业很重要。 | Shíyóu duì gōngyè hěn zhòngyào. | Dầu mỏ rất quan trọng đối với công nghiệp. |  |
+| s:l3:fill:486 | 这些肉要送到工厂加工。 | Zhèxiē ròu yào sòngdào gōngchǎng jiāgōng. | Số thịt này phải đưa đến nhà máy chế biến. |  |
+| s:l3:fill:487 | 输了也没关系。 | Shū le yě méi guānxi. | Thua cũng không sao. |  |
+| s:l3:fill:488 | 这场比赛红队胜了。 | Zhè chǎng bǐsài hóng duì shèng le. | Trận này đội đỏ đã thắng. |  |
+| s:l3:fill:489 | 我们终于取得了胜利。 | Wǒmen zhōngyú qǔdé le shènglì. | Cuối cùng chúng tôi đã giành chiến thắng. |  |
+| s:l3:fill:490 | 现在我们队领先。 | Xiànzài wǒmen duì lǐngxiān. | Hiện giờ đội chúng tôi đang dẫn trước. |  |
+| s:l3:fill:491 | 他这场比赛得分最多。 | Tā zhè chǎng bǐsài défēn zuì duō. | Trận này anh ấy ghi được nhiều điểm nhất. |  |
+| s:l3:fill:492 | 这个节目是昨天录的。 | Zhège jiémù shì zuótiān lù de. | Chương trình này được ghi hình hôm qua. |  |
+| s:l3:fill:493 | 他在班里排名第一。 | Tā zài bān lǐ páimíng dì yī. | Anh ấy xếp hạng nhất trong lớp. |  |
+| s:l3:fill:494 | 这个手表是金的。 | Zhège shǒubiǎo shì jīn de. | Chiếc đồng hồ này bằng vàng. |  |
+| s:l3:fill:495 | 银比金便宜多了。 | Yín bǐ jīn piányi duō le. | Bạc rẻ hơn vàng nhiều. |  |
+| s:l3:fill:496 | 这次比赛她拿了银牌。 | Zhè cì bǐsài tā ná le yínpái. | Ở cuộc thi lần này cô ấy giành huy chương bạc. |  |
+| s:l3:fill:497 | 帮我把桌子搬到楼上。 | Bāng wǒ bǎ zhuōzi bān dào lóushàng. | Giúp tôi khiêng cái bàn lên tầng trên. |  |
+| s:l3:fill:498 | 妈妈在补衣服。 | Māma zài bǔ yīfu. | Mẹ đang vá áo. |  |
+| s:l3:fill:499 | 这些房屋都很旧了。 | Zhèxiē fángwū dōu hěn jiù le. | Những ngôi nhà này đều đã cũ rồi. |  |
+| s:l3:fill:500 | 这个体育馆是去年建成的。 | Zhège tǐyùguǎn shì qùnián jiànchéng de. | Nhà thi đấu này được xây xong vào năm ngoái. |  |
+| s:l3:fill:501 | 我给房东打了电话。 | Wǒ gěi fángdōng dǎ le diànhuà. | Tôi đã gọi điện cho chủ nhà. |  |
+| s:l3:fill:502 | 她在服装店上班。 | Tā zài fúzhuāng diàn shàngbān. | Cô ấy làm việc ở một cửa hàng quần áo. |  |
+| s:l3:fill:503 | 他今天穿了一件白衬衫。 | Tā jīntiān chuān le yí jiàn bái chènshān. | Hôm nay anh ấy mặc một chiếc áo sơ mi trắng. |  |
+| s:l3:fill:504 | 这件上衣有点儿大。 | Zhè jiàn shàngyī yǒudiǎnr dà. | Chiếc áo này hơi rộng. |  |
+| s:l3:fill:505 | 夏天我喜欢穿短裤。 | Xiàtiān wǒ xǐhuan chuān duǎnkù. | Mùa hè tôi thích mặc quần short. |  |
+| s:l3:fill:506 | 这件衬衣要洗一下儿。 | Zhè jiàn chènyī yào xǐ yíxiàr. | Chiếc áo sơ mi này phải đem giặt. |  |
+| s:l3:fill:507 | 这双鞋是皮的。 | Zhè shuāng xié shì pí de. | Đôi giày này bằng da. |  |
+| s:l3:fill:508 | 我把皮包忘在车上了。 | Wǒ bǎ píbāo wàng zài chēshàng le. | Tôi để quên chiếc túi xách trên xe rồi. |  |
+| s:l3:fill:509 | 我能感受到你的心情。 | Wǒ néng gǎnshòu dào nǐ de xīnqíng. | Tôi có thể cảm nhận được tâm trạng của bạn. |  |
+| s:l3:fill:510 | 她内心很痛苦。 | Tā nèixīn hěn tòngkǔ. | Trong lòng cô ấy rất đau khổ. |  |
+| s:l3:fill:511 | 他强烈要求换房间。 | Tā qiángliè yāoqiú huàn fángjiān. | Anh ấy kiên quyết yêu cầu đổi phòng. |  |
+| s:l3:fill:512 | 他不太会表达自己的情感。 | Tā bú tài huì biǎodá zìjǐ de qínggǎn. | Anh ấy không giỏi bày tỏ cảm xúc của mình lắm. |  |
+| s:l3:fill:513 | 晚上这里很静。 | Wǎnshang zhèlǐ hěn jìng. | Buổi tối ở đây rất yên tĩnh. |  |
+| s:l3:fill:514 | 只有自己做过，才能体会。 | Zhǐyǒu zìjǐ zuò guo, cái néng tǐhuì. | Chỉ khi tự mình làm rồi mới có thể thấu hiểu. |  |
+| s:l3:fill:515 | 他是我亲哥哥。 | Tā shì wǒ qīn gēge. | Anh ấy là anh ruột của tôi. |  |
+| s:l3:fill:516 | 我父亲是一名医生。 | Wǒ fùqīn shì yì míng yīshēng. | Bố tôi là bác sĩ. |  |
+| s:l3:fill:517 | 母亲每天都很早起床。 | Mǔqīn měi tiān dōu hěn zǎo qǐchuáng. | Ngày nào mẹ cũng dậy rất sớm. |  |
+| s:l3:fill:518 | 我妈妈属狗。 | Wǒ māma shǔ gǒu. | Mẹ tôi tuổi Tuất. |  |
+| s:l3:fill:519 | 病人家属请在外面等。 | Bìngrén jiāshǔ qǐng zài wàimiàn děng. | Người nhà bệnh nhân vui lòng đợi ở bên ngoài. |  |
+| s:l3:fill:520 | 他们有三个子女。 | Tāmen yǒu sān ge zǐnǚ. | Họ có ba người con. |  |
+| s:l3:fill:521 | 这位老太太已经九十岁了。 | Zhè wèi lǎotàitai yǐjīng jiǔshí suì le. | Bà cụ này đã chín mươi tuổi rồi. |  |
+| s:l3:fill:522 | 这件衣服是她自己设计的。 | Zhè jiàn yīfu shì tā zìjǐ shèjì de. | Chiếc áo này do cô ấy tự thiết kế. |  |
+| s:l3:fill:523 | 他利用周末学习英语。 | Tā lìyòng zhōumò xuéxí Yīngyǔ. | Anh ấy tận dụng cuối tuần để học tiếng Anh. |  |
+| s:l3:fill:524 | 请你说得具体一点儿。 | Qǐng nǐ shuō de jùtǐ yìdiǎnr. | Bạn vui lòng nói cụ thể hơn một chút. |  |
+| s:l3:fill:525 | 他把地图展开了。 | Tā bǎ dìtú zhǎnkāi le. | Anh ấy đã trải tấm bản đồ ra. |  |
+| s:l3:fill:526 | 学校发动学生参加这次活动。 | Xuéxiào fādòng xuésheng cānjiā zhè cì huódòng. | Nhà trường huy động học sinh tham gia hoạt động lần này. |  |
+| s:l3:fill:527 | 我们要推进这个计划。 | Wǒmen yào tuījìn zhège jìhuà. | Chúng ta cần thúc đẩy kế hoạch này. |  |
+| s:l3:fill:528 | 这个活动在全国开展。 | Zhège huódòng zài quánguó kāizhǎn. | Hoạt động này được triển khai trên toàn quốc. |  |
+| s:l3:fill:529 | 她是一个美丽的姑娘。 | Tā shì yí ge měilì de gūniang. | Cô ấy là một cô gái xinh đẹp. |  |
+| s:l3:fill:530 | 没有人是完美的。 | Méiyǒu rén shì wánměi de. | Không ai là hoàn hảo cả. |  |
+| s:l3:fill:531 | 他在大家心中的形象很好。 | Tā zài dàjiā xīnzhōng de xíngxiàng hěn hǎo. | Hình ảnh của anh ấy trong lòng mọi người rất tốt. |  |
+| s:l3:fill:532 | 她唱得非常动人。 | Tā chàng de fēicháng dòngrén. | Cô ấy hát vô cùng cảm động. |  |
+| s:l3:fill:533 | 实际上，他已经五十岁了。 | Shíjìshàng, tā yǐjīng wǔshí suì le. | Thực ra anh ấy đã năm mươi tuổi rồi. |  |
+| s:l3:fill:534 | 这本书讲的是理论。 | Zhè běn shū jiǎng de shì lǐlùn. | Cuốn sách này nói về lý thuyết. |  |
+| s:l3:fill:535 | 每个人都有自己的思想。 | Měi ge rén dōu yǒu zìjǐ de sīxiǎng. | Mỗi người đều có suy nghĩ riêng của mình. |  |
+| s:l3:fill:536 | 她在念大学。 | Tā zài niàn dàxué. | Cô ấy đang học đại học. |  |
+| s:l3:fill:537 | 父母的观念和我们不一样。 | Fùmǔ de guānniàn hé wǒmen bù yíyàng. | Quan niệm của bố mẹ khác với chúng ta. |  |
+| s:l3:fill:538 | 你在乐什么？ | Nǐ zài lè shénme? | Bạn đang cười gì thế? |  |
+| s:l3:fill:539 | 他在一个乐队里唱歌。 | Tā zài yí ge yuèduì lǐ chànggē. | Anh ấy hát trong một ban nhạc. |  |
+| s:l3:fill:540 | 广播里说明天有雨。 | Guǎngbō lǐ shuō míngtiān yǒu yǔ. | Trên đài nói ngày mai có mưa. |  |
+| s:l3:fill:541 | 她演唱了很多中文歌。 | Tā yǎnchàng le hěn duō Zhōngwén gē. | Cô ấy đã trình diễn rất nhiều bài hát tiếng Trung. |  |
+| s:l3:fill:542 | 电视台正在播放这场比赛。 | Diànshìtái zhèngzài bōfàng zhè chǎng bǐsài. | Đài truyền hình đang phát trận đấu này. |  |
+| s:l3:fill:543 | 请不要录音。 | Qǐng búyào lùyīn. | Xin đừng ghi âm. |  |
+| s:l3:fill:544 | 机场有很多歌迷在等她。 | Jīchǎng yǒu hěn duō gēmí zài děng tā. | Ở sân bay có rất nhiều người hâm mộ đang đợi cô ấy. |  |
+| s:l3:fill:545 | 听众朋友们，晚上好！ | Tīngzhòng péngyoumen, wǎnshang hǎo! | Xin chào các bạn thính giả, chúc buổi tối vui vẻ! |  |
+| s:l3:fill:546 | 你可以在网上收听这个节目。 | Nǐ kěyǐ zài wǎngshàng shōutīng zhège jiémù. | Bạn có thể nghe chương trình này trên mạng. |  |
+| s:l3:fill:547 | 这个区有很多学校。 | Zhège qū yǒu hěn duō xuéxiào. | Quận này có rất nhiều trường học. |  |
+| s:l3:fill:548 | 全球的气温越来越高了。 | Quánqiú de qìwēn yuèláiyuè gāo le. | Nhiệt độ toàn cầu ngày càng tăng. |  |
+| s:l3:fill:549 | 他去过中国各地。 | Tā qù guo Zhōngguó gèdì. | Anh ấy đã đi khắp mọi miền Trung Quốc. |  |
+| s:l3:fill:550 | 中国西部有很多高山。 | Zhōngguó xībù yǒu hěn duō gāo shān. | Miền tây Trung Quốc có rất nhiều núi cao. |  |
+| s:l3:fill:551 | 我们从东部开车去北部。 | Wǒmen cóng dōngbù kāichē qù běibù. | Chúng tôi lái xe từ miền đông lên miền bắc. |  |
+| s:l3:fill:552 | 他在中部地区工作。 | Tā zài zhōngbù dìqū gōngzuò. | Anh ấy làm việc ở khu vực miền trung. |  |
+| s:l3:fill:553 | 这里不准停车。 | Zhèlǐ bù zhǔn tíngchē. | Ở đây không được đỗ xe. |  |
+| s:l3:fill:554 | 这辆车的速度很快。 | Zhè liàng chē de sùdù hěn kuài. | Tốc độ của chiếc xe này rất nhanh. |  |
+| s:l3:fill:555 | 飞机飞行了十个小时。 | Fēijī fēixíng le shí ge xiǎoshí. | Máy bay đã bay mười tiếng đồng hồ. |  |
+| s:l3:fill:556 | 这些东西要用火车运输。 | Zhèxiē dōngxi yào yòng huǒchē yùnshū. | Những thứ này phải vận chuyển bằng tàu hỏa. |  |
+| s:l3:fill:557 | 我们要加快速度。 | Wǒmen yào jiākuài sùdù. | Chúng ta phải tăng tốc lên. |  |
+| s:l3:fill:558 | 高速公路上车很多。 | Gāosù gōnglù shàng chē hěn duō. | Trên đường cao tốc có rất nhiều xe. |  |
+| s:l3:fill:559 | 你的职业是什么？ | Nǐ de zhíyè shì shénme? | Nghề nghiệp của bạn là gì? |  |
+| s:l3:fill:560 | 他的事业很成功。 | Tā de shìyè hěn chénggōng. | Sự nghiệp của anh ấy rất thành công. |  |
+| s:l3:fill:561 | 他今年升经理了。 | Tā jīnnián shēng jīnglǐ le. | Năm nay anh ấy đã được thăng chức làm giám đốc. |  |
+| s:l3:fill:562 | 他从事教育工作。 | Tā cóngshì jiàoyù gōngzuò. | Anh ấy làm công tác giáo dục. |  |
+| s:l3:fill:563 | 现在大学生就业很难。 | Xiànzài dàxuéshēng jiùyè hěn nán. | Hiện nay sinh viên rất khó tìm việc làm. |  |
+| s:l3:fill:564 | 我们要相信自己的力量。 | Wǒmen yào xiāngxìn zìjǐ de lìliang. | Chúng ta phải tin vào sức mạnh của bản thân. |  |
+| s:l3:fill:565 | 我们的球队越来越强大了。 | Wǒmen de qiúduì yuèláiyuè qiángdà le. | Đội bóng của chúng tôi ngày càng mạnh. |  |
+| s:l3:fill:566 | 我的手指受伤了。 | Wǒ de shǒuzhǐ shòushāng le. | Tôi bị thương ở ngón tay. |  |
+| s:l3:fill:567 | 他很有头脑。 | Tā hěn yǒu tóunǎo. | Anh ấy rất có đầu óc. |  |
+| s:l3:fill:568 | 这张椅子很结实。 | Zhè zhāng yǐzi hěn jiēshi. | Cái ghế này rất chắc chắn. |  |
