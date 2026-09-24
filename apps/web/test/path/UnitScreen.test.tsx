@@ -49,6 +49,17 @@ afterEach(() => {
 });
 
 describe('UnitScreen', () => {
+  it('shows a retryable error when saved progress cannot be read', async () => {
+    stubFetch(noSync);
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    const toArray = vi.spyOn(db.unitProgress, 'toArray').mockRejectedValueOnce(new Error('idb broken'));
+    renderApp('/unit/l1-u01');
+    expect(await screen.findByText('Could not read saved progress on this device.')).toBeTruthy();
+    screen.getByRole('button', { name: 'Retry' }).click();
+    expect(await screen.findByRole('heading', { name: 'Unit 1' })).toBeTruthy();
+    toArray.mockRestore();
+  });
+
   it('renders lesson items with links into the lesson route', async () => {
     stubFetch(noSync);
     renderApp('/unit/l1-u01');

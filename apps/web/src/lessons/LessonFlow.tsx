@@ -8,7 +8,7 @@ import type { ContentIndex } from '../content/index.js';
 import { useContent, useUnitChunk } from '../content/provider.js';
 import { db } from '../db/db.js';
 import { markUnitStarted, completeLesson } from '../db/progress.js';
-import { useLiveQuery } from '../db/use-live-query.js';
+import { PROGRESS_READ_ERROR, useLiveQuery } from '../db/use-live-query.js';
 import { ExerciseBoundary } from '../exercises/components/ExerciseBoundary.js';
 import { ExerciseView } from '../exercises/components/ExerciseView.js';
 import { checkAnswer, correctAnswerText, type Answer, type Exercise } from '../exercises/types.js';
@@ -274,7 +274,8 @@ function LessonFlowInner({
   const [state, dispatch] = useReducer(flowReducer, slides, initFlow);
   const [answered, setAnswered] = useState<Answer | null>(null);
   const recorded = useRef(false);
-  const progress = useLiveQuery(() => db.unitProgress.get(chunk.unit.id), [chunk.unit.id]);
+  const progressQ = useLiveQuery(() => db.unitProgress.get(chunk.unit.id), [chunk.unit.id]);
+  const progress = progressQ.data;
   const isLastLesson = lesson.index + 1 >= totalLessons;
 
   useEffect(() => {
@@ -295,6 +296,8 @@ function LessonFlowInner({
     }).then(() => requestSync({ db }));
   }, [state.phase, chunk, lesson, totalLessons, content, progress]);
 
+  if (progressQ.error !== undefined)
+    return <InlineError message={PROGRESS_READ_ERROR} onRetry={progressQ.retry} />;
   if (state.phase === 'done') {
     return <Results state={state} wordCount={lesson.wordIds.length} unitId={chunk.unit.id} last={isLastLesson} />;
   }

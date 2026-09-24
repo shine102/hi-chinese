@@ -4,11 +4,12 @@ import { useState } from 'react';
 import { useContent } from '../content/provider.js';
 import { db } from '../db/db.js';
 import { localDate } from '../db/time.js';
-import { useLiveQuery } from '../db/use-live-query.js';
+import { PROGRESS_READ_ERROR, useLiveQuery } from '../db/use-live-query.js';
 import { getDueCount } from '../fsrs/scheduler.js';
 import { lessonCount } from '../lessons/compute.js';
 import { computeStreak } from '../streak/streak.js';
 import { DueCountBadge, StreakBadge } from '../streak/StreakBadge.js';
+import { InlineError } from '../ui/InlineError.js';
 import { Loading } from '../ui/Loading.js';
 import { computeUnitStates, type UnitState } from './unlock.js';
 import { useUnlockAll, withUnlockAll } from './unlockAll.js';
@@ -64,10 +65,16 @@ function UnitNode({ unit, state, lessonsCompleted }: { unit: ManifestUnit; state
 
 export function PathScreen() {
   const content = useContent();
-  const rows = useLiveQuery(() => db.unitProgress.toArray(), []);
-  const activities = useLiveQuery(() => db.activity.toArray(), []);
-  const dueCount = useLiveQuery(() => getDueCount(db, Date.now()), []);
+  const rowsQ = useLiveQuery(() => db.unitProgress.toArray(), []);
+  const activitiesQ = useLiveQuery(() => db.activity.toArray(), []);
+  const dueQ = useLiveQuery(() => getDueCount(db, Date.now()), []);
   const [unlockAll, setUnlockAll] = useUnlockAll();
+  const failed = [rowsQ, activitiesQ, dueQ].filter((q) => q.error !== undefined);
+  if (failed.length > 0)
+    return <InlineError message={PROGRESS_READ_ERROR} onRetry={() => failed.forEach((q) => q.retry())} />;
+  const rows = rowsQ.data;
+  const activities = activitiesQ.data;
+  const dueCount = dueQ.data;
   if (rows === undefined) return <Loading />;
   const states = withUnlockAll(computeUnitStates(content.unitOrder, rows), unlockAll);
   const streak = activities ? computeStreak(activities, localDate(Date.now())) : 0;

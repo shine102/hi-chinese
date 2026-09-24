@@ -2,7 +2,7 @@ import { Link, useParams } from '@tanstack/react-router';
 import { computeLessons } from '../lessons/compute.js';
 import { useContent, useUnitChunk } from '../content/provider.js';
 import { db } from '../db/db.js';
-import { useLiveQuery } from '../db/use-live-query.js';
+import { PROGRESS_READ_ERROR, useLiveQuery } from '../db/use-live-query.js';
 import { InlineError } from '../ui/InlineError.js';
 import { Loading } from '../ui/Loading.js';
 import { computeUnitStates } from './unlock.js';
@@ -12,10 +12,13 @@ export function UnitScreen() {
   const { unitId } = useParams({ from: '/unit/$unitId' });
   const content = useContent();
   const chunk = useUnitChunk(unitId);
-  const rows = useLiveQuery(() => db.unitProgress.toArray(), []);
+  const progressRows = useLiveQuery(() => db.unitProgress.toArray(), []);
+  const rows = progressRows.data;
   const unit = content.unitById.get(unitId);
 
   if (!unit) return <p role="alert">Unknown unit.</p>;
+  if (progressRows.error !== undefined)
+    return <InlineError message={PROGRESS_READ_ERROR} onRetry={progressRows.retry} />;
   if (rows === undefined || chunk.status === 'loading') return <Loading />;
   if (chunk.status === 'error')
     return <InlineError message={chunk.error.message} onRetry={chunk.retry} />;
