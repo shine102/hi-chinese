@@ -457,7 +457,7 @@
   { "id": "s:l3:fix:020", "zh": "天气太热了，我真受不了。", "pinyin": "Tiānqì tài rè le, wǒ zhēn shòu bu liǎo.", "vi": "Trời nóng quá, tôi thật sự chịu không nổi.", "words": ["天气", "太", "热", "了", "我", "真", "受", "不", "了"] },
   { "id": "s:l3:fix:021", "zh": "他受伤了，今天上不了班了。", "pinyin": "Tā shòushāng le, jīntiān shàng bu liǎo bān le.", "vi": "Anh ấy bị thương rồi, hôm nay không đi làm được.", "words": ["他", "受伤", "了", "今天", "上", "不", "了", "班", "了"] },
   { "id": "s:l3:fix:022", "zh": "桌子上的东西都让他搬走了。", "pinyin": "Zhuōzi shang de dōngxi dōu ràng tā bān zǒu le.", "vi": "Đồ trên bàn đều bị anh ấy mang đi hết rồi.", "words": ["桌子", "上", "的", "东西", "都", "让", "他", "搬", "走", "了"] },
-  { "id": "s:l3:fix:023", "zh": "我的电脑叫弟弟拿去修了。", "pinyin": "Wǒ de diànnǎo jiào dìdi ná qù xiū le.", "vi": "Máy tính của tôi bị em trai mang đi sửa rồi.", "words": ["我", "的", "电脑", "叫", "弟弟", "拿", "去", "修", "了"] },
+  { "id": "s:l3:fix:023", "zh": "我的工具都叫弟弟弄坏了。", "pinyin": "Wǒ de gōngjù dōu jiào dìdi nòng huài le.", "vi": "Dụng cụ của tôi đều bị em trai làm hỏng hết rồi.", "words": ["我", "的", "工具", "都", "叫", "弟弟", "弄", "坏", "了"] },
   { "id": "s:l3:fix:024", "zh": "天气暖和起来了。", "pinyin": "Tiānqì nuǎnhuo qǐlai le.", "vi": "Trời đã bắt đầu ấm lên rồi.", "words": ["天气", "暖和", "起来", "了"] },
   { "id": "s:l3:fix:025", "zh": "太阳出来以后，天空亮了起来。", "pinyin": "Tàiyáng chūlai yǐhòu, tiānkōng liàng le qǐlai.", "vi": "Mặt trời lên rồi, bầu trời bắt đầu sáng dần.", "words": ["太阳", "出来", "以后", "天空", "亮", "了", "起来"] },
   { "id": "s:l3:fix:026", "zh": "我们一边散步，一边说话。", "pinyin": "Wǒmen yìbiān sànbù, yìbiān shuōhuà.", "vi": "Chúng tôi vừa đi dạo vừa nói chuyện.", "words": ["我们", "一边", "散步", "一边", "说话"] },
