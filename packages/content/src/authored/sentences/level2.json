@@ -6534,13 +6534,11 @@
   },
   {
     "id": "s:l2:fill:078",
-    "zh": "她长得很像她妈妈。",
-    "pinyin": "Tā zhǎng de hěn xiàng tā māma.",
-    "vi": "Cô ấy trông rất giống mẹ.",
+    "zh": "她很像她妈妈。",
+    "pinyin": "Tā hěn xiàng tā māma.",
+    "vi": "Cô ấy rất giống mẹ.",
     "words": [
       "她",
-      "长",
-      "得",
       "很",
       "像",
       "她",
@@ -6564,7 +6562,7 @@
     "id": "s:l2:fill:080",
     "zh": "这个地方变成了公园。",
     "pinyin": "Zhège dìfang biànchéng le gōngyuán.",
-    "vi": "Chỗ này đã thành công viên.",
+    "vi": "Chỗ này đã trở thành công viên.",
     "words": [
       "这",
       "个",
@@ -6855,7 +6853,7 @@
     "id": "s:l2:fill:102",
     "zh": "上课的时候请关机。",
     "pinyin": "Shàngkè de shíhou qǐng guānjī.",
-    "vi": "Trong giờ học vui lòng tắt máy.",
+    "vi": "Trong giờ học vui lòng tắt điện thoại.",
     "words": [
       "上课",
       "的",
