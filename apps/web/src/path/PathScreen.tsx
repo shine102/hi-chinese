@@ -28,7 +28,15 @@ const LABEL: Record<UnitState, string> = {
   completed: 'Completed',
 };
 
-function UnitNode({ unit, state, lessonsCompleted }: { unit: ManifestUnit; state: UnitState; lessonsCompleted: number }) {
+function UnitNode({
+  unit,
+  state,
+  lessonsCompleted,
+}: {
+  unit: ManifestUnit;
+  state: UnitState;
+  lessonsCompleted: number;
+}) {
   const total = lessonCount(unit.wordCount);
   const inner = (
     <div className={`flex items-center justify-between rounded-lg px-4 py-3 ${BADGE[state]}`}>
@@ -37,7 +45,8 @@ function UnitNode({ unit, state, lessonsCompleted }: { unit: ManifestUnit; state
         <div className="text-xs opacity-70">
           {unit.wordCount} words
           {unit.grammarCount > 0 ? `, ${unit.grammarCount} grammar` : ''}
-          {', '}{total} lessons
+          {', '}
+          {total} lessons
           {state === 'in-progress' && lessonsCompleted > 0
             ? ` — ${lessonsCompleted}/${total} done`
             : ''}
@@ -71,14 +80,16 @@ export function PathScreen() {
   const [unlockAll, setUnlockAll] = useUnlockAll();
   const failed = [rowsQ, activitiesQ, dueQ].filter((q) => q.error !== undefined);
   if (failed.length > 0)
-    return <InlineError message={PROGRESS_READ_ERROR} onRetry={() => failed.forEach((q) => q.retry())} />;
+    return (
+      <InlineError message={PROGRESS_READ_ERROR} onRetry={() => failed.forEach((q) => q.retry())} />
+    );
   const rows = rowsQ.data;
   const activities = activitiesQ.data;
   const dueCount = dueQ.data;
   if (rows === undefined) return <Loading />;
   const states = withUnlockAll(computeUnitStates(content.unitOrder, rows), unlockAll);
   const streak = activities ? computeStreak(activities, localDate(Date.now())) : 0;
-  const progressByUnit = new Map(rows.map(r => [r.unitId, r]));
+  const progressByUnit = new Map(rows.map((r) => [r.unitId, r]));
   return (
     <div className="flex flex-col gap-8">
       <div className="flex items-center justify-between">
@@ -105,7 +116,14 @@ export function PathScreen() {
             {level.unitIds.map((id) => {
               const unit = content.unitById.get(id);
               if (!unit) return null;
-              return <UnitNode key={id} unit={unit} state={states.get(id) ?? 'locked'} lessonsCompleted={progressByUnit.get(id)?.completedLessons.length ?? 0} />;
+              return (
+                <UnitNode
+                  key={id}
+                  unit={unit}
+                  state={states.get(id) ?? 'locked'}
+                  lessonsCompleted={progressByUnit.get(id)?.completedLessons.length ?? 0}
+                />
+              );
             })}
           </ol>
         </section>
@@ -116,7 +134,13 @@ export function PathScreen() {
   );
 }
 
-function UnlockAllToggle({ enabled, onChange }: { enabled: boolean; onChange: (v: boolean) => void }) {
+function UnlockAllToggle({
+  enabled,
+  onChange,
+}: {
+  enabled: boolean;
+  onChange: (v: boolean) => void;
+}) {
   return (
     <div className="flex justify-center pt-4">
       <button
@@ -147,15 +171,27 @@ function ResetProgress() {
       {confirming ? (
         <div className="flex items-center gap-3">
           <span className="text-sm text-stone-500">Reset all progress?</span>
-          <button type="button" onClick={reset} className="rounded-md bg-red-600 px-3 py-1 text-sm text-white">
+          <button
+            type="button"
+            onClick={reset}
+            className="rounded-md bg-red-600 px-3 py-1 text-sm text-white"
+          >
             Confirm
           </button>
-          <button type="button" onClick={() => setConfirming(false)} className="text-sm text-stone-500 underline">
+          <button
+            type="button"
+            onClick={() => setConfirming(false)}
+            className="text-sm text-stone-500 underline"
+          >
             Cancel
           </button>
         </div>
       ) : (
-        <button type="button" onClick={() => setConfirming(true)} className="text-sm text-stone-400 underline">
+        <button
+          type="button"
+          onClick={() => setConfirming(true)}
+          className="text-sm text-stone-400 underline"
+        >
           Reset progress
         </button>
       )}

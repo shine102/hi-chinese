@@ -66,16 +66,23 @@ for (const level of [2, 3] as const) {
   );
 }
 
-const info = new Map<string, WordInfo>(words.map((w) => [w.simplified, { level: w.level, characters: w.characters }]));
+const info = new Map<string, WordInfo>(
+  words.map((w) => [w.simplified, { level: w.level, characters: w.characters }]),
+);
 const fixed = fixCharOrder([...l1, ...built[0]!, ...built[1]!], info, new Set<HskLevel>([1]));
 
 for (const level of [2, 3] as const) {
   const units = fixed.filter((u) => u.level === level);
   const empty = units.filter((u) => u.words.length === 0).map((u) => u.id);
   if (empty.length > 0) throw new Error(`empty units after char-order fix: ${empty.join(', ')}`);
-  await writeFile(resolve(authored, `units/level${level}.json`), `${JSON.stringify(units, null, 2)}\n`);
+  await writeFile(
+    resolve(authored, `units/level${level}.json`),
+    `${JSON.stringify(units, null, 2)}\n`,
+  );
   const sizes = units.map((u) => u.words.length);
-  const fnCount = units.map((u) => u.words.filter((w) => isFunctionWord(words.find((x) => x.simplified === w)!.pos)).length);
+  const fnCount = units.map(
+    (u) => u.words.filter((w) => isFunctionWord(words.find((x) => x.simplified === w)!.pos)).length,
+  );
   const suffixed = units.filter((u) => / \d+$/.test(u.title)).length;
   console.log(
     `L${level}: ${units.length} units, words/unit ${Math.min(...sizes)}-${Math.max(...sizes)}, ` +

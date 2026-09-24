@@ -33,21 +33,44 @@ interface FlowState {
   bestStreak: number;
 }
 
-type FlowAction =
-  | { type: 'continue' }
-  | { type: 'answer'; answer: Answer }
-  | { type: 'skip' };
+type FlowAction = { type: 'continue' } | { type: 'answer'; answer: Answer } | { type: 'skip' };
 
 function initFlow(slides: Slide[]): FlowState {
-  if (slides.length === 0) return { slides, position: 0, retryQueue: [], phase: 'done', lastCorrect: null, answered: 0, correct: 0, streak: 0, bestStreak: 0 };
+  if (slides.length === 0)
+    return {
+      slides,
+      position: 0,
+      retryQueue: [],
+      phase: 'done',
+      lastCorrect: null,
+      answered: 0,
+      correct: 0,
+      streak: 0,
+      bestStreak: 0,
+    };
   const phase = slides[0]!.type === 'exercise' ? 'exercise' : 'intro';
-  return { slides, position: 0, retryQueue: [], phase, lastCorrect: null, answered: 0, correct: 0, streak: 0, bestStreak: 0 };
+  return {
+    slides,
+    position: 0,
+    retryQueue: [],
+    phase,
+    lastCorrect: null,
+    answered: 0,
+    correct: 0,
+    streak: 0,
+    bestStreak: 0,
+  };
 }
 
 function advancePhase(state: FlowState, nextPos: number): FlowState {
   if (nextPos < state.slides.length) {
     const next = state.slides[nextPos]!;
-    return { ...state, position: nextPos, phase: next.type === 'exercise' ? 'exercise' : 'intro', lastCorrect: null };
+    return {
+      ...state,
+      position: nextPos,
+      phase: next.type === 'exercise' ? 'exercise' : 'intro',
+      lastCorrect: null,
+    };
   }
   if (state.retryQueue.length > 0) {
     const [retry, ...rest] = state.retryQueue;
@@ -131,7 +154,13 @@ function WordWritingSlide({ word, onContinue }: { word: Word; onContinue: () => 
       <p className="text-sm font-medium text-stone-600">Stroke order</p>
       <div className="flex gap-4">
         {word.characters.map((ch, i) => (
-          <HanziWriterComponent key={`${ch}-${i}`} character={ch} mode="animate" width={140} height={140} />
+          <HanziWriterComponent
+            key={`${ch}-${i}`}
+            character={ch}
+            mode="animate"
+            width={140}
+            height={140}
+          />
         ))}
       </div>
       <div className="text-lg text-stone-700">
@@ -160,7 +189,10 @@ function GrammarIntroSlide({
       {sentences.length > 0 && (
         <ul className="flex flex-col gap-2">
           {sentences.map((s) => (
-            <li key={s.id} className="flex items-start justify-between gap-3 border-t border-stone-100 pt-2">
+            <li
+              key={s.id}
+              className="flex items-start justify-between gap-3 border-t border-stone-100 pt-2"
+            >
               <div>
                 <div className="text-lg">{s.zh}</div>
                 <div className="text-sm text-stone-600">{s.pinyin}</div>
@@ -176,13 +208,7 @@ function GrammarIntroSlide({
   );
 }
 
-function ReviewIntroSlide({
-  words,
-  onContinue,
-}: {
-  words: Word[];
-  onContinue: () => void;
-}) {
+function ReviewIntroSlide({ words, onContinue }: { words: Word[]; onContinue: () => void }) {
   return (
     <div className="flex flex-col gap-3 py-4">
       <h2 className="text-lg font-semibold">Quick review</h2>
@@ -231,7 +257,12 @@ export function LessonFlowScreen() {
 
   if (chunk.status === 'loading') return <Loading label="Loading lesson…" />;
   if (chunk.status === 'error')
-    return <InlineError message={`Could not load this unit: ${chunk.error.message}`} onRetry={chunk.retry} />;
+    return (
+      <InlineError
+        message={`Could not load this unit: ${chunk.error.message}`}
+        onRetry={chunk.retry}
+      />
+    );
 
   const lessons = computeLessons(chunk.chunk.unit, chunk.chunk.grammar, chunk.chunk.sentences);
   const lesson = lessons[lessonIdx];
@@ -262,14 +293,17 @@ function LessonFlowInner({
   content: ContentIndex;
   audio: boolean;
 }) {
-  const slides = generateSlides({
-    lesson,
-    allSentences: chunk.sentences,
-    allGrammar: chunk.grammar,
-    words: content.words,
-    levelWordIds: content.wordIdsByLevel.get(chunk.unit.level) ?? [],
-    audio,
-  }, Date.now());
+  const slides = generateSlides(
+    {
+      lesson,
+      allSentences: chunk.sentences,
+      allGrammar: chunk.grammar,
+      words: content.words,
+      levelWordIds: content.wordIdsByLevel.get(chunk.unit.level) ?? [],
+      audio,
+    },
+    Date.now(),
+  );
 
   const [state, dispatch] = useReducer(flowReducer, slides, initFlow);
   const [answered, setAnswered] = useState<Answer | null>(null);
@@ -299,7 +333,14 @@ function LessonFlowInner({
   if (progressQ.error !== undefined)
     return <InlineError message={PROGRESS_READ_ERROR} onRetry={progressQ.retry} />;
   if (state.phase === 'done') {
-    return <Results state={state} wordCount={lesson.wordIds.length} unitId={chunk.unit.id} last={isLastLesson} />;
+    return (
+      <Results
+        state={state}
+        wordCount={lesson.wordIds.length}
+        unitId={chunk.unit.id}
+        last={isLastLesson}
+      />
+    );
   }
 
   const slide = state.slides[state.position];
@@ -385,7 +426,9 @@ function SlideRenderer({
         const s = allSentences.find((s) => s.id === sid);
         return s ? [s] : [];
       });
-      return point ? <GrammarIntroSlide point={point} sentences={sentences} onContinue={onContinue} /> : null;
+      return point ? (
+        <GrammarIntroSlide point={point} sentences={sentences} onContinue={onContinue} />
+      ) : null;
     }
     case 'review-intro': {
       const words = slide.wordIds.flatMap((id) => {
@@ -396,10 +439,7 @@ function SlideRenderer({
     }
     case 'exercise':
       return (
-        <ExerciseBoundary
-          key={`${slide.exercise.id}:${state.position}`}
-          onError={onSkip}
-        >
+        <ExerciseBoundary key={`${slide.exercise.id}:${state.position}`} onError={onSkip}>
           <ExerciseView exercise={slide.exercise} answered={answered} onAnswer={onAnswer} />
         </ExerciseBoundary>
       );

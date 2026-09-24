@@ -29,7 +29,10 @@ function stubFetch(onSync: SyncHandler) {
 }
 
 function noSync(): Response {
-  return json({ cursor: 0, changes: { unitProgress: [], cards: [], activity: [] } } satisfies SyncResponse);
+  return json({
+    cursor: 0,
+    changes: { unitProgress: [], cards: [], activity: [] },
+  } satisfies SyncResponse);
 }
 
 function renderApp(path: string) {
@@ -52,7 +55,9 @@ describe('UnitScreen', () => {
   it('shows a retryable error when saved progress cannot be read', async () => {
     stubFetch(noSync);
     vi.spyOn(console, 'error').mockImplementation(() => {});
-    const toArray = vi.spyOn(db.unitProgress, 'toArray').mockRejectedValueOnce(new Error('idb broken'));
+    const toArray = vi
+      .spyOn(db.unitProgress, 'toArray')
+      .mockRejectedValueOnce(new Error('idb broken'));
     renderApp('/unit/l1-u01');
     expect(await screen.findByText('Could not read saved progress on this device.')).toBeTruthy();
     screen.getByRole('button', { name: 'Retry' }).click();

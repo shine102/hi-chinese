@@ -45,9 +45,11 @@ describe.each([2, 3])('shipped L%i units', (level) => {
     expect(findCrowdedUnits(units)).toEqual([]);
   });
 
-  it('put concrete units first and abstract ones later', async () => {
+  it('order tiers by mean position, keep tier 3 out of the first quarter, start tier-1 themes in the first half', async () => {
     const units = await loadLevel(level);
-    const themes = await readJson<ThemesFile>(resolve(here, '../src/authored/themes', `level${level}.json`));
+    const themes = await readJson<ThemesFile>(
+      resolve(here, '../src/authored/themes', `level${level}.json`),
+    );
     const tierOf = (u: Unit) => themes.tiers[broad(u)];
     expect(units.filter((u) => tierOf(u) === undefined).map((u) => u.id)).toEqual([]);
     const mean = (t: number) => {
@@ -57,7 +59,9 @@ describe.each([2, 3])('shipped L%i units', (level) => {
     expect(mean(1)).toBeLessThan(mean(2));
     expect(mean(2)).toBeLessThan(mean(3));
     const q = Math.ceil(units.length / 4);
-    expect(units.slice(0, q).filter((u) => tierOf(u) === 3).length).toBeLessThanOrEqual(Math.floor(0.15 * q));
+    expect(units.slice(0, q).filter((u) => tierOf(u) === 3).length).toBeLessThanOrEqual(
+      Math.floor(0.15 * q),
+    );
     const half = Math.ceil(units.length / 2);
     const lateTier1 = Object.entries(themes.tiers)
       .filter(([, t]) => t === 1)

@@ -73,11 +73,13 @@ interface Letter {
   ch: string;
   tone: number; // 0 = no mark on this letter
   word: number; // index of the pinyin word it belongs to
+  clause: number; // index of the clause (split at punctuation) it belongs to
 }
 
 function letters(pinyin: string): Letter[] {
   const out: Letter[] = [];
   let word = 0;
+  let clause = 0;
   let inWord = false;
   for (const raw of pinyin.normalize('NFC').toLowerCase()) {
     const mark = MARKS[raw];
@@ -85,9 +87,10 @@ function letters(pinyin: string): Letter[] {
     if (/[a-z]/.test(ch)) {
       if (!inWord && out.length > 0) word++;
       inWord = true;
-      out.push({ ch, tone: mark ? mark[1] : 0, word });
+      out.push({ ch, tone: mark ? mark[1] : 0, word, clause });
     } else if (raw !== "'" && raw !== '’') {
       inWord = false;
+      if (/[,.!?;:，。！？；：、…]/.test(raw)) clause++;
     }
   }
   return out;
@@ -209,7 +212,10 @@ function issuesFor(
   path.forEach((s, i) => {
     const marks = ls.slice(s.a, s.b).filter((l) => l.tone > 0);
     const got = marks.length === 0 ? 5 : marks[0]!.tone;
-    const allowed = allowedTones(words, path, i);
+    // Sandhi looks at the next syllable only inside the same clause.
+    const next = path[i + 1];
+    const clauseEnd = next !== undefined && ls[s.b - 1]!.clause !== ls[next.a]!.clause;
+    const allowed = allowedTones(words, clauseEnd ? path.slice(0, i + 1) : path, i);
     if (!allowed.has(got))
       out.push({
         id,

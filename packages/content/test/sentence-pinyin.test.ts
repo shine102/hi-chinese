@@ -26,6 +26,10 @@ describe('checkSentencePinyin', () => {
   it('requires 不 sandhi before tone 4', () => {
     expect(check('Wǒ bù shì nǐ.', ['我', '不', '是', '你'])).toEqual(['tone 不 2/4']);
   });
+  it('does not apply 不 sandhi across a clause break', () => {
+    expect(check('Wǒ bù, shì nǐ.', ['我', '不', '是', '你'])).toEqual([]);
+    expect(check('Wǒ bú, shì nǐ.', ['我', '不', '是', '你'])).toEqual(['tone 不 4/2']);
+  });
   it('allows neutral 不 in A-不-A', () => {
     expect(check('Nǐ shì bu shì?', ['你', '是', '不', '是'])).toEqual([]);
   });

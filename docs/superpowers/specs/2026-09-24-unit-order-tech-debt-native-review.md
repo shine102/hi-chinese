@@ -10,6 +10,7 @@ Câu mới, pinyin đã sửa và cách đọc từ đã sửa đều do AI quy�
 ## Cách đọc từ đã sửa (`authored/reading-fixes.json`)
 - Nguồn ghi sai định dạng hoặc thanh không chuẩn, sửa thành: 这时候 `zhe4 shi2 hou5`, 不一会儿 `bu4 yi1 hui4 r5`, 见过 `jian4 guo5`, 笑话儿 `xiao4 hua5 r5`, 有空儿 `you3 kong4 r5`, 能不能 `neng2 bu5 neng2`, 值得 `zhi2 de2`, 记住 `ji4 zhu4`, 事实上 `shi4 shi2 shang5`, 出去 `chu1 qu5`, 进来 `jin4 lai5`, 真的 `zhen1 de5`.
 - Trong đó đổi thanh so với nguồn: 值得 (nguồn zhíde), 记住 (jìzhu), 事实上 (shàng), 出去 (chūqù), 进来 (jìnlái), 真的 (de thiếu số thanh).
+- Thêm sau review: 那里 `na4 li3` (nguồn nàli), cho khớp 这里 zhèlǐ, 哪里 nǎlǐ; 2 câu L1 đổi theo (Tā zài nàlǐ. / Wǒmen qù nàlǐ ba.).
 - Giữ theo nguồn, sửa câu cho khớp: 学生 xuésheng, 那里 nàli, 起来 qǐlai, 看上去 kàn shangqu, 回来 huílai, 照顾 zhàogu, 带来 dàilái, 小朋友 xiǎopéngyǒu.
 - 只: thêm nghĩa "(zhī) lượng từ cho con vật, chim".
 
