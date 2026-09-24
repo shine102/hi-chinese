@@ -350,7 +350,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:368 | 我最喜欢北京的秋天。 | Wǒ zuì xǐhuan Běijīng de qiūtiān. | Tôi thích nhất mùa thu ở Bắc Kinh. |  |
 | s:l2:fill:369 | 我平时七点起床。 | Wǒ píngshí qī diǎn qǐchuáng. | Bình thường tôi dậy lúc bảy giờ. |  |
 | s:l2:fill:370 | 今后我要认真学习。 | Jīnhòu wǒ yào rènzhēn xuéxí. | Từ nay về sau tôi sẽ học hành chăm chỉ. |  |
-| s:l2:fill:371 | 我等到十点，他还是没来。 | Wǒ děngdào shí diǎn, tā háishi méi lái. | Tôi đợi đến mười giờ, anh ấy vẫn không đến. |  |
+| s:l2:fill:371 | 我等到十点，他还是没来。 | Wǒ děngdào shí diǎn, tā háishi méi lái. | Tôi đợi đến mười giờ, anh ấy vẫn chưa đến. |  |
 | s:l2:fill:372 | 不一会儿，他就回来了。 | Bù yíhuìr, tā jiù huílai le. | Chẳng mấy chốc anh ấy đã quay lại. |  |
 | s:l2:fill:373 | 家庭教育很重要。 | Jiātíng jiàoyù hěn zhòngyào. | Giáo dục gia đình rất quan trọng. |  |
 | s:l2:fill:374 | 你最喜欢哪一科？ | Nǐ zuì xǐhuan nǎ yì kē? | Bạn thích môn nào nhất? |  |
@@ -358,7 +358,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:376 | 校长明天要来我们班。 | Xiàozhǎng míngtiān yào lái wǒmen bān. | Ngày mai thầy hiệu trưởng sẽ đến lớp chúng tôi. |  |
 | s:l2:fill:377 | 这个学校的教学水平很高。 | Zhège xuéxiào de jiàoxué shuǐpíng hěn gāo. | Chất lượng giảng dạy của trường này rất cao. |  |
 | s:l2:fill:378 | 下个学期我要去中国。 | Xià ge xuéqī wǒ yào qù Zhōngguó. | Học kỳ sau tôi sẽ sang Trung Quốc. |  |
-| s:l2:fill:379 | 他当了三年班长。 | Tā dāng le sān nián bānzhǎng. | Cậu ấy làm lớp trưởng ba năm rồi. |  |
+| s:l2:fill:379 | 他当了三年班长。 | Tā dāng le sān nián bānzhǎng. | Cậu ấy đã làm lớp trưởng ba năm. |  |
 | s:l2:fill:380 | 中小学的学生下午四点放学。 | Zhōngxiǎoxué de xuésheng xiàwǔ sì diǎn fàngxué. | Học sinh tiểu học và trung học tan học lúc bốn giờ chiều. |  |
 | s:l2:fill:381 | 风太大，树倒了。 | Fēng tài dà, shù dǎo le. | Gió to quá, cây đổ rồi. |  |
 | s:l2:fill:382 | 你是怎样学汉语的？ | Nǐ shì zěnyàng xué Hànyǔ de? | Bạn đã học tiếng Trung như thế nào? |  |
@@ -396,12 +396,12 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:414 | 我家离学校有三公里。 | Wǒ jiā lí xuéxiào yǒu sān gōnglǐ. | Nhà tôi cách trường ba cây số. |  |
 | s:l2:fill:415 | 中国有十四亿人。 | Zhōngguó yǒu shísì yì rén. | Trung Quốc có một tỷ bốn trăm triệu người. |  |
 | s:l2:fill:416 | 这个包有十公斤重。 | Zhège bāo yǒu shí gōngjīn zhòng. | Cái túi này nặng mười ký. |  |
-| s:l2:fill:417 | 一千克等于两斤。 | Yì qiānkè děngyú liǎng jīn. | Một kilôgam bằng hai cân. |  |
+| s:l2:fill:417 | 一千克等于两斤。 | Yì qiānkè děngyú liǎng jīn. | Một ký bằng hai cân Trung Quốc. |  |
 | s:l2:fill:418 | 这条街晚上很安静。 | Zhè tiáo jiē wǎnshang hěn ānjìng. | Con phố này buổi tối rất yên tĩnh. |  |
 | s:l2:fill:419 | 车停在门口了。 | Chē tíng zài ménkǒu le. | Xe đỗ ở cửa rồi. |  |
 | s:l2:fill:420 | 出口在哪儿？ | Chūkǒu zài nǎr? | Lối ra ở đâu? |  |
 | s:l2:fill:421 | 这里的道路很干净。 | Zhèlǐ de dàolù hěn gānjìng. | Đường sá ở đây rất sạch. |  |
-| s:l2:fill:422 | 去北京有一条新公路。 | Qù Běijīng yǒu yì tiáo xīn gōnglù. | Đi Bắc Kinh có một con đường quốc lộ mới. |  |
+| s:l2:fill:422 | 去北京有一条新公路。 | Qù Běijīng yǒu yì tiáo xīn gōnglù. | Đi Bắc Kinh có một tuyến quốc lộ mới. |  |
 | s:l2:fill:423 | 停车场已经满了。 | Tíngchēchǎng yǐjīng mǎn le. | Bãi đỗ xe đã đầy rồi. |  |
 | s:l2:fill:424 | 我在学校入口等你。 | Wǒ zài xuéxiào rùkǒu děng nǐ. | Tôi đợi bạn ở lối vào trường. |  |
 | s:l2:fill:425 | 路上的行人很多。 | Lùshang de xíngrén hěn duō. | Người đi bộ trên đường rất đông. |  |
@@ -411,7 +411,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:429 | 他是从外地来的。 | Tā shì cóng wàidì lái de. | Anh ấy từ nơi khác đến. |  |
 | s:l2:fill:430 | 我们学校的球队很有名。 | Wǒmen xuéxiào de qiúduì hěn yǒumíng. | Đội bóng của trường chúng tôi rất nổi tiếng. |  |
 | s:l2:fill:431 | 队长让我们八点出发。 | Duìzhǎng ràng wǒmen bā diǎn chūfā. | Đội trưởng bảo chúng tôi tám giờ xuất phát. |  |
-| s:l2:fill:432 | 球碰到网了。 | Qiú pèngdào wǎng le. | Bóng chạm lưới rồi. | 球触网/下网 is the sports phrasing; 碰到 is plain but clear |
+| s:l2:fill:432 | 球没过网。 | Qiú méi guò wǎng. | Bóng không qua lưới. |  |
 | s:l2:fill:433 | 他的球鞋是白色的。 | Tā de qiúxié shì báisè de. | Giày thể thao của anh ấy màu trắng. |  |
 
 ## L3

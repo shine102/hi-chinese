@@ -10527,7 +10527,7 @@
     "id": "s:l2:fill:371",
     "zh": "我等到十点，他还是没来。",
     "pinyin": "Wǒ děngdào shí diǎn, tā háishi méi lái.",
-    "vi": "Tôi đợi đến mười giờ, anh ấy vẫn không đến.",
+    "vi": "Tôi đợi đến mười giờ, anh ấy vẫn chưa đến.",
     "words": [
       "我",
       "等到",
@@ -10640,7 +10640,7 @@
     "id": "s:l2:fill:379",
     "zh": "他当了三年班长。",
     "pinyin": "Tā dāng le sān nián bānzhǎng.",
-    "vi": "Cậu ấy làm lớp trưởng ba năm rồi.",
+    "vi": "Cậu ấy đã làm lớp trưởng ba năm.",
     "words": [
       "他",
       "当",
@@ -11174,7 +11174,7 @@
     "id": "s:l2:fill:417",
     "zh": "一千克等于两斤。",
     "pinyin": "Yì qiānkè děngyú liǎng jīn.",
-    "vi": "Một kilôgam bằng hai cân.",
+    "vi": "Một ký bằng hai cân Trung Quốc.",
     "words": [
       "一",
       "千克",
@@ -11238,7 +11238,7 @@
     "id": "s:l2:fill:422",
     "zh": "去北京有一条新公路。",
     "pinyin": "Qù Běijīng yǒu yì tiáo xīn gōnglù.",
-    "vi": "Đi Bắc Kinh có một con đường quốc lộ mới.",
+    "vi": "Đi Bắc Kinh có một tuyến quốc lộ mới.",
     "words": [
       "去",
       "北京",
@@ -11372,14 +11372,14 @@
   },
   {
     "id": "s:l2:fill:432",
-    "zh": "球碰到网了。",
-    "pinyin": "Qiú pèngdào wǎng le.",
-    "vi": "Bóng chạm lưới rồi.",
+    "zh": "球没过网。",
+    "pinyin": "Qiú méi guò wǎng.",
+    "vi": "Bóng không qua lưới.",
     "words": [
       "球",
-      "碰到",
-      "网",
-      "了"
+      "没",
+      "过",
+      "网"
     ]
   },
   {
