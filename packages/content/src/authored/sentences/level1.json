@@ -4390,5 +4390,422 @@
       "坐",
       "飞机"
     ]
+  },
+  {
+    "id": "s:l1:fill:001",
+    "zh": "你好！",
+    "pinyin": "Nǐ hǎo!",
+    "vi": "Xin chào!",
+    "words": [
+      "你",
+      "好"
+    ]
+  },
+  {
+    "id": "s:l1:fill:002",
+    "zh": "谢谢，再见！",
+    "pinyin": "Xièxie, zàijiàn!",
+    "vi": "Cảm ơn, tạm biệt!",
+    "words": [
+      "谢谢",
+      "再见"
+    ]
+  },
+  {
+    "id": "s:l1:fill:003",
+    "zh": "您好！",
+    "pinyin": "Nín hǎo!",
+    "vi": "Chào ông ạ!",
+    "words": [
+      "您",
+      "好"
+    ]
+  },
+  {
+    "id": "s:l1:fill:004",
+    "zh": "他是我朋友。",
+    "pinyin": "Tā shì wǒ péngyou.",
+    "vi": "Anh ấy là bạn tôi.",
+    "words": [
+      "他",
+      "是",
+      "我",
+      "朋友"
+    ]
+  },
+  {
+    "id": "s:l1:fill:005",
+    "zh": "你真好！",
+    "pinyin": "Nǐ zhēn hǎo!",
+    "vi": "Bạn thật tốt!",
+    "words": [
+      "你",
+      "真",
+      "好"
+    ]
+  },
+  {
+    "id": "s:l1:fill:006",
+    "zh": "她是我女儿。",
+    "pinyin": "Tā shì wǒ nǚ'ér.",
+    "vi": "Cô ấy là con gái tôi.",
+    "words": [
+      "她",
+      "是",
+      "我",
+      "女儿"
+    ]
+  },
+  {
+    "id": "s:l1:fill:007",
+    "zh": "一，二，三！",
+    "pinyin": "Yī, èr, sān!",
+    "vi": "Một, hai, ba!",
+    "words": [
+      "一",
+      "二",
+      "三"
+    ]
+  },
+  {
+    "id": "s:l1:fill:008",
+    "zh": "他的朋友很多。",
+    "pinyin": "Tā de péngyou hěn duō.",
+    "vi": "Anh ấy có rất nhiều bạn.",
+    "words": [
+      "他",
+      "的",
+      "朋友",
+      "很",
+      "多"
+    ]
+  },
+  {
+    "id": "s:l1:fill:009",
+    "zh": "我弟弟三岁半。",
+    "pinyin": "Wǒ dìdi sān suì bàn.",
+    "vi": "Em trai tôi ba tuổi rưỡi.",
+    "words": [
+      "我",
+      "弟弟",
+      "三",
+      "岁",
+      "半"
+    ]
+  },
+  {
+    "id": "s:l1:fill:010",
+    "zh": "别问别人。",
+    "pinyin": "Bié wèn biéren.",
+    "vi": "Đừng hỏi người khác.",
+    "words": [
+      "别",
+      "问",
+      "别人"
+    ]
+  },
+  {
+    "id": "s:l1:fill:011",
+    "zh": "那些人是谁？",
+    "pinyin": "Nàxiē rén shì shéi?",
+    "vi": "Những người kia là ai?",
+    "words": [
+      "那些",
+      "人",
+      "是",
+      "谁"
+    ]
+  },
+  {
+    "id": "s:l1:fill:012",
+    "zh": "你在什么地方？",
+    "pinyin": "Nǐ zài shénme dìfang?",
+    "vi": "Bạn đang ở chỗ nào?",
+    "words": [
+      "你",
+      "在",
+      "什么",
+      "地方"
+    ]
+  },
+  {
+    "id": "s:l1:fill:013",
+    "zh": "后天见！",
+    "pinyin": "Hòutiān jiàn!",
+    "vi": "Hẹn gặp lại ngày mốt!",
+    "words": [
+      "后天",
+      "见"
+    ]
+  },
+  {
+    "id": "s:l1:fill:014",
+    "zh": "今天几号？",
+    "pinyin": "Jīntiān jǐ hào?",
+    "vi": "Hôm nay là ngày mấy?",
+    "words": [
+      "今天",
+      "几",
+      "号"
+    ]
+  },
+  {
+    "id": "s:l1:fill:015",
+    "zh": "这是我第一次去。",
+    "pinyin": "Zhè shì wǒ dì yī cì qù.",
+    "vi": "Đây là lần đầu tiên tôi đi.",
+    "words": [
+      "这",
+      "是",
+      "我",
+      "第",
+      "一",
+      "次",
+      "去"
+    ]
+  },
+  {
+    "id": "s:l1:fill:016",
+    "zh": "我马上去。",
+    "pinyin": "Wǒ mǎshàng qù.",
+    "vi": "Tôi đi ngay đây.",
+    "words": [
+      "我",
+      "马上",
+      "去"
+    ]
+  },
+  {
+    "id": "s:l1:fill:017",
+    "zh": "我常常去那儿。",
+    "pinyin": "Wǒ chángcháng qù nàr.",
+    "vi": "Tôi thường đến đó.",
+    "words": [
+      "我",
+      "常常",
+      "去",
+      "那儿"
+    ]
+  },
+  {
+    "id": "s:l1:fill:018",
+    "zh": "现在差五分八点。",
+    "pinyin": "Xiànzài chà wǔ fēn bā diǎn.",
+    "vi": "Bây giờ là tám giờ kém năm phút.",
+    "words": [
+      "现在",
+      "差",
+      "五",
+      "分",
+      "八",
+      "点"
+    ]
+  },
+  {
+    "id": "s:l1:fill:019",
+    "zh": "我不喝茶。",
+    "pinyin": "Wǒ bù hē chá.",
+    "vi": "Tôi không uống trà.",
+    "words": [
+      "我",
+      "不",
+      "喝",
+      "茶"
+    ]
+  },
+  {
+    "id": "s:l1:fill:020",
+    "zh": "这是我的杯子。",
+    "pinyin": "Zhè shì wǒ de bēizi.",
+    "vi": "Đây là cái cốc của tôi.",
+    "words": [
+      "这",
+      "是",
+      "我",
+      "的",
+      "杯子"
+    ]
+  },
+  {
+    "id": "s:l1:fill:021",
+    "zh": "妈妈送我一个杯子。",
+    "pinyin": "Māma sòng wǒ yí ge bēizi.",
+    "vi": "Mẹ tặng tôi một cái cốc.",
+    "words": [
+      "妈妈",
+      "送",
+      "我",
+      "一",
+      "个",
+      "杯子"
+    ]
+  },
+  {
+    "id": "s:l1:fill:022",
+    "zh": "你打开看一下儿。",
+    "pinyin": "Nǐ dǎkāi kàn yíxiàr.",
+    "vi": "Bạn mở ra xem thử đi.",
+    "words": [
+      "你",
+      "打开",
+      "看",
+      "一下儿"
+    ]
+  },
+  {
+    "id": "s:l1:fill:023",
+    "zh": "路上人很多。",
+    "pinyin": "Lùshang rén hěn duō.",
+    "vi": "Trên đường rất đông người.",
+    "words": [
+      "路上",
+      "人",
+      "很",
+      "多"
+    ]
+  },
+  {
+    "id": "s:l1:fill:024",
+    "zh": "我们打车去。",
+    "pinyin": "Wǒmen dǎchē qù.",
+    "vi": "Chúng ta đi taxi nhé.",
+    "words": [
+      "我们",
+      "打车",
+      "去"
+    ]
+  },
+  {
+    "id": "s:l1:fill:025",
+    "zh": "我没有车票。",
+    "pinyin": "Wǒ méiyǒu chēpiào.",
+    "vi": "Tôi không có vé xe.",
+    "words": [
+      "我",
+      "没有",
+      "车票"
+    ]
+  },
+  {
+    "id": "s:l1:fill:026",
+    "zh": "我们几点上课？",
+    "pinyin": "Wǒmen jǐ diǎn shàngkè?",
+    "vi": "Mấy giờ chúng ta vào học?",
+    "words": [
+      "我们",
+      "几",
+      "点",
+      "上课"
+    ]
+  },
+  {
+    "id": "s:l1:fill:027",
+    "zh": "我们明天不上学。",
+    "pinyin": "Wǒmen míngtiān bú shàngxué.",
+    "vi": "Ngày mai chúng tôi không đi học.",
+    "words": [
+      "我们",
+      "明天",
+      "不",
+      "上学"
+    ]
+  },
+  {
+    "id": "s:l1:fill:028",
+    "zh": "明天有考试。",
+    "pinyin": "Míngtiān yǒu kǎoshì.",
+    "vi": "Ngày mai có bài thi.",
+    "words": [
+      "明天",
+      "有",
+      "考试"
+    ]
+  },
+  {
+    "id": "s:l1:fill:029",
+    "zh": "请看第十页。",
+    "pinyin": "Qǐng kàn dì shí yè.",
+    "vi": "Mời xem trang mười.",
+    "words": [
+      "请",
+      "看",
+      "第",
+      "十",
+      "页"
+    ]
+  },
+  {
+    "id": "s:l1:fill:030",
+    "zh": "老师，我们今天听写吗？",
+    "pinyin": "Lǎoshī, wǒmen jīntiān tīngxiě ma?",
+    "vi": "Thưa thầy, hôm nay chúng em có viết chính tả không ạ?",
+    "words": [
+      "老师",
+      "我们",
+      "今天",
+      "听写",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l1:fill:031",
+    "zh": "他学习很认真。",
+    "pinyin": "Tā xuéxí hěn rènzhēn.",
+    "vi": "Anh ấy học rất chăm chỉ.",
+    "words": [
+      "他",
+      "学习",
+      "很",
+      "认真"
+    ]
+  },
+  {
+    "id": "s:l1:fill:032",
+    "zh": "我明天请假。",
+    "pinyin": "Wǒ míngtiān qǐngjià.",
+    "vi": "Ngày mai tôi xin nghỉ.",
+    "words": [
+      "我",
+      "明天",
+      "请假"
+    ]
+  },
+  {
+    "id": "s:l1:fill:033",
+    "zh": "你有别的事吗？",
+    "pinyin": "Nǐ yǒu biéde shì ma?",
+    "vi": "Bạn có việc gì khác không?",
+    "words": [
+      "你",
+      "有",
+      "别的",
+      "事",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l1:fill:034",
+    "zh": "我的手机在哪儿？",
+    "pinyin": "Wǒ de shǒujī zài nǎr?",
+    "vi": "Điện thoại của tôi đâu rồi?",
+    "words": [
+      "我",
+      "的",
+      "手机",
+      "在",
+      "哪儿"
+    ]
+  },
+  {
+    "id": "s:l1:fill:035",
+    "zh": "认识你很高兴。",
+    "pinyin": "Rènshi nǐ hěn gāoxìng.",
+    "vi": "Rất vui được làm quen với bạn.",
+    "words": [
+      "认识",
+      "你",
+      "很",
+      "高兴"
+    ]
   }
 ]
