@@ -317,7 +317,7 @@
     "pattern": "动词 + 坏 (+ 了)",
     "explanation": "坏 (huài) đứng sau động từ cho thấy hành động đã làm hỏng hoặc phá hủy điều gì đó — \"làm hỏng, làm vỡ\" như một kết quả. Đây là một bổ ngữ kết quả điển hình, luôn gắn ngay sau động từ.",
     "level": 3,
-    "examples": ["s:l3:130", "s:l3:131", "s:l3:132", "s:l3:fix:015"]
+    "examples": ["s:l3:130", "s:l3:131", "s:l3:132", "s:l3:fix:015", "s:l3:fill:182"]
   },
   {
     "id": "g:potential-complement-liao",
@@ -325,7 +325,7 @@
     "pattern": "动词 + 得/不 + 了",
     "explanation": "得 hoặc 不 đứng giữa động từ và 了 dùng để hỏi hoặc khẳng định một hành động có thể hoàn thành được hay không — \"có thể/không thể làm xong điều gì đó\". 得了 (de liǎo) nghĩa là có thể, còn 不了 (bu liǎo) nghĩa là không thể, thường vì một giới hạn về vật lý hoặc thực tế.",
     "level": 3,
-    "examples": ["s:l3:133", "s:l3:134", "s:l3:135", "s:l3:fix:020", "s:l3:fix:021"]
+    "examples": ["s:l3:133", "s:l3:134", "s:l3:135", "s:l3:fix:020", "s:l3:fix:021", "s:l3:fill:175"]
   },
   {
     "id": "g:you-agent",
@@ -453,7 +453,7 @@
     "pattern": "受事 + 叫/让 + 施事 + 动词 + 其他成分",
     "explanation": "Trong văn nói thân mật, 叫 (jiào) và 让 (ràng) có thể hoạt động giống hệt 被 để đánh dấu câu bị động — chủ ngữ chịu tác động từ ai đó khác. Cách nói này phổ biến trong giao tiếp hằng ngày, trong khi 被 nghe trang trọng hoặc mang tính văn viết hơn.",
     "level": 3,
-    "examples": ["s:l3:181", "s:l3:182", "s:l3:183", "s:l3:fix:022", "s:l3:fix:023"]
+    "examples": ["s:l3:181", "s:l3:182", "s:l3:183", "s:l3:fix:022", "s:l3:fix:023", "s:l3:fill:176"]
   },
   {
     "id": "g:potential-complement-xia",
@@ -461,7 +461,7 @@
     "pattern": "动词 + 得/不 + 下",
     "explanation": "得 hoặc 不 cộng với 下 sau động từ dùng để hỏi xem có đủ chỗ hoặc sức chứa hay không — \"vừa, chứa được\". 得下 (de xià) nghĩa là có đủ chỗ, còn 不下 (bu xià) nghĩa là không đủ.",
     "level": 3,
-    "examples": ["s:l3:184", "s:l3:185", "s:l3:186", "s:l3:fix:016"]
+    "examples": ["s:l3:184", "s:l3:185", "s:l3:186", "s:l3:fix:016", "s:l3:fill:177"]
   },
   {
     "id": "g:jiao-comparative",
@@ -549,7 +549,7 @@
     "pattern": "动词 + 住",
     "explanation": "住 (zhù) đứng sau động từ cho thấy hành động khiến điều gì đó ở yên tại chỗ hoặc cố định — \"nắm chặt, ghi nhớ chắc, dừng lại\". Đây là một bổ ngữ kết quả phổ biến, xuất hiện trong các từ như 抓住 (nắm chặt) và 记住 (ghi nhớ chắc).",
     "level": 3,
-    "examples": ["s:l3:217", "s:l3:218", "s:l3:219", "s:l3:fix:017"]
+    "examples": ["s:l3:217", "s:l3:218", "s:l3:219", "s:l3:fix:017", "s:l3:fill:178"]
   },
   {
     "id": "g:v-qilai-inchoative",
@@ -557,7 +557,7 @@
     "pattern": "形容词/动词 + 起来",
     "explanation": "起来 (qǐlái) sau một tính từ hoặc động từ có thể đánh dấu sự bắt đầu của một trạng thái mới — \"bắt đầu trở nên, bắt đầu làm gì đó\". Khác với nghĩa đen là \"đứng dậy\", ở đây nó thể hiện một sự thay đổi bắt đầu và tiếp diễn.",
     "level": 3,
-    "examples": ["s:l3:220", "s:l3:221", "s:l3:222", "s:l3:fix:024", "s:l3:fix:025"]
+    "examples": ["s:l3:220", "s:l3:221", "s:l3:222", "s:l3:fix:024", "s:l3:fix:025", "s:l3:fill:179"]
   },
   {
     "id": "g:yue-yue-parallel",
@@ -565,7 +565,7 @@
     "pattern": "越 + A，越 + B",
     "explanation": "越...越... (yuè...yuè...) nối hai sự thay đổi xảy ra song song — \"càng A thì càng B\". Cả hai mệnh đề đều dùng 越 trước động từ hoặc tính từ, cho thấy chúng cùng tăng hoặc cùng giảm.",
     "level": 3,
-    "examples": ["s:l3:223", "s:l3:224", "s:l3:225", "s:l3:fix:018"]
+    "examples": ["s:l3:223", "s:l3:224", "s:l3:225", "s:l3:fix:018", "s:l3:fill:180"]
   },
   {
     "id": "g:yibian-yibian",
@@ -589,7 +589,7 @@
     "pattern": "动词短语 + 的 + 名词",
     "explanation": "的 (de) có thể biến cả một cụm động từ thành lời miêu tả cho một danh từ, giống như mệnh đề quan hệ trong tiếng Việt — \"cuốn sách [mà] tôi mua\", \"người [đang] hát\". Cụm miêu tả đứng trước, sau đó đến 的, rồi mới đến danh từ mà nó bổ nghĩa.",
     "level": 3,
-    "examples": ["s:l3:238", "s:l3:239", "s:l3:240", "s:l3:241", "s:l3:242", "s:l3:fix:030", "s:l3:fix:031"]
+    "examples": ["s:l3:238", "s:l3:239", "s:l3:240", "s:l3:241", "s:l3:242", "s:l3:fix:030", "s:l3:fix:031", "s:l3:fill:181"]
   },
   {
     "id": "g:suo-nominalizer",
@@ -797,7 +797,7 @@
     "pattern": "动词 + 开",
     "explanation": "开 (kāi) đứng sau động từ cho thấy điều gì đó mở ra hoặc tách rời — \"đẩy mở, đi khỏi, tách ra\". Đây là một bổ ngữ kết quả phổ biến, như trong 推开 (đẩy mở), 走开 (tránh ra, đi chỗ khác), và 分开 (tách rời).",
     "level": 3,
-    "examples": ["s:l3:319", "s:l3:320", "s:l3:321", "s:l3:fix:014"]
+    "examples": ["s:l3:319", "s:l3:320", "s:l3:321", "s:l3:fix:014", "s:l3:fill:183"]
   },
   {
     "id": "g:zongshi-always",

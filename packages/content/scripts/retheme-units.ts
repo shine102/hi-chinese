@@ -19,8 +19,8 @@ import type { AuthoredUnit, HskLevel, Word } from '../src/types.js';
 
 // Word → 1-based unit number within its level. Tuning knob for grammar crowding.
 const PINS: Record<2 | 3, Record<string, number>> = {
-  2: { 可以: 1, 得: 1 },
-  3: {},
+  2: { 可以: 1, 得: 1, 条件: 11, 取得: 41, 那样: 13, 大声: 53 },
+  3: { 把: 3 },
 };
 
 const here = dirname(fileURLToPath(import.meta.url));

@@ -9,7 +9,8 @@ const content = resolve(here, '../../../apps/web/public/content');
 const readJson = async (p: string) => JSON.parse(await readFile(p, 'utf8'));
 
 // Core grammar added 2026-09-24 (spec 2026-09-24-core-grammar-design.md), pinned by anchor
-// to these units. Guards against a future unit reshuffle silently moving or dropping them.
+// to these units; L2 units updated for the 2026-09-24 L2/L3 re-theme.
+// Guards against a future unit reshuffle silently moving or dropping them.
 const CORE: Record<string, string> = {
   'g:de-possessive': 'l1-u04',
   'g:ye-dou': 'l1-u07',
@@ -27,10 +28,10 @@ const CORE: Record<string, string> = {
   'g:haishi-choice': 'l1-u40',
   'g:keyi-permission': 'l2-u01',
   'g:de-degree': 'l2-u01',
-  'g:yi-jiu': 'l2-u05',
-  'g:shi-de': 'l2-u10',
-  'g:bi-extended': 'l2-u36',
-  'g:jiu-cai': 'l2-u46',
+  'g:yi-jiu': 'l2-u09',
+  'g:shi-de': 'l2-u16',
+  'g:bi-extended': 'l2-u06',
+  'g:jiu-cai': 'l2-u07',
 };
 
 type Chunk = { unit: Unit; grammar: GrammarPoint[]; sentences: Sentence[] };

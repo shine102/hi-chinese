@@ -640,5 +640,14 @@
   { "id": "s:l3:fill:171", "zh": "这个苹果很甜。", "pinyin": "Zhège píngguǒ hěn tián.", "vi": "Quả táo này rất ngọt.", "words": ["这", "个", "苹果", "很", "甜"] },
   { "id": "s:l3:fill:172", "zh": "我要一杯果汁。", "pinyin": "Wǒ yào yì bēi guǒzhī.", "vi": "Cho tôi một ly nước ép.", "words": ["我", "要", "一", "杯", "果汁"] },
   { "id": "s:l3:fill:173", "zh": "我想喝奶茶。", "pinyin": "Wǒ xiǎng hē nǎichá.", "vi": "Tôi muốn uống trà sữa.", "words": ["我", "想", "喝", "奶茶"] },
-  { "id": "s:l3:fill:174", "zh": "来一瓶红酒吧。", "pinyin": "Lái yì píng hóngjiǔ ba.", "vi": "Cho một chai vang đỏ nhé.", "words": ["来", "一", "瓶", "红酒", "吧"] }
+  { "id": "s:l3:fill:174", "zh": "来一瓶红酒吧。", "pinyin": "Lái yì píng hóngjiǔ ba.", "vi": "Cho một chai vang đỏ nhé.", "words": ["来", "一", "瓶", "红酒", "吧"] },
+  { "id": "s:l3:fill:175", "zh": "压力这么大，谁都受不了。", "pinyin": "Yālì zhème dà, shéi dōu shòu bu liǎo.", "vi": "Áp lực lớn thế này, ai cũng chịu không nổi.", "words": ["压力", "这么", "大", "谁", "都", "受", "不", "了"] },
+  { "id": "s:l3:fill:176", "zh": "那个人叫警察抓走了。", "pinyin": "Nàge rén jiào jǐngchá zhuā zǒu le.", "vi": "Người đó bị cảnh sát bắt đi rồi.", "words": ["那", "个", "人", "叫", "警察", "抓", "走", "了"] },
+  { "id": "s:l3:fill:177", "zh": "每辆车都坐得下五个人。", "pinyin": "Měi liàng chē dōu zuò de xià wǔ ge rén.", "vi": "Mỗi chiếc xe đều ngồi được năm người.", "words": ["每", "辆", "车", "都", "坐", "得", "下", "五", "个", "人"] },
+  { "id": "s:l3:fill:178", "zh": "警察追了很久，终于抓住了他。", "pinyin": "Jǐngchá zhuī le hěn jiǔ, zhōngyú zhuāzhù le tā.", "vi": "Cảnh sát đuổi theo rất lâu, cuối cùng cũng bắt được anh ta.", "words": ["警察", "追", "了", "很", "久", "终于", "抓住", "了", "他"] },
+  { "id": "s:l3:fill:179", "zh": "考试快到了，大家都紧张起来了。", "pinyin": "Kǎoshì kuài dào le, dàjiā dōu jǐnzhāng qǐlai le.", "vi": "Sắp thi rồi, mọi người đều bắt đầu thấy căng thẳng.", "words": ["考试", "快", "到", "了", "大家", "都", "紧张", "起来", "了"] },
+  { "id": "s:l3:fill:180", "zh": "这个问题越想越难解决。", "pinyin": "Zhège wèntí yuè xiǎng yuè nán jiějué.", "vi": "Vấn đề này càng nghĩ càng thấy khó giải quyết.", "words": ["这", "个", "问题", "越", "想", "越", "难", "解决"] },
+  { "id": "s:l3:fill:181", "zh": "他说的办法很简单。", "pinyin": "Tā shuō de bànfǎ hěn jiǎndān.", "vi": "Cách mà anh ấy nói rất đơn giản.", "words": ["他", "说", "的", "办法", "很", "简单"] },
+  { "id": "s:l3:fill:182", "zh": "他的车被人弄坏了。", "pinyin": "Tā de chē bèi rén nòng huài le.", "vi": "Xe của anh ấy bị người ta làm hỏng rồi.", "words": ["他", "的", "车", "被", "人", "弄", "坏", "了"] },
+  { "id": "s:l3:fill:183", "zh": "门被他拉开了。", "pinyin": "Mén bèi tā lā kāi le.", "vi": "Cánh cửa bị anh ấy kéo ra.", "words": ["门", "被", "他", "拉", "开", "了"] }
 ]

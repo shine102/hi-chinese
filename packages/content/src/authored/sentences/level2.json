@@ -6978,5 +6978,139 @@
       "讲",
       "笑话儿"
     ]
+  },
+  {
+    "id": "s:l2:fill:112",
+    "zh": "我们能够做到。",
+    "pinyin": "Wǒmen nénggòu zuòdào.",
+    "vi": "Chúng ta có thể làm được.",
+    "words": [
+      "我们",
+      "能够",
+      "做到"
+    ]
+  },
+  {
+    "id": "s:l2:fill:113",
+    "zh": "如果你愿意，我能够帮你。",
+    "pinyin": "Rúguǒ nǐ yuànyì, wǒ nénggòu bāng nǐ.",
+    "vi": "Nếu bạn muốn, tôi có thể giúp bạn.",
+    "words": [
+      "如果",
+      "你",
+      "愿意",
+      "我",
+      "能够",
+      "帮",
+      "你"
+    ]
+  },
+  {
+    "id": "s:l2:fill:114",
+    "zh": "你想起他的名字了吗？",
+    "pinyin": "Nǐ xiǎngqǐ tā de míngzi le ma?",
+    "vi": "Bạn đã nhớ ra tên của anh ấy chưa?",
+    "words": [
+      "你",
+      "想起",
+      "他",
+      "的",
+      "名字",
+      "了",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l2:fill:115",
+    "zh": "我有很多爱好，例如唱歌和看书。",
+    "pinyin": "Wǒ yǒu hěn duō àihào, lìrú chànggē hé kàn shū.",
+    "vi": "Tôi có nhiều sở thích, chẳng hạn như ca hát và đọc sách.",
+    "words": [
+      "我",
+      "有",
+      "很",
+      "多",
+      "爱好",
+      "例如",
+      "唱歌",
+      "和",
+      "看",
+      "书"
+    ]
+  },
+  {
+    "id": "s:l2:fill:116",
+    "zh": "我去过很多国家，例如中国。",
+    "pinyin": "Wǒ qù guo hěn duō guójiā, lìrú Zhōngguó.",
+    "vi": "Tôi đã đến nhiều nước, chẳng hạn như Trung Quốc.",
+    "words": [
+      "我",
+      "去",
+      "过",
+      "很",
+      "多",
+      "国家",
+      "例如",
+      "中国"
+    ]
+  },
+  {
+    "id": "s:l2:fill:117",
+    "zh": "很多人对这个计划不满。",
+    "pinyin": "Hěn duō rén duì zhège jìhuà bùmǎn.",
+    "vi": "Nhiều người không hài lòng với kế hoạch này.",
+    "words": [
+      "很",
+      "多",
+      "人",
+      "对",
+      "这",
+      "个",
+      "计划",
+      "不满"
+    ]
+  },
+  {
+    "id": "s:l2:fill:118",
+    "zh": "她对这件事很不满。",
+    "pinyin": "Tā duì zhè jiàn shì hěn bùmǎn.",
+    "vi": "Cô ấy rất bất mãn về chuyện này.",
+    "words": [
+      "她",
+      "对",
+      "这",
+      "件",
+      "事",
+      "很",
+      "不满"
+    ]
+  },
+  {
+    "id": "s:l2:fill:119",
+    "zh": "今天比昨天更热。",
+    "pinyin": "Jīntiān bǐ zuótiān gèng rè.",
+    "vi": "Hôm nay còn nóng hơn hôm qua.",
+    "words": [
+      "今天",
+      "比",
+      "昨天",
+      "更",
+      "热"
+    ]
+  },
+  {
+    "id": "s:l2:fill:120",
+    "zh": "你说得比我更清楚。",
+    "pinyin": "Nǐ shuō de bǐ wǒ gèng qīngchu.",
+    "vi": "Bạn nói còn rõ hơn tôi.",
+    "words": [
+      "你",
+      "说",
+      "得",
+      "比",
+      "我",
+      "更",
+      "清楚"
+    ]
   }
 ]
