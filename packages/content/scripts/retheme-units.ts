@@ -17,10 +17,20 @@ import type { AuthoredUnit, HskLevel, Word } from '../src/types.js';
 // One-off: rebuild authored L2/L3 units from authored subthemes (spec
 // 2026-09-24-l2-l3-retheme-design.md §3). L1 stays as authored. Not part of the build.
 
-// Word → 1-based unit number within its level. Tuning knob for grammar crowding.
+// Word → 1-based unit NUMBER within its level (not a subtheme), a tuning knob for the
+// 18-word cap and grammar crowding. Re-check every pin after any themes change or reorder:
+// the same number then points at a different unit.
 const PINS: Record<2 | 3, Record<string, number>> = {
-  2: { 可以: 1, 得: 1, 条件: 13, 取得: 49, 那样: 15 },
-  3: { 把: 3 },
+  2: {
+    可以: 1, // keeps g:keyi-permission in l2-u01 (core grammar)
+    得: 1, // keeps g:de-degree in l2-u01 (core grammar)
+    条件: 13, // 18-word cap: out of u01 (drags 条/件 in); u13 Suy Nghĩ: Tìm Cách Giải Quyết
+    取得: 49, // 18-word cap: out of u01 (drags 取 in); u49 Trường Học: Thi Cử & Trình Độ
+    那样: 15, // 18-word cap: out of u10; u15 Suy Nghĩ: Giống Nhau & Bình Thường
+  },
+  3: {
+    把: 3, // crowding: 把 and 被 points together overfill l3-u01; the 把 points go to u03
+  },
 };
 
 const here = dirname(fileURLToPath(import.meta.url));

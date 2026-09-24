@@ -30,7 +30,9 @@ Turns open data plus authored grammar and sentences into static JSON chunks.
   automatic reading choice is wrong. Run `pnpm report:readings` to review all multi-reading words.
 - `src/authored/themes/level{2,3}.json`: L2/L3 content words → named subthemes (source for unit layout).
 - `pnpm -F @hi-chinese/content retheme-units`: one-off rebuild of `authored/units/level{2,3}.json` from
-  the themes (pins inside the script).
+  the themes (pins inside the script). It reads the BUILT `apps/web/public/content/words.json`, so run
+  `pnpm content:build` first. It overwrites `authored/units/level{2,3}.json` (hand edits there are
+  lost); run a build afterwards to regenerate the web content.
 
 ## Commands
 
