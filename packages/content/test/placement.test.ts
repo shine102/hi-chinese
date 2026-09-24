@@ -3,7 +3,6 @@ import {
   attachToUnits,
   placeAnchoredGrammar,
   placeAuthoredGrammar,
-  placeGrammar,
   placeGrammarByDensity,
   placeSentences,
 } from '../src/pipeline/placement.js';
@@ -112,71 +111,6 @@ describe('placeSentences', () => {
 
 const placed = (): Sentence[] => placeSentences([s1, s2, s3], words, units).sentences;
 
-describe('placeGrammar', () => {
-  const g = (id: string, level: HskLevel, examples: string[]): AuthoredGrammar => ({
-    id,
-    title: id,
-    pattern: 'A 是 B',
-    explanation: 'x',
-    level,
-    examples,
-  });
-
-  it('places a grammar point in the latest unit among its examples', () => {
-    const { grammar, errors } = placeGrammar([g('g1', 1, ['s1', 's2'])], placed(), units);
-    expect(errors).toEqual([]);
-    expect(grammar[0]).toEqual({
-      id: 'g1',
-      title: 'g1',
-      pattern: 'A 是 B',
-      explanation: 'x',
-      level: 1,
-      sentenceIds: ['s1', 's2'],
-      unitId: 'l1-u02',
-    });
-  });
-  it('moves a point forward to the first unit of its declared level', () => {
-    const { grammar } = placeGrammar([g('g1', 2, ['s1'])], placed(), units);
-    expect(grammar[0]!.unitId).toBe('l2-u01');
-  });
-  it('errors when examples need a later level than declared', () => {
-    const { grammar, errors } = placeGrammar([g('g1', 1, ['s3'])], placed(), units);
-    expect(grammar).toEqual([]);
-    expect(errors.map((e) => e.kind)).toEqual(['level-mismatch']);
-  });
-  it('errors on missing example sentences', () => {
-    const { errors } = placeGrammar([g('g1', 1, ['nope'])], placed(), units);
-    expect(errors.map((e) => [e.kind, e.ref])).toEqual([['missing-sentence', 'g1']]);
-  });
-  it('errors when a declared level has no units, even with a valid lower-level example', () => {
-    const soloUnits = [unit('l1-u01', 1, 1, ['w:我', 'w:是'])];
-    const soloWords = [word('我', 'l1-u01', 1), word('是', 'l1-u01', 1)];
-    const { sentences } = placeSentences(
-      [{ id: 's1', zh: '我是。', pinyin: 'Wǒ shì.', vi: 'I am.', words: ['我', '是'] }],
-      soloWords,
-      soloUnits,
-    );
-    const { grammar, errors } = placeGrammar([g('g1', 3, ['s1'])], sentences, soloUnits);
-    expect(errors.map((e) => [e.kind, e.ref])).toEqual([['level-mismatch', 'g1']]);
-    expect(grammar).toEqual([]);
-  });
-  it('spills extra points through same-level units only, erroring once the level runs out', () => {
-    const many = ['a', 'b', 'c', 'd', 'e', 'f', 'g'].map((id) => g(id, 1, ['s1']));
-    const { grammar, errors } = placeGrammar(many, placed(), units, 2);
-    expect(grammar.map((x) => [x.id, x.unitId])).toEqual([
-      ['a', 'l1-u01'],
-      ['b', 'l1-u01'],
-      ['c', 'l1-u02'],
-      ['d', 'l1-u02'],
-    ]);
-    expect(errors.map((e) => [e.kind, e.ref])).toEqual([
-      ['overflow', 'e'],
-      ['overflow', 'f'],
-      ['overflow', 'g'],
-    ]);
-  });
-});
-
 describe('placeAuthoredGrammar', () => {
   const g = (id: string, level: HskLevel, examples: string[]): AuthoredGrammar => ({
     id,
@@ -214,7 +148,7 @@ describe('placeAuthoredGrammar', () => {
 describe('attachToUnits', () => {
   it('fills sentenceIds and grammarIds on unit copies', () => {
     const sentences = placed();
-    const { grammar } = placeGrammar(
+    const { grammar } = placeAuthoredGrammar(
       [{ id: 'g1', title: 't', pattern: 'p', explanation: 'e', level: 1, examples: ['s2'] }],
       sentences,
       units,

@@ -2,7 +2,7 @@ import type { Authored } from './authored.js';
 import { buildCharacters } from './characters.js';
 import { makeHanViet } from './hanviet.js';
 import { parseHskWords, type RawHskEntry } from './hsk.js';
-import { attachToUnits, placeAnchoredGrammar, placeAuthoredGrammar, placeGrammar, placeSentences } from './placement.js';
+import { attachToUnits, placeAnchoredGrammar, placeAuthoredGrammar, placeGrammarByDensity, placeSentences } from './placement.js';
 import { assignUnits } from './units.js';
 import { validateContent } from './validate.js';
 import type { ContentBundle } from '../types.js';
@@ -31,7 +31,7 @@ export function assembleContent(inputs: RunInputs): RunResult {
   const unanchored = inputs.authored.grammar.filter((g) => g.anchor === undefined);
   // Anchored points (any level) are pinned to their anchor word's unit and must have >= 2
   // examples placed there, so the unit's grammar slide always has examples to show. They
-  // bypass placeGrammar entirely and so do not consume its per-unit cap.
+  // are placed independently of the density placer.
   const { grammar: anchoredGrammar, errors: anchoredErrors } = placeAnchoredGrammar(
     anchored,
     sentences,
@@ -45,25 +45,21 @@ export function assembleContent(inputs: RunInputs): RunResult {
   // reuse simple, lower-level filler vocabulary so the sentence highlights the new pattern rather
   // than new words — which means the EARLIEST placement is fragile (any one "easy" example sentence
   // drags a whole grammar point's placement down to an earlier level, an authoring mismatch that
-  // isn't really a mismatch). `placeGrammar`'s LATEST + cap/spill + graceful under-level fallback is
-  // robust to that and is used for every level except 1, unconditionally.
+  // isn't really a mismatch). Density placement is robust to that and is used for every level
+  // except 1, unconditionally.
   const { grammar: authoredGrammar, errors: authoredGrammarErrors } = placeAuthoredGrammar(
     unanchored.filter((g) => g.level === 1),
     sentences,
     bareUnits,
   );
-  // maxPerUnit raised from the default 2 to 4: thematic (not frequency-chunked) L2/L3 units cluster
-  // grammar points that share trigger vocabulary (e.g. time-expression or cognition-verb themes)
-  // into the same few units far more than the near-uniform frequency chunking the default assumed.
-  // Total grammar count is well within overall level capacity — this is a distribution problem, not
-  // a capacity one — so a moderate cap increase (verified empirically to clear all placement
-  // conflicts for the current L2/L3 grammar set, still forward-only/same-level, never displacing a
-  // point before its own example vocabulary is taught) is the correct fix, not a bigger cap value.
-  const { grammar: pipelineGrammar, errors: pipelineGrammarErrors } = placeGrammar(
+  // Levels 2/3: each unanchored point goes to the same-level unit holding the most of its
+  // examples (ties -> earlier unit), and must have >= 2 there. The app only loads a unit's own
+  // sentences, so this is what guarantees every grammar slide has examples and a fill-blank.
+  // No per-unit cap: crowding is reported as a build warning (grammar-crowding.ts) instead.
+  const { grammar: pipelineGrammar, errors: pipelineGrammarErrors } = placeGrammarByDensity(
     unanchored.filter((g) => g.level !== 1),
     sentences,
     bareUnits,
-    4,
   );
   const grammar = [...anchoredGrammar, ...authoredGrammar, ...pipelineGrammar];
   const grammarErrors = [...anchoredErrors, ...authoredGrammarErrors, ...pipelineGrammarErrors];

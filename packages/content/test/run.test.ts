@@ -189,9 +189,9 @@ describe('assembleContent', () => {
     expect(result.bundle.grammar[0]!.unitId).toBe(l2.id);
   });
 
-  it('does not count anchored points against the placeGrammar cap', () => {
-    const plain = ['a', 'b', 'c', 'd'].map((id) => ({
-      id, title: 't', pattern: 'p', explanation: 'e', level: 2 as const, examples: ['s1'],
+  it('places unanchored L2 points by density alongside anchored ones', () => {
+    const plain = ['a', 'b', 'c', 'd', 'e'].map((id) => ({
+      id, title: 't', pattern: 'p', explanation: 'e', level: 2 as const, examples: ['s1', 's2'],
     }));
     const result = assembleContent(
       tinyInputs([
@@ -201,6 +201,16 @@ describe('assembleContent', () => {
     );
     expect(result.ok).toBe(true);
     if (!result.ok) return;
-    expect(result.bundle.grammar).toHaveLength(5);
+    const l2 = result.bundle.units.find((u) => u.level === 2)!;
+    expect(result.bundle.grammar.map((g) => g.unitId)).toEqual(Array(6).fill(l2.id));
+  });
+
+  it('fails the build when an unanchored L2 point has fewer than two same-level examples', () => {
+    const result = assembleContent(
+      tinyInputs([{ id: 'a', title: 't', pattern: 'p', explanation: 'e', level: 2, examples: ['s1'] }]),
+    );
+    expect(result.ok).toBe(false);
+    if (result.ok) return;
+    expect(result.problems.some((p) => p.startsWith('[placement:density-examples]'))).toBe(true);
   });
 });

@@ -68,4 +68,23 @@ describe('Core grammar (shipped data)', () => {
       });
     expect(bad).toEqual([]);
   });
+
+  it('gives every L2/L3 grammar point at least two examples in its own unit', async () => {
+    const chunks = await loadChunks();
+    const bad = chunks
+      .filter((c) => c.unit.level > 1)
+      .flatMap((c) => {
+        const inUnit = new Set(c.sentences.map((s) => s.id));
+        return c.grammar
+          .filter((g) => g.sentenceIds.filter((s) => inUnit.has(s)).length < 2)
+          .map((g) => `${c.unit.id}:${g.id}`);
+      });
+    expect(bad).toEqual([]);
+  });
+
+  it('no longer ships the L3 points that duplicated L2 core grammar', async () => {
+    const ids = (await loadChunks()).flatMap((c) => c.grammar.map((g) => g.id));
+    expect(ids).not.toContain('g:yi-jiu-assoonas');
+    expect(ids).not.toContain('g:meiyou-comparison');
+  });
 });

@@ -14,7 +14,6 @@ export interface PlacementError {
     | 'duplicate-id'
     | 'missing-sentence'
     | 'level-mismatch'
-    | 'overflow'
     | 'anchor-unknown'
     | 'anchor-examples'
     | 'density-examples';
@@ -85,115 +84,6 @@ export function placeSentences(
     sentences.push({ id: s.id, zh: s.zh, pinyin: s.pinyin, vi: s.vi, wordIds, unitId: latest.id });
   }
   return { sentences, errors };
-}
-
-export function placeGrammar(
-  authored: AuthoredGrammar[],
-  sentences: Sentence[],
-  units: Unit[],
-  maxPerUnit = 2,
-): { grammar: GrammarPoint[]; errors: PlacementError[] } {
-  const sentenceById = new Map(sentences.map((s) => [s.id, s]));
-  const unitById = new Map(units.map((u) => [u.id, u]));
-  const ordered = [...units].sort((a, b) => a.order - b.order);
-  const errors: PlacementError[] = [];
-  const seen = new Set<string>();
-
-  // First pass: natural unit per grammar point.
-  const pending: { point: GrammarPoint; unitIndex: number }[] = [];
-  for (const g of authored) {
-    if (seen.has(g.id)) {
-      errors.push({
-        kind: 'duplicate-id',
-        ref: g.id,
-        message: `grammar id ${g.id} appears more than once`,
-      });
-      continue;
-    }
-    seen.add(g.id);
-    const missing = g.examples.filter((id) => !sentenceById.has(id));
-    if (missing.length > 0) {
-      errors.push({
-        kind: 'missing-sentence',
-        ref: g.id,
-        message: `${g.id}: unknown example sentences: ${missing.join(', ')}`,
-      });
-      continue;
-    }
-    let latest: Unit | undefined;
-    for (const id of g.examples) {
-      const u = unitById.get(sentenceById.get(id)!.unitId);
-      if (u && (!latest || u.order > latest.order)) latest = u;
-    }
-    let unitIndex = latest
-      ? ordered.indexOf(latest)
-      : ordered.findIndex((u) => u.level === g.level);
-    const natural = ordered[unitIndex];
-    if (!natural) {
-      errors.push({
-        kind: 'level-mismatch',
-        ref: g.id,
-        message: `${g.id}: no units exist for level ${g.level}`,
-      });
-      continue;
-    }
-    if (natural.level > g.level) {
-      errors.push({
-        kind: 'level-mismatch',
-        ref: g.id,
-        message: `${g.id}: declared level ${g.level} but examples need level ${natural.level} (${natural.id})`,
-      });
-      continue;
-    }
-    if (natural.level < g.level) {
-      unitIndex = ordered.findIndex((u) => u.level === g.level);
-      if (!ordered[unitIndex]) {
-        errors.push({
-          kind: 'level-mismatch',
-          ref: g.id,
-          message: `${g.id}: no units exist for level ${g.level}`,
-        });
-        continue;
-      }
-    }
-    pending.push({
-      point: {
-        id: g.id,
-        title: g.title,
-        pattern: g.pattern,
-        explanation: g.explanation,
-        level: g.level,
-        sentenceIds: [...g.examples],
-        unitId: '',
-      },
-      unitIndex,
-    });
-  }
-
-  // Second pass: enforce the per-unit cap, spilling forward in authored order.
-  pending.sort((a, b) => a.unitIndex - b.unitIndex);
-  const counts = new Map<number, number>();
-  const grammar: GrammarPoint[] = [];
-  for (const { point, unitIndex } of pending) {
-    let i = unitIndex;
-    while (
-      i < ordered.length &&
-      ordered[i]!.level === point.level &&
-      (counts.get(i) ?? 0) >= maxPerUnit
-    )
-      i += 1;
-    if (i >= ordered.length || ordered[i]!.level !== point.level) {
-      errors.push({
-        kind: 'overflow',
-        ref: point.id,
-        message: `${point.id}: level ${point.level} has no unit left with fewer than ${maxPerUnit} grammar points`,
-      });
-      continue;
-    }
-    counts.set(i, (counts.get(i) ?? 0) + 1);
-    grammar.push({ ...point, unitId: ordered[i]!.id });
-  }
-  return { grammar, errors };
 }
 
 export function placeAuthoredGrammar(
