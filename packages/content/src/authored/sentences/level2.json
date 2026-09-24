@@ -5496,7 +5496,7 @@
   {
     "id": "s:l2:fill:003",
     "zh": "桌子上有两本书，它们都是新的。",
-    "pinyin": "Zhuōzi shang yǒu liǎng běn shū, tāmen dōu shì xīn de.",
+    "pinyin": "Zhuōzi shàng yǒu liǎng běn shū, tāmen dōu shì xīn de.",
     "vi": "Trên bàn có hai cuốn sách, chúng đều còn mới.",
     "words": [
       "桌子",
@@ -5674,7 +5674,7 @@
     "id": "s:l2:fill:015",
     "zh": "请问，您姓什么？",
     "pinyin": "Qǐngwèn, nín xìng shénme?",
-    "vi": "Xin hỏi, bạn họ gì ạ?",
+    "vi": "Xin hỏi, anh/chị họ gì ạ?",
     "words": [
       "请问",
       "您",
@@ -5741,7 +5741,7 @@
   {
     "id": "s:l2:fill:020",
     "zh": "书包里装了很多书。",
-    "pinyin": "Shūbāo li zhuāng le hěn duō shū.",
+    "pinyin": "Shūbāo lǐ zhuāng le hěn duō shū.",
     "vi": "Trong cặp đựng rất nhiều sách.",
     "words": [
       "书包",
@@ -5756,7 +5756,7 @@
   {
     "id": "s:l2:fill:021",
     "zh": "房间里的灯坏了。",
-    "pinyin": "Fángjiān li de dēng huài le.",
+    "pinyin": "Fángjiān lǐ de dēng huài le.",
     "vi": "Đèn trong phòng hỏng rồi.",
     "words": [
       "房间",
@@ -5784,7 +5784,7 @@
   {
     "id": "s:l2:fill:023",
     "zh": "孩子们在院子里玩儿。",
-    "pinyin": "Háizimen zài yuànzi li wánr.",
+    "pinyin": "Háizimen zài yuànzi lǐ wánr.",
     "vi": "Bọn trẻ đang chơi trong sân.",
     "words": [
       "孩子",
@@ -5798,7 +5798,7 @@
   {
     "id": "s:l2:fill:024",
     "zh": "桌子上有一瓶水。",
-    "pinyin": "Zhuōzi shang yǒu yì píng shuǐ.",
+    "pinyin": "Zhuōzi shàng yǒu yì píng shuǐ.",
     "vi": "Trên bàn có một chai nước.",
     "words": [
       "桌子",
@@ -6178,7 +6178,7 @@
   {
     "id": "s:l2:fill:051",
     "zh": "很多老人在广场上唱歌。",
-    "pinyin": "Hěn duō lǎorén zài guǎngchǎng shang chànggē.",
+    "pinyin": "Hěn duō lǎorén zài guǎngchǎng shàng chànggē.",
     "vi": "Nhiều người già đang hát ở quảng trường.",
     "words": [
       "很",
@@ -6478,7 +6478,7 @@
   {
     "id": "s:l2:fill:074",
     "zh": "老师在教室里等你。",
-    "pinyin": "Lǎoshī zài jiàoshì li děng nǐ.",
+    "pinyin": "Lǎoshī zài jiàoshì lǐ děng nǐ.",
     "vi": "Giáo viên đang đợi bạn trong phòng học.",
     "words": [
       "老师",
@@ -6750,7 +6750,7 @@
   {
     "id": "s:l2:fill:094",
     "zh": "我的钱不够。",
-    "pinyin": "Wǒ de qián búgòu.",
+    "pinyin": "Wǒ de qián bú gòu.",
     "vi": "Tôi không đủ tiền.",
     "words": [
       "我",
