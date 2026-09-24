@@ -6189,5 +6189,796 @@
       "上",
       "唱歌"
     ]
+  },
+  {
+    "id": "s:l2:fill:052",
+    "zh": "很多游客来北京参观。",
+    "pinyin": "Hěn duō yóukè lái Běijīng cānguān.",
+    "vi": "Nhiều du khách đến Bắc Kinh tham quan.",
+    "words": [
+      "很",
+      "多",
+      "游客",
+      "来",
+      "北京",
+      "参观"
+    ]
+  },
+  {
+    "id": "s:l2:fill:053",
+    "zh": "我是北方人，他是南方人。",
+    "pinyin": "Wǒ shì běifāng rén, tā shì nánfāng rén.",
+    "vi": "Tôi là người miền Bắc, anh ấy là người miền Nam.",
+    "words": [
+      "我",
+      "是",
+      "北方",
+      "人",
+      "他",
+      "是",
+      "南方",
+      "人"
+    ]
+  },
+  {
+    "id": "s:l2:fill:054",
+    "zh": "出国要带护照。",
+    "pinyin": "Chūguó yào dài hùzhào.",
+    "vi": "Ra nước ngoài phải mang theo hộ chiếu.",
+    "words": [
+      "出国",
+      "要",
+      "带",
+      "护照"
+    ]
+  },
+  {
+    "id": "s:l2:fill:055",
+    "zh": "我们去海边玩儿吧。",
+    "pinyin": "Wǒmen qù hǎibiān wánr ba.",
+    "vi": "Chúng mình ra biển chơi đi.",
+    "words": [
+      "我们",
+      "去",
+      "海边",
+      "玩儿",
+      "吧"
+    ]
+  },
+  {
+    "id": "s:l2:fill:056",
+    "zh": "北京的冬天很冷。",
+    "pinyin": "Běijīng de dōngtiān hěn lěng.",
+    "vi": "Mùa đông ở Bắc Kinh rất lạnh.",
+    "words": [
+      "北京",
+      "的",
+      "冬天",
+      "很",
+      "冷"
+    ]
+  },
+  {
+    "id": "s:l2:fill:057",
+    "zh": "今天温度不高。",
+    "pinyin": "Jīntiān wēndù bù gāo.",
+    "vi": "Hôm nay nhiệt độ không cao.",
+    "words": [
+      "今天",
+      "温度",
+      "不",
+      "高"
+    ]
+  },
+  {
+    "id": "s:l2:fill:058",
+    "zh": "今天晚上月亮很亮。",
+    "pinyin": "Jīntiān wǎnshang yuèliang hěn liàng.",
+    "vi": "Tối nay trăng rất sáng.",
+    "words": [
+      "今天",
+      "晚上",
+      "月亮",
+      "很",
+      "亮"
+    ]
+  },
+  {
+    "id": "s:l2:fill:059",
+    "zh": "天上有很多星星。",
+    "pinyin": "Tiānshàng yǒu hěn duō xīngxing.",
+    "vi": "Trên trời có rất nhiều sao.",
+    "words": [
+      "天上",
+      "有",
+      "很",
+      "多",
+      "星星"
+    ]
+  },
+  {
+    "id": "s:l2:fill:060",
+    "zh": "明天会下雪。",
+    "pinyin": "Míngtiān huì xiàxuě.",
+    "vi": "Ngày mai sẽ có tuyết rơi.",
+    "words": [
+      "明天",
+      "会",
+      "下雪"
+    ]
+  },
+  {
+    "id": "s:l2:fill:061",
+    "zh": "这个菜太油了。",
+    "pinyin": "Zhège cài tài yóu le.",
+    "vi": "Món này nhiều dầu mỡ quá.",
+    "words": [
+      "这",
+      "个",
+      "菜",
+      "太",
+      "油",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:fill:062",
+    "zh": "我吃了两碗米饭。",
+    "pinyin": "Wǒ chī le liǎng wǎn mǐfàn.",
+    "vi": "Tôi đã ăn hai bát cơm.",
+    "words": [
+      "我",
+      "吃",
+      "了",
+      "两",
+      "碗",
+      "米饭"
+    ]
+  },
+  {
+    "id": "s:l2:fill:063",
+    "zh": "我吃饱了，谢谢。",
+    "pinyin": "Wǒ chī bǎo le, xièxie.",
+    "vi": "Tôi no rồi, cảm ơn.",
+    "words": [
+      "我",
+      "吃",
+      "饱",
+      "了",
+      "谢谢"
+    ]
+  },
+  {
+    "id": "s:l2:fill:064",
+    "zh": "妈妈在做饭呢。",
+    "pinyin": "Māma zài zuòfàn ne.",
+    "vi": "Mẹ đang nấu cơm.",
+    "words": [
+      "妈妈",
+      "在",
+      "做饭",
+      "呢"
+    ]
+  },
+  {
+    "id": "s:l2:fill:065",
+    "zh": "春节我们吃饺子。",
+    "pinyin": "Chūnjié wǒmen chī jiǎozi.",
+    "vi": "Tết chúng tôi ăn bánh sủi cảo.",
+    "words": [
+      "春节",
+      "我们",
+      "吃",
+      "饺子"
+    ]
+  },
+  {
+    "id": "s:l2:fill:066",
+    "zh": "这个饭馆的菜很好吃。",
+    "pinyin": "Zhège fànguǎn de cài hěn hǎochī.",
+    "vi": "Món ăn ở nhà hàng này rất ngon.",
+    "words": [
+      "这",
+      "个",
+      "饭馆",
+      "的",
+      "菜",
+      "很",
+      "好吃"
+    ]
+  },
+  {
+    "id": "s:l2:fill:067",
+    "zh": "身体健康最重要。",
+    "pinyin": "Shēntǐ jiànkāng zuì zhòngyào.",
+    "vi": "Sức khỏe là quan trọng nhất.",
+    "words": [
+      "身体",
+      "健康",
+      "最",
+      "重要"
+    ]
+  },
+  {
+    "id": "s:l2:fill:068",
+    "zh": "我今天不舒服。",
+    "pinyin": "Wǒ jīntiān bù shūfu.",
+    "vi": "Hôm nay tôi thấy không khỏe.",
+    "words": [
+      "我",
+      "今天",
+      "不",
+      "舒服"
+    ]
+  },
+  {
+    "id": "s:l2:fill:069",
+    "zh": "我奶奶住院了。",
+    "pinyin": "Wǒ nǎinai zhùyuàn le.",
+    "vi": "Bà tôi nhập viện rồi.",
+    "words": [
+      "我",
+      "奶奶",
+      "住院",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:fill:070",
+    "zh": "我想去看中医。",
+    "pinyin": "Wǒ xiǎng qù kàn zhōngyī.",
+    "vi": "Tôi muốn đi khám Đông y.",
+    "words": [
+      "我",
+      "想",
+      "去",
+      "看",
+      "中医"
+    ]
+  },
+  {
+    "id": "s:l2:fill:071",
+    "zh": "你有笔吗？",
+    "pinyin": "Nǐ yǒu bǐ ma?",
+    "vi": "Bạn có bút không?",
+    "words": [
+      "你",
+      "有",
+      "笔",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l2:fill:072",
+    "zh": "我还没写完作业。",
+    "pinyin": "Wǒ hái méi xiě wán zuòyè.",
+    "vi": "Tôi vẫn chưa làm xong bài tập.",
+    "words": [
+      "我",
+      "还",
+      "没",
+      "写",
+      "完",
+      "作业"
+    ]
+  },
+  {
+    "id": "s:l2:fill:073",
+    "zh": "我们的校园很漂亮。",
+    "pinyin": "Wǒmen de xiàoyuán hěn piàoliang.",
+    "vi": "Khuôn viên trường chúng tôi rất đẹp.",
+    "words": [
+      "我们",
+      "的",
+      "校园",
+      "很",
+      "漂亮"
+    ]
+  },
+  {
+    "id": "s:l2:fill:074",
+    "zh": "老师在教室里等你。",
+    "pinyin": "Lǎoshī zài jiàoshì li děng nǐ.",
+    "vi": "Giáo viên đang đợi bạn trong phòng học.",
+    "words": [
+      "老师",
+      "在",
+      "教室",
+      "里",
+      "等",
+      "你"
+    ]
+  },
+  {
+    "id": "s:l2:fill:075",
+    "zh": "下个星期就开学了。",
+    "pinyin": "Xià ge xīngqī jiù kāixué le.",
+    "vi": "Tuần sau là khai giảng rồi.",
+    "words": [
+      "下",
+      "个",
+      "星期",
+      "就",
+      "开学",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:fill:076",
+    "zh": "我们班有三个留学生。",
+    "pinyin": "Wǒmen bān yǒu sān ge liúxuéshēng.",
+    "vi": "Lớp chúng tôi có ba du học sinh.",
+    "words": [
+      "我们",
+      "班",
+      "有",
+      "三",
+      "个",
+      "留学生"
+    ]
+  },
+  {
+    "id": "s:l2:fill:077",
+    "zh": "这篇课文的生词很多。",
+    "pinyin": "Zhè piān kèwén de shēngcí hěn duō.",
+    "vi": "Bài khóa này có nhiều từ mới.",
+    "words": [
+      "这",
+      "篇",
+      "课文",
+      "的",
+      "生词",
+      "很",
+      "多"
+    ]
+  },
+  {
+    "id": "s:l2:fill:078",
+    "zh": "她长得很像她妈妈。",
+    "pinyin": "Tā zhǎng de hěn xiàng tā māma.",
+    "vi": "Cô ấy trông rất giống mẹ.",
+    "words": [
+      "她",
+      "长",
+      "得",
+      "很",
+      "像",
+      "她",
+      "妈妈"
+    ]
+  },
+  {
+    "id": "s:l2:fill:079",
+    "zh": "老师说得很清楚。",
+    "pinyin": "Lǎoshī shuō de hěn qīngchu.",
+    "vi": "Giáo viên nói rất rõ ràng.",
+    "words": [
+      "老师",
+      "说",
+      "得",
+      "很",
+      "清楚"
+    ]
+  },
+  {
+    "id": "s:l2:fill:080",
+    "zh": "这个地方变成了公园。",
+    "pinyin": "Zhège dìfang biànchéng le gōngyuán.",
+    "vi": "Chỗ này đã thành công viên.",
+    "words": [
+      "这",
+      "个",
+      "地方",
+      "变成",
+      "了",
+      "公园"
+    ]
+  },
+  {
+    "id": "s:l2:fill:081",
+    "zh": "他跟我有同样的爱好。",
+    "pinyin": "Tā gēn wǒ yǒu tóngyàng de àihào.",
+    "vi": "Anh ấy có cùng sở thích với tôi.",
+    "words": [
+      "他",
+      "跟",
+      "我",
+      "有",
+      "同样",
+      "的",
+      "爱好"
+    ]
+  },
+  {
+    "id": "s:l2:fill:082",
+    "zh": "今天的考试很顺利。",
+    "pinyin": "Jīntiān de kǎoshì hěn shùnlì.",
+    "vi": "Buổi thi hôm nay rất suôn sẻ.",
+    "words": [
+      "今天",
+      "的",
+      "考试",
+      "很",
+      "顺利"
+    ]
+  },
+  {
+    "id": "s:l2:fill:083",
+    "zh": "你喜欢什么颜色？",
+    "pinyin": "Nǐ xǐhuan shénme yánsè?",
+    "vi": "Bạn thích màu gì?",
+    "words": [
+      "你",
+      "喜欢",
+      "什么",
+      "颜色"
+    ]
+  },
+  {
+    "id": "s:l2:fill:084",
+    "zh": "这是一家高级饭店。",
+    "pinyin": "Zhè shì yì jiā gāojí fàndiàn.",
+    "vi": "Đây là một khách sạn cao cấp.",
+    "words": [
+      "这",
+      "是",
+      "一",
+      "家",
+      "高级",
+      "饭店"
+    ]
+  },
+  {
+    "id": "s:l2:fill:085",
+    "zh": "我想买那件黑色的衣服。",
+    "pinyin": "Wǒ xiǎng mǎi nà jiàn hēisè de yīfu.",
+    "vi": "Tôi muốn mua cái áo màu đen kia.",
+    "words": [
+      "我",
+      "想",
+      "买",
+      "那",
+      "件",
+      "黑色",
+      "的",
+      "衣服"
+    ]
+  },
+  {
+    "id": "s:l2:fill:086",
+    "zh": "你的鞋太脏了。",
+    "pinyin": "Nǐ de xié tài zāng le.",
+    "vi": "Giày của bạn bẩn quá.",
+    "words": [
+      "你",
+      "的",
+      "鞋",
+      "太",
+      "脏",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:fill:087",
+    "zh": "这些都是常用的汉字。",
+    "pinyin": "Zhèxiē dōu shì chángyòng de Hànzì.",
+    "vi": "Đây đều là những chữ Hán thông dụng.",
+    "words": [
+      "这些",
+      "都",
+      "是",
+      "常用",
+      "的",
+      "汉字"
+    ]
+  },
+  {
+    "id": "s:l2:fill:088",
+    "zh": "明天考试，加油！",
+    "pinyin": "Míngtiān kǎoshì, jiāyóu!",
+    "vi": "Mai thi rồi, cố lên!",
+    "words": [
+      "明天",
+      "考试",
+      "加油"
+    ]
+  },
+  {
+    "id": "s:l2:fill:089",
+    "zh": "北京的交通很方便。",
+    "pinyin": "Běijīng de jiāotōng hěn fāngbiàn.",
+    "vi": "Giao thông ở Bắc Kinh rất thuận tiện.",
+    "words": [
+      "北京",
+      "的",
+      "交通",
+      "很",
+      "方便"
+    ]
+  },
+  {
+    "id": "s:l2:fill:090",
+    "zh": "我们坐出租车去机场吧。",
+    "pinyin": "Wǒmen zuò chūzūchē qù jīchǎng ba.",
+    "vi": "Chúng mình đi taxi ra sân bay nhé.",
+    "words": [
+      "我们",
+      "坐",
+      "出租车",
+      "去",
+      "机场",
+      "吧"
+    ]
+  },
+  {
+    "id": "s:l2:fill:091",
+    "zh": "我坐地铁去上班。",
+    "pinyin": "Wǒ zuò dìtiě qù shàngbān.",
+    "vi": "Tôi đi làm bằng tàu điện ngầm.",
+    "words": [
+      "我",
+      "坐",
+      "地铁",
+      "去",
+      "上班"
+    ]
+  },
+  {
+    "id": "s:l2:fill:092",
+    "zh": "飞机快起飞了。",
+    "pinyin": "Fēijī kuài qǐfēi le.",
+    "vi": "Máy bay sắp cất cánh rồi.",
+    "words": [
+      "飞机",
+      "快",
+      "起飞",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:fill:093",
+    "zh": "作业我全部写完了。",
+    "pinyin": "Zuòyè wǒ quánbù xiě wán le.",
+    "vi": "Bài tập tôi làm xong hết rồi.",
+    "words": [
+      "作业",
+      "我",
+      "全部",
+      "写",
+      "完",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:fill:094",
+    "zh": "我的钱不够。",
+    "pinyin": "Wǒ de qián búgòu.",
+    "vi": "Tôi không đủ tiền.",
+    "words": [
+      "我",
+      "的",
+      "钱",
+      "不够"
+    ]
+  },
+  {
+    "id": "s:l2:fill:095",
+    "zh": "你来得正好。",
+    "pinyin": "Nǐ lái de zhènghǎo.",
+    "vi": "Bạn đến vừa đúng lúc.",
+    "words": [
+      "你",
+      "来",
+      "得",
+      "正好"
+    ]
+  },
+  {
+    "id": "s:l2:fill:096",
+    "zh": "一加一等于二。",
+    "pinyin": "Yī jiā yī děngyú èr.",
+    "vi": "Một cộng một bằng hai.",
+    "words": [
+      "一",
+      "加",
+      "一",
+      "等于",
+      "二"
+    ]
+  },
+  {
+    "id": "s:l2:fill:097",
+    "zh": "这个菜不太好吃。",
+    "pinyin": "Zhège cài bú tài hǎochī.",
+    "vi": "Món này không ngon lắm.",
+    "words": [
+      "这",
+      "个",
+      "菜",
+      "不太",
+      "好吃"
+    ]
+  },
+  {
+    "id": "s:l2:fill:098",
+    "zh": "你的看法很有道理。",
+    "pinyin": "Nǐ de kànfǎ hěn yǒu dàoli.",
+    "vi": "Cách nhìn của bạn rất có lý.",
+    "words": [
+      "你",
+      "的",
+      "看法",
+      "很",
+      "有",
+      "道理"
+    ]
+  },
+  {
+    "id": "s:l2:fill:099",
+    "zh": "这里手机没有信号。",
+    "pinyin": "Zhèlǐ shǒujī méiyǒu xìnhào.",
+    "vi": "Ở đây điện thoại không có sóng.",
+    "words": [
+      "这里",
+      "手机",
+      "没有",
+      "信号"
+    ]
+  },
+  {
+    "id": "s:l2:fill:100",
+    "zh": "网上有很多图片。",
+    "pinyin": "Wǎngshàng yǒu hěn duō túpiàn.",
+    "vi": "Trên mạng có rất nhiều hình ảnh.",
+    "words": [
+      "网上",
+      "有",
+      "很",
+      "多",
+      "图片"
+    ]
+  },
+  {
+    "id": "s:l2:fill:101",
+    "zh": "我的相机坏了。",
+    "pinyin": "Wǒ de xiàngjī huài le.",
+    "vi": "Máy ảnh của tôi hỏng rồi.",
+    "words": [
+      "我",
+      "的",
+      "相机",
+      "坏",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:fill:102",
+    "zh": "上课的时候请关机。",
+    "pinyin": "Shàngkè de shíhou qǐng guānjī.",
+    "vi": "Trong giờ học vui lòng tắt máy.",
+    "words": [
+      "上课",
+      "的",
+      "时候",
+      "请",
+      "关机"
+    ]
+  },
+  {
+    "id": "s:l2:fill:103",
+    "zh": "有问题随时问我。",
+    "pinyin": "Yǒu wèntí suíshí wèn wǒ.",
+    "vi": "Có vấn đề gì cứ hỏi tôi bất cứ lúc nào.",
+    "words": [
+      "有",
+      "问题",
+      "随时",
+      "问",
+      "我"
+    ]
+  },
+  {
+    "id": "s:l2:fill:104",
+    "zh": "小时候我住在北京。",
+    "pinyin": "Xiǎoshíhou wǒ zhù zài Běijīng.",
+    "vi": "Hồi nhỏ tôi sống ở Bắc Kinh.",
+    "words": [
+      "小时候",
+      "我",
+      "住",
+      "在",
+      "北京"
+    ]
+  },
+  {
+    "id": "s:l2:fill:105",
+    "zh": "他半夜才回家。",
+    "pinyin": "Tā bànyè cái huíjiā.",
+    "vi": "Nửa đêm anh ấy mới về nhà.",
+    "words": [
+      "他",
+      "半夜",
+      "才",
+      "回家"
+    ]
+  },
+  {
+    "id": "s:l2:fill:106",
+    "zh": "我前年去过中国。",
+    "pinyin": "Wǒ qiánnián qù guo Zhōngguó.",
+    "vi": "Năm kia tôi đã đi Trung Quốc.",
+    "words": [
+      "我",
+      "前年",
+      "去",
+      "过",
+      "中国"
+    ]
+  },
+  {
+    "id": "s:l2:fill:107",
+    "zh": "你能借我一点儿钱吗？",
+    "pinyin": "Nǐ néng jiè wǒ yìdiǎnr qián ma?",
+    "vi": "Bạn cho tôi mượn ít tiền được không?",
+    "words": [
+      "你",
+      "能",
+      "借",
+      "我",
+      "一点儿",
+      "钱",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l2:fill:108",
+    "zh": "他的收入不高。",
+    "pinyin": "Tā de shōurù bù gāo.",
+    "vi": "Thu nhập của anh ấy không cao.",
+    "words": [
+      "他",
+      "的",
+      "收入",
+      "不",
+      "高"
+    ]
+  },
+  {
+    "id": "s:l2:fill:109",
+    "zh": "这块手表很贵。",
+    "pinyin": "Zhè kuài shǒubiǎo hěn guì.",
+    "vi": "Chiếc đồng hồ này rất đắt.",
+    "words": [
+      "这",
+      "块",
+      "手表",
+      "很",
+      "贵"
+    ]
+  },
+  {
+    "id": "s:l2:fill:110",
+    "zh": "我们一起照相吧。",
+    "pinyin": "Wǒmen yìqǐ zhàoxiàng ba.",
+    "vi": "Chúng mình cùng chụp ảnh nhé.",
+    "words": [
+      "我们",
+      "一起",
+      "照相",
+      "吧"
+    ]
+  },
+  {
+    "id": "s:l2:fill:111",
+    "zh": "他很会讲笑话儿。",
+    "pinyin": "Tā hěn huì jiǎng xiàohuar.",
+    "vi": "Anh ấy kể chuyện cười rất giỏi.",
+    "words": [
+      "他",
+      "很",
+      "会",
+      "讲",
+      "笑话儿"
+    ]
   }
 ]
