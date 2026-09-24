@@ -4,7 +4,6 @@ coverage/
 .wrangler/
 .dev.vars
 packages/content/raw/
-apps/web/public/content/
 *.log
 .superpowers/
 apps/web/dev-dist/

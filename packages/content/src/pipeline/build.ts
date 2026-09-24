@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { basename, join } from 'node:path';
 import { characterFileName, compareWords } from '../ids.js';
 import type { ContentBundle, ContentManifest, HskLevel, UnitChunk, Word } from '../types.js';
@@ -74,6 +74,11 @@ export async function writeContent(
   if (basename(outDir) !== 'content') {
     throw new Error(`refusing to write to ${outDir}: output directory must be named "content"`);
   }
+  // Built content is committed: keep the previous timestamp when nothing changed, so a
+  // rebuild of the same content leaves the working tree clean.
+  const previous = await readFile(join(outDir, 'manifest.json'), 'utf8')
+    .then((t) => JSON.parse(t) as Partial<ContentManifest>)
+    .catch(() => undefined);
   await rm(outDir, { recursive: true, force: true });
   await mkdir(join(outDir, 'units'), { recursive: true });
   await mkdir(join(outDir, 'characters'), { recursive: true });
@@ -107,7 +112,11 @@ export async function writeContent(
   files.push({ path: 'ATTRIBUTION.txt', body: ATTRIBUTION });
 
   const version = computeVersion(files.map((f) => `${f.path}\n${f.body}`));
-  const manifest = buildManifest(bundle, version, now().toISOString());
+  const generatedAt =
+    previous?.version === version && typeof previous.generatedAt === 'string'
+      ? previous.generatedAt
+      : now().toISOString();
+  const manifest = buildManifest(bundle, version, generatedAt);
 
   await Promise.all(files.map((f) => writeFile(join(outDir, f.path), f.body, 'utf8')));
   await writeFile(join(outDir, 'manifest.json'), json(manifest), 'utf8');

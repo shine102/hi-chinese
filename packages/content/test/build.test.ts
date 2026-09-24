@@ -190,6 +190,16 @@ describe('writeContent', () => {
     expect(third.version).not.toBe(first.version);
   });
 
+  it('keeps generatedAt when the content version is unchanged, so rebuilds leave no diff', async () => {
+    const first = await writeContent(bundle(), dir, () => new Date('2026-09-09T00:00:00.000Z'));
+    const again = await writeContent(bundle(), dir, () => new Date('2026-09-10T00:00:00.000Z'));
+    expect(again.generatedAt).toBe(first.generatedAt);
+    const b = bundle();
+    b.sentences[0]!.vi = 'I am!';
+    const changed = await writeContent(b, dir, () => new Date('2026-09-11T00:00:00.000Z'));
+    expect(changed.generatedAt).toBe('2026-09-11T00:00:00.000Z');
+  });
+
   it('refuses an output directory not named content', async () => {
     await expect(writeContent(bundle(), join(dir, '..'))).rejects.toThrow(/content/);
   });
