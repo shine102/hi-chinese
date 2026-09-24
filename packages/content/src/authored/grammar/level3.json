@@ -557,7 +557,7 @@
     "pattern": "形容词/动词 + 起来",
     "explanation": "起来 (qǐlai) sau một tính từ hoặc động từ có thể đánh dấu sự bắt đầu của một trạng thái mới — \"bắt đầu trở nên, bắt đầu làm gì đó\". Khác với nghĩa đen là \"đứng dậy\", ở đây nó thể hiện một sự thay đổi bắt đầu và tiếp diễn.",
     "level": 3,
-    "examples": ["s:l3:220", "s:l3:221", "s:l3:222", "s:l3:fix:024", "s:l3:fix:025", "s:l3:fill:179"]
+    "examples": ["s:l3:220", "s:l3:221", "s:l3:222", "s:l3:fix:024", "s:l3:fix:025", "s:l3:fill:179", "s:l3:fill:249"]
   },
   {
     "id": "g:yue-yue-parallel",

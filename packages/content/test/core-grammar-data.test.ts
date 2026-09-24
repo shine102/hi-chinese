@@ -28,9 +28,9 @@ const CORE: Record<string, string> = {
   'g:haishi-choice': 'l1-u40',
   'g:keyi-permission': 'l2-u01',
   'g:de-degree': 'l2-u01',
-  'g:yi-jiu': 'l2-u11',
-  'g:shi-de': 'l2-u19',
-  'g:bi-extended': 'l2-u06',
+  'g:yi-jiu': 'l2-u32',
+  'g:shi-de': 'l2-u39',
+  'g:bi-extended': 'l2-u07',
   'g:jiu-cai': 'l2-u07',
 };
 

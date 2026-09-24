@@ -24,12 +24,15 @@ const PINS: Record<2 | 3, Record<string, number>> = {
   2: {
     可以: 1, // keeps g:keyi-permission in l2-u01 (core grammar)
     得: 1, // keeps g:de-degree in l2-u01 (core grammar)
-    条件: 13, // 18-word cap: out of u01 (drags 条/件 in); u13 Suy Nghĩ: Tìm Cách Giải Quyết
-    取得: 49, // 18-word cap: out of u01 (drags 取 in); u49 Trường Học: Thi Cử & Trình Độ
-    那样: 15, // 18-word cap: out of u10; u15 Suy Nghĩ: Giống Nhau & Bình Thường
+    只要: 26, // crowding: out of u22 (7 points); u26 holds none
+    虽然: 28, // crowding: out of u22 (7 points); u28 holds none
+    特别: 21, // crowding: out of u22; u21 holds one
+    带来: 39, // anchor of core g:shi-de: out of the last unit (u59 Suy Nghĩ); u39 Du Lịch: Đi Chơi & Tham Quan
   },
   3: {
-    把: 3, // crowding: 把 and 被 points together overfill l3-u01; the 把 points go to u03
+    把: 4, // crowding: the four 把 points and 被 overfill l3-u01; u04 holds none
+    为了: 23, // crowding: g:weile-purpose out of l3-u04 (the 把 unit); u23 holds none
+    被: 13, // crowding: 被 (with its 弄坏/拉开 examples) out of l3-u01; u13 holds none
   },
 };
 
