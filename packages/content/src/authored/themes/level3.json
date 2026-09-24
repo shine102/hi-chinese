@@ -1,4 +1,32 @@
 {
+  "tiers": {
+    "Con Người & Ngoại Hình": 1,
+    "Tính Cách & Cảm Xúc": 2,
+    "Gia Đình & Quan Hệ": 1,
+    "Ngôn Ngữ & Giao Tiếp": 2,
+    "Trường Học": 1,
+    "Công Việc": 2,
+    "Kinh Tế & Kinh Doanh": 3,
+    "Mua Sắm": 1,
+    "Ăn Uống": 1,
+    "Động Vật & Thực Vật": 1,
+    "Thời Tiết & Thiên Nhiên": 1,
+    "Miêu Tả": 2,
+    "Thời Gian": 1,
+    "Suy Nghĩ": 3,
+    "Địa Lý & Vị Trí": 2,
+    "Du Lịch": 1,
+    "Giao Thông": 1,
+    "Nhà Cửa": 1,
+    "An Toàn & Pháp Luật": 3,
+    "Sức Khỏe": 1,
+    "Xã Hội & Văn Hóa": 3,
+    "Báo Chí & Truyền Thông": 3,
+    "Thể Thao": 1,
+    "Giải Trí": 1,
+    "Công Nghệ": 2,
+    "Số Lượng": 1
+  },
   "subthemes": [
     {
       "id": "people-life",

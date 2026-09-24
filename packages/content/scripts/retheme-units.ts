@@ -78,4 +78,15 @@ for (const level of [2, 3] as const) {
     `L${level}: ${units.length} units, words/unit ${Math.min(...sizes)}-${Math.max(...sizes)}, ` +
       `function words/unit ${Math.min(...fnCount)}-${Math.max(...fnCount)}, numbered titles ${suffixed}`,
   );
+  const { tiers } = await readJson<ThemesFile>(resolve(authored, `themes/level${level}.json`));
+  const tierOf = (u: AuthoredUnit) => tiers[u.title.split(': ')[0]!];
+  const quarter = Math.ceil(units.length / 4);
+  const meanPos = (t: number) => {
+    const idx = units.flatMap((u, i) => (tierOf(u) === t ? [i + 1] : []));
+    return (idx.reduce((a, b) => a + b, 0) / idx.length).toFixed(1);
+  };
+  console.log(
+    `  tier 3 units in first ${quarter}: ${units.slice(0, quarter).filter((u) => tierOf(u) === 3).length}; ` +
+      `mean position tier 1/2/3: ${meanPos(1)}/${meanPos(2)}/${meanPos(3)}`,
+  );
 }

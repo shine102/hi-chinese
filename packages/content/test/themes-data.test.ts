@@ -53,6 +53,13 @@ describe.each(LEVELS)('themes/level%i.json', (level) => {
     expect(new Set(titles).size).toBe(titles.length);
   });
 
+  it('gives every broad theme exactly one tier (1-3)', async () => {
+    const { themes } = await load();
+    const broads = [...new Set(themes.subthemes.map((s) => s.broad))].sort();
+    expect(Object.keys(themes.tiers).sort()).toEqual(broads);
+    expect(Object.values(themes.tiers).every((t) => t === 1 || t === 2 || t === 3)).toBe(true);
+  });
+
   it('keeps every broad theme under 40% of the content words', async () => {
     const { themes } = await load();
     const broadOf = new Map(themes.subthemes.map((s) => [s.id, s.broad]));

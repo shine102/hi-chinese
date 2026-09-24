@@ -15,6 +15,12 @@ export function partScore(part: readonly ThemeWord[]): number {
   return known.reduce((sum, w) => sum + w.frequency, 0) / known.length;
 }
 
+export type Tier = 1 | 2 | 3;
+
+// Spec 2026-09-24-unit-order-tech-debt-design.md §2: concrete topics (tier 1) first,
+// abstract ones (tier 3) later, still interleaved.
+export const TIER_PENALTY: Record<Tier, number> = { 1: 0, 2: 0.15, 3: 0.35 };
+
 const FUNCTION_POS = new Set(['c', 'd', 'p', 'u']);
 
 export function isFunctionWord(pos: readonly string[]): boolean {
@@ -33,6 +39,7 @@ export interface Subtheme {
 }
 
 export interface ThemesFile {
+  tiers: Record<string, Tier>;
   subthemes: Subtheme[];
   words: Record<string, string>;
 }
@@ -43,6 +50,7 @@ export interface DraftUnit {
   title: string;
   words: string[];
   score: number;
+  tier: Tier;
 }
 
 export function chunkSubthemes(themes: ThemesFile, words: readonly ThemeWord[]): DraftUnit[] {
@@ -59,6 +67,8 @@ export function chunkSubthemes(themes: ThemesFile, words: readonly ThemeWord[]):
 
   const units: DraftUnit[] = [];
   for (const s of themes.subthemes) {
+    const tier = themes.tiers[s.broad];
+    if (tier === undefined) throw new Error(`no tier for broad ${s.broad}`);
     const list = [...(members.get(s.id) ?? [])].sort((a, b) => a.frequency - b.frequency);
     if (list.length === 0) continue;
     const n = Math.max(1, Math.round(list.length / UNIT_TARGET));
@@ -73,17 +83,32 @@ export function chunkSubthemes(themes: ThemesFile, words: readonly ThemeWord[]):
         title: s.title,
         words: part.map((w) => w.simplified),
         score: partScore(part),
+        tier,
       });
     }
   }
   return units;
 }
 
-// Greedy by score, skipping the previous unit's broad theme. When one broad theme holds
-// more than half of what is left, it must be taken now (if allowed) or the tail can only
-// be that theme back to back.
+// Greedy by tier key, skipping the previous unit's broad theme. Key = j / n_broad
+// (spreads each broad theme across its tier, first units early) + 0.1 × rank / N (common
+// words first among equals) + TIER_PENALTY. When one broad theme holds more than half of
+// what is left, it must be taken now (if allowed) or the tail can only be that theme back
+// to back.
 export function orderUnits(units: readonly DraftUnit[]): DraftUnit[] {
-  const left = [...units].sort((a, b) => a.score - b.score);
+  const byScore = units
+    .map((u, i) => ({ u, i }))
+    .sort((a, b) => a.u.score - b.u.score || a.i - b.i);
+  const perBroad = new Map<string, number>();
+  for (const { u } of byScore) perBroad.set(u.broad, (perBroad.get(u.broad) ?? 0) + 1);
+  const seen = new Map<string, number>();
+  const key = new Map<DraftUnit, number>();
+  byScore.forEach(({ u }, rank) => {
+    const j = seen.get(u.broad) ?? 0;
+    seen.set(u.broad, j + 1);
+    key.set(u, j / perBroad.get(u.broad)! + (0.1 * rank) / units.length + TIER_PENALTY[u.tier]);
+  });
+  const left = [...units].sort((a, b) => key.get(a)! - key.get(b)!);
   const out: DraftUnit[] = [];
   while (left.length > 0) {
     const prev = out[out.length - 1]?.broad;

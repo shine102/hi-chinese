@@ -9,17 +9,19 @@ import {
   spreadFunctionWords,
   type DraftUnit,
   type ThemesFile,
+  type Tier,
   type WordInfo,
 } from '../src/pipeline/retheme.js';
 import type { AuthoredUnit, HskLevel } from '../src/types.js';
 
 const tw = (simplified: string, frequency: number) => ({ simplified, frequency });
-const draft = (subthemeId: string, broad: string, score: number, words: string[] = []): DraftUnit => ({
+const draft = (subthemeId: string, broad: string, score: number, words: string[] = [], tier: Tier = 1): DraftUnit => ({
   subthemeId,
   broad,
   title: `${broad}: ${subthemeId}`,
   words,
   score,
+  tier,
 });
 
 describe('isFunctionWord', () => {
@@ -35,6 +37,7 @@ describe('isFunctionWord', () => {
 
 describe('chunkSubthemes', () => {
   const themes: ThemesFile = {
+    tiers: { A: 1, B: 1 },
     subthemes: [
       { id: 'a', broad: 'A', title: 'A: a' },
       { id: 'b', broad: 'B', title: 'B: b' },
@@ -72,9 +75,10 @@ describe('chunkSubthemes', () => {
 });
 
 describe('orderUnits', () => {
-  it('orders by score but never puts two units of one broad theme side by side', () => {
+  it('orders by key but never puts two units of one broad theme side by side', () => {
+    // keys: a1 0, b1 0.05, c1 0.075, a2 0.525 (second unit of A sits half-way into the tier)
     const out = orderUnits([draft('a1', 'A', 1), draft('a2', 'A', 2), draft('b1', 'B', 3), draft('c1', 'C', 4)]);
-    expect(out.map((u) => u.subthemeId)).toEqual(['a1', 'b1', 'a2', 'c1']);
+    expect(out.map((u) => u.subthemeId)).toEqual(['a1', 'b1', 'c1', 'a2']);
   });
 
   it('keeps a dominant broad theme separable', () => {
@@ -179,5 +183,36 @@ describe('fixCharOrder', () => {
     const input = [unit('u1', 2, 1, ['学生']), unit('u2', 2, 2, ['学', '生'])];
     fixCharOrder(input, info, new Set<HskLevel>([1]));
     expect(input[1]!.words).toEqual(['学', '生']);
+  });
+});
+
+describe('orderUnits with tiers', () => {
+  it('pushes an abstract (tier 3) unit behind concrete ones even with a lower score', () => {
+    const out = orderUnits([draft('a', 'A', 1, [], 3), draft('b', 'B', 2), draft('c', 'C', 3)]);
+    expect(out.map((u) => u.subthemeId)).toEqual(['b', 'c', 'a']);
+  });
+
+  it('introduces every broad theme before a second unit of a common one', () => {
+    const out = orderUnits([
+      draft('a1', 'A', 1),
+      draft('a2', 'A', 2),
+      draft('a3', 'A', 3),
+      draft('b', 'B', 10),
+      draft('c', 'C', 11),
+      draft('d', 'D', 12),
+    ]);
+    expect(out.map((u) => u.subthemeId)).toEqual(['a1', 'b', 'c', 'a2', 'd', 'a3']);
+  });
+});
+
+describe('chunkSubthemes tiers', () => {
+  it('copies the broad theme tier and throws when it is missing', () => {
+    const t: ThemesFile = {
+      tiers: { A: 2 },
+      subthemes: [{ id: 'a', broad: 'A', title: 'A: a' }],
+      words: { x: 'a' },
+    };
+    expect(chunkSubthemes(t, [tw('x', 1)])[0]!.tier).toBe(2);
+    expect(() => chunkSubthemes({ ...t, tiers: {} }, [tw('x', 1)])).toThrow(/no tier for broad A/);
   });
 });
