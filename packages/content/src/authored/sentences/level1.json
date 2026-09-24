@@ -4807,5 +4807,119 @@
       "很",
       "高兴"
     ]
+  },
+  {
+    "id": "s:l1:fill:036",
+    "zh": "别问他们。",
+    "pinyin": "Bié wèn tāmen.",
+    "vi": "Đừng hỏi họ.",
+    "words": [
+      "别",
+      "问",
+      "他们"
+    ]
+  },
+  {
+    "id": "s:l1:fill:037",
+    "zh": "我没问他们。",
+    "pinyin": "Wǒ méi wèn tāmen.",
+    "vi": "Tôi chưa hỏi họ.",
+    "words": [
+      "我",
+      "没",
+      "问",
+      "他们"
+    ]
+  },
+  {
+    "id": "s:l1:fill:038",
+    "zh": "你先介绍你的妈妈。",
+    "pinyin": "Nǐ xiān jièshào nǐ de māma.",
+    "vi": "Bạn giới thiệu mẹ bạn trước đi.",
+    "words": [
+      "你",
+      "先",
+      "介绍",
+      "你",
+      "的",
+      "妈妈"
+    ]
+  },
+  {
+    "id": "s:l1:fill:039",
+    "zh": "我们常在这里。",
+    "pinyin": "Wǒmen cháng zài zhèlǐ.",
+    "vi": "Chúng tôi hay ở đây.",
+    "words": [
+      "我们",
+      "常",
+      "在",
+      "这里"
+    ]
+  },
+  {
+    "id": "s:l1:fill:040",
+    "zh": "我是他朋友，你呢？",
+    "pinyin": "Wǒ shì tā péngyou, nǐ ne?",
+    "vi": "Tôi là bạn của anh ấy, còn bạn?",
+    "words": [
+      "我",
+      "是",
+      "他",
+      "朋友",
+      "你",
+      "呢"
+    ]
+  },
+  {
+    "id": "s:l1:fill:041",
+    "zh": "你们家多少人？",
+    "pinyin": "Nǐmen jiā duōshao rén?",
+    "vi": "Nhà các bạn có bao nhiêu người?",
+    "words": [
+      "你们",
+      "家",
+      "多少",
+      "人"
+    ]
+  },
+  {
+    "id": "s:l1:fill:042",
+    "zh": "请介绍你的朋友。",
+    "pinyin": "Qǐng jièshào nǐ de péngyou.",
+    "vi": "Hãy giới thiệu bạn của bạn đi.",
+    "words": [
+      "请",
+      "介绍",
+      "你",
+      "的",
+      "朋友"
+    ]
+  },
+  {
+    "id": "s:l1:fill:043",
+    "zh": "请介绍一下儿你的家人。",
+    "pinyin": "Qǐng jièshào yíxiàr nǐ de jiārén.",
+    "vi": "Hãy giới thiệu một chút về gia đình bạn.",
+    "words": [
+      "请",
+      "介绍",
+      "一下儿",
+      "你",
+      "的",
+      "家人"
+    ]
+  },
+  {
+    "id": "s:l1:fill:044",
+    "zh": "你们在干什么？",
+    "pinyin": "Nǐmen zài gàn shénme?",
+    "vi": "Các bạn đang làm gì vậy?",
+    "words": [
+      "你们",
+      "在",
+      "干",
+      "什么"
+    ]
   }
 ]

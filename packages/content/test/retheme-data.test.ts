@@ -73,3 +73,9 @@ describe.each([2, 3])('shipped L%i units', (level) => {
     ).toEqual([]);
   });
 });
+
+describe('shipped L1 units', () => {
+  it(`hold at most ${MAX_GRAMMAR_PER_UNIT} grammar points per unit`, async () => {
+    expect(findCrowdedUnits(await loadLevel(1))).toEqual([]);
+  });
+});
