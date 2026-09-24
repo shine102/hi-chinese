@@ -5,6 +5,16 @@ import type { AuthoredUnit, HskLevel } from '../types.js';
 
 export const UNIT_TARGET = 12;
 
+// words.json uses this frequency for words missing from the frequency list.
+export const MISSING_FREQUENCY = 1_000_000;
+
+// Mean frequency of the known words; MISSING_FREQUENCY when none is known.
+export function partScore(part: readonly ThemeWord[]): number {
+  const known = part.filter((w) => w.frequency < MISSING_FREQUENCY);
+  if (known.length === 0) return MISSING_FREQUENCY;
+  return known.reduce((sum, w) => sum + w.frequency, 0) / known.length;
+}
+
 const FUNCTION_POS = new Set(['c', 'd', 'p', 'u']);
 
 export function isFunctionWord(pos: readonly string[]): boolean {
@@ -62,7 +72,7 @@ export function chunkSubthemes(themes: ThemesFile, words: readonly ThemeWord[]):
         broad: s.broad,
         title: s.title,
         words: part.map((w) => w.simplified),
-        score: part.reduce((sum, w) => sum + w.frequency, 0) / part.length,
+        score: partScore(part),
       });
     }
   }

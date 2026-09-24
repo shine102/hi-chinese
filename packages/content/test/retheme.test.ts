@@ -3,6 +3,7 @@ import {
   chunkSubthemes,
   fixCharOrder,
   isFunctionWord,
+  MISSING_FREQUENCY,
   nameUnits,
   orderUnits,
   spreadFunctionWords,
@@ -55,6 +56,13 @@ describe('chunkSubthemes', () => {
     const units = chunkSubthemes({ ...themes, words: { x: 'b', y: 'b' } }, words);
     expect(units).toHaveLength(1);
     expect(units[0]!.score).toBe(20);
+  });
+
+  it('ignores missing frequencies in the score', () => {
+    const t = { ...themes, words: { x: 'b', y: 'b', z: 'b', m: 'a' } };
+    const [a, b] = chunkSubthemes(t, [tw('x', 10), tw('y', 30), tw('z', MISSING_FREQUENCY), tw('m', 1_000_000)]);
+    expect(a!.score).toBe(1_000_000);
+    expect(b!.score).toBe(20);
   });
 
   it('throws on a word with no subtheme or an unknown subtheme', () => {
