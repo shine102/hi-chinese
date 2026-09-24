@@ -28,6 +28,9 @@ Turns open data plus authored grammar and sentences into static JSON chunks.
   get a build warning.
 - `src/authored/pinyin-overrides.json`: `{ "<simplified>": "<numeric pinyin>" }` for words where the
   automatic reading choice is wrong. Run `pnpm report:readings` to review all multi-reading words.
+- `src/authored/themes/level{2,3}.json`: L2/L3 content words → named subthemes (source for unit layout).
+- `pnpm -F @hi-chinese/content retheme-units`: one-off rebuild of `authored/units/level{2,3}.json` from
+  the themes (pins inside the script).
 
 ## Commands
 
