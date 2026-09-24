@@ -34,13 +34,12 @@ Curriculum audit (2026-09-24):
 | `2026-09-24-lesson-sentence-coverage.md` | `2026-09-24-lesson-sentence-coverage-design.md` | Every lesson has ≥1 sentence | merged |
 | `2026-09-24-l2-l3-retheme.md` | `2026-09-24-l2-l3-retheme-design.md` | L2/L3 units rebuilt from named subthemes; function words spread; ≤5 grammar points per unit | merged |
 | `2026-09-24-unit-order-tech-debt.md` | `2026-09-24-unit-order-tech-debt-design.md` | Concrete-first (tier) unit order; sentence pinyin data guard and reading fixes; no crowded unit on any level; `useLiveQuery` errors shown with retry; built content tracked in git | merged |
+| `2026-09-24-sentence-expansion.md` | `2026-09-24-sentence-expansion-design.md` | Every lesson has ≥2 sentences of ≥3 words; every word is in a sentence or the reasoned allowlist | merged |
 
 Still open:
 
 - Native-speaker review of AI-written content before any external deploy (lists in
   `docs/superpowers/specs/*-native-review.md`).
-- Lessons with only one sentence (2026-09-24: L1 64, L2 95, L3 143).
-- Words that appear in no sentence (2026-09-24: L1 240, L2 414, L3 580).
 - `g:yi-jiu` (一…就) sits in l2-u32; pin 哭 earlier if it should be taught sooner.
 - Grammar validator requires ≥1 example per point, not the spec's 3-5.
 - Saved L2/L3 lesson progress from before the 2026-09-24 reorder points at the old units.
