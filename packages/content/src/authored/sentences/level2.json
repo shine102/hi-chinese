@@ -7087,15 +7087,18 @@
   },
   {
     "id": "s:l2:fill:119",
-    "zh": "今天比昨天更热。",
-    "pinyin": "Jīntiān bǐ zuótiān gèng rè.",
-    "vi": "Hôm nay còn nóng hơn hôm qua.",
+    "zh": "这件衣服比那件更好看。",
+    "pinyin": "Zhè jiàn yīfu bǐ nà jiàn gèng hǎokàn.",
+    "vi": "Cái áo này còn đẹp hơn cái kia.",
     "words": [
-      "今天",
+      "这",
+      "件",
+      "衣服",
       "比",
-      "昨天",
+      "那",
+      "件",
       "更",
-      "热"
+      "好看"
     ]
   },
   {
@@ -7172,7 +7175,7 @@
   {
     "id": "s:l2:fill:125",
     "zh": "他很重视这个机会。",
-    "pinyin": "Tā hěn zhòngshì zhè ge jīhuì.",
+    "pinyin": "Tā hěn zhòngshì zhège jīhuì.",
     "vi": "Anh ấy rất coi trọng cơ hội này.",
     "words": [
       "他",
@@ -7239,13 +7242,14 @@
   },
   {
     "id": "s:l2:fill:130",
-    "zh": "我大部分时间在家。",
-    "pinyin": "Wǒ dàbùfen shíjiān zàijiā.",
+    "zh": "我大部分时间都在家。",
+    "pinyin": "Wǒ dàbùfen shíjiān dōu zàijiā.",
     "vi": "Phần lớn thời gian tôi ở nhà.",
     "words": [
       "我",
       "大部分",
       "时间",
+      "都",
       "在家"
     ]
   },
@@ -7446,7 +7450,7 @@
     "id": "s:l2:fill:146",
     "zh": "商店很近，走路去吧。",
     "pinyin": "Shāngdiàn hěn jìn, zǒulù qù ba.",
-    "vi": "Cửa hàng rất gần, đi bộ đi.",
+    "vi": "Cửa hàng gần lắm, mình đi bộ đi.",
     "words": [
       "商店",
       "很",
@@ -7496,7 +7500,7 @@
   {
     "id": "s:l2:fill:150",
     "zh": "这个数字很难记。",
-    "pinyin": "Zhè ge shùzì hěn nán jì.",
+    "pinyin": "Zhège shùzì hěn nán jì.",
     "vi": "Con số này rất khó nhớ.",
     "words": [
       "这",
@@ -7697,7 +7701,7 @@
   {
     "id": "s:l2:fill:165",
     "zh": "这个周末我在家休息。",
-    "pinyin": "Zhè ge zhōumò wǒ zàijiā xiūxi.",
+    "pinyin": "Zhège zhōumò wǒ zàijiā xiūxi.",
     "vi": "Cuối tuần này tôi ở nhà nghỉ ngơi.",
     "words": [
       "这",

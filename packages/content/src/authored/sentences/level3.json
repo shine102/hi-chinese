@@ -383,7 +383,7 @@
 
   { "id": "s:l3:291", "zh": "你千万不要忘了。", "pinyin": "Nǐ qiānwàn bùyào wàng le.", "vi": "Bạn nhất định đừng quên đấy.", "words": ["你", "千万", "不要", "忘", "了"] },
   { "id": "s:l3:292", "zh": "开车的时候千万要小心。", "pinyin": "Kāichē de shíhou qiānwàn yào xiǎoxīn.", "vi": "Khi lái xe nhất định phải cẩn thận.", "words": ["开车", "的", "时候", "千万", "要", "小心"] },
-  { "id": "s:l3:293", "zh": "这件事你千万别告诉别人。", "pinyin": "Zhè jiàn shì nǐ qiānwàn bié gàosu biérén.", "vi": "Chuyện này bạn nhất định đừng nói cho người khác biết.", "words": ["这", "件", "事", "你", "千万", "别", "告诉", "别人"] },
+  { "id": "s:l3:293", "zh": "这件事你千万别告诉别人。", "pinyin": "Zhè jiàn shì nǐ qiānwàn bié gàosu biéren.", "vi": "Chuyện này bạn nhất định đừng nói cho người khác biết.", "words": ["这", "件", "事", "你", "千万", "别", "告诉", "别人"] },
   { "id": "s:l3:294", "zh": "天气不好，千万别出门。", "pinyin": "Tiānqì bù hǎo, qiānwàn bié chūmén.", "vi": "Thời tiết không tốt, nhất định đừng ra ngoài.", "words": ["天气", "不", "好", "千万", "别", "出门"] },
 
   { "id": "s:l3:295", "zh": "这个计划具有很大的意义。", "pinyin": "Zhège jìhuà jùyǒu hěn dà de yìyì.", "vi": "Kế hoạch này có ý nghĩa rất lớn.", "words": ["这", "个", "计划", "具有", "很", "大", "的", "意义"] },
@@ -415,7 +415,7 @@
   { "id": "s:l3:315", "zh": "首先要努力，其次要坚持，最后才能成功。", "pinyin": "Shǒuxiān yào nǔlì, qícì yào jiānchí, zuìhòu cái néng chénggōng.", "vi": "Trước hết phải nỗ lực, tiếp theo phải kiên trì, cuối cùng mới có thể thành công.", "words": ["首先", "要", "努力", "其次", "要", "坚持", "最后", "才", "能", "成功"] },
 
   { "id": "s:l3:316", "zh": "学生们都自觉地学习。", "pinyin": "Xuéshengmen dōu zìjué de xuéxí.", "vi": "Các học sinh đều tự giác học tập.", "words": ["学生", "们", "都", "自觉", "地", "学习"] },
-  { "id": "s:l3:317", "zh": "他自觉帮助别人。", "pinyin": "Tā zìjué bāngzhù biérén.", "vi": "Anh ấy tự giác giúp đỡ người khác.", "words": ["他", "自觉", "帮助", "别人"] },
+  { "id": "s:l3:317", "zh": "他自觉帮助别人。", "pinyin": "Tā zìjué bāngzhù biéren.", "vi": "Anh ấy tự giác giúp đỡ người khác.", "words": ["他", "自觉", "帮助", "别人"] },
   { "id": "s:l3:318", "zh": "大家都很自觉。", "pinyin": "Dàjiā dōu hěn zìjué.", "vi": "Mọi người đều rất tự giác.", "words": ["大家", "都", "很", "自觉"] },
 
   { "id": "s:l3:319", "zh": "他把门推开了。", "pinyin": "Tā bǎ mén tuī kāi le.", "vi": "Anh ấy đẩy cửa ra.", "words": ["他", "把", "门", "推", "开", "了"] },
@@ -647,13 +647,13 @@
   { "id": "s:l3:fill:178", "zh": "警察追了很久，终于抓住了他。", "pinyin": "Jǐngchá zhuī le hěn jiǔ, zhōngyú zhuāzhù le tā.", "vi": "Cảnh sát đuổi theo rất lâu, cuối cùng cũng bắt được anh ta.", "words": ["警察", "追", "了", "很", "久", "终于", "抓住", "了", "他"] },
   { "id": "s:l3:fill:179", "zh": "考试快到了，大家都紧张起来了。", "pinyin": "Kǎoshì kuài dào le, dàjiā dōu jǐnzhāng qǐlai le.", "vi": "Sắp thi rồi, mọi người đều bắt đầu thấy căng thẳng.", "words": ["考试", "快", "到", "了", "大家", "都", "紧张", "起来", "了"] },
   { "id": "s:l3:fill:180", "zh": "这个问题越想越难解决。", "pinyin": "Zhège wèntí yuè xiǎng yuè nán jiějué.", "vi": "Vấn đề này càng nghĩ càng thấy khó giải quyết.", "words": ["这", "个", "问题", "越", "想", "越", "难", "解决"] },
-  { "id": "s:l3:fill:181", "zh": "他说的办法很简单。", "pinyin": "Tā shuō de bànfǎ hěn jiǎndān.", "vi": "Cách mà anh ấy nói rất đơn giản.", "words": ["他", "说", "的", "办法", "很", "简单"] },
+  { "id": "s:l3:fill:181", "zh": "他说的办法很简单。", "pinyin": "Tā shuō de bànfǎ hěn jiǎndān.", "vi": "Cách anh ấy nêu ra rất đơn giản.", "words": ["他", "说", "的", "办法", "很", "简单"] },
   { "id": "s:l3:fill:182", "zh": "他的车被人弄坏了。", "pinyin": "Tā de chē bèi rén nòng huài le.", "vi": "Xe của anh ấy bị người ta làm hỏng rồi.", "words": ["他", "的", "车", "被", "人", "弄", "坏", "了"] },
-  { "id": "s:l3:fill:183", "zh": "门被他拉开了。", "pinyin": "Mén bèi tā lā kāi le.", "vi": "Cánh cửa bị anh ấy kéo ra.", "words": ["门", "被", "他", "拉", "开", "了"] },
+  { "id": "s:l3:fill:183", "zh": "门被他拉开了。", "pinyin": "Mén bèi tā lā kāi le.", "vi": "Cánh cửa được anh ấy kéo mở ra.", "words": ["门", "被", "他", "拉", "开", "了"] },
   { "id": "s:l3:fill:184", "zh": "他最近身体状况不太好。", "pinyin": "Tā zuìjìn shēntǐ zhuàngkuàng bú tài hǎo.", "vi": "Dạo này tình trạng sức khỏe của anh ấy không tốt lắm.", "words": ["他", "最近", "身体", "状况", "不太", "好"] },
   { "id": "s:l3:fill:185", "zh": "整个上午他都在睡觉。", "pinyin": "Zhěnggè shàngwǔ tā dōu zài shuìjiào.", "vi": "Anh ấy ngủ suốt cả buổi sáng.", "words": ["整个", "上午", "他", "都", "在", "睡觉"] },
   { "id": "s:l3:fill:186", "zh": "这件事并不难。", "pinyin": "Zhè jiàn shì bìng bù nán.", "vi": "Việc này chẳng hề khó.", "words": ["这", "件", "事", "并", "不", "难"] },
-  { "id": "s:l3:fill:187", "zh": "我保证不告诉别人。", "pinyin": "Wǒ bǎozhèng bú gàosu biérén.", "vi": "Tôi đảm bảo không nói cho ai biết.", "words": ["我", "保证", "不", "告诉", "别人"] },
+  { "id": "s:l3:fill:187", "zh": "我保证不告诉别人。", "pinyin": "Wǒ bǎozhèng bú gàosu biéren.", "vi": "Tôi đảm bảo không nói cho ai biết.", "words": ["我", "保证", "不", "告诉", "别人"] },
   { "id": "s:l3:fill:188", "zh": "我们合作得很好。", "pinyin": "Wǒmen hézuò de hěn hǎo.", "vi": "Chúng tôi hợp tác rất tốt.", "words": ["我们", "合作", "得", "很", "好"] },
   { "id": "s:l3:fill:189", "zh": "请大家配合一下儿。", "pinyin": "Qǐng dàjiā pèihé yíxiàr.", "vi": "Mong mọi người phối hợp một chút.", "words": ["请", "大家", "配合", "一下儿"] },
   { "id": "s:l3:fill:190", "zh": "别伤心了，还有机会。", "pinyin": "Bié shāngxīn le, háiyǒu jīhuì.", "vi": "Đừng buồn nữa, vẫn còn cơ hội mà.", "words": ["别", "伤心", "了", "还有", "机会"] },
