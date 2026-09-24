@@ -122,7 +122,7 @@ const NUMBERED_SYLLABLE_RE = /([A-Za-z:]+?)([1-5])/g;
 
 // "dong4 ci2" -> "dòng cí"; run-together syllables are split, erhua "r5" joins the previous
 // syllable. Returns null when the text is not entirely numbered pinyin.
-function numberedToMarked(pinyin: string): string | null {
+export function numberedToMarked(pinyin: string): string | null {
   const compact = pinyin.replace(/\s+/g, '');
   const out: string[] = [];
   let consumed = 0;

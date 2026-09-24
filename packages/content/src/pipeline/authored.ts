@@ -1,11 +1,13 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import type { AuthoredGrammar, AuthoredHanViet, AuthoredSentence, AuthoredUnit, PinyinOverrides } from '../types.js';
+import type { ReadingFixes } from './hsk.js';
 
 export interface Authored {
   sentences: AuthoredSentence[];
   grammar: AuthoredGrammar[];
   overrides: PinyinOverrides;
+  readingFixes: ReadingFixes;
   units: AuthoredUnit[];
   hanViet: AuthoredHanViet;
   meanings: Record<string, string[]>;
@@ -98,6 +100,7 @@ export async function loadAuthored(authoredDir: string): Promise<Authored> {
     sentences: await readJsonArrays<AuthoredSentence>(join(authoredDir, 'sentences')),
     grammar: await readJsonArrays<AuthoredGrammar>(join(authoredDir, 'grammar')),
     overrides,
+    readingFixes: await readJsonObject<ReadingFixes>(join(authoredDir, 'reading-fixes.json')),
     units: await readJsonArrays<AuthoredUnit>(join(authoredDir, 'units')),
     hanViet: {
       charMap: await readJsonObject<Record<string, string>>(join(authoredDir, 'hanviet', 'char-map.json')),

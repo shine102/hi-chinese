@@ -118,7 +118,7 @@
   {
     "id": "s:l2:009",
     "zh": "因为下雨，所以我们没出去。",
-    "pinyin": "Yīnwèi xiàyǔ, suǒyǐ wǒmen méi chūqù.",
+    "pinyin": "Yīnwèi xiàyǔ, suǒyǐ wǒmen méi chūqu.",
     "vi": "Vì trời mưa nên chúng tôi không ra ngoài.",
     "words": [
       "因为",
@@ -400,7 +400,7 @@
   {
     "id": "s:l2:029",
     "zh": "学生必须去上课。",
-    "pinyin": "Xuéshēng bìxū qù shàngkè.",
+    "pinyin": "Xuésheng bìxū qù shàngkè.",
     "vi": "Học sinh bắt buộc phải đi học.",
     "words": [
       "学生",
@@ -730,7 +730,7 @@
   {
     "id": "s:l2:052",
     "zh": "虽然他不是学生，但是他常常学习。",
-    "pinyin": "Suīrán tā bú shì xuéshēng, dànshì tā chángcháng xuéxí.",
+    "pinyin": "Suīrán tā bú shì xuésheng, dànshì tā chángcháng xuéxí.",
     "vi": "Mặc dù anh ấy không phải là học sinh, nhưng anh ấy vẫn thường xuyên học tập.",
     "words": [
       "虽然",
@@ -790,7 +790,7 @@
   {
     "id": "s:l2:056",
     "zh": "只要天气好，我们就出去。",
-    "pinyin": "Zhǐyào tiānqì hǎo, wǒmen jiù chūqù.",
+    "pinyin": "Zhǐyào tiānqì hǎo, wǒmen jiù chūqu.",
     "vi": "Chỉ cần thời tiết đẹp là chúng tôi sẽ ra ngoài.",
     "words": [
       "只要",
@@ -830,7 +830,7 @@
   {
     "id": "s:l2:059",
     "zh": "学生能够回答这个问题。",
-    "pinyin": "Xuéshēng nénggòu huídá zhège wèntí.",
+    "pinyin": "Xuésheng nénggòu huídá zhège wèntí.",
     "vi": "Học sinh có thể trả lời câu hỏi này.",
     "words": [
       "学生",
@@ -1036,7 +1036,7 @@
   {
     "id": "s:l2:074",
     "zh": "他以为今天是星期五。",
-    "pinyin": "Tā yǐwéi jīntiān shì xīngqīwǔ.",
+    "pinyin": "Tā yǐwéi jīntiān shì xīngqī wǔ.",
     "vi": "Anh ấy tưởng hôm nay là thứ Sáu.",
     "words": [
       "他",
@@ -1514,7 +1514,7 @@
   {
     "id": "s:l2:110",
     "zh": "他病了，只能在家休息。",
-    "pinyin": "Tā bìng le, zhǐnéng zài jiā xiūxi.",
+    "pinyin": "Tā bìng le, zhǐnéng zàijiā xiūxi.",
     "vi": "Anh ấy bị ốm nên chỉ có thể nghỉ ngơi ở nhà.",
     "words": [
       "他",
@@ -1806,7 +1806,7 @@
   {
     "id": "s:l2:132",
     "zh": "妈妈就要回来了。",
-    "pinyin": "Māma jiùyào huílái le.",
+    "pinyin": "Māma jiùyào huílai le.",
     "vi": "Mẹ sắp về rồi.",
     "words": [
       "妈妈",
@@ -1849,7 +1849,7 @@
   {
     "id": "s:l2:135",
     "zh": "她认识很多人，比如老师、学生。",
-    "pinyin": "Tā rènshi hěn duō rén, bǐrú lǎoshī, xuéshēng.",
+    "pinyin": "Tā rènshi hěn duō rén, bǐrú lǎoshī, xuésheng.",
     "vi": "Cô ấy quen biết nhiều người, ví dụ như giáo viên, học sinh.",
     "words": [
       "她",
@@ -1982,7 +1982,7 @@
   {
     "id": "s:l2:145",
     "zh": "老师很关心学生。",
-    "pinyin": "Lǎoshī hěn guānxīn xuéshēng.",
+    "pinyin": "Lǎoshī hěn guānxīn xuésheng.",
     "vi": "Giáo viên rất quan tâm đến học sinh.",
     "words": [
       "老师",
@@ -2240,7 +2240,7 @@
   {
     "id": "s:l2:165",
     "zh": "这本书交给你了。",
-    "pinyin": "Zhè běn shū jiāo gěi nǐ le.",
+    "pinyin": "Zhè běn shū jiāogěi nǐ le.",
     "vi": "Cuốn sách này đã được giao cho bạn rồi.",
     "words": [
       "这",
@@ -2254,7 +2254,7 @@
   {
     "id": "s:l2:166",
     "zh": "这件事交给我吧。",
-    "pinyin": "Zhè jiàn shì jiāo gěi wǒ ba.",
+    "pinyin": "Zhè jiàn shì jiāogěi wǒ ba.",
     "vi": "Việc này cứ giao cho tôi đi.",
     "words": [
       "这",
@@ -2268,7 +2268,7 @@
   {
     "id": "s:l2:167",
     "zh": "钱交给你了。",
-    "pinyin": "Qián jiāo gěi nǐ le.",
+    "pinyin": "Qián jiāogěi nǐ le.",
     "vi": "Tiền đã được đưa cho bạn rồi.",
     "words": [
       "钱",
@@ -2280,7 +2280,7 @@
   {
     "id": "s:l2:168",
     "zh": "这个工作交给他做。",
-    "pinyin": "Zhège gōngzuò jiāo gěi tā zuò.",
+    "pinyin": "Zhège gōngzuò jiāogěi tā zuò.",
     "vi": "Công việc này được giao cho anh ấy làm.",
     "words": [
       "这",
@@ -2322,7 +2322,7 @@
   {
     "id": "s:l2:171",
     "zh": "看到照片，我想起了那天。",
-    "pinyin": "Kàndào zhàopiàn, wǒ xiǎngqǐ le nèi tiān.",
+    "pinyin": "Kàndào zhàopiàn, wǒ xiǎngqǐ le nà tiān.",
     "vi": "Nhìn thấy bức ảnh, tôi nhớ lại ngày hôm đó.",
     "words": [
       "看到",
@@ -2723,7 +2723,7 @@
   {
     "id": "s:l2:202",
     "zh": "以下问题都不用回答。",
-    "pinyin": "Yǐxià wèntí dōu bú yòng huídá.",
+    "pinyin": "Yǐxià wèntí dōu búyòng huídá.",
     "vi": "Các câu hỏi dưới đây đều không cần trả lời.",
     "words": [
       "以下",
@@ -2752,7 +2752,7 @@
   {
     "id": "s:l2:204",
     "zh": "五岁以下的孩子不用买票。",
-    "pinyin": "Wǔ suì yǐxià de háizi bú yòng mǎi piào.",
+    "pinyin": "Wǔ suì yǐxià de háizi búyòng mǎi piào.",
     "vi": "Trẻ em dưới năm tuổi không cần mua vé.",
     "words": [
       "五",
@@ -2768,7 +2768,7 @@
   {
     "id": "s:l2:205",
     "zh": "你忙的话，就不用来了。",
-    "pinyin": "Nǐ máng dehuà, jiù bú yòng lái le.",
+    "pinyin": "Nǐ máng dehuà, jiù búyòng lái le.",
     "vi": "Nếu bạn bận thì không cần đến nữa.",
     "words": [
       "你",
@@ -3751,7 +3751,7 @@
   {
     "id": "s:l2:277",
     "zh": "他忽然站起来了。",
-    "pinyin": "Tā hūrán zhàn qǐlái le.",
+    "pinyin": "Tā hūrán zhàn qǐlai le.",
     "vi": "Anh ấy bỗng nhiên đứng dậy.",
     "words": [
       "他",
@@ -4252,7 +4252,7 @@
   {
     "id": "s:l2:316",
     "zh": "请走进来。",
-    "pinyin": "Qǐng zǒu jìnlái.",
+    "pinyin": "Qǐng zǒujìn lái.",
     "vi": "Mời bước vào.",
     "words": [
       "请",
@@ -4472,7 +4472,7 @@
   {
     "id": "s:l2:333",
     "zh": "我只有一点点钱。",
-    "pinyin": "Wǒ zhǐyǒu yìdiǎndiǎn qián.",
+    "pinyin": "Wǒ zhǐ yǒu yìdiǎndiǎn qián.",
     "vi": "Tôi chỉ có một chút xíu tiền.",
     "words": [
       "我",
@@ -4497,7 +4497,7 @@
   {
     "id": "s:l2:335",
     "zh": "只有一点点了。",
-    "pinyin": "Zhǐyǒu yìdiǎndiǎn le.",
+    "pinyin": "Zhǐ yǒu yìdiǎndiǎn le.",
     "vi": "Chỉ còn lại một chút xíu thôi.",
     "words": [
       "只",
@@ -4523,7 +4523,7 @@
   {
     "id": "s:l2:337",
     "zh": "我见过他。",
-    "pinyin": "Wǒ jiàn guo tā.",
+    "pinyin": "Wǒ jiànguo tā.",
     "vi": "Tôi đã từng gặp anh ấy.",
     "words": [
       "我",
@@ -4839,7 +4839,7 @@
   {
     "id": "s:l2:361",
     "zh": "我是三年级学生。",
-    "pinyin": "Wǒ shì sān niánjí xuéshēng.",
+    "pinyin": "Wǒ shì sān niánjí xuésheng.",
     "vi": "Tôi là học sinh lớp ba.",
     "words": [
       "我",
@@ -5281,7 +5281,7 @@
   {
     "id": "s:l2:core:013",
     "zh": "这些水果是谁带来的？",
-    "pinyin": "Zhèxiē shuǐguǒ shì shéi dàilai de?",
+    "pinyin": "Zhèxiē shuǐguǒ shì shéi dàilái de?",
     "vi": "Chỗ trái cây này là ai mang đến vậy?",
     "words": [
       "这些",
@@ -5295,7 +5295,7 @@
   {
     "id": "s:l2:core:014",
     "zh": "这个杯子我是从中国带来的。",
-    "pinyin": "Zhège bēizi wǒ shì cóng Zhōngguó dàilai de.",
+    "pinyin": "Zhège bēizi wǒ shì cóng Zhōngguó dàilái de.",
     "vi": "Cái cốc này là tôi mang từ Trung Quốc sang.",
     "words": [
       "这",
@@ -6750,7 +6750,7 @@
   {
     "id": "s:l2:fill:094",
     "zh": "我的钱不够。",
-    "pinyin": "Wǒ de qián bú gòu.",
+    "pinyin": "Wǒ de qián búgòu.",
     "vi": "Tôi không đủ tiền.",
     "words": [
       "我",

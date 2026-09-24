@@ -46,6 +46,7 @@ const authored = (overrides: Partial<Authored> = {}): Authored => ({
   sentences: [],
   grammar: [],
   overrides: {},
+  readingFixes: {},
   units: [],
   hanViet: { charMap: { 我: 'Ngã', 是: 'Thị', 你: 'Nễ', 猫: 'Miêu' }, wordOverrides: {} },
   meanings: {},

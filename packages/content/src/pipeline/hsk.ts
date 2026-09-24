@@ -1,5 +1,5 @@
 import { compareWords, uniqueHanChars, wordId } from '../ids.js';
-import { formatCedictRefs } from './cedict.js';
+import { formatCedictRefs, numberedToMarked } from './cedict.js';
 import type { HanVietResolver, HskLevel, PinyinOverrides, Word, WordReading } from '../types.js';
 
 export interface RawHskForm {
@@ -128,4 +128,34 @@ export function parseHskWords(
   }
   words.sort(compareWords);
   return words;
+}
+
+// Authored reading fixes (reading-fixes.json): simplified → numbered pinyin. For source forms
+// whose transcription is malformed ("zhe4 shíhòu") or carries a non-standard tone, which
+// pinyin-overrides.json cannot fix because it only picks among existing forms. A fix may
+// change tones only, never letters.
+export type ReadingFixes = Record<string, string>;
+
+const letters = (pinyin: string) =>
+  pinyin
+    .normalize('NFD')
+    .replace(/[̀-ͯ\d\s:]/g, '')
+    .toLowerCase();
+
+export function applyReadingFixes(words: Word[], fixes: ReadingFixes): Word[] {
+  const bySimplified = new Set(words.map((w) => w.simplified));
+  for (const s of Object.keys(fixes))
+    if (!bySimplified.has(s)) throw new Error(`reading fix for ${s}: not a course word`);
+  return words.map((w) => {
+    const fix = fixes[w.simplified];
+    if (fix === undefined) return w;
+    const pinyin = numberedToMarked(fix);
+    if (pinyin === null)
+      throw new Error(`reading fix for ${w.simplified} = "${fix}": not numbered pinyin`);
+    if (letters(fix) !== letters(w.pinyinNumeric))
+      throw new Error(
+        `reading fix for ${w.simplified} = "${fix}": letters differ from "${w.pinyinNumeric}"`,
+      );
+    return { ...w, pinyin, pinyinNumeric: fix };
+  });
 }

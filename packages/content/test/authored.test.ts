@@ -42,6 +42,7 @@ describe('loadAuthored', () => {
       sentences: [],
       grammar: [],
       overrides: {},
+      readingFixes: {},
       units: [],
       hanViet: { charMap: {}, wordOverrides: {} },
       meanings: {},

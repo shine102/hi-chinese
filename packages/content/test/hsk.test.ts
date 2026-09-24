@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest';
+import type { Word } from '../src/types.js';
 import {
+  applyReadingFixes,
   chooseReading,
   hskLevelOf,
   mergeForms,
@@ -180,5 +182,33 @@ describe('parseHskWords', () => {
   it('threads Vietnamese meanings through to the resulting words', () => {
     const words = parseHskWords([le], {}, hanViet, { 了: ['rồi (trợ từ)'] });
     expect(words[0]!.meanings).toEqual(['rồi (trợ từ)']);
+  });
+});
+
+describe('applyReadingFixes', () => {
+  const word = (simplified: string, pinyin: string, pinyinNumeric: string) =>
+    ({ simplified, pinyin, pinyinNumeric }) as Word;
+
+  it('replaces a malformed or non-standard reading with the fixed one', () => {
+    const [a, b] = applyReadingFixes(
+      [word('这时候', 'zhè shíhòu', 'zhe4 shíhòu'), word('值得', 'zhí de', 'zhi2 de5')],
+      { 这时候: 'zhe4 shi2 hou5', 值得: 'zhi2 de2' },
+    );
+    expect(a).toMatchObject({ pinyin: 'zhè shí hou', pinyinNumeric: 'zhe4 shi2 hou5' });
+    expect(b).toMatchObject({ pinyin: 'zhí dé', pinyinNumeric: 'zhi2 de2' });
+  });
+
+  it('keeps erhua on the previous syllable', () => {
+    const [w] = applyReadingFixes([word('笑话儿', 'xiàohuar5', 'xiàohuar5')], {
+      笑话儿: 'xiao4 hua5 r5',
+    });
+    expect(w).toMatchObject({ pinyin: 'xiào huar', pinyinNumeric: 'xiao4 hua5 r5' });
+  });
+
+  it('rejects unknown words, non-numbered pinyin and changed letters', () => {
+    const w = [word('值得', 'zhí de', 'zhi2 de5')];
+    expect(() => applyReadingFixes(w, { 学生: 'xue2 sheng1' })).toThrow(/学生.*not a course word/);
+    expect(() => applyReadingFixes(w, { 值得: 'zhí dé' })).toThrow(/值得.*numbered pinyin/);
+    expect(() => applyReadingFixes(w, { 值得: 'zhi2 da2' })).toThrow(/值得.*letters/);
   });
 });

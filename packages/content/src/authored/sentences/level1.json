@@ -1161,7 +1161,7 @@
   {
     "id": "s:l1:100",
     "zh": "这是第二个。",
-    "pinyin": "Zhè shì dì èr gè.",
+    "pinyin": "Zhè shì dì'èr gè.",
     "vi": "Đây là cái thứ hai.",
     "words": [
       "这",
@@ -1173,7 +1173,7 @@
   {
     "id": "s:l1:101",
     "zh": "他是第二。",
-    "pinyin": "Tā shì dì èr.",
+    "pinyin": "Tā shì dì'èr.",
     "vi": "Anh ấy đứng thứ hai.",
     "words": [
       "他",
@@ -1184,7 +1184,7 @@
   {
     "id": "s:l1:102",
     "zh": "我先看第二个。",
-    "pinyin": "Wǒ xiān kàn dì èr gè.",
+    "pinyin": "Wǒ xiān kàn dì'èr gè.",
     "vi": "Tôi xem cái thứ hai trước.",
     "words": [
       "我",
@@ -1197,7 +1197,7 @@
   {
     "id": "s:l1:103",
     "zh": "那个是第二。",
-    "pinyin": "Nàge shì dì èr.",
+    "pinyin": "Nàge shì dì'èr.",
     "vi": "Cái đó là thứ hai.",
     "words": [
       "那",
@@ -1294,7 +1294,7 @@
   {
     "id": "s:l1:111",
     "zh": "这是第二个，不是两个。",
-    "pinyin": "Zhè shì dì èr gè, bú shì liǎng gè.",
+    "pinyin": "Zhè shì dì'èr gè, bú shì liǎng gè.",
     "vi": "Đây là cái thứ hai, không phải hai cái.",
     "words": [
       "这",
@@ -1370,7 +1370,7 @@
   {
     "id": "s:l1:117",
     "zh": "他在那里。",
-    "pinyin": "Tā zài nàlǐ.",
+    "pinyin": "Tā zài nàli.",
     "vi": "Anh ấy ở đó.",
     "words": [
       "他",
@@ -1392,7 +1392,7 @@
   {
     "id": "s:l1:119",
     "zh": "我们去那里吧。",
-    "pinyin": "Wǒmen qù nàlǐ ba.",
+    "pinyin": "Wǒmen qù nàli ba.",
     "vi": "Chúng ta đến đó đi.",
     "words": [
       "我们",
@@ -2518,7 +2518,7 @@
   {
     "id": "s:l1:216",
     "zh": "我等了半天。",
-    "pinyin": "Wǒ děngle bàntiān.",
+    "pinyin": "Wǒ děng le bàntiān.",
     "vi": "Tôi đã đợi rất lâu.",
     "words": [
       "我",
@@ -2530,7 +2530,7 @@
   {
     "id": "s:l1:217",
     "zh": "他学了半年。",
-    "pinyin": "Tā xuéle bànnián.",
+    "pinyin": "Tā xué le bànnián.",
     "vi": "Anh ấy đã học nửa năm.",
     "words": [
       "他",
@@ -2958,7 +2958,7 @@
   {
     "id": "s:l1:new:040",
     "zh": "他生病。",
-    "pinyin": "Tā shēng bìng.",
+    "pinyin": "Tā shēngbìng.",
     "vi": "Anh ấy bị ốm.",
     "words": [
       "他",
@@ -2979,7 +2979,7 @@
   {
     "id": "s:l1:new:042",
     "zh": "他去医院看病。",
-    "pinyin": "Tā qù yīyuàn kàn bìng.",
+    "pinyin": "Tā qù yīyuàn kànbìng.",
     "vi": "Anh ấy đến bệnh viện khám bệnh.",
     "words": [
       "他",
@@ -3228,7 +3228,7 @@
   {
     "id": "s:l1:new:082",
     "zh": "下雨。",
-    "pinyin": "Xià yǔ.",
+    "pinyin": "Xiàyǔ.",
     "vi": "Trời mưa.",
     "words": [
       "下雨"
@@ -3467,7 +3467,7 @@
   {
     "id": "s:l1:new3:019",
     "zh": "中国是一个大国家。",
-    "pinyin": "Zhōngguó shì yī gè dà guójiā.",
+    "pinyin": "Zhōngguó shì yí ge dà guójiā.",
     "vi": "Trung Quốc là một quốc gia lớn.",
     "words": [
       "中国",
@@ -3574,7 +3574,7 @@
   {
     "id": "s:l1:new3:028",
     "zh": "一个本子。",
-    "pinyin": "Yī gè běnzi.",
+    "pinyin": "Yí ge běnzi.",
     "vi": "Một quyển vở.",
     "words": [
       "一",
@@ -3607,7 +3607,7 @@
   {
     "id": "s:l1:new3:031",
     "zh": "小朋友们好！",
-    "pinyin": "Xiǎopéngyoumen hǎo!",
+    "pinyin": "Xiǎopéngyǒumen hǎo!",
     "vi": "Chào các bạn nhỏ!",
     "words": [
       "小朋友",
@@ -3966,7 +3966,7 @@
   {
     "id": "s:l1:core:023",
     "zh": "妈妈做了三个菜。",
-    "pinyin": "Māma zuòle sān ge cài.",
+    "pinyin": "Māma zuò le sān ge cài.",
     "vi": "Mẹ đã nấu ba món.",
     "words": [
       "妈妈",
@@ -3980,7 +3980,7 @@
   {
     "id": "s:l1:core:024",
     "zh": "我给了他一杯水。",
-    "pinyin": "Wǒ gěile tā yì bēi shuǐ.",
+    "pinyin": "Wǒ gěi le tā yì bēi shuǐ.",
     "vi": "Tôi đã đưa cho anh ấy một cốc nước.",
     "words": [
       "我",
@@ -3995,7 +3995,7 @@
   {
     "id": "s:l1:core:025",
     "zh": "你拿了我的杯子吗？",
-    "pinyin": "Nǐ nále wǒ de bēizi ma?",
+    "pinyin": "Nǐ ná le wǒ de bēizi ma?",
     "vi": "Bạn đã lấy cốc của tôi à?",
     "words": [
       "你",
@@ -4047,7 +4047,7 @@
   {
     "id": "s:l1:core:029",
     "zh": "我不想吃饭。",
-    "pinyin": "Wǒ bù xiǎng chī fàn.",
+    "pinyin": "Wǒ bù xiǎng chīfàn.",
     "vi": "Tôi không muốn ăn cơm.",
     "words": [
       "我",
@@ -4072,7 +4072,7 @@
   {
     "id": "s:l1:core:031",
     "zh": "他站着吃饭。",
-    "pinyin": "Tā zhànzhe chī fàn.",
+    "pinyin": "Tā zhàn zhe chīfàn.",
     "vi": "Anh ấy đứng ăn cơm.",
     "words": [
       "他",
@@ -4084,7 +4084,7 @@
   {
     "id": "s:l1:core:032",
     "zh": "那儿放着一杯水。",
-    "pinyin": "Nàr fàngzhe yì bēi shuǐ.",
+    "pinyin": "Nàr fàng zhe yì bēi shuǐ.",
     "vi": "Ở đó có để sẵn một cốc nước.",
     "words": [
       "那儿",
@@ -4098,7 +4098,7 @@
   {
     "id": "s:l1:core:033",
     "zh": "你坐着，我给你拿水。",
-    "pinyin": "Nǐ zuòzhe, wǒ gěi nǐ ná shuǐ.",
+    "pinyin": "Nǐ zuò zhe, wǒ gěi nǐ ná shuǐ.",
     "vi": "Bạn cứ ngồi đi, tôi lấy nước cho bạn.",
     "words": [
       "你",
@@ -4114,7 +4114,7 @@
   {
     "id": "s:l1:core:034",
     "zh": "他在那儿站着。",
-    "pinyin": "Tā zài nàr zhànzhe.",
+    "pinyin": "Tā zài nàr zhàn zhe.",
     "vi": "Anh ấy đang đứng ở đó.",
     "words": [
       "他",
@@ -4173,7 +4173,7 @@
   {
     "id": "s:l1:core:038",
     "zh": "他从早上到现在都没吃饭。",
-    "pinyin": "Tā cóng zǎoshang dào xiànzài dōu méi chī fàn.",
+    "pinyin": "Tā cóng zǎoshang dào xiànzài dōu méi chīfàn.",
     "vi": "Từ sáng đến giờ anh ấy chưa ăn gì.",
     "words": [
       "他",
@@ -4189,7 +4189,7 @@
   {
     "id": "s:l1:core:039",
     "zh": "我去过北京。",
-    "pinyin": "Wǒ qùguo Běijīng.",
+    "pinyin": "Wǒ qù guo Běijīng.",
     "vi": "Tôi đã từng đến Bắc Kinh.",
     "words": [
       "我",
@@ -4201,7 +4201,7 @@
   {
     "id": "s:l1:core:040",
     "zh": "你坐过飞机吗？",
-    "pinyin": "Nǐ zuòguo fēijī ma?",
+    "pinyin": "Nǐ zuò guo fēijī ma?",
     "vi": "Bạn đã từng đi máy bay chưa?",
     "words": [
       "你",
@@ -4214,7 +4214,7 @@
   {
     "id": "s:l1:core:041",
     "zh": "我没去过中国。",
-    "pinyin": "Wǒ méi qùguo Zhōngguó.",
+    "pinyin": "Wǒ méi qù guo Zhōngguó.",
     "vi": "Tôi chưa từng đến Trung Quốc.",
     "words": [
       "我",
@@ -4227,7 +4227,7 @@
   {
     "id": "s:l1:core:042",
     "zh": "他来过我家两次。",
-    "pinyin": "Tā láiguo wǒ jiā liǎng cì.",
+    "pinyin": "Tā lái guo wǒ jiā liǎng cì.",
     "vi": "Anh ấy đã từng đến nhà tôi hai lần.",
     "words": [
       "他",
