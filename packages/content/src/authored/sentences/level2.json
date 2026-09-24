@@ -7734,5 +7734,230 @@
       "很",
       "小"
     ]
+  },
+  {
+    "id": "s:l2:fill:168",
+    "zh": "我去机场接朋友。",
+    "pinyin": "Wǒ qù jīchǎng jiē péngyou.",
+    "vi": "Tôi ra sân bay đón bạn.",
+    "words": [
+      "我",
+      "去",
+      "机场",
+      "接",
+      "朋友"
+    ]
+  },
+  {
+    "id": "s:l2:fill:169",
+    "zh": "这个孩子很可爱。",
+    "pinyin": "Zhège háizi hěn kě'ài.",
+    "vi": "Đứa bé này rất dễ thương.",
+    "words": [
+      "这",
+      "个",
+      "孩子",
+      "很",
+      "可爱"
+    ]
+  },
+  {
+    "id": "s:l2:fill:170",
+    "zh": "他点头说好。",
+    "pinyin": "Tā diǎntóu shuō hǎo.",
+    "vi": "Anh ấy gật đầu đồng ý.",
+    "words": [
+      "他",
+      "点头",
+      "说",
+      "好"
+    ]
+  },
+  {
+    "id": "s:l2:fill:171",
+    "zh": "他们的观点不一样。",
+    "pinyin": "Tāmen de guāndiǎn bù yíyàng.",
+    "vi": "Quan điểm của họ khác nhau.",
+    "words": [
+      "他们",
+      "的",
+      "观点",
+      "不",
+      "一样"
+    ]
+  },
+  {
+    "id": "s:l2:fill:172",
+    "zh": "这两个地方有相同的特点。",
+    "pinyin": "Zhè liǎng ge dìfang yǒu xiāngtóng de tèdiǎn.",
+    "vi": "Hai nơi này có đặc điểm giống nhau.",
+    "words": [
+      "这",
+      "两",
+      "个",
+      "地方",
+      "有",
+      "相同",
+      "的",
+      "特点"
+    ]
+  },
+  {
+    "id": "s:l2:fill:173",
+    "zh": "我可以用信用卡吗？",
+    "pinyin": "Wǒ kěyǐ yòng xìnyòngkǎ ma?",
+    "vi": "Tôi dùng thẻ tín dụng được không?",
+    "words": [
+      "我",
+      "可以",
+      "用",
+      "信用卡",
+      "吗"
+    ]
+  },
+  {
+    "id": "s:l2:fill:174",
+    "zh": "这样做有好处，也有坏处。",
+    "pinyin": "Zhèyàng zuò yǒu hǎochu, yě yǒu huàichu.",
+    "vi": "Làm như vậy có cái lợi, cũng có cái hại.",
+    "words": [
+      "这样",
+      "做",
+      "有",
+      "好处",
+      "也",
+      "有",
+      "坏处"
+    ]
+  },
+  {
+    "id": "s:l2:fill:175",
+    "zh": "他是我真正的朋友。",
+    "pinyin": "Tā shì wǒ zhēnzhèng de péngyou.",
+    "vi": "Anh ấy là người bạn thật sự của tôi.",
+    "words": [
+      "他",
+      "是",
+      "我",
+      "真正",
+      "的",
+      "朋友"
+    ]
+  },
+  {
+    "id": "s:l2:fill:176",
+    "zh": "我刚刚见到他。",
+    "pinyin": "Wǒ gānggang jiàndào tā.",
+    "vi": "Tôi vừa mới gặp anh ấy.",
+    "words": [
+      "我",
+      "刚刚",
+      "见到",
+      "他"
+    ]
+  },
+  {
+    "id": "s:l2:fill:177",
+    "zh": "我要一斤肉。",
+    "pinyin": "Wǒ yào yì jīn ròu.",
+    "vi": "Cho tôi nửa cân thịt.",
+    "words": [
+      "我",
+      "要",
+      "一",
+      "斤",
+      "肉"
+    ]
+  },
+  {
+    "id": "s:l2:fill:178",
+    "zh": "我一般早上洗澡。",
+    "pinyin": "Wǒ yìbān zǎoshang xǐzǎo.",
+    "vi": "Tôi thường tắm vào buổi sáng.",
+    "words": [
+      "我",
+      "一般",
+      "早上",
+      "洗澡"
+    ]
+  },
+  {
+    "id": "s:l2:fill:179",
+    "zh": "快点儿，车要开了！",
+    "pinyin": "Kuàidiǎnr, chē yào kāi le!",
+    "vi": "Nhanh lên, xe sắp chạy rồi!",
+    "words": [
+      "快点儿",
+      "车",
+      "要",
+      "开",
+      "了"
+    ]
+  },
+  {
+    "id": "s:l2:fill:180",
+    "zh": "这里不能停车。",
+    "pinyin": "Zhèlǐ bù néng tíngchē.",
+    "vi": "Ở đây không được đỗ xe.",
+    "words": [
+      "这里",
+      "不",
+      "能",
+      "停车"
+    ]
+  },
+  {
+    "id": "s:l2:fill:181",
+    "zh": "我坐公交车上班。",
+    "pinyin": "Wǒ zuò gōngjiāochē shàngbān.",
+    "vi": "Tôi đi làm bằng xe buýt.",
+    "words": [
+      "我",
+      "坐",
+      "公交车",
+      "上班"
+    ]
+  },
+  {
+    "id": "s:l2:fill:182",
+    "zh": "我们先坐地铁，接着换公交车。",
+    "pinyin": "Wǒmen xiān zuò dìtiě, jiēzhe huàn gōngjiāochē.",
+    "vi": "Mình đi tàu điện ngầm trước, sau đó đổi sang xe buýt.",
+    "words": [
+      "我们",
+      "先",
+      "坐",
+      "地铁",
+      "接着",
+      "换",
+      "公交车"
+    ]
+  },
+  {
+    "id": "s:l2:fill:183",
+    "zh": "这是这次活动的重点。",
+    "pinyin": "Zhè shì zhè cì huódòng de zhòngdiǎn.",
+    "vi": "Đây là trọng tâm của hoạt động lần này.",
+    "words": [
+      "这",
+      "是",
+      "这",
+      "次",
+      "活动",
+      "的",
+      "重点"
+    ]
+  },
+  {
+    "id": "s:l2:fill:184",
+    "zh": "我喜欢打排球。",
+    "pinyin": "Wǒ xǐhuan dǎ páiqiú.",
+    "vi": "Tôi thích chơi bóng chuyền.",
+    "words": [
+      "我",
+      "喜欢",
+      "打",
+      "排球"
+    ]
   }
 ]
