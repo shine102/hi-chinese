@@ -65,9 +65,18 @@ Trong `packages/content/src/pipeline/retheme.ts`:
 - `DraftUnit` thêm `tier: 1 | 2 | 3` (lấy từ `tiers[broad]` khi cắt unit;
   broad không có tier → throw).
 - Hằng số `TIER_PENALTY = { 1: 0, 2: 0.15, 3: 0.35 }`.
-- Khóa xếp của unit = `rank / N + TIER_PENALTY[tier]`, trong đó `rank` là hạng
-  0-based của unit khi sắp theo `score` tăng dần (hòa thì giữ thứ tự ổn định
-  theo thứ tự subtheme trong file), `N` = số unit của level.
+- Khóa xếp của unit = `j / n_broad + 0.1 × rank / N + TIER_PENALTY[tier]`:
+  - `j` = thứ tự 0-based của unit trong chủ đề lớn của nó (sắp theo `score` tăng
+    dần), `n_broad` = số unit của chủ đề lớn đó → mỗi chủ đề lớn được rải đều
+    trong khoảng của tier, unit đầu của mọi chủ đề đứng sớm;
+  - `rank` = hạng 0-based của unit theo `score` trong cả level (hòa giữ thứ tự
+    subtheme trong file), `N` = số unit của level → phân xử giữa các unit cùng
+    `j / n_broad`, từ phổ biến trước.
+- Mô phỏng trên dữ liệu hiện tại (2026-09-24): quý đầu 0 unit tier 3; unit đầu
+  của mọi broad tier 1 nằm trong quý đầu (L2: Mua Sắm 3, Trường Học 12, Ăn Uống
+  13); vị trí trung bình tier 1/2/3 = L2 24/34/43, L3 28/44/57. Chỉ sắp theo
+  `rank + penalty` (không rải theo broad) để Ăn Uống/Trường Học L2 ở vị trí
+  ~45-55 nên bị loại.
 - `orderUnits` sắp theo khóa này thay cho `score`; phần còn lại giữ nguyên
   (không 2 unit liền nhau cùng `broad` khi còn lựa chọn; luật broad áp đảo).
 - Các bước sau (`nameUnits`, `spreadFunctionWords`, `fixCharOrder`) không đổi.
@@ -94,7 +103,8 @@ Thêm vào `packages/content/test/retheme-data.test.ts`, cho L2 và L3, tier c�
 unit lấy từ `tiers[broad]` với `broad` = tiền tố trước `:` của title:
 
 - vị trí trung bình (index 0-based) của unit tier 1 < tier 2 < tier 3;
-- trong `ceil(N / 4)` unit đầu, số unit tier 3 ≤ `floor(0.15 × ceil(N / 4))`.
+- trong `ceil(N / 4)` unit đầu, số unit tier 3 ≤ `floor(0.15 × ceil(N / 4))`;
+- unit đầu tiên của mỗi broad tier 1 nằm trong `ceil(N / 2)` unit đầu.
 
 `themes-data.test.ts`: `tiers` phủ đúng tập `broad` của level, giá trị ∈ {1,2,3}.
 
@@ -124,11 +134,15 @@ unit lấy từ `tiers[broad]` với `broad` = tiền tố trước `:` của ti
 3. **Cách đọc sai trong từ điển**: khi cách đọc của entry sai (vd thanh nhẹ không chuẩn),
    sửa bằng `packages/content/src/authored/pinyin-overrides.json`, không sửa
    câu cho khớp cách đọc sai.
-4. **Ranh giới từ**: token là từ nhiều chữ trong khóa → viết liền một từ pinyin
-   (在家 → `zàijiā`); hai token 在 + 家 → `zài jiā`. Ngoại lệ đã có: 这个
-   `zhège`, 那个 `nàge`. Test kiểm tra: không có từ pinyin nào chứa âm tiết của
-   hai token mà không phải cặp ngoại lệ, và không token nhiều chữ nào bị tách.
-
+4. **Ranh giới từ**:
+   - Token 2 âm tiết viết liền một từ pinyin (在家 → `zàijiā`, 吃饭 → `chīfàn`),
+     trừ `不太` `bú tài`, `有人` `yǒu rén` (quy ước đã có). Token ≥3 âm tiết
+     được tách (打电话 `dǎ diànhuà`, 越来越 `yuè lái yuè`).
+   - Hai token khác nhau không viết dính vào một từ pinyin, trừ: cặp 这个
+     `zhège` / 那个 `nàge` / 哪个 `nǎge`; hậu tố 们 (`háizimen`); hai số liền
+     nhau (`sānshí`, `yìbǎi`); token lặp (`wènwen`). Trợ từ 了/着/过 viết tách
+     (`qù guo`, không `qùguo`).
+   - Lỗi: `split` (token 2 âm tiết bị tách), `join` (hai token dính).
 Thông báo lỗi: `<id> <loại> <token>: expected … got …`.
 
 Sửa dữ liệu cho đến khi test pass; câu sửa giữ nguyên `zh`/`words` trừ khi
@@ -160,11 +174,13 @@ build 0 cảnh báo dồn.
   Lỗi từ `liveQuery` → set `error` (vẫn `console.error`); `retry()` xóa `error`
   và đăng ký lại subscription.
 - Mọi nơi gọi (`UnitScreen`, `PathScreen`, `LessonFlow`) cập nhật: khi có
-  `error` hiện khối lỗi dùng chung (component mới `QueryError`, chữ tiếng Việt:
-  "Không đọc được dữ liệu trên máy." + nút "Thử lại"), thay vì loading mãi.
+  `error` hiện `InlineError` hiện có (cùng kiểu với lỗi tải content) với thông
+  điệp `"Could not read saved progress on this device."` và nút Retry gọi
+  `retry`, thay vì loading mãi. Chữ tiếng Anh vì toàn bộ UI chrome hiện là tiếng
+  Anh (`InlineError`, "This unit is locked"…); đổi ngôn ngữ UI ngoài phạm vi.
 - Test (vitest + testing-library, như test web hiện có): querier reject → hook
   trả `error`; `retry` với querier thành công → `data` có giá trị, `error`
-  undefined; một màn hình render `QueryError` khi hook lỗi.
+  undefined; `UnitScreen` hiện alert + Retry khi đọc `unitProgress` lỗi.
 
 ## 6. Content build được track
 
@@ -192,8 +208,9 @@ lesson 1 câu, độ phủ theo từ).
 
 ## 9. Kiểm tra
 
-- Unit test `retheme.ts`: khóa tier đẩy unit tier 3 điểm thấp ra sau unit tier 1
-  điểm cao hơn một chút; luật không liền broad vẫn giữ; broad thiếu tier → throw.
+- Unit test `retheme.ts`: khóa tier đẩy unit tier 3 điểm thấp ra sau unit tier 1;
+  unit đầu của một broad tier 1 điểm cao vẫn đứng trước unit thứ hai của broad
+  tier 1 điểm thấp; luật không liền broad vẫn giữ; broad thiếu tier → throw.
 - Data test mới/đổi: `sentence-pinyin-data`, `retheme-data` (tier + dồn mọi
   level), `themes-data` (tiers).
 - Build: 0 lỗi placement/validate, 0 cảnh báo dồn, 0 curriculum-order violation;
