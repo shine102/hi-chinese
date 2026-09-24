@@ -120,6 +120,10 @@ describe('spreadFunctionWords', () => {
     expect(input[0]!.words).toEqual(['x']);
   });
 
+  it('throws on a pin for a word that is not in the level', () => {
+    expect(() => spreadFunctionWords(units(), [], { nope: 1 })).toThrow(/not a word of this level/);
+  });
+
   it('throws on a pin outside the unit range', () => {
     expect(() => spreadFunctionWords(units(), [], { x: 4 })).toThrow(/out of range/);
   });

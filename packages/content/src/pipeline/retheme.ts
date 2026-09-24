@@ -110,6 +110,10 @@ export function spreadFunctionWords(
   pins: Readonly<Record<string, number>> = {},
 ): DraftUnit[] {
   const pinned = new Set(Object.keys(pins));
+  const allWords = new Set<string>();
+  for (const u of units) for (const w of u.words) allWords.add(w);
+  for (const w of fnWords) allWords.add(w.simplified);
+
   const out = units.map((u) => ({ ...u, words: u.words.filter((w) => !pinned.has(w)) }));
   const spread = fnWords
     .filter((w) => !pinned.has(w.simplified))
@@ -118,6 +122,7 @@ export function spreadFunctionWords(
     out[Math.floor((i * out.length) / spread.length)]!.words.push(w.simplified);
   });
   for (const [word, k] of Object.entries(pins)) {
+    if (!allWords.has(word)) throw new Error(`pin ${word}: not a word of this level`);
     const unit = out[k - 1];
     if (!unit) throw new Error(`pin ${word} → unit ${k} out of range (1..${out.length})`);
     unit.words.push(word);
