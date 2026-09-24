@@ -38,7 +38,7 @@
     {
       "id": "relationship",
       "broad": "Gia Đình & Quan Hệ",
-      "title": "Gia Đình & Quan Hệ: Yêu Đương & Hôn Nhân"
+      "title": "Gia Đình & Quan Hệ: Quan Hệ, Tình Yêu & Hôn Nhân"
     },
     {
       "id": "visits",
@@ -178,7 +178,7 @@
     {
       "id": "easy-hard",
       "broad": "Miêu Tả",
-      "title": "Miêu Tả: Dễ, Khó & Mức Độ"
+      "title": "Miêu Tả: Dễ, Khó & Phức Tạp"
     },
     {
       "id": "time-now",
@@ -293,7 +293,7 @@
     {
       "id": "household",
       "broad": "Nhà Cửa",
-      "title": "Nhà Cửa: Việc Nhà Hằng Ngày"
+      "title": "Nhà Cửa: Treo, Đẩy, Mở & Sắp Xếp Đồ"
     },
     {
       "id": "protect",
@@ -418,14 +418,14 @@
     {
       "id": "numbers",
       "broad": "Số Lượng",
-      "title": "Số Lượng: Con Số, Tỉ Lệ & Dồi Dào"
+      "title": "Số Lượng: Tính Toán, Tỉ Lệ & Dồi Dào"
     }
   ],
   "words": {
     "时": "time-now",
     "需要": "want-need",
     "开始": "duration",
-    "种": "farm",
+    "种": "classify",
     "希望": "want-need",
     "发生": "situation",
     "世界": "travel",
@@ -556,7 +556,7 @@
     "紧张": "fear",
     "挂": "household",
     "事实": "evidence",
-    "基本": "easy-hard",
+    "基本": "school-levels",
     "类": "classify",
     "专家": "science",
     "跳": "sport-types",
@@ -1080,7 +1080,7 @@
     "设立": "trade",
     "预防": "health",
     "写作": "reading",
-    "危害": "protect",
+    "危害": "accidents",
     "手续": "travel-docs",
     "外交": "diplomacy",
     "本事": "skills",
