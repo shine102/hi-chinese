@@ -101,7 +101,7 @@
     "pattern": "..., 因此 + 结果",
     "explanation": "因此 (yīncǐ) nghĩa là \"do đó, vì vậy\" — một cách nói trang trọng hơn, mang tính văn viết thay cho 所以. Nó nối một lý do đã nêu với một kết luận là kết quả của nó, và thường xuất hiện trong bài luận, bản tin, và các lời giải thích.",
     "level": 3,
-    "examples": ["s:l3:045", "s:l3:046", "s:l3:047"]
+    "examples": ["s:l3:045", "s:l3:046", "s:l3:047", "s:l3:fix:003"]
   },
   {
     "id": "g:cengjing-once",
@@ -157,7 +157,7 @@
     "pattern": "原因 + 造成 + (不好的)结果",
     "explanation": "造成 (zàochéng) nghĩa là \"gây ra, dẫn đến\" — thường theo sau bởi một kết quả tiêu cực hoặc nghiêm trọng, như một vấn đề, tổn thất, hoặc thương tích. Đây là một động từ trang trọng, thường dùng trong bản tin và lời giải thích.",
     "level": 3,
-    "examples": ["s:l3:068", "s:l3:069", "s:l3:070"]
+    "examples": ["s:l3:068", "s:l3:069", "s:l3:070", "s:l3:fix:012"]
   },
   {
     "id": "g:youyu-formal-cause",
@@ -197,7 +197,7 @@
     "pattern": "仅(仅) + 数量/范围",
     "explanation": "仅 (jǐn) hoặc dạng nhân đôi 仅仅 (jǐnjǐn) nghĩa là \"chỉ, chỉ có\" — một cách nói trang trọng để giới hạn một con số hoặc phạm vi, tương tự 只 nhưng thiên về văn viết hơn. Nó thường đứng ngay trước con số hoặc sự việc bị giới hạn.",
     "level": 3,
-    "examples": ["s:l3:084", "s:l3:085", "s:l3:086"]
+    "examples": ["s:l3:084", "s:l3:085", "s:l3:086", "s:l3:fix:005"]
   },
   {
     "id": "g:benlai-originally",
@@ -229,7 +229,7 @@
     "pattern": "更加 + 形容词/动词",
     "explanation": "更加 (gèngjiā) nghĩa là \"càng thêm, hơn nữa\" — một phiên bản trang trọng, mang tính văn viết hơn của 更, dùng để thể hiện sự tăng lên so với trước đó. Nó đứng ngay trước tính từ hoặc động từ được nhấn mạnh.",
     "level": 3,
-    "examples": ["s:l3:097", "s:l3:098", "s:l3:099"]
+    "examples": ["s:l3:097", "s:l3:098", "s:l3:099", "s:l3:fix:009"]
   },
   {
     "id": "g:conglai-never",
@@ -317,7 +317,7 @@
     "pattern": "动词 + 坏 (+ 了)",
     "explanation": "坏 (huài) đứng sau động từ cho thấy hành động đã làm hỏng hoặc phá hủy điều gì đó — \"làm hỏng, làm vỡ\" như một kết quả. Đây là một bổ ngữ kết quả điển hình, luôn gắn ngay sau động từ.",
     "level": 3,
-    "examples": ["s:l3:130", "s:l3:131", "s:l3:132"]
+    "examples": ["s:l3:130", "s:l3:131", "s:l3:132", "s:l3:fix:015"]
   },
   {
     "id": "g:potential-complement-liao",
@@ -325,7 +325,7 @@
     "pattern": "动词 + 得/不 + 了",
     "explanation": "得 hoặc 不 đứng giữa động từ và 了 dùng để hỏi hoặc khẳng định một hành động có thể hoàn thành được hay không — \"có thể/không thể làm xong điều gì đó\". 得了 (de liǎo) nghĩa là có thể, còn 不了 (bu liǎo) nghĩa là không thể, thường vì một giới hạn về vật lý hoặc thực tế.",
     "level": 3,
-    "examples": ["s:l3:133", "s:l3:134", "s:l3:135"]
+    "examples": ["s:l3:133", "s:l3:134", "s:l3:135", "s:l3:fix:020", "s:l3:fix:021"]
   },
   {
     "id": "g:you-agent",
@@ -333,7 +333,7 @@
     "pattern": "事情 + 由 + 人 + 负责/决定/做",
     "explanation": "由 (yóu) đánh dấu ai là người chịu trách nhiệm về điều gì đó hoặc ai sẽ thực hiện nó — nghĩa \"do\" theo nghĩa giao việc. Nó đứng ngay trước người phụ trách.",
     "level": 3,
-    "examples": ["s:l3:136", "s:l3:137", "s:l3:138"]
+    "examples": ["s:l3:136", "s:l3:137", "s:l3:138", "s:l3:fix:002"]
   },
   {
     "id": "g:bujin-haiye",
@@ -349,7 +349,7 @@
     "pattern": "(主语) + 简直 + 形容词/动词短语",
     "explanation": "简直 (jiǎnzhí) nghĩa là \"quả thật, đơn giản là, gần như\" — dùng để phóng đại, cho thấy điều gì đó gần như khó tin. Nó đứng ngay trước tính từ hoặc động từ mà nó nhấn mạnh, thường đi kèm 了 ở cuối câu.",
     "level": 3,
-    "examples": ["s:l3:142", "s:l3:143", "s:l3:144"]
+    "examples": ["s:l3:142", "s:l3:143", "s:l3:144", "s:l3:fix:010"]
   },
   {
     "id": "g:fanzheng-anyway",
@@ -357,7 +357,7 @@
     "pattern": "反正 + 主语 + 动词短语",
     "explanation": "反正 (fǎnzhèng) nghĩa là \"dù sao thì, trong mọi trường hợp\" — cho thấy dù chuyện gì xảy ra, kết quả hoặc thái độ vẫn không đổi. Nó thường dùng trong văn nói thân mật để gạt bỏ các khả năng khác.",
     "level": 3,
-    "examples": ["s:l3:145", "s:l3:146", "s:l3:147"]
+    "examples": ["s:l3:145", "s:l3:146", "s:l3:147", "s:l3:fix:004"]
   },
   {
     "id": "g:kongpa-afraid",
@@ -453,7 +453,7 @@
     "pattern": "受事 + 叫/让 + 施事 + 动词 + 其他成分",
     "explanation": "Trong văn nói thân mật, 叫 (jiào) và 让 (ràng) có thể hoạt động giống hệt 被 để đánh dấu câu bị động — chủ ngữ chịu tác động từ ai đó khác. Cách nói này phổ biến trong giao tiếp hằng ngày, trong khi 被 nghe trang trọng hoặc mang tính văn viết hơn.",
     "level": 3,
-    "examples": ["s:l3:181", "s:l3:182", "s:l3:183"]
+    "examples": ["s:l3:181", "s:l3:182", "s:l3:183", "s:l3:fix:022", "s:l3:fix:023"]
   },
   {
     "id": "g:potential-complement-xia",
@@ -461,7 +461,7 @@
     "pattern": "动词 + 得/不 + 下",
     "explanation": "得 hoặc 不 cộng với 下 sau động từ dùng để hỏi xem có đủ chỗ hoặc sức chứa hay không — \"vừa, chứa được\". 得下 (de xià) nghĩa là có đủ chỗ, còn 不下 (bu xià) nghĩa là không đủ.",
     "level": 3,
-    "examples": ["s:l3:184", "s:l3:185", "s:l3:186"]
+    "examples": ["s:l3:184", "s:l3:185", "s:l3:186", "s:l3:fix:016"]
   },
   {
     "id": "g:jiao-comparative",
@@ -469,7 +469,7 @@
     "pattern": "较 + 形容词",
     "explanation": "较 (jiào) là cách nói trang trọng, mang tính văn viết của \"tương đối, so ra\" — tương tự 比较 nhưng ngắn gọn hơn và phổ biến hơn trong báo cáo hoặc văn viết. Nó đứng ngay trước một tính từ.",
     "level": 3,
-    "examples": ["s:l3:187", "s:l3:188", "s:l3:189"]
+    "examples": ["s:l3:187", "s:l3:188", "s:l3:189", "s:l3:fix:008"]
   },
   {
     "id": "g:shizhong-throughout",
@@ -549,7 +549,7 @@
     "pattern": "动词 + 住",
     "explanation": "住 (zhù) đứng sau động từ cho thấy hành động khiến điều gì đó ở yên tại chỗ hoặc cố định — \"nắm chặt, ghi nhớ chắc, dừng lại\". Đây là một bổ ngữ kết quả phổ biến, xuất hiện trong các từ như 抓住 (nắm chặt) và 记住 (ghi nhớ chắc).",
     "level": 3,
-    "examples": ["s:l3:217", "s:l3:218", "s:l3:219"]
+    "examples": ["s:l3:217", "s:l3:218", "s:l3:219", "s:l3:fix:017"]
   },
   {
     "id": "g:v-qilai-inchoative",
@@ -557,7 +557,7 @@
     "pattern": "形容词/动词 + 起来",
     "explanation": "起来 (qǐlái) sau một tính từ hoặc động từ có thể đánh dấu sự bắt đầu của một trạng thái mới — \"bắt đầu trở nên, bắt đầu làm gì đó\". Khác với nghĩa đen là \"đứng dậy\", ở đây nó thể hiện một sự thay đổi bắt đầu và tiếp diễn.",
     "level": 3,
-    "examples": ["s:l3:220", "s:l3:221", "s:l3:222"]
+    "examples": ["s:l3:220", "s:l3:221", "s:l3:222", "s:l3:fix:024", "s:l3:fix:025"]
   },
   {
     "id": "g:yue-yue-parallel",
@@ -565,15 +565,7 @@
     "pattern": "越 + A，越 + B",
     "explanation": "越...越... (yuè...yuè...) nối hai sự thay đổi xảy ra song song — \"càng A thì càng B\". Cả hai mệnh đề đều dùng 越 trước động từ hoặc tính từ, cho thấy chúng cùng tăng hoặc cùng giảm.",
     "level": 3,
-    "examples": ["s:l3:223", "s:l3:224", "s:l3:225"]
-  },
-  {
-    "id": "g:meiyou-comparison",
-    "title": "So sánh phủ định với 没有",
-    "pattern": "A + 没有 + B + (这么/那么) + 形容词",
-    "explanation": "没有 (méiyǒu) có thể biến một câu so sánh thành phủ định — \"A không [tính từ] bằng B\". Đây là một cách thay thế phổ biến cho 不比, thường đi kèm 这么 hoặc 那么 trước tính từ.",
-    "level": 3,
-    "examples": ["s:l3:226", "s:l3:227", "s:l3:228"]
+    "examples": ["s:l3:223", "s:l3:224", "s:l3:225", "s:l3:fix:018"]
   },
   {
     "id": "g:yibian-yibian",
@@ -581,7 +573,7 @@
     "pattern": "一边 + 动词1，一边 + 动词2",
     "explanation": "一边...一边... (yìbiān...yìbiān...) thể hiện hai hành động xảy ra cùng lúc, do cùng một người thực hiện — \"vừa làm A vừa làm B\". Cả hai động từ đều đứng ngay sau 一边.",
     "level": 3,
-    "examples": ["s:l3:229", "s:l3:230", "s:l3:231"]
+    "examples": ["s:l3:229", "s:l3:230", "s:l3:231", "s:l3:fix:026", "s:l3:fix:027"]
   },
   {
     "id": "g:you-you-both",
@@ -589,15 +581,7 @@
     "pattern": "又 + 形容词1，又 + 形容词2",
     "explanation": "又...又... (yòu...yòu...) nối hai đặc điểm hoặc hành động cùng đúng vào một lúc — \"vừa A vừa B\". Nó thường dùng với hai tính từ miêu tả cùng một chủ ngữ.",
     "level": 3,
-    "examples": ["s:l3:232", "s:l3:233", "s:l3:234"]
-  },
-  {
-    "id": "g:yi-jiu-assoonas",
-    "title": "Vừa... là... ngay với 一...就...",
-    "pattern": "一 + 动词1，就 + 动词2",
-    "explanation": "一...就... (yī...jiù...) nối hai hành động xảy ra ngay sau nhau — \"vừa A xong là B ngay\". Động từ thứ nhất theo sau 一, còn động từ thứ hai theo sau 就.",
-    "level": 3,
-    "examples": ["s:l3:235", "s:l3:236", "s:l3:237"]
+    "examples": ["s:l3:232", "s:l3:233", "s:l3:234", "s:l3:fix:028", "s:l3:fix:029"]
   },
   {
     "id": "g:de-relative-clause",
@@ -605,7 +589,7 @@
     "pattern": "动词短语 + 的 + 名词",
     "explanation": "的 (de) có thể biến cả một cụm động từ thành lời miêu tả cho một danh từ, giống như mệnh đề quan hệ trong tiếng Việt — \"cuốn sách [mà] tôi mua\", \"người [đang] hát\". Cụm miêu tả đứng trước, sau đó đến 的, rồi mới đến danh từ mà nó bổ nghĩa.",
     "level": 3,
-    "examples": ["s:l3:238", "s:l3:239", "s:l3:240", "s:l3:241", "s:l3:242"]
+    "examples": ["s:l3:238", "s:l3:239", "s:l3:240", "s:l3:241", "s:l3:242", "s:l3:fix:030", "s:l3:fix:031"]
   },
   {
     "id": "g:suo-nominalizer",
@@ -613,7 +597,7 @@
     "pattern": "(主语) + 所 + 动词 + 的 + 名词",
     "explanation": "所 (suǒ) có thể đứng ngay trước động từ trong tiếng Trung trang trọng hoặc văn viết, biến cụm động từ thành thứ gì đó giống như \"điều mà [chủ ngữ] làm\". Nó thường được theo sau bởi 的 và một danh từ, và chủ yếu dùng với các động từ hai âm tiết như 说, 做, 想, 知道.",
     "level": 3,
-    "examples": ["s:l3:243", "s:l3:244", "s:l3:245"]
+    "examples": ["s:l3:243", "s:l3:244", "s:l3:245", "s:l3:fix:001"]
   },
   {
     "id": "g:zhengzheng-whole",
@@ -645,7 +629,7 @@
     "pattern": "一方面 + A，另一方面 + B",
     "explanation": "一方面...另一方面... (yī fāngmiàn...lìng yī fāngmiàn...) trình bày hai mặt của một tình huống — \"một mặt..., mặt khác...\". Nó phổ biến trong các lời giải thích trang trọng cân nhắc nhiều yếu tố khác nhau.",
     "level": 3,
-    "examples": ["s:l3:255", "s:l3:256", "s:l3:257"]
+    "examples": ["s:l3:255", "s:l3:256", "s:l3:257", "s:l3:fix:007"]
   },
   {
     "id": "g:jianjue-resolutely",
@@ -653,7 +637,7 @@
     "pattern": "(主语) + 坚决 + 动词短语",
     "explanation": "坚决 (jiānjué) nghĩa là \"kiên quyết, cương quyết\" — miêu tả một hành động hoặc quyết định được đưa ra với sự quyết tâm mạnh mẽ, không lay chuyển. Nó đứng ngay trước động từ.",
     "level": 3,
-    "examples": ["s:l3:258", "s:l3:259", "s:l3:260"]
+    "examples": ["s:l3:258", "s:l3:259", "s:l3:260", "s:l3:fix:013"]
   },
   {
     "id": "g:biran-inevitably",
@@ -757,7 +741,7 @@
     "pattern": "大约 + 数量",
     "explanation": "大约 (dàyuē) nghĩa là \"xấp xỉ, khoảng chừng\" — dùng trước một con số hoặc thời gian để cho thấy đó là một ước tính, không chính xác tuyệt đối. Nó tương tự 大概 nhưng phổ biến hơn một chút khi đứng ngay trước những con số cụ thể.",
     "level": 3,
-    "examples": ["s:l3:298", "s:l3:299", "s:l3:300"]
+    "examples": ["s:l3:298", "s:l3:299", "s:l3:300", "s:l3:fix:011"]
   },
   {
     "id": "g:qianwang-formal-goto",
@@ -797,7 +781,7 @@
     "pattern": "首先 + 第一点，其次 + 第二点，最后 + 第三点",
     "explanation": "Chuỗi ba phần này trình bày các bước rõ ràng: 首先 (shǒuxiān) cho điểm đầu tiên, 其次 (qícì) cho điểm tiếp theo, và 最后 (zuìhòu) cho điểm cuối cùng. Nó rất phổ biến trong bài phát biểu, hướng dẫn, và bài luận.",
     "level": 3,
-    "examples": ["s:l3:313", "s:l3:314", "s:l3:315"]
+    "examples": ["s:l3:313", "s:l3:314", "s:l3:315", "s:l3:fix:006", "s:l3:fix:032"]
   },
   {
     "id": "g:zijue-consciously",
@@ -813,7 +797,7 @@
     "pattern": "动词 + 开",
     "explanation": "开 (kāi) đứng sau động từ cho thấy điều gì đó mở ra hoặc tách rời — \"đẩy mở, đi khỏi, tách ra\". Đây là một bổ ngữ kết quả phổ biến, như trong 推开 (đẩy mở), 走开 (tránh ra, đi chỗ khác), và 分开 (tách rời).",
     "level": 3,
-    "examples": ["s:l3:319", "s:l3:320", "s:l3:321"]
+    "examples": ["s:l3:319", "s:l3:320", "s:l3:321", "s:l3:fix:014"]
   },
   {
     "id": "g:zongshi-always",
@@ -837,6 +821,6 @@
     "pattern": "动词 + 出",
     "explanation": "出 (chū) đứng sau động từ cho thấy điều gì đó xuất hiện ra hoặc được bộc lộ qua hành động — \"nghĩ ra, chỉ ra, lấy ra\". Đây là một bổ ngữ kết quả rất linh hoạt, xuất hiện trong các từ như 找出, 拿出, 提出, và 指出.",
     "level": 3,
-    "examples": ["s:l3:329", "s:l3:330", "s:l3:331", "s:l3:332"]
+    "examples": ["s:l3:329", "s:l3:330", "s:l3:331", "s:l3:332", "s:l3:fix:019"]
   }
 ]
