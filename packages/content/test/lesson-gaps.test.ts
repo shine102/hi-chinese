@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { lessonSentenceCounts } from '../src/pipeline/lesson-gaps.js';
+import { lessonSentenceCounts, uncoveredWords } from '../src/pipeline/lesson-gaps.js';
 
 const ids = (n: number) => Array.from({ length: n }, (_, i) => `w:${i}`);
 
@@ -27,5 +27,30 @@ describe('lessonSentenceCounts', () => {
 
   it('treats an empty unit as one lesson', () => {
     expect(lessonSentenceCounts([], [])).toEqual([0]);
+  });
+});
+
+describe('lessonSentenceCounts with minWords', () => {
+  it('counts only sentences with at least minWords words', () => {
+    const counts = lessonSentenceCounts(
+      ids(8),
+      [
+        { wordIds: ['w:0', 'w:1'] },
+        { wordIds: ['w:0', 'w:1', 'w:2'] },
+        { wordIds: ['w:4', 'w:5', 'w:6', 'w:7'] },
+      ],
+      3,
+    );
+    expect(counts).toEqual([1, 1]);
+  });
+});
+
+describe('uncoveredWords', () => {
+  it('returns the unit words absent from every sentence, in unit order', () => {
+    expect(uncoveredWords(ids(5), [{ wordIds: ['w:1', 'w:x'] }, { wordIds: ['w:3'] }])).toEqual([
+      'w:0',
+      'w:2',
+      'w:4',
+    ]);
   });
 });
