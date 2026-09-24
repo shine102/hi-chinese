@@ -11585,7 +11585,7 @@
   {
     "id": "s:l2:fill:447",
     "zh": "你能举一个例子吗？",
-    "pinyin": "Nǐ néng jǔ yí gè lìzi ma?",
+    "pinyin": "Nǐ néng jǔ yí ge lìzi ma?",
     "vi": "Bạn có thể nêu một ví dụ không?",
     "words": [
       "你",
@@ -12089,16 +12089,15 @@
   },
   {
     "id": "s:l2:fill:483",
-    "zh": "我们小组有五个人。",
-    "pinyin": "Wǒmen xiǎozǔ yǒu wǔ gè rén.",
-    "vi": "Nhóm chúng tôi có năm người.",
+    "zh": "我们小组一起做作业。",
+    "pinyin": "Wǒmen xiǎozǔ yìqǐ zuò zuòyè.",
+    "vi": "Nhóm chúng tôi cùng nhau làm bài tập.",
     "words": [
       "我们",
       "小组",
-      "有",
-      "五",
-      "个",
-      "人"
+      "一起",
+      "做",
+      "作业"
     ]
   },
   {
@@ -12452,7 +12451,7 @@
   {
     "id": "s:l2:fill:509",
     "zh": "这两个你选哪个？",
-    "pinyin": "Zhè liǎng gè nǐ xuǎn nǎge?",
+    "pinyin": "Zhè liǎng ge nǐ xuǎn nǎge?",
     "vi": "Hai cái này bạn chọn cái nào?",
     "words": [
       "这",
@@ -12495,7 +12494,7 @@
   {
     "id": "s:l2:fill:512",
     "zh": "大家讨论以后，得出了一个结果。",
-    "pinyin": "Dàjiā tǎolùn yǐhòu, déchū le yí gè jiéguǒ.",
+    "pinyin": "Dàjiā tǎolùn yǐhòu, déchū le yí ge jiéguǒ.",
     "vi": "Mọi người thảo luận xong đã đi đến một kết quả.",
     "words": [
       "大家",
@@ -12759,7 +12758,7 @@
   {
     "id": "s:l2:fill:531",
     "zh": "一个汉字就是一个音节。",
-    "pinyin": "Yí gè Hànzì jiù shì yí gè yīnjié.",
+    "pinyin": "Yí ge Hànzì jiù shì yí ge yīnjié.",
     "vi": "Một chữ Hán là một âm tiết.",
     "words": [
       "一",
@@ -12803,7 +12802,7 @@
   {
     "id": "s:l2:fill:534",
     "zh": "五个人组成了一个小组。",
-    "pinyin": "Wǔ gè rén zǔchéng le yí gè xiǎozǔ.",
+    "pinyin": "Wǔ ge rén zǔchéng le yí ge xiǎozǔ.",
     "vi": "Năm người lập thành một nhóm.",
     "words": [
       "五",

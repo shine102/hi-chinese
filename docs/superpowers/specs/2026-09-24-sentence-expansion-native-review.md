@@ -32,6 +32,21 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:633 | vi: Bọn trẻ đang chơi trò chơi trên bãi cỏ. → Bọn trẻ chơi trò chơi trên bãi cỏ. | 在 is locative, not progressive (Task 9 review) |
 | s:l3:fill:634 | vi: Ha ha, bạn nói quá đúng! → Ha ha, bạn nói đúng quá! | natural word order (Task 9 review) |
 | s:l3:fill:667 | vi: Trước khi khám bệnh phải đóng phí trước. → Khám bệnh thì phải đóng phí trước. | avoids "trước … trước" (Task 9 review) |
+| s:l3:fill:731 | zh: 周末高速上车很多。 → 周末高速上的车很多。 (pinyin Zhōumò gāosù shàng de chē hěn duō.) | 上车 garden-paths as the course word "get on"; 的 separates place and noun (final review) |
+| s:l3:fill:558 | zh: 高速公路上车很多。 → 高速公路上的车很多。 (pinyin Gāosù gōnglù shàng de chē hěn duō.) | same fix as 731; the two no longer read as one sentence twice (final review) |
+| s:l2:fill:447, 509, 512, 531, 534 | pinyin: 个 gè → ge | course majority writes 个 neutral (final review) |
+| s:l2:fill:483 | zh: 我们小组有五个人。 → 我们小组一起做作业。 (pinyin Wǒmen xiǎozǔ yìqǐ zuò zuòyè.; vi Nhóm chúng tôi cùng nhau làm bài tập.) | near-duplicate of s:l2:fill:406 and 534; keeps 小组 coverage in l2-u49 lesson 0 (final review) |
+| s:l3:fill:792 | zh: 好习惯要从小形成。 → 这种习惯是从小形成的。 (pinyin Zhè zhǒng xíguàn shì cóngxiǎo xíngchéng de.; vi Thói quen này được hình thành từ nhỏ.) | more natural 是…的 frame (final review) |
+| s:l3:fill:770 | zh: 公司发表了一个声明。 → 公司发表了一份声明。 (pinyin Gōngsī fābiǎo le yí fèn shēngmíng.) | 份 is the classifier for a statement (final review) |
+| s:l3:fill:752 | vi: …thầy giáo chấp thuận. → …thầy giáo công nhận. | 认可 is recognition, not approval (final review) |
+
+## Cross-task near-duplicates
+
+- s:l2:fill:245 vs s:l3:fill:410: same Vietnamese translation.
+- s:l3:fill:535 vs s:l3:fill:638: near-duplicate sentences.
+- s:l2:fill:272 / s:l3:fill:299 / s:l2:033: near-duplicate sentences.
+- Identical Vietnamese: s:l2:191 / s:l3:400, s:l2:fill:180 / s:l3:fill:553, s:l2:fill:342 / s:l3:fill:303.
+- 老师 is rendered "thầy" in new sentences vs "giáo viên" in older ones; pick one.
 
 ## L1
 
@@ -444,7 +459,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:444 | 你别那样跟妈妈说话。 | Nǐ bié nàyàng gēn māma shuōhuà. | Con đừng nói chuyện với mẹ kiểu đó. |  |
 | s:l2:fill:445 | 从这个角度看，这是好事。 | Cóng zhège jiǎodù kàn, zhè shì hǎoshì. | Nhìn từ góc độ này thì đây là chuyện tốt. |  |
 | s:l2:fill:446 | 我喜欢运动，比如说打球、爬山。 | Wǒ xǐhuan yùndòng, bǐrú shuō dǎqiú, páshān. | Tôi thích thể thao, ví dụ như chơi bóng, leo núi. |  |
-| s:l2:fill:447 | 你能举一个例子吗？ | Nǐ néng jǔ yí gè lìzi ma? | Bạn có thể nêu một ví dụ không? |  |
+| s:l2:fill:447 | 你能举一个例子吗？ | Nǐ néng jǔ yí ge lìzi ma? | Bạn có thể nêu một ví dụ không? |  |
 | s:l2:fill:448 | 这个菜实在太好吃了。 | Zhège cài shízài tài hǎochī le. | Món này thật sự ngon quá. |  |
 | s:l2:fill:449 | 看他的样子，好像很累。 | Kàn tā de yàngzi, hǎoxiàng hěn lèi. | Nhìn dáng vẻ anh ấy, hình như rất mệt. |  |
 | s:l2:fill:450 | 这个故事我听了三遍。 | Zhège gùshi wǒ tīng le sān biàn. | Câu chuyện này tôi đã nghe ba lần. |  |
@@ -480,7 +495,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:480 | 雨停了，天晴了。 | Yǔ tíng le, tiān qíng le. | Mưa tạnh rồi, trời quang rồi. |  |
 | s:l2:fill:481 | 明天是晴天，我们去爬山吧。 | Míngtiān shì qíngtiān, wǒmen qù páshān ba. | Ngày mai trời nắng, chúng ta đi leo núi nhé. |  |
 | s:l2:fill:482 | 阴天的时候我不想出门。 | Yīntiān de shíhou wǒ bù xiǎng chūmén. | Những hôm trời âm u tôi không muốn ra ngoài. |  |
-| s:l2:fill:483 | 我们小组有五个人。 | Wǒmen xiǎozǔ yǒu wǔ gè rén. | Nhóm chúng tôi có năm người. |  |
+| s:l2:fill:483 | 我们小组一起做作业。 | Wǒmen xiǎozǔ yìqǐ zuò zuòyè. | Nhóm chúng tôi cùng nhau làm bài tập. |  |
 | s:l2:fill:484 | 我们一起去练球吧。 | Wǒmen yìqǐ qù liàn qiú ba. | Chúng ta cùng đi tập bóng nhé. |  |
 | s:l2:fill:485 | 请再重复一次。 | Qǐng zài chóngfù yí cì. | Xin hãy nhắc lại một lần nữa. |  |
 | s:l2:fill:486 | 想回答的同学请举手。 | Xiǎng huídá de tóngxué qǐng jǔshǒu. | Bạn nào muốn trả lời thì giơ tay. |  |
@@ -506,10 +521,10 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:506 | 这里的人都很友好。 | Zhèlǐ de rén dōu hěn yǒuhǎo. | Người ở đây đều rất thân thiện. |  |
 | s:l2:fill:507 | 我相信他是个好人。 | Wǒ xiāngxìn tā shì ge hǎorén. | Tôi tin anh ấy là người tốt. |  |
 | s:l2:fill:508 | 电影里的坏人最后怎么样了？ | Diànyǐng lǐ de huàirén zuìhòu zěnmeyàng le? | Kẻ xấu trong phim cuối cùng ra sao? |  |
-| s:l2:fill:509 | 这两个你选哪个？ | Zhè liǎng gè nǐ xuǎn nǎge? | Hai cái này bạn chọn cái nào? |  |
+| s:l2:fill:509 | 这两个你选哪个？ | Zhè liǎng ge nǐ xuǎn nǎge? | Hai cái này bạn chọn cái nào? |  |
 | s:l2:fill:510 | 你来这儿的目的是什么？ | Nǐ lái zhèr de mùdì shì shénme? | Mục đích bạn đến đây là gì? |  |
 | s:l2:fill:511 | 这样的做法不太好。 | Zhèyàng de zuòfǎ bú tài hǎo. | Cách làm như vậy không hay lắm. |  |
-| s:l2:fill:512 | 大家讨论以后，得出了一个结果。 | Dàjiā tǎolùn yǐhòu, déchū le yí gè jiéguǒ. | Mọi người thảo luận xong đã đi đến một kết quả. |  |
+| s:l2:fill:512 | 大家讨论以后，得出了一个结果。 | Dàjiā tǎolùn yǐhòu, déchū le yí ge jiéguǒ. | Mọi người thảo luận xong đã đi đến một kết quả. |  |
 | s:l2:fill:513 | 这个难题我们一起想办法。 | Zhège nántí wǒmen yìqǐ xiǎng bànfǎ. | Vấn đề khó này chúng ta cùng nghĩ cách. |  |
 | s:l2:fill:514 | 新方法大大提高了成绩。 | Xīn fāngfǎ dàdà tígāo le chéngjì. | Phương pháp mới đã nâng cao thành tích rất nhiều. |  |
 | s:l2:fill:515 | 他平常很少说话。 | Tā píngcháng hěn shǎo shuōhuà. | Bình thường anh ấy rất ít nói. |  |
@@ -528,10 +543,10 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l2:fill:528 | 不认识的字可以查字典。 | Bú rènshi de zì kěyǐ chá zìdiǎn. | Chữ không biết thì có thể tra từ điển. |  |
 | s:l2:fill:529 | 别说这么难听的话。 | Bié shuō zhème nántīng de huà. | Đừng nói những lời khó nghe như vậy. |  |
 | s:l2:fill:530 | 我借了老师的词典。 | Wǒ jiè le lǎoshī de cídiǎn. | Tôi đã mượn từ điển của thầy giáo. |  |
-| s:l2:fill:531 | 一个汉字就是一个音节。 | Yí gè Hànzì jiù shì yí gè yīnjié. | Một chữ Hán là một âm tiết. |  |
+| s:l2:fill:531 | 一个汉字就是一个音节。 | Yí ge Hànzì jiù shì yí ge yīnjié. | Một chữ Hán là một âm tiết. |  |
 | s:l2:fill:532 | 这个问题又出现了。 | Zhège wèntí yòu chūxiàn le. | Vấn đề này lại xuất hiện rồi. |  |
 | s:l2:fill:533 | 这个药没有什么作用。 | Zhège yào méiyǒu shénme zuòyòng. | Thuốc này chẳng có tác dụng gì. |  |
-| s:l2:fill:534 | 五个人组成了一个小组。 | Wǔ gè rén zǔchéng le yí gè xiǎozǔ. | Năm người lập thành một nhóm. |  |
+| s:l2:fill:534 | 五个人组成了一个小组。 | Wǔ ge rén zǔchéng le yí ge xiǎozǔ. | Năm người lập thành một nhóm. |  |
 | s:l2:fill:535 | 在图书馆要小声说话。 | Zài túshūguǎn yào xiǎoshēng shuōhuà. | Trong thư viện phải nói nhỏ. |  |
 
 ## L3
@@ -816,7 +831,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:555 | 飞机飞行了十个小时。 | Fēijī fēixíng le shí ge xiǎoshí. | Máy bay đã bay mười tiếng đồng hồ. |  |
 | s:l3:fill:556 | 这些东西要用火车运输。 | Zhèxiē dōngxi yào yòng huǒchē yùnshū. | Những thứ này phải vận chuyển bằng tàu hỏa. |  |
 | s:l3:fill:557 | 我们要加快速度。 | Wǒmen yào jiākuài sùdù. | Chúng ta phải tăng tốc lên. |  |
-| s:l3:fill:558 | 高速公路上车很多。 | Gāosù gōnglù shàng chē hěn duō. | Trên đường cao tốc có rất nhiều xe. |  |
+| s:l3:fill:558 | 高速公路上的车很多。 | Gāosù gōnglù shàng de chē hěn duō. | Trên đường cao tốc có rất nhiều xe. |  |
 | s:l3:fill:559 | 你的职业是什么？ | Nǐ de zhíyè shì shénme? | Nghề nghiệp của bạn là gì? |  |
 | s:l3:fill:560 | 他的事业很成功。 | Tā de shìyè hěn chénggōng. | Sự nghiệp của anh ấy rất thành công. |  |
 | s:l3:fill:561 | 他今年升经理了。 | Tā jīnnián shēng jīnglǐ le. | Năm nay anh ấy đã được thăng chức làm giám đốc. |  |
@@ -989,7 +1004,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:728 | 这些文字我看不懂。 | Zhèxiē wénzì wǒ kàn bu dǒng. | Những chữ này tôi đọc không hiểu. |  |
 | s:l3:fill:729 | 她的写作水平很高。 | Tā de xiězuò shuǐpíng hěn gāo. | Trình độ viết văn của cô ấy rất cao. |  |
 | s:l3:fill:730 | 书店里有很多外文书。 | Shūdiàn lǐ yǒu hěn duō wàiwén shū. | Trong hiệu sách có rất nhiều sách ngoại văn. |  |
-| s:l3:fill:731 | 周末高速上车很多。 | Zhōumò gāosù shàng chē hěn duō. | Cuối tuần trên đường cao tốc rất đông xe. |  |
+| s:l3:fill:731 | 周末高速上的车很多。 | Zhōumò gāosù shàng de chē hěn duō. | Cuối tuần trên đường cao tốc rất đông xe. |  |
 | s:l3:fill:732 | 工作人员会告诉你怎么做。 | Gōngzuò rényuán huì gàosu nǐ zěnme zuò. | Nhân viên sẽ chỉ cho bạn cách làm. |  |
 | s:l3:fill:733 | 他领导这个部门三年了。 | Tā lǐngdǎo zhège bùmén sān nián le. | Anh ấy đã lãnh đạo phòng này ba năm rồi. |  |
 | s:l3:fill:734 | 服务员，请给我一杯水。 | Fúwùyuán, qǐng gěi wǒ yì bēi shuǐ. | Phục vụ ơi, cho tôi một cốc nước. |  |
@@ -1010,7 +1025,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:749 | 我建议你多喝水。 | Wǒ jiànyì nǐ duō hē shuǐ. | Tôi khuyên bạn nên uống nhiều nước. |  |
 | s:l3:fill:750 | 大家对他的评价很高。 | Dàjiā duì tā de píngjià hěn gāo. | Mọi người đánh giá anh ấy rất cao. |  |
 | s:l3:fill:751 | 他否认拿了那些钱。 | Tā fǒurèn ná le nàxiē qián. | Anh ta phủ nhận đã lấy số tiền đó. |  |
-| s:l3:fill:752 | 这个办法得到了老师的认可。 | Zhège bànfǎ dédào le lǎoshī de rènkě. | Cách làm này đã được thầy giáo chấp thuận. |  |
+| s:l3:fill:752 | 这个办法得到了老师的认可。 | Zhège bànfǎ dédào le lǎoshī de rènkě. | Cách làm này đã được thầy giáo công nhận. |  |
 | s:l3:fill:753 | 他否定了我的意见。 | Tā fǒudìng le wǒ de yìjiàn. | Anh ấy đã phủ định ý kiến của tôi. |  |
 | s:l3:fill:754 | 他主张用新的方法。 | Tā zhǔzhāng yòng xīn de fāngfǎ. | Anh ấy chủ trương dùng phương pháp mới. |  |
 | s:l3:fill:755 | 他代表我们班参加比赛。 | Tā dàibiǎo wǒmen bān cānjiā bǐsài. | Cậu ấy đại diện lớp chúng tôi tham gia cuộc thi. |  |
@@ -1028,7 +1043,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:767 | 这件事已经公开了。 | Zhè jiàn shì yǐjīng gōngkāi le. | Chuyện này đã được công khai rồi. |  |
 | s:l3:fill:768 | 手机发出了奇怪的声音。 | Shǒujī fāchū le qíguài de shēngyīn. | Điện thoại phát ra một âm thanh lạ. |  |
 | s:l3:fill:769 | 我们在网上宣传这个活动。 | Wǒmen zài wǎngshàng xuānchuán zhège huódòng. | Chúng tôi quảng bá hoạt động này trên mạng. |  |
-| s:l3:fill:770 | 公司发表了一个声明。 | Gōngsī fābiǎo le yí ge shēngmíng. | Công ty đã ra một bản tuyên bố. |  |
+| s:l3:fill:770 | 公司发表了一份声明。 | Gōngsī fābiǎo le yí fèn shēngmíng. | Công ty đã ra một bản tuyên bố. |  |
 | s:l3:fill:771 | 网上的消息传播得很快。 | Wǎngshàng de xiāoxi chuánbō de hěn kuài. | Tin tức trên mạng lan truyền rất nhanh. |  |
 | s:l3:fill:772 | 这种办法值得推广。 | Zhè zhǒng bànfǎ zhídé tuīguǎng. | Cách làm này đáng được nhân rộng. |  |
 | s:l3:fill:773 | 现在手机已经很普及了。 | Xiànzài shǒujī yǐjīng hěn pǔjí le. | Giờ đây điện thoại di động đã rất phổ cập. |  |
@@ -1050,7 +1065,7 @@ column when a sentence is unnatural, mistranslated, or misread.
 | s:l3:fill:789 | 这条规定对学生不适用。 | Zhè tiáo guīdìng duì xuésheng bú shìyòng. | Quy định này không áp dụng cho học sinh. |  |
 | s:l3:fill:790 | 他写的汉字很规范。 | Tā xiě de Hànzì hěn guīfàn. | Chữ Hán anh ấy viết rất chuẩn mực. |  |
 | s:l3:fill:791 | 新的问题又产生了。 | Xīn de wèntí yòu chǎnshēng le. | Vấn đề mới lại nảy sinh. |  |
-| s:l3:fill:792 | 好习惯要从小形成。 | Hǎo xíguàn yào cóngxiǎo xíngchéng. | Thói quen tốt phải hình thành từ nhỏ. |  |
+| s:l3:fill:792 | 这种习惯是从小形成的。 | Zhè zhǒng xíguàn shì cóngxiǎo xíngchéng de. | Thói quen này được hình thành từ nhỏ. |  |
 | s:l3:fill:793 | 这对我们很有利。 | Zhè duì wǒmen hěn yǒulì. | Điều này rất có lợi cho chúng ta. |  |
 | s:l3:fill:794 | 科学推动了社会的发展。 | Kēxué tuīdòng le shèhuì de fāzhǎn. | Khoa học đã thúc đẩy sự phát triển của xã hội. |  |
 | s:l3:fill:795 | 他带动大家一起运动。 | Tā dàidòng dàjiā yìqǐ yùndòng. | Anh ấy kéo mọi người cùng tập thể dục. |  |

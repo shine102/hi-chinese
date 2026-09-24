@@ -43,6 +43,19 @@ Still open:
 - `g:yi-jiu` (一…就) sits in l2-u32; pin 哭 earlier if it should be taught sooner.
 - Grammar validator requires ≥1 example per point, not the spec's 3-5.
 - Saved L2/L3 lesson progress from before the 2026-09-24 reorder points at the old units.
+- Course reading inconsistencies: 西边 xībiān / 北边 běibiān vs 东边 dōngbian / 南边 nánbian;
+  出来 chūlái and 进去 jìnqù (speech usually neutral). Candidates for `reading-fixes.json`
+  after native review.
+- Split-compound pinyin boundaries forced by the token rule (s:l3:fill:322 zhòngyào xìng,
+  357 xiāofèi zhě, 381 xuésheng zhèng, 404 yòng lì, 425 shì nèi, s:l2:fill:232 jǔ shǒu,
+  s:l1:fill:068 nǚ péngyou). Follow-up: add 性/者 to `JOIN_SUFFIXES` and 室内/用力/学生证/举手/女朋友
+  to `JOINED_PAIRS` in `sentence-pinyin.ts`, then rejoin those pinyin strings.
+- 过 particle (guo) shares one word id/gloss with 过 guò "đi qua"; pre-existing s:l2:fill:007
+  uses 只 as classifier zhī while the headword shows zhǐ.
+- Gloss gaps: 开展 lacks "triển khai; tiến hành" (s:l3:fill:528); 化 lacks "tan (băng, tuyết)"
+  (s:l3:fill:696).
+- Course-wide variety for future sentence batches: "…的X很Adj。" 58×, 他 144 vs 她 22, few
+  吗-questions in L3.
 
 Findings from source verification (2026-09-09) that adjust the spec:
 

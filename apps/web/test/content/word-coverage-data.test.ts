@@ -46,6 +46,6 @@ describe('shipped content word coverage', () => {
       entries.filter(([zh]) => used.has(bySimplified.get(zh)?.id ?? '')).map(([zh]) => zh),
     ).toEqual([]);
     expect(entries.filter(([, why]) => why.trim() === '').map(([zh]) => zh)).toEqual([]);
-    expect(entries.length).toBeLessThan(0.02 * words.length);
+    expect(entries.length).toBeLessThan(Math.floor(0.02 * words.length));
   });
 });
