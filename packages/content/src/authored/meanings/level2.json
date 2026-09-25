@@ -1,6 +1,6 @@
 {
   "啊": [
-    "thán từ kết thúc câu, thể hiện sự khẳng định, tán thành hoặc đồng ý"
+    "(trợ từ cảm thán cuối câu: à, nhỉ, biết bao)"
   ],
   "让": [
     "bảo ai đó làm gì",
@@ -30,9 +30,9 @@
     "khá tốt"
   ],
   "为": [
-    "vì",
-    "bởi vì",
-    "để"
+    "vì; cho",
+    "để",
+    "bởi vì"
   ],
   "已经": [
     "đã"
@@ -62,10 +62,10 @@
   ],
   "只": [
     "chỉ",
+    "con; chiếc (lượng từ cho động vật, đọc zhī)",
     "chỉ đơn thuần",
     "chỉ là",
-    "nhưng",
-    "(zhī) lượng từ cho con vật, chim"
+    "nhưng"
   ],
   "问题": [
     "câu hỏi",
@@ -574,7 +574,7 @@
   "加": [
     "thêm",
     "cộng",
-    "(dùng sau một trạng ngữ như 不, 大, 稍,..., và trước động từ hai âm tiết, để chỉ rằng hành động của động từ được áp dụng cho cái gì đó hoặc ai đó đã được nhắc đến trước đó)",
+    "tăng",
     "áp dụng (hạn chế,...) cho (ai đó)",
     "đưa ra (hỗ trợ, xem xét,...) cho (điều gì đó)"
   ],
@@ -765,8 +765,8 @@
     "hành vi"
   ],
   "份": [
-    "lượng từ cho quà tặng, báo, tạp chí, giấy tờ, báo cáo, hợp đồng, v.v.",
-    "biến thể của 分[fen4]"
+    "phần; suất",
+    "(lượng từ) bản, tờ, phần"
   ],
   "信息": [
     "thông tin",
@@ -1101,12 +1101,10 @@
     "chào mừng"
   ],
   "一般": [
-    "giống",
-    "bình thường",
+    "thường; bình thường",
     "tàm tạm",
     "phổ thông",
     "chung",
-    "chung chung",
     "nói chung"
   ],
   "可爱": [
@@ -1490,8 +1488,7 @@
   ],
   "猫": [
     "mèo",
-    "(phương ngữ) trốn",
-    "(từ mượn) (thông tục) modem"
+    "(phương ngữ) trốn"
   ],
   "通": [
     "kết nối",
@@ -1635,13 +1632,10 @@
   ],
   "推": [
     "đẩy",
-    "cắt",
     "từ chối",
-    "bác bỏ",
-    "khước từ",
+    "thoái thác",
+    "hoãn (推迟)",
     "đùn đẩy (trách nhiệm)",
-    "hoãn",
-    "trì hoãn",
     "thúc đẩy",
     "đề cử",
     "bầu chọn",
@@ -1728,9 +1722,8 @@
     "sinh đẻ"
   ],
   "鸡": [
-    "gia cầm",
     "gà",
-    "(tiếng lóng) gái mại dâm"
+    "thịt gà"
   ],
   "遍": [
     "lượng từ cho hành động: một lần",
@@ -1873,11 +1866,7 @@
     "một thể thơ trữ tình, thịnh hành thời Tống 宋朝|宋朝[Song4 chao2]"
   ],
   "鸟": [
-    "chim",
-    "bộ \"chim\" trong chữ Hán (bộ Khang Hy số 196)",
-    "(tiếng địa phương) để ý đến",
-    "(nhấn mạnh) chết tiệt",
-    "chết tiệt"
+    "chim"
   ],
   "取得": [
     "giành được; lấy được; đạt được"
@@ -1888,8 +1877,8 @@
     "nhớ ra"
   ],
   "蓝": [
-    "màu xanh",
-    "dị thảo chàm"
+    "xanh lam; xanh da trời",
+    "cây chàm"
   ],
   "纸": [
     "giấy",
@@ -2032,8 +2021,7 @@
   ],
   "黄": [
     "màu vàng",
-    "khiêu dâm",
-    "thất bại"
+    "hỏng; thất bại (黄了)"
   ],
   "轻": [
     "nhẹ",
@@ -2490,8 +2478,7 @@
     "phụ huynh hoặc người giám hộ của một đứa trẻ"
   ],
   "绿": [
-    "màu xanh lá",
-    "(tiếng lóng) (xuất phát từ 綠帽子|绿帽子[lu:4 mao4 zi5]) cắm sừng (vợ, chồng, bạn trai hoặc bạn gái)"
+    "màu xanh lá"
   ],
   "重复": [
     "lặp lại",

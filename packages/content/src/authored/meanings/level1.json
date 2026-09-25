@@ -15,9 +15,9 @@
     "tôi; mình; của tôi"
   ],
   "是": [
-    "là (chỉ theo sau bởi danh từ)",
-    "đúng; phải; thật",
-    "sự thừa nhận tôn kính một mệnh lệnh: rất tốt",
+    "là",
+    "đúng; phải",
+    "vâng (đáp lời)",
     "(phó từ để nhấn mạnh)"
   ],
   "你": [
@@ -30,36 +30,29 @@
   ],
   "不": [
     "không; không phải",
-    "(hình thức kết hợp) không; bất-"
+    "bất- (tiền tố)"
   ],
   "有": [
     "có; có (gì đó)",
     "(dạng kết hợp) có; với; mang tính chất gì đó (như trong 有意[you3 yi4] cố ý)"
   ],
   "他": [
-    "anh ấy; ông ấy (dùng cho bất kỳ giới tính nào khi giới tính không được biết hoặc không quan trọng)",
-    "(dùng trước tên ai đó để nhấn mạnh)",
-    "(dùng như một tân ngữ không có nghĩa)",
-    "(văn học) khác"
+    "anh ấy; ông ấy",
+    "người khác (其他)",
+    "(văn) khác"
   ],
   "这": [
-    "(đại từ) này; những...này",
-    "(hình thức kết hợp) này; (được theo sau bởi danh từ)",
-    "(hình thức kết hợp) này; những...này (được theo sau bởi lượng từ) (trong nghĩa này, thường phát âm [zhei4], đặc biệt ở Bắc Kinh)"
+    "này",
+    "cái này",
+    "đây"
   ],
   "就": [
-    "ngay; ngay khi; ngay sau khi (sau một mệnh đề hành động)",
-    "(sau một mệnh đề giả định) trong trường hợp đó; thì",
-    "(giống như 就是[jiu4 shi4]) chỉ; không gì khác ngoài; đơn giản là; chỉ là; chính xác; đúng",
-    "chỉ có; ít nhất là",
-    "nhiều đến; nhiều như",
-    "tiếp cận; tiến về",
-    "phụ trách; tham gia vào",
-    "(thường theo sau bởi 著|着[zhe5]) tận dụng",
-    "(về thức ăn) ăn cùng",
+    "thì; liền; ngay",
+    "đã (sớm)",
+    "chính là",
+    "chỉ",
     "về; liên quan đến",
-    "(mẫu câu: 就[jiu4] ... 也[ye3] ...) ngay cả nếu ... vẫn ...",
-    "(mẫu câu: 不[bu4] ... 就[jiu4] ...) nếu không ... thì phải ..."
+    "(mẫu câu: 就 ... 也 ...) ngay cả nếu ... vẫn ..."
   ],
   "个": [
     "cái; chiếc (lượng từ chung, dùng khi danh từ không có lượng từ riêng)",
@@ -115,8 +108,7 @@
     "(dạng kết hợp) một lúc (cách phát âm Đài Loan [hui3])"
   ],
   "也": [
-    "(phó từ) cũng; vừa ... vừa ... (chỉ dùng trước vị ngữ)",
-    "(văn viết) trợ từ có chức năng giống với 啊[a5]"
+    "cũng"
   ],
   "都": [
     "tất cả; cả hai; hoàn toàn",
@@ -368,14 +360,11 @@
     "năm"
   ],
   "用": [
-    "sử dụng",
+    "dùng; sử dụng",
     "tận dụng",
-    "phải",
-    "ăn hoặc uống",
+    "cần (không cần = 不用)",
     "chi phí hoặc tiêu dùng",
-    "tính hữu ích",
-    "vì vậy",
-    "do đó"
+    "tính hữu ích"
   ],
   "多": [
     "nhiều",
@@ -409,9 +398,9 @@
     "thượng đế"
   ],
   "出": [
-    "phát sinh; xảy ra",
-    "đi ra; đi ra ngoài",
-    "sản xuất; tạo ra",
+    "ra; đi ra",
+    "xảy ra; phát sinh",
+    "sản xuất",
     "vượt quá",
     "(dùng sau động từ để chỉ hướng ra ngoài hoặc kết quả tích cực)",
     "lượng từ cho kịch, vở diễn, opera, v.v."
@@ -434,10 +423,9 @@
     "dù cho ... đi nữa (theo sau bởi tính từ hoặc động từ, rồi thường là 也[ye3] hoặc 都[dou1] để nhấn mạnh)"
   ],
   "呢": [
-    "trợ từ chỉ rằng câu hỏi được hỏi trước đó áp dụng cho từ đứng trước (\"Còn ...?\", \"Và ...?\")",
-    "trợ từ để hỏi về địa điểm (\"Ở đâu ...?\")",
-    "trợ từ biểu thị ngắt quãng, nhấn mạnh từ đứng trước và cho người nghe thời gian tiếp nhận (\"được không?\", \"bạn hiểu không?\")",
-    "(cuối câu trần thuật) trợ từ chỉ sự tiếp tục của trạng thái hoặc hành động",
+    "còn … thì sao? (hỏi lại)",
+    "ở đâu? (…呢?)",
+    "đang (cuối câu)",
     "trợ từ chỉ sự khẳng định mạnh mẽ"
   ],
   "次": [
@@ -474,16 +462,12 @@
   "走": [
     "đi",
     "bước",
-    "chạy",
-    "di chuyển (của phương tiện)",
-    "thăm",
     "rời đi",
+    "(xe) chạy",
+    "thăm",
     "đi khỏi",
-    "chết (nói giảm)",
-    "từ",
     "xuyên qua",
-    "đi mất (trong động từ ghép, như 撤走[che4 zou3])",
-    "thay đổi (hình dạng, hình thức, ý nghĩa)"
+    "chết (nói giảm)"
   ],
   "工作": [
     "làm việc",
@@ -563,13 +547,11 @@
     "chịu (cú sốc, chấn thương, thất bại, v.v.)"
   ],
   "谁": [
-    "ai",
-    "cũng đọc là [shui2]"
+    "ai"
   ],
   "新": [
     "mới",
-    "vừa mới",
-    "meso- (hoá học)"
+    "vừa mới"
   ],
   "找": [
     "tìm",
@@ -605,18 +587,14 @@
   ],
   "快": [
     "nhanh",
+    "sắp (快…了)",
+    "vui (快乐)",
     "nhanh chóng",
-    "tốc độ",
-    "tỷ lệ",
     "sớm",
     "gần như",
     "khẩn trương",
-    "thông minh",
     "sắc bén (dao hoặc trí tuệ)",
     "thẳng thắn",
-    "chân thành",
-    "hài lòng",
-    "vui vẻ",
     "dễ chịu"
   ],
   "比": [
@@ -694,9 +672,8 @@
   "见": [
     "gặp",
     "thấy",
-    "dường như",
+    "ý kiến (意见)",
     "phỏng vấn",
-    "ý kiến",
     "quan điểm"
   ],
   "车": [
@@ -716,10 +693,9 @@
   ],
   "手": [
     "tay",
-    "(trang trọng) cầm",
-    "người làm các công việc nhất định",
+    "người làm nghề (歌手, 选手)",
+    "tự tay",
     "người có kỹ năng trong các công việc nhất định",
-    "đích thân",
     "tiện lợi",
     "lượng từ cho kỹ năng"
   ],
@@ -793,9 +769,9 @@
     "vốn; chính"
   ],
   "回": [
+    "về; quay lại",
     "trả lời (tin nhắn, thư)",
-    "quay lại; trở về",
-    "lần (lượng từ chỉ số lần)"
+    "lần; chuyện (lượng từ)"
   ],
   "东西": [
     "đồ vật",
@@ -924,8 +900,8 @@
   ],
   "高": [
     "cao",
-    "khoảng trên trung bình",
-    "to",
+    "(âm thanh) to",
+    "cấp cao",
     "lớn",
     "(kính ngữ) của bạn"
   ],
@@ -988,7 +964,7 @@
     "quốc gia; dân tộc; nhà nước"
   ],
   "您": [
-    "bạn (kính trọng, trái với thân mật 你[ni3])"
+    "ông; bà; ngài (cách gọi kính trọng)"
   ],
   "电话": [
     "điện thoại",
@@ -1103,8 +1079,7 @@
     "(hậu tố) -gate (tức là vụ bê bối; nguồn gốc từ Watergate)"
   ],
   "喝": [
-    "uống",
-    "biến thể của 嗬[he1]"
+    "uống"
   ],
   "穿": [
     "mặc",
@@ -1238,25 +1213,17 @@
   "错": [
     "sai",
     "lỗi",
-    "xấu",
+    "nhầm",
     "đan xen",
-    "phức tạp",
-    "mài",
-    "đánh bóng",
-    "luân phiên",
-    "so le",
-    "lỡ",
-    "để lỡ",
-    "tránh né",
-    "khảm vàng hoặc bạc"
+    "lỡ; để lỡ",
+    "so le"
   ],
   "少": [
     "ít",
-    "hơn",
     "thiếu",
+    "hiếm khi (很少)",
     "mất",
-    "ngừng (làm gì đó)",
-    "hiếm khi"
+    "ngừng (làm gì đó)"
   ],
   "别的": [
     "khác"
@@ -1280,8 +1247,8 @@
     "phần của một phòng hoặc không gian ngang giữa hai cặp cột"
   ],
   "哪": [
-    "cái nào",
-    "như thế nào"
+    "nào",
+    "cái nào"
   ],
   "跑": [
     "chạy",
@@ -1321,7 +1288,7 @@
   ],
   "男": [
     "nam",
-    "Nam tước, cấp thấp nhất trong năm cấp bậc quý tộc 五等爵位[wu3 deng3 jue2 wei4]"
+    "con trai; đàn ông"
   ],
   "动": [
     "(cái gì đó) di chuyển",
@@ -1365,9 +1332,7 @@
     "thấp hơn nhiều, v.v."
   ],
   "口": [
-    "lượng từ cho những thứ có miệng (người, động vật nuôi, đại bác, giếng, v.v.)",
-    "miệng",
-    "lượng từ cho vết cắn hoặc ngụm"
+    "miệng; (lượng từ) người trong nhà, ngụm"
   ],
   "学生": [
     "học sinh",
@@ -1375,8 +1340,7 @@
   ],
   "二": [
     "hai",
-    "2",
-    "(tiếng Bắc Kinh) ngu ngốc"
+    "2"
   ],
   "儿子": [
     "con trai"
@@ -1562,26 +1526,15 @@
   ],
   "白": [
     "trắng",
-    "tuyết",
+    "sáng; rõ",
+    "uổng công; không (白来)",
     "tinh khiết",
-    "sáng",
     "trống",
     "rỗng",
     "đơn giản",
-    "rõ ràng",
-    "làm rõ",
-    "uổng",
-    "phí phạm",
     "miễn phí",
-    "phản động",
-    "chống cộng",
     "tang lễ",
-    "nhìn chằm chằm",
-    "viết sai chữ",
-    "phát biểu",
-    "giải thích",
-    "bạch thoại",
-    "lời thoại trong kinh kịch"
+    "bạch thoại"
   ],
   "去年": [
     "năm ngoái"
@@ -1627,11 +1580,7 @@
     "lượng từ cho giường"
   ],
   "第": [
-    "thứ (tiền tố chỉ số thứ tự, như trong 第六[di4 liu4] \"thứ sáu\")",
-    "(văn học) thứ hạng mà thí sinh đỗ đạt trong kỳ thi đình được xếp vào",
-    "(cũ) nơi ở của quan chức cao cấp",
-    "(văn học) nhưng; tuy nhiên",
-    "(văn học) chỉ; chỉ là"
+    "thứ (tiền tố chỉ số thứ tự, như trong 第六 \"thứ sáu\")"
   ],
   "回到": [
     "trở về"
@@ -1688,8 +1637,7 @@
     "lạnh"
   ],
   "山": [
-    "núi; đồi",
-    "(thông tục) bó rơm nhỏ cho tằm làm kén"
+    "núi; đồi"
   ],
   "常": [
     "thường",
@@ -1835,14 +1783,11 @@
   ],
   "左": [
     "trái",
-    "cánh tả (chính trị)",
-    "đông",
+    "cánh tả",
+    "lệch; sai",
     "không chính thống",
     "kỳ lạ",
-    "sai",
-    "khác",
-    "ngược",
-    "biến thể của 佐[zuo3]"
+    "ngược"
   ],
   "吃饭": [
     "dùng bữa",
@@ -1912,10 +1857,9 @@
     "(hình thức kết hợp) quốc gia"
   ],
   "饭": [
-    "cơm đã nấu",
     "bữa ăn",
-    "(từ mượn) fan",
-    "người hâm mộ"
+    "cơm",
+    "người hâm mộ (từ mượn)"
   ],
   "一半": [
     "một nửa"

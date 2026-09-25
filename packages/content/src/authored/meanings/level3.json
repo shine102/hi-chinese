@@ -102,7 +102,6 @@
   ],
   "已": [
     "đã",
-    "ngừng",
     "rồi",
     "sau đó"
   ],
@@ -585,11 +584,9 @@
     "thương tích"
   ],
   "曾经": [
-    "một lần",
-    "đã",
-    "từng",
+    "từng; đã từng",
     "trước đây",
-    "(dùng ở thì quá khứ trước động từ hoặc mệnh đề)"
+    "đã"
   ],
   "另外": [
     "bổ sung",
@@ -1144,12 +1141,10 @@
   ],
   "火": [
     "lửa",
-    "khẩn cấp",
-    "đạn dược",
+    "nóng giận",
+    "(khẩu ngữ) nổi, hot",
     "rừng rực hoặc bốc cháy",
-    "nội nhiệt (y học Trung Quốc)",
-    "nóng (phổ biến)",
-    "lượng từ cho đơn vị quân đội (cổ)"
+    "nội nhiệt (y học Trung Quốc)"
   ],
   "建立": [
     "thiết lập",
@@ -1505,11 +1500,8 @@
   ],
   "室": [
     "phòng",
-    "đơn vị công tác",
-    "mộ",
-    "bao kiếm",
-    "gia đình hoặc thị tộc",
-    "một trong 28 chòm sao của thiên văn học Trung Quốc"
+    "văn phòng; phòng ban",
+    "gia đình hoặc thị tộc"
   ],
   "时代": [
     "thời đại",
@@ -2516,11 +2508,8 @@
   ],
   "厂": [
     "nhà máy",
-    "sân",
-    "kho",
     "xưởng",
-    "công xưởng",
-    "cơ xưởng (công nghiệp)"
+    "công xưởng"
   ],
   "形成": [
     "hình thành; định hình"
@@ -4399,9 +4388,9 @@
     "nhân viên; cán bộ nhân viên; công nhân"
   ],
   "木头": [
-    "chậm chạp",
-    "đần độn",
-    "khúc gỗ (gỗ, gỗ timber, v.v.)"
+    "gỗ",
+    "khúc gỗ",
+    "chậm chạp; đần độn"
   ],
   "熟人": [
     "người quen",
