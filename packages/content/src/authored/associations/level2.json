@@ -584,8 +584,8 @@
   ],
   "喊": [
     { "zh": "喊叫", "vi": "kêu la; hét lên" },
-    { "zh": "叫喊", "vi": "la hét" },
-    { "zh": "呼喊", "vi": "hô hào; kêu to", "hanViet": "Hô Hám" }
+    { "zh": "大喊", "vi": "hét to" },
+    { "zh": "呼喊", "vi": "kêu to; gào gọi", "hanViet": "Hô Hám" }
   ],
   "哭": [
     { "zh": "哭声", "vi": "tiếng khóc" },
@@ -839,7 +839,7 @@
   "句": [
     { "zh": "句子", "vi": "câu" },
     { "zh": "例句", "vi": "câu ví dụ" },
-    { "zh": "句号", "vi": "dấu chấm câu" }
+    { "zh": "句号", "vi": "dấu chấm (hết câu)" }
   ],
   "变": [
     { "zh": "改变", "vi": "thay đổi" },

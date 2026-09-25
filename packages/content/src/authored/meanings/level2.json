@@ -458,9 +458,9 @@
     "ngẫu nhiên"
   ],
   "队": [
-    "phi đội",
     "đội",
-    "nhóm"
+    "nhóm",
+    "phi đội"
   ],
   "接": [
     "gặp hoặc chào đón ai",
@@ -1215,13 +1215,13 @@
     "gàu múc chất lỏng"
   ],
   "度": [
+    "độ (góc, nhiệt độ, v.v.)",
+    "mức độ",
     "vượt qua",
     "trải qua (thời gian)",
     "đo",
     "lượng giới hạn",
-    "mức độ",
     "mức độ cường độ",
-    "độ (góc, nhiệt độ, v.v.)",
     "kilowatt-giờ",
     "lượng từ cho sự kiện và tình huống"
   ],
@@ -1850,9 +1850,8 @@
     "vật hình bầu dục"
   ],
   "科": [
-    "ngành học",
+    "môn học; ngành học",
     "phòng ban",
-    "học phần",
     "lĩnh vực",
     "ngành",
     "hướng dẫn sân khấu",
@@ -1864,9 +1863,9 @@
     "phạt ai đó"
   ],
   "占": [
+    "chiếm",
     "chiếm giữ",
-    "chiếm đóng",
-    "chiếm"
+    "chiếm đóng"
   ],
   "词": [
     "từ",
@@ -2188,9 +2187,9 @@
     "những điều sau"
   ],
   "喊": [
+    "gọi to (người)",
     "la hét",
-    "hò hét",
-    "gọi to (người)"
+    "hò hét"
   ],
   "讲话": [
     "bài phát biểu",
@@ -2279,8 +2278,8 @@
     "nếu (đứng sau mệnh đề điều kiện)"
   ],
   "骑": [
-    "ngồi cưỡi",
     "cưỡi (ngựa, xe đạp, v.v.)",
+    "ngồi cưỡi",
     "lượng từ cho ngựa cưỡi"
   ],
   "报纸": [
