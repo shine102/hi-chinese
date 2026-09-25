@@ -18,6 +18,7 @@ import { InlineError } from '../ui/InlineError.js';
 import { Loading } from '../ui/Loading.js';
 import { computeLessons, type Lesson } from './compute.js';
 import { generateSlides, type Slide } from './slides.js';
+import { WordLinks } from './WordLinks.js';
 
 // ── Flow state ──────────────────────────────────────────────────────────
 
@@ -128,7 +129,15 @@ function flowProgress(state: FlowState): number {
 
 // ── Slide components ────────────────────────────────────────────────────
 
-function WordIntroSlide({ word, onContinue }: { word: Word; onContinue: () => void }) {
+function WordIntroSlide({
+  word,
+  content,
+  onContinue,
+}: {
+  word: Word;
+  content: ContentIndex;
+  onContinue: () => void;
+}) {
   return (
     <div className="flex flex-col items-center gap-4 py-6">
       <div className="text-6xl">{word.simplified}</div>
@@ -143,6 +152,7 @@ function WordIntroSlide({ word, onContinue }: { word: Word; onContinue: () => vo
           <li key={m}>{m}</li>
         ))}
       </ul>
+      <WordLinks word={word} content={content} />
       <ContinueButton onClick={onContinue} />
     </div>
   );
@@ -414,7 +424,7 @@ function SlideRenderer({
   switch (slide.type) {
     case 'word-intro': {
       const word = content.words.get(slide.wordId);
-      return word ? <WordIntroSlide word={word} onContinue={onContinue} /> : null;
+      return word ? <WordIntroSlide word={word} content={content} onContinue={onContinue} /> : null;
     }
     case 'word-writing': {
       const word = content.words.get(slide.wordId);
