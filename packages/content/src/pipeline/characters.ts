@@ -1,6 +1,8 @@
 import type { CharacterData, Word } from '../types.js';
 import { formatCedictRefs } from './cedict.js';
 
+export type BaseCharacterData = Omit<CharacterData, 'gloss' | 'associations'>;
+
 export interface RawDictionaryEntry {
   character: string;
   definition?: string;
@@ -31,7 +33,7 @@ export function buildCharacters(
   words: Word[],
   charHanViet: (ch: string) => string,
   viCharDefinitions: Record<string, string>,
-): { characters: CharacterData[]; missing: string[] } {
+): { characters: BaseCharacterData[]; missing: string[] } {
   const wordIdsByChar = new Map<string, string[]>();
   for (const w of words) {
     for (const ch of w.characters) {
@@ -50,7 +52,7 @@ export function buildCharacters(
     if (wordIdsByChar.has(e.character)) graphics.set(e.character, e);
   }
 
-  const characters: CharacterData[] = [];
+  const characters: BaseCharacterData[] = [];
   const missing: string[] = [];
   for (const [ch, wordIds] of wordIdsByChar) {
     const g = graphics.get(ch);

@@ -7,6 +7,7 @@ import { writeContent } from '../src/pipeline/build.js';
 import { CVDICT_SOURCE, fetchRaw } from '../src/pipeline/fetch.js';
 import { findOrderViolations } from '../src/pipeline/curriculum-order.js';
 import { findCrowdedUnits, MAX_GRAMMAR_PER_UNIT } from '../src/pipeline/grammar-crowding.js';
+import { findMissingGlosses } from '../src/pipeline/glosses.js';
 import { assembleContent } from '../src/pipeline/run.js';
 import { findEnglishFallbacks } from '../src/pipeline/vietnamese-coverage.js';
 
@@ -74,3 +75,6 @@ const missingAssoc = findMissingAssociations(result.bundle.words, result.associa
 if (missingAssoc.length > 0) {
   console.warn(`warning: ${missingAssoc.length} single-character word(s) without associations yet`);
 }
+
+const missingGloss = findMissingGlosses(result.bundle.characters.map((c) => c.character), authored.charGlosses);
+if (missingGloss.length > 0) console.warn(`warning: ${missingGloss.length} character(s) without a gloss yet`);

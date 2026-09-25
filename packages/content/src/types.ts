@@ -63,6 +63,10 @@ export interface CharacterData {
   radical: string;
   decomposition: string;
   wordIds: string[];
+  /** Short core meaning used to explain compounds; '' until authored. */
+  gloss: string;
+  /** Associations of the single-character word written with this character ([] if none). */
+  associations: Association[];
 }
 
 export interface Sentence {

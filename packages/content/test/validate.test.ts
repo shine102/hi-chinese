@@ -36,6 +36,8 @@ const char = (c: string, over: Partial<CharacterData> = {}): CharacterData => ({
   radical: '',
   decomposition: '',
   wordIds: [],
+  gloss: '',
+  associations: [],
   ...over,
 });
 

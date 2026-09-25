@@ -29,6 +29,8 @@ const character = (ch: string): CharacterData => ({
   radical: '',
   decomposition: '',
   wordIds: [],
+  gloss: '',
+  associations: [],
 });
 
 describe('findEnglishFallbacks', () => {

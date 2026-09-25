@@ -133,6 +133,8 @@ export const fixtureCharacters: CharacterData[] = [
     radical: '戈',
     decomposition: '⿰扌戈',
     wordIds: ['w:我'],
+    gloss: '',
+    associations: [],
   },
   {
     character: '你',
@@ -150,6 +152,8 @@ export const fixtureCharacters: CharacterData[] = [
     radical: '亻',
     decomposition: '⿰亻尔',
     wordIds: ['w:你'],
+    gloss: '',
+    associations: [],
   },
 ];
 

@@ -87,6 +87,8 @@ function bundle(): ContentBundle {
       radical: '',
       decomposition: '',
       wordIds: [`w:${c}`],
+      gloss: '',
+      associations: [],
     })),
     grammar: [
       {

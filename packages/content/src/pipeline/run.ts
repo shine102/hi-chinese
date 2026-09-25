@@ -2,12 +2,13 @@ import type { Authored } from './authored.js';
 import { attachAssociations, indexCedict, resolveAssociations, type ResolvedAssociations } from './associations.js';
 import { buildCharacters } from './characters.js';
 import { parseCedict } from './cedict.js';
+import { attachParts, formatGloss, validateGlosses } from './glosses.js';
 import { makeHanViet } from './hanviet.js';
 import { applyReadingFixes, parseHskWords, type RawHskEntry } from './hsk.js';
 import { attachToUnits, placeAnchoredGrammar, placeAuthoredGrammar, placeGrammarByDensity, placeSentences } from './placement.js';
 import { assignUnits } from './units.js';
 import { validateContent } from './validate.js';
-import type { ContentBundle } from '../types.js';
+import type { CharacterData, ContentBundle } from '../types.js';
 
 export interface RunInputs {
   hskJson: string;
@@ -81,14 +82,26 @@ export function assembleContent(inputs: RunInputs): RunResult {
     cvdict,
     hanViet,
   );
-  const linkedWords = attachAssociations(words, byChar);
+  const linkedWords = attachParts(attachAssociations(words, byChar), inputs.authored.charGlosses, hanViet);
 
-  const { characters, missing } = buildCharacters(
+  const { characters: baseCharacters, missing } = buildCharacters(
     inputs.dictionaryText,
     inputs.graphicsText,
     linkedWords,
     (ch) => hanViet.char(ch),
     inputs.authored.charDefinitions,
+  );
+  const characters: CharacterData[] = baseCharacters.map((c) => {
+    const list = byChar.get(c.character);
+    return {
+      ...c,
+      gloss: formatGloss(inputs.authored.charGlosses[c.character]),
+      associations: Array.isArray(list) ? list : [],
+    };
+  });
+  const glossErrors = validateGlosses(
+    inputs.authored.charGlosses,
+    new Set(baseCharacters.map((c) => c.character)),
   );
 
   const bundle: ContentBundle = { words: linkedWords, characters, units, grammar, sentences };
@@ -97,6 +110,7 @@ export function assembleContent(inputs: RunInputs): RunResult {
     ...grammarErrors.map((e) => `[placement:${e.kind}] ${e.message}`),
     ...missing.map((ch) => `[characters] no stroke data for ${ch}`),
     ...associationErrors.map((e) => `[${e.rule}] ${e.message}`),
+    ...glossErrors.map((e) => `[${e.rule}] ${e.message}`),
     ...validateContent(bundle).map((e) => `[${e.rule}] ${e.message}`),
   ];
   if (problems.length > 0) return { ok: false, problems };
