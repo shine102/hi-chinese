@@ -11,7 +11,7 @@ import { numberedToMarked, type CedictEntry } from './cedict.js';
 export const MIN_ASSOCIATIONS = 1;
 export const MAX_ASSOCIATIONS = 3;
 /** Levels whose single-character words are fully authored; coverage guards apply to these. */
-export const ASSOCIATION_LEVELS_DONE: readonly HskLevel[] = [1];
+export const ASSOCIATION_LEVELS_DONE: readonly HskLevel[] = [1, 2];
 /** True once every course character has a gloss (authored/char-glosses.json). */
 export const GLOSSES_DONE = false;
 
