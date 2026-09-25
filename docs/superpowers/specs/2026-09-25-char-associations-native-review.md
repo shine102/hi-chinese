@@ -1,0 +1,709 @@
+# Liên tưởng chữ — native review
+
+Toàn bộ nội dung do AI viết; soát các nhóm dưới đây trước khi deploy ra ngoài. Ưu tiên: Hán Việt tự ghi, nghĩa `vi`, gloss đa âm.
+
+## Liên tưởng chỉ có 1 mục
+
+Từ đơn (1 chữ) chỉ có đúng 1 liên tưởng trong `words.json` (không có mục thứ hai để đối chiếu):
+
+- 她 (tā) → 她们 — các cô ấy; họ (nữ)
+- 吗 (ma) → 不是吗 — chẳng phải sao?
+- 谁 (shéi) → 谁知道 — ai mà biết được
+- 您 (nín) → 您好 — xin chào (lịch sự)
+- 又 (yòu) → 又名 — còn gọi là
+- 它 (tā) → 它们 — chúng nó (vật)
+- 更 (gèng) → 更加 — càng thêm; hơn nữa
+- 辆 (liàng) → 车辆 — xe cộ; phương tiện
+- 挺 (tǐng) → 挺好 — khá tốt; rất tốt
+
+## Nghĩa mới thêm (không có trong CVDICT)
+
+Nghĩa/cách diễn đạt do đợt soát cuối (task 13, commit `b3a9bb6` trở về trước) thêm hoặc viết lại để khớp câu ví dụ trong khoá học, không có sẵn trong CVDICT gốc:
+
+- 过 "đã từng" (trợ từ chỉ kinh nghiệm; câu 去过/坐过 dùng nghĩa này, danh sách gốc không có)
+- 装 "chứa; đựng" (nghĩa đầu, dùng trong 书包里装了很多书)
+- 齐 "đủ" — "đủ (không thiếu ai, thiếu gì)" (到齐)
+- 化 "tan (băng, tuyết)" (雪化了)
+- 只 "con; chiếc (lượng từ cho động vật, đọc zhī)" — nghĩa thứ 2, thêm để khớp câu dùng 只 làm lượng từ (xem thêm ghi chú "只 dùng chung entry zhǐ" ở README)
+- 输入 "nhập (dữ liệu); đưa vào" (sửa nghĩa đầu sai "nhập khẩu")
+- 任 "giữ chức; nhậm chức" (thêm "giữ chức")
+- 整 "đúng (giờ); chẵn (sau số + lượng từ)"
+- 并 "(chẳng) hề (nhấn mạnh phủ định)"
+- 转 "rẽ; chuyển hướng" (thêm "rẽ")
+- 所 "cái mà; những gì (所 + động từ)"
+- 久 "lâu; (thời gian) dài"
+- 随 "tùy; theo" (随你)
+- 属 "tuổi; sinh năm (...)" (属狗)
+- 张 "lượng từ cho vật phẳng: tờ, tấm, cái (bàn, ghế)"
+- 线 "đường; tuyến (tàu, xe)"
+- 演 "diễn; biểu diễn (vở kịch, phim)"
+- 搬 "chuyển; dời (đồ nặng, cồng kềnh)" / "dọn (nhà)"
+- 部 "lượng từ cho phim, sách, máy móc: bộ, chiếc"
+- 期 "lượng từ: số, kỳ (báo, tạp chí)"
+- 群 "lượng từ: nhóm, đám, bầy, đàn"
+- 科 "môn học; ngành học" (gộp từ "môn học" + "học phần")
+- 骑 "cưỡi (ngựa, xe đạp, v.v.)" đưa lên nghĩa đầu
+- 掉 nghĩa dùng trong khoá đổi từ 掉头 sang 掉下 "rơi xuống"
+- 场 "lượng từ: trận (đấu, mưa), buổi (diễn)" (thêm "mưa" để phủ 一场雨)
+- 道 "lượng từ cho câu hỏi (bài thi), món ăn, vật dài (sông, vết nứt...)"
+- 药 (trong 中药) "thuốc bắc; thuốc Đông y"
+- 邮件 "thư từ; email"
+- 挺 "khá" (rút gọn từ "(khẩu ngữ) khá")
+- 斤 "cân Trung Quốc (500 g)" (gộp 2 nghĩa)
+- 角 "hào (đơn vị tiền, bằng 0,1 nhân dân tệ)"
+- 了 (trong 太好了) "tuyệt quá; tốt quá"
+- 慢 (trong 慢跑) "chạy chậm; chạy bộ"
+- 购买 "mua"; 贵姓 "họ của ngài (kính ngữ)"; 毛巾 "khăn bông; khăn tắm"
+- 教 jiào "dạy dỗ; giáo dục"; 话 "lời nói; thoại"
+- 回 "trả lời (tin nhắn, thư)" (nghĩa đầu), "quay lại; trở về" (nghĩa hai); 回 "lần; chuyện (lượng từ)"
+- 开 "chạy (xe); lái; bật" (thêm "lái", từ 开车)
+- 右 "bên phải; phía tay phải" (bỏ nhãn "(hình thức kết hợp)")
+- 毛 "hào (đơn vị tiền, = 1/10 đồng nhân dân tệ)" (rút gọn)
+- 她 → 她们, 您 → 您好 (cho phép liên tưởng đơn); 点 观点 → 几点; 个 个性 → 这个; 子 桌子 → 子女
+- 号码 "số (điện thoại...)"
+- 很 "rất; lắm"; 老 "cũ; lâu năm"; 块 "đồng; tệ (lượng từ cho tiền, khẩu ngữ)"; 间 "gian; căn (lượng từ cho phòng)"; 个 "cái; chiếc (lượng từ chung, ...)"; 就 "ngay; ngay khi; ngay sau khi (...)"; 在 "ở (vị trí)"; 比 "hơn (A 比 B + tính từ: A ... hơn B)"; 次 "lần (lượng từ cho sự kiện)"; 点 "giờ"; 号 "ngày (trong tháng)"
+- 只 "con; chiếc (lượng từ cho động vật, đọc zhī)" (2nd); 鸡 "gà", "thịt gà"; 也 "cũng"; 少 "hiếm khi (很少)"; 白 "sáng; rõ", "uổng công; không (白来)"; 走 "(xe) chạy"; 是 "là", "đúng; phải", "vâng (đáp lời)"; 他 "anh ấy; ông ấy", "người khác (其他)", "(văn) khác"; 您 "ông; bà; ngài (cách gọi kính trọng)"; 呢 "còn … thì sao? (hỏi lại)", "ở đâu? (…呢?)", "đang (cuối câu)"; 就 "thì; liền; ngay", "đã (sớm)", "chính là", "chỉ"; 见 "ý kiến (意见)"; 回 "về; quay lại", "lần; chuyện (lượng từ)"; 出 "ra; đi ra", "xảy ra; phát sinh", "sản xuất"; 男 "con trai; đàn ông"; 这 "này", "cái này", "đây"; 饭 "cơm", "người hâm mộ (từ mượn)"; 份 "phần; suất", "(lượng từ) bản, tờ, phần"; 用 "dùng; sử dụng", "cần (không cần = 不用)"; 错 "nhầm", "lỡ; để lỡ"; 快 "sắp (快…了)", "vui (快乐)"; 高 "(âm thanh) to", "cấp cao"; 左 "cánh tả", "lệch; sai"; 手 "người làm nghề (歌手, 选手)", "tự tay"; 黄 "hỏng; thất bại (黄了)"; 蓝 "xanh lam; xanh da trời", "cây chàm"; 推 "thoái thác", "hoãn (推迟)"; 加 "tăng"; 啊 "(trợ từ cảm thán cuối câu: à, nhỉ, biết bao)"; 为 "vì; cho"; 室 "văn phòng; phòng ban"; 火 "nóng giận", "(khẩu ngữ) nổi, hot"; 哪 "nào"; 不 "bất- (tiền tố)"; 口 "miệng; (lượng từ) người trong nhà, ngụm"; 第 "thứ (tiền tố chỉ số thứ tự, như trong 第六 "thứ sáu")"
+- 系 "trưởng khoa" (系主任, thể hiện nghĩa "khoa" đã dạy)
+- 光 gloss "ánh sáng; chỉ; hết sạch" (bao 不光)
+- 初 nghĩa đầu "đầu (tháng, năm); lúc đầu" (gộp, thêm cách viết "đầu (tháng, năm)")
+- 克 gloss "gam; khắc; vượt qua"
+- 句 (trong 句号) "dấu chấm (hết câu)"
+
+Ghi chú: danh sách trên gộp mọi "new wording"/"nghĩa mới" nêu trong commit message của nhánh `feat/char-associations` (`git log main..HEAD`), ngoài 6 mục do controller chỉ định ở đầu danh sách. Loại trừ các thay đổi thuần sắp xếp lại thứ tự nghĩa hoặc xoá nghĩa (không tính là "mới").
+
+---
+
+## Liên tưởng ngoài khoá
+
+- 的 → 吃的 chī de · Ngật Đích — đồ ăn
+- 了 → 太好了 tài hǎo le · Thái Hảo Liễu — tuyệt quá; tốt quá
+- 我 → 自我 zì wǒ · Tự Ngã — bản thân; tự mình
+- 你 → 你好 nǐ hǎo · Nhĩ Hảo — xin chào
+- 他 → 他人 tā rén · Tha Nhân — người khác
+- 个 → 这个 zhè ge · Giá Cá — cái này
+- 和 → 共和 gòng hé · Cộng Hòa — cộng hòa
+- 和 → 和好 hé hǎo · Hòa Hảo — làm lành
+- 好 → 你好 nǐ hǎo · Nhĩ Hảo — xin chào
+- 一 → 统一 tǒng yī · Thống Nhất — thống nhất
+- 会 → 不会 bù huì · Bất Hội — không biết; sẽ không
+- 也 → 也好 yě hǎo · Dã Hảo — cũng được
+- 都 → 全都 quán dōu · Toàn Đô — tất cả; đều
+- 都 → 大都 dà dōu · Đại Đô — phần lớn; hầu hết
+- 还 → 还好 hái hǎo · Hoàn Hảo — cũng ổn
+- 着 → 跟着 gēn zhe · Cân Trước — đi theo; theo sau
+- 想 → 梦想 mèng xiǎng · Mộng Tưởng — ước mơ
+- 点 → 几点 jǐ diǎn · Kỷ Điểm — mấy giờ
+- 真 → 天真 tiān zhēn · Thiên Chân — ngây thơ
+- 两 → 两国 liǎng guó · Lưỡng Quốc — hai nước
+- 两 → 两旁 liǎng páng · Lưỡng Bàng — hai bên
+- 两 → 两手 liǎng shǒu · Lưỡng Thủ — hai tay
+- 吗 → 不是吗 bù shì ma · Bất Thị Ma — chẳng phải sao?
+- 太 → 太平洋 tài píng yáng · Thái Bình Dương — Thái Bình Dương
+- 再 → 再三 zài sān · Tái Tam — nhiều lần
+- 再 → 不再 bù zài · Bất Tái — không ... nữa
+- 次 → 再次 zài cì · Tái Thứ — một lần nữa
+- 跟 → 跟着 gēn zhe · Cân Trước — đi theo
+- 跟 → 跟上 gēn shàng · Cân Thượng — theo kịp
+- 跟 → 脚跟 jiǎo gēn · Cước Cân — gót chân
+- 吃 → 小吃 xiǎo chī · Tiểu Ngật — món ăn vặt
+- 谁 → 谁知道 shéi zhī dào · Thùy Tri Đạo — ai mà biết được
+- 找 → 寻找 xún zhǎo · Tầm Trảo — tìm kiếm
+- 月 → 一月 yī yuè · Nhất Nguyệt — tháng Một
+- 月 → 上月 shàng yuè · Thượng Nguyệt — tháng trước
+- 几 → 几天 jǐ tiān · Kỷ Thiên — mấy ngày
+- 几 → 几个 jǐ ge · Kỷ Cá — mấy cái; vài cái
+- 几 → 十几 shí jǐ · Thập Kỷ — mười mấy
+- 叫 → 叫醒 jiào xǐng · Khiếu Tỉnh — đánh thức
+- 叫 → 叫喊 jiào hǎn · Khiếu Hám — kêu la
+- 钱 → 花钱 huā qián · Hoa Tiền — tiêu tiền
+- 钱 → 金钱 jīn qián · Kim Tiền — tiền bạc
+- 三 → 三十 sān shí · Tam Thập — ba mươi
+- 三 → 三月 sān yuè · Tam Nguyệt — tháng Ba
+- 三 → 三角 sān jiǎo · Tam Giác — tam giác
+- 买 → 买卖 mǎi mài · Mãi Mại — mua bán
+- 买 → 购买 gòu mǎi · Cấu Mãi — mua
+- 岁 → 几岁 jǐ suì · Kỷ Tuế — mấy tuổi
+- 岁 → 万岁 wàn suì · Vạn Tuế — muôn năm; vạn tuế
+- 岁 → 年岁 nián suì · Niên Tuế — tuổi tác
+- 号 → 号码 hào mǎ · Hiệu Mã — số (điện thoại...)
+- 号 → 一号 yī hào · Nhất Hiệu — ngày mùng một
+- 住 → 居住 jū zhù · Cư Trú — cư trú; sinh sống
+- 拿 → 拿走 ná zǒu · Nã Tẩu — cầm đi; lấy đi
+- 先 → 优先 yōu xiān · Ưu Tiên — ưu tiên
+- 水 → 冷水 lěng shuǐ · Lãnh Thủy — nước lạnh
+- 水 → 水手 shuǐ shǒu · Thủy Thủ — thủy thủ
+- 写 → 描写 miáo xiě · Miêu Tả — miêu tả
+- 您 → 您好 nín hǎo · Nẫn Hảo — xin chào (lịch sự)
+- 笑 → 微笑 wēi xiào · Vi Tiếu — mỉm cười
+- 日 → 日本 rì běn · Nhật Bản — Nhật Bản
+- 喝 → 喝酒 hē jiǔ · Hát Tửu — uống rượu
+- 喝 → 好喝 hǎo hē · Hảo Hát — ngon (đồ uống)
+- 喝 → 吃喝 chī hē · Ngật Hát — ăn uống
+- 穿 → 穿衣 chuān yī · Xuyên Y — mặc quần áo
+- 穿 → 穿过 chuān guò · Xuyên Quá — đi xuyên qua
+- 花 → 鲜花 xiān huā · Tiên Hoa — hoa tươi
+- 花 → 花钱 huā qián · Hoa Tiền — tiêu tiền
+- 坐 → 坐车 zuò chē · Tọa Xa — đi xe
+- 早 → 尽早 jǐn zǎo · Tận Tảo — càng sớm càng tốt
+- 们 → 孩子们 hái zi men · Hài Tử Môn — bọn trẻ
+- 干 → 干部 gàn bù · Cán Bộ — cán bộ
+- 睡 → 睡衣 shuì yī · Thụy Y — đồ ngủ
+- 四 → 四十 sì shí · Tứ Thập — bốn mươi
+- 四 → 四月 sì yuè · Tứ Nguyệt — tháng Tư
+- 四 → 四周 sì zhōu · Tứ Chu — xung quanh
+- 块 → 冰块 bīng kuài · Băng Khối — đá viên
+- 妈 → 爸妈 bà mā · Ba Ma — bố mẹ
+- 妈 → 大妈 dà mā · Đại Ma — bác gái (gọi thân mật)
+- 错 → 没错 méi cuò · Một Thác — đúng vậy
+- 哪 → 哪怕 nǎ pà · Na Phạ — cho dù
+- 跑 → 长跑 cháng pǎo · Trưởng Bào — chạy đường dài
+- 晚 → 早晚 zǎo wǎn · Tảo Vãn — sớm muộn
+- 五 → 五十 wǔ shí · Ngũ Thập — năm mươi
+- 五 → 五月 wǔ yuè · Ngũ Nguyệt — tháng Năm
+- 五 → 五彩 wǔ cǎi · Ngũ Thái — ngũ sắc; nhiều màu
+- 男 → 男女 nán nǚ · Nam Nữ — nam nữ
+- 重 → 体重 tǐ zhòng · Thể Trọng — cân nặng
+- 远 → 远方 yuǎn fāng · Viễn Phương — phương xa
+- 二 → 二十 èr shí · Nhị Thập — hai mươi
+- 二 → 二月 èr yuè · Nhị Nguyệt — tháng Hai
+- 歌 → 国歌 guó gē · Quốc Ca — quốc ca
+- 元 → 元旦 yuán dàn · Nguyên Đán — Tết Dương lịch
+- 楼 → 大楼 dà lóu · Đại Lâu — tòa nhà lớn
+- 六 → 六十 liù shí · Lục Thập — sáu mươi
+- 六 → 六月 liù yuè · Lục Nguyệt — tháng Sáu
+- 唱 → 合唱 hé chàng · Hợp Xướng — hợp xướng
+- 忙 → 急忙 jí máng · Cấp Mang — vội vàng
+- 十 → 二十 èr shí · Nhị Thập — hai mươi
+- 十 → 十月 shí yuè · Thập Nguyệt — tháng Mười
+- 热 → 热水 rè shuǐ · Nhiệt Thủy — nước nóng
+- 试 → 尝试 cháng shì · Thường Thí — thử; cố thử
+- 票 → 股票 gǔ piào · Cổ Phiếu — cổ phiếu
+- 西 → 西瓜 xī guā · Tây Qua — dưa hấu
+- 床 → 病床 bìng chuáng · Bệnh Sàng — giường bệnh
+- 第 → 第一 dì yī · Đệ Nhất — thứ nhất; đầu tiên
+- 差 → 差点 chà diǎn · Sai Điểm — suýt nữa
+- 教 → 教书 jiāo shū · Giáo Thư — dạy học
+- 教 → 教课 jiāo kè · Giáo Khóa — giảng bài; dạy học
+- 忘 → 难忘 nán wàng · Nan Vong — khó quên
+- 冷 → 冷水 lěng shuǐ · Lãnh Thủy — nước lạnh
+- 冷 → 寒冷 hán lěng · Hàn Lãnh — giá rét
+- 冷 → 冷静 lěng jìng · Lãnh Tĩnh — bình tĩnh
+- 山 → 火山 huǒ shān · Hỏa Sơn — núi lửa
+- 山 → 江山 jiāng shān · Giang Sơn — giang sơn; đất nước
+- 哥 → 大哥 dà gē · Đại Ca — anh cả; đại ca
+- 哥 → 哥们 gē men · Ca Môn — anh em; bạn thân
+- 爸 → 爸妈 bà mā · Ba Ma — bố mẹ
+- 爸 → 老爸 lǎo bà · Lão Ba — bố (thân mật)
+- 风 → 台风 tái fēng · Đài Phong — bão
+- 风 → 风景 fēng jǐng · Phong Cảnh — phong cảnh
+- 累 → 劳累 láo lèi · Lao Lụy — mệt nhọc
+- 累 → 累坏 lèi huài · Lụy Hoại — mệt lả
+- 肉 → 牛肉 niú ròu · Ngưu Nhục — thịt bò
+- 肉 → 猪肉 zhū ròu · Trư Nhục — thịt lợn
+- 肉 → 鸡肉 jī ròu · Kê Nhục — thịt gà
+- 毛 → 毛巾 máo jīn · Mao Cân — khăn bông; khăn tắm
+- 毛 → 毛衣 máo yī · Mao Y — áo len
+- 八 → 八十 bā shí · Bát Thập — tám mươi
+- 八 → 八月 bā yuè · Bát Nguyệt — tháng Tám
+- 左 → 左手 zuǒ shǒu · Tả Thủ — tay trái
+- 七 → 七十 qī shí · Thất Thập — bảy mươi
+- 七 → 七月 qī yuè · Thất Nguyệt — tháng Bảy
+- 七 → 七彩 qī cǎi · Thất Thái — bảy màu
+- 菜 → 做菜 zuò cài · Tố Thái — nấu ăn
+- 饿 → 饥饿 jī è · Cơ Ngạ — đói; nạn đói
+- 饿 → 挨饿 ái è · Ai Ngạ — chịu đói
+- 树 → 树木 shù mù · Thụ Mộc — cây cối
+- 树 → 树叶 shù yè · Thụ Diệp — lá cây
+- 右 → 右手 yòu shǒu · Hữu Thủ — tay phải
+- 东 → 东南亚 dōng nán yà · Đông Nam Á — Đông Nam Á
+- 南 → 越南 yuè nán · Việt Nam — Việt Nam
+- 慢 → 慢性 màn xìng · Mạn Tính — mạn tính
+- 慢 → 慢跑 màn pǎo · Mạn Bào — chạy chậm; chạy bộ
+- 雨 → 大雨 dà yǔ · Đại Vũ — mưa to
+- 雨 → 雨伞 yǔ sǎn · Vũ Tản — ô; dù
+- 九 → 九十 jiǔ shí · Cửu Thập — chín mươi
+- 九 → 九月 jiǔ yuè · Cửu Nguyệt — tháng Chín
+- 贵 → 昂贵 áng guì · Ngang Quý — đắt đỏ
+- 贵 → 宝贵 bǎo guì · Bảo Quý — quý báu
+- 贵 → 贵姓 guì xìng · Quý Tính — họ của ngài (kính ngữ)
+- 页 → 网页 wǎng yè · Võng Hiệt — trang web
+- 页 → 首页 shǒu yè · Thủ Hiệt — trang chủ
+- 页 → 页码 yè mǎ · Hiệt Mã — số trang
+- 百 → 百货 bǎi huò · Bách Hóa — bách hóa
+- 百 → 百分 bǎi fēn · Bách Phân — điểm tuyệt đối (100 điểm)
+- 妹 → 姐妹 jiě mèi · Thư Muội — chị em
+- 妹 → 小妹 xiǎo mèi · Tiểu Muội — em gái nhỏ
+- 姐 → 大姐 dà jiě · Đại Thư — chị cả
+- 零 → 零钱 líng qián · Linh Tiền — tiền lẻ
+- 零 → 零件 líng jiàn · Linh Kiện — linh kiện
+- 弟 → 兄弟 xiōng dì · Huynh Đệ — anh em; huynh đệ
+- 弟 → 弟子 dì zǐ · Đệ Tử — đệ tử; học trò
+- 渴 → 口渴 kǒu kě · Khẩu Khát — khát nước
+- 渴 → 渴望 kě wàng · Khát Vọng — khao khát
+- 让 → 礼让 lǐ ràng · Lễ Nhượng — nhường nhịn
+- 让 → 转让 zhuǎn ràng · Chuyển Nhượng — chuyển nhượng
+- 但 → 但愿 dàn yuàn · Đãn Nguyện — chỉ mong; mong sao
+- 得 → 来得及 lái de jí · Lai Đắc Cập — kịp; còn kịp
+- 又 → 又名 yòu míng · Hựu Danh — còn gọi là
+- 该 → 不该 bù gāi · Bất Cai — không nên
+- 才 → 天才 tiān cái · Thiên Tài — thiên tài
+- 像 → 图像 tú xiàng · Đồ Tượng — hình ảnh
+- 像 → 画像 huà xiàng · Họa Tượng — chân dung
+- 当 → 担当 dān dāng · Đảm Đương — đảm đương; gánh vác
+- 向 → 向前 xiàng qián · Hướng Tiền — về phía trước
+- 向 → 向导 xiàng dǎo · Hướng Đạo — người dẫn đường
+- 带 → 领带 lǐng dài · Lãnh Đái — cà vạt
+- 位 → 地位 dì wèi · Địa Vị — địa vị
+- 长 → 长江 cháng jiāng · Trường Giang — sông Trường Giang
+- 条 → 面条 miàn tiáo · Diện Điều — mì sợi
+- 条 → 薯条 shǔ tiáo · Thự Điều — khoai tây chiên
+- 或 → 或是 huò shì · Hoặc Thị — hoặc là
+- 或 → 或许 huò xǔ · Hoặc Hứa — có lẽ
+- 刚 → 刚好 gāng hǎo · Cương Hảo — vừa đúng; vừa hay
+- 拉 → 拉开 lā kāi · Lạp Khai — kéo ra
+- 拉 → 拉面 lā miàn · Lạp Diện — mì kéo
+- 拉 → 拉链 lā liàn · Lạp Liên — dây kéo; khóa kéo
+- 掉 → 掉下 diào xià · Điệu Hạ — rơi xuống
+- 掉 → 忘掉 wàng diào · Vong Điệu — quên mất
+- 掉 → 丢掉 diū diào · Đâu Điệu — vứt đi; đánh mất
+- 讲 → 演讲 yǎn jiǎng · Diễn Giảng — diễn thuyết
+- 万 → 百万 bǎi wàn · Bách Vạn — một triệu
+- 万 → 万一 wàn yī · Vạn Nhất — vạn nhất; lỡ như
+- 片 → 名片 míng piàn · Danh Phiến — danh thiếp
+- 越 → 越南 yuè nán · Việt Nam — Việt Nam
+- 越 → 超越 chāo yuè · Siêu Việt — vượt qua; siêu việt
+- 卖 → 卖家 mài jiā · Mại Gia — người bán
+- 卖 → 拍卖 pāi mài · Phách Mại — bán đấu giá
+- 选 → 选择 xuǎn zé · Tuyển Trạch — lựa chọn
+- 选 → 选举 xuǎn jǔ · Tuyển Cử — bầu cử
+- 句 → 例句 lì jù · Lệ Cú — câu ví dụ
+- 句 → 句号 jù hào · Cú Hiệu — dấu chấm (hết câu)
+- 份 → 股份 gǔ fèn · Cổ Phần — cổ phần
+- 换 → 交换 jiāo huàn · Giao Hoán — trao đổi
+- 换 → 换钱 huàn qián · Hoán Tiền — đổi tiền
+- 换 → 更换 gēng huàn · Cánh Hoán — thay; thay thế
+- 狗 → 小狗 xiǎo gǒu · Tiểu Cẩu — chó con; cún
+- 狗 → 热狗 rè gǒu · Nhiệt Cẩu — bánh mì kẹp xúc xích
+- 靠 → 依靠 yī kào · Y Kháo — dựa vào
+- 靠 → 停靠 tíng kào · Đình Kháo — cập bến; đỗ lại
+- 脸 → 洗脸 xǐ liǎn · Tẩy Kiểm — rửa mặt
+- 脸 → 脸色 liǎn sè · Kiểm Sắc — sắc mặt
+- 脸 → 笑脸 xiào liǎn · Tiếu Kiểm — mặt cười
+- 段 → 阶段 jiē duàn · Giai Đoạn — giai đoạn
+- 段 → 段落 duàn luò · Đoạn Lạc — đoạn văn
+- 段 → 路段 lù duàn · Lộ Đoạn — đoạn đường
+- 米 → 大米 dà mǐ · Đại Mễ — gạo
+- 米 → 玉米 yù mǐ · Ngọc Mễ — ngô; bắp
+- 懂 → 听懂 tīng dǒng · Thính Đổng — nghe hiểu
+- 懂 → 看懂 kàn dǒng · Khán Đổng — đọc hiểu; xem hiểu
+- 卡 → 卡车 kǎ chē · Ca Xa — xe tải
+- 药 → 中药 zhōng yào · Trung Dược — thuốc bắc; thuốc Đông y
+- 套 → 套餐 tào cān · Sáo Xan — suất ăn trọn gói; combo
+- 套 → 手套 shǒu tào · Thủ Sáo — găng tay
+- 套 → 外套 wài tào · Ngoại Sáo — áo khoác
+- 黑 → 天黑 tiān hēi · Thiên Hắc — trời tối
+- 装 → 包装 bāo zhuāng · Bao Trang — đóng gói; bao bì
+- 座 → 座机 zuò jī · Tọa Cơ — điện thoại bàn
+- 座 → 星座 xīng zuò · Tinh Tọa — chòm sao; cung hoàng đạo
+- 往 → 往来 wǎng lái · Vãng Lai — qua lại
+- 往 → 以往 yǐ wǎng · Dĩ Vãng — trước đây
+- 眼 → 眼镜 yǎn jìng · Nhãn Kính — kính mắt
+- 倒 → 倒下 dǎo xià · Đảo Hạ — ngã xuống; đổ xuống
+- 倒 → 摔倒 shuāi dǎo · Suất Đảo — ngã; té
+- 倒 → 倒闭 dǎo bì · Đảo Bế — phá sản; đóng cửa
+- 酒 → 喝酒 hē jiǔ · Hát Tửu — uống rượu
+- 红 → 口红 kǒu hóng · Khẩu Hồng — son môi
+- 近 → 附近 fù jìn · Phụ Cận — gần đây; lân cận
+- 数 → 数学 shù xué · Số Học — toán học
+- 哭 → 哭声 kū shēng · Khốc Thanh — tiếng khóc
+- 哭 → 大哭 dà kū · Đại Khốc — khóc to
+- 哭 → 痛哭 tòng kū · Thống Khốc — khóc thảm thiết
+- 离 → 距离 jù lí · Cự Ly — khoảng cách
+- 提 → 手提包 shǒu tí bāo · Thủ Đề Bao — túi xách tay
+- 低 → 降低 jiàng dī · Giáng Đê — hạ thấp; giảm
+- 低 → 低头 dī tóu · Đê Đầu — cúi đầu
+- 低 → 低价 dī jià · Đê Giá — giá thấp
+- 弄 → 弄坏 nòng huài · Lộng Hoại — làm hỏng
+- 弄 → 弄脏 nòng zāng · Lộng Tạng — làm bẩn
+- 弄 → 弄错 nòng cuò · Lộng Thác — làm sai; nhầm
+- 查 → 查询 chá xún · Tra Tuân — tra cứu
+- 脚 → 脚步 jiǎo bù · Cước Bộ — bước chân
+- 脚 → 手脚 shǒu jiǎo · Thủ Cước — tay chân
+- 脚 → 山脚 shān jiǎo · Sơn Cước — chân núi
+- 假 → 真假 zhēn jiǎ · Chân Giả — thật hay giả
+- 假 → 假装 jiǎ zhuāng · Giả Trang — giả vờ
+- 假 → 假货 jiǎ huò · Giả Hóa — hàng giả
+- 嘴 → 嘴巴 zuǐ ba · Chủy Ba — miệng
+- 嘴 → 嘴唇 zuǐ chún · Chủy Thần — môi
+- 省 → 省钱 shěng qián · Tỉnh Tiền — tiết kiệm tiền
+- 省 → 节省 jié shěng · Tiết Tỉnh — tiết kiệm
+- 省 → 省份 shěng fèn · Tỉnh Phần — tỉnh
+- 夜 → 夜市 yè shì · Dạ Thị — chợ đêm
+- 称 → 称重 chēng zhòng · Xưng Trọng — cân (trọng lượng)
+- 画 → 动画 dòng huà · Động Họa — phim hoạt hình
+- 猫 → 小猫 xiǎo māo · Tiểu Miêu — mèo con
+- 猫 → 熊猫 xióng māo · Hùng Miêu — gấu trúc
+- 鱼 → 金鱼 jīn yú · Kim Ngư — cá vàng
+- 鱼 → 钓鱼 diào yú · Điếu Ngư — câu cá
+- 鱼 → 鲸鱼 jīng yú · Kình Ngư — cá voi
+- 取 → 取钱 qǔ qián · Thủ Tiền — rút tiền
+- 层 → 楼层 lóu céng · Lâu Tầng — tầng (nhà)
+- 层 → 高层 gāo céng · Cao Tầng — cao tầng; cấp cao
+- 层 → 阶层 jiē céng · Giai Tầng — tầng lớp xã hội
+- 腿 → 大腿 dà tuǐ · Đại Thoái — đùi
+- 腿 → 鸡腿 jī tuǐ · Kê Thoái — đùi gà
+- 腿 → 火腿 huǒ tuǐ · Hỏa Thoái — giăm bông
+- 街 → 大街 dà jiē · Đại Nhai — phố lớn; đường phố
+- 街 → 街道 jiē dào · Nhai Đạo — đường phố; khu phố
+- 街 → 上街 shàng jiē · Thượng Nhai — ra phố
+- 笔 → 铅笔 qiān bǐ · Duyên Bút — bút chì
+- 鞋 → 皮鞋 pí xié · Bì Hài — giày da
+- 鞋 → 拖鞋 tuō xié · Tha Hài — dép lê
+- 推 → 推迟 tuī chí · Thôi Trì — hoãn lại; dời lại
+- 油 → 酱油 jiàng yóu · Tương Du — nước tương; xì dầu
+- 喂 → 喂养 wèi yǎng · Uy Dưỡng — nuôi; cho ăn
+- 喂 → 喂奶 wèi nǎi · Uy Nãi — cho bú
+- 流 → 流水 liú shuǐ · Lưu Thủy — nước chảy
+- 船 → 轮船 lún chuán · Luân Thuyền — tàu thủy
+- 船 → 船长 chuán zhǎng · Thuyền Trưởng — thuyền trưởng
+- 养 → 领养 lǐng yǎng · Lãnh Dưỡng — nhận nuôi
+- 养 → 培养 péi yǎng · Bồi Dưỡng — bồi dưỡng; đào tạo
+- 鸡 → 鸡肉 jī ròu · Kê Nhục — thịt gà
+- 鸡 → 火鸡 huǒ jī · Hỏa Kê — gà tây
+- 遍 → 一遍 yī biàn · Nhất Biến — một lượt; một lần
+- 遍 → 遍地 biàn dì · Biến Địa — khắp nơi
+- 瓶 → 花瓶 huā píng · Hoa Bình — bình hoa
+- 网 → 渔网 yú wǎng · Ngư Võng — lưới đánh cá
+- 借 → 借钱 jiè qián · Tá Tiền — vay tiền; mượn tiền
+- 借 → 借给 jiè gěi · Tá Cấp — cho mượn
+- 借 → 借用 jiè yòng · Tá Dụng — mượn dùng
+- 封 → 密封 mì fēng · Mật Phong — niêm phong; bịt kín
+- 封 → 封建 fēng jiàn · Phong Kiến — phong kiến
+- 蛋 → 蛋糕 dàn gāo · Đản Cao — bánh ngọt; bánh kem
+- 蛋 → 下蛋 xià dàn · Hạ Đản — đẻ trứng
+- 科 → 学科 xué kē · Học Khoa — môn học
+- 科 → 儿科 ér kē · Nhi Khoa — khoa nhi
+- 占 → 占领 zhàn lǐng · Chiếm Lãnh — chiếm lĩnh
+- 占 → 占据 zhàn jù · Chiếm Cứ — chiếm giữ
+- 占 → 占用 zhàn yòng · Chiếm Dụng — chiếm dụng
+- 鸟 → 鸟类 niǎo lèi · Điểu Loại — các loài chim
+- 鸟 → 鸟巢 niǎo cháo · Điểu Sào — tổ chim
+- 蓝 → 蓝天 lán tiān · Lam Thiên — bầu trời xanh
+- 蓝 → 天蓝 tiān lán · Thiên Lam — xanh da trời
+- 纸 → 纸巾 zhǐ jīn · Chỉ Cân — khăn giấy
+- 纸 → 纸币 zhǐ bì · Chỉ Tệ — tiền giấy
+- 背 → 后背 hòu bèi · Hậu Bối — lưng
+- 背 → 背景 bèi jǐng · Bối Cảnh — bối cảnh; phông nền
+- 急 → 着急 zháo jí · Trước Cấp — sốt ruột; lo lắng
+- 急 → 急忙 jí máng · Cấp Mang — vội vàng
+- 疼 → 头疼 tóu téng · Đầu Đông — đau đầu
+- 疼 → 疼痛 téng tòng · Đông Thống — đau đớn
+- 疼 → 心疼 xīn téng · Tâm Đông — xót xa; thương
+- 亮 → 明亮 míng liàng · Minh Lượng — sáng sủa
+- 亮 → 亮光 liàng guāng · Lượng Quang — ánh sáng
+- 篇 → 短篇小说 duǎn piān xiǎo shuō · Đoản Thiên Tiểu Thuyết — truyện ngắn
+- 篇 → 长篇小说 cháng piān xiǎo shuō · Trưởng Thiên Tiểu Thuyết — tiểu thuyết dài
+- 千 → 千米 qiān mǐ · Thiên Mễ — kilômét
+- 墙 → 墙壁 qiáng bì · Tường Bích — bức tường
+- 墙 → 围墙 wéi qiáng · Vi Tường — tường bao
+- 墙 → 城墙 chéng qiáng · Thành Tường — tường thành
+- 黄 → 黄河 huáng hé · Hoàng Hà — sông Hoàng Hà
+- 黄 → 黄油 huáng yóu · Hoàng Du — bơ
+- 轻 → 轻松 qīng sōng · Khinh Tùng — nhẹ nhàng; thoải mái
+- 轻 → 减轻 jiǎn qīng · Giảm Khinh — giảm nhẹ
+- 吹 → 吹风机 chuī fēng jī · Xuy Phong Cơ — máy sấy tóc
+- 吹 → 吹牛 chuī niú · Xuy Ngưu — nói khoác
+- 雪 → 雪人 xuě rén · Tuyết Nhân — người tuyết
+- 雪 → 滑雪 huá xuě · Hoạt Tuyết — trượt tuyết
+- 灯 → 电灯 diàn dēng · Điện Đăng — đèn điện
+- 灯 → 台灯 tái dēng · Đài Đăng — đèn bàn
+- 灯 → 红绿灯 hóng lǜ dēng · Hồng Lục Đăng — đèn giao thông
+- 爬 → 爬行 pá xíng · Ba Hành — bò; trườn
+- 喊 → 喊叫 hǎn jiào · Hám Khiếu — kêu la; hét lên
+- 喊 → 大喊 dà hǎn · Đại Hám — hét to
+- 喊 → 呼喊 hū hǎn · Hô Hám — kêu to; gào gọi
+- 骑 → 骑马 qí mǎ · Kỵ Mã — cưỡi ngựa
+- 骑 → 骑士 qí shì · Kỵ Sĩ — kỵ sĩ; hiệp sĩ
+- 响 → 响亮 xiǎng liàng · Hưởng Lượng — to và vang
+- 响 → 音响 yīn xiǎng · Âm Hưởng — dàn âm thanh; loa
+- 河 → 河边 hé biān · Hà Biên — bờ sông
+- 河 → 河水 hé shuǐ · Hà Thủy — nước sông
+- 河 → 银河 yín hé · Ngân Hà — dải Ngân Hà
+- 举 → 举例 jǔ lì · Cử Lệ — nêu ví dụ
+- 角 → 三角形 sān jiǎo xíng · Tam Giác Hình — hình tam giác
+- 角 → 牛角 niú jiǎo · Ngưu Giác — sừng bò
+- 闻 → 难闻 nán wén · Nan Văn — khó ngửi; hôi
+- 草 → 草原 cǎo yuán · Thảo Nguyên — thảo nguyên
+- 草 → 草莓 cǎo méi · Thảo Môi — dâu tây
+- 湖 → 湖边 hú biān · Hồ Biên — bờ hồ
+- 湖 → 湖泊 hú pō · Hồ Bạc — hồ; ao hồ
+- 绿 → 绿灯 lǜ dēng · Lục Đăng — đèn xanh
+- 碰 → 碰撞 pèng zhuàng · Bánh Chàng — va chạm
+- 碗 → 饭碗 fàn wǎn · Phạn Uyển — bát cơm
+- 碗 → 洗碗 xǐ wǎn · Tẩy Uyển — rửa bát
+- 熟 → 熟悉 shú xī · Thục Tất — quen thuộc
+- 咱 → 咱俩 zán liǎ · Ta Lưỡng — hai chúng ta
+- 亿 → 十亿 shí yì · Thập Ức — một tỷ
+- 亿 → 亿万 yì wàn · Ức Vạn — hàng trăm triệu; vô số
+- 云 → 白云 bái yún · Bạch Vân — mây trắng
+- 云 → 乌云 wū yún · Ô Vân — mây đen
+- 姓 → 百姓 bǎi xìng · Bách Tính — bách tính; dân thường
+- 刻 → 雕刻 diāo kè · Điêu Khắc — điêu khắc
+- 阴 → 阴阳 yīn yáng · Âm Dương — âm dương
+- 阴 → 光阴 guāng yīn · Quang Âm — thời gian (quang âm)
+- 凉 → 凉鞋 liáng xié · Lương Hài — dép quai hậu; xăng-đan
+- 脏 → 弄脏 nòng zāng · Lộng Tạng — làm bẩn
+- 脏 → 脏水 zāng shuǐ · Tạng Thủy — nước bẩn
+- 脏 → 脏乱 zāng luàn · Tạng Loạn — bẩn và bừa bộn
+- 饱 → 吃饱 chī bǎo · Ngật Bão — ăn no
+- 饱 → 饱满 bǎo mǎn · Bão Mãn — đầy đặn
+- 斤 → 半斤八两 bàn jīn bā liǎng · Bán Cân Bát Lưỡng — kẻ tám lạng người nửa cân
+- 晴 → 晴朗 qíng lǎng · Tình Lãng — trong xanh; quang đãng
+- 晴 → 放晴 fàng qíng · Phóng Tình — trời quang trở lại
+- 把 → 火把 huǒ bǎ · Hỏa Bả — ngọn đuốc
+- 被 → 被动 bèi dòng · Bị Động — bị động
+- 被 → 被告 bèi gào · Bị Cáo — bị cáo
+- 并 → 并不 bìng bù · Tịnh Bất — không hề
+- 并 → 合并 hé bìng · Hợp Tịnh — sáp nhập; gộp lại
+- 所 → 厕所 cè suǒ · Xí Sở — nhà vệ sinh
+- 死 → 饿死 è sǐ · Ngạ Tử — chết đói; đói chết mất
+- 死 → 死亡 sǐ wáng · Tử Vong — cái chết; tử vong
+- 死 → 生死 shēng sǐ · Sinh Tử — sống chết
+- 种 → 种类 zhǒng lèi · Chủng Loại — chủng loại
+- 心 → 心脏 xīn zàng · Tâm Tạng — tim; quả tim
+- 已 → 已婚 yǐ hūn · Dĩ Hôn — đã kết hôn
+- 张 → 纸张 zhǐ zhāng · Chỉ Trương — giấy; tờ giấy
+- 张 → 张开 zhāng kāi · Trương Khai — mở ra; giang ra
+- 内 → 室内 shì nèi · Thất Nội — trong nhà; trong phòng
+- 总 → 总共 zǒng gòng · Tổng Cộng — tổng cộng
+- 每 → 每天 měi tiān · Mỗi Thiên — mỗi ngày; hằng ngày
+- 每 → 每年 měi nián · Mỗi Niên — mỗi năm; hằng năm
+- 每 → 每次 měi cì · Mỗi Thứ — mỗi lần
+- 美 → 美国 měi guó · Mỹ Quốc — nước Mỹ
+- 使 → 使得 shǐ de · Sử Đắc — khiến cho; làm cho
+- 连 → 连接 lián jiē · Liên Tiếp — nối liền; kết nối
+- 转 → 右转 yòu zhuǎn · Hữu Chuyển — rẽ phải
+- 转 → 转身 zhuǎn shēn · Chuyển Thân — quay người
+- 管 → 不管 bù guǎn · Bất Quản — bất kể; mặc kệ
+- 管 → 水管 shuǐ guǎn · Thủy Quản — ống nước
+- 活 → 活泼 huó po · Hoạt Bát — hoạt bát; sôi nổi
+- 拍 → 拍照 pāi zhào · Phách Chiếu — chụp ảnh
+- 拍 → 拍手 pāi shǒu · Phách Thủ — vỗ tay
+- 拍 → 球拍 qiú pāi · Cầu Phách — vợt
+- 马 → 骑马 qí mǎ · Kỵ Mã — cưỡi ngựa
+- 区 → 郊区 jiāo qū · Giao Khu — ngoại ô
+- 双 → 双手 shuāng shǒu · Song Thủ — hai tay
+- 双 → 双胞胎 shuāng bāo tāi · Song Bào Thai — sinh đôi
+- 按 → 按时 àn shí · Án Thời — đúng giờ
+- 按 → 按钮 àn niǔ · Án Nữu — nút bấm
+- 线 → 在线 zài xiàn · Tại Tuyến — trực tuyến
+- 线 → 电线 diàn xiàn · Điện Tuyến — dây điện
+- 伤 → 伤口 shāng kǒu · Thương Khẩu — vết thương
+- 血 → 流血 liú xuè · Lưu Huyết — chảy máu
+- 血 → 血型 xuè xíng · Huyết Hình — nhóm máu
+- 血 → 心血 xīn xuè · Tâm Huyết — tâm huyết
+- 派 → 派遣 pài qiǎn · Phái Khiển — cử đi; phái cử
+- 派 → 派出所 pài chū suǒ · Phái Xuất Sở — đồn công an
+- 约 → 约会 yuē huì · Ước Hội — cuộc hẹn; hẹn hò
+- 抓 → 抓紧 zhuā jǐn · Trảo Khẩn — nắm chặt; tranh thủ
+- 光 → 月光 yuè guāng · Nguyệt Quang — ánh trăng
+- 金 → 黄金 huáng jīn · Hoàng Kim — vàng
+- 力 → 用力 yòng lì · Dụng Lực — dùng sức
+- 谈 → 谈恋爱 tán liàn ài · Đàm Luyến Ái — yêu đương; hẹn hò
+- 城 → 进城 jìn chéng · Tiến Thành — vào thành phố
+- 敢 → 勇敢 yǒng gǎn · Dũng Cảm — dũng cảm
+- 敢 → 敢于 gǎn yú · Cảm Vu — dám
+- 某 → 某人 mǒu rén · Mỗ Nhân — người nào đó
+- 某 → 某些 mǒu xiē · Mỗ Ta — một số; vài
+- 随 → 随着 suí zhe · Tùy Trước — theo; cùng với
+- 支 → 分支 fēn zhī · Phân Chi — chi nhánh
+- 赢 → 赢得 yíng dé · Doanh Đắc — giành được
+- 赢 → 输赢 shū yíng · Thâu Doanh — thắng thua
+- 赢 → 双赢 shuāng yíng · Song Doanh — đôi bên cùng có lợi
+- 深 → 深夜 shēn yè · Thâm Dạ — đêm khuya
+- 仍 → 仍旧 réng jiù · Nhưng Cựu — vẫn như cũ
+- 挂 → 挂钟 guà zhōng · Quải Chung — đồng hồ treo tường
+- 挂 → 挂历 guà lì · Quải Lịch — lịch treo tường
+- 挂 → 挂号 guà hào · Quải Hiệu — đăng ký khám bệnh
+- 类 → 分类 fēn lèi · Phân Loại — phân loại
+- 跳 → 心跳 xīn tiào · Tâm Khiêu — nhịp tim
+- 牛 → 牛肉 niú ròu · Ngưu Nhục — thịt bò
+- 牛 → 水牛 shuǐ niú · Thủy Ngưu — con trâu
+- 群 → 群众 qún zhòng · Quần Chúng — quần chúng
+- 群 → 羊群 yáng qún · Dương Quần — đàn cừu
+- 火 → 火山 huǒ shān · Hỏa Sơn — núi lửa
+- 火 → 着火 zháo huǒ · Trước Hỏa — bốc cháy
+- 祝 → 祝贺 zhù hè · Chúc Hạ — chúc mừng
+- 祝 → 祝愿 zhù yuàn · Chúc Nguyện — cầu chúc
+- 乱 → 混乱 hùn luàn · Hỗn Loạn — hỗn loạn
+- 乱 → 杂乱 zá luàn · Tạp Loạn — lộn xộn; bừa bộn
+- 乱 → 胡乱 hú luàn · Hồ Loạn — bừa bãi; bậy bạ
+- 救 → 急救 jí jiù · Cấp Cứu — cấp cứu
+- 救 → 救命 jiù mìng · Cứu Mệnh — cứu mạng; cứu với
+- 救 → 救护车 jiù hù chē · Cứu Hộ Xa — xe cứu thương
+- 痛 → 头痛 tóu tòng · Đầu Thống — đau đầu
+- 痛 → 伤痛 shāng tòng · Thương Thống — đau đớn (vết thương)
+- 追 → 追赶 zhuī gǎn · Truy Cản — đuổi theo
+- 追 → 追求 zhuī qiú · Truy Cầu — theo đuổi
+- 追 → 追问 zhuī wèn · Truy Vấn — gặng hỏi
+- 破 → 破旧 pò jiù · Phá Cựu — cũ nát; rách nát
+- 刀 → 刀子 dāo zi · Đao Tử — con dao
+- 刀 → 剪刀 jiǎn dāo · Tiễn Đao — cái kéo
+- 刀 → 菜刀 cài dāo · Thái Đao — dao làm bếp
+- 朝 → 朝向 cháo xiàng · Triều Hướng — hướng (nhà, cửa)
+- 朝 → 朝代 cháo dài · Triều Đại — triều đại
+- 朝 → 朝鲜 cháo xiǎn · Triều Tiên — Triều Tiên
+- 值 → 值日 zhí rì · Trị Nhật — trực nhật
+- 空 → 有空 yǒu kòng · Hữu Không — có thời gian rảnh
+- 空 → 空闲 kòng xián · Không Nhàn — rảnh rỗi
+- 空 → 空白 kòng bái · Không Bạch — chỗ trống
+- 输 → 认输 rèn shū · Nhận Thâu — chịu thua
+- 皮 → 皮鞋 pí xié · Bì Hài — giày da
+- 皮 → 皮肤 pí fū · Bì Phu — da (người)
+- 系 → 系统 xì tǒng · Hệ Thống — hệ thống
+- 系 → 系主任 xì zhǔ rèn · Hệ Chủ Nhiệm — trưởng khoa
+- 直 → 直线 zhí xiàn · Trực Tuyến — đường thẳng
+- 代 → 代替 dài tì · Đại Thế — thay thế; thay cho
+- 调 → 调动 diào dòng · Điều Động — điều động; thuyên chuyển
+- 龙 → 恐龙 kǒng lóng · Khủng Long — khủng long
+- 龙 → 龙舟 lóng zhōu · Long Chu — thuyền rồng
+- 龙 → 龙眼 lóng yǎn · Long Nhãn — quả nhãn
+- 配 → 搭配 dā pèi · Đáp Phối — phối (đồ, màu); kết hợp
+- 猪 → 猪肉 zhū ròu · Trư Nhục — thịt lợn
+- 猪 → 猪年 zhū nián · Trư Niên — năm Hợi
+- 团 → 旅行团 lǚ xíng tuán · Lữ Hành Đoàn — đoàn du lịch
+- 紧 → 抓紧 zhuā jǐn · Trảo Khẩn — nắm chặt; tranh thủ
+- 证 → 学生证 xué sheng zhèng · Học Sinh Chứng — thẻ sinh viên
+- 顿 → 停顿 tíng dùn · Đình Đốn — tạm dừng
+- 顿 → 顿时 dùn shí · Đốn Thời — ngay lập tức; bỗng
+- 胜 → 战胜 zhàn shèng · Chiến Thắng — chiến thắng; đánh bại
+- 胜 → 取胜 qǔ shèng · Thủ Thắng — giành thắng lợi
+- 压 → 血压 xuè yā · Huyết Áp — huyết áp
+- 建 → 建筑 jiàn zhù · Kiến Trúc — kiến trúc; tòa nhà
+- 布 → 棉布 mián bù · Miên Bố — vải bông
+- 布 → 分布 fēn bù · Phân Bố — phân bố
+- 断 → 切断 qiē duàn · Thiết Đoạn — cắt đứt
+- 钟 → 闹钟 nào zhōng · Náo Chung — đồng hồ báo thức
+- 钟 → 钟表 zhōng biǎo · Chung Biểu — đồng hồ (nói chung)
+- 板 → 木板 mù bǎn · Mộc Bản — tấm ván gỗ
+- 修 → 修理 xiū lǐ · Tu Lý — sửa chữa
+- 修 → 维修 wéi xiū · Duy Tu — bảo trì; sửa chữa
+- 旧 → 旧书 jiù shū · Cựu Thư — sách cũ
+- 旧 → 旧货 jiù huò · Cựu Hóa — đồ cũ
+- 旧 → 怀旧 huái jiù · Hoài Cựu — hoài niệm (chuyện xưa)
+- 退 → 退货 tuì huò · Thoái Hóa — trả lại hàng
+- 付 → 付款 fù kuǎn · Phó Khoản — trả tiền
+- 升 → 升职 shēng zhí · Thăng Chức — thăng chức
+- 升 → 升级 shēng jí · Thăng Cấp — nâng cấp; lên cấp
+- 困 → 困倦 kùn juàn · Khốn Quyện — buồn ngủ; mệt mỏi
+- 任 → 任命 rèn mìng · Nhiệm Mệnh — bổ nhiệm
+- 香 → 香水 xiāng shuǐ · Hương Thủy — nước hoa
+- 香 → 香港 xiāng gǎng · Hương Cảng — Hồng Kông
+- 防 → 国防 guó fáng · Quốc Phòng — quốc phòng
+- 化 → 融化 róng huà · Dung Hóa — tan chảy
+- 糖 → 糖果 táng guǒ · Đường Quả — kẹo
+- 糖 → 白糖 bái táng · Bạch Đường — đường trắng
+- 糖 → 喜糖 xǐ táng · Hỷ Đường — kẹo cưới
+- 领 → 领带 lǐng dài · Lãnh Đái — cà vạt
+- 烟 → 冒烟 mào yān · Mạo Yên — bốc khói
+- 烟 → 抽烟 chōu yān · Trừu Yên — hút thuốc
+- 烟 → 香烟 xiāng yān · Hương Yên — thuốc lá (điếu)
+- 赶 → 赶上 gǎn shàng · Cản Thượng — đuổi kịp; kịp
+- 存 → 存款 cún kuǎn · Tồn Khoản — tiền gửi; gửi tiết kiệm
+- 桥 → 桥梁 qiáo liáng · Kiều Lương — cây cầu; cầu nối
+- 桥 → 天桥 tiān qiáo · Thiên Kiều — cầu vượt (đi bộ)
+- 迷 → 迷路 mí lù · Mê Lộ — lạc đường
+- 铁 → 钢铁 gāng tiě · Cương Thiết — sắt thép
+- 录 → 录像 lù xiàng · Lục Tượng — ghi hình; video
+- 汤 → 鸡汤 jī tāng · Kê Thang — canh gà; súp gà
+- 汤 → 汤圆 tāng yuán · Thang Viên — bánh trôi; chè trôi
+- 搬 → 搬运 bān yùn · Ban Vận — khuân vác; vận chuyển
+- 搬 → 搬走 bān zǒu · Ban Tẩu — mang đi; dọn đi
+- 厂 → 厂长 chǎng zhǎng · Xưởng Trưởng — giám đốc nhà máy
+- 厂 → 厂家 chǎng jiā · Xưởng Gia — nhà sản xuất
+- 胖 → 肥胖 féi pàng · Phì Bàn — béo phì
+- 胖 → 发胖 fā pàng · Phát Bàn — lên cân; phát phì
+- 胖 → 胖子 pàng zi · Bàn Tử — người béo
+- 土 → 土地 tǔ dì · Thổ Địa — đất đai
+- 土 → 泥土 ní tǔ · Nê Thổ — đất; bùn đất
+- 土 → 土豆 tǔ dòu · Thổ Đậu — khoai tây
+- 念 → 念书 niàn shū · Niệm Thư — đi học; học bài
+- 念 → 想念 xiǎng niàn · Tưởng Niệm — nhớ (ai)
+- 村 → 村子 cūn zi · Thôn Tử — ngôi làng
+- 村 → 村民 cūn mín · Thôn Dân — dân làng
+- 缺 → 缺席 quē xí · Khuyết Tịch — vắng mặt
+- 甜 → 甜味 tián wèi · Điềm Vị — vị ngọt
+- 甜 → 甜点 tián diǎn · Điềm Điểm — món tráng miệng
+- 甜 → 香甜 xiāng tián · Hương Điềm — thơm ngọt
+- 古 → 古老 gǔ lǎo · Cổ Lão — cổ xưa
+- 古 → 古典 gǔ diǎn · Cổ Điển — cổ điển
+- 银 → 银色 yín sè · Ngân Sắc — màu bạc
+- 羊 → 山羊 shān yáng · Sơn Dương — con dê
+- 羊 → 羊肉 yáng ròu · Dương Nhục — thịt cừu; thịt dê
+- 羊 → 羊毛 yáng máo · Dương Mao — lông cừu; len
+- 环 → 耳环 ěr huán · Nhĩ Hoàn — bông tai
+- 吵 → 吵闹 chǎo nào · Sảo Náo — ồn ào; om sòm
+- 吵 → 争吵 zhēng chǎo · Tranh Sảo — tranh cãi
+- 齐 → 齐全 qí quán · Tề Toàn — đầy đủ
+- 齐 → 一齐 yī qí · Nhất Tề — cùng lúc; đồng loạt
+- 围 → 包围 bāo wéi · Bao Vi — bao vây
+- 较 → 计较 jì jiào · Kế Giảo — so đo; tính toán
+- 福 → 祝福 zhù fú · Chúc Phúc — chúc phúc; lời chúc
+- 福 → 福利 fú lì · Phúc Lợi — phúc lợi
+- 补 → 补丁 bǔ ding · Bổ Đinh — miếng vá
+- 补 → 补课 bǔ kè · Bổ Khóa — học bù
+- 争 → 竞争 jìng zhēng · Cạnh Tranh — cạnh tranh
+- 争 → 战争 zhàn zhēng · Chiến Tranh — chiến tranh
+- 订 → 预订 yù dìng · Dự Đính — đặt trước
+- 订 → 订票 dìng piào · Đính Phiếu — đặt vé
+- 订 → 修订 xiū dìng · Tu Đính — sửa đổi
+- 富 → 富有 fù yǒu · Phú Hữu — giàu có
+- 富 → 财富 cái fù · Tài Phú — của cải
+- 静 → 平静 píng jìng · Bình Tĩnh — bình lặng; yên ả
+- 静 → 冷静 lěng jìng · Lãnh Tĩnh — bình tĩnh
+- 属 → 金属 jīn shǔ · Kim Thuộc — kim loại
+- 巧 → 碰巧 pèng qiǎo · Bánh Xảo — tình cờ; vừa may
+- 巧 → 技巧 jì qiǎo · Kỹ Xảo — kỹ xảo; kỹ năng
+- 巧 → 巧妙 qiǎo miào · Xảo Diệu — khéo léo; tài tình
+- 束 → 花束 huā shù · Hoa Thúc — bó hoa
+- 束 → 光束 guāng shù · Quang Thúc — chùm sáng
+
+## Không có liên tưởng (none)
+
+- 呢: trợ từ ngữ khí; không có từ ghép thông dụng giúp hiểu nghĩa
+- 很: phó từ mức độ; 得很, 不很 chỉ là cụm từ, không có từ ghép thông dụng
+- 地: trợ từ kết cấu (đọc de); từ ghép thông dụng như 地方, 地图 đều đọc dì
+- 吧: trợ từ ngữ khí; không có từ ghép đọc ba thông dụng (酒吧 đọc bā)
+- 啊: trợ từ ngữ khí đọc nhẹ; từ ghép như 啊呀 đọc ā, không cùng âm
+
+## Gloss đa âm
+
+- 好: hǎo = tốt; hay; dễ · hào = thích; ham
+- 都: dōu = đều; tất cả · dū = thủ đô; đô thị
+- 的: de = của (trợ từ) · dì = đích; mục tiêu
+- 少: shǎo = ít; thiếu · shào = trẻ · shao = ít; thiếu
+- 大: dà = to; lớn · dài = đại phu (trong 大夫)
+- 和: hé = và; hòa thuận · huo = ấm (trong 暖和)
+- 地: de = trợ từ trạng ngữ · dì = đất; nơi
+- 要: yào = muốn; cần; quan trọng · yāo = đòi; yêu cầu
+- 干: gàn = làm; cốt cán · gān = khô; cạn
+- 教: jiāo = dạy · jiào = dạy dỗ; giáo dục
+- 行: xíng = đi; được · háng = hàng; nghề
+- 重: zhòng = nặng; quan trọng · chóng = lại; lặp lại
+- 为: wèi = vì; cho · wéi = làm; là; thành
+- 得: dé = được; đạt được · de = trợ từ; được (hậu tố)
+- 头: tóu = đầu; đầu tiên · tou = hậu tố danh từ
+- 长: cháng = dài; lâu · zhǎng = trưởng; lớn lên
+- 发: fā = phát; gửi đi · fà = tóc · fa = tóc
+- 假: jiǎ = giả; không thật · jià = nghỉ; kỳ nghỉ
+- 空: kòng = rảnh; chỗ trống · kōng = trống rỗng; trời
+- 调: diào = điều động; giọng điệu · tiáo = điều chỉnh; hòa hợp
+- 乐: lè = vui · yuè = nhạc
+- 儿: ér = con; trẻ con · r = hậu tố -r
+- 觉: jué = cảm thấy; giác · jiào = giấc ngủ
+- 划: huà = vạch; hoạch định · huá = chèo
+- 结: jié = thắt; kết · jiē = chắc; kết trái
+- 应: yīng = nên; đáng · yìng = đáp ứng; ứng · ying = nhận lời; đáp
+- 相: xiāng = lẫn nhau; cùng · xiàng = ảnh; tướng mạo
+- 便: biàn = tiện; thuận tiện · pián = rẻ
+- 处: chù = nơi; chỗ · chǔ = xử lý; ở · chu = chỗ; điểm

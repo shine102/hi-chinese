@@ -35,11 +35,22 @@ Curriculum audit (2026-09-24):
 | `2026-09-24-l2-l3-retheme.md` | `2026-09-24-l2-l3-retheme-design.md` | L2/L3 units rebuilt from named subthemes; function words spread; ≤5 grammar points per unit | merged |
 | `2026-09-24-unit-order-tech-debt.md` | `2026-09-24-unit-order-tech-debt-design.md` | Concrete-first (tier) unit order; sentence pinyin data guard and reading fixes; no crowded unit on any level; `useLiveQuery` errors shown with retry; built content tracked in git | merged |
 | `2026-09-24-sentence-expansion.md` | `2026-09-24-sentence-expansion-design.md` | Every lesson has ≥2 sentences of ≥3 words; every word is in a sentence or the reasoned allowlist | merged |
+| `2026-09-25-char-associations.md` | `2026-09-25-char-associations-design.md` | Single-character words show 2–3 association compounds (or a reasoned none); compounds show per-character Hán Việt + gloss; every character has a core gloss; first meaning of single-character words is the course sense | merged |
 
 Still open:
 
 - Native-speaker review of AI-written content before any external deploy (lists in
   `docs/superpowers/specs/*-native-review.md`).
+- First-meaning sweep of the 1667 multi-character words (only single-character words
+  got the first-meaning sweep in `2026-09-25-char-associations.md`). Review found
+  木头 "chậm chạp", 一般 "giống", 曾经 "một lần", 仅仅 "hầu như không", 电台 "máy phát thu";
+  the first three of these were fixed, the rest of the 1667 still need a pass.
+- Sentence fixes not done (do not touch unit placement/composition, wording only):
+  不过太贵了/可是太长了 translated "hơi … quá" (太 ≠ hơi, should be "quá");
+  我没关 "tôi không đóng" → should be "tôi chưa đóng"; unnatural 我在中。/他在外。;
+  duplicate 门被风吹开了 under 吹; 怎么回事 listed under 回 (should be elsewhere).
+- 只 zhī measure word (con; chiếc) shares the zhǐ ("chỉ") word entry/id — the headword's
+  pinyin shows zhǐ even where a sentence or association uses the zhī reading.
 - `g:yi-jiu` (一…就) sits in l2-u32; pin 哭 earlier if it should be taught sooner.
 - Grammar validator requires ≥1 example per point, not the spec's 3-5.
 - Saved L2/L3 lesson progress from before the 2026-09-24 reorder points at the old units.
