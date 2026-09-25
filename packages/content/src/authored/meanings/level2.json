@@ -30,8 +30,8 @@
     "khá tốt"
   ],
   "为": [
-    "bởi vì",
     "vì",
+    "bởi vì",
     "để"
   ],
   "已经": [
@@ -120,8 +120,8 @@
     "hình ảnh trong ánh xạ (toán học)"
   ],
   "当": [
-    "khi; lúc (dùng trong 当...的时候)",
-    "làm; đảm nhiệm (chức vụ)"
+    "làm; đảm nhiệm (chức vụ)",
+    "khi; lúc (dùng trong 当...的时候)"
   ],
   "所以": [
     "vì vậy",
@@ -176,11 +176,10 @@
     "nuôi dưỡng"
   ],
   "位": [
+    "lượng từ cho người (kính trọng)",
     "vị trí",
     "địa điểm",
     "chỗ",
-    "ngồi",
-    "lượng từ cho người (kính trọng)",
     "lượng từ cho bit nhị phân (ví dụ: 十六位 16-bit hoặc 2 byte)",
     "(vật lý) thế năng"
   ],
@@ -229,22 +228,22 @@
     "đừng!; không được"
   ],
   "成": [
+    "trở thành",
+    "biến thành",
     "thành công",
     "hoàn thành",
     "làm xong",
     "đạt được",
-    "trở thành",
-    "biến thành",
     "ổn",
     "OK!",
     "một phần mười"
   ],
   "名": [
+    "lượng từ cho người",
     "tên",
     "danh từ (loại từ)",
     "vị trí (vd: trong danh sách trúng giải)",
-    "nổi tiếng",
-    "lượng từ cho người"
+    "nổi tiếng"
   ],
   "所有": [
     "tất cả",
@@ -263,8 +262,8 @@
     "nhất thiết"
   ],
   "长": [
-    "chiều dài",
     "dài",
+    "chiều dài",
     "mãi mãi",
     "luôn luôn",
     "liên tục"
@@ -288,23 +287,23 @@
     "sau đó; sau này"
   ],
   "条": [
+    "lượng từ cho những vật dài mỏng (ruy băng, sông, đường, quần dài, v.v.)",
     "dải",
     "mục",
     "điều",
-    "khoản (của luật hoặc hiệp ước)",
-    "lượng từ cho những vật dài mỏng (ruy băng, sông, đường, quần dài, v.v.)"
+    "khoản (của luật hoặc hiệp ước)"
   ],
   "场": [
+    "lượng từ cho hoạt động thể thao hoặc giải trí",
     "nơi lớn dùng cho mục đích cụ thể",
     "sân khấu",
     "cảnh (của vở kịch)",
-    "lượng từ cho hoạt động thể thao hoặc giải trí",
     "lượng từ cho số lần thi"
   ],
   "件": [
+    "lượng từ cho sự kiện, đồ vật, quần áo, v.v.",
     "món",
-    "thành phần",
-    "lượng từ cho sự kiện, đồ vật, quần áo, v.v."
+    "thành phần"
   ],
   "进行": [
     "tiến hành",
@@ -464,9 +463,9 @@
     "nhóm"
   ],
   "接": [
-    "nhận",
-    "trả lời (điện thoại)",
     "gặp hoặc chào đón ai",
+    "trả lời (điện thoại)",
+    "nhận",
     "kết nối",
     "bắt",
     "ghép",
@@ -530,13 +529,13 @@
     "mọi người"
   ],
   "道": [
+    "lượng từ cho câu hỏi (trong kỳ thi, v.v.), món ăn trong bữa ăn, vật dài mỏng (sông, vết nứt, v.v.), rào cản (tường, cửa, v.v.), mệnh lệnh, bước trong quy trình",
     "đường; con đường",
     "(hình thức kết hợp) cách; lý do; nguyên tắc",
     "(hình thức kết hợp) một kỹ năng; một nghệ thuật; một chuyên môn",
     "(Đạo giáo) con Đường; Đạo",
     "nói (dùng để dẫn lời trực tiếp, như trong tiểu thuyết)",
     "(hình thức kết hợp) biểu đạt; gửi lời (lời nói lịch sự)",
-    "lượng từ cho những vật dài mỏng (sông, vết nứt, v.v.), rào cản (tường, cửa, v.v.), câu hỏi (trong kỳ thi, v.v.), mệnh lệnh, món ăn trong bữa ăn, bước trong quy trình",
     "(cũ) đạo lộ (đơn vị hành chính)"
   ],
   "能够": [
@@ -555,11 +554,11 @@
     "hoàn thành; thực hiện"
   ],
   "求": [
+    "thỉnh cầu",
+    "cầu xin",
     "tìm kiếm",
     "tìm",
-    "thỉnh cầu",
-    "yêu cầu",
-    "cầu xin"
+    "yêu cầu"
   ],
   "帮助": [
     "sự giúp đỡ; hỗ trợ",
@@ -666,6 +665,7 @@
     "học sinh"
   ],
   "片": [
+    "lượng từ cho lát, viên, mảnh đất, vùng nước",
     "mảnh mỏng",
     "bông",
     "một lát",
@@ -676,7 +676,6 @@
     "một phần",
     "không hoàn chỉnh",
     "phiến diện",
-    "lượng từ cho lát, viên, mảnh đất, vùng nước",
     "lượng từ cho CD, phim, DVD, v.v.",
     "dùng với số từ 一[yi1]: lượng từ cho kịch bản, cảnh, cảm giác, bầu không khí, âm thanh, v.v."
   ],
@@ -849,10 +848,10 @@
     "nhận thức"
   ],
   "卡": [
+    "(từ mượn) thẻ",
     "dừng",
     "chặn",
     "(tin học) (khẩu ngữ) chậm",
-    "(từ mượn) thẻ",
     "xe tải (từ \"car\")",
     "calo (viết tắt của 卡路里[ka3 lu4 li3])",
     "băng cassette"
@@ -889,9 +888,9 @@
     "thuốc; dược phẩm"
   ],
   "留": [
+    "ở lại",
     "để lại (tin nhắn, v.v.)",
     "giữ lại",
-    "ở lại",
     "duy trì",
     "bảo tồn",
     "lưu giữ"
@@ -907,6 +906,7 @@
     "biến thể của 跤[jiao1]"
   ],
   "套": [
+    "lượng từ cho bộ, tập hợp",
     "che đậy",
     "bọc",
     "vỏ",
@@ -920,7 +920,6 @@
     "vòng dây",
     "thao tác khéo léo",
     "đạt được một cách lươn lẹo",
-    "lượng từ cho bộ, tập hợp",
     "khúc quanh (của sông hoặc dãy núi, trong địa danh)",
     "tau (chữ cái Hy Lạp Ττ)"
   ],
@@ -947,8 +946,8 @@
     "tin tặc (mượn từ, tin học)"
   ],
   "店": [
-    "quán trọ; khách sạn kiểu cũ",
-    "(hình thức kết hợp) cửa hàng; tiệm"
+    "cửa hàng; tiệm",
+    "quán trọ; khách sạn kiểu cũ"
   ],
   "服务": [
     "phục vụ",
@@ -991,6 +990,7 @@
     "tự nguyện (làm gì đó)"
   ],
   "装": [
+    "chứa; đựng",
     "trang sức",
     "trang trí",
     "mặc",
@@ -1015,11 +1015,11 @@
     "xin cảm ơn"
   ],
   "座": [
+    "lượng từ cho tòa nhà, núi và các vật thể cố định tương tự",
     "chỗ ngồi",
     "cơ sở",
     "đế",
-    "(cổ) hậu tố dùng trong cách xưng hô tôn kính, ví dụ: 师座|师座[shi1 zuo4]",
-    "lượng từ cho tòa nhà, núi và các vật thể cố định tương tự"
+    "(cổ) hậu tố dùng trong cách xưng hô tôn kính, ví dụ: 师座|师座[shi1 zuo4]"
   ],
   "那样": [
     "loại đó",
@@ -1333,12 +1333,12 @@
     "phàn nàn"
   ],
   "查": [
-    "nghiên cứu",
+    "tra cứu (ví dụ: tra từ trong từ điển)",
     "kiểm tra",
+    "nghiên cứu",
     "điều tra",
     "khám xét",
-    "tham khảo",
-    "tra cứu (ví dụ: tra từ trong từ điển)"
+    "tham khảo"
   ],
   "脚": [
     "bàn chân",
@@ -1350,8 +1350,8 @@
     "chính; chủ yếu; quan trọng; hàng đầu"
   ],
   "市": [
-    "chợ",
-    "thành phố"
+    "thành phố",
+    "chợ"
   ],
   "不少": [
     "nhiều",
@@ -1496,13 +1496,13 @@
     "(từ mượn) (thông tục) modem"
   ],
   "通": [
+    "kết nối",
+    "thông",
     "đi qua",
     "biết rõ",
     "(hậu tố) chuyên gia",
-    "kết nối",
     "giao tiếp",
     "mở",
-    "thông",
     "lượng từ cho thư, điện báo, cuộc gọi điện thoại, v.v."
   ],
   "办公室": [
@@ -1551,13 +1551,13 @@
     "quan tâm đến; chăm sóc"
   ],
   "节": [
+    "lượng từ cho các đoạn: bài học, toa tàu, câu kinh thánh, v.v.",
     "khớp; đốt",
     "(dạng kết hợp) phần; đoạn",
     "tiết khí (một trong 24 phân đoạn của năm trong lịch truyền thống Trung Quốc)",
     "lễ hội theo mùa",
     "(dạng kết hợp) tiết kiệm",
     "(dạng kết hợp) tiết tháo; trinh tiết",
-    "lượng từ cho các đoạn: bài học, toa tàu, câu kinh thánh, v.v.",
     "hải lý (dặm biển mỗi giờ)"
   ],
   "留下": [
@@ -1968,10 +1968,10 @@
     "đưa ra (hộ chiếu, v.v.); công khai (quan điểm, v.v.)"
   ],
   "篇": [
+    "lượng từ cho tác phẩm viết: chương, bài viết",
     "tờ",
     "mảnh viết",
-    "tập thẻ tre dùng để ghi chép (xưa)",
-    "lượng từ cho tác phẩm viết: chương, bài viết"
+    "tập thẻ tre dùng để ghi chép (xưa)"
   ],
   "出口": [
     "lối ra",
@@ -2317,8 +2317,8 @@
     "luộc và giũ lụa thô"
   ],
   "举": [
-    "nâng",
     "giơ lên",
+    "nâng",
     "dẫn chứng",
     "liệt kê",
     "hành động",
@@ -2377,11 +2377,11 @@
     "cách xưng hô tôn trọng với cấp trên"
   ],
   "角": [
+    "hào (đơn vị tiền, bằng 0,1 nhân dân tệ)",
     "góc",
     "góc cạnh",
     "sừng",
-    "hình dạng sừng",
-    "đơn vị tiền bằng 0,1 nhân dân tệ, hoặc 10 xu (một hào)"
+    "hình dạng sừng"
   ],
   "绿色": [
     "màu xanh lá"
