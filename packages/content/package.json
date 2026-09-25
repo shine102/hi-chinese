@@ -13,6 +13,7 @@
     "build": "tsx scripts/build.ts",
     "report:readings": "tsx scripts/report-readings.ts",
     "vocab-context": "tsx scripts/vocab-context.ts",
+    "assoc-context": "tsx scripts/assoc-context.ts",
     "lesson-gaps": "tsx scripts/lesson-gaps.ts",
     "retheme-units": "tsx scripts/retheme-units.ts"
   },
