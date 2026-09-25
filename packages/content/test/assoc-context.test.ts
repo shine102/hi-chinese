@@ -31,11 +31,38 @@ describe('cvdictCandidates', () => {
         ].join('\n'),
       ),
     );
-    const got = cvdictCandidates('太', 'tai', cvdict, new Set(['太阳']));
+    const got = cvdictCandidates('太', 'tai', cvdict, new Set(['太阳']), new Set());
     expect(got.map((c) => [c.zh, c.inCourse])).toEqual([
       ['太阳', true],
       ['太空', false],
       ['太平洋', false],
+    ]);
+  });
+
+  it('drops place-name and variant-stub entries as noise', () => {
+    const cvdict = indexCedict(
+      parseCedict(
+        [
+          '太原 太原 [Tai4 yuan2] /thành phố Thái Nguyên, thủ phủ tỉnh Sơn Tây/',
+          '太和 太和 [Tai4 he2] /biến thể của 太和殿[Tai4 he2 dian4]/',
+          '太空 太空 [tai4 kong1] /không gian/',
+        ].join('\n'),
+      ),
+    );
+    const got = cvdictCandidates('太', 'tai', cvdict, new Set(), new Set());
+    expect(got.map((c) => c.zh)).toEqual(['太空']);
+  });
+
+  it('ranks a candidate whose characters are all course characters above a shorter one that is not', () => {
+    const cvdict = indexCedict(
+      parseCedict(
+        ['太空 太空 [tai4 kong1] /không gian/', '太平洋 太平洋 [tai4 ping2 yang2] /Thái Bình Dương/'].join('\n'),
+      ),
+    );
+    const got = cvdictCandidates('太', 'tai', cvdict, new Set(), new Set(['太', '平', '洋']));
+    expect(got.map((c) => [c.zh, c.allCourseChars])).toEqual([
+      ['太平洋', true],
+      ['太空', false],
     ]);
   });
 });

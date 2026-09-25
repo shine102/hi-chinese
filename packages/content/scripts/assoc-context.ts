@@ -31,6 +31,7 @@ const authored = await loadAuthored(resolve(here, '../src/authored'));
 const raw = await fetchRaw(resolve(here, '../raw'), undefined, () => {}, { cvdict: CVDICT_SOURCE });
 const cvdict = indexCedict(parseCedict(await readFile(raw.cvdict!, 'utf8')));
 const courseSet = new Set(words.map((w) => w.simplified));
+const courseChars = new Set(words.flatMap((w) => w.characters));
 const readChar = async (ch: string) =>
   JSON.parse(
     await readFile(resolve(content, 'characters', `${ch.codePointAt(0)!.toString(16)}.json`), 'utf8'),
@@ -83,7 +84,9 @@ if (process.argv.includes('--glosses')) {
     for (const s of sentences.filter((s) => s.wordIds.includes(w.id)).slice(0, 4))
       console.log(`  sentence: ${s.zh} ${s.pinyin} — ${s.vi}`);
     for (const line of courseWordsWith(w.simplified)) console.log(`  course: ${line}`);
-    for (const cand of cvdictCandidates(w.simplified, taught, cvdict, courseSet))
-      console.log(`  cvdict${cand.inCourse ? ' (course)' : ''}: ${cand.zh} ${cand.pinyin} — ${cand.vi}`);
+    for (const cand of cvdictCandidates(w.simplified, taught, cvdict, courseSet, courseChars))
+      console.log(
+        `  cvdict${cand.allCourseChars ? '*' : ''}${cand.inCourse ? ' (course)' : ''}: ${cand.zh} ${cand.pinyin} — ${cand.vi}`,
+      );
   }
 }

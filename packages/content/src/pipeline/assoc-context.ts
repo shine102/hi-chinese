@@ -22,14 +22,21 @@ export function singleCharWordsInOrder(words: readonly Word[], units: readonly U
     .filter((w) => w.level === level && [...w.simplified].length === 1);
 }
 
+// CVDICT senses that are dictionary noise for a course author rather than a usable everyday
+// sense: place names, variant/bound-form stubs, name labels, vulgar slang, transliteration
+// and abbreviation notes. Whole word is dropped when its only readable entry matches this.
+const NOISE =
+  /biến thể của|dị thể|thành phố|huyện|quận|tỉnh|thị trấn|địa danh|tên (người|riêng|họ)|họ \S+ ?$|\(tục\)|thô tục|chửi|phiên âm|viết tắt của/i;
+
 export function cvdictCandidates(
   char: string,
   taught: string,
   cvdict: ReadonlyMap<string, readonly CedictEntry[]>,
   courseWords: ReadonlySet<string>,
-  limit = 20,
-): { zh: string; pinyin: string; vi: string; inCourse: boolean }[] {
-  const out: { zh: string; pinyin: string; vi: string; inCourse: boolean }[] = [];
+  courseChars: ReadonlySet<string>,
+  limit = 30,
+): { zh: string; pinyin: string; vi: string; inCourse: boolean; allCourseChars: boolean }[] {
+  const out: { zh: string; pinyin: string; vi: string; inCourse: boolean; allCourseChars: boolean }[] = [];
   for (const [zh, entries] of cvdict) {
     const len = [...zh].length;
     if (len < 2 || len > 4 || !zh.includes(char)) continue;
@@ -38,11 +45,23 @@ export function cvdictCandidates(
       if (!pinyin) continue;
       const aligned = alignSyllables(zh, pinyin);
       if (!aligned || aligned.some((p) => p.char === char && p.syllable !== taught)) continue;
-      out.push({ zh, pinyin, vi: e.meanings.slice(0, 2).join('; '), inCourse: courseWords.has(zh) });
+      if (NOISE.test(e.meanings.join('; '))) continue;
+      out.push({
+        zh,
+        pinyin,
+        vi: e.meanings.slice(0, 2).join('; '),
+        inCourse: courseWords.has(zh),
+        allCourseChars: [...zh].every((c) => courseChars.has(c)),
+      });
       break;
     }
   }
   return out
-    .sort((a, b) => Number(b.inCourse) - Number(a.inCourse) || [...a.zh].length - [...b.zh].length)
+    .sort(
+      (a, b) =>
+        Number(b.inCourse) - Number(a.inCourse) ||
+        Number(b.allCourseChars) - Number(a.allCourseChars) ||
+        [...a.zh].length - [...b.zh].length,
+    )
     .slice(0, limit);
 }
