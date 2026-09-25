@@ -1,17 +1,17 @@
 {
   "把": [
+    "đem; lấy (đưa tân ngữ lên trước động từ: 把 + danh từ + động từ)",
     "cầm; nắm",
     "đỡ em bé để đi tiểu hoặc đại tiện",
     "tay cầm",
     "lượng từ cho vật có cán",
-    "(dùng để đưa tân ngữ lên trước động từ: 把[ba3] + {danh từ} + {động từ})",
     "lượng từ: nắm, bó, chùm"
   ],
   "被": [
+    "bị; được (câu bị động, đặt trước người làm hoặc động từ)",
     "chăn",
     "đắp (bằng)",
     "(văn học) chịu (một điều không may)",
-    "dùng để chỉ thể bị động (đặt trước người thực hiện hành động như \"bởi\" trong câu bị động tiếng Anh, hoặc, nếu không nhắc đến người thực hiện, thì đặt trước động từ)",
     "(khoảng năm 2009) (mỉa mai hoặc hài hước) dùng để chỉ rằng từ sau đó nên được hiểu là trong dấu ngoặc kép (như trong 被旅遊|被旅游[bei4 lu:3 you2] \"đi du lịch\", chẳng hạn)"
   ],
   "就是": [
@@ -20,9 +20,9 @@
     "(dùng với 也[ye3]) ngay cả; thậm chí nếu"
   ],
   "时": [
+    "khi",
     "giờ",
     "thời gian",
-    "khi",
     "mùa",
     "giai đoạn"
   ],
@@ -37,17 +37,17 @@
     "lúc đầu"
   ],
   "并": [
+    "(chẳng) hề (nhấn mạnh phủ định)",
     "và; hơn nữa; cũng",
     "cùng với; đồng thời",
-    "(không) hề (dùng để phủ định)",
     "sáp nhập; hợp nhất"
   ],
   "所": [
-    "thực ra",
-    "nơi",
+    "cái mà; những gì (所 + động từ)",
+    "phó từ giới thiệu mệnh đề quan hệ hoặc bị động",
     "lượng từ cho nhà, toà nhà nhỏ, cơ quan, v.v.",
-    "cái mà",
-    "phó từ giới thiệu mệnh đề quan hệ hoặc bị động"
+    "thực ra",
+    "nơi"
   ],
   "死": [
     "chết",
@@ -58,11 +58,11 @@
     "chết tiệt"
   ],
   "种": [
-    "hạt",
-    "loài",
     "loại",
     "kiểu",
-    "lượng từ cho loại, kiểu, dạng"
+    "lượng từ cho loại, kiểu, dạng",
+    "hạt",
+    "loài"
   ],
   "希望": [
     "hy vọng",
@@ -127,9 +127,9 @@
     "nội địa"
   ],
   "总": [
+    "luôn luôn; lúc nào cũng",
     "tổng thể; toàn bộ",
     "tóm lại",
-    "trong mọi trường hợp; luôn luôn; lúc nào cũng",
     "dù sao; sau tất cả; cuối cùng; không sớm thì muộn",
     "chắc chắn",
     "(sau tên người) viết tắt của 總經理|总经理[zong3 jing1 li3] hoặc 總編|总编[zong3 bian1] v.v."
@@ -150,9 +150,9 @@
     "tất cả"
   ],
   "由": [
+    "do (ai làm, phụ trách); bởi vì",
     "theo",
     "từ",
-    "bởi vì; do",
     "bằng; qua; thông qua",
     "(trước danh từ và động từ) là để ... làm ..."
   ],
@@ -177,11 +177,11 @@
     "cái gì"
   ],
   "受": [
+    "chịu",
+    "chịu đựng",
     "nhận",
     "chấp nhận",
-    "chịu",
     "phải chịu",
-    "chịu đựng",
     "đứng vững",
     "dễ chịu",
     "(dấu hiệu bị động)"
@@ -201,13 +201,13 @@
     "thực ra; thực tế; thật sự"
   ],
   "连": [
+    "ngay cả; thậm chí (连…都/也)",
     "liên kết",
     "gia nhập",
     "kết nối",
     "liên tục",
     "liên tiếp",
     "bao gồm",
-    "(dùng với 也[ye3], 都[dou1],...) thậm chí",
     "đại đội (quân đội)"
   ],
   "当然": [
@@ -260,7 +260,7 @@
     "khép lại"
   ],
   "者": [
-    "(sau động từ hoặc tính từ) người mà ...",
+    "người (làm việc gì đó), vd 读者, 作者",
     "(sau danh từ) người liên quan đến ...",
     "(dùng sau một số hoặc 後|后[hou4] hoặc 前[qian2] để chỉ điều đã được nhắc đến trước đó)",
     "(dùng sau một thuật ngữ, để ngắt trước khi định nghĩa thuật ngữ đó)",
@@ -268,8 +268,8 @@
     "(cổ) này"
   ],
   "转": [
+    "rẽ; chuyển hướng",
     "xoay",
-    "chuyển hướng",
     "chuyển giao",
     "chuyển tiếp (thư)",
     "(Internet) chia sẻ (nội dung của người khác)"
@@ -313,13 +313,13 @@
     "sự bảo vệ"
   ],
   "管": [
-    "chăm sóc",
-    "kiểm soát",
+    "quan tâm",
     "quản lý",
     "phụ trách",
+    "chăm sóc",
+    "kiểm soát",
     "trông nom",
     "vận hành",
-    "quan tâm",
     "ống",
     "đường ống",
     "nhạc cụ họ gỗ",
@@ -452,8 +452,8 @@
     "luôn luôn"
   ],
   "指": [
-    "ngón tay",
     "chỉ vào hoặc đến",
+    "ngón tay",
     "chỉ ra hoặc đề cập đến",
     "phụ thuộc vào",
     "dựa vào",
@@ -542,6 +542,8 @@
     "nhân sự"
   ],
   "按": [
+    "theo",
+    "dựa vào",
     "nhấn",
     "đẩy",
     "để sang một bên hoặc gác lại",
@@ -549,8 +551,6 @@
     "kiềm chế",
     "đặt tay lên",
     "kiểm tra hoặc tham khảo",
-    "theo",
-    "dựa vào",
     "(của biên tập viên hoặc tác giả) đưa ra bình luận"
   ],
   "线": [
@@ -584,8 +584,8 @@
     "hiển nhiên"
   ],
   "伤": [
-    "làm bị thương",
     "vết thương",
+    "làm bị thương",
     "thương tích"
   ],
   "曾经": [
@@ -628,13 +628,13 @@
     "nhất định"
   ],
   "派": [
+    "cử",
+    "phái đi",
     "bè phái",
     "trường phái",
     "nhóm",
     "phái",
-    "cử",
     "đi",
-    "phái đi",
     "bổ nhiệm",
     "pi (chữ cái Hy Lạp Ππ)",
     "tỉ số đường tròn pi = 3,1415926",
@@ -657,6 +657,7 @@
     "khai thác"
   ],
   "性": [
+    "tính (hậu tố danh từ, vd 重要性)",
     "bản chất",
     "tính cách",
     "đặc tính",
@@ -665,8 +666,7 @@
     "tính dục",
     "tình dục",
     "giới tính",
-    "hậu tố hình thành tính từ từ động từ",
-    "hậu tố hình thành danh từ từ tính từ, tương ứng với -ness hoặc -ity"
+    "hậu tố hình thành tính từ từ động từ"
   ],
   "建议": [
     "đề xuất; đề nghị; kiến nghị"
@@ -820,10 +820,10 @@
     "gây ra; tạo ra; khiến"
   ],
   "某": [
+    "nào đó",
     "một vài",
     "một cái nào đó",
-    "ai đó hoặc cái gì đó không xác định",
-    "nào đó"
+    "ai đó hoặc cái gì đó không xác định"
   ],
   "随": [
     "theo",
@@ -833,14 +833,14 @@
     "sau đó"
   ],
   "支": [
+    "lượng từ cho vật dài (bút), đội (quân, bóng), bài hát",
     "hỗ trợ",
     "duy trì",
     "dựng",
     "lên",
     "nhánh",
     "phân nhánh",
-    "rút tiền",
-    "lượng từ cho gậy như bút và súng, cho sư đoàn quân đội và cho bài hát hoặc tác phẩm"
+    "rút tiền"
   ],
   "人生": [
     "đời người (thời gian sống trên thế gian)"
@@ -872,10 +872,10 @@
     "có lợi"
   ],
   "报": [
+    "báo chí",
     "thông báo",
     "thông tin",
     "báo cáo",
-    "báo chí",
     "báo đáp",
     "trả thù"
   ],
@@ -1056,7 +1056,7 @@
     "tim đập mạnh"
   ],
   "久": [
-    "thời gian (dài)",
+    "lâu; (thời gian) dài",
     "(khoảng) thời gian dài"
   ],
   "以来": [
@@ -1233,8 +1233,8 @@
     "không bao giờ (nếu dùng trong câu phủ định)"
   ],
   "图": [
-    "sơ đồ",
     "hình ảnh",
+    "sơ đồ",
     "bức vẽ",
     "biểu đồ",
     "bản đồ",
@@ -1321,7 +1321,7 @@
     "đặt cùng nhau"
   ],
   "破": [
-    "hỏng",
+    "rách; vỡ; hỏng",
     "hư",
     "hao mòn",
     "tệ",
@@ -1391,10 +1391,11 @@
     "kỷ lục (trong thể thao, v.v.)"
   ],
   "整": [
-    "(hình thức liên kết) toàn bộ; hoàn chỉnh; toàn thể; (trước lượng từ) toàn bộ; (trước hoặc sau số + lượng từ) chính xác",
-    "(hình thức liên kết) gọn gàng; ngăn nắp; chỉnh tề",
-    "(hình thức liên kết) sắp xếp; chỉnh đốn",
-    "(hình thức liên kết) sửa chữa; phục hồi; tân trang",
+    "đúng (giờ); chẵn (sau số + lượng từ)",
+    "toàn bộ; hoàn chỉnh; toàn thể",
+    "gọn gàng; ngăn nắp; chỉnh tề",
+    "sắp xếp; chỉnh đốn",
+    "sửa chữa; phục hồi; tân trang",
     "(thông tục) xử lý ai đó; gây khó dễ cho ai đó; chọc phá ai đó",
     "(tiếng địa phương) mày mò; làm gì đó với"
   ],
@@ -1423,8 +1424,8 @@
     "phía"
   ],
   "值": [
+    "đáng (giá)",
     "giá trị",
-    "(thì) đáng",
     "tình cờ",
     "có phiên trực"
   ],
@@ -1458,12 +1459,12 @@
     "tệp"
   ],
   "空": [
+    "thời gian rảnh",
+    "nhàn rỗi",
     "làm trống",
     "trống rỗng",
     "không có người",
-    "không gian",
-    "nhàn rỗi",
-    "thời gian rảnh"
+    "không gian"
   ],
   "显然": [
     "rõ ràng; hiển nhiên"
@@ -1492,11 +1493,11 @@
     "tình trạng; trạng thái; tình huống"
   ],
   "架": [
+    "lượng từ cho máy bay, xe lớn, radio, v.v.",
     "chống đỡ",
     "khung",
     "giá",
-    "cơ cấu",
-    "lượng từ cho máy bay, xe lớn, radio, v.v."
+    "cơ cấu"
   ],
   "经济": [
     "kinh tế",
@@ -1568,8 +1569,8 @@
     "(thông tục) nếu"
   ],
   "系": [
-    "liên quan; kết nối",
     "khoa; ngành (ở trường đại học)",
+    "liên quan; kết nối",
     "buộc; thắt (dây)"
   ],
   "增加": [
@@ -1777,8 +1778,8 @@
     "thiết bị; cơ sở vật chất; lắp đặt"
   ],
   "保": [
-    "phòng thủ; bảo vệ; giữ",
     "bảo đảm; đảm bảo",
+    "phòng thủ; bảo vệ; giữ",
     "(cũ) đơn vị hành chính trong hệ thống bảo giáp 保甲[bao3jia3]"
   ],
   "团": [
@@ -1792,7 +1793,7 @@
     "sản xuất; làm"
   ],
   "紧": [
-    "chặt",
+    "chặt; chật",
     "chặt chẽ",
     "sát gần",
     "gần",
@@ -1835,14 +1836,14 @@
     "(hình thức kết hợp) phát triển; diễn ra; thực hiện (một nhiệm vụ)"
   ],
   "顿": [
+    "lượng từ: bữa (ăn), trận (đòn, mắng)",
     "dừng",
     "tạm dừng",
     "sắp xếp",
     "bày ra",
     "dập đầu",
     "dậm (chân)",
-    "ngay lập tức",
-    "lượng từ cho bữa ăn, trận đòn, lời mắng, v.v.: lần, trận, đợt, bữa"
+    "ngay lập tức"
   ],
   "共同": [
     "chung",
@@ -1963,7 +1964,7 @@
     "luôn luôn"
   ],
   "断": [
-    "làm gãy",
+    "gãy; làm gãy",
     "bẻ gãy",
     "cắt đứt",
     "từ bỏ hoặc kiêng cữ cái gì",
@@ -2067,9 +2068,8 @@
     "thực sự; thật sự"
   ],
   "退": [
-    "rút lui; rút khỏi",
-    "từ chối; trả lại (cái gì đó)",
-    "từ chối"
+    "trả lại (cái gì đó); từ chối",
+    "rút lui; rút khỏi"
   ],
   "强大": [
     "to lớn và mạnh mẽ; đáng gờm; hùng mạnh"
@@ -2140,8 +2140,8 @@
     "cơ bản"
   ],
   "员": [
-    "(hình thức kết hợp) người tham gia một lĩnh vực hoạt động nhất định",
-    "(hình thức kết hợp) thành viên"
+    "thành viên",
+    "người làm một công việc (vd 服务员, 演员)"
   ],
   "立刻": [
     "ngay lập tức",
@@ -2176,9 +2176,9 @@
     "hợp lý; có lý; công bằng"
   ],
   "任": [
+    "giữ chức; nhậm chức",
     "bổ nhiệm",
     "chỉ định",
-    "nhậm chức",
     "văn phòng",
     "trách nhiệm",
     "để cho",
@@ -2242,10 +2242,10 @@
     "chi phí"
   ],
   "防": [
-    "bảo vệ",
-    "phòng thủ",
     "đề phòng",
-    "ngăn chặn"
+    "ngăn chặn",
+    "bảo vệ",
+    "phòng thủ"
   ],
   "舞台": [
     "(nghĩa đen và bóng) sân khấu; đấu trường"
@@ -2282,9 +2282,9 @@
     "minh bạch (công khai cho công chúng xem xét)"
   ],
   "领": [
+    "dẫn dắt",
     "cổ",
     "cổ áo",
-    "dẫn dắt",
     "nhận",
     "lượng từ cho quần áo, chiếu, màn hình, v.v."
   ],
@@ -2337,8 +2337,8 @@
     "cho đến; trước (một thời điểm nhất định)"
   ],
   "存": [
-    "tồn tại",
     "gửi",
+    "tồn tại",
     "lưu trữ",
     "giữ",
     "sống sót"
@@ -2350,9 +2350,9 @@
     "cầu"
   ],
   "迷": [
+    "người hâm mộ",
     "làm bối rối",
     "mê mẩn",
-    "người hâm mộ",
     "nhà nhiệt tình",
     "lạc",
     "mơ hồ"
@@ -2841,13 +2841,13 @@
     "có vẻ (như)"
   ],
   "环": [
+    "bao quanh",
+    "vây quanh",
     "nhẫn",
     "vòng",
     "lặp",
     "mắt xích (chuỗi)",
     "lượng từ cho điểm bắn cung, v.v.",
-    "bao quanh",
-    "vây quanh",
     "vây kín"
   ],
   "双方": [
@@ -2879,9 +2879,9 @@
     "đóng gói (hành lý)"
   ],
   "吵": [
-    "cãi nhau",
     "gây ồn ào",
     "ồn ào",
+    "cãi nhau",
     "làm phiền bằng cách gây ồn"
   ],
   "丰富": [
@@ -2960,10 +2960,10 @@
     "hàng không"
   ],
   "较": [
-    "(hình thức ràng buộc) so sánh",
-    "(văn học) tranh luận",
+    "tương đối; khá; hơi (trước tính từ)",
     "so với",
-    "(trước tính từ) tương đối; khá; hơi",
+    "so sánh",
+    "(văn học) tranh luận",
     "cũng đọc là [jiao3]"
   ],
   "纪念": [
@@ -3063,11 +3063,11 @@
     "như thế nào hoặc cái gì (văn học)"
   ],
   "订": [
+    "đặt trước (phòng, vé, hàng)",
+    "đặt mua (báo chí,...)",
     "đồng ý",
     "kết luận",
-    "lập ra",
-    "đặt mua (báo chí,...)",
-    "đặt hàng"
+    "lập ra"
   ],
   "卫生": [
     "sức khỏe",
@@ -4183,10 +4183,10 @@
     "nghĩa bóng: giọng gốc của nhà thơ"
   ],
   "束": [
-    "buộc",
-    "bó",
-    "gói",
     "lượng từ cho bó, gói, tia sáng, v.v.",
+    "bó",
+    "buộc",
+    "gói",
     "kiểm soát"
   ],
   "否定": [

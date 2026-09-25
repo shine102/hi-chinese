@@ -1,0 +1,376 @@
+{
+  "每": [
+    { "zh": "每天", "vi": "mỗi ngày; hằng ngày" },
+    { "zh": "每年", "vi": "mỗi năm; hằng năm" },
+    { "zh": "每次", "vi": "mỗi lần" }
+  ],
+  "任": [
+    { "zh": "主任", "vi": "chủ nhiệm; trưởng (phòng)" },
+    { "zh": "任命", "vi": "bổ nhiệm" },
+    { "zh": "责任", "vi": "trách nhiệm" }
+  ],
+  "整": [
+    { "zh": "整天", "vi": "cả ngày; suốt ngày" },
+    { "zh": "完整", "vi": "hoàn chỉnh; trọn vẹn" },
+    { "zh": "整理", "vi": "sắp xếp; dọn dẹp" }
+  ],
+  "某": [
+    { "zh": "某人", "vi": "người nào đó" },
+    { "zh": "某些", "vi": "một số; vài" }
+  ],
+  "各": [
+    { "zh": "各自", "vi": "mỗi người; riêng mình" },
+    { "zh": "各种", "vi": "các loại" },
+    { "zh": "各地", "vi": "các nơi" }
+  ],
+  "围": [
+    { "zh": "周围", "vi": "xung quanh" },
+    { "zh": "包围", "vi": "bao vây" },
+    { "zh": "范围", "vi": "phạm vi" }
+  ],
+  "并": [
+    { "zh": "并不", "vi": "không hề" },
+    { "zh": "并且", "vi": "và; hơn nữa" },
+    { "zh": "合并", "vi": "sáp nhập; gộp lại" }
+  ],
+  "转": [
+    { "zh": "右转", "vi": "rẽ phải" },
+    { "zh": "转身", "vi": "quay người" },
+    { "zh": "转变", "vi": "chuyển biến; thay đổi" }
+  ],
+  "步": [
+    { "zh": "散步", "vi": "đi dạo" },
+    { "zh": "跑步", "vi": "chạy bộ" },
+    { "zh": "进步", "vi": "tiến bộ" }
+  ],
+  "退": [
+    { "zh": "退货", "vi": "trả lại hàng", "hanViet": "Thoái Hóa" },
+    { "zh": "退休", "vi": "nghỉ hưu" },
+    { "zh": "退出", "vi": "rút khỏi; thoát ra" }
+  ],
+  "赶": [
+    { "zh": "赶上", "vi": "đuổi kịp; kịp" },
+    { "zh": "赶快", "vi": "nhanh lên" },
+    { "zh": "赶紧", "vi": "vội vàng; mau" }
+  ],
+  "所": [
+    { "zh": "所有", "vi": "tất cả" },
+    { "zh": "场所", "vi": "nơi chốn; địa điểm" },
+    { "zh": "厕所", "vi": "nhà vệ sinh", "hanViet": "Xí Sở" }
+  ],
+  "束": [
+    { "zh": "花束", "vi": "bó hoa" },
+    { "zh": "光束", "vi": "chùm sáng" },
+    { "zh": "结束", "vi": "kết thúc" }
+  ],
+  "久": [
+    { "zh": "好久", "vi": "lâu lắm" },
+    { "zh": "多久", "vi": "bao lâu" },
+    { "zh": "不久", "vi": "không lâu sau" }
+  ],
+  "直": [
+    { "zh": "直线", "vi": "đường thẳng" },
+    { "zh": "一直", "vi": "thẳng; suốt" },
+    { "zh": "直接", "vi": "trực tiếp" }
+  ],
+  "时": [
+    { "zh": "当时", "vi": "lúc đó" },
+    { "zh": "时间", "vi": "thời gian" },
+    { "zh": "同时", "vi": "đồng thời; cùng lúc" }
+  ],
+  "连": [
+    { "zh": "连续", "vi": "liên tục" },
+    { "zh": "连接", "vi": "nối liền; kết nối" },
+    { "zh": "连忙", "vi": "vội vàng; liền" }
+  ],
+  "死": [
+    { "zh": "饿死", "vi": "chết đói; đói chết mất" },
+    { "zh": "死亡", "vi": "cái chết; tử vong", "hanViet": "Tử Vong" },
+    { "zh": "生死", "vi": "sống chết" }
+  ],
+  "系": [
+    { "zh": "联系", "vi": "liên hệ" },
+    { "zh": "系统", "vi": "hệ thống", "hanViet": "Hệ Thống" }
+  ],
+  "吵": [
+    { "zh": "吵闹", "vi": "ồn ào; om sòm", "hanViet": "Sảo Náo" },
+    { "zh": "吵架", "vi": "cãi nhau" },
+    { "zh": "争吵", "vi": "tranh cãi" }
+  ],
+  "架": [
+    { "zh": "书架", "vi": "giá sách" },
+    { "zh": "衣架", "vi": "móc treo quần áo" },
+    { "zh": "吵架", "vi": "cãi nhau" }
+  ],
+  "已": [
+    { "zh": "已经", "vi": "đã" },
+    { "zh": "早已", "vi": "đã từ lâu" },
+    { "zh": "已婚", "vi": "đã kết hôn" }
+  ],
+  "把": [
+    { "zh": "把握", "vi": "nắm chắc; nắm bắt" },
+    { "zh": "火把", "vi": "ngọn đuốc" }
+  ],
+  "活": [
+    { "zh": "生活", "vi": "cuộc sống" },
+    { "zh": "活动", "vi": "hoạt động" },
+    { "zh": "活泼", "vi": "hoạt bát; sôi nổi", "hanViet": "Hoạt Bát" }
+  ],
+  "存": [
+    { "zh": "存款", "vi": "tiền gửi; gửi tiết kiệm", "hanViet": "Tồn Khoản" },
+    { "zh": "保存", "vi": "lưu giữ; bảo tồn" },
+    { "zh": "存在", "vi": "tồn tại" }
+  ],
+  "性": [
+    { "zh": "性格", "vi": "tính cách" },
+    { "zh": "个性", "vi": "cá tính" },
+    { "zh": "性别", "vi": "giới tính" }
+  ],
+  "总": [
+    { "zh": "总是", "vi": "luôn luôn" },
+    { "zh": "总共", "vi": "tổng cộng" },
+    { "zh": "总结", "vi": "tổng kết" }
+  ],
+  "支": [
+    { "zh": "支持", "vi": "ủng hộ" },
+    { "zh": "支付", "vi": "chi trả; thanh toán" },
+    { "zh": "分支", "vi": "chi nhánh" }
+  ],
+  "员": [
+    { "zh": "服务员", "vi": "người phục vụ" },
+    { "zh": "演员", "vi": "diễn viên" },
+    { "zh": "成员", "vi": "thành viên" }
+  ],
+  "迷": [
+    { "zh": "球迷", "vi": "người hâm mộ bóng đá" },
+    { "zh": "歌迷", "vi": "người hâm mộ ca sĩ" },
+    { "zh": "迷路", "vi": "lạc đường" }
+  ],
+  "由": [
+    { "zh": "理由", "vi": "lý do" },
+    { "zh": "由于", "vi": "do; bởi vì" },
+    { "zh": "自由", "vi": "tự do" }
+  ],
+  "伤": [
+    { "zh": "伤口", "vi": "vết thương" },
+    { "zh": "受伤", "vi": "bị thương" },
+    { "zh": "伤心", "vi": "đau lòng" }
+  ],
+  "血": [
+    { "zh": "流血", "vi": "chảy máu" },
+    { "zh": "血型", "vi": "nhóm máu", "hanViet": "Huyết Hình" },
+    { "zh": "心血", "vi": "tâm huyết" }
+  ],
+  "救": [
+    { "zh": "急救", "vi": "cấp cứu" },
+    { "zh": "救命", "vi": "cứu mạng; cứu với" },
+    { "zh": "救护车", "vi": "xe cứu thương" }
+  ],
+  "痛": [
+    { "zh": "头痛", "vi": "đau đầu" },
+    { "zh": "痛苦", "vi": "đau khổ" },
+    { "zh": "伤痛", "vi": "đau đớn (vết thương)" }
+  ],
+  "受": [
+    { "zh": "难受", "vi": "khó chịu" },
+    { "zh": "接受", "vi": "chấp nhận; tiếp nhận" },
+    { "zh": "受伤", "vi": "bị thương" }
+  ],
+  "防": [
+    { "zh": "预防", "vi": "phòng ngừa" },
+    { "zh": "防止", "vi": "ngăn chặn" },
+    { "zh": "国防", "vi": "quốc phòng" }
+  ],
+  "马": [
+    { "zh": "骑马", "vi": "cưỡi ngựa" },
+    { "zh": "马上", "vi": "ngay lập tức" },
+    { "zh": "马路", "vi": "đường cái" }
+  ],
+  "牛": [
+    { "zh": "牛奶", "vi": "sữa bò" },
+    { "zh": "牛肉", "vi": "thịt bò" },
+    { "zh": "水牛", "vi": "con trâu" }
+  ],
+  "猪": [
+    { "zh": "猪肉", "vi": "thịt lợn" },
+    { "zh": "猪年", "vi": "năm Hợi" }
+  ],
+  "羊": [
+    { "zh": "山羊", "vi": "con dê" },
+    { "zh": "羊肉", "vi": "thịt cừu; thịt dê" },
+    { "zh": "羊毛", "vi": "lông cừu; len" }
+  ],
+  "种": [
+    { "zh": "各种", "vi": "các loại" },
+    { "zh": "种类", "vi": "chủng loại" },
+    { "zh": "种子", "vi": "hạt giống" }
+  ],
+  "挂": [
+    { "zh": "挂钟", "vi": "đồng hồ treo tường" },
+    { "zh": "挂历", "vi": "lịch treo tường" },
+    { "zh": "挂号", "vi": "đăng ký khám bệnh" }
+  ],
+  "破": [
+    { "zh": "破旧", "vi": "cũ nát; rách nát" },
+    { "zh": "打破", "vi": "làm vỡ; phá vỡ" },
+    { "zh": "破坏", "vi": "phá hoại" }
+  ],
+  "合": [
+    { "zh": "合作", "vi": "hợp tác" },
+    { "zh": "适合", "vi": "phù hợp" },
+    { "zh": "联合国", "vi": "Liên Hợp Quốc" }
+  ],
+  "压": [
+    { "zh": "压力", "vi": "áp lực" },
+    { "zh": "血压", "vi": "huyết áp" }
+  ],
+  "断": [
+    { "zh": "切断", "vi": "cắt đứt" },
+    { "zh": "不断", "vi": "không ngừng" },
+    { "zh": "判断", "vi": "phán đoán" }
+  ],
+  "值": [
+    { "zh": "值得", "vi": "đáng; xứng đáng" },
+    { "zh": "价值", "vi": "giá trị" },
+    { "zh": "值日", "vi": "trực nhật" }
+  ],
+  "费": [
+    { "zh": "学费", "vi": "học phí" },
+    { "zh": "浪费", "vi": "lãng phí" },
+    { "zh": "费用", "vi": "chi phí" }
+  ],
+  "者": [
+    { "zh": "作者", "vi": "tác giả" },
+    { "zh": "读者", "vi": "độc giả" },
+    { "zh": "记者", "vi": "nhà báo; phóng viên" }
+  ],
+  "顿": [
+    { "zh": "停顿", "vi": "tạm dừng" },
+    { "zh": "顿时", "vi": "ngay lập tức; bỗng" }
+  ],
+  "香": [
+    { "zh": "香水", "vi": "nước hoa" },
+    { "zh": "香蕉", "vi": "quả chuối" },
+    { "zh": "香港", "vi": "Hồng Kông", "hanViet": "Hương Cảng" }
+  ],
+  "糖": [
+    { "zh": "糖果", "vi": "kẹo" },
+    { "zh": "白糖", "vi": "đường trắng" },
+    { "zh": "喜糖", "vi": "kẹo cưới" }
+  ],
+  "汤": [
+    { "zh": "鸡汤", "vi": "canh gà; súp gà" },
+    { "zh": "汤圆", "vi": "bánh trôi; chè trôi", "hanViet": "Thang Viên" }
+  ],
+  "甜": [
+    { "zh": "甜味", "vi": "vị ngọt" },
+    { "zh": "甜点", "vi": "món tráng miệng" },
+    { "zh": "香甜", "vi": "thơm ngọt" }
+  ],
+  "美": [
+    { "zh": "美丽", "vi": "đẹp; xinh đẹp" },
+    { "zh": "美食", "vi": "món ngon" },
+    { "zh": "美国", "vi": "nước Mỹ" }
+  ],
+  "环": [
+    { "zh": "环境", "vi": "môi trường; hoàn cảnh" },
+    { "zh": "环保", "vi": "bảo vệ môi trường" },
+    { "zh": "耳环", "vi": "bông tai", "hanViet": "Nhĩ Hoàn" }
+  ],
+  "光": [
+    { "zh": "阳光", "vi": "ánh nắng" },
+    { "zh": "月光", "vi": "ánh trăng" },
+    { "zh": "光明", "vi": "ánh sáng; tươi sáng" }
+  ],
+  "空": [
+    { "zh": "有空", "vi": "có thời gian rảnh" },
+    { "zh": "空闲", "vi": "rảnh rỗi", "hanViet": "Không Nhàn" },
+    { "zh": "空白", "vi": "chỗ trống" }
+  ],
+  "保": [
+    { "zh": "保证", "vi": "bảo đảm" },
+    { "zh": "保护", "vi": "bảo vệ" },
+    { "zh": "保险", "vi": "bảo hiểm" }
+  ],
+  "报": [
+    { "zh": "报纸", "vi": "báo" },
+    { "zh": "报名", "vi": "đăng ký; ghi danh" },
+    { "zh": "预报", "vi": "dự báo" }
+  ],
+  "较": [
+    { "zh": "比较", "vi": "so sánh; khá" },
+    { "zh": "计较", "vi": "so đo; tính toán" }
+  ],
+  "图": [
+    { "zh": "图画", "vi": "tranh vẽ" },
+    { "zh": "地图", "vi": "bản đồ" },
+    { "zh": "图书馆", "vi": "thư viện" }
+  ],
+  "被": [
+    { "zh": "被动", "vi": "bị động" },
+    { "zh": "被告", "vi": "bị cáo" },
+    { "zh": "被子", "vi": "cái chăn" }
+  ],
+  "证": [
+    { "zh": "学生证", "vi": "thẻ sinh viên" },
+    { "zh": "身份证", "vi": "thẻ căn cước" },
+    { "zh": "证明", "vi": "chứng minh; giấy chứng nhận" }
+  ],
+  "订": [
+    { "zh": "预订", "vi": "đặt trước" },
+    { "zh": "订票", "vi": "đặt vé" },
+    { "zh": "修订", "vi": "sửa đổi" }
+  ],
+  "初": [
+    { "zh": "年初", "vi": "đầu năm" },
+    { "zh": "初中", "vi": "trung học cơ sở" },
+    { "zh": "初一", "vi": "mùng một" }
+  ],
+  "管": [
+    { "zh": "管理", "vi": "quản lý" },
+    { "zh": "不管", "vi": "bất kể; mặc kệ" },
+    { "zh": "水管", "vi": "ống nước" }
+  ],
+  "派": [
+    { "zh": "派遣", "vi": "cử đi; phái cử", "hanViet": "Phái Khiển" },
+    { "zh": "派出所", "vi": "đồn công an" }
+  ],
+  "指": [
+    { "zh": "手指", "vi": "ngón tay" },
+    { "zh": "指出", "vi": "chỉ ra" },
+    { "zh": "指导", "vi": "hướng dẫn; chỉ đạo" }
+  ],
+  "配": [
+    { "zh": "搭配", "vi": "phối (đồ, màu); kết hợp", "hanViet": "Đáp Phối" },
+    { "zh": "配合", "vi": "phối hợp" },
+    { "zh": "分配", "vi": "phân phối" }
+  ],
+  "领": [
+    { "zh": "带领", "vi": "dẫn dắt" },
+    { "zh": "领导", "vi": "lãnh đạo" },
+    { "zh": "领带", "vi": "cà vạt" }
+  ],
+  "按": [
+    { "zh": "按照", "vi": "theo; dựa theo" },
+    { "zh": "按时", "vi": "đúng giờ" },
+    { "zh": "按钮", "vi": "nút bấm", "hanViet": "Án Nữu" }
+  ],
+  "困": [
+    { "zh": "困倦", "vi": "buồn ngủ; mệt mỏi", "hanViet": "Khốn Quyện" },
+    { "zh": "困难", "vi": "khó khăn" }
+  ],
+  "敢": [
+    { "zh": "勇敢", "vi": "dũng cảm", "hanViet": "Dũng Cảm" },
+    { "zh": "敢于", "vi": "dám" }
+  ],
+  "力": [
+    { "zh": "用力", "vi": "dùng sức" },
+    { "zh": "努力", "vi": "cố gắng; nỗ lực" },
+    { "zh": "能力", "vi": "năng lực" }
+  ],
+  "紧": [
+    { "zh": "紧张", "vi": "căng thẳng" },
+    { "zh": "抓紧", "vi": "nắm chặt; tranh thủ" },
+    { "zh": "赶紧", "vi": "vội vàng; mau" }
+  ]
+}
