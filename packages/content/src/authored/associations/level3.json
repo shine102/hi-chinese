@@ -372,5 +372,385 @@
     { "zh": "紧张", "vi": "căng thẳng" },
     { "zh": "抓紧", "vi": "nắm chặt; tranh thủ" },
     { "zh": "赶紧", "vi": "vội vàng; mau" }
+  ],
+  "张": [
+    { "zh": "纸张", "vi": "giấy; tờ giấy" },
+    { "zh": "紧张", "vi": "căng thẳng" },
+    { "zh": "张开", "vi": "mở ra; giang ra" }
+  ],
+  "心": [
+    { "zh": "心脏", "vi": "tim; quả tim" },
+    { "zh": "关心", "vi": "quan tâm" },
+    { "zh": "小心", "vi": "cẩn thận" }
+  ],
+  "内": [
+    { "zh": "国内", "vi": "trong nước; nội địa" },
+    { "zh": "内容", "vi": "nội dung" },
+    { "zh": "室内", "vi": "trong nhà; trong phòng" }
+  ],
+  "造": [
+    { "zh": "制造", "vi": "chế tạo; sản xuất" },
+    { "zh": "创造", "vi": "sáng tạo; tạo ra" },
+    { "zh": "造成", "vi": "gây ra" }
+  ],
+  "深": [
+    { "zh": "深刻", "vi": "sâu sắc" },
+    { "zh": "深入", "vi": "đi sâu vào" },
+    { "zh": "深夜", "vi": "đêm khuya" }
+  ],
+  "室": [
+    { "zh": "教室", "vi": "phòng học" },
+    { "zh": "办公室", "vi": "văn phòng" },
+    { "zh": "实验室", "vi": "phòng thí nghiệm" }
+  ],
+  "约": [
+    { "zh": "约会", "vi": "cuộc hẹn; hẹn hò" },
+    { "zh": "大约", "vi": "khoảng; chừng" },
+    { "zh": "节约", "vi": "tiết kiệm" }
+  ],
+  "谈": [
+    { "zh": "谈话", "vi": "nói chuyện; cuộc trò chuyện" },
+    { "zh": "谈判", "vi": "đàm phán" },
+    { "zh": "谈恋爱", "vi": "yêu đương; hẹn hò", "hanViet": "Đàm Luyến Ái" }
+  ],
+  "强": [
+    { "zh": "强大", "vi": "hùng mạnh" },
+    { "zh": "坚强", "vi": "kiên cường" },
+    { "zh": "加强", "vi": "tăng cường" }
+  ],
+  "调": [
+    { "zh": "调查", "vi": "điều tra" },
+    { "zh": "强调", "vi": "nhấn mạnh" },
+    { "zh": "调动", "vi": "điều động; thuyên chuyển" }
+  ],
+  "拍": [
+    { "zh": "拍照", "vi": "chụp ảnh" },
+    { "zh": "拍手", "vi": "vỗ tay" },
+    { "zh": "球拍", "vi": "vợt" }
+  ],
+  "台": [
+    { "zh": "电视台", "vi": "đài truyền hình" },
+    { "zh": "电台", "vi": "đài phát thanh" },
+    { "zh": "舞台", "vi": "sân khấu" }
+  ],
+  "演": [
+    { "zh": "演员", "vi": "diễn viên" },
+    { "zh": "表演", "vi": "biểu diễn" },
+    { "zh": "导演", "vi": "đạo diễn" }
+  ],
+  "争": [
+    { "zh": "争取", "vi": "tranh thủ; giành lấy" },
+    { "zh": "竞争", "vi": "cạnh tranh", "hanViet": "Cạnh Tranh" },
+    { "zh": "战争", "vi": "chiến tranh", "hanViet": "Chiến Tranh" }
+  ],
+  "随": [
+    { "zh": "随便", "vi": "tùy ý; tùy tiện" },
+    { "zh": "随时", "vi": "bất cứ lúc nào" },
+    { "zh": "随着", "vi": "theo; cùng với" }
+  ],
+  "代": [
+    { "zh": "代替", "vi": "thay thế; thay cho", "hanViet": "Đại Thế" },
+    { "zh": "时代", "vi": "thời đại" },
+    { "zh": "代表", "vi": "đại biểu; đại diện" }
+  ],
+  "旧": [
+    { "zh": "旧书", "vi": "sách cũ" },
+    { "zh": "旧货", "vi": "đồ cũ", "hanViet": "Cựu Hóa" },
+    { "zh": "怀旧", "vi": "hoài niệm (chuyện xưa)", "hanViet": "Hoài Cựu" }
+  ],
+  "古": [
+    { "zh": "古代", "vi": "thời cổ đại" },
+    { "zh": "古老", "vi": "cổ xưa" },
+    { "zh": "古典", "vi": "cổ điển" }
+  ],
+  "类": [
+    { "zh": "人类", "vi": "loài người; nhân loại" },
+    { "zh": "分类", "vi": "phân loại" },
+    { "zh": "类似", "vi": "tương tự" }
+  ],
+  "群": [
+    { "zh": "人群", "vi": "đám đông" },
+    { "zh": "群众", "vi": "quần chúng" },
+    { "zh": "羊群", "vi": "đàn cừu" }
+  ],
+  "仍": [
+    { "zh": "仍然", "vi": "vẫn" },
+    { "zh": "仍旧", "vi": "vẫn như cũ" }
+  ],
+  "铁": [
+    { "zh": "地铁", "vi": "tàu điện ngầm" },
+    { "zh": "铁路", "vi": "đường sắt" },
+    { "zh": "钢铁", "vi": "sắt thép", "hanViet": "Cương Thiết" }
+  ],
+  "厂": [
+    { "zh": "工厂", "vi": "nhà máy" },
+    { "zh": "厂长", "vi": "giám đốc nhà máy" },
+    { "zh": "厂家", "vi": "nhà sản xuất" }
+  ],
+  "赢": [
+    { "zh": "赢得", "vi": "giành được" },
+    { "zh": "输赢", "vi": "thắng thua" },
+    { "zh": "双赢", "vi": "đôi bên cùng có lợi" }
+  ],
+  "输": [
+    { "zh": "认输", "vi": "chịu thua" },
+    { "zh": "运输", "vi": "vận chuyển" },
+    { "zh": "输入", "vi": "nhập (dữ liệu)" }
+  ],
+  "胜": [
+    { "zh": "胜利", "vi": "thắng lợi" },
+    { "zh": "战胜", "vi": "chiến thắng; đánh bại", "hanViet": "Chiến Thắng" },
+    { "zh": "取胜", "vi": "giành thắng lợi" }
+  ],
+  "录": [
+    { "zh": "录音", "vi": "ghi âm" },
+    { "zh": "录像", "vi": "ghi hình; video" },
+    { "zh": "记录", "vi": "ghi chép; biên bản" }
+  ],
+  "金": [
+    { "zh": "金牌", "vi": "huy chương vàng" },
+    { "zh": "黄金", "vi": "vàng" },
+    { "zh": "现金", "vi": "tiền mặt" }
+  ],
+  "银": [
+    { "zh": "银行", "vi": "ngân hàng" },
+    { "zh": "银牌", "vi": "huy chương bạc" },
+    { "zh": "银色", "vi": "màu bạc" }
+  ],
+  "仅": [
+    { "zh": "不仅", "vi": "không chỉ" },
+    { "zh": "仅仅", "vi": "chỉ; vẻn vẹn" }
+  ],
+  "建": [
+    { "zh": "建设", "vi": "xây dựng; kiến thiết" },
+    { "zh": "建筑", "vi": "kiến trúc; tòa nhà", "hanViet": "Kiến Trúc" },
+    { "zh": "建议", "vi": "đề nghị; kiến nghị" }
+  ],
+  "修": [
+    { "zh": "修理", "vi": "sửa chữa" },
+    { "zh": "修改", "vi": "sửa đổi" },
+    { "zh": "维修", "vi": "bảo trì; sửa chữa", "hanViet": "Duy Tu" }
+  ],
+  "搬": [
+    { "zh": "搬家", "vi": "chuyển nhà" },
+    { "zh": "搬运", "vi": "khuân vác; vận chuyển" },
+    { "zh": "搬走", "vi": "mang đi; dọn đi" }
+  ],
+  "补": [
+    { "zh": "补丁", "vi": "miếng vá", "hanViet": "Bổ Đinh" },
+    { "zh": "补充", "vi": "bổ sung" },
+    { "zh": "补课", "vi": "học bù" }
+  ],
+  "双": [
+    { "zh": "双方", "vi": "hai bên" },
+    { "zh": "双手", "vi": "hai tay" },
+    { "zh": "双胞胎", "vi": "sinh đôi", "hanViet": "Song Bào Thai" }
+  ],
+  "皮": [
+    { "zh": "皮包", "vi": "túi da; túi xách" },
+    { "zh": "皮鞋", "vi": "giày da" },
+    { "zh": "皮肤", "vi": "da (người)", "hanViet": "Bì Phu" }
+  ],
+  "静": [
+    { "zh": "安静", "vi": "yên tĩnh" },
+    { "zh": "平静", "vi": "bình lặng; yên ả" },
+    { "zh": "冷静", "vi": "bình tĩnh" }
+  ],
+  "照": [
+    { "zh": "按照", "vi": "theo; dựa theo" },
+    { "zh": "照片", "vi": "bức ảnh" },
+    { "zh": "护照", "vi": "hộ chiếu" }
+  ],
+  "亲": [
+    { "zh": "父亲", "vi": "cha; phụ thân" },
+    { "zh": "母亲", "vi": "mẹ; mẫu thân" },
+    { "zh": "亲人", "vi": "người thân" }
+  ],
+  "属": [
+    { "zh": "属于", "vi": "thuộc về" },
+    { "zh": "家属", "vi": "người nhà; gia quyến" },
+    { "zh": "金属", "vi": "kim loại" }
+  ],
+  "乱": [
+    { "zh": "混乱", "vi": "hỗn loạn", "hanViet": "Hỗn Loạn" },
+    { "zh": "杂乱", "vi": "lộn xộn; bừa bộn" },
+    { "zh": "胡乱", "vi": "bừa bãi; bậy bạ", "hanViet": "Hồ Loạn" }
+  ],
+  "念": [
+    { "zh": "念书", "vi": "đi học; học bài" },
+    { "zh": "想念", "vi": "nhớ (ai)" },
+    { "zh": "纪念", "vi": "kỷ niệm; tưởng niệm" }
+  ],
+  "朝": [
+    { "zh": "朝向", "vi": "hướng (nhà, cửa)" },
+    { "zh": "朝代", "vi": "triều đại" },
+    { "zh": "朝鲜", "vi": "Triều Tiên", "hanViet": "Triều Tiên" }
+  ],
+  "乐": [
+    { "zh": "快乐", "vi": "vui vẻ" },
+    { "zh": "乐观", "vi": "lạc quan" },
+    { "zh": "欢乐", "vi": "vui mừng; hân hoan" }
+  ],
+  "区": [
+    { "zh": "地区", "vi": "khu vực; vùng" },
+    { "zh": "郊区", "vi": "ngoại ô", "hanViet": "Giao Khu" },
+    { "zh": "区别", "vi": "khác biệt; phân biệt" }
+  ],
+  "部": [
+    { "zh": "部分", "vi": "phần; bộ phận" },
+    { "zh": "全部", "vi": "toàn bộ" },
+    { "zh": "部长", "vi": "bộ trưởng" }
+  ],
+  "准": [
+    { "zh": "准确", "vi": "chính xác" },
+    { "zh": "标准", "vi": "tiêu chuẩn" },
+    { "zh": "批准", "vi": "phê duyệt; phê chuẩn" }
+  ],
+  "桥": [
+    { "zh": "桥梁", "vi": "cây cầu; cầu nối", "hanViet": "Kiều Lương" },
+    { "zh": "天桥", "vi": "cầu vượt (đi bộ)", "pinyin": "tiān qiáo" }
+  ],
+  "升": [
+    { "zh": "升职", "vi": "thăng chức" },
+    { "zh": "上升", "vi": "tăng lên; đi lên" },
+    { "zh": "升级", "vi": "nâng cấp; lên cấp" }
+  ],
+  "胖": [
+    { "zh": "肥胖", "vi": "béo phì", "hanViet": "Phì Bàn" },
+    { "zh": "发胖", "vi": "lên cân; phát phì" },
+    { "zh": "胖子", "vi": "người béo" }
+  ],
+  "富": [
+    { "zh": "丰富", "vi": "phong phú" },
+    { "zh": "富有", "vi": "giàu có" },
+    { "zh": "财富", "vi": "của cải", "hanViet": "Tài Phú" }
+  ],
+  "游": [
+    { "zh": "游泳", "vi": "bơi lội" },
+    { "zh": "旅游", "vi": "du lịch" },
+    { "zh": "游客", "vi": "du khách" }
+  ],
+  "线": [
+    { "zh": "路线", "vi": "tuyến đường; lộ trình" },
+    { "zh": "在线", "vi": "trực tuyến" },
+    { "zh": "电线", "vi": "dây điện" }
+  ],
+  "城": [
+    { "zh": "城市", "vi": "thành phố" },
+    { "zh": "长城", "vi": "Vạn Lý Trường Thành" },
+    { "zh": "进城", "vi": "vào thành phố" }
+  ],
+  "团": [
+    { "zh": "旅行团", "vi": "đoàn du lịch" },
+    { "zh": "团结", "vi": "đoàn kết" },
+    { "zh": "代表团", "vi": "đoàn đại biểu" }
+  ],
+  "火": [
+    { "zh": "火车", "vi": "tàu hỏa" },
+    { "zh": "火山", "vi": "núi lửa" },
+    { "zh": "着火", "vi": "bốc cháy" }
+  ],
+  "烟": [
+    { "zh": "冒烟", "vi": "bốc khói" },
+    { "zh": "抽烟", "vi": "hút thuốc", "hanViet": "Trừu Yên" },
+    { "zh": "香烟", "vi": "thuốc lá (điếu)" }
+  ],
+  "福": [
+    { "zh": "幸福", "vi": "hạnh phúc" },
+    { "zh": "祝福", "vi": "chúc phúc; lời chúc" },
+    { "zh": "福利", "vi": "phúc lợi" }
+  ],
+  "布": [
+    { "zh": "棉布", "vi": "vải bông", "hanViet": "Miên Bố" },
+    { "zh": "宣布", "vi": "tuyên bố" },
+    { "zh": "分布", "vi": "phân bố" }
+  ],
+  "板": [
+    { "zh": "黑板", "vi": "bảng đen" },
+    { "zh": "木板", "vi": "tấm ván gỗ" },
+    { "zh": "老板", "vi": "ông chủ; sếp" }
+  ],
+  "土": [
+    { "zh": "土地", "vi": "đất đai", "pinyin": "tǔ dì" },
+    { "zh": "泥土", "vi": "đất; bùn đất", "hanViet": "Nê Thổ" },
+    { "zh": "土豆", "vi": "khoai tây", "hanViet": "Thổ Đậu" }
+  ],
+  "传": [
+    { "zh": "传说", "vi": "truyền thuyết" },
+    { "zh": "宣传", "vi": "tuyên truyền" },
+    { "zh": "传播", "vi": "truyền bá; lan truyền" }
+  ],
+  "巧": [
+    { "zh": "碰巧", "vi": "tình cờ; vừa may" },
+    { "zh": "技巧", "vi": "kỹ xảo; kỹ năng" },
+    { "zh": "巧妙", "vi": "khéo léo; tài tình", "hanViet": "Xảo Diệu" }
+  ],
+  "付": [
+    { "zh": "支付", "vi": "chi trả; thanh toán" },
+    { "zh": "付款", "vi": "trả tiền", "hanViet": "Phó Khoản" }
+  ],
+  "刀": [
+    { "zh": "刀子", "vi": "con dao" },
+    { "zh": "剪刀", "vi": "cái kéo", "hanViet": "Tiễn Đao" },
+    { "zh": "菜刀", "vi": "dao làm bếp" }
+  ],
+  "钟": [
+    { "zh": "闹钟", "vi": "đồng hồ báo thức", "hanViet": "Náo Chung" },
+    { "zh": "钟表", "vi": "đồng hồ (nói chung)" },
+    { "zh": "分钟", "vi": "phút" }
+  ],
+  "期": [
+    { "zh": "星期", "vi": "tuần" },
+    { "zh": "学期", "vi": "học kỳ" },
+    { "zh": "日期", "vi": "ngày tháng" }
+  ],
+  "跳": [
+    { "zh": "跳舞", "vi": "nhảy múa; khiêu vũ" },
+    { "zh": "跳高", "vi": "nhảy cao" },
+    { "zh": "心跳", "vi": "nhịp tim" }
+  ],
+  "齐": [
+    { "zh": "整齐", "vi": "ngay ngắn; gọn gàng" },
+    { "zh": "齐全", "vi": "đầy đủ" },
+    { "zh": "一齐", "vi": "cùng lúc; đồng loạt" }
+  ],
+  "缺": [
+    { "zh": "缺少", "vi": "thiếu" },
+    { "zh": "缺点", "vi": "khuyết điểm" },
+    { "zh": "缺席", "vi": "vắng mặt", "hanViet": "Khuyết Tịch" }
+  ],
+  "龙": [
+    { "zh": "恐龙", "vi": "khủng long" },
+    { "zh": "龙舟", "vi": "thuyền rồng", "hanViet": "Long Chu" },
+    { "zh": "龙眼", "vi": "quả nhãn" }
+  ],
+  "化": [
+    { "zh": "融化", "vi": "tan chảy", "hanViet": "Dung Hóa" },
+    { "zh": "变化", "vi": "thay đổi; biến hóa" },
+    { "zh": "文化", "vi": "văn hóa" }
+  ],
+  "村": [
+    { "zh": "农村", "vi": "nông thôn" },
+    { "zh": "村子", "vi": "ngôi làng" },
+    { "zh": "村民", "vi": "dân làng" }
+  ],
+  "抓": [
+    { "zh": "抓住", "vi": "nắm lấy; tóm được" },
+    { "zh": "抓紧", "vi": "nắm chặt; tranh thủ" }
+  ],
+  "追": [
+    { "zh": "追赶", "vi": "đuổi theo" },
+    { "zh": "追求", "vi": "theo đuổi" },
+    { "zh": "追问", "vi": "gặng hỏi" }
+  ],
+  "使": [
+    { "zh": "使得", "vi": "khiến cho; làm cho" },
+    { "zh": "使用", "vi": "sử dụng" },
+    { "zh": "大使馆", "vi": "đại sứ quán" }
+  ],
+  "祝": [
+    { "zh": "祝贺", "vi": "chúc mừng", "hanViet": "Chúc Hạ" },
+    { "zh": "庆祝", "vi": "ăn mừng" },
+    { "zh": "祝愿", "vi": "cầu chúc" }
   ]
 }

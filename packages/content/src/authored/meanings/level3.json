@@ -107,10 +107,10 @@
     "sau đó"
   ],
   "张": [
+    "lượng từ cho vật phẳng: tờ, tấm, cái (bàn, ghế)",
     "mở ra",
     "trải ra",
     "tờ giấy",
-    "lượng từ cho vật phẳng, tờ",
     "lượng từ cho phiếu bầu"
   ],
   "关系": [
@@ -121,9 +121,8 @@
     "có liên quan"
   ],
   "内": [
-    "bên trong",
+    "trong; bên trong",
     "nội bộ",
-    "trong",
     "nội địa"
   ],
   "总": [
@@ -218,14 +217,13 @@
     "không nghi ngờ gì"
   ],
   "部": [
+    "lượng từ cho phim, sách, máy móc: bộ, chiếc",
     "bộ",
-    "phòng",
-    "ban",
     "phần",
+    "phòng; ban",
     "khoa",
-    "quân đội",
     "cục",
-    "lượng từ cho tác phẩm văn học, phim ảnh, máy móc, v.v."
+    "quân đội"
   ],
   "消息": [
     "tin tức",
@@ -348,12 +346,11 @@
     "tay nghề"
   ],
   "拍": [
+    "quay (phim); chụp (ảnh)",
     "vỗ",
     "vỗ tay",
     "tát",
     "đập",
-    "chụp (ảnh)",
-    "quay (phim)",
     "vợt (thể thao)",
     "nhịp (âm nhạc)"
   ],
@@ -442,9 +439,8 @@
     "ngoại trừ"
   ],
   "区": [
-    "khu vực",
+    "quận; khu vực",
     "vùng",
-    "quận",
     "nhỏ",
     "phân biệt"
   ],
@@ -469,9 +465,9 @@
     "cốt lõi"
   ],
   "双": [
+    "đôi",
     "hai",
     "cặp",
-    "đôi",
     "cả hai",
     "số chẵn"
   ],
@@ -554,10 +550,10 @@
     "(của biên tập viên hoặc tác giả) đưa ra bình luận"
   ],
   "线": [
+    "đường; tuyến (tàu, xe)",
     "chỉ",
     "sợi",
     "dây",
-    "đường",
     "(sau một con số) hạng (xếp hạng không chính thức của một thành phố ở Trung Quốc)"
   ],
   "报告": [
@@ -570,9 +566,9 @@
     "bài giảng"
   ],
   "台": [
+    "lượng từ cho máy móc, xe cộ: cái, chiếc",
     "đài (truyền hình, phát thanh)",
-    "sân khấu; bục; đài",
-    "lượng từ cho máy móc, xe cộ: cái, chiếc"
+    "sân khấu; bục; đài"
   ],
   "生命": [
     "sự sống (như đặc trưng của sinh vật)",
@@ -764,8 +760,7 @@
     "mở rộng"
   ],
   "谈": [
-    "nói",
-    "trò chuyện",
+    "nói chuyện; trò chuyện",
     "đàm thoại",
     "tán gẫu",
     "thảo luận"
@@ -797,9 +792,9 @@
     "cha và mẹ; phụ huynh"
   ],
   "城": [
-    "tường thành",
     "thành phố",
-    "thị trấn"
+    "thị trấn",
+    "tường thành"
   ],
   "安排": [
     "sắp xếp",
@@ -826,7 +821,7 @@
     "ai đó hoặc cái gì đó không xác định"
   ],
   "随": [
-    "theo",
+    "tùy; theo",
     "tuân theo",
     "thay đổi theo...",
     "cho phép",
@@ -971,18 +966,12 @@
     "chủng tộc loài người"
   ],
   "亲": [
+    "ruột thịt; ruột",
     "cha mẹ",
-    "người thân (ruột thịt)",
-    "họ hàng",
-    "có quan hệ",
+    "người thân; họ hàng",
     "hôn nhân",
-    "cô dâu",
-    "gần gũi",
-    "thân thiết",
-    "trực tiếp",
-    "tận mắt",
-    "ủng hộ",
-    "thuận-",
+    "gần gũi; thân thiết",
+    "trực tiếp; tận mắt",
     "hôn",
     "(tiếng lóng Internet) thân mến"
   ],
@@ -1006,8 +995,8 @@
     "khan hiếm"
   ],
   "仅": [
-    "hầu như",
     "chỉ",
+    "hầu như",
     "vừa đủ"
   ],
   "挂": [
@@ -1141,14 +1130,12 @@
     "tình trạng; trạng thái; tình hình"
   ],
   "群": [
-    "nhóm",
-    "đám",
-    "bầy, đàn, nhóm v.v."
+    "lượng từ: nhóm, đám, bầy, đàn"
   ],
   "照": [
+    "theo; theo như",
     "chụp (ảnh)",
-    "chiếu; soi sáng",
-    "theo; theo như"
+    "chiếu; soi sáng"
   ],
   "环境": [
     "môi trường",
@@ -1189,8 +1176,8 @@
     "bắt buộc"
   ],
   "祝": [
+    "chúc (sinh nhật vui vẻ, thượng lộ bình an, v.v.)",
     "cầu nguyện",
-    "chúc (ai đó thượng lộ bình an, sinh nhật vui vẻ, v.v.)",
     "người cầu khấn thần linh trong các nghi lễ tế tự"
   ],
   "危险": [
@@ -1204,17 +1191,13 @@
     "sự quản trị"
   ],
   "乱": [
-    "trong tình trạng rối loạn",
-    "trạng thái tinh thần bối rối",
-    "mất trật tự",
-    "biến động",
-    "bạo loạn",
-    "quan hệ tình dục phi pháp",
+    "rối loạn; mất trật tự",
+    "bừa bãi; tùy tiện",
     "làm rối loạn",
+    "trạng thái tinh thần bối rối",
+    "biến động; bạo loạn",
     "trộn lẫn",
-    "không phân biệt",
-    "bừa bãi",
-    "tùy tiện"
+    "không phân biệt"
   ],
   "适合": [
     "phù hợp; thích hợp"
@@ -1364,8 +1347,8 @@
     "cho đến"
   ],
   "传": [
-    "truyền đạt",
     "lan truyền",
+    "truyền đạt",
     "lây",
     "truyền nhiễm",
     "chuyển giao",
@@ -1414,14 +1397,14 @@
     "xuất sắc"
   ],
   "朝": [
+    "hướng (về)",
+    "phía",
     "triều đình hoặc hoàng gia",
     "chính phủ",
     "triều đại",
     "triều vua hoặc hoàng đế",
     "thiết triều hoặc họp bởi vua hoặc hoàng đế",
-    "hành hương",
-    "hướng",
-    "phía"
+    "hành hương"
   ],
   "值": [
     "đáng (giá)",
@@ -1649,9 +1632,9 @@
     "công bố"
   ],
   "期": [
+    "lượng từ: số, kỳ (báo, tạp chí)",
     "kỳ; giai đoạn; thời hạn",
-    "kỳ vọng; mong đợi",
-    "lượng từ cho số phát hành (báo, tạp chí)"
+    "kỳ vọng; mong đợi"
   ],
   "姑娘": [
     "cô gái",
@@ -1755,9 +1738,8 @@
     "chương trình"
   ],
   "乐": [
-    "vui",
-    "vui vẻ",
-    "cười"
+    "vui; cười",
+    "vui vẻ"
   ],
   "事实上": [
     "thực tế",
@@ -1832,8 +1814,8 @@
     "ý tổng quát"
   ],
   "演": [
-    "biểu diễn (vở kịch, v.v.); dàn dựng (một buổi diễn)",
-    "(hình thức kết hợp) phát triển; diễn ra; thực hiện (một nhiệm vụ)"
+    "diễn; biểu diễn (vở kịch, phim)",
+    "phát triển; diễn ra; thực hiện (một nhiệm vụ)"
   ],
   "顿": [
     "lượng từ: bữa (ăn), trận (đòn, mắng)",
@@ -1897,17 +1879,12 @@
     "diễn đạt; truyền tải"
   ],
   "胜": [
-    "chiến thắng",
-    "thành công",
+    "thắng; chiến thắng",
     "đánh bại",
     "vượt qua",
-    "vượt trội",
-    "hơn",
-    "thắng",
-    "thắng thế",
-    "tuyệt đẹp (phong cảnh)",
-    "đẹp (cảnh sắc)",
-    "tuyệt vời (quang cảnh)",
+    "vượt trội; hơn",
+    "thành công",
+    "đẹp (phong cảnh)",
     "(cách phát âm ở Đài Loan [sheng1]) chịu đựng được",
     "khám nổi (một nhiệm vụ)"
   ],
@@ -1924,10 +1901,10 @@
     "đảm bảo; bảo đảm"
   ],
   "建": [
+    "xây dựng",
     "thiết lập",
     "sáng lập",
     "dựng lên",
-    "xây dựng",
     "kiến thiết"
   ],
   "队员": [
@@ -2032,9 +2009,9 @@
     "công bố"
   ],
   "修": [
+    "sửa chữa",
     "trang trí",
     "tô điểm",
-    "sửa chữa",
     "xây dựng",
     "viết",
     "trau dồi",
@@ -2053,7 +2030,6 @@
   ],
   "旧": [
     "cũ",
-    "đối lập: mới 新",
     "trước",
     "hao mòn (theo thời gian)"
   ],
@@ -2118,9 +2094,8 @@
     "toàn cầu"
   ],
   "升": [
-    "thăng lên",
-    "tăng lên chức",
     "thăng chức",
+    "thăng lên",
     "kéo lên",
     "lít",
     "đơn vị đo lường ngũ cốc khô bằng một phần mười đấu 斗[dou3]"
@@ -2251,11 +2226,10 @@
     "(nghĩa đen và bóng) sân khấu; đấu trường"
   ],
   "化": [
-    "làm thành",
-    "thay đổi thành",
-    "-hóa",
-    "hoá...",
+    "tan (băng, tuyết)",
     "biến đổi",
+    "làm thành; thay đổi thành",
+    "-hóa",
     "viết tắt của 化學|化学[hua4 xue2]"
   ],
   "不必": [
@@ -2318,8 +2292,8 @@
     "một ký ức"
   ],
   "烟": [
-    "thuốc lá hoặc thuốc lào",
     "khói",
+    "thuốc lá hoặc thuốc lào",
     "sương",
     "hơi nước",
     "cây thuốc lá",
@@ -2490,10 +2464,9 @@
     "có thể"
   ],
   "搬": [
-    "di chuyển (tức là tự dời đi)",
-    "di chuyển (thứ gì đó tương đối nặng hoặc cồng kềnh)",
-    "chuyển",
-    "dọn sao chép mà không chọn lọc"
+    "chuyển; dời (đồ nặng, cồng kềnh)",
+    "dọn (nhà)",
+    "sao chép mà không chọn lọc"
   ],
   "自从": [
     "kể từ khi",
@@ -2632,12 +2605,10 @@
     "một trong tám loại nhạc cụ cổ đại 八音[ba1 yin1]"
   ],
   "念": [
-    "đọc",
-    "học (một môn)",
-    "theo học (một trường)",
-    "đọc to",
-    "la mắng",
+    "học; theo học (một trường)",
+    "đọc; đọc to",
     "nhớ (ai đó)",
+    "la mắng",
     "ý tưởng",
     "hồi tưởng",
     "hai mươi (chữ số chống gian lận trong ngân hàng tương ứng với 廿[nian4])"
@@ -2661,11 +2632,9 @@
     "sức mạnh"
   ],
   "缺": [
-    "sự thiếu",
-    "hụt",
+    "thiếu; thiếu hụt",
     "không đủ",
-    "vị trí trống",
-    "thiếu hụt"
+    "vị trí trống"
   ],
   "主动": [
     "chủ động",
@@ -2756,9 +2725,8 @@
     "mạnh mẽ"
   ],
   "古": [
-    "cổ",
-    "thời xa xưa",
-    "tiền sử-"
+    "xưa; cổ",
+    "thời xa xưa"
   ],
   "苹果": [
     "quả táo"
@@ -2787,9 +2755,8 @@
     "tương lai"
   ],
   "造": [
-    "làm",
+    "sản xuất; làm",
     "xây dựng",
-    "sản xuất",
     "phát minh",
     "bịa đặt",
     "đi đến",
@@ -2900,12 +2867,12 @@
     "ấm áp"
   ],
   "齐": [
+    "đều; đồng đều",
+    "đủ (không thiếu ai, thiếu gì)",
     "gọn gàng",
-    "đồng đều",
     "cùng mức",
     "giống hệt",
-    "đồng thời",
-    "cùng nhau",
+    "cùng nhau; đồng thời",
     "làm cho đều"
   ],
   "表面": [
@@ -2976,9 +2943,9 @@
     "may mắn"
   ],
   "补": [
-    "sửa",
-    "chắp vá",
     "vá",
+    "chắp vá",
+    "sửa",
     "bù đắp",
     "lấp đầy (chỗ trống)",
     "bổ sung"
@@ -3056,7 +3023,7 @@
     "luôn luôn"
   ],
   "争": [
-    "cố gắng giành",
+    "tranh giành",
     "đua tranh",
     "tranh luận hoặc tranh cãi",
     "thiếu hoặc không đủ (phương ngữ)",
@@ -3158,8 +3125,7 @@
     "nếu thực sự"
   ],
   "静": [
-    "yên",
-    "tĩnh",
+    "yên tĩnh; yên",
     "lặng",
     "không động đậy"
   ],
@@ -3465,17 +3431,15 @@
     "hàng hóa; sản phẩm; thương phẩm"
   ],
   "属": [
+    "tuổi; sinh năm (một trong 12 con giáp)",
+    "thuộc về",
+    "trực thuộc",
     "phân loại",
     "chi (phân loại học)",
     "thành viên gia đình",
     "người phụ thuộc",
-    "thuộc về",
-    "trực thuộc",
-    "liên kết với",
-    "sinh năm (một trong 12 con giáp)",
     "là",
-    "chứng tỏ là",
-    "cấu thành"
+    "chứng tỏ là"
   ],
   "裤子": [
     "quần; quần dài"
@@ -3770,8 +3734,7 @@
     "cãi vã"
   ],
   "巧": [
-    "một cách tình cờ",
-    "trùng hợp",
+    "trùng hợp; tình cờ",
     "đúng lúc",
     "khéo léo",
     "kịp thời"
