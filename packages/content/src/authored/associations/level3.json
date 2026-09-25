@@ -90,7 +90,8 @@
   ],
   "系": [
     { "zh": "联系", "vi": "liên hệ" },
-    { "zh": "系统", "vi": "hệ thống", "hanViet": "Hệ Thống" }
+    { "zh": "系统", "vi": "hệ thống", "hanViet": "Hệ Thống" },
+    { "zh": "系主任", "vi": "trưởng khoa" }
   ],
   "吵": [
     { "zh": "吵闹", "vi": "ồn ào; om sòm", "hanViet": "Sảo Náo" },
