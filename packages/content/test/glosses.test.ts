@@ -36,6 +36,9 @@ describe('glossFor / formatGloss', () => {
     expect(glossFor(hao, 'hao', '')).toBe('');
     expect(glossFor({ xíng: 'đi', háng: 'hàng' }, 'hang', 'hang')).toBe('hàng');
   });
+  it('picks the r-gloss for erhua (syllable folded into the previous character)', () => {
+    expect(glossFor({ ér: 'con; nhi', r: 'hậu tố (儿 hoá)' }, '', '')).toBe('hậu tố (儿 hoá)');
+  });
 });
 
 describe('buildParts', () => {
@@ -53,6 +56,15 @@ describe('buildParts', () => {
       ['空', 'Không', ''],
       ['儿', 'Nhi', ''],
     ]);
+  });
+  it('uses the r-gloss for an erhua part whose syllable folds into the previous character', () => {
+    const parts = buildParts(
+      w('有空儿', 'yǒu kòngr', 'Hữu Không Nhi'),
+      { 儿: { ér: 'con; nhi', r: 'hậu tố (儿 hoá)' } },
+      new Map(),
+      hanViet,
+    );
+    expect(parts.map((p) => p.gloss)).toEqual(['', '', 'hậu tố (儿 hoá)']);
   });
   it('picks the tone-specific gloss for a word like 爱好 (ài hào)', () => {
     const parts = buildParts(

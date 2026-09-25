@@ -54,6 +54,10 @@ export function glossFor(g: CharGloss | undefined, syllable: string, tone = ''):
     const hit = Object.entries(g).find(([k]) => k.normalize('NFC').toLowerCase() === tone);
     if (hit) return hit[1];
   }
+  if (syllable === '') {
+    const rMatches = Object.entries(g).filter(([k]) => tonelessSyllables(k)[0] === 'r');
+    return rMatches.length === 1 ? rMatches[0]![1] : '';
+  }
   const matches = Object.entries(g).filter(([k]) => tonelessSyllables(k)[0] === syllable);
   return matches.length === 1 ? matches[0]![1] : '';
 }
