@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { findMissingAssociations } from '../src/pipeline/associations.js';
 import { loadAuthored } from '../src/pipeline/authored.js';
 import { writeContent } from '../src/pipeline/build.js';
 import { CVDICT_SOURCE, fetchRaw } from '../src/pipeline/fetch.js';
@@ -67,4 +68,9 @@ if (crowded.length > 0) {
     `warning: ${crowded.length} unit(s) with more than ${MAX_GRAMMAR_PER_UNIT} grammar points:`,
   );
   for (const c of crowded) console.warn(`  ${c.unitId}: ${c.count}`);
+}
+
+const missingAssoc = findMissingAssociations(result.bundle.words, result.associations, [1, 2, 3]);
+if (missingAssoc.length > 0) {
+  console.warn(`warning: ${missingAssoc.length} single-character word(s) without associations yet`);
 }

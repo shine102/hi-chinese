@@ -1,5 +1,7 @@
 import type { Authored } from './authored.js';
+import { attachAssociations, indexCedict, resolveAssociations, type ResolvedAssociations } from './associations.js';
 import { buildCharacters } from './characters.js';
+import { parseCedict } from './cedict.js';
 import { makeHanViet } from './hanviet.js';
 import { applyReadingFixes, parseHskWords, type RawHskEntry } from './hsk.js';
 import { attachToUnits, placeAnchoredGrammar, placeAuthoredGrammar, placeGrammarByDensity, placeSentences } from './placement.js';
@@ -16,7 +18,9 @@ export interface RunInputs {
   cvdictText?: string;
 }
 
-export type RunResult = { ok: true; bundle: ContentBundle } | { ok: false; problems: string[] };
+export type RunResult =
+  | { ok: true; bundle: ContentBundle; associations: ResolvedAssociations }
+  | { ok: false; problems: string[] };
 
 export function assembleContent(inputs: RunInputs): RunResult {
   const entries = JSON.parse(inputs.hskJson) as RawHskEntry[];
@@ -70,21 +74,31 @@ export function assembleContent(inputs: RunInputs): RunResult {
   const grammarErrors = [...anchoredErrors, ...authoredGrammarErrors, ...pipelineGrammarErrors];
   const units = attachToUnits(bareUnits, sentences, grammar);
 
+  const cvdict = indexCedict(inputs.cvdictText ? parseCedict(inputs.cvdictText) : []);
+  const { byChar, errors: associationErrors } = resolveAssociations(
+    inputs.authored.associations,
+    words,
+    cvdict,
+    hanViet,
+  );
+  const linkedWords = attachAssociations(words, byChar);
+
   const { characters, missing } = buildCharacters(
     inputs.dictionaryText,
     inputs.graphicsText,
-    words,
+    linkedWords,
     (ch) => hanViet.char(ch),
     inputs.authored.charDefinitions,
   );
 
-  const bundle: ContentBundle = { words, characters, units, grammar, sentences };
+  const bundle: ContentBundle = { words: linkedWords, characters, units, grammar, sentences };
   const problems = [
     ...sentenceErrors.map((e) => `[placement:${e.kind}] ${e.message}`),
     ...grammarErrors.map((e) => `[placement:${e.kind}] ${e.message}`),
     ...missing.map((ch) => `[characters] no stroke data for ${ch}`),
+    ...associationErrors.map((e) => `[${e.rule}] ${e.message}`),
     ...validateContent(bundle).map((e) => `[${e.rule}] ${e.message}`),
   ];
   if (problems.length > 0) return { ok: false, problems };
-  return { ok: true, bundle };
+  return { ok: true, bundle, associations: byChar };
 }
