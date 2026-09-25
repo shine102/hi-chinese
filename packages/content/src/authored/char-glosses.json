@@ -1,6 +1,9 @@
 {
   "你": "bạn",
-  "好": "tốt; hay; dễ",
+  "好": {
+    "hǎo": "tốt; hay; dễ",
+    "hào": "thích; ham"
+  },
   "我": "tôi; ta",
   "他": "anh ấy; khác",
   "她": "cô ấy",
@@ -24,7 +27,7 @@
   "没": "không; chưa",
   "关": "đóng; liên quan; cửa ải",
   "问": "hỏi",
-  "坐": "ngồi; đi xe",
+  "坐": "ngồi; đi (tàu, xe)",
   "进": "vào; tiến lên",
   "也": "cũng",
   "都": {
@@ -62,10 +65,16 @@
   "几": "mấy; vài",
   "个": "cái (lượng từ); riêng lẻ",
   "多": "nhiều",
-  "少": "ít; thiếu; trẻ",
+  "少": {
+    "shǎo": "ít; thiếu",
+    "shào": "trẻ"
+  },
   "百": "trăm",
   "岁": "tuổi; năm",
-  "大": "to; lớn",
+  "大": {
+    "dà": "to; lớn",
+    "dài": "đại phu (trong 大夫)"
+  },
   "半": "nửa; rưỡi",
   "老": "già; cũ",
   "们": "hậu tố số nhiều",
@@ -99,7 +108,7 @@
   "年": "năm",
   "月": "trăng; tháng",
   "日": "mặt trời; ngày",
-  "号": "số; hiệu",
+  "号": "số; ngày (trong tháng)",
   "新": "mới",
   "去": "đi; đã qua",
   "次": "lần; thứ",
@@ -115,6 +124,6 @@
   "就": "ngay; thì; đạt tới",
   "正": "đúng; thẳng; chính",
   "块": "cục; miếng; đồng (tiền)",
-  "差": "thiếu; kém; khác biệt",
+  "差": "thiếu; kém",
   "吃": "ăn"
 }

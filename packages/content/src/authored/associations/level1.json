@@ -17,7 +17,9 @@
     { "zh": "其他", "vi": "khác; cái khác" },
     { "zh": "他人", "vi": "người khác" }
   ],
-  "她": { "none": "chỉ có 她们 (các cô ấy); không có từ ghép thông dụng thứ hai" },
+  "她": [
+    { "zh": "她们", "vi": "các cô ấy; họ (nữ)" }
+  ],
   "是": [
     { "zh": "是不是", "vi": "có phải không" },
     { "zh": "但是", "vi": "nhưng" },
@@ -43,7 +45,9 @@
     { "zh": "看见", "vi": "nhìn thấy" },
     { "zh": "意见", "vi": "ý kiến" }
   ],
-  "您": { "none": "chỉ có 您好 (xin chào, lịch sự); không có từ ghép thông dụng thứ hai" },
+  "您": [
+    { "zh": "您好", "vi": "xin chào (lịch sự)" }
+  ],
   "请": [
     { "zh": "请问", "vi": "xin hỏi" },
     { "zh": "请进", "vi": "mời vào" },
@@ -60,8 +64,7 @@
     { "zh": "字典", "vi": "tự điển" }
   ],
   "谁": [
-    { "zh": "谁知道", "vi": "ai mà biết được" },
-    { "zh": "谁怕谁", "vi": "ai sợ ai chứ" }
+    { "zh": "谁知道", "vi": "ai mà biết được" }
   ],
   "人": [
     { "zh": "男人", "vi": "đàn ông" },
@@ -69,8 +72,7 @@
     { "zh": "病人", "vi": "người bệnh" }
   ],
   "吗": [
-    { "zh": "不是吗", "vi": "chẳng phải sao?" },
-    { "zh": "干吗", "vi": "làm gì vậy; sao lại" }
+    { "zh": "不是吗", "vi": "chẳng phải sao?" }
   ],
   "呢": { "none": "trợ từ ngữ khí; không có từ ghép thông dụng giúp hiểu nghĩa" },
   "先": [
@@ -180,7 +182,7 @@
   "子": [
     { "zh": "儿子", "vi": "con trai" },
     { "zh": "孩子", "vi": "trẻ con; con" },
-    { "zh": "桌子", "vi": "cái bàn" }
+    { "zh": "子女", "vi": "con cái" }
   ],
   "女": [
     { "zh": "女儿", "vi": "con gái" },
@@ -251,7 +253,7 @@
   ],
   "个": [
     { "zh": "个人", "vi": "cá nhân" },
-    { "zh": "个性", "vi": "cá tính" },
+    { "zh": "这个", "vi": "cái này" },
     { "zh": "个子", "vi": "vóc dáng" }
   ],
   "多": [
@@ -411,7 +413,7 @@
     { "zh": "日本", "vi": "Nhật Bản" }
   ],
   "号": [
-    { "zh": "号码", "vi": "con số; số", "hanViet": "Hiệu Mã" },
+    { "zh": "号码", "vi": "số (điện thoại...)", "hanViet": "Hiệu Mã" },
     { "zh": "信号", "vi": "tín hiệu" },
     { "zh": "一号", "vi": "ngày mùng một" }
   ],
@@ -461,7 +463,7 @@
   ],
   "点": [
     { "zh": "地点", "vi": "địa điểm" },
-    { "zh": "观点", "vi": "quan điểm" },
+    { "zh": "几点", "vi": "mấy giờ" },
     { "zh": "一点儿", "vi": "một chút" }
   ],
   "分": [
