@@ -17,7 +17,7 @@
   "件": [
     { "zh": "事件", "vi": "sự kiện" },
     { "zh": "文件", "vi": "tài liệu; văn kiện" },
-    { "zh": "邮件", "vi": "thư; bưu kiện" }
+    { "zh": "邮件", "vi": "thư từ; email" }
   ],
   "道": [
     { "zh": "道路", "vi": "đường sá" },
@@ -190,7 +190,7 @@
     { "zh": "拉链", "vi": "dây kéo; khóa kéo", "hanViet": "Lạp Liên" }
   ],
   "掉": [
-    { "zh": "掉头", "vi": "quay đầu" },
+    { "zh": "掉下", "vi": "rơi xuống" },
     { "zh": "忘掉", "vi": "quên mất" },
     { "zh": "丢掉", "vi": "vứt đi; đánh mất", "hanViet": "Đâu Điệu" }
   ],
@@ -376,7 +376,7 @@
   "药": [
     { "zh": "药店", "vi": "hiệu thuốc" },
     { "zh": "药片", "vi": "viên thuốc" },
-    { "zh": "中药", "vi": "thuốc bắc; Đông y" }
+    { "zh": "中药", "vi": "thuốc bắc; thuốc Đông y" }
   ],
   "疼": [
     { "zh": "头疼", "vi": "đau đầu" },
