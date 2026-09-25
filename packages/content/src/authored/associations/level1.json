@@ -545,7 +545,7 @@
   "了": [
     { "zh": "极了", "vi": "cực kỳ; ... lắm" },
     { "zh": "除了", "vi": "ngoài ... ra" },
-    { "zh": "为了", "vi": "để; vì" }
+    { "zh": "太好了", "vi": "tuyệt quá; tốt quá" }
   ],
   "包": [
     { "zh": "书包", "vi": "cặp sách" },
@@ -915,7 +915,7 @@
   ],
   "买": [
     { "zh": "买卖", "vi": "mua bán" },
-    { "zh": "购买", "vi": "mua sắm", "hanViet": "Cấu Mãi" }
+    { "zh": "购买", "vi": "mua", "hanViet": "Cấu Mãi" }
   ],
   "钱": [
     { "zh": "钱包", "vi": "ví tiền" },
@@ -925,7 +925,7 @@
   "贵": [
     { "zh": "昂贵", "vi": "đắt đỏ", "hanViet": "Ngang Quý" },
     { "zh": "宝贵", "vi": "quý báu", "hanViet": "Bảo Quý" },
-    { "zh": "贵姓", "vi": "quý danh (họ)" }
+    { "zh": "贵姓", "vi": "họ của ngài (kính ngữ)" }
   ],
   "元": [
     { "zh": "美元", "vi": "đô la Mỹ" },
@@ -933,7 +933,7 @@
   ],
   "毛": [
     { "zh": "毛病", "vi": "tật; lỗi" },
-    { "zh": "毛巾", "vi": "khăn mặt", "hanViet": "Mao Cân" },
+    { "zh": "毛巾", "vi": "khăn bông; khăn tắm", "hanViet": "Mao Cân" },
     { "zh": "毛衣", "vi": "áo len" }
   ],
   "高": [
@@ -949,7 +949,7 @@
   "慢": [
     { "zh": "慢慢", "vi": "từ từ" },
     { "zh": "慢性", "vi": "mạn tính" },
-    { "zh": "傲慢", "vi": "ngạo mạn", "hanViet": "Ngạo Mạn" }
+    { "zh": "慢跑", "vi": "chạy chậm; chạy bộ" }
   ],
   "难": [
     { "zh": "难题", "vi": "vấn đề khó" },
