@@ -24,8 +24,8 @@
     "bạn (đại từ nhân xưng ngôi thứ hai, thân mật hơn 您)"
   ],
   "在": [
+    "ở (vị trí)",
     "tồn tại; còn sống",
-    "(ai đó hoặc cái gì đó) ở (vị trí)",
     "(dùng trước động từ để chỉ hành động đang diễn ra)"
   ],
   "不": [
@@ -48,8 +48,8 @@
     "(hình thức kết hợp) này; những...này (được theo sau bởi lượng từ) (trong nghĩa này, thường phát âm [zhei4], đặc biệt ở Bắc Kinh)"
   ],
   "就": [
+    "ngay; ngay khi; ngay sau khi (sau một mệnh đề hành động)",
     "(sau một mệnh đề giả định) trong trường hợp đó; thì",
-    "(sau một mệnh đề hành động) ngay khi; ngay sau khi",
     "(giống như 就是[jiu4 shi4]) chỉ; không gì khác ngoài; đơn giản là; chỉ là; chính xác; đúng",
     "chỉ có; ít nhất là",
     "nhiều đến; nhiều như",
@@ -62,7 +62,7 @@
     "(mẫu câu: 不[bu4] ... 就[jiu4] ...) nếu không ... thì phải ..."
   ],
   "个": [
-    "(lượng từ dùng trước danh từ không có lượng từ cụ thể)",
+    "cái; chiếc (lượng từ chung, dùng khi danh từ không có lượng từ riêng)",
     "(dạng kết hợp) cá nhân"
   ],
   "和": [
@@ -107,7 +107,7 @@
     "cũng đọc là [yao1] để rõ hơn khi đọc từng chữ số một"
   ],
   "会": [
-    "có thể; có kỹ năng; biết cách",
+    "biết cách; có kỹ năng; có thể",
     "có khả năng; chắc chắn",
     "gặp gỡ; tụ họp",
     "cuộc họp; buổi tụ họp",
@@ -146,7 +146,7 @@
     "chu đáo; tận tâm; kỹ lưỡng"
   ],
   "上": [
-    "(hình thức kết hợp) trên; phía trên; trước",
+    "trên; phía trên; trước",
     "đầu tiên (của nhiều phần)",
     "leo; lên; đi lên",
     "tham dự (lớp hoặc đại học)",
@@ -165,9 +165,8 @@
     "chỉ khả năng sau 得[de2], như trong 談得來|谈得来[tan2de5lai2], hoặc chỉ không khả năng sau 不[bu4], như trong 吃不來|吃不来[chi1bu5lai2])"
   ],
   "很": [
-    "(phó từ mức độ)",
+    "rất; lắm",
     "khá",
-    "rất",
     "cực kỳ"
   ],
   "还": [
@@ -277,11 +276,11 @@
     "...tôi đoán."
   ],
   "点": [
+    "giờ (chấm giờ)",
     "điểm",
     "chấm",
     "giọt",
     "vết",
-    "chấm giờ",
     "điểm (trong không gian hoặc thời gian)",
     "vẽ một chấm",
     "kiểm tra danh sách",
@@ -417,11 +416,11 @@
     "lượng từ cho kịch, vở diễn, opera, v.v."
   ],
   "太": [
-    "cao nhất",
-    "vĩ đại",
     "quá (nhiều)",
     "rất",
-    "cực kỳ"
+    "cực kỳ",
+    "cao nhất",
+    "vĩ đại"
   ],
   "最": [
     "nhất",
@@ -441,6 +440,7 @@
     "trợ từ chỉ sự khẳng định mạnh mẽ"
   ],
   "次": [
+    "lần (lượng từ cho sự kiện)",
     "tiếp theo",
     "thứ hai",
     "ngày thứ hai, lần thứ hai, v.v.",
@@ -452,8 +452,7 @@
     "không đạt tiêu chuẩn",
     "thứ tự",
     "trình tự",
-    "hypo- (hóa học)",
-    "lượng từ cho sự kiện: lần"
+    "hypo- (hóa học)"
   ],
   "小": [
     "nhỏ",
@@ -542,15 +541,15 @@
     "những... này"
   ],
   "跟": [
-    "gót chân",
-    "theo sát",
-    "đi cùng",
-    "(phụ nữ) lấy ai",
     "với",
+    "đi cùng",
+    "theo sát",
     "so với",
+    "và (nối hai danh từ)",
     "đến",
     "hướng về",
-    "và (nối hai danh từ)"
+    "gót chân",
+    "(phụ nữ) lấy ai"
   ],
   "喜欢": [
     "thích; ưa thích"
@@ -620,8 +619,8 @@
     "dễ chịu"
   ],
   "比": [
+    "hơn (A 比 B + tính từ: A ... hơn B)",
     "so sánh",
-    "(theo sau bởi danh từ và tính từ) {tính từ} hơn {danh từ}",
     "tỉ lệ",
     "ra hiệu",
     "(phát âm [bi4] ở Đài Loan trong một số từ ghép có nguồn gốc từ văn học cổ điển Trung Quốc)"
@@ -651,8 +650,8 @@
     "cảm thấy (không thoải mái, v.v.)"
   ],
   "月": [
-    "mặt trăng",
     "tháng",
+    "mặt trăng",
     "hàng tháng"
   ],
   "看到": [
@@ -686,14 +685,14 @@
     "lượng từ cho nhóm: đợt, nhóm"
   ],
   "几": [
-    "bao nhiêu",
     "mấy",
+    "bao nhiêu",
     "một vài",
     "vài"
   ],
   "见": [
-    "thấy",
     "gặp",
+    "thấy",
     "dường như",
     "phỏng vấn",
     "ý kiến",
@@ -747,11 +746,11 @@
     "viết tắt của 開本|开本[kai1 ben3], khổ sách"
   ],
   "叫": [
-    "kêu",
     "gọi",
+    "được gọi",
+    "kêu",
     "đặt hàng",
     "bảo",
-    "được gọi",
     "bởi (chỉ tác nhân trong câu bị động)"
   ],
   "孩子": [
@@ -761,10 +760,10 @@
     "ở đây"
   ],
   "别": [
+    "đừng ...!",
+    "(hình thức kết hợp) khác; nữa; khác biệt",
     "rời khỏi; chia tay",
     "(văn học) phân biệt",
-    "(hình thức kết hợp) khác; nữa; khác biệt",
-    "đừng ...!",
     "ghim; kẹp lại",
     "chen vào; chèn vào (để cản trở chuyển động)",
     "(hậu tố danh từ) loại (ví dụ 性別|性别[xing4 bie2], 派別|派别[pai4 bie2])"
@@ -843,14 +842,14 @@
     "tối hậu"
   ],
   "老": [
-    "tiền tố dùng trước họ của một người hoặc số thứ tự sinh của các con trong gia đình hoặc để chỉ sự thân mật hoặc quen thuộc",
     "già (người)",
+    "cũ; lâu năm",
+    "của quá khứ",
     "người đáng kính",
     "có kinh nghiệm",
-    "lâu năm",
+    "tiền tố dùng trước họ của một người hoặc số thứ tự sinh của các con trong gia đình hoặc để chỉ sự thân mật hoặc quen thuộc",
     "luôn luôn",
     "lúc nào cũng",
-    "của quá khứ",
     "rất",
     "lỗi thời",
     "(thịt,...) dai"
@@ -929,15 +928,15 @@
     "(kính ngữ) của bạn"
   ],
   "正": [
+    "vừa đúng (lúc đó)",
+    "chính xác",
+    "đúng đắn",
     "thẳng",
     "nghiêm túc",
-    "đúng đắn",
     "chính",
     "chủ yếu",
     "sửa chữa",
     "chỉnh đốn",
-    "chính xác",
-    "vừa đúng (lúc đó)",
     "ngay (chỗ đó)",
     "(toán) dương"
   ],
@@ -969,9 +968,9 @@
     "(quần áo) lượng từ cho số lần giặt"
   ],
   "进": [
+    "đi vào",
     "tiến lên",
     "tiến bộ",
-    "đi vào",
     "nhập vào",
     "cho vào",
     "nộp vào",
@@ -1006,6 +1005,7 @@
     "đi cùng; đi theo"
   ],
   "分": [
+    "phút (đơn vị thời gian)",
     "chia; tách",
     "phân phối; phân bổ",
     "phân biệt (tốt và xấu)",
@@ -1013,7 +1013,6 @@
     "phân số",
     "một phần mười (của một số đơn vị)",
     "đơn vị chiều dài tương đương 0,33 cm",
-    "phút (đơn vị thời gian)",
     "phút (đơn vị đo góc)",
     "một điểm (trong thể thao hoặc trò chơi)",
     "0,01 nhân dân tệ (đơn vị tiền tệ)"
@@ -1048,9 +1047,9 @@
     "hội kín"
   ],
   "日": [
-    "mặt trời",
     "ngày",
-    "ngày, ngày trong tháng"
+    "ngày, ngày trong tháng",
+    "mặt trời"
   ],
   "别人": [
     "người khác; những người khác"
@@ -1183,9 +1182,9 @@
     "4"
   ],
   "块": [
+    "đồng; tệ (lượng từ cho tiền, khẩu ngữ)",
     "cục; tảng; miếng",
-    "lượng từ cho miếng vải, bánh, xà phòng, v.v.",
-    "(thông tục) lượng từ cho tiền và đơn vị tiền tệ"
+    "lượng từ cho miếng vải, bánh, xà phòng, v.v."
   ],
   "外": [
     "bên ngoài",
@@ -1272,16 +1271,16 @@
     "phim; điện ảnh"
   ],
   "间": [
+    "gian; căn (lượng từ cho phòng)",
+    "phòng",
     "giữa",
     "trong số",
     "trong khoảng thời gian hoặc không gian nhất định",
-    "phòng",
-    "phần của một phòng hoặc không gian ngang giữa hai cặp cột",
-    "lượng từ cho phòng"
+    "phần của một phòng hoặc không gian ngang giữa hai cặp cột"
   ],
   "哪": [
-    "như thế nào",
-    "cái nào"
+    "cái nào",
+    "như thế nào"
   ],
   "跑": [
     "chạy",
@@ -1299,9 +1298,9 @@
     "hôm qua"
   ],
   "晚": [
+    "muộn",
     "buổi tối",
-    "đêm",
-    "muộn"
+    "đêm"
   ],
   "书": [
     "sách",
@@ -1627,7 +1626,7 @@
     "lượng từ cho giường"
   ],
   "第": [
-    "(tiền tố chỉ số thứ tự, như trong 第六[di4 liu4] \"thứ sáu\")",
+    "thứ (tiền tố chỉ số thứ tự, như trong 第六[di4 liu4] \"thứ sáu\")",
     "(văn học) thứ hạng mà thí sinh đỗ đạt trong kỳ thi đình được xếp vào",
     "(cũ) nơi ở của quan chức cao cấp",
     "(văn học) nhưng; tuy nhiên",
@@ -1637,10 +1636,10 @@
     "trở về"
   ],
   "差": [
-    "khác",
-    "sai; nhầm",
     "thiếu",
     "không đạt tiêu chuẩn; kém",
+    "khác",
+    "sai; nhầm",
     "tiếng Đài Loan đọc là [cha1]"
   ],
   "家里": [
@@ -1692,9 +1691,9 @@
     "(thông tục) bó rơm nhỏ cho tằm làm kén"
   ],
   "常": [
-    "luôn luôn",
-    "thường xuyên",
     "thường",
+    "thường xuyên",
+    "luôn luôn",
     "phổ biến",
     "chung",
     "không đổi"
@@ -1719,10 +1718,10 @@
     "lượng từ cho đòn đánh, cú đá, phát bắn"
   ],
   "关": [
-    "ải núi",
     "đóng; khép; tắt",
+    "liên quan; dính líu",
     "giam giữ; nhốt; nhốt (ai đó trong phòng, chim trong lồng, v.v.)",
-    "liên quan; dính líu"
+    "ải núi"
   ],
   "哥": [
     "anh trai"

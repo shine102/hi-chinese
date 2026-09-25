@@ -1,0 +1,500 @@
+{
+  "你": [
+    { "zh": "你们", "vi": "các bạn" },
+    { "zh": "你好", "vi": "xin chào" }
+  ],
+  "好": [
+    { "zh": "好吃", "vi": "ngon" },
+    { "zh": "好看", "vi": "đẹp; ưa nhìn" },
+    { "zh": "你好", "vi": "xin chào" }
+  ],
+  "我": [
+    { "zh": "我们", "vi": "chúng tôi; chúng ta" },
+    { "zh": "自我", "vi": "bản thân; tự mình" }
+  ],
+  "他": [
+    { "zh": "他们", "vi": "họ" },
+    { "zh": "其他", "vi": "khác; cái khác" },
+    { "zh": "他人", "vi": "người khác" }
+  ],
+  "她": { "none": "chỉ có 她们 (các cô ấy); không có từ ghép thông dụng thứ hai" },
+  "是": [
+    { "zh": "是不是", "vi": "có phải không" },
+    { "zh": "但是", "vi": "nhưng" },
+    { "zh": "就是", "vi": "chính là" }
+  ],
+  "不": [
+    { "zh": "不用", "vi": "không cần" },
+    { "zh": "不对", "vi": "không đúng" },
+    { "zh": "不客气", "vi": "không có chi" }
+  ],
+  "对": [
+    { "zh": "不对", "vi": "không đúng" },
+    { "zh": "对面", "vi": "đối diện" },
+    { "zh": "对话", "vi": "đối thoại; trò chuyện" }
+  ],
+  "再": [
+    { "zh": "再见", "vi": "tạm biệt" },
+    { "zh": "再三", "vi": "nhiều lần" },
+    { "zh": "不再", "vi": "không ... nữa" }
+  ],
+  "见": [
+    { "zh": "见面", "vi": "gặp mặt" },
+    { "zh": "看见", "vi": "nhìn thấy" },
+    { "zh": "意见", "vi": "ý kiến" }
+  ],
+  "您": { "none": "chỉ có 您好 (xin chào, lịch sự); không có từ ghép thông dụng thứ hai" },
+  "请": [
+    { "zh": "请问", "vi": "xin hỏi" },
+    { "zh": "请进", "vi": "mời vào" },
+    { "zh": "请客", "vi": "mời khách; khao" }
+  ],
+  "叫": [
+    { "zh": "叫作", "vi": "gọi là" },
+    { "zh": "叫醒", "vi": "đánh thức", "hanViet": "Khiếu Tỉnh" },
+    { "zh": "叫喊", "vi": "kêu la" }
+  ],
+  "字": [
+    { "zh": "汉字", "vi": "chữ Hán" },
+    { "zh": "名字", "vi": "tên" },
+    { "zh": "字典", "vi": "tự điển" }
+  ],
+  "谁": [
+    { "zh": "谁知道", "vi": "ai mà biết được" },
+    { "zh": "谁怕谁", "vi": "ai sợ ai chứ" }
+  ],
+  "人": [
+    { "zh": "男人", "vi": "đàn ông" },
+    { "zh": "家人", "vi": "người nhà" },
+    { "zh": "病人", "vi": "người bệnh" }
+  ],
+  "吗": [
+    { "zh": "不是吗", "vi": "chẳng phải sao?" },
+    { "zh": "干吗", "vi": "làm gì vậy; sao lại" }
+  ],
+  "呢": { "none": "trợ từ ngữ khí; không có từ ghép thông dụng giúp hiểu nghĩa" },
+  "先": [
+    { "zh": "首先", "vi": "trước tiên" },
+    { "zh": "优先", "vi": "ưu tiên" },
+    { "zh": "先生", "vi": "ông; ngài" }
+  ],
+  "小": [
+    { "zh": "小孩儿", "vi": "trẻ con" },
+    { "zh": "小学", "vi": "trường tiểu học" },
+    { "zh": "小说", "vi": "tiểu thuyết" }
+  ],
+  "姐": [
+    { "zh": "姐姐", "vi": "chị gái" },
+    { "zh": "大姐", "vi": "chị cả" },
+    { "zh": "小姐", "vi": "cô; tiểu thư" }
+  ],
+  "起": [
+    { "zh": "起床", "vi": "thức dậy" },
+    { "zh": "一起", "vi": "cùng nhau" },
+    { "zh": "起飞", "vi": "cất cánh" }
+  ],
+  "没": [
+    { "zh": "没有", "vi": "không có" },
+    { "zh": "没关系", "vi": "không sao" },
+    { "zh": "没用", "vi": "vô dụng" }
+  ],
+  "关": [
+    { "zh": "关上", "vi": "đóng lại" },
+    { "zh": "关机", "vi": "tắt máy" },
+    { "zh": "关系", "vi": "quan hệ" }
+  ],
+  "问": [
+    { "zh": "请问", "vi": "xin hỏi" },
+    { "zh": "问题", "vi": "vấn đề; câu hỏi" },
+    { "zh": "问路", "vi": "hỏi đường" }
+  ],
+  "坐": [
+    { "zh": "请坐", "vi": "mời ngồi" },
+    { "zh": "坐下", "vi": "ngồi xuống" },
+    { "zh": "坐车", "vi": "đi xe" }
+  ],
+  "进": [
+    { "zh": "进去", "vi": "đi vào" },
+    { "zh": "前进", "vi": "tiến lên" },
+    { "zh": "先进", "vi": "tiên tiến" }
+  ],
+  "也": [
+    { "zh": "也许", "vi": "có lẽ" },
+    { "zh": "也好", "vi": "cũng được" }
+  ],
+  "都": [
+    { "zh": "全都", "vi": "tất cả; đều" },
+    { "zh": "大都", "vi": "phần lớn; hầu hết", "pinyin": "dà dōu" }
+  ],
+  "很": { "none": "phó từ mức độ; 得很, 不很 chỉ là cụm từ, không có từ ghép thông dụng" },
+  "真": [
+    { "zh": "真的", "vi": "thật sự" },
+    { "zh": "认真", "vi": "nghiêm túc; chăm chỉ" },
+    { "zh": "天真", "vi": "ngây thơ" }
+  ],
+  "太": [
+    { "zh": "太阳", "vi": "mặt trời" },
+    { "zh": "太平洋", "vi": "Thái Bình Dương", "hanViet": "Thái Bình Dương" },
+    { "zh": "不太", "vi": "không lắm" }
+  ],
+  "家": [
+    { "zh": "家人", "vi": "người nhà" },
+    { "zh": "回家", "vi": "về nhà" },
+    { "zh": "国家", "vi": "quốc gia" }
+  ],
+  "的": [
+    { "zh": "真的", "vi": "thật sự" },
+    { "zh": "别的", "vi": "cái khác" },
+    { "zh": "吃的", "vi": "đồ ăn" }
+  ],
+  "爸": [
+    { "zh": "爸爸", "vi": "bố; ba" },
+    { "zh": "爸妈", "vi": "bố mẹ" },
+    { "zh": "老爸", "vi": "bố (thân mật)" }
+  ],
+  "妈": [
+    { "zh": "妈妈", "vi": "mẹ" },
+    { "zh": "爸妈", "vi": "bố mẹ" },
+    { "zh": "大妈", "vi": "bác gái (gọi thân mật)" }
+  ],
+  "哥": [
+    { "zh": "哥哥", "vi": "anh trai" },
+    { "zh": "大哥", "vi": "anh cả; đại ca" },
+    { "zh": "哥们", "vi": "anh em; bạn thân" }
+  ],
+  "弟": [
+    { "zh": "弟弟", "vi": "em trai" },
+    { "zh": "兄弟", "vi": "anh em; huynh đệ", "hanViet": "Huynh Đệ" },
+    { "zh": "弟子", "vi": "đệ tử; học trò" }
+  ],
+  "妹": [
+    { "zh": "妹妹", "vi": "em gái" },
+    { "zh": "姐妹", "vi": "chị em" },
+    { "zh": "小妹", "vi": "em gái nhỏ" }
+  ],
+  "奶": [
+    { "zh": "牛奶", "vi": "sữa bò" },
+    { "zh": "奶茶", "vi": "trà sữa" },
+    { "zh": "奶奶", "vi": "bà nội" }
+  ],
+  "子": [
+    { "zh": "儿子", "vi": "con trai" },
+    { "zh": "孩子", "vi": "trẻ con; con" },
+    { "zh": "桌子", "vi": "cái bàn" }
+  ],
+  "女": [
+    { "zh": "女儿", "vi": "con gái" },
+    { "zh": "女人", "vi": "phụ nữ" },
+    { "zh": "女朋友", "vi": "bạn gái" }
+  ],
+  "一": [
+    { "zh": "一半", "vi": "một nửa" },
+    { "zh": "一样", "vi": "giống nhau" },
+    { "zh": "统一", "vi": "thống nhất", "hanViet": "Thống Nhất" }
+  ],
+  "二": [
+    { "zh": "第二", "vi": "thứ hai" },
+    { "zh": "二十", "vi": "hai mươi" },
+    { "zh": "二月", "vi": "tháng Hai" }
+  ],
+  "三": [
+    { "zh": "三十", "vi": "ba mươi" },
+    { "zh": "三月", "vi": "tháng Ba" },
+    { "zh": "三角", "vi": "tam giác" }
+  ],
+  "四": [
+    { "zh": "四十", "vi": "bốn mươi" },
+    { "zh": "四月", "vi": "tháng Tư" },
+    { "zh": "四周", "vi": "xung quanh" }
+  ],
+  "五": [
+    { "zh": "五十", "vi": "năm mươi" },
+    { "zh": "五月", "vi": "tháng Năm" },
+    { "zh": "五彩", "vi": "ngũ sắc; nhiều màu" }
+  ],
+  "六": [
+    { "zh": "六十", "vi": "sáu mươi" },
+    { "zh": "六月", "vi": "tháng Sáu" }
+  ],
+  "七": [
+    { "zh": "七十", "vi": "bảy mươi" },
+    { "zh": "七月", "vi": "tháng Bảy" },
+    { "zh": "七彩", "vi": "bảy màu" }
+  ],
+  "八": [
+    { "zh": "八十", "vi": "tám mươi" },
+    { "zh": "八月", "vi": "tháng Tám" }
+  ],
+  "九": [
+    { "zh": "九十", "vi": "chín mươi" },
+    { "zh": "九月", "vi": "tháng Chín" }
+  ],
+  "十": [
+    { "zh": "二十", "vi": "hai mươi" },
+    { "zh": "十月", "vi": "tháng Mười" },
+    { "zh": "十分", "vi": "rất; hết sức" }
+  ],
+  "两": [
+    { "zh": "两国", "vi": "hai nước" },
+    { "zh": "两旁", "vi": "hai bên" },
+    { "zh": "两手", "vi": "hai tay" }
+  ],
+  "零": [
+    { "zh": "零下", "vi": "dưới không độ" },
+    { "zh": "零钱", "vi": "tiền lẻ" },
+    { "zh": "零件", "vi": "linh kiện" }
+  ],
+  "几": [
+    { "zh": "几天", "vi": "mấy ngày" },
+    { "zh": "几个", "vi": "mấy cái; vài cái" },
+    { "zh": "十几", "vi": "mười mấy" }
+  ],
+  "个": [
+    { "zh": "个人", "vi": "cá nhân" },
+    { "zh": "个性", "vi": "cá tính" },
+    { "zh": "个子", "vi": "vóc dáng" }
+  ],
+  "多": [
+    { "zh": "多少", "vi": "bao nhiêu" },
+    { "zh": "多数", "vi": "đa số" },
+    { "zh": "许多", "vi": "nhiều" }
+  ],
+  "少": [
+    { "zh": "至少", "vi": "ít nhất" },
+    { "zh": "少数", "vi": "thiểu số" },
+    { "zh": "多少", "vi": "bao nhiêu" }
+  ],
+  "百": [
+    { "zh": "百货", "vi": "bách hóa", "hanViet": "Bách Hóa" },
+    { "zh": "老百姓", "vi": "người dân thường" },
+    { "zh": "百分", "vi": "phần trăm" }
+  ],
+  "岁": [
+    { "zh": "几岁", "vi": "mấy tuổi" },
+    { "zh": "万岁", "vi": "muôn năm; vạn tuế" },
+    { "zh": "年岁", "vi": "tuổi tác" }
+  ],
+  "大": [
+    { "zh": "大学", "vi": "đại học" },
+    { "zh": "大人", "vi": "người lớn" },
+    { "zh": "大海", "vi": "biển cả" }
+  ],
+  "半": [
+    { "zh": "一半", "vi": "một nửa" },
+    { "zh": "半天", "vi": "nửa ngày" },
+    { "zh": "半夜", "vi": "nửa đêm" }
+  ],
+  "老": [
+    { "zh": "老人", "vi": "người già" },
+    { "zh": "老朋友", "vi": "bạn cũ" },
+    { "zh": "老师", "vi": "giáo viên" }
+  ],
+  "们": [
+    { "zh": "我们", "vi": "chúng tôi; chúng ta" },
+    { "zh": "人们", "vi": "mọi người" },
+    { "zh": "孩子们", "vi": "bọn trẻ" }
+  ],
+  "男": [
+    { "zh": "男人", "vi": "đàn ông" },
+    { "zh": "男朋友", "vi": "bạn trai" },
+    { "zh": "男女", "vi": "nam nữ" }
+  ],
+  "别": [
+    { "zh": "别人", "vi": "người khác" },
+    { "zh": "特别", "vi": "đặc biệt" },
+    { "zh": "告别", "vi": "từ biệt" }
+  ],
+  "有": [
+    { "zh": "没有", "vi": "không có" },
+    { "zh": "有名", "vi": "nổi tiếng" },
+    { "zh": "有时候", "vi": "đôi khi" }
+  ],
+  "在": [
+    { "zh": "在家", "vi": "ở nhà" },
+    { "zh": "现在", "vi": "bây giờ" },
+    { "zh": "正在", "vi": "đang" }
+  ],
+  "和": [
+    { "zh": "和平", "vi": "hòa bình" },
+    { "zh": "共和", "vi": "cộng hòa" },
+    { "zh": "和好", "vi": "làm lành" }
+  ],
+  "跟": [
+    { "zh": "跟着", "vi": "đi theo" },
+    { "zh": "跟上", "vi": "theo kịp" },
+    { "zh": "脚跟", "vi": "gót chân" }
+  ],
+  "还": [
+    { "zh": "还是", "vi": "vẫn; hay là" },
+    { "zh": "还有", "vi": "còn có" },
+    { "zh": "还好", "vi": "cũng ổn" }
+  ],
+  "最": [
+    { "zh": "最好", "vi": "tốt nhất" },
+    { "zh": "最后", "vi": "cuối cùng" },
+    { "zh": "最近", "vi": "gần đây" }
+  ],
+  "常": [
+    { "zh": "常常", "vi": "thường xuyên" },
+    { "zh": "非常", "vi": "rất; phi thường" },
+    { "zh": "正常", "vi": "bình thường" }
+  ],
+  "比": [
+    { "zh": "比较", "vi": "so sánh; khá" },
+    { "zh": "比赛", "vi": "thi đấu" },
+    { "zh": "比如", "vi": "ví dụ" }
+  ],
+  "这": [
+    { "zh": "这里", "vi": "ở đây" },
+    { "zh": "这些", "vi": "những ... này" },
+    { "zh": "这样", "vi": "như thế này" }
+  ],
+  "那": [
+    { "zh": "那里", "vi": "ở đó" },
+    { "zh": "那些", "vi": "những ... đó" },
+    { "zh": "那么", "vi": "như vậy; vậy thì" }
+  ],
+  "哪": [
+    { "zh": "哪里", "vi": "ở đâu" },
+    { "zh": "哪些", "vi": "những cái nào" },
+    { "zh": "哪怕", "vi": "cho dù" }
+  ],
+  "里": [
+    { "zh": "里边", "vi": "bên trong" },
+    { "zh": "家里", "vi": "trong nhà" },
+    { "zh": "公里", "vi": "ki-lô-mét" }
+  ],
+  "外": [
+    { "zh": "外边", "vi": "bên ngoài" },
+    { "zh": "外国", "vi": "nước ngoài" },
+    { "zh": "外语", "vi": "ngoại ngữ" }
+  ],
+  "中": [
+    { "zh": "中间", "vi": "ở giữa" },
+    { "zh": "中国", "vi": "Trung Quốc" },
+    { "zh": "中心", "vi": "trung tâm" }
+  ],
+  "间": [
+    { "zh": "房间", "vi": "phòng" },
+    { "zh": "中间", "vi": "ở giữa" },
+    { "zh": "时间", "vi": "thời gian" }
+  ],
+  "地": { "none": "trợ từ kết cấu (đọc de); từ ghép thông dụng như 地方, 地图 đều đọc dì" },
+  "天": [
+    { "zh": "今天", "vi": "hôm nay" },
+    { "zh": "白天", "vi": "ban ngày" },
+    { "zh": "天气", "vi": "thời tiết" }
+  ],
+  "前": [
+    { "zh": "前边", "vi": "phía trước" },
+    { "zh": "以前", "vi": "trước đây" },
+    { "zh": "前天", "vi": "hôm kia" }
+  ],
+  "后": [
+    { "zh": "后边", "vi": "phía sau" },
+    { "zh": "以后", "vi": "sau này" },
+    { "zh": "最后", "vi": "cuối cùng" }
+  ],
+  "年": [
+    { "zh": "今年", "vi": "năm nay" },
+    { "zh": "新年", "vi": "năm mới" },
+    { "zh": "青年", "vi": "thanh niên" }
+  ],
+  "月": [
+    { "zh": "月亮", "vi": "mặt trăng" },
+    { "zh": "一月", "vi": "tháng Một" },
+    { "zh": "上月", "vi": "tháng trước" }
+  ],
+  "日": [
+    { "zh": "生日", "vi": "sinh nhật" },
+    { "zh": "日期", "vi": "ngày tháng" },
+    { "zh": "日本", "vi": "Nhật Bản" }
+  ],
+  "号": [
+    { "zh": "号码", "vi": "con số; số", "hanViet": "Hiệu Mã" },
+    { "zh": "信号", "vi": "tín hiệu" },
+    { "zh": "一号", "vi": "ngày mùng một" }
+  ],
+  "新": [
+    { "zh": "新年", "vi": "năm mới" },
+    { "zh": "新闻", "vi": "tin tức" },
+    { "zh": "重新", "vi": "lại từ đầu" }
+  ],
+  "去": [
+    { "zh": "去年", "vi": "năm ngoái" },
+    { "zh": "出去", "vi": "đi ra ngoài" },
+    { "zh": "过去", "vi": "quá khứ" }
+  ],
+  "次": [
+    { "zh": "下次", "vi": "lần sau" },
+    { "zh": "上次", "vi": "lần trước" },
+    { "zh": "再次", "vi": "một lần nữa" }
+  ],
+  "第": [
+    { "zh": "第一", "vi": "thứ nhất; đầu tiên" },
+    { "zh": "第二", "vi": "thứ hai" }
+  ],
+  "早": [
+    { "zh": "早上", "vi": "buổi sáng" },
+    { "zh": "早饭", "vi": "bữa sáng" },
+    { "zh": "尽早", "vi": "càng sớm càng tốt" }
+  ],
+  "晚": [
+    { "zh": "晚上", "vi": "buổi tối" },
+    { "zh": "晚安", "vi": "chúc ngủ ngon" },
+    { "zh": "早晚", "vi": "sớm muộn" }
+  ],
+  "上": [
+    { "zh": "楼上", "vi": "tầng trên" },
+    { "zh": "上午", "vi": "buổi sáng" },
+    { "zh": "马上", "vi": "ngay lập tức" }
+  ],
+  "下": [
+    { "zh": "楼下", "vi": "tầng dưới" },
+    { "zh": "下午", "vi": "buổi chiều" },
+    { "zh": "下车", "vi": "xuống xe" }
+  ],
+  "白": [
+    { "zh": "白色", "vi": "màu trắng" },
+    { "zh": "明白", "vi": "hiểu; rõ ràng" },
+    { "zh": "白天", "vi": "ban ngày" }
+  ],
+  "点": [
+    { "zh": "地点", "vi": "địa điểm" },
+    { "zh": "观点", "vi": "quan điểm" },
+    { "zh": "一点儿", "vi": "một chút" }
+  ],
+  "分": [
+    { "zh": "分钟", "vi": "phút" },
+    { "zh": "分开", "vi": "tách ra" },
+    { "zh": "部分", "vi": "phần; bộ phận" }
+  ],
+  "会": [
+    { "zh": "不会", "vi": "không biết; sẽ không" },
+    { "zh": "开会", "vi": "họp" },
+    { "zh": "机会", "vi": "cơ hội" }
+  ],
+  "就": [
+    { "zh": "就是", "vi": "chính là" },
+    { "zh": "早就", "vi": "đã từ lâu" },
+    { "zh": "成就", "vi": "thành tựu" }
+  ],
+  "正": [
+    { "zh": "正好", "vi": "vừa đúng lúc" },
+    { "zh": "正确", "vi": "chính xác" },
+    { "zh": "正在", "vi": "đang" }
+  ],
+  "块": [
+    { "zh": "冰块", "vi": "đá viên", "hanViet": "Băng Khối" },
+    { "zh": "一块儿", "vi": "cùng nhau" }
+  ],
+  "差": [
+    { "zh": "差不多", "vi": "gần như; xấp xỉ" },
+    { "zh": "差点", "vi": "suýt nữa" }
+  ],
+  "吃": [
+    { "zh": "吃饭", "vi": "ăn cơm" },
+    { "zh": "好吃", "vi": "ngon" },
+    { "zh": "小吃", "vi": "món ăn vặt" }
+  ]
+}
