@@ -206,10 +206,10 @@
     "trợ từ thể hiện hành động đang diễn ra hoặc trạng thái đang tiếp diễn"
   ],
   "想": [
+    "mong muốn; muốn",
     "nghĩ (về)",
     "nghĩ đến; nghĩ ra",
     "nghĩ (rằng); tin (rằng)",
-    "mong muốn; muốn",
     "nhớ (cảm giác tiếc nuối về sự vắng mặt)"
   ],
   "给": [
@@ -296,6 +296,7 @@
     "lượng từ cho mục"
   ],
   "过": [
+    "đã từng (trợ từ chỉ kinh nghiệm)",
     "băng qua",
     "đi qua",
     "trải qua (thời gian)",
@@ -408,8 +409,8 @@
     "thượng đế"
   ],
   "出": [
-    "đi ra; đi ra ngoài",
     "phát sinh; xảy ra",
+    "đi ra; đi ra ngoài",
     "sản xuất; tạo ra",
     "vượt quá",
     "(dùng sau động từ để chỉ hướng ra ngoài hoặc kết quả tích cực)",
@@ -571,8 +572,8 @@
     "meso- (hoá học)"
   ],
   "找": [
-    "cố gắng tìm",
     "tìm",
+    "cố gắng tìm",
     "đến gặp ai đó",
     "tìm thấy",
     "tìm kiếm",
@@ -630,14 +631,14 @@
     "thời điểm hiện tại; bây giờ"
   ],
   "话": [
+    "lời nói",
+    "lời ai đó nói",
     "phương ngữ",
     "ngôn ngữ",
-    "lời nói",
     "ngôn từ",
     "nói chuyện",
     "từ ngữ",
-    "cuộc trò chuyện",
-    "lời ai đó nói"
+    "cuộc trò chuyện"
   ],
   "还是": [
     "vẫn (như trước)",
@@ -735,9 +736,9 @@
     "khác thường; phi thường"
   ],
   "开": [
+    "chạy; vận hành; bật",
     "mở (ngoại động từ hoặc nội động từ)",
     "(tàu thuyền, xe cộ, quân đội, v.v.) bắt đầu",
-    "bật; vận hành; hoạt động; chạy",
     "đun sôi",
     "viết (đơn thuốc, séc, hóa đơn, v.v.)",
     "(bổ ngữ xu hướng) đi; rời",
@@ -776,11 +777,12 @@
     "yêu cầu"
   ],
   "钱": [
-    "tiền xu",
     "tiền",
+    "tiền xu",
     "đơn vị trọng lượng, một phần mười của một lạng 兩|两[liang3]"
   ],
   "本": [
+    "lượng từ cho sách, tạp chí, hồ sơ, v.v.",
     "(hình thức kết hợp) gốc; rễ",
     "(hình thức kết hợp) nguồn gốc; nguyên nhân",
     "(hình thức kết hợp) của mình; này",
@@ -788,11 +790,11 @@
     "(hình thức kết hợp) ban đầu",
     "(hình thức kết hợp) vốn có",
     "nguyên gốc; ban đầu",
-    "vốn; chính",
-    "lượng từ cho sách, tạp chí, hồ sơ, v.v."
+    "vốn; chính"
   ],
   "回": [
     "quay lại; trở về",
+    "trả lời (tin nhắn, thư)",
     "lần (lượng từ chỉ số lần)"
   ],
   "东西": [
@@ -859,6 +861,8 @@
     "lượng từ chỉ tuổi"
   ],
   "行": [
+    "được",
+    "ổn",
     "đi",
     "đến",
     "du lịch",
@@ -871,9 +875,7 @@
     "thực hiện",
     "có khả năng",
     "có hiệu quả",
-    "ổn",
     "OK!",
-    "được",
     "hành vi",
     "cử chỉ",
     "người Đài Loan phát âm [xing4] cho nghĩa hành vi-cử chỉ"
@@ -913,11 +915,11 @@
     "(hậu tố chỉ sự chắc chắn, ổn định, hoặc dừng lại)"
   ],
   "拿": [
+    "lấy",
     "cầm",
     "nắm",
     "bắt",
     "chụp",
-    "lấy",
     "(dùng giống như 把[ba3]: đánh dấu danh từ phía sau là tân ngữ)"
   ],
   "高": [
@@ -999,8 +1001,8 @@
     "con gái"
   ],
   "送": [
-    "gửi; giao; truyền",
     "tặng (như một món quà)",
+    "gửi; giao; truyền",
     "tiễn",
     "đi cùng; đi theo"
   ],
@@ -1055,8 +1057,8 @@
     "người khác; những người khác"
   ],
   "站": [
-    "trạm",
     "đứng",
+    "trạm",
     "dừng",
     "tạm dừng",
     "chi nhánh của một công ty hoặc tổ chức",
@@ -1080,8 +1082,8 @@
     "đang trong quá trình (làm gì đó)"
   ],
   "门": [
-    "cổng",
     "cửa",
+    "cổng",
     "lối vào",
     "khung cửa",
     "kẽ hở",
@@ -1145,15 +1147,14 @@
     "ở giữa"
   ],
   "干": [
+    "làm",
     "thân cây",
     "phần chính của cái gì",
     "quản lý",
-    "làm",
     "thực hiện",
     "có năng lực",
     "cán bộ",
     "giết (lóng)",
-    "địt (tục)",
     "(thông tục) bực bội",
     "khó chịu"
   ],
@@ -1235,8 +1236,8 @@
     "má"
   ],
   "错": [
-    "lỗi",
     "sai",
+    "lỗi",
     "xấu",
     "đan xen",
     "phức tạp",
@@ -1364,8 +1365,8 @@
     "thấp hơn nhiều, v.v."
   ],
   "口": [
-    "miệng",
     "lượng từ cho những thứ có miệng (người, động vật nuôi, đại bác, giếng, v.v.)",
+    "miệng",
     "lượng từ cho vết cắn hoặc ngụm"
   ],
   "学生": [
@@ -1388,8 +1389,8 @@
     "nhận ra"
   ],
   "杯": [
-    "cái cốc; ly",
-    "lượng từ cho đồ uống: cốc, ly"
+    "lượng từ cho đồ uống: cốc, ly",
+    "cái cốc; ly"
   ],
   "记得": [
     "nhớ"
@@ -1425,6 +1426,7 @@
     "ở đâu?"
   ],
   "包": [
+    "túi",
     "che phủ",
     "gói",
     "cầm",
@@ -1433,13 +1435,12 @@
     "hợp đồng (làm hoặc cho)",
     "bọc",
     "đựng",
-    "túi",
     "ôm hoặc ôm chặt",
     "bó"
   ],
   "楼": [
-    "nhà có hơn 1 tầng",
     "toà nhà nhiều tầng",
+    "nhà có hơn 1 tầng",
     "tầng"
   ],
   "那里": [
@@ -1586,9 +1587,9 @@
     "năm ngoái"
   ],
   "热": [
+    "nóng",
     "hâm nóng",
     "làm nóng",
-    "nóng (thời tiết)",
     "nhiệt",
     "nhiệt tình"
   ],
@@ -1670,8 +1671,8 @@
     "để tâm"
   ],
   "电": [
-    "sét",
     "điện",
+    "sét",
     "dạng kết hợp của điện",
     "bị (hoặc gây) điện giật",
     "cuộc gọi điện thoại hoặc điện báo, v.v.",
@@ -1709,10 +1710,10 @@
     "trả lời; đáp án"
   ],
   "记": [
+    "nhớ",
+    "ghi nhớ",
     "ghi chép",
     "ghi lại",
-    "ghi nhớ",
-    "nhớ",
     "dấu hiệu",
     "ký hiệu",
     "lượng từ cho đòn đánh, cú đá, phát bắn"
@@ -1783,10 +1784,10 @@
     "lượng từ cho nhóm người và các phương tiện giao thông theo lịch trình"
   ],
   "坏": [
-    "xấu",
-    "bị hỏng",
-    "hư",
     "hỏng",
+    "bị hỏng",
+    "xấu",
+    "hư",
     "(hậu tố) cực kỳ"
   ],
   "一边": [
@@ -1807,6 +1808,7 @@
     "một số (tồn tại)"
   ],
   "毛": [
+    "hào (đơn vị tiền, = 1/10 đồng nhân dân tệ)",
     "tóc",
     "lông",
     "vụn lông",
@@ -1820,8 +1822,7 @@
     "không suy nghĩ",
     "thần kinh",
     "căng thẳng",
-    "(về tiền tệ) mất giá hoặc giảm giá",
-    "loại từ cho đơn vị tiền tệ của Trung Quốc ( = 角[jiao3], = một phần mười của một đồng yuan hoặc 10 fen 分[fen1])"
+    "(về tiền tệ) mất giá hoặc giảm giá"
   ],
   "忘记": [
     "quên"
@@ -1857,8 +1858,8 @@
     "7"
   ],
   "菜": [
-    "rau",
     "món ăn",
+    "rau",
     "(kỹ năng, v.v.) yếu; kém",
     "(thông tục) mẫu người (mình thích)"
   ],
@@ -1875,7 +1876,7 @@
     "triển khai"
   ],
   "右": [
-    "(hình thức kết hợp) bên phải; phía tay phải",
+    "bên phải; phía tay phải",
     "(hình thức kết hợp) (chính trị) hữu khuynh",
     "(hình thức kết hợp) (cũ) phía tây",
     "(văn học) bên phải là bên ưu tiên"

@@ -498,5 +498,516 @@
     { "zh": "吃饭", "vi": "ăn cơm" },
     { "zh": "好吃", "vi": "ngon" },
     { "zh": "小吃", "vi": "món ăn vặt" }
+  ],
+  "喝": [
+    { "zh": "喝酒", "vi": "uống rượu" },
+    { "zh": "好喝", "vi": "ngon (đồ uống)" },
+    { "zh": "吃喝", "vi": "ăn uống" }
+  ],
+  "水": [
+    { "zh": "水果", "vi": "trái cây" },
+    { "zh": "冷水", "vi": "nước lạnh" },
+    { "zh": "水手", "vi": "thủy thủ" }
+  ],
+  "茶": [
+    { "zh": "奶茶", "vi": "trà sữa" },
+    { "zh": "绿茶", "vi": "trà xanh" },
+    { "zh": "红茶", "vi": "trà đen; hồng trà" }
+  ],
+  "饭": [
+    { "zh": "吃饭", "vi": "ăn cơm" },
+    { "zh": "米饭", "vi": "cơm (gạo)" },
+    { "zh": "早饭", "vi": "bữa sáng" }
+  ],
+  "菜": [
+    { "zh": "菜单", "vi": "thực đơn" },
+    { "zh": "白菜", "vi": "cải thảo" },
+    { "zh": "做菜", "vi": "nấu ăn" }
+  ],
+  "肉": [
+    { "zh": "牛肉", "vi": "thịt bò" },
+    { "zh": "猪肉", "vi": "thịt lợn" },
+    { "zh": "鸡肉", "vi": "thịt gà" }
+  ],
+  "饿": [
+    { "zh": "饥饿", "vi": "đói; nạn đói", "hanViet": "Cơ Ngạ" },
+    { "zh": "挨饿", "vi": "chịu đói", "hanViet": "Ai Ngạ" }
+  ],
+  "渴": [
+    { "zh": "口渴", "vi": "khát nước" },
+    { "zh": "渴望", "vi": "khao khát" }
+  ],
+  "杯": [
+    { "zh": "杯子", "vi": "cái cốc" },
+    { "zh": "干杯", "vi": "cạn ly" },
+    { "zh": "世界杯", "vi": "cúp bóng đá thế giới" }
+  ],
+  "了": [
+    { "zh": "极了", "vi": "cực kỳ; ... lắm" },
+    { "zh": "除了", "vi": "ngoài ... ra" },
+    { "zh": "为了", "vi": "để; vì" }
+  ],
+  "包": [
+    { "zh": "书包", "vi": "cặp sách" },
+    { "zh": "钱包", "vi": "ví tiền" },
+    { "zh": "面包", "vi": "bánh mì" }
+  ],
+  "看": [
+    { "zh": "看见", "vi": "nhìn thấy" },
+    { "zh": "好看", "vi": "đẹp; ưa nhìn" },
+    { "zh": "看病", "vi": "khám bệnh" }
+  ],
+  "说": [
+    { "zh": "说话", "vi": "nói chuyện" },
+    { "zh": "小说", "vi": "tiểu thuyết" },
+    { "zh": "听说", "vi": "nghe nói" }
+  ],
+  "做": [
+    { "zh": "做饭", "vi": "nấu cơm" },
+    { "zh": "做客", "vi": "làm khách" },
+    { "zh": "做法", "vi": "cách làm" }
+  ],
+  "想": [
+    { "zh": "想法", "vi": "cách nghĩ; ý kiến" },
+    { "zh": "理想", "vi": "lý tưởng" },
+    { "zh": "梦想", "vi": "ước mơ", "hanViet": "Mộng Tưởng" }
+  ],
+  "要": [
+    { "zh": "需要", "vi": "cần" },
+    { "zh": "重要", "vi": "quan trọng" },
+    { "zh": "主要", "vi": "chủ yếu" }
+  ],
+  "能": [
+    { "zh": "可能", "vi": "có thể; khả năng" },
+    { "zh": "能力", "vi": "năng lực" },
+    { "zh": "才能", "vi": "tài năng" }
+  ],
+  "给": [
+    { "zh": "送给", "vi": "tặng cho" },
+    { "zh": "交给", "vi": "giao cho" }
+  ],
+  "用": [
+    { "zh": "使用", "vi": "sử dụng" },
+    { "zh": "有用", "vi": "có ích" },
+    { "zh": "作用", "vi": "tác dụng" }
+  ],
+  "拿": [
+    { "zh": "拿出", "vi": "lấy ra" },
+    { "zh": "拿到", "vi": "lấy được" },
+    { "zh": "拿走", "vi": "cầm đi; lấy đi" }
+  ],
+  "找": [
+    { "zh": "找到", "vi": "tìm thấy" },
+    { "zh": "找出", "vi": "tìm ra" },
+    { "zh": "寻找", "vi": "tìm kiếm", "hanViet": "Tầm Trảo" }
+  ],
+  "等": [
+    { "zh": "等待", "vi": "chờ đợi" },
+    { "zh": "平等", "vi": "bình đẳng" },
+    { "zh": "等于", "vi": "bằng" }
+  ],
+  "打": [
+    { "zh": "打电话", "vi": "gọi điện thoại" },
+    { "zh": "打球", "vi": "chơi bóng" },
+    { "zh": "打开", "vi": "mở ra" }
+  ],
+  "开": [
+    { "zh": "打开", "vi": "mở ra" },
+    { "zh": "开车", "vi": "lái xe" },
+    { "zh": "开始", "vi": "bắt đầu" }
+  ],
+  "放": [
+    { "zh": "放下", "vi": "đặt xuống" },
+    { "zh": "放心", "vi": "yên tâm" },
+    { "zh": "放假", "vi": "được nghỉ" }
+  ],
+  "送": [
+    { "zh": "送给", "vi": "tặng cho" },
+    { "zh": "送到", "vi": "đưa đến; giao đến" },
+    { "zh": "发送", "vi": "gửi đi" }
+  ],
+  "帮": [
+    { "zh": "帮忙", "vi": "giúp đỡ" },
+    { "zh": "帮助", "vi": "giúp đỡ; hỗ trợ" }
+  ],
+  "住": [
+    { "zh": "居住", "vi": "cư trú; sinh sống", "hanViet": "Cư Trú" },
+    { "zh": "住院", "vi": "nằm viện" },
+    { "zh": "站住", "vi": "đứng lại" }
+  ],
+  "穿": [
+    { "zh": "穿衣", "vi": "mặc quần áo" },
+    { "zh": "穿过", "vi": "đi xuyên qua" }
+  ],
+  "洗": [
+    { "zh": "洗手间", "vi": "nhà vệ sinh" },
+    { "zh": "洗澡", "vi": "tắm" },
+    { "zh": "洗衣机", "vi": "máy giặt" }
+  ],
+  "站": [
+    { "zh": "站住", "vi": "đứng lại" },
+    { "zh": "车站", "vi": "bến xe; ga" },
+    { "zh": "网站", "vi": "trang web" }
+  ],
+  "走": [
+    { "zh": "走路", "vi": "đi bộ" },
+    { "zh": "走进", "vi": "đi vào" },
+    { "zh": "走开", "vi": "tránh ra; đi chỗ khác" }
+  ],
+  "着": [
+    { "zh": "接着", "vi": "tiếp theo; tiếp đó" },
+    { "zh": "跟着", "vi": "đi theo; theo sau" }
+  ],
+  "睡": [
+    { "zh": "睡觉", "vi": "đi ngủ" },
+    { "zh": "午睡", "vi": "ngủ trưa" },
+    { "zh": "睡衣", "vi": "đồ ngủ" }
+  ],
+  "来": [
+    { "zh": "将来", "vi": "tương lai" },
+    { "zh": "后来", "vi": "sau đó" },
+    { "zh": "来自", "vi": "đến từ" }
+  ],
+  "床": [
+    { "zh": "起床", "vi": "thức dậy" },
+    { "zh": "病床", "vi": "giường bệnh" }
+  ],
+  "动": [
+    { "zh": "动物", "vi": "động vật" },
+    { "zh": "运动", "vi": "thể thao; vận động" },
+    { "zh": "感动", "vi": "cảm động" }
+  ],
+  "手": [
+    { "zh": "手机", "vi": "điện thoại di động" },
+    { "zh": "手表", "vi": "đồng hồ đeo tay" },
+    { "zh": "对手", "vi": "đối thủ" }
+  ],
+  "跑": [
+    { "zh": "跑步", "vi": "chạy bộ" },
+    { "zh": "长跑", "vi": "chạy đường dài" }
+  ],
+  "口": [
+    { "zh": "门口", "vi": "cửa ra vào" },
+    { "zh": "人口", "vi": "dân số" },
+    { "zh": "出口", "vi": "lối ra; xuất khẩu" }
+  ],
+  "病": [
+    { "zh": "生病", "vi": "bị ốm" },
+    { "zh": "病人", "vi": "bệnh nhân" },
+    { "zh": "看病", "vi": "khám bệnh" }
+  ],
+  "冷": [
+    { "zh": "冷水", "vi": "nước lạnh" },
+    { "zh": "寒冷", "vi": "giá rét", "hanViet": "Hàn Lãnh" },
+    { "zh": "冷静", "vi": "bình tĩnh" }
+  ],
+  "热": [
+    { "zh": "热水", "vi": "nước nóng" },
+    { "zh": "热情", "vi": "nhiệt tình" },
+    { "zh": "热爱", "vi": "yêu tha thiết" }
+  ],
+  "门": [
+    { "zh": "门口", "vi": "cửa ra vào" },
+    { "zh": "大门", "vi": "cổng chính" },
+    { "zh": "出门", "vi": "ra ngoài" }
+  ],
+  "楼": [
+    { "zh": "楼上", "vi": "tầng trên" },
+    { "zh": "楼下", "vi": "tầng dưới" },
+    { "zh": "大楼", "vi": "tòa nhà lớn" }
+  ],
+  "干": [
+    { "zh": "干什么", "vi": "làm gì" },
+    { "zh": "干活儿", "vi": "làm việc (chân tay)" },
+    { "zh": "干部", "vi": "cán bộ" }
+  ],
+  "左": [
+    { "zh": "左边", "vi": "bên trái" },
+    { "zh": "左手", "vi": "tay trái" },
+    { "zh": "左右", "vi": "khoảng; trái phải" }
+  ],
+  "右": [
+    { "zh": "右边", "vi": "bên phải" },
+    { "zh": "右手", "vi": "tay phải" },
+    { "zh": "左右", "vi": "khoảng; trái phải" }
+  ],
+  "东": [
+    { "zh": "东方", "vi": "phương Đông" },
+    { "zh": "东西", "vi": "đồ vật" },
+    { "zh": "东南亚", "vi": "Đông Nam Á", "hanViet": "Đông Nam Á" }
+  ],
+  "西": [
+    { "zh": "西方", "vi": "phương Tây" },
+    { "zh": "西医", "vi": "Tây y" },
+    { "zh": "西瓜", "vi": "dưa hấu", "hanViet": "Tây Qua" }
+  ],
+  "南": [
+    { "zh": "越南", "vi": "Việt Nam" },
+    { "zh": "南方", "vi": "phương Nam; miền nam" },
+    { "zh": "西南", "vi": "tây nam" }
+  ],
+  "北": [
+    { "zh": "北京", "vi": "Bắc Kinh" },
+    { "zh": "北方", "vi": "phương Bắc; miền bắc" },
+    { "zh": "东北", "vi": "đông bắc" }
+  ],
+  "路": [
+    { "zh": "马路", "vi": "đường phố" },
+    { "zh": "走路", "vi": "đi bộ" },
+    { "zh": "铁路", "vi": "đường sắt" }
+  ],
+  "远": [
+    { "zh": "永远", "vi": "mãi mãi" },
+    { "zh": "远方", "vi": "phương xa" },
+    { "zh": "跳远", "vi": "nhảy xa" }
+  ],
+  "到": [
+    { "zh": "来到", "vi": "đến; tới" },
+    { "zh": "到达", "vi": "đến nơi" },
+    { "zh": "找到", "vi": "tìm thấy" }
+  ],
+  "从": [
+    { "zh": "从小", "vi": "từ nhỏ" },
+    { "zh": "从前", "vi": "trước đây" },
+    { "zh": "从来", "vi": "từ trước đến nay" }
+  ],
+  "花": [
+    { "zh": "花园", "vi": "vườn hoa" },
+    { "zh": "鲜花", "vi": "hoa tươi", "hanViet": "Tiên Hoa" },
+    { "zh": "花钱", "vi": "tiêu tiền" }
+  ],
+  "车": [
+    { "zh": "汽车", "vi": "ô tô" },
+    { "zh": "火车", "vi": "tàu hỏa" },
+    { "zh": "自行车", "vi": "xe đạp" }
+  ],
+  "飞": [
+    { "zh": "飞机", "vi": "máy bay" },
+    { "zh": "起飞", "vi": "cất cánh" },
+    { "zh": "飞行", "vi": "bay; phi hành" }
+  ],
+  "票": [
+    { "zh": "机票", "vi": "vé máy bay" },
+    { "zh": "门票", "vi": "vé vào cửa" },
+    { "zh": "股票", "vi": "cổ phiếu", "hanViet": "Cổ Phiếu" }
+  ],
+  "国": [
+    { "zh": "中国", "vi": "Trung Quốc" },
+    { "zh": "国家", "vi": "quốc gia" },
+    { "zh": "外国", "vi": "nước ngoài" }
+  ],
+  "回": [
+    { "zh": "回家", "vi": "về nhà" },
+    { "zh": "回国", "vi": "về nước" },
+    { "zh": "回答", "vi": "trả lời" }
+  ],
+  "过": [
+    { "zh": "过去", "vi": "quá khứ; trước đây" },
+    { "zh": "经过", "vi": "đi qua; trải qua" },
+    { "zh": "通过", "vi": "thông qua; vượt qua" }
+  ],
+  "出": [
+    { "zh": "出现", "vi": "xuất hiện" },
+    { "zh": "出口", "vi": "lối ra; xuất khẩu" },
+    { "zh": "出发", "vi": "xuất phát" }
+  ],
+  "学": [
+    { "zh": "学生", "vi": "học sinh" },
+    { "zh": "学校", "vi": "trường học" },
+    { "zh": "大学", "vi": "đại học" }
+  ],
+  "课": [
+    { "zh": "上课", "vi": "vào học; lên lớp" },
+    { "zh": "课本", "vi": "sách giáo khoa" },
+    { "zh": "课程", "vi": "khóa học; chương trình học" }
+  ],
+  "读": [
+    { "zh": "读书", "vi": "đọc sách; đi học" },
+    { "zh": "读者", "vi": "độc giả" },
+    { "zh": "读音", "vi": "cách đọc" }
+  ],
+  "写": [
+    { "zh": "听写", "vi": "viết chính tả" },
+    { "zh": "写作", "vi": "viết văn" },
+    { "zh": "描写", "vi": "miêu tả", "hanViet": "Miêu Tả" }
+  ],
+  "书": [
+    { "zh": "书店", "vi": "hiệu sách" },
+    { "zh": "书包", "vi": "cặp sách" },
+    { "zh": "图书馆", "vi": "thư viện" }
+  ],
+  "本": [
+    { "zh": "本子", "vi": "quyển vở" },
+    { "zh": "课本", "vi": "sách giáo khoa" },
+    { "zh": "基本", "vi": "cơ bản" }
+  ],
+  "教": [
+    { "zh": "教书", "vi": "dạy học" },
+    { "zh": "教课", "vi": "giảng bài; dạy học" }
+  ],
+  "考": [
+    { "zh": "考试", "vi": "kỳ thi; thi" },
+    { "zh": "考生", "vi": "thí sinh" },
+    { "zh": "考验", "vi": "thử thách" }
+  ],
+  "试": [
+    { "zh": "考试", "vi": "kỳ thi; thi" },
+    { "zh": "试验", "vi": "thí nghiệm" },
+    { "zh": "尝试", "vi": "thử; cố thử", "hanViet": "Thường Thí" }
+  ],
+  "班": [
+    { "zh": "班长", "vi": "lớp trưởng" },
+    { "zh": "上班", "vi": "đi làm" },
+    { "zh": "下班", "vi": "tan làm" }
+  ],
+  "页": [
+    { "zh": "网页", "vi": "trang web" },
+    { "zh": "首页", "vi": "trang chủ" },
+    { "zh": "页码", "vi": "số trang", "hanViet": "Hiệt Mã" }
+  ],
+  "听": [
+    { "zh": "听说", "vi": "nghe nói" },
+    { "zh": "好听", "vi": "hay (dễ nghe)" },
+    { "zh": "听力", "vi": "khả năng nghe" }
+  ],
+  "记": [
+    { "zh": "记得", "vi": "nhớ" },
+    { "zh": "忘记", "vi": "quên" },
+    { "zh": "记者", "vi": "nhà báo; ký giả" }
+  ],
+  "忘": [
+    { "zh": "忘记", "vi": "quên" },
+    { "zh": "难忘", "vi": "khó quên" }
+  ],
+  "事": [
+    { "zh": "事情", "vi": "sự việc; chuyện" },
+    { "zh": "同事", "vi": "đồng nghiệp" },
+    { "zh": "事故", "vi": "tai nạn; sự cố" }
+  ],
+  "忙": [
+    { "zh": "帮忙", "vi": "giúp đỡ" },
+    { "zh": "急忙", "vi": "vội vàng" }
+  ],
+  "累": [
+    { "zh": "劳累", "vi": "mệt nhọc", "hanViet": "Lao Lụy" },
+    { "zh": "累坏", "vi": "mệt lả" }
+  ],
+  "错": [
+    { "zh": "不错", "vi": "khá tốt; không tệ" },
+    { "zh": "错误", "vi": "sai lầm" },
+    { "zh": "没错", "vi": "đúng vậy" }
+  ],
+  "话": [
+    { "zh": "电话", "vi": "điện thoại" },
+    { "zh": "说话", "vi": "nói chuyện" },
+    { "zh": "对话", "vi": "đối thoại" }
+  ],
+  "行": [
+    { "zh": "不行", "vi": "không được" },
+    { "zh": "旅行", "vi": "du lịch" },
+    { "zh": "自行车", "vi": "xe đạp" }
+  ],
+  "吧": { "none": "trợ từ ngữ khí; không có từ ghép đọc ba thông dụng (酒吧 đọc bā)" },
+  "电": [
+    { "zh": "电话", "vi": "điện thoại" },
+    { "zh": "电影", "vi": "phim" },
+    { "zh": "电脑", "vi": "máy tính" }
+  ],
+  "买": [
+    { "zh": "买卖", "vi": "mua bán" },
+    { "zh": "购买", "vi": "mua sắm", "hanViet": "Cấu Mãi" }
+  ],
+  "钱": [
+    { "zh": "钱包", "vi": "ví tiền" },
+    { "zh": "花钱", "vi": "tiêu tiền" },
+    { "zh": "金钱", "vi": "tiền bạc" }
+  ],
+  "贵": [
+    { "zh": "昂贵", "vi": "đắt đỏ", "hanViet": "Ngang Quý" },
+    { "zh": "宝贵", "vi": "quý báu", "hanViet": "Bảo Quý" },
+    { "zh": "贵姓", "vi": "quý danh (họ)" }
+  ],
+  "元": [
+    { "zh": "美元", "vi": "đô la Mỹ" },
+    { "zh": "元旦", "vi": "Tết Dương lịch", "hanViet": "Nguyên Đán" }
+  ],
+  "毛": [
+    { "zh": "毛病", "vi": "tật; lỗi" },
+    { "zh": "毛巾", "vi": "khăn mặt", "hanViet": "Mao Cân" },
+    { "zh": "毛衣", "vi": "áo len" }
+  ],
+  "高": [
+    { "zh": "高兴", "vi": "vui" },
+    { "zh": "提高", "vi": "nâng cao" },
+    { "zh": "高级", "vi": "cao cấp" }
+  ],
+  "快": [
+    { "zh": "快餐", "vi": "đồ ăn nhanh" },
+    { "zh": "快乐", "vi": "vui vẻ" },
+    { "zh": "赶快", "vi": "nhanh lên" }
+  ],
+  "慢": [
+    { "zh": "慢慢", "vi": "từ từ" },
+    { "zh": "慢性", "vi": "mạn tính" },
+    { "zh": "傲慢", "vi": "ngạo mạn", "hanViet": "Ngạo Mạn" }
+  ],
+  "难": [
+    { "zh": "难题", "vi": "vấn đề khó" },
+    { "zh": "难看", "vi": "xấu; khó coi" },
+    { "zh": "难过", "vi": "buồn" }
+  ],
+  "重": [
+    { "zh": "体重", "vi": "cân nặng" },
+    { "zh": "重要", "vi": "quan trọng" },
+    { "zh": "重视", "vi": "coi trọng" }
+  ],
+  "坏": [
+    { "zh": "坏人", "vi": "người xấu" },
+    { "zh": "破坏", "vi": "phá hoại" },
+    { "zh": "坏处", "vi": "tác hại" }
+  ],
+  "爱": [
+    { "zh": "爱好", "vi": "sở thích" },
+    { "zh": "可爱", "vi": "đáng yêu" },
+    { "zh": "爱情", "vi": "tình yêu" }
+  ],
+  "笑": [
+    { "zh": "笑话", "vi": "chuyện cười" },
+    { "zh": "开玩笑", "vi": "nói đùa" },
+    { "zh": "微笑", "vi": "mỉm cười", "hanViet": "Vi Tiếu" }
+  ],
+  "球": [
+    { "zh": "足球", "vi": "bóng đá" },
+    { "zh": "地球", "vi": "Trái Đất" },
+    { "zh": "全球", "vi": "toàn cầu" }
+  ],
+  "歌": [
+    { "zh": "唱歌", "vi": "hát" },
+    { "zh": "歌手", "vi": "ca sĩ" },
+    { "zh": "国歌", "vi": "quốc ca" }
+  ],
+  "唱": [
+    { "zh": "唱歌", "vi": "hát" },
+    { "zh": "合唱", "vi": "hợp xướng" },
+    { "zh": "演唱会", "vi": "buổi hòa nhạc" }
+  ],
+  "雨": [
+    { "zh": "下雨", "vi": "trời mưa" },
+    { "zh": "大雨", "vi": "mưa to" },
+    { "zh": "雨伞", "vi": "ô; dù", "hanViet": "Vũ Tản" }
+  ],
+  "风": [
+    { "zh": "台风", "vi": "bão" },
+    { "zh": "风景", "vi": "phong cảnh" },
+    { "zh": "风险", "vi": "rủi ro" }
+  ],
+  "山": [
+    { "zh": "爬山", "vi": "leo núi" },
+    { "zh": "火山", "vi": "núi lửa" },
+    { "zh": "江山", "vi": "giang sơn; đất nước", "hanViet": "Giang Sơn" }
+  ],
+  "树": [
+    { "zh": "树木", "vi": "cây cối" },
+    { "zh": "树叶", "vi": "lá cây", "hanViet": "Thụ Diệp" }
   ]
 }
