@@ -12,6 +12,8 @@ export interface RunInputs {
   dictionaryText: string;
   graphicsText: string;
   authored: Authored;
+  /** CVDICT.u8 text; association words outside the course are checked against it. */
+  cvdictText?: string;
 }
 
 export type RunResult = { ok: true; bundle: ContentBundle } | { ok: false; problems: string[] };

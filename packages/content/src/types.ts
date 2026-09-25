@@ -21,7 +21,37 @@ export interface Word {
   frequency: number;
   characters: string[];
   unitId: string;
+  /** Single-character words only: 2–3 compounds that show the character in use (not taught). */
+  associations?: Association[];
+  /** Multi-character words only: each character with its Hán Việt and core gloss. */
+  parts?: WordPart[];
 }
+
+export interface Association {
+  zh: string;
+  pinyin: string;
+  hanViet: string;
+  vi: string;
+  wordId?: string;
+}
+
+export interface WordPart {
+  char: string;
+  hanViet: string;
+  gloss: string;
+  wordId?: string;
+}
+
+export interface AuthoredAssociation {
+  zh: string;
+  vi: string;
+  pinyin?: string;
+  hanViet?: string;
+}
+
+export type AuthoredAssociationEntry = AuthoredAssociation[] | { none: string };
+
+export type CharGloss = string | Record<string, string>;
 
 export interface CharacterData {
   character: string;

@@ -1,6 +1,14 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
-import type { AuthoredGrammar, AuthoredHanViet, AuthoredSentence, AuthoredUnit, PinyinOverrides } from '../types.js';
+import type {
+  AuthoredAssociationEntry,
+  AuthoredGrammar,
+  AuthoredHanViet,
+  AuthoredSentence,
+  AuthoredUnit,
+  CharGloss,
+  PinyinOverrides,
+} from '../types.js';
 import type { ReadingFixes } from './hsk.js';
 
 export interface Authored {
@@ -12,6 +20,8 @@ export interface Authored {
   hanViet: AuthoredHanViet;
   meanings: Record<string, string[]>;
   charDefinitions: Record<string, string>;
+  associations: Record<string, AuthoredAssociationEntry>;
+  charGlosses: Record<string, CharGloss>;
 }
 
 async function readJsonArrays<T>(dir: string): Promise<T[]> {
@@ -110,5 +120,9 @@ export async function loadAuthored(authoredDir: string): Promise<Authored> {
     charDefinitions: (await readJsonObjectsMerged(
       join(authoredDir, 'char-definitions'),
     )) as Record<string, string>,
+    associations: (await readJsonObjectsMerged(
+      join(authoredDir, 'associations'),
+    )) as Record<string, AuthoredAssociationEntry>,
+    charGlosses: await readJsonObject<Record<string, CharGloss>>(join(authoredDir, 'char-glosses.json')),
   };
 }

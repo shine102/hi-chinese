@@ -47,6 +47,8 @@ describe('loadAuthored', () => {
       hanViet: { charMap: {}, wordOverrides: {} },
       meanings: {},
       charDefinitions: {},
+      associations: {},
+      charGlosses: {},
     });
   });
   it('rejects a file that is not an array', async () => {
@@ -112,5 +114,17 @@ describe('loadAuthored', () => {
     await writeFile(join(dir, 'meanings', 'a.json'), JSON.stringify({ 你: ['bạn'] }));
     await writeFile(join(dir, 'meanings', 'b.json'), JSON.stringify({ 你: ['bạn 2'] }));
     await expect(loadAuthored(dir)).rejects.toThrow(/already defined/);
+  });
+  it('reads associations (merged per level) and char glosses', async () => {
+    await mkdir(join(dir, 'associations'));
+    await writeFile(
+      join(dir, 'associations', 'level1.json'),
+      JSON.stringify({ 太: [{ zh: '太阳', vi: 'mặt trời' }] }),
+    );
+    await writeFile(join(dir, 'associations', 'level2.json'), JSON.stringify({ 呢: { none: 'hư từ' } }));
+    await writeFile(join(dir, 'char-glosses.json'), JSON.stringify({ 太: 'to lớn; quá' }));
+    const a = await loadAuthored(dir);
+    expect(a.associations).toEqual({ 太: [{ zh: '太阳', vi: 'mặt trời' }], 呢: { none: 'hư từ' } });
+    expect(a.charGlosses).toEqual({ 太: 'to lớn; quá' });
   });
 });

@@ -3,7 +3,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadAuthored } from '../src/pipeline/authored.js';
 import { writeContent } from '../src/pipeline/build.js';
-import { fetchRaw } from '../src/pipeline/fetch.js';
+import { CVDICT_SOURCE, fetchRaw } from '../src/pipeline/fetch.js';
 import { findOrderViolations } from '../src/pipeline/curriculum-order.js';
 import { findCrowdedUnits, MAX_GRAMMAR_PER_UNIT } from '../src/pipeline/grammar-crowding.js';
 import { assembleContent } from '../src/pipeline/run.js';
@@ -16,12 +16,14 @@ const outDir = process.env['CONTENT_OUT'] ?? resolve(here, '../../../apps/web/pu
 
 const t0 = Date.now();
 const raw = await fetchRaw(rawDir);
+const rawCvdict = await fetchRaw(rawDir, undefined, undefined, { cvdict: CVDICT_SOURCE });
 const authored = await loadAuthored(authoredDir);
 
 const result = assembleContent({
   hskJson: await readFile(raw.hsk, 'utf8'),
   dictionaryText: await readFile(raw.dictionary, 'utf8'),
   graphicsText: await readFile(raw.graphics, 'utf8'),
+  cvdictText: await readFile(rawCvdict.cvdict!, 'utf8'),
   authored,
 });
 

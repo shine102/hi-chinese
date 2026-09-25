@@ -20,9 +20,8 @@ export const SOURCES = {
 
 export type SourceKey = keyof typeof SOURCES;
 
-// Pinned separately from SOURCES: only the one-off Vietnamese seeding script
-// (scripts/seed-vietnamese.ts) fetches this. The regular content build never
-// touches CVDICT once the seed is committed to packages/content/src/authored/.
+// Pinned separately from SOURCES: fetched by the Vietnamese seeding script and by the
+// content build (association words outside the course must exist in CVDICT).
 export const CVDICT_SOURCE = {
   url: 'https://raw.githubusercontent.com/ph0ngp/CVDICT/c379d909e308343a247e51619f7839a2060a271c/CVDICT.u8',
   file: 'CVDICT.u8',
