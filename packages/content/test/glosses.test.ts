@@ -29,6 +29,13 @@ describe('glossFor / formatGloss', () => {
     expect(formatGloss(glosses.行)).toBe('xíng: đi; được · háng: hàng; dãy');
     expect(formatGloss(undefined)).toBe('');
   });
+  it('disambiguates tone-only polyphones by tone, falling back to the unique toneless match', () => {
+    const hao = { hǎo: 'tốt', hào: 'thích' };
+    expect(glossFor(hao, 'hao', 'hào')).toBe('thích');
+    expect(glossFor(hao, 'hao', 'hǎo')).toBe('tốt');
+    expect(glossFor(hao, 'hao', '')).toBe('');
+    expect(glossFor({ xíng: 'đi', háng: 'hàng' }, 'hang', 'hang')).toBe('hàng');
+  });
 });
 
 describe('buildParts', () => {
@@ -46,6 +53,15 @@ describe('buildParts', () => {
       ['空', 'Không', ''],
       ['儿', 'Nhi', ''],
     ]);
+  });
+  it('picks the tone-specific gloss for a word like 爱好 (ài hào)', () => {
+    const parts = buildParts(
+      w('爱好', 'ài hào', 'Ái Hiếu'),
+      { ...glosses, 好: { hǎo: 'tốt', hào: 'thích' } },
+      new Map(),
+      hanViet,
+    );
+    expect(parts.map((p) => p.gloss)).toEqual(['', 'thích']);
   });
   it('attaches parts to multi-character words only', () => {
     const out = attachParts([w('太', 'tài', 'Thái'), w('太阳', 'tài yang', 'Thái Dương')], glosses, hanViet);

@@ -26,6 +26,7 @@ export function validateGlosses(
       typeof g === 'string'
         ? glossTextOk(g)
         : Object.keys(g).length >= 2 &&
+          new Set(Object.keys(g).map((k) => k.normalize('NFC').toLowerCase())).size === Object.keys(g).length &&
           Object.entries(g).every(([k, v]) => tonelessSyllables(k).length === 1 && glossTextOk(v));
     if (!ok) {
       errors.push({
@@ -46,11 +47,15 @@ export function formatGloss(g: CharGloss | undefined): string {
     .join(' · ');
 }
 
-export function glossFor(g: CharGloss | undefined, syllable: string): string {
+export function glossFor(g: CharGloss | undefined, syllable: string, tone = ''): string {
   if (g === undefined) return '';
   if (typeof g === 'string') return g;
-  const hit = Object.entries(g).find(([k]) => tonelessSyllables(k)[0] === syllable);
-  return hit ? hit[1] : '';
+  if (tone !== '') {
+    const hit = Object.entries(g).find(([k]) => k.normalize('NFC').toLowerCase() === tone);
+    if (hit) return hit[1];
+  }
+  const matches = Object.entries(g).filter(([k]) => tonelessSyllables(k)[0] === syllable);
+  return matches.length === 1 ? matches[0]![1] : '';
 }
 
 export function buildParts(
@@ -67,7 +72,7 @@ export function buildParts(
     return {
       char,
       hanViet: hvParts.length === chars.length ? hvParts[i]! : hanViet.char(char),
-      gloss: glossFor(glosses[char], aligned?.[i]?.syllable ?? ''),
+      gloss: glossFor(glosses[char], aligned?.[i]?.syllable ?? '', aligned?.[i]?.tone ?? ''),
       ...(wordId !== undefined && wordId !== word.id ? { wordId } : {}),
     };
   });

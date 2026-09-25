@@ -39,9 +39,9 @@ describe('tonelessSyllables / alignSyllables', () => {
   });
   it('folds erhua 儿 into the previous syllable', () => {
     expect(alignSyllables('有空儿', 'yǒu kòngr')).toEqual([
-      { char: '有', syllable: 'you' },
-      { char: '空', syllable: 'kong' },
-      { char: '儿', syllable: '' },
+      { char: '有', syllable: 'you', tone: 'yǒu' },
+      { char: '空', syllable: 'kong', tone: 'kòng' },
+      { char: '儿', syllable: '', tone: '' },
     ]);
     expect(alignSyllables('太阳', 'tài')).toBeNull();
   });
@@ -102,5 +102,10 @@ describe('attachAssociations / findMissingAssociations', () => {
     expect(out[0]!.associations?.map((a) => a.zh)).toEqual(['太阳', '太空']);
     expect(out[2]!.associations).toBeUndefined();
     expect(findMissingAssociations(out, byChar, [1])).toEqual(['长']);
+  });
+  it('does not report a word with exactly one association', () => {
+    const { byChar } = resolveAssociations({ 太: [{ zh: '太阳', vi: 'mặt trời' }] }, words, cvdict, hanViet);
+    expect(byChar.get('太')).toHaveLength(1);
+    expect(findMissingAssociations(words, byChar, [1])).not.toContain('太');
   });
 });

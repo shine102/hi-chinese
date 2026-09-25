@@ -21,7 +21,7 @@ export interface Word {
   frequency: number;
   characters: string[];
   unitId: string;
-  /** Single-character words only: 2–3 compounds that show the character in use (not taught). */
+  /** Single-character words only: 1–3 compounds that show the character in use (not taught). */
   associations?: Association[];
   /** Multi-character words only: each character with its Hán Việt and core gloss. */
   parts?: WordPart[];

@@ -8,7 +8,7 @@ import type {
 } from '../types.js';
 import { numberedToMarked, type CedictEntry } from './cedict.js';
 
-export const MIN_ASSOCIATIONS = 2;
+export const MIN_ASSOCIATIONS = 1;
 export const MAX_ASSOCIATIONS = 3;
 /** Levels whose single-character words are fully authored; coverage guards apply to these. */
 export const ASSOCIATION_LEVELS_DONE: readonly HskLevel[] = [];
@@ -38,27 +38,47 @@ export function tonelessSyllables(pinyin: string): string[] {
     .filter((s) => s.length > 0);
 }
 
+/** "Tài píng yáng" -> ["tài", "píng", "yáng"]; tone marks and ü are kept. */
+export function toneSyllables(pinyin: string): string[] {
+  return pinyin
+    .toLowerCase()
+    .normalize('NFC')
+    .split(/[\s'’-]+/)
+    .map((s) => s.normalize('NFC').replace(/[^\p{L}]/gu, ''))
+    .filter((s) => s.length > 0);
+}
+
 /**
- * Pairs each Han character of `zh` with its toneless syllable. An erhua 儿 written into the
- * previous syllable ("kòngr") gets '' and the r is dropped from that syllable. Null when the
- * syllables cannot be matched to the characters.
+ * Pairs each Han character of `zh` with its toneless syllable and its tone-marked syllable. An
+ * erhua 儿 written into the previous syllable ("kòngr") gets '' for both and the trailing r is
+ * dropped from the previous syllable's toneless and tone forms. Null when the syllables cannot be
+ * matched to the characters.
  */
-export function alignSyllables(zh: string, pinyin: string): { char: string; syllable: string }[] | null {
+export function alignSyllables(
+  zh: string,
+  pinyin: string,
+): { char: string; syllable: string; tone: string }[] | null {
   const chars = [...zh].filter((c) => HAN.test(c));
   const syllables = tonelessSyllables(pinyin);
-  if (syllables.length === chars.length) return chars.map((char, i) => ({ char, syllable: syllables[i]! }));
-  const out: { char: string; syllable: string }[] = [];
+  const tones = toneSyllables(pinyin);
+  if (syllables.length === chars.length) {
+    return chars.map((char, i) => ({ char, syllable: syllables[i]!, tone: tones[i]! }));
+  }
+  const out: { char: string; syllable: string; tone: string }[] = [];
   let j = 0;
   for (const char of chars) {
     const prev = out[out.length - 1];
     if (char === '儿' && prev && prev.syllable.endsWith('r') && prev.syllable !== 'er') {
       prev.syllable = prev.syllable.slice(0, -1);
-      out.push({ char, syllable: '' });
+      if (prev.tone.endsWith('r')) prev.tone = prev.tone.slice(0, -1);
+      out.push({ char, syllable: '', tone: '' });
       continue;
     }
-    const s = syllables[j++];
+    const s = syllables[j];
+    const t = tones[j];
+    j++;
     if (s === undefined) return null;
-    out.push({ char, syllable: s });
+    out.push({ char, syllable: s, tone: t ?? '' });
   }
   return j === syllables.length ? out : null;
 }
@@ -188,7 +208,7 @@ export function attachAssociations(words: readonly Word[], byChar: ResolvedAssoc
   });
 }
 
-/** Single-character words of `levels` with neither 2–3 associations nor an explicit none. */
+/** Single-character words of `levels` with neither 1–3 associations nor an explicit none. */
 export function findMissingAssociations(
   words: readonly Word[],
   byChar: ResolvedAssociations,
