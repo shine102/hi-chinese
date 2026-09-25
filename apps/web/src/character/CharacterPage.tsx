@@ -66,6 +66,12 @@ export function CharacterPage() {
             {data.hanViet && <span className="text-lg italic text-stone-500">{data.hanViet}</span>}
             <SpeakButton text={ch} />
           </div>
+          {data.gloss && (
+            <p className="text-stone-900">
+              <span className="text-sm text-stone-500">Nghĩa gốc: </span>
+              <span>{data.gloss}</span>
+            </p>
+          )}
           {data.definition && <p className="text-stone-800">{data.definition}</p>}
           <div className="mt-1 text-sm text-stone-500">
             <span>Radical: {data.radical}</span>
@@ -73,6 +79,28 @@ export function CharacterPage() {
           </div>
         </div>
       </div>
+
+      {data.associations.length > 0 && (
+        <section aria-label="Liên tưởng" className="flex flex-col gap-2">
+          <h2 className="text-lg font-semibold">Liên tưởng</h2>
+          <ul className="flex flex-col gap-1">
+            {data.associations.map((a) => (
+              <li
+                key={a.zh}
+                className="flex items-center justify-between gap-2 rounded-lg border border-stone-200 bg-white px-3 py-2"
+              >
+                <div className="flex min-w-0 flex-wrap items-baseline gap-x-2">
+                  <span className="text-lg">{a.zh}</span>
+                  <span className="text-sm text-stone-600">{a.pinyin}</span>
+                  {a.hanViet && <span className="text-sm italic text-stone-500">{a.hanViet}</span>}
+                  <span className="text-sm text-stone-500">{a.vi}</span>
+                </div>
+                <SpeakButton text={a.zh} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {words.length > 0 && (
         <section className="flex flex-col gap-2">

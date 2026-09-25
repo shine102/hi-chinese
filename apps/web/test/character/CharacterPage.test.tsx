@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import type { CharacterData, SyncRequest, SyncResponse } from '@hi-chinese/content';
 import { createMemoryHistory, RouterProvider } from '@tanstack/react-router';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { db } from '../../src/db/db.js';
 import { createAppRouter } from '../../src/router.js';
@@ -66,5 +66,16 @@ describe('CharacterPage', () => {
     const header = heading.closest('div')!;
     expect(header.textContent).toContain('wǒ');
     expect(header.textContent).toContain('Ngã');
+  });
+});
+
+describe('CharacterPage associations', () => {
+  it('shows the core gloss and the association list', async () => {
+    stubFetch(noSync);
+    renderApp('/character/6211');
+    expect(await screen.findByText('tôi; ta')).toBeTruthy();
+    const box = screen.getByRole('region', { name: 'Liên tưởng' });
+    expect(within(box).getByText('我们')).toBeTruthy();
+    expect(within(box).getByText('chúng tôi')).toBeTruthy();
   });
 });

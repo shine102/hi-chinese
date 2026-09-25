@@ -133,8 +133,8 @@ export const fixtureCharacters: CharacterData[] = [
     radical: '戈',
     decomposition: '⿰扌戈',
     wordIds: ['w:我'],
-    gloss: '',
-    associations: [],
+    gloss: 'tôi; ta',
+    associations: [{ zh: '我们', pinyin: 'wǒ men', hanViet: 'Ngã Môn', vi: 'chúng tôi' }],
   },
   {
     character: '你',
