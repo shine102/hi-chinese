@@ -13,7 +13,7 @@ export const MAX_ASSOCIATIONS = 3;
 /** Levels whose single-character words are fully authored; coverage guards apply to these. */
 export const ASSOCIATION_LEVELS_DONE: readonly HskLevel[] = [1, 2, 3];
 /** True once every course character has a gloss (authored/char-glosses.json). */
-export const GLOSSES_DONE = false;
+export const GLOSSES_DONE = true;
 
 const HAN = /\p{Script=Han}/u;
 const TONE_MARKS = /[̀́̄̌]/g;
