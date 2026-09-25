@@ -114,6 +114,31 @@ function lookupCvdict(
   return { pinyin: [...readings.values()][0]! };
 }
 
+/** Key for the (char, toneless syllable) -> Hán Việt map built from course words. */
+const courseKey = (char: string, syllable: string) => `${char}\u0000${syllable}`;
+
+/**
+ * Maps each course character, keyed by the toneless syllable it's taught with, to the Hán Việt
+ * reading it has in that course word — built from every course word whose Hán Việt splits into
+ * one part per Han character. Used to catch a polyphone whose char-map reading doesn't match the
+ * reading it's actually used with in a non-course association (e.g. 长 taught as cháng "Trường"
+ * but char-mapped to "Trưởng", its other reading).
+ */
+function buildCourseHanVietMap(words: readonly Word[]): Map<string, string> {
+  const map = new Map<string, string>();
+  for (const w of words) {
+    const aligned = alignSyllables(w.simplified, w.pinyin);
+    if (!aligned) continue;
+    const hvParts = w.hanViet.split(/\s+/).filter(Boolean);
+    if (hvParts.length !== aligned.length) continue;
+    aligned.forEach((p, i) => {
+      const key = courseKey(p.char, p.syllable);
+      if (!map.has(key)) map.set(key, hvParts[i]!);
+    });
+  }
+  return map;
+}
+
 export function resolveAssociations(
   authored: Readonly<Record<string, AuthoredAssociationEntry>>,
   words: readonly Word[],
@@ -121,6 +146,7 @@ export function resolveAssociations(
   hanViet: HanVietResolver,
 ): { byChar: ResolvedAssociations; errors: AssociationError[] } {
   const bySimplified = new Map(words.map((w) => [w.simplified, w]));
+  const courseHanVietMap = buildCourseHanVietMap(words);
   const byChar: ResolvedAssociations = new Map();
   const errors: AssociationError[] = [];
   const err = (rule: string, ref: string, message: string) => errors.push({ rule, ref, message });
@@ -186,6 +212,22 @@ export function resolveAssociations(
       if (!aligned) {
         err('association-reading', ref, `cannot align ${a.zh} with "${pinyin}"`);
         continue;
+      }
+      if (!course && a.hanViet === undefined) {
+        const mismatch = aligned.find((p) => {
+          const courseHv = courseHanVietMap.get(courseKey(p.char, p.syllable));
+          return courseHv !== undefined && courseHv !== hanViet.char(p.char);
+        });
+        if (mismatch) {
+          const courseHv = courseHanVietMap.get(courseKey(mismatch.char, mismatch.syllable))!;
+          const charMapHv = hanViet.char(mismatch.char);
+          err(
+            'association-hanviet',
+            ref,
+            `${a.zh}: Hán Việt of ${mismatch.char} for ${mismatch.syllable} in the course is ${courseHv}, char-map gives ${charMapHv} — add "hanViet"`,
+          );
+          continue;
+        }
       }
       const wrong = aligned.find((p) => p.char === char && p.syllable !== taught);
       if (wrong) {

@@ -65,7 +65,7 @@
   ],
   "篇": [
     { "zh": "短篇小说", "vi": "truyện ngắn" },
-    { "zh": "长篇小说", "vi": "tiểu thuyết dài" }
+    { "zh": "长篇小说", "vi": "tiểu thuyết dài", "hanViet": "Trường Thiên Tiểu Thuyết" }
   ],
   "但": [
     { "zh": "但是", "vi": "nhưng" },

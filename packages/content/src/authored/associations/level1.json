@@ -684,7 +684,7 @@
   ],
   "跑": [
     { "zh": "跑步", "vi": "chạy bộ" },
-    { "zh": "长跑", "vi": "chạy đường dài" }
+    { "zh": "长跑", "vi": "chạy đường dài", "hanViet": "Trường Bào" }
   ],
   "口": [
     { "zh": "门口", "vi": "cửa ra vào" },

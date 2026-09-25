@@ -62,22 +62,35 @@ export function glossFor(g: CharGloss | undefined, syllable: string, tone = ''):
   return matches.length === 1 ? matches[0]![1] : '';
 }
 
+export interface SingleCharWordRef {
+  id: string;
+  /** The toneless syllable this single-character word is taught with. */
+  syllable: string;
+}
+
 export function buildParts(
   word: Word,
   glosses: Readonly<Record<string, CharGloss>>,
-  singleCharIds: ReadonlyMap<string, string>,
+  singleCharIds: ReadonlyMap<string, SingleCharWordRef>,
   hanViet: HanVietResolver,
 ): WordPart[] {
   const chars = [...word.simplified].filter((c) => HAN.test(c));
   const aligned = alignSyllables(word.simplified, word.pinyin);
   const hvParts = word.hanViet.split(/\s+/).filter(Boolean);
   return chars.map((char, i) => {
-    const wordId = singleCharIds.get(char);
+    const ref = singleCharIds.get(char);
+    // Only badge the part as "đã học" when it's read the same way here as the single-char word
+    // teaches it — a polyphone read differently (e.g. 行 háng inside 银行, taught as 行 xíng)
+    // isn't the word the learner already knows.
+    const wordId =
+      ref !== undefined && ref.id !== word.id && (aligned?.[i]?.syllable ?? '') === ref.syllable
+        ? ref.id
+        : undefined;
     return {
       char,
       hanViet: hvParts.length === chars.length ? hvParts[i]! : hanViet.char(char),
       gloss: glossFor(glosses[char], aligned?.[i]?.syllable ?? '', aligned?.[i]?.tone ?? ''),
-      ...(wordId !== undefined && wordId !== word.id ? { wordId } : {}),
+      ...(wordId !== undefined ? { wordId } : {}),
     };
   });
 }
@@ -87,8 +100,10 @@ export function attachParts(
   glosses: Readonly<Record<string, CharGloss>>,
   hanViet: HanVietResolver,
 ): Word[] {
-  const singleCharIds = new Map(
-    words.filter((w) => [...w.simplified].length === 1).map((w) => [w.simplified, w.id]),
+  const singleCharIds = new Map<string, SingleCharWordRef>(
+    words
+      .filter((w) => [...w.simplified].length === 1)
+      .map((w) => [w.simplified, { id: w.id, syllable: tonelessSyllables(w.pinyin)[0] ?? '' }]),
   );
   return words.map((w) =>
     [...w.simplified].length > 1 ? { ...w, parts: buildParts(w, glosses, singleCharIds, hanViet) } : w,

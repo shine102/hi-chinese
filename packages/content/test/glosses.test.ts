@@ -43,11 +43,46 @@ describe('glossFor / formatGloss', () => {
 
 describe('buildParts', () => {
   it('uses the word-level Hán Việt split and the reading-specific gloss', () => {
-    const parts = buildParts(w('银行', 'yín háng', 'Ngân Hàng'), glosses, new Map([['行', 'w:行']]), hanViet);
+    const parts = buildParts(
+      w('银行', 'yín háng', 'Ngân Hàng'),
+      glosses,
+      new Map([['行', { id: 'w:行', syllable: 'hang' }]]),
+      hanViet,
+    );
     expect(parts).toEqual([
       { char: '银', hanViet: 'Ngân', gloss: 'bạc' },
       { char: '行', hanViet: 'Hàng', gloss: 'hàng; dãy', wordId: 'w:行' },
     ]);
+  });
+  it('omits wordId when the part is read differently than the single-char word (行 xíng in 银行 háng)', () => {
+    const parts = buildParts(
+      w('银行', 'yín háng', 'Ngân Hàng'),
+      glosses,
+      new Map([['行', { id: 'w:行', syllable: 'xing' }]]),
+      hanViet,
+    );
+    expect(parts).toEqual([
+      { char: '银', hanViet: 'Ngân', gloss: 'bạc' },
+      { char: '行', hanViet: 'Hàng', gloss: 'hàng; dãy' },
+    ]);
+  });
+  it('keeps wordId when the reading matches (太 tài in 太阳)', () => {
+    const parts = buildParts(
+      w('太阳', 'tài yang', 'Thái Dương'),
+      glosses,
+      new Map([['太', { id: 'w:太', syllable: 'tai' }]]),
+      hanViet,
+    );
+    expect(parts[0]).toEqual({ char: '太', hanViet: 'Thái', gloss: 'to lớn; quá', wordId: 'w:太' });
+  });
+  it('omits wordId for an erhua part (syllable "") unless the single-char word is itself read "" ', () => {
+    const parts = buildParts(
+      w('有空儿', 'yǒu kòngr', 'Hữu Không Nhi'),
+      {},
+      new Map([['儿', { id: 'w:儿', syllable: 'er' }]]),
+      hanViet,
+    );
+    expect(parts[2]).toEqual({ char: '儿', hanViet: 'Nhi', gloss: '' });
   });
   it('handles erhua and missing glosses', () => {
     const parts = buildParts(w('有空儿', 'yǒu kòngr', 'Hữu Không Nhi'), {}, new Map(), hanViet);

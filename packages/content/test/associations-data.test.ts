@@ -22,7 +22,7 @@ async function authoredAssociations(): Promise<Record<string, AuthoredAssociatio
 // Spec 2026-09-25-char-associations-design.md. Coverage checks apply only to finished levels
 // (ASSOCIATION_LEVELS_DONE) and, for glosses, once GLOSSES_DONE is flipped.
 describe('character associations (shipped data)', () => {
-  it('gives every single-character word of a finished level 2–3 associations or an explicit none', async () => {
+  it('gives every single-character word of a finished level 1–3 associations or an explicit none', async () => {
     const words = await readJson<Word[]>(resolve(content, 'words.json'));
     const authored = await authoredAssociations();
     const gaps = words
@@ -56,6 +56,15 @@ describe('character associations (shipped data)', () => {
       if (c.gloss.trim() === '') missing.push(c.character);
     }
     expect(missing).toEqual([]);
+  });
+
+  it('has a gloss for every word part once glosses are done', async () => {
+    if (!GLOSSES_DONE) return;
+    const words = await readJson<Word[]>(resolve(content, 'words.json'));
+    const offenders = words
+      .filter((w) => (w.parts?.some((p) => p.gloss.trim() === '') ?? false))
+      .map((w) => `${w.simplified} (${w.id}): ${w.parts!.filter((p) => p.gloss.trim() === '').map((p) => p.char).join(',')}`);
+    expect(offenders).toEqual([]);
   });
 
   it('keeps CVDICT metadata out of association and gloss text', async () => {

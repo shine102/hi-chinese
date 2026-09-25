@@ -156,7 +156,7 @@ Ghi chú: danh sách trên gộp mọi "new wording"/"nghĩa mới" nêu trong c
 - 妈 → 大妈 dà mā · Đại Ma — bác gái (gọi thân mật)
 - 错 → 没错 méi cuò · Một Thác — đúng vậy
 - 哪 → 哪怕 nǎ pà · Na Phạ — cho dù
-- 跑 → 长跑 cháng pǎo · Trưởng Bào — chạy đường dài
+- 跑 → 长跑 cháng pǎo · Trường Bào — chạy đường dài
 - 晚 → 早晚 zǎo wǎn · Tảo Vãn — sớm muộn
 - 五 → 五十 wǔ shí · Ngũ Thập — năm mươi
 - 五 → 五月 wǔ yuè · Ngũ Nguyệt — tháng Năm
@@ -402,7 +402,7 @@ Ghi chú: danh sách trên gộp mọi "new wording"/"nghĩa mới" nêu trong c
 - 亮 → 明亮 míng liàng · Minh Lượng — sáng sủa
 - 亮 → 亮光 liàng guāng · Lượng Quang — ánh sáng
 - 篇 → 短篇小说 duǎn piān xiǎo shuō · Đoản Thiên Tiểu Thuyết — truyện ngắn
-- 篇 → 长篇小说 cháng piān xiǎo shuō · Trưởng Thiên Tiểu Thuyết — tiểu thuyết dài
+- 篇 → 长篇小说 cháng piān xiǎo shuō · Trường Thiên Tiểu Thuyết — tiểu thuyết dài
 - 千 → 千米 qiān mǐ · Thiên Mễ — kilômét
 - 墙 → 墙壁 qiáng bì · Tường Bích — bức tường
 - 墙 → 围墙 wéi qiáng · Vi Tường — tường bao

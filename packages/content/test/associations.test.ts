@@ -92,6 +92,41 @@ describe('resolveAssociations', () => {
   });
 });
 
+describe('resolveAssociations Hán Việt guard (polyphone read differently in the course)', () => {
+  // 长 is taught as cháng "Trường" (course word 长, and 长城 cháng chéng "Trường Thành"), but its
+  // char-map entry here is the OTHER reading, "Trưởng" (as it is in the real char-map, where 长's
+  // primary/most-common reading is zhǎng "Trưởng"). A non-course association using 长 with the
+  // taught cháng reading must not silently fall back to the char-map's "Trưởng".
+  const guardWords = [
+    ...words,
+    w('长城', 'cháng chéng', 'Trường Thành', 1),
+    w('跑', 'pǎo', 'Bào'),
+  ];
+  const guardHanViet = makeHanViet({
+    charMap: { 长: 'Trưởng', 城: 'Thành', 跑: 'Bào' },
+    wordOverrides: {},
+  });
+  const guardCvdict = indexCedict(
+    parseCedict(['長跑 长跑 [chang2 pao3] /chạy đường dài/'].join('\n')),
+  );
+
+  it('flags a non-course association whose char-map reading differs from the course reading', () => {
+    const { errors } = resolveAssociations(
+      { 跑: [{ zh: '长跑', vi: 'chạy đường dài' }] },
+      guardWords, guardCvdict, guardHanViet,
+    );
+    expect(errors.map((e) => e.rule)).toEqual(['association-hanviet']);
+  });
+
+  it('accepts it once an explicit hanViet is given', () => {
+    const { errors } = resolveAssociations(
+      { 跑: [{ zh: '长跑', vi: 'chạy đường dài', hanViet: 'Trường Bào' }] },
+      guardWords, guardCvdict, guardHanViet,
+    );
+    expect(errors).toEqual([]);
+  });
+});
+
 describe('attachAssociations / findMissingAssociations', () => {
   it('attaches lists to single-character words only and reports gaps per level', () => {
     const { byChar } = resolveAssociations(

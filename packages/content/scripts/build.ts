@@ -71,7 +71,10 @@ if (crowded.length > 0) {
   for (const c of crowded) console.warn(`  ${c.unitId}: ${c.count}`);
 }
 
-const missingAssoc = findMissingAssociations(result.bundle.words, result.associations, [1, 2, 3]);
+// The missing-associations warning intentionally covers every level regardless of which levels
+// ASSOCIATION_LEVELS_DONE currently guards in tests — it's a heads-up for authors, not a gate.
+const ALL_LEVELS = [1, 2, 3] as const;
+const missingAssoc = findMissingAssociations(result.bundle.words, result.associations, ALL_LEVELS);
 if (missingAssoc.length > 0) {
   console.warn(`warning: ${missingAssoc.length} single-character word(s) without associations yet`);
 }
